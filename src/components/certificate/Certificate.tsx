@@ -83,10 +83,13 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
     : 'relative w-full aspect-[297/210]';
 
   // ── Animation helper ──
-  const animClass = (delayMs: number) =>
-    animated
-      ? `opacity-0 [animation:cert-fade-in_500ms_cubic-bezier(0.16,1,0.3,1)_${delayMs}ms_forwards] motion-reduce:opacity-100 motion-reduce:[animation:none]`
-      : '';
+  // IMPORTANT: do not build Tailwind arbitrary animation classes dynamically here.
+  // Tailwind cannot see runtime-generated classes like
+  // `[animation:..._${delayMs}ms_forwards]`, so production builds kept these
+  // elements at `opacity-0`. That is why only the inline-animated name/badge
+  // appeared in the generated certificate. Keep static visibility here; the
+  // name + badge still use safe inline animations below.
+  const animClass = (_delayMs: number) => '';
 
   return (
     <div className={wrapperClass} style={{ containerType: 'inline-size' }}>
@@ -290,7 +293,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                     : undefined,
                 }}
               >
-                <CertBadge size={240} />
+                <CertBadge size="100%" />
               </div>
               <div
                 className={`font-mono uppercase tracking-[0.2em] text-[#8A6B22] text-center ${animClass(1400)}`}
