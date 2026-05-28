@@ -117,7 +117,72 @@ Then in the Vercel dashboard:
 
 ## 📂 Project structure
 
-See [`MASTER-PLAN.md`](./MASTER-PLAN.md) section 6 for the full tree.
+Project Structure
+rrrtx-freeverse/
+├── public/
+│   ├── favicon.svg
+│   ├── og-image.png            ← social share preview
+│   └── cert-bg.svg              ← certificate background art
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── QuizCard.tsx
+│   │   ├── QuizPlayer.tsx
+│   │   ├── QuestionView.tsx
+│   │   ├── Timer.tsx
+│   │   ├── ResultScreen.tsx
+│   │   ├── CertificateTemplate.tsx
+│   │   ├── CertificateDownloader.tsx
+│   │   ├── VerifyForm.tsx
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   ├── pages/
+│   │   ├── Home.tsx              ← list all 15 quizzes
+│   │   ├── Quiz.tsx              ← /quiz/:id
+│   │   ├── Result.tsx            ← /result/:id
+│   │   ├── Certificate.tsx       ← /certificate/:certId
+│   │   ├── Verify.tsx            ← /verify
+│   │   ├── Profile.tsx           ← /u/:slug
+│   │   └── About.tsx
+│   ├── lib/
+│   │   ├── crypto.ts             ← SHA-256 hashing, cert ID gen
+│   │   ├── quizEngine.ts         ← randomization, scoring, sub-pool logic
+│   │   ├── storage.ts            ← localStorage wrapper
+│   │   ├── pdfGenerator.ts       ← jsPDF cert export
+│   │   ├── githubRegistry.ts     ← writes to registry via Edge Function
+│   │   └── antiCheat.ts          ← tab switch, copy block, etc
+│   ├── quizzes/
+│   │   ├── index.ts              ← exports list of all quizzes
+│   │   ├── prompt-engineering.json
+│   │   ├── generative-ai-basics.json
+│   │   ├── ai-productivity.json
+│   │   ├── html-css.json
+│   │   ├── javascript-essentials.json
+│   │   ├── react-basics.json
+│   │   ├── git-github.json
+│   │   ├── python-fundamentals.json
+│   │   ├── sql-databases.json
+│   │   ├── data-analysis.json
+│   │   ├── digital-marketing.json
+│   │   ├── cybersecurity.json
+│   │   ├── uiux-design.json
+│   │   ├── no-code-automation.json
+│   │   └── freelancing.json
+│   ├── data/
+│   │   └── quizMeta.ts          ← lightweight catalog for homepage
+│   ├── styles/
+│   │   └── globals.css
+│   └── types.ts
+├── api/                          ← Vercel Edge Functions
+│   └── issue-cert.ts             ← writes to GitHub registry
+├── .env.example
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── vercel.json
+
 
 Key folders:
 - `src/lib/` — crypto, quiz engine, storage, PDF generator, GitHub registry, anti-cheat
