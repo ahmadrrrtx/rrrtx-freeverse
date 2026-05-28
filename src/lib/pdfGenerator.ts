@@ -8,16 +8,57 @@ import html2canvas from 'html2canvas';
 import QRCode from 'qrcode';
 import type { Certificate } from '../types';
 
+/** Wait until web fonts are ready so the downloaded PDF/JPG matches the preview. */
+async function waitForFonts(): Promise<void> {
+  try {
+    const fontSet = (document as Document & { fonts?: FontFaceSet }).fonts;
+    if (fontSet?.ready) await fontSet.ready;
+  } catch {
+    // Font loading API is best-effort only.
+  }
+}
+
+/** Wait for images inside the cert (QR + signature) before html2canvas snapshots it. */
+async function waitForImages(root: HTMLElement): Promise<void> {
+  const images = Array.from(root.querySelectorAll('img'));
+  await Promise.all(
+    images.map((img) => {
+      if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+      return new Promise<void>((resolve) => {
+        const done = () => resolve();
+        img.addEventListener('load', done, { once: true });
+        img.addEventListener('error', done, { once: true });
+        // Never hang export forever because of one image.
+        window.setTimeout(done, 1500);
+      });
+    }),
+  );
+}
+
 /**
  * Capture the rendered cert element to a high-DPI canvas.
  * Shared helper for both PDF and JPG exports.
  */
 async function captureCertCanvas(certEl: HTMLElement): Promise<HTMLCanvasElement> {
+  await waitForFonts();
+  await waitForImages(certEl);
+
+  const rect = certEl.getBoundingClientRect();
+  const width = Math.ceil(rect.width || certEl.scrollWidth);
+  const height = Math.ceil(rect.height || certEl.scrollHeight);
+
   return html2canvas(certEl, {
-    scale: 3,
+    scale: Math.max(2, Math.min(3, window.devicePixelRatio || 2)),
     useCORS: true,
+    allowTaint: false,
     backgroundColor: '#FBF8F3',
     logging: false,
+    imageTimeout: 3000,
+    removeContainer: true,
+    width,
+    height,
+    windowWidth: Math.max(document.documentElement.clientWidth, width),
+    windowHeight: Math.max(document.documentElement.clientHeight, height),
   });
 }
 
@@ -65,7 +106,10 @@ export async function downloadCertificateJPG(
   const a = document.createElement('a');
   a.href = imgData;
   a.download = `RFV_${cert.quiz.id}_${safeName}.jpg`;
+  a.rel = 'noopener';
+  document.body.appendChild(a);
   a.click();
+  a.remove();
 }
 
 /**
