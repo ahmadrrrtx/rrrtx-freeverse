@@ -180,14 +180,14 @@ function CertPageContent({
             </div>
 
             {/* THE CERTIFICATE */}
-            <div ref={paperRef}>
+            <div ref={paperRef} id={`cert-export-${cert.id}`}>
               <Certificate data={certData} animated={false} />
             </div>
           </div>
 
           {/* SHARE/DOWNLOAD ACTIONS */}
           <section className="mt-12 sm:mt-16">
-            <CertActions paperEl={paperRef.current} cert={cert} baseUrl={baseUrl} />
+            <CertActions paperRef={paperRef} cert={cert} baseUrl={baseUrl} />
           </section>
 
           {/* INTEGRITY DETAILS */}
