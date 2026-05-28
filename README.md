@@ -115,72 +115,73 @@ Then in the Vercel dashboard:
 
 ---
 
-## 📂 Project structure
+## 📂 Project Structure
 
+```text
 rrrtx-freeverse/
+├── api/                        # Vercel Edge Functions
+│   └── issue-cert.ts           # Writes to GitHub registry
 ├── public/
 │   ├── favicon.svg
-│   ├── og-image.png            ← social share preview
-│   └── cert-bg.svg              ← certificate background art
+│   ├── og-image.png            # Social share preview
+│   └── cert-bg.svg             # Certificate background art
 ├── src/
-│   ├── main.tsx
-│   ├── App.tsx
-│   ├── components/
+│   ├── components/             # Reusable UI components
+│   │   ├── CertificateDownloader.tsx
+│   │   ├── CertificateTemplate.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── QuestionView.tsx
 │   │   ├── QuizCard.tsx
 │   │   ├── QuizPlayer.tsx
-│   │   ├── QuestionView.tsx
-│   │   ├── Timer.tsx
 │   │   ├── ResultScreen.tsx
-│   │   ├── CertificateTemplate.tsx
-│   │   ├── CertificateDownloader.tsx
-│   │   ├── VerifyForm.tsx
-│   │   ├── Header.tsx
-│   │   └── Footer.tsx
-│   ├── pages/
-│   │   ├── Home.tsx              ← list all 15 quizzes
-│   │   ├── Quiz.tsx              ← /quiz/:id
-│   │   ├── Result.tsx            ← /result/:id
-│   │   ├── Certificate.tsx       ← /certificate/:certId
-│   │   ├── Verify.tsx            ← /verify
-│   │   ├── Profile.tsx           ← /u/:slug
-│   │   └── About.tsx
-│   ├── lib/
-│   │   ├── crypto.ts             ← SHA-256 hashing, cert ID gen
-│   │   ├── quizEngine.ts         ← randomization, scoring, sub-pool logic
-│   │   ├── storage.ts            ← localStorage wrapper
-│   │   ├── pdfGenerator.ts       ← jsPDF cert export
-│   │   ├── githubRegistry.ts     ← writes to registry via Edge Function
-│   │   └── antiCheat.ts          ← tab switch, copy block, etc
-│   ├── quizzes/
-│   │   ├── index.ts              ← exports list of all quizzes
-│   │   ├── prompt-engineering.json
-│   │   ├── generative-ai-basics.json
+│   │   ├── Timer.tsx
+│   │   └── VerifyForm.tsx
+│   ├── data/
+│   │   └── quizMeta.ts         # Lightweight catalog for homepage
+│   ├── lib/                    # Core business logic & utilities
+│   │   ├── antiCheat.ts        # Tab switch, copy block, etc.
+│   │   ├── crypto.ts           # SHA-256 hashing, cert ID gen
+│   │   ├── githubRegistry.ts   # Writes to registry via Edge Function
+│   │   ├── pdfGenerator.ts     # jsPDF cert export
+│   │   ├── quizEngine.ts       # Randomization, scoring, sub-pool logic
+│   │   └── storage.ts          # localStorage wrapper
+│   ├── pages/                  # Application views/routes
+│   │   ├── About.tsx
+│   │   ├── Certificate.tsx     # /certificate/:certId
+│   │   ├── Home.tsx            # Lists all 15 quizzes
+│   │   ├── Profile.tsx         # /u/:slug
+│   │   ├── Quiz.tsx            # /quiz/:id
+│   │   ├── Result.tsx          # /result/:id
+│   │   └── Verify.tsx          # /verify
+│   ├── quizzes/                # Quiz data JSON files (one per topic)
 │   │   ├── ai-productivity.json
-│   │   ├── html-css.json
-│   │   ├── javascript-essentials.json
-│   │   ├── react-basics.json
-│   │   ├── git-github.json
-│   │   ├── python-fundamentals.json
-│   │   ├── sql-databases.json
+│   │   ├── cybersecurity.json
 │   │   ├── data-analysis.json
 │   │   ├── digital-marketing.json
-│   │   ├── cybersecurity.json
-│   │   ├── uiux-design.json
+│   │   ├── freelancing.json
+│   │   ├── generative-ai-basics.json
+│   │   ├── git-github.json
+│   │   ├── html-css.json
+│   │   ├── index.ts            # Exports list of all quizzes
+│   │   ├── javascript-essentials.json
 │   │   ├── no-code-automation.json
-│   │   └── freelancing.json
-│   ├── data/
-│   │   └── quizMeta.ts          ← lightweight catalog for homepage
+│   │   ├── prompt-engineering.json
+│   │   ├── python-fundamentals.json
+│   │   ├── react-basics.json
+│   │   ├── sql-databases.json
+│   │   └── uiux-design.json
 │   ├── styles/
 │   │   └── globals.css
+│   ├── App.tsx
+│   ├── main.tsx
 │   └── types.ts
-├── api/                          ← Vercel Edge Functions
-│   └── issue-cert.ts             ← writes to GitHub registry
 ├── .env.example
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
-├── vite.config.ts
-└── vercel.json
+├── vercel.json
+└── vite.config.ts
 
 
 Key folders:
