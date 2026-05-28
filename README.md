@@ -182,9 +182,10 @@ rrrtx-freeverse/
 ├── tsconfig.json
 ├── vercel.json
 └── vite.config.ts
+```
 
 
-Key folders:
+## Key folders:
 - `src/lib/` — crypto, quiz engine, storage, PDF generator, GitHub registry, anti-cheat
 - `src/quizzes/` — quiz JSON files (one per topic)
 - `src/data/quizMeta.ts` — lightweight catalog for the home page
