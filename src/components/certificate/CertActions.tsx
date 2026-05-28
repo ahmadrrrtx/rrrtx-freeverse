@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type RefObject } from 'react';
 import { Button } from '../atoms/Button';
 import {
   downloadCertificatePDF,
@@ -12,7 +12,14 @@ import type { Certificate as CertificateRecord } from '../../types';
 import { cn } from '../../lib/cn';
 
 interface CertActionsProps {
-  paperEl: HTMLElement | null;
+  /**
+   * Backward-compatible direct element. This can be null during the first render
+   * because refs are assigned after render, so prefer `paperRef` when possible.
+   */
+  paperEl?: HTMLElement | null;
+  /** Live ref to the rendered certificate. Prevents the stale-null bug where
+   * download buttons stay disabled even after the certificate mounts. */
+  paperRef?: RefObject<HTMLElement | null>;
   cert: CertificateRecord;
   baseUrl: string;
 }
@@ -26,16 +33,36 @@ interface CertActionsProps {
  *
  * Mobile: stacks vertically. Desktop: side by side.
  */
-export function CertActions({ paperEl, cert, baseUrl }: CertActionsProps) {
+export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsProps) {
   const [downloadingPdf, setDownloadingPdf] = useState(false);
   const [downloadingJpg, setDownloadingJpg] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  function resolvePaperEl(): HTMLElement | null {
+    // 1. Preferred: live React ref (never stale after mount)
+    if (paperRef?.current) return paperRef.current;
+    // 2. Backward compatible prop
+    if (paperEl) return paperEl;
+    // 3. Last-resort DOM lookup for older pages / hydration timing edge cases
+    return document.getElementById(`cert-export-${cert.id}`)
+      ?? document.getElementById('cert-export')
+      ?? document.getElementById('cert-paper')?.parentElement
+      ?? null;
+  }
+
+  function alertMissingCertificate() {
+    alert('Certificate is still rendering. Please wait a second and try again.');
+  }
+
   async function handleDownloadPDF() {
-    if (!paperEl) return;
+    const target = resolvePaperEl();
+    if (!target) {
+      alertMissingCertificate();
+      return;
+    }
     setDownloadingPdf(true);
     try {
-      await downloadCertificatePDF(paperEl, cert);
+      await downloadCertificatePDF(target, cert);
     } catch (e) {
       console.error(e);
       alert('Failed to generate PDF. Please try again.');
@@ -45,10 +72,14 @@ export function CertActions({ paperEl, cert, baseUrl }: CertActionsProps) {
   }
 
   async function handleDownloadJPG() {
-    if (!paperEl) return;
+    const target = resolvePaperEl();
+    if (!target) {
+      alertMissingCertificate();
+      return;
+    }
     setDownloadingJpg(true);
     try {
-      await downloadCertificateJPG(paperEl, cert);
+      await downloadCertificateJPG(target, cert);
     } catch (e) {
       console.error(e);
       alert('Failed to generate image. Please try again.');
@@ -84,7 +115,6 @@ export function CertActions({ paperEl, cert, baseUrl }: CertActionsProps) {
             cmd
             loading={downloadingPdf}
             onClick={handleDownloadPDF}
-            disabled={!paperEl}
           >
             download-pdf
           </Button>
@@ -94,7 +124,6 @@ export function CertActions({ paperEl, cert, baseUrl }: CertActionsProps) {
             cmd
             loading={downloadingJpg}
             onClick={handleDownloadJPG}
-            disabled={!paperEl}
           >
             download-jpg
           </Button>
