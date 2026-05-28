@@ -67,8 +67,6 @@ export function CertBadge({ size = 120 }: { size?: number }) {
         <g>
           {Array.from({ length: 16 }).map((_, i) => {
             const angle = (i * 22.5) * (Math.PI / 180);
-            const x1 = 120 + Math.cos(angle) * 100;
-            const y1 = 120 + Math.sin(angle) * 100;
             const x2 = 120 + Math.cos(angle) * 112;
             const y2 = 120 + Math.sin(angle) * 112;
             return (
