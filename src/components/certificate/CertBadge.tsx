@@ -12,7 +12,7 @@
  *
  * Inline SVG → scales crisp at any size, embeds in PDF flawlessly.
  */
-export function CertBadge({ size = 120 }: { size?: number }) {
+export function CertBadge({ size = 120 }: { size?: number | string }) {
   return (
     <svg
       viewBox="0 0 240 240"
