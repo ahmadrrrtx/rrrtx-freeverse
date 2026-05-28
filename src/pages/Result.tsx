@@ -164,12 +164,12 @@ function PassedView({
 
         {certData ? (
           <>
-            <div ref={paperRef}>
+            <div ref={paperRef} id={cert ? `cert-export-${cert.id}` : 'cert-export'}>
               <Certificate data={certData} animated />
             </div>
 
             <div className="mt-10">
-              <CertActions paperEl={paperRef.current} cert={cert!} baseUrl={baseUrl} />
+              <CertActions paperRef={paperRef} cert={cert!} baseUrl={baseUrl} />
             </div>
 
             <p className="mt-10 font-mono text-xs text-fg-5 leading-relaxed max-w-md">
