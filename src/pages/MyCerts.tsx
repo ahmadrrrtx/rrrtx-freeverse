@@ -4,7 +4,6 @@ import { PageShell } from '../components/layout/PageShell';
 import { Container } from '../components/atoms/Container';
 import { Button } from '../components/atoms/Button';
 import { StatTile } from '../components/atoms/StatTile';
-import { Pill } from '../components/atoms/Pill';
 import { CertRowCard } from '../components/me/CertRowCard';
 import { AttemptRow } from '../components/me/AttemptRow';
 import { ProfileBar } from '../components/me/ProfileBar';
