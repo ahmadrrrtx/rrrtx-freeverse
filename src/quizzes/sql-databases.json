@@ -1,0 +1,1314 @@
+{
+  "id": "sql-databases",
+  "title": "SQL & Databases",
+  "description": "Query, join, filter, aggregate. The universal language of data.",
+  "category": "Data",
+  "icon": "🗄️",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What SQL is",
+      "questions": [
+        {
+          "id": "sq-001",
+          "q": "What does SQL stand for?",
+          "options": [
+            "Structured Query Language",
+            "Standard Quick Language",
+            "System Query Layer",
+            "Stored Query Library"
+          ],
+          "answer": 0,
+          "explanation": "SQL is the standard language for relational databases. Pronounced 'sequel' or 'S-Q-L' — both are accepted."
+        },
+        {
+          "id": "sq-002",
+          "q": "What is a RELATIONAL DATABASE?",
+          "options": [
+            "A database that organizes data into tables (rows and columns) with defined relationships between them",
+            "A database for storing relationships only",
+            "A database for family trees",
+            "A database with a single table"
+          ],
+          "answer": 0,
+          "explanation": "Tables with rows (records) and columns (fields), plus keys connecting tables. The dominant database model since the 1970s."
+        },
+        {
+          "id": "sq-003",
+          "q": "Which is a TRUE statement about SQL?",
+          "options": [
+            "It is mostly standardized across database engines, with small dialect differences (PostgreSQL, MySQL, SQLite, SQL Server)",
+            "Each database uses a completely different language",
+            "SQL only works in one specific database",
+            "SQL is being replaced by NoSQL"
+          ],
+          "answer": 0,
+          "explanation": "Core SQL is portable. Engine-specific features (window functions, JSON, full-text search) may differ in syntax."
+        },
+        {
+          "id": "sq-004",
+          "q": "Which is a popular OPEN-SOURCE relational database?",
+          "options": [
+            "PostgreSQL (and MySQL, SQLite, MariaDB)",
+            "Microsoft SQL Server",
+            "Oracle Database",
+            "Notion DB"
+          ],
+          "answer": 0,
+          "explanation": "PostgreSQL is the modern open-source favorite. MySQL/MariaDB are common in web stacks. SQLite is perfect for local/embedded use."
+        },
+        {
+          "id": "sq-005",
+          "q": "Why is SQL still HIGHLY relevant in 2026?",
+          "options": [
+            "Most business data still lives in relational databases — every data engineer/analyst/backend dev needs it",
+            "It's deprecated and being removed",
+            "It only works on old systems",
+            "AI replaced it"
+          ],
+          "answer": 0,
+          "explanation": "SQL is one of the most durable skills in tech. AI tools generate SQL, but you still need to read, debug, and verify the queries."
+        }
+      ]
+    },
+    {
+      "topic": "Tables, rows, columns",
+      "questions": [
+        {
+          "id": "sq-006",
+          "q": "What is a TABLE in SQL?",
+          "options": [
+            "A collection of related data organized into rows and columns with a defined schema",
+            "A type of view",
+            "A function",
+            "A backup file"
+          ],
+          "answer": 0,
+          "explanation": "Tables are the fundamental storage unit. Each column has a name and data type; each row represents one record."
+        },
+        {
+          "id": "sq-007",
+          "q": "What is a ROW (record) in a table?",
+          "options": [
+            "A single entry containing one value for each column",
+            "A type of constraint",
+            "A query result",
+            "A backup of the table"
+          ],
+          "answer": 0,
+          "explanation": "Rows ARE the data. A users table has one row per user. Some databases call rows 'records' or 'tuples'."
+        },
+        {
+          "id": "sq-008",
+          "q": "What is a COLUMN (field) in a table?",
+          "options": [
+            "A named attribute with a specific data type that every row in the table can have a value for",
+            "A subset of rows",
+            "A type of join",
+            "A query output"
+          ],
+          "answer": 0,
+          "explanation": "Columns define the structure (schema). Common types: INTEGER, TEXT/VARCHAR, BOOLEAN, DATE, TIMESTAMP, DECIMAL."
+        },
+        {
+          "id": "sq-009",
+          "q": "What is a SCHEMA in SQL?",
+          "options": [
+            "The structure (tables, columns, types, constraints) that defines how data is organized",
+            "A specific row of data",
+            "A type of query",
+            "An error log"
+          ],
+          "answer": 0,
+          "explanation": "Schema design is the most consequential database decision you make — hard to change later when there's millions of rows."
+        },
+        {
+          "id": "sq-010",
+          "q": "What is a NULL value?",
+          "options": [
+            "A special marker meaning 'no value' or 'unknown' — distinct from 0 or empty string",
+            "Equivalent to 0",
+            "Equivalent to an empty string",
+            "An error condition"
+          ],
+          "answer": 0,
+          "explanation": "NULL is famously tricky: NULL = NULL is NULL (not true!). Use IS NULL / IS NOT NULL for comparison."
+        }
+      ]
+    },
+    {
+      "topic": "Basic SELECT",
+      "questions": [
+        {
+          "id": "sq-011",
+          "q": "Which query retrieves all columns from the users table?",
+          "options": [
+            "SELECT * FROM users;",
+            "GET ALL users;",
+            "QUERY users;",
+            "FETCH * users;"
+          ],
+          "answer": 0,
+          "explanation": "* means all columns. Generally avoid SELECT * in production code — list specific columns for clarity, performance, and stability."
+        },
+        {
+          "id": "sq-012",
+          "q": "How do you select SPECIFIC columns?",
+          "options": [
+            "SELECT name, email FROM users;",
+            "SELECT [name, email] FROM users;",
+            "SELECT users.name, users.email;",
+            "SELECT name AND email IN users;"
+          ],
+          "answer": 0,
+          "explanation": "Comma-separated list of column names. Naming the columns makes the query explicit and resistant to schema changes."
+        },
+        {
+          "id": "sq-013",
+          "q": "How do you LIMIT the number of returned rows?",
+          "options": [
+            "SELECT * FROM users LIMIT 10;  (or TOP 10 in SQL Server)",
+            "SELECT 10 * FROM users;",
+            "SELECT * MAX 10 FROM users;",
+            "SELECT * WHERE rows < 10;"
+          ],
+          "answer": 0,
+          "explanation": "LIMIT is standard in MySQL/PostgreSQL/SQLite. SQL Server uses SELECT TOP 10. Useful for paging and exploration."
+        },
+        {
+          "id": "sq-014",
+          "q": "How do you RENAME a column in the query output?",
+          "options": [
+            "SELECT name AS user_name FROM users;",
+            "SELECT name => user_name FROM users;",
+            "SELECT name RENAME user_name;",
+            "SELECT user_name = name FROM users;"
+          ],
+          "answer": 0,
+          "explanation": "AS creates a column alias for the result set. Doesn't change the underlying table. Helpful for joins and computed columns."
+        },
+        {
+          "id": "sq-015",
+          "q": "What does `SELECT DISTINCT category FROM products;` do?",
+          "options": [
+            "Returns each unique category value (deduplicated)",
+            "Returns only the most popular category",
+            "Throws an error",
+            "Returns all categories with duplicates"
+          ],
+          "answer": 0,
+          "explanation": "DISTINCT removes duplicate rows from the result. Powerful for finding the unique values in a column."
+        }
+      ]
+    },
+    {
+      "topic": "WHERE clause",
+      "questions": [
+        {
+          "id": "sq-016",
+          "q": "How do you FILTER rows?",
+          "options": [
+            "SELECT * FROM users WHERE age > 18;",
+            "SELECT * FROM users IF age > 18;",
+            "SELECT * FROM users HAVING age > 18;",
+            "FILTER users BY age > 18;"
+          ],
+          "answer": 0,
+          "explanation": "WHERE filters individual rows BEFORE grouping. HAVING filters AFTER grouping (used with GROUP BY)."
+        },
+        {
+          "id": "sq-017",
+          "q": "Which operator checks if a value is IN a list?",
+          "options": [
+            "WHERE status IN ('active', 'pending')",
+            "WHERE status = ['active', 'pending']",
+            "WHERE status BETWEEN active AND pending",
+            "WHERE status HAS active"
+          ],
+          "answer": 0,
+          "explanation": "IN is cleaner than multiple OR conditions. NOT IN excludes a list (but careful — NOT IN with NULLs has surprising behavior)."
+        },
+        {
+          "id": "sq-018",
+          "q": "What does `WHERE name LIKE 'A%'` do?",
+          "options": [
+            "Matches rows where name starts with 'A' (% is the wildcard for any sequence)",
+            "Matches rows where name is exactly 'A%'",
+            "Matches names with at least one A",
+            "Matches A divided by 100"
+          ],
+          "answer": 0,
+          "explanation": "% = any sequence of characters. _ = exactly one character. Pattern matching is case-sensitive in many databases (use ILIKE in PostgreSQL for case-insensitive)."
+        },
+        {
+          "id": "sq-019",
+          "q": "How do you check for a NULL value?",
+          "options": [
+            "WHERE email IS NULL  (not = NULL!)",
+            "WHERE email = NULL",
+            "WHERE email = ''",
+            "WHERE NOT email"
+          ],
+          "answer": 0,
+          "explanation": "IS NULL / IS NOT NULL are the only correct way. = NULL silently returns no rows (and no error) — the most-asked SQL gotcha."
+        },
+        {
+          "id": "sq-020",
+          "q": "How do you combine multiple conditions?",
+          "options": [
+            "WHERE age > 18 AND country = 'PK'",
+            "WHERE age > 18 & country = 'PK'",
+            "WHERE age > 18 ALSO country = 'PK'",
+            "WHERE age > 18 PLUS country = 'PK'"
+          ],
+          "answer": 0,
+          "explanation": "AND, OR, NOT are SQL's logical operators. Use parentheses when mixing AND/OR to control precedence."
+        }
+      ]
+    },
+    {
+      "topic": "Sorting and ordering",
+      "questions": [
+        {
+          "id": "sq-021",
+          "q": "How do you SORT results?",
+          "options": [
+            "SELECT * FROM users ORDER BY age;",
+            "SELECT * FROM users SORT BY age;",
+            "SORT users BY age;",
+            "SELECT * FROM users WITH age ORDER;"
+          ],
+          "answer": 0,
+          "explanation": "ORDER BY column. Default direction is ascending (ASC). Add DESC for descending: ORDER BY age DESC."
+        },
+        {
+          "id": "sq-022",
+          "q": "How do you sort by MULTIPLE columns?",
+          "options": [
+            "ORDER BY country, age DESC",
+            "ORDER BY country AND age",
+            "ORDER BY country THEN age",
+            "Multiple sorts not allowed"
+          ],
+          "answer": 0,
+          "explanation": "Comma-separated. The first column is the primary sort; subsequent columns break ties. Each can have its own ASC/DESC."
+        },
+        {
+          "id": "sq-023",
+          "q": "Where do NULL values appear in an ORDER BY?",
+          "options": [
+            "Database-dependent — PostgreSQL puts them last by default; you can control with NULLS FIRST/LAST",
+            "Always first",
+            "Always last",
+            "They are excluded automatically"
+          ],
+          "answer": 0,
+          "explanation": "PostgreSQL: NULLS LAST default for ASC, NULLS FIRST for DESC. MySQL: NULLs first in ASC. Always be explicit if it matters."
+        },
+        {
+          "id": "sq-024",
+          "q": "What does `ORDER BY price DESC LIMIT 10` give you?",
+          "options": [
+            "The 10 most expensive items",
+            "The 10 cheapest items",
+            "10 random items",
+            "The first 10 items added"
+          ],
+          "answer": 0,
+          "explanation": "Classic 'top N' pattern. ORDER BY price ASC LIMIT 10 = 10 cheapest. Combine ORDER BY + LIMIT often."
+        },
+        {
+          "id": "sq-025",
+          "q": "How do you PAGINATE results (page 2 of 10 per page)?",
+          "options": [
+            "LIMIT 10 OFFSET 10",
+            "LIMIT 10 SKIP 10",
+            "PAGE 2 SIZE 10",
+            "LIMIT 10-20"
+          ],
+          "answer": 0,
+          "explanation": "OFFSET skips rows. For large datasets, keyset pagination (WHERE id > last_id) outperforms OFFSET dramatically."
+        }
+      ]
+    },
+    {
+      "topic": "Aggregation functions",
+      "questions": [
+        {
+          "id": "sq-026",
+          "q": "Which aggregation COUNTS rows?",
+          "options": [
+            "COUNT(*) — counts all rows; COUNT(column) — counts non-NULL values",
+            "TOTAL()",
+            "SIZE()",
+            "ROWCOUNT()"
+          ],
+          "answer": 0,
+          "explanation": "COUNT(*) is the standard. COUNT(DISTINCT column) counts unique non-NULL values. Most-used aggregate."
+        },
+        {
+          "id": "sq-027",
+          "q": "Which aggregation SUMS values?",
+          "options": [
+            "SUM(amount)",
+            "TOTAL(amount)",
+            "ADD(amount)",
+            "AGGREGATE(amount)"
+          ],
+          "answer": 0,
+          "explanation": "SUM, AVG, MIN, MAX are the core numeric aggregates. They all ignore NULL values automatically."
+        },
+        {
+          "id": "sq-028",
+          "q": "What does AVG return for an empty result?",
+          "options": [
+            "NULL (not 0)",
+            "0",
+            "An error",
+            "Infinity"
+          ],
+          "answer": 0,
+          "explanation": "All aggregates return NULL on empty sets except COUNT (which returns 0). Use COALESCE(AVG(x), 0) for defaults."
+        },
+        {
+          "id": "sq-029",
+          "q": "What does GROUP BY do?",
+          "options": [
+            "Groups rows sharing a value, so aggregations are computed per group",
+            "Sorts rows",
+            "Removes duplicates",
+            "Renames columns"
+          ],
+          "answer": 0,
+          "explanation": "SELECT country, COUNT(*) FROM users GROUP BY country — gives user count per country. The most common SQL analytics pattern."
+        },
+        {
+          "id": "sq-030",
+          "q": "What's the difference between WHERE and HAVING?",
+          "options": [
+            "WHERE filters individual rows BEFORE grouping; HAVING filters groups AFTER grouping",
+            "They are identical",
+            "HAVING is faster",
+            "WHERE is deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Use WHERE for row filters (uses indexes). Use HAVING for filters on aggregates: HAVING COUNT(*) > 10."
+        }
+      ]
+    },
+    {
+      "topic": "Joins",
+      "questions": [
+        {
+          "id": "sq-031",
+          "q": "What is a JOIN in SQL?",
+          "options": [
+            "A clause that combines rows from two or more tables based on a related column",
+            "A type of insert",
+            "A way to merge databases",
+            "A backup operation"
+          ],
+          "answer": 0,
+          "explanation": "Joins are SQL's killer feature. You'll write more JOINs than any other clause in your SQL career."
+        },
+        {
+          "id": "sq-032",
+          "q": "What does an INNER JOIN return?",
+          "options": [
+            "Only rows that have matches in BOTH tables based on the join condition",
+            "All rows from both tables",
+            "All rows from the left table only",
+            "All rows from the right table only"
+          ],
+          "answer": 0,
+          "explanation": "The default and most common join. SELECT u.name, o.total FROM users u INNER JOIN orders o ON u.id = o.user_id."
+        },
+        {
+          "id": "sq-033",
+          "q": "What does a LEFT JOIN do?",
+          "options": [
+            "Returns ALL rows from the left table, plus matching right-table rows (NULL if no match)",
+            "Returns only left-table rows",
+            "Returns only right-table rows",
+            "Excludes all matches"
+          ],
+          "answer": 0,
+          "explanation": "Use LEFT JOIN when you need ALL rows from the main table even if they have no related data — e.g., users with their orders (including users with zero orders)."
+        },
+        {
+          "id": "sq-034",
+          "q": "Which join clause specifies HOW tables relate?",
+          "options": [
+            "ON — e.g., ON users.id = orders.user_id",
+            "WHERE",
+            "MATCH",
+            "RELATE"
+          ],
+          "answer": 0,
+          "explanation": "ON specifies the join condition. WHERE can be added afterward for additional filtering on the joined result."
+        },
+        {
+          "id": "sq-035",
+          "q": "What is a FOREIGN KEY?",
+          "options": [
+            "A column referencing the primary key of another table — enforces referential integrity",
+            "A password",
+            "An external user",
+            "A backup key"
+          ],
+          "answer": 0,
+          "explanation": "Foreign keys keep data consistent. orders.user_id references users.id — you can't insert an order for a user that doesn't exist."
+        }
+      ]
+    },
+    {
+      "topic": "INSERT, UPDATE, DELETE",
+      "questions": [
+        {
+          "id": "sq-036",
+          "q": "How do you INSERT a new row?",
+          "options": [
+            "INSERT INTO users (name, email) VALUES ('Ahmad', 'a@x.com');",
+            "ADD users name='Ahmad';",
+            "CREATE ROW users ...",
+            "PUT users INTO ..."
+          ],
+          "answer": 0,
+          "explanation": "Always name the columns explicitly. Relying on column order is fragile if the schema ever changes."
+        },
+        {
+          "id": "sq-037",
+          "q": "How do you INSERT multiple rows at once?",
+          "options": [
+            "INSERT INTO users (name) VALUES ('A'), ('B'), ('C');",
+            "INSERT MULTIPLE INTO users (name) ...",
+            "Multiple INSERTs are required",
+            "Use bulk_insert()"
+          ],
+          "answer": 0,
+          "explanation": "Multi-row inserts are much faster than many single inserts (less overhead, single transaction)."
+        },
+        {
+          "id": "sq-038",
+          "q": "How do you UPDATE rows?",
+          "options": [
+            "UPDATE users SET email = 'new@x.com' WHERE id = 5;",
+            "MODIFY users email = 'new@x.com' WHERE id = 5;",
+            "SET users.email = 'new@x.com' WHERE id = 5;",
+            "CHANGE users TO email='new@x.com';"
+          ],
+          "answer": 0,
+          "explanation": "ALWAYS include a WHERE clause unless you really mean to update every row. UPDATE without WHERE = entire table modified."
+        },
+        {
+          "id": "sq-039",
+          "q": "What's the BIG RISK with `DELETE FROM users;`?",
+          "options": [
+            "Without a WHERE clause, this deletes EVERY row in the table",
+            "It deletes the table itself",
+            "It only deletes one row",
+            "It backs up the data first automatically"
+          ],
+          "answer": 0,
+          "explanation": "Always test DELETE with SELECT first: SELECT * FROM users WHERE x — verify rows, THEN swap SELECT for DELETE."
+        },
+        {
+          "id": "sq-040",
+          "q": "What's the DIFFERENCE between DELETE and TRUNCATE?",
+          "options": [
+            "DELETE removes rows (one by one, with WHERE); TRUNCATE empties the entire table fast but resets sequences",
+            "They're identical",
+            "TRUNCATE can have WHERE",
+            "DELETE is for tables, TRUNCATE for databases"
+          ],
+          "answer": 0,
+          "explanation": "TRUNCATE is faster but can't be rolled back in some databases. DELETE is logged per-row and supports WHERE."
+        }
+      ]
+    },
+    {
+      "topic": "Primary keys and indexes",
+      "questions": [
+        {
+          "id": "sq-041",
+          "q": "What is a PRIMARY KEY?",
+          "options": [
+            "A column (or set of columns) that uniquely identifies each row in a table",
+            "The first column",
+            "An encryption key",
+            "A backup identifier"
+          ],
+          "answer": 0,
+          "explanation": "Every well-designed table has one. Often an auto-incrementing integer (id) or UUID. Primary keys are automatically indexed."
+        },
+        {
+          "id": "sq-042",
+          "q": "Why use a UNIQUE constraint?",
+          "options": [
+            "Ensures no two rows have the same value for that column (e.g., email)",
+            "Speeds up insertions",
+            "Makes the column required",
+            "Encrypts the column"
+          ],
+          "answer": 0,
+          "explanation": "Use UNIQUE for natural identifiers that aren't the primary key. Common: email, username, slug. Enforced by the database."
+        },
+        {
+          "id": "sq-043",
+          "q": "What is an INDEX in SQL?",
+          "options": [
+            "A data structure that speeds up queries by enabling fast lookups (like a book's index)",
+            "A backup of the table",
+            "A view",
+            "A type of join"
+          ],
+          "answer": 0,
+          "explanation": "Indexes trade write speed and disk space for read speed. Add them to columns you filter, join on, or sort by."
+        },
+        {
+          "id": "sq-044",
+          "q": "When does an index NOT help a query?",
+          "options": [
+            "When the WHERE clause uses a function on the column (e.g., WHERE LOWER(email) = ...)",
+            "When the table is small",
+            "When using SELECT *",
+            "All of the above are partially true"
+          ],
+          "answer": 0,
+          "explanation": "Functions in WHERE prevent index use unless you have a 'functional index' on the same expression."
+        },
+        {
+          "id": "sq-045",
+          "q": "What's the DOWNSIDE of too many indexes?",
+          "options": [
+            "Each index slows down INSERT/UPDATE/DELETE and takes extra disk space",
+            "Indexes have no downsides",
+            "Indexes corrupt data",
+            "Indexes are only theoretical"
+          ],
+          "answer": 0,
+          "explanation": "Index every column you really query, but resist over-indexing. Use EXPLAIN to see which queries actually need indexes."
+        }
+      ]
+    },
+    {
+      "topic": "Data types and constraints",
+      "questions": [
+        {
+          "id": "sq-046",
+          "q": "Which is a COMMON SQL data type?",
+          "options": [
+            "INTEGER, VARCHAR/TEXT, BOOLEAN, DATE, TIMESTAMP, DECIMAL",
+            "object, array, function",
+            "let, const, var",
+            "html, css, js"
+          ],
+          "answer": 0,
+          "explanation": "Picking the right type matters. Use DECIMAL (not FLOAT) for money to avoid floating-point errors."
+        },
+        {
+          "id": "sq-047",
+          "q": "What does NOT NULL do?",
+          "options": [
+            "Constrains a column so it cannot have NULL values — every row MUST have a value",
+            "Adds a default value",
+            "Makes the column auto-incrementing",
+            "Encrypts the column"
+          ],
+          "answer": 0,
+          "explanation": "Apply NOT NULL liberally. NULL is hard to handle correctly. If a value is required, enforce it at the database level."
+        },
+        {
+          "id": "sq-048",
+          "q": "What does DEFAULT do?",
+          "options": [
+            "Sets a value to use when none is provided on INSERT (e.g., DEFAULT NOW() for timestamps)",
+            "Makes the column required",
+            "Drops the column",
+            "Creates an index"
+          ],
+          "answer": 0,
+          "explanation": "Common pattern: created_at TIMESTAMP DEFAULT NOW(). The DB handles it automatically on insert."
+        },
+        {
+          "id": "sq-049",
+          "q": "What's the difference between VARCHAR(n) and TEXT?",
+          "options": [
+            "VARCHAR has a length limit; TEXT can hold unlimited (or very large) text — depends on the database engine",
+            "TEXT is faster",
+            "VARCHAR is for numbers",
+            "They're identical"
+          ],
+          "answer": 0,
+          "explanation": "In PostgreSQL the performance difference is negligible. In MySQL, VARCHAR is generally preferred for short strings."
+        },
+        {
+          "id": "sq-050",
+          "q": "What does CHECK do?",
+          "options": [
+            "Constrains a column to only allow values matching a condition (e.g., CHECK (age >= 0))",
+            "Verifies the entire table for errors",
+            "Backs up the column",
+            "Comments on the column"
+          ],
+          "answer": 0,
+          "explanation": "Database-level validation. Stronger than application-level checks because no buggy app code can violate it."
+        }
+      ]
+    },
+    {
+      "topic": "Subqueries and CTEs",
+      "questions": [
+        {
+          "id": "sq-051",
+          "q": "What is a SUBQUERY?",
+          "options": [
+            "A query nested inside another query — its result is used by the outer query",
+            "A query that runs offline",
+            "A type of join",
+            "A stored procedure"
+          ],
+          "answer": 0,
+          "explanation": "SELECT * FROM users WHERE id IN (SELECT user_id FROM orders WHERE total > 100). Powerful but can be hard to read."
+        },
+        {
+          "id": "sq-052",
+          "q": "What is a CTE (Common Table Expression)?",
+          "options": [
+            "A named temporary result set defined with WITH, usable in the main query — more readable than nested subqueries",
+            "A type of table",
+            "A copy of the table",
+            "A stored function"
+          ],
+          "answer": 0,
+          "explanation": "WITH active_users AS (SELECT...) SELECT * FROM active_users. CTEs make complex queries dramatically more readable."
+        },
+        {
+          "id": "sq-053",
+          "q": "When should you PREFER a CTE over a subquery?",
+          "options": [
+            "For complex queries, repeated subexpressions, or when readability matters",
+            "Never — subqueries are always better",
+            "Only on weekends",
+            "Only in MySQL"
+          ],
+          "answer": 0,
+          "explanation": "CTEs are essentially named subqueries. The named structure helps you (and others) understand the query intent at a glance."
+        },
+        {
+          "id": "sq-054",
+          "q": "What is a RECURSIVE CTE used for?",
+          "options": [
+            "Querying hierarchical/tree data — e.g., organizational charts, comment trees, category trees",
+            "Loops in SQL",
+            "Backups",
+            "Indexing"
+          ],
+          "answer": 0,
+          "explanation": "WITH RECURSIVE handles parent-child trees elegantly. Most modern databases support it."
+        },
+        {
+          "id": "sq-055",
+          "q": "What does EXISTS check?",
+          "options": [
+            "Whether a subquery returns ANY rows — efficient for 'does X exist?' checks",
+            "Whether a column exists in the table",
+            "Whether the table exists",
+            "Whether the database exists"
+          ],
+          "answer": 0,
+          "explanation": "EXISTS short-circuits at the first match — often faster than COUNT(*) > 0 for the same purpose."
+        }
+      ]
+    },
+    {
+      "topic": "Window functions",
+      "questions": [
+        {
+          "id": "sq-056",
+          "q": "What is a WINDOW FUNCTION?",
+          "options": [
+            "A function that computes across a set of rows (a 'window') without collapsing them like GROUP BY",
+            "A function that opens a window",
+            "A backup function",
+            "A type of subquery"
+          ],
+          "answer": 0,
+          "explanation": "Window functions are the most powerful SQL feature most beginners haven't learned. Game-changer for analytics."
+        },
+        {
+          "id": "sq-057",
+          "q": "What does ROW_NUMBER() OVER (ORDER BY ...) do?",
+          "options": [
+            "Assigns a sequential number to each row based on the ordering",
+            "Counts rows in the table",
+            "Returns a random number",
+            "Returns the row's primary key"
+          ],
+          "answer": 0,
+          "explanation": "ROW_NUMBER is great for 'find the top N per group' queries combined with PARTITION BY."
+        },
+        {
+          "id": "sq-058",
+          "q": "What does PARTITION BY do in a window function?",
+          "options": [
+            "Computes the window function SEPARATELY within each group, but doesn't collapse rows",
+            "Splits the database into partitions",
+            "Same as GROUP BY",
+            "Creates indexes"
+          ],
+          "answer": 0,
+          "explanation": "PARTITION BY category ORDER BY price DESC → ranks within each category, but returns all rows. Hugely useful."
+        },
+        {
+          "id": "sq-059",
+          "q": "What does RANK() do?",
+          "options": [
+            "Assigns ranks with ties getting the same rank, leaving gaps (1, 2, 2, 4)",
+            "Sorts the table",
+            "Counts ranks",
+            "Returns the primary key"
+          ],
+          "answer": 0,
+          "explanation": "DENSE_RANK doesn't leave gaps (1, 2, 2, 3). Use RANK for sports/competition; DENSE_RANK for grouping consecutive groups."
+        },
+        {
+          "id": "sq-060",
+          "q": "What does LAG() do?",
+          "options": [
+            "Returns a value from a PREVIOUS row — great for comparing each row to the row before it",
+            "Slows down the query",
+            "Delays execution",
+            "Returns the latest row"
+          ],
+          "answer": 0,
+          "explanation": "LAG(price) OVER (ORDER BY date) shows the previous row's price → easy day-over-day deltas. LEAD does the opposite (next row)."
+        }
+      ]
+    },
+    {
+      "topic": "Transactions",
+      "questions": [
+        {
+          "id": "sq-061",
+          "q": "What is a TRANSACTION?",
+          "options": [
+            "A group of SQL statements treated as one unit — all succeed or all fail together (atomicity)",
+            "A single SQL statement",
+            "A type of payment",
+            "A network request"
+          ],
+          "answer": 0,
+          "explanation": "Transactions ensure data consistency. Classic example: transferring money — debit and credit must both succeed or both fail."
+        },
+        {
+          "id": "sq-062",
+          "q": "What does ACID stand for in databases?",
+          "options": [
+            "Atomicity, Consistency, Isolation, Durability",
+            "Accuracy, Compactness, Identity, Distribution",
+            "Async, Cached, Indexed, Distributed",
+            "Available, Consistent, Indexed, Distributed"
+          ],
+          "answer": 0,
+          "explanation": "ACID is the gold standard for transactional databases. Relational DBs are designed around these guarantees."
+        },
+        {
+          "id": "sq-063",
+          "q": "How do you start a transaction?",
+          "options": [
+            "BEGIN; (or START TRANSACTION;)",
+            "TRANSACTION;",
+            "OPEN TRANSACTION;",
+            "Transactions are automatic"
+          ],
+          "answer": 0,
+          "explanation": "Then run your statements, then COMMIT (save) or ROLLBACK (undo all changes since BEGIN)."
+        },
+        {
+          "id": "sq-064",
+          "q": "When does data become PERMANENT in a transaction?",
+          "options": [
+            "After COMMIT — until then changes are visible only to your transaction",
+            "Immediately on each statement",
+            "When the connection closes",
+            "Never"
+          ],
+          "answer": 0,
+          "explanation": "Auto-commit is on by default in many tools (every statement is its own transaction). Wrap related operations in BEGIN/COMMIT for safety."
+        },
+        {
+          "id": "sq-065",
+          "q": "What is a 'race condition' in databases?",
+          "options": [
+            "When concurrent transactions interact unexpectedly, leading to incorrect results",
+            "When queries run faster than expected",
+            "When two databases compete",
+            "When indexes race to update"
+          ],
+          "answer": 0,
+          "explanation": "Race conditions are why we have transactions and isolation levels. Always wrap multi-step modifications in a transaction."
+        }
+      ]
+    },
+    {
+      "topic": "Database design basics",
+      "questions": [
+        {
+          "id": "sq-066",
+          "q": "What is database NORMALIZATION?",
+          "options": [
+            "Organizing data to reduce redundancy and improve integrity (typically through forms 1NF, 2NF, 3NF)",
+            "Making all tables the same size",
+            "Standardizing column names",
+            "Backing up the database"
+          ],
+          "answer": 0,
+          "explanation": "Normalization avoids storing the same data in multiple places. 3NF is the practical sweet spot for most apps."
+        },
+        {
+          "id": "sq-067",
+          "q": "What's a ONE-TO-MANY relationship?",
+          "options": [
+            "One row in table A relates to many rows in table B (e.g., one user has many orders)",
+            "One row maps to one row",
+            "Many rows to one row",
+            "All rows are related"
+          ],
+          "answer": 0,
+          "explanation": "Implemented via a foreign key on the 'many' side pointing to the 'one' side. Most common relationship type."
+        },
+        {
+          "id": "sq-068",
+          "q": "What's a MANY-TO-MANY relationship?",
+          "options": [
+            "Both sides relate to multiple of each other — implemented with a JUNCTION TABLE in between",
+            "An impossible relationship",
+            "A one-to-many in reverse",
+            "A self-join"
+          ],
+          "answer": 0,
+          "explanation": "Students <-> Courses: a junction table 'enrollments' with student_id and course_id columns. Classic database pattern."
+        },
+        {
+          "id": "sq-069",
+          "q": "When is DENORMALIZATION appropriate?",
+          "options": [
+            "When read performance is critical and the cost of duplicated data is acceptable (often in analytics/reporting tables)",
+            "Always — denormalization is always better",
+            "Never",
+            "Only for small databases"
+          ],
+          "answer": 0,
+          "explanation": "Normalize for transactional systems; denormalize for analytical/reporting workloads. Each has tradeoffs."
+        },
+        {
+          "id": "sq-070",
+          "q": "What's a JUNCTION TABLE?",
+          "options": [
+            "A table connecting two others to model many-to-many relationships (also called bridge/link/join table)",
+            "A backup table",
+            "The first table in the database",
+            "A type of view"
+          ],
+          "answer": 0,
+          "explanation": "Junction tables often have just two foreign keys, sometimes plus metadata (e.g., enrollment_date, role, etc.)."
+        }
+      ]
+    },
+    {
+      "topic": "Performance and query optimization",
+      "questions": [
+        {
+          "id": "sq-071",
+          "q": "What does EXPLAIN do?",
+          "options": [
+            "Shows how the database PLANS to execute your query — essential for performance tuning",
+            "Runs the query in slow motion",
+            "Returns a documentation page",
+            "Generates a backup"
+          ],
+          "answer": 0,
+          "explanation": "EXPLAIN reveals which indexes are used, join methods, and estimated row counts. EXPLAIN ANALYZE actually runs and times the query."
+        },
+        {
+          "id": "sq-072",
+          "q": "Why is `SELECT *` discouraged in production?",
+          "options": [
+            "Returns more data than needed, harms performance, and breaks if schema changes",
+            "It's deprecated",
+            "It causes errors",
+            "It's a syntax error"
+          ],
+          "answer": 0,
+          "explanation": "Always list specific columns. Better performance, clearer intent, and stable when columns are added."
+        },
+        {
+          "id": "sq-073",
+          "q": "What's a SLOW QUERY?",
+          "options": [
+            "A query taking too long — usually because it scans large tables without using indexes",
+            "A query with many words",
+            "A query during peak hours",
+            "Any query over 1ms"
+          ],
+          "answer": 0,
+          "explanation": "Most databases have a 'slow query log'. Watch it. Optimize the slowest, most-frequent queries first."
+        },
+        {
+          "id": "sq-074",
+          "q": "What's a COMMON cause of slow JOINs?",
+          "options": [
+            "Missing index on the foreign key / join column",
+            "Too few rows",
+            "Sorting alphabetically",
+            "Using column aliases"
+          ],
+          "answer": 0,
+          "explanation": "Always index your foreign keys. Most databases don't automatically index FK columns (PostgreSQL doesn't, surprisingly)."
+        },
+        {
+          "id": "sq-075",
+          "q": "What is 'N+1 queries'?",
+          "options": [
+            "An anti-pattern where code runs 1 query then N additional queries (often hidden in ORMs)",
+            "A SQL operator",
+            "A type of join",
+            "A backup strategy"
+          ],
+          "answer": 0,
+          "explanation": "Fetching a list and then making one query per item adds up fast. Use JOINs or eager loading instead. Famous ORM gotcha."
+        }
+      ]
+    },
+    {
+      "topic": "NoSQL and alternatives",
+      "questions": [
+        {
+          "id": "sq-076",
+          "q": "What is NoSQL?",
+          "options": [
+            "Non-relational databases (document, key-value, graph, column-family) designed for different access patterns",
+            "A type of relational database",
+            "A NoSQL stands for No Standard Query Language",
+            "Free databases only"
+          ],
+          "answer": 0,
+          "explanation": "NoSQL = 'Not Only SQL'. Best for flexible schemas, massive scale, or specific access patterns. SQL is still mostly the right default."
+        },
+        {
+          "id": "sq-077",
+          "q": "Which is a popular DOCUMENT database?",
+          "options": [
+            "MongoDB (stores JSON-like documents)",
+            "PostgreSQL",
+            "MySQL",
+            "Microsoft SQL Server"
+          ],
+          "answer": 0,
+          "explanation": "Documents are good for schema-flexible data. Modern relational DBs (PostgreSQL) handle JSON well too — narrowing the gap."
+        },
+        {
+          "id": "sq-078",
+          "q": "Which is a popular KEY-VALUE store?",
+          "options": [
+            "Redis (in-memory, blazing fast — used for caching, sessions, queues)",
+            "PostgreSQL",
+            "MongoDB",
+            "SQLite"
+          ],
+          "answer": 0,
+          "explanation": "Redis is THE caching layer for modern web apps. Sub-millisecond reads. Also doubles as pub/sub and a job queue."
+        },
+        {
+          "id": "sq-079",
+          "q": "When might NoSQL be a BETTER choice than SQL?",
+          "options": [
+            "Massive horizontal scaling, very flexible schema, or specific access patterns (graphs, time-series)",
+            "Always — NoSQL is always better",
+            "Never — SQL is always better",
+            "Only for small datasets"
+          ],
+          "answer": 0,
+          "explanation": "Use SQL as the default. Move to NoSQL only when you have a specific need that relational databases handle poorly."
+        },
+        {
+          "id": "sq-080",
+          "q": "What does CAP theorem say?",
+          "options": [
+            "A distributed system can guarantee only 2 of: Consistency, Availability, Partition tolerance",
+            "All distributed systems are perfect",
+            "Databases can't be distributed",
+            "All databases must use SQL"
+          ],
+          "answer": 0,
+          "explanation": "CAP guides distributed system design. Most modern systems prioritize different properties for different use cases (BASE, eventual consistency)."
+        }
+      ]
+    },
+    {
+      "topic": "Security basics",
+      "questions": [
+        {
+          "id": "sq-081",
+          "q": "What is SQL INJECTION?",
+          "options": [
+            "An attack where user input is treated as SQL code, letting attackers run arbitrary queries",
+            "Injecting data into the database",
+            "A backup vulnerability",
+            "A type of join"
+          ],
+          "answer": 0,
+          "explanation": "Top 10 web vulnerability for 25+ years. xkcd 327 (Bobby Tables) is the canonical illustration of why it matters."
+        },
+        {
+          "id": "sq-082",
+          "q": "How do you PREVENT SQL injection?",
+          "options": [
+            "Use parameterized queries / prepared statements — NEVER concatenate user input into SQL strings",
+            "Validate input length only",
+            "Add WHERE clauses",
+            "Use HTTPS"
+          ],
+          "answer": 0,
+          "explanation": "Parameterized queries pass values separately from the SQL text. The database never confuses them. This single practice eliminates SQL injection."
+        },
+        {
+          "id": "sq-083",
+          "q": "Why shouldn't you store passwords as PLAIN TEXT in a database?",
+          "options": [
+            "If the database is breached, all passwords are exposed — use a strong hash like bcrypt or Argon2 instead",
+            "It takes too much space",
+            "Plain text is too fast",
+            "It's a syntax error"
+          ],
+          "answer": 0,
+          "explanation": "NEVER plain text. NEVER MD5/SHA1 (too fast for password attacks). Use bcrypt, scrypt, or Argon2. Salted."
+        },
+        {
+          "id": "sq-084",
+          "q": "What is the PRINCIPLE OF LEAST PRIVILEGE for databases?",
+          "options": [
+            "Give each app/user only the minimum DB permissions they need (no DROP TABLE for a read-only API)",
+            "Always grant all permissions",
+            "Use the root user for everything",
+            "Avoid users entirely"
+          ],
+          "answer": 0,
+          "explanation": "Limit blast radius. A compromised read-only API can't damage data. App users should NEVER have schema-modification rights."
+        },
+        {
+          "id": "sq-085",
+          "q": "What's a SAFE way to manage database credentials?",
+          "options": [
+            "Environment variables or a secrets manager — NEVER commit them to git",
+            "Hardcode them in the source code",
+            "Send them via email",
+            "Store them in a public README"
+          ],
+          "answer": 0,
+          "explanation": "Secrets in code is one of the most common breach causes. Use .env (gitignored), AWS Secrets Manager, Doppler, etc."
+        }
+      ]
+    },
+    {
+      "topic": "Modern database trends",
+      "questions": [
+        {
+          "id": "sq-086",
+          "q": "What is a SERVERLESS database?",
+          "options": [
+            "A managed database that automatically scales without provisioning servers (e.g., Neon, PlanetScale, Supabase)",
+            "A database with no server at all",
+            "A NoSQL database",
+            "A database that runs in the browser"
+          ],
+          "answer": 0,
+          "explanation": "Serverless databases scale to zero and bill per usage. Massive trend for indie devs and startups: Neon, PlanetScale, Turso."
+        },
+        {
+          "id": "sq-087",
+          "q": "What is an ORM?",
+          "options": [
+            "Object-Relational Mapper — translates between database tables and code objects (Prisma, SQLAlchemy, Django ORM)",
+            "A type of database",
+            "An optimization tool",
+            "A backup format"
+          ],
+          "answer": 0,
+          "explanation": "ORMs save boilerplate. But: hide query details, can produce slow queries, and don't replace SQL knowledge — always learn raw SQL too."
+        },
+        {
+          "id": "sq-088",
+          "q": "What is a 'migration' in databases?",
+          "options": [
+            "A version-controlled change to the database schema, applied in order across environments",
+            "Moving data between countries",
+            "Backing up the database",
+            "Switching database vendors"
+          ],
+          "answer": 0,
+          "explanation": "Migration tools (Flyway, Alembic, Prisma Migrate) make schema changes safe and reproducible. Essential for team workflows."
+        },
+        {
+          "id": "sq-089",
+          "q": "What's a vector database used for?",
+          "options": [
+            "Storing and searching high-dimensional vectors (embeddings) for AI similarity search",
+            "Storing arrows",
+            "Math operations",
+            "Geographic data"
+          ],
+          "answer": 0,
+          "explanation": "Vector DBs (Pinecone, Weaviate, pgvector) power RAG, semantic search, recommendation. Critical infrastructure for modern AI apps."
+        },
+        {
+          "id": "sq-090",
+          "q": "What is SQLite often used for?",
+          "options": [
+            "Embedded local databases — every smartphone, browser, and many apps ship with it",
+            "Only large servers",
+            "Cloud databases",
+            "Vector databases"
+          ],
+          "answer": 0,
+          "explanation": "SQLite is the most-deployed database in the world. Zero config, single file. Perfect for local apps, prototypes, and even production read-heavy workloads (with tools like Litestream)."
+        }
+      ]
+    },
+    {
+      "topic": "Best practices",
+      "questions": [
+        {
+          "id": "sq-091",
+          "q": "What's a GOOD column naming convention?",
+          "options": [
+            "snake_case lowercase: created_at, user_id (consistent, portable, readable)",
+            "CAMELCASE everywhere",
+            "Spaces in column names",
+            "Reserved words"
+          ],
+          "answer": 0,
+          "explanation": "snake_case is the prevailing SQL standard. Avoid reserved words (user, order — they require quoting and confuse readers)."
+        },
+        {
+          "id": "sq-092",
+          "q": "Which is a HEALTHY rule about database backups?",
+          "options": [
+            "Automate them, test the restore process regularly, and keep multiple recent + older copies",
+            "Backups aren't needed",
+            "Manual once a year is enough",
+            "Store backups on the same server"
+          ],
+          "answer": 0,
+          "explanation": "A backup you've never tested restoring is not a backup. Practice your disaster recovery before you need it."
+        },
+        {
+          "id": "sq-093",
+          "q": "Why is keeping production data OUT of dev environments important?",
+          "options": [
+            "Privacy (real user data in dev exposes them to breaches and developer access), compliance, and reduces blast radius",
+            "Performance",
+            "Cost",
+            "Simplicity"
+          ],
+          "answer": 0,
+          "explanation": "Use anonymized or synthetic data in dev/staging. Touching real PII in dev is a privacy/regulatory minefield."
+        },
+        {
+          "id": "sq-094",
+          "q": "Which is a SMART approach to writing complex SQL?",
+          "options": [
+            "Use CTEs, format with indentation, comment intent, and test incrementally with small datasets first",
+            "Write everything as a giant subquery",
+            "Never use comments",
+            "Skip testing"
+          ],
+          "answer": 0,
+          "explanation": "Future you (and your team) will thank you. SQL is read more than written — invest in clarity."
+        },
+        {
+          "id": "sq-095",
+          "q": "What's the GOLDEN RULE for destructive operations?",
+          "options": [
+            "Always test with SELECT first, run in a transaction, and have a backup before UPDATE/DELETE on large datasets",
+            "Just run it and see what happens",
+            "Skip backups for speed",
+            "Always use TRUNCATE"
+          ],
+          "answer": 0,
+          "explanation": "Every senior dev has a horror story about an accidental wide-scope UPDATE/DELETE. Verify first, always."
+        }
+      ]
+    },
+    {
+      "topic": "Getting better at SQL",
+      "questions": [
+        {
+          "id": "sq-096",
+          "q": "What's the BEST way to learn SQL deeply?",
+          "options": [
+            "Work with real data — connect to a database, run real queries, optimize slow ones",
+            "Memorize syntax",
+            "Only read books",
+            "Avoid hands-on practice"
+          ],
+          "answer": 0,
+          "explanation": "SQL Zoo, PostgreSQL Tutorial, Mode Analytics SQL Tutorial, and LeetCode SQL section are great hands-on starting points."
+        },
+        {
+          "id": "sq-097",
+          "q": "Which SQL skill makes you most VALUABLE in the job market?",
+          "options": [
+            "Comfortable with JOINs, window functions, CTEs, and reading EXPLAIN output",
+            "Memorizing all built-in functions",
+            "Knowing every dialect detail",
+            "Avoiding all complex queries"
+          ],
+          "answer": 0,
+          "explanation": "Most professional SQL work = joins + aggregations + window functions + understanding performance. Master those four."
+        },
+        {
+          "id": "sq-098",
+          "q": "How can AI help you LEARN SQL?",
+          "options": [
+            "Explain queries you don't understand, suggest optimizations, generate sample data — but always verify the SQL it writes",
+            "Have AI run your production queries",
+            "Blindly trust AI-generated SQL",
+            "Avoid AI for SQL"
+          ],
+          "answer": 0,
+          "explanation": "AI is great at explaining complex queries and generating starting points. ALWAYS verify with EXPLAIN and small data first."
+        },
+        {
+          "id": "sq-099",
+          "q": "Which is a STRONG project to practice SQL?",
+          "options": [
+            "Pick a public dataset (Kaggle, government open data), import it, and answer real questions about it",
+            "Memorize SELECT statements",
+            "Skip practice",
+            "Read database textbooks only"
+          ],
+          "answer": 0,
+          "explanation": "Real datasets surface real complexity: dirty data, missing values, complex joins, performance questions. Best teacher."
+        },
+        {
+          "id": "sq-100",
+          "q": "What's the MOST important meta-skill in working with databases?",
+          "options": [
+            "Caring deeply about data integrity, performance, and security — small mistakes have big consequences at scale",
+            "Memorizing SQL",
+            "Avoiding writes",
+            "Working alone"
+          ],
+          "answer": 0,
+          "explanation": "Databases ARE the source of truth. Mistakes lose data, leak privacy, or crash businesses. Respect them; act carefully."
+        }
+      ]
+    }
+  ]
+}

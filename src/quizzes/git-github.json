@@ -1,0 +1,1314 @@
+{
+  "id": "git-github",
+  "title": "Git & GitHub Workflow",
+  "description": "Version control basics every developer must master. Branches, PRs, conflicts.",
+  "category": "Web Dev",
+  "icon": "🐙",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What Git is",
+      "questions": [
+        {
+          "id": "gg-001",
+          "q": "What is Git?",
+          "options": [
+            "A distributed version control system for tracking changes in code over time",
+            "A cloud hosting service",
+            "A programming language",
+            "A code editor"
+          ],
+          "answer": 0,
+          "explanation": "Git tracks every change you make, lets you undo, branch, collaborate, and recover work that would otherwise be lost."
+        },
+        {
+          "id": "gg-002",
+          "q": "What's the DIFFERENCE between Git and GitHub?",
+          "options": [
+            "Git is the version control tool that runs locally; GitHub is a cloud service that hosts Git repositories",
+            "They are identical",
+            "GitHub created Git",
+            "Git only works with GitHub"
+          ],
+          "answer": 0,
+          "explanation": "Other Git hosts exist: GitLab, Bitbucket, Codeberg. Git itself is open source and works without any cloud service."
+        },
+        {
+          "id": "gg-003",
+          "q": "Why is Git called 'distributed'?",
+          "options": [
+            "Every developer has a full copy of the entire repository history, not just the current files",
+            "It works on distributed cloud servers",
+            "It distributes code automatically to users",
+            "Multiple people edit the same file simultaneously"
+          ],
+          "answer": 0,
+          "explanation": "You can commit, branch, view history, and revert entirely offline. The 'remote' is just one more copy of the repo."
+        },
+        {
+          "id": "gg-004",
+          "q": "Who created Git, and why?",
+          "options": [
+            "Linus Torvalds in 2005 to manage Linux kernel development after a licensing dispute with the previous tool",
+            "Microsoft as a paid product",
+            "GitHub built it in 2008",
+            "Google created it for Android"
+          ],
+          "answer": 0,
+          "explanation": "Git was built by the creator of Linux himself, specifically to handle Linux's massive distributed development. Built in 2 weeks."
+        },
+        {
+          "id": "gg-005",
+          "q": "What's the BIGGEST reason every developer needs to know Git?",
+          "options": [
+            "It's the universal standard for collaborating on code in essentially every modern company and open-source project",
+            "It's a fun puzzle",
+            "It compresses files",
+            "It's required by browsers"
+          ],
+          "answer": 0,
+          "explanation": "Not knowing Git in 2026 is like not knowing email. It's a baseline professional skill."
+        }
+      ]
+    },
+    {
+      "topic": "Repositories and initialization",
+      "questions": [
+        {
+          "id": "gg-006",
+          "q": "What is a 'repository' (repo) in Git?",
+          "options": [
+            "A folder containing your project + a hidden .git folder that stores its complete version history",
+            "A remote server",
+            "A type of file",
+            "A GitHub account"
+          ],
+          "answer": 0,
+          "explanation": "The .git folder IS the version control. Delete it and you have a regular folder. Don't delete it."
+        },
+        {
+          "id": "gg-007",
+          "q": "Which command initializes Git tracking in a folder?",
+          "options": [
+            "git init",
+            "git start",
+            "git create",
+            "git new"
+          ],
+          "answer": 0,
+          "explanation": "Run once in a new project folder. Creates the .git directory and begins tracking. Adding existing files requires git add."
+        },
+        {
+          "id": "gg-008",
+          "q": "Which command downloads an existing remote repository to your computer?",
+          "options": [
+            "git clone <url>",
+            "git download <url>",
+            "git get <url>",
+            "git fetch <url>"
+          ],
+          "answer": 0,
+          "explanation": "git clone creates a local copy of a remote repo, sets up the 'origin' remote, and checks out the default branch."
+        },
+        {
+          "id": "gg-009",
+          "q": "What's inside the .git folder?",
+          "options": [
+            "All commits, branches, refs, configs — the complete history of the repository",
+            "Backup copies of your files",
+            "Just configuration",
+            "Nothing important"
+          ],
+          "answer": 0,
+          "explanation": "Never edit .git manually. Use Git commands. Corrupting .git can lose your history."
+        },
+        {
+          "id": "gg-010",
+          "q": "How do you check if a folder is a Git repo?",
+          "options": [
+            "Run `git status` — it errors if not a repo, or shows status if it is",
+            "Look for .git folder manually",
+            "Try git pull",
+            "Run git init"
+          ],
+          "answer": 0,
+          "explanation": "git status is the most-used Git command. It tells you what's changed, staged, and the current branch."
+        }
+      ]
+    },
+    {
+      "topic": "Staging and committing",
+      "questions": [
+        {
+          "id": "gg-011",
+          "q": "What is the 'staging area' (index) in Git?",
+          "options": [
+            "A holding zone where you assemble exactly which changes go into your next commit",
+            "A cloud storage area",
+            "A type of branch",
+            "A temporary backup"
+          ],
+          "answer": 0,
+          "explanation": "Staging lets you commit only the changes you want, even if you've edited many files. Power feature of Git."
+        },
+        {
+          "id": "gg-012",
+          "q": "Which command stages a file for the next commit?",
+          "options": [
+            "git add file.txt",
+            "git stage file.txt",
+            "git commit file.txt",
+            "git save file.txt"
+          ],
+          "answer": 0,
+          "explanation": "git add . stages everything in the current directory. git add -p (patch) stages by hunk for precision."
+        },
+        {
+          "id": "gg-013",
+          "q": "Which command creates a commit from staged changes?",
+          "options": [
+            "git commit -m 'message'",
+            "git save 'message'",
+            "git push 'message'",
+            "git create 'message'"
+          ],
+          "answer": 0,
+          "explanation": "-m provides the message inline. Without -m, Git opens your editor for a longer message."
+        },
+        {
+          "id": "gg-014",
+          "q": "What's a GOOD commit message?",
+          "options": [
+            "Concise present-tense summary of what changed and why: 'Add user login form' or 'Fix off-by-one in pagination'",
+            "Just 'fix' or 'update'",
+            "An empty message",
+            "The entire diff pasted in"
+          ],
+          "answer": 0,
+          "explanation": "Future you (and your team) will thank you. Conventional Commits (feat:, fix:, docs:) is a popular formal standard."
+        },
+        {
+          "id": "gg-015",
+          "q": "What does `git commit -am 'msg'` do?",
+          "options": [
+            "Stages all TRACKED modified files AND commits them in one step (skips git add for tracked files)",
+            "Adds all untracked files",
+            "Forces a commit even if nothing changed",
+            "Commits with an automatic message"
+          ],
+          "answer": 0,
+          "explanation": "Shortcut for routine commits. Note: -a only stages modifications to tracked files; new files still need git add."
+        }
+      ]
+    },
+    {
+      "topic": "Viewing changes and history",
+      "questions": [
+        {
+          "id": "gg-016",
+          "q": "Which command shows the COMMIT HISTORY?",
+          "options": [
+            "git log",
+            "git history",
+            "git past",
+            "git commits"
+          ],
+          "answer": 0,
+          "explanation": "git log --oneline gives a compact view. git log --graph --all shows branch topology visually."
+        },
+        {
+          "id": "gg-017",
+          "q": "Which command shows UNSTAGED changes (what you've edited but not git added)?",
+          "options": [
+            "git diff",
+            "git changes",
+            "git status -d",
+            "git compare"
+          ],
+          "answer": 0,
+          "explanation": "git diff (unstaged), git diff --staged (staged but not committed), git diff HEAD (everything since last commit)."
+        },
+        {
+          "id": "gg-018",
+          "q": "Which command shows what files have been modified, staged, or untracked?",
+          "options": [
+            "git status",
+            "git show",
+            "git list",
+            "git current"
+          ],
+          "answer": 0,
+          "explanation": "Your most-used Git command. Run it before every commit to know exactly what you're about to commit."
+        },
+        {
+          "id": "gg-019",
+          "q": "How do you see what changed in a SPECIFIC commit?",
+          "options": [
+            "git show <commit-hash>",
+            "git log <commit-hash>",
+            "git diff <commit-hash>",
+            "git view <commit-hash>"
+          ],
+          "answer": 0,
+          "explanation": "Shows the commit message, author, date, and full diff. The hash can be the first 7+ characters."
+        },
+        {
+          "id": "gg-020",
+          "q": "What is a 'commit hash' (SHA)?",
+          "options": [
+            "A unique fingerprint (40-char hex) identifying each commit — derived from the commit's content",
+            "A password",
+            "A file name",
+            "A user ID"
+          ],
+          "answer": 0,
+          "explanation": "The same content always produces the same hash. Hashes are how Git tracks commits internally."
+        }
+      ]
+    },
+    {
+      "topic": "Branches",
+      "questions": [
+        {
+          "id": "gg-021",
+          "q": "What is a Git BRANCH?",
+          "options": [
+            "A movable pointer to a commit, allowing parallel lines of development",
+            "A separate folder",
+            "A backup of the repo",
+            "A type of file"
+          ],
+          "answer": 0,
+          "explanation": "Branches are lightweight in Git — just a pointer. Create them freely. They're the foundation of collaborative workflows."
+        },
+        {
+          "id": "gg-022",
+          "q": "What's the default branch name in most modern repos?",
+          "options": [
+            "main (older repos use 'master')",
+            "trunk",
+            "develop",
+            "default"
+          ],
+          "answer": 0,
+          "explanation": "GitHub, GitLab, and most communities adopted 'main' as the default starting in 2020."
+        },
+        {
+          "id": "gg-023",
+          "q": "Which command creates AND switches to a new branch?",
+          "options": [
+            "git checkout -b feature-x  (or modern: git switch -c feature-x)",
+            "git branch new feature-x",
+            "git create feature-x",
+            "git new-branch feature-x"
+          ],
+          "answer": 0,
+          "explanation": "The newer git switch command (introduced 2019) is clearer than the overloaded git checkout. Both still work."
+        },
+        {
+          "id": "gg-024",
+          "q": "Which command switches to an EXISTING branch?",
+          "options": [
+            "git checkout branch-name  (or modern: git switch branch-name)",
+            "git change branch-name",
+            "git use branch-name",
+            "git open branch-name"
+          ],
+          "answer": 0,
+          "explanation": "git switch only does branch switching (safer). git checkout also handles file operations (older, broader command)."
+        },
+        {
+          "id": "gg-025",
+          "q": "Which command lists all branches?",
+          "options": [
+            "git branch  (add -a for remote branches too)",
+            "git list",
+            "git branches",
+            "git show-branches"
+          ],
+          "answer": 0,
+          "explanation": "The current branch is marked with * . -v shows the latest commit on each branch."
+        }
+      ]
+    },
+    {
+      "topic": "Merging",
+      "questions": [
+        {
+          "id": "gg-026",
+          "q": "What does merging do in Git?",
+          "options": [
+            "Combines changes from one branch into another, creating a merge commit (or fast-forwarding)",
+            "Deletes both branches",
+            "Copies files to a new folder",
+            "Renames branches"
+          ],
+          "answer": 0,
+          "explanation": "Merging is the standard way to integrate completed work from a feature branch back into main."
+        },
+        {
+          "id": "gg-027",
+          "q": "Which command merges another branch INTO your current branch?",
+          "options": [
+            "git merge other-branch",
+            "git combine other-branch",
+            "git import other-branch",
+            "git pull other-branch"
+          ],
+          "answer": 0,
+          "explanation": "First, git switch main. Then git merge feature-x to bring feature-x's changes into main."
+        },
+        {
+          "id": "gg-028",
+          "q": "What is a 'fast-forward' merge?",
+          "options": [
+            "When the target branch hasn't diverged, Git just moves the pointer forward — no merge commit needed",
+            "A merge that runs faster than normal",
+            "A merge that skips reviews",
+            "A type of force push"
+          ],
+          "answer": 0,
+          "explanation": "Fast-forward keeps history linear. Use --no-ff to force a merge commit if your team prefers explicit merges."
+        },
+        {
+          "id": "gg-029",
+          "q": "What is a 'merge conflict'?",
+          "options": [
+            "When the same lines have different changes on each branch — Git can't auto-decide which to keep",
+            "When a branch refuses to merge",
+            "When the server is down",
+            "When commits are lost"
+          ],
+          "answer": 0,
+          "explanation": "Conflicts are normal in collaborative work. Git marks the conflicting sections in files with <<<<<<< for you to resolve manually."
+        },
+        {
+          "id": "gg-030",
+          "q": "How do you RESOLVE a merge conflict?",
+          "options": [
+            "Edit the file to keep the desired changes, remove conflict markers, git add the file, then git commit",
+            "Run git merge --auto",
+            "Delete the file",
+            "Wait for it to resolve itself"
+          ],
+          "answer": 0,
+          "explanation": "Use a merge tool (VS Code has a great built-in one) to make this less error-prone than editing manually."
+        }
+      ]
+    },
+    {
+      "topic": "Rebasing",
+      "questions": [
+        {
+          "id": "gg-031",
+          "q": "What does `git rebase main` do on a feature branch?",
+          "options": [
+            "Replays your feature branch's commits on top of the latest main, creating a linear history",
+            "Deletes main",
+            "Merges main into feature",
+            "Renames the branch"
+          ],
+          "answer": 0,
+          "explanation": "Rebase is an alternative to merge for integrating changes. Cleaner history, but rewrites commit hashes — never rebase shared branches."
+        },
+        {
+          "id": "gg-032",
+          "q": "What's the GOLDEN RULE of rebasing?",
+          "options": [
+            "Never rebase branches that other people are working on — it rewrites history and breaks their copies",
+            "Always rebase everything",
+            "Rebase before every commit",
+            "Rebase only on weekends"
+          ],
+          "answer": 0,
+          "explanation": "Rebase = rewrite. Rewriting public history forces collaborators to do confusing recovery. Rebase local work only."
+        },
+        {
+          "id": "gg-033",
+          "q": "What is INTERACTIVE rebase used for?",
+          "options": [
+            "Squashing, reordering, editing, or dropping commits before pushing to clean up your history",
+            "Reviewing pull requests",
+            "Solving merge conflicts",
+            "Creating new branches"
+          ],
+          "answer": 0,
+          "explanation": "git rebase -i HEAD~5 lets you rewrite the last 5 commits. Great for tidying up a messy feature branch before opening a PR."
+        },
+        {
+          "id": "gg-034",
+          "q": "What's the DIFFERENCE between merge and rebase?",
+          "options": [
+            "Merge preserves true history with merge commits; rebase rewrites for a linear history",
+            "Merge is older, rebase is newer",
+            "They're identical",
+            "Merge is for solo work, rebase for teams"
+          ],
+          "answer": 0,
+          "explanation": "Choice of style. Many teams: merge for shared branches (preserve true history), rebase for personal branches (clean up before PR)."
+        },
+        {
+          "id": "gg-035",
+          "q": "If a rebase goes wrong, how do you ABORT it?",
+          "options": [
+            "git rebase --abort",
+            "git rebase --cancel",
+            "Press Ctrl+C",
+            "git reset"
+          ],
+          "answer": 0,
+          "explanation": "--abort returns you to the state before the rebase started. Use it freely if a rebase gets confusing mid-way."
+        }
+      ]
+    },
+    {
+      "topic": "Remotes",
+      "questions": [
+        {
+          "id": "gg-036",
+          "q": "What is a Git 'remote'?",
+          "options": [
+            "A named reference to a copy of the repository hosted elsewhere (commonly named 'origin')",
+            "A remote-control device",
+            "A backup branch",
+            "A type of commit"
+          ],
+          "answer": 0,
+          "explanation": "When you clone, the source is automatically named 'origin'. You can add more remotes (e.g., 'upstream' for forks)."
+        },
+        {
+          "id": "gg-037",
+          "q": "Which command shows all configured remotes?",
+          "options": [
+            "git remote -v",
+            "git remotes",
+            "git show remote",
+            "git list-remote"
+          ],
+          "answer": 0,
+          "explanation": "-v shows the URLs. Each remote has separate fetch and push URLs (usually the same)."
+        },
+        {
+          "id": "gg-038",
+          "q": "Which command uploads your local commits to the remote?",
+          "options": [
+            "git push",
+            "git upload",
+            "git send",
+            "git sync"
+          ],
+          "answer": 0,
+          "explanation": "First push of a new branch: git push -u origin branch-name. Sets the upstream so future pushes/pulls use that remote/branch."
+        },
+        {
+          "id": "gg-039",
+          "q": "Which command downloads new commits from the remote (but doesn't merge them)?",
+          "options": [
+            "git fetch",
+            "git pull",
+            "git download",
+            "git get"
+          ],
+          "answer": 0,
+          "explanation": "fetch updates your local copy of the remote's branches. You can review before merging. Safer than pull."
+        },
+        {
+          "id": "gg-040",
+          "q": "What does `git pull` do?",
+          "options": [
+            "git fetch + git merge — downloads remote changes and merges them into the current branch",
+            "Pulls a file from the server",
+            "Pulls a branch out of existence",
+            "Pulls all commits to a new folder"
+          ],
+          "answer": 0,
+          "explanation": "Convenient but can surprise you with merge commits. `git pull --rebase` keeps history linear."
+        }
+      ]
+    },
+    {
+      "topic": "Undoing changes",
+      "questions": [
+        {
+          "id": "gg-041",
+          "q": "How do you UNSTAGE a file you've already git added?",
+          "options": [
+            "git restore --staged file.txt  (or older: git reset HEAD file.txt)",
+            "git unadd file.txt",
+            "git remove file.txt",
+            "git cancel file.txt"
+          ],
+          "answer": 0,
+          "explanation": "git restore (introduced 2019) is the modern dedicated command for undoing changes to the working dir or index."
+        },
+        {
+          "id": "gg-042",
+          "q": "How do you DISCARD unstaged changes to a file?",
+          "options": [
+            "git restore file.txt  (older: git checkout -- file.txt)",
+            "Delete the file",
+            "git remove file.txt",
+            "git uncommit file.txt"
+          ],
+          "answer": 0,
+          "explanation": "WARNING: discarded changes cannot be recovered. Make sure you really don't want them."
+        },
+        {
+          "id": "gg-043",
+          "q": "How do you AMEND the last commit (change message or add forgotten changes)?",
+          "options": [
+            "git commit --amend",
+            "git fix-commit",
+            "git redo",
+            "git commit-edit"
+          ],
+          "answer": 0,
+          "explanation": "Adds your currently-staged changes to the previous commit and lets you edit the message. Only amend commits not yet pushed."
+        },
+        {
+          "id": "gg-044",
+          "q": "What's the DIFFERENCE between `git revert` and `git reset`?",
+          "options": [
+            "Revert creates a NEW commit that undoes a previous one (safe for shared); reset moves the branch pointer (rewrites history)",
+            "They are identical",
+            "Revert is faster",
+            "Reset is deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Revert = additive, safe for public history. Reset = destructive, for private history only. Choose carefully."
+        },
+        {
+          "id": "gg-045",
+          "q": "How do you UNDO the last commit but keep changes staged?",
+          "options": [
+            "git reset --soft HEAD~1",
+            "git undo",
+            "git uncommit",
+            "git delete-commit"
+          ],
+          "answer": 0,
+          "explanation": "--soft keeps changes staged. --mixed (default) unstages but keeps changes. --hard discards everything (be careful)."
+        }
+      ]
+    },
+    {
+      "topic": "Stashing",
+      "questions": [
+        {
+          "id": "gg-046",
+          "q": "What does `git stash` do?",
+          "options": [
+            "Temporarily saves your uncommitted changes and reverts the working directory to clean",
+            "Deletes your changes",
+            "Commits your changes",
+            "Pushes your changes"
+          ],
+          "answer": 0,
+          "explanation": "Stash is for the 'I need to switch branches NOW but I'm not ready to commit' moment. Saves work without polluting history."
+        },
+        {
+          "id": "gg-047",
+          "q": "How do you RESTORE stashed changes?",
+          "options": [
+            "git stash pop  (or git stash apply to keep the stash)",
+            "git unstash",
+            "git restore-stash",
+            "git stash --back"
+          ],
+          "answer": 0,
+          "explanation": "pop applies and removes the stash. apply keeps it in case you need to apply it elsewhere too."
+        },
+        {
+          "id": "gg-048",
+          "q": "How do you LIST all your stashes?",
+          "options": [
+            "git stash list",
+            "git stashes",
+            "git show-stash",
+            "git stash --all"
+          ],
+          "answer": 0,
+          "explanation": "Stashes are stacked. The newest is stash@{0}. You can pop/apply specific ones: git stash pop stash@{2}."
+        },
+        {
+          "id": "gg-049",
+          "q": "What's a GOOD use case for stash?",
+          "options": [
+            "Mid-work, you need to quickly switch branches to fix something urgent",
+            "Long-term feature storage",
+            "Permanent backups",
+            "Final delivery of work"
+          ],
+          "answer": 0,
+          "explanation": "Stash is for temporary saves. For longer-lived WIP, create a 'wip' branch with proper commits instead."
+        },
+        {
+          "id": "gg-050",
+          "q": "What happens to stashes when you delete the .git folder?",
+          "options": [
+            "They are lost permanently — stashes are stored locally only",
+            "They sync to GitHub",
+            "They become commits",
+            "They are emailed to you"
+          ],
+          "answer": 0,
+          "explanation": "Stashes never push to remote. Treat them as ephemeral; use commits/branches for anything important."
+        }
+      ]
+    },
+    {
+      "topic": "GitHub basics",
+      "questions": [
+        {
+          "id": "gg-051",
+          "q": "What is GitHub?",
+          "options": [
+            "A cloud platform that hosts Git repositories with collaboration tools (PRs, issues, actions, wikis)",
+            "A type of branch",
+            "A code editor",
+            "An IDE"
+          ],
+          "answer": 0,
+          "explanation": "GitHub is owned by Microsoft (since 2018). Other Git hosts: GitLab, Bitbucket, SourceHut, Codeberg."
+        },
+        {
+          "id": "gg-052",
+          "q": "What's a 'fork' on GitHub?",
+          "options": [
+            "Your own copy of someone else's repository, used to contribute or experiment without affecting the original",
+            "A type of branch",
+            "A bug",
+            "A deleted repo"
+          ],
+          "answer": 0,
+          "explanation": "Forks are the open-source contribution model: fork → branch → change → push → PR back to the original."
+        },
+        {
+          "id": "gg-053",
+          "q": "What's a 'pull request' (PR)?",
+          "options": [
+            "A proposal to merge changes from one branch (often a fork) into another, with review and discussion",
+            "A request to pull files locally",
+            "A type of stash",
+            "A backup branch"
+          ],
+          "answer": 0,
+          "explanation": "PRs are the heart of GitHub collaboration. They enable code review, CI checks, and structured discussion."
+        },
+        {
+          "id": "gg-054",
+          "q": "What's an 'issue' on GitHub?",
+          "options": [
+            "A trackable record of a bug, feature request, task, or discussion topic",
+            "A code error",
+            "A merge conflict",
+            "A type of commit"
+          ],
+          "answer": 0,
+          "explanation": "Issues + Projects make GitHub a lightweight project management tool. Link PRs to issues with 'Fixes #123' in the description."
+        },
+        {
+          "id": "gg-055",
+          "q": "What is a README.md file?",
+          "options": [
+            "The primary documentation file shown on the repo's home page — describes the project, install steps, usage",
+            "A list of recent commits",
+            "A file containing only code",
+            "A backup of all other files"
+          ],
+          "answer": 0,
+          "explanation": "A great README is the difference between a useful repo and an abandoned one. Cover: what, why, install, usage, license."
+        }
+      ]
+    },
+    {
+      "topic": "Pull request workflow",
+      "questions": [
+        {
+          "id": "gg-056",
+          "q": "What's a TYPICAL PR workflow?",
+          "options": [
+            "Branch → commit → push → open PR → review → address feedback → merge",
+            "Push directly to main",
+            "Email code to teammates",
+            "Edit files on the GitHub web"
+          ],
+          "answer": 0,
+          "explanation": "This branch-and-PR flow is the industry standard. Main is protected; all changes go through PRs and review."
+        },
+        {
+          "id": "gg-057",
+          "q": "Why do teams REVIEW pull requests?",
+          "options": [
+            "Catch bugs, share knowledge, maintain quality, and discuss design decisions before code merges",
+            "It's a legal requirement",
+            "To slow down development",
+            "Reviews are optional and rarely done"
+          ],
+          "answer": 0,
+          "explanation": "Code review is one of the highest-leverage activities in software engineering. Multiplies team knowledge AND code quality."
+        },
+        {
+          "id": "gg-058",
+          "q": "What's a SMALL PR?",
+          "options": [
+            "A focused change of <300 lines that's easy to review thoroughly",
+            "A PR with one commit",
+            "A PR for a small feature",
+            "A PR by a junior developer"
+          ],
+          "answer": 0,
+          "explanation": "Big PRs get rubber-stamped because they're too painful to review. Small focused PRs get real review and ship faster."
+        },
+        {
+          "id": "gg-059",
+          "q": "What is a 'draft PR'?",
+          "options": [
+            "A PR marked as work-in-progress — visible for early feedback but not ready to merge",
+            "A deleted PR",
+            "A PR with no commits",
+            "An auto-generated PR"
+          ],
+          "answer": 0,
+          "explanation": "Use draft PRs for early visibility, CI testing on your branch, or to discuss approach before finishing."
+        },
+        {
+          "id": "gg-060",
+          "q": "What does 'squash and merge' do on GitHub?",
+          "options": [
+            "Combines all the PR's commits into one commit when merging to main, keeping history clean",
+            "Deletes the PR",
+            "Merges without any commit",
+            "Force-pushes the PR"
+          ],
+          "answer": 0,
+          "explanation": "Popular default for feature PRs. Keeps main's history clean and reverts easy. The full PR history is preserved on the branch."
+        }
+      ]
+    },
+    {
+      "topic": ".gitignore and configuration",
+      "questions": [
+        {
+          "id": "gg-061",
+          "q": "What is .gitignore?",
+          "options": [
+            "A file listing patterns of files Git should NOT track (node_modules, .env, build outputs)",
+            "A file of forbidden words",
+            "A list of users",
+            "A type of commit"
+          ],
+          "answer": 0,
+          "explanation": "Critical for security and repo size. Without it, you'll commit secrets and 200MB of node_modules. Add it FIRST in every project."
+        },
+        {
+          "id": "gg-062",
+          "q": "What should ALWAYS be in .gitignore?",
+          "options": [
+            "Secrets/.env, node_modules/, build/dist folders, OS files (.DS_Store), editor files",
+            "Your source code",
+            "Documentation",
+            "README files"
+          ],
+          "answer": 0,
+          "explanation": "Anything that's: generated, environment-specific, secret, or huge belongs in .gitignore. Source code does not."
+        },
+        {
+          "id": "gg-063",
+          "q": "What happens if you commit a secret API key by accident?",
+          "options": [
+            "It's in your repo HISTORY forever (even if you delete it) — rotate the key immediately",
+            "Just delete it in the next commit",
+            "Nobody will see it",
+            "Git auto-encrypts secrets"
+          ],
+          "answer": 0,
+          "explanation": "GitHub auto-scans for leaked secrets. ROTATE the key first; then use git filter-repo to scrub history (advanced) — but always rotate."
+        },
+        {
+          "id": "gg-064",
+          "q": "How do you UNTRACK a file that's already committed?",
+          "options": [
+            "git rm --cached file.txt — removes from Git's tracking but keeps the file locally",
+            "git remove file.txt",
+            "git delete file.txt",
+            "Add to .gitignore alone is enough"
+          ],
+          "answer": 0,
+          "explanation": ".gitignore only ignores untracked files. Already-tracked files need git rm --cached first."
+        },
+        {
+          "id": "gg-065",
+          "q": "Which command sets your global Git username?",
+          "options": [
+            "git config --global user.name 'Your Name'",
+            "git set-name 'Your Name'",
+            "git username 'Your Name'",
+            "Edit ~/.gitignore"
+          ],
+          "answer": 0,
+          "explanation": "Also set user.email. These appear in your commits. Set both before your first commit on a new machine."
+        }
+      ]
+    },
+    {
+      "topic": "Authentication and SSH",
+      "questions": [
+        {
+          "id": "gg-066",
+          "q": "What's the RECOMMENDED way to authenticate to GitHub from Git CLI?",
+          "options": [
+            "SSH keys, or HTTPS with a Personal Access Token (passwords are no longer accepted)",
+            "Your GitHub password directly",
+            "OAuth in browser only",
+            "No authentication needed"
+          ],
+          "answer": 0,
+          "explanation": "GitHub deprecated password auth in 2021. SSH keys are easiest for daily use; PATs for scripts and CI."
+        },
+        {
+          "id": "gg-067",
+          "q": "What is a Personal Access Token (PAT)?",
+          "options": [
+            "A revocable token that replaces your password for Git/API authentication",
+            "Your GitHub password",
+            "An OAuth token",
+            "A type of SSH key"
+          ],
+          "answer": 0,
+          "explanation": "Fine-grained PATs (newer) let you scope a token to specific repos and permissions — safer than classic full-access PATs."
+        },
+        {
+          "id": "gg-068",
+          "q": "How do you set up SSH authentication for GitHub?",
+          "options": [
+            "Generate an SSH key (ssh-keygen), upload the .pub to GitHub settings, then clone with git@github.com URLs",
+            "Email your password to GitHub",
+            "Use a browser plugin",
+            "Pay for SSH access"
+          ],
+          "answer": 0,
+          "explanation": "One-time setup, lifetime convenience. No password prompts on every push."
+        },
+        {
+          "id": "gg-069",
+          "q": "What's GitHub CLI (gh)?",
+          "options": [
+            "An official command-line tool for GitHub-specific operations like creating PRs, managing issues, viewing actions",
+            "A replacement for Git",
+            "A browser extension",
+            "A code editor"
+          ],
+          "answer": 0,
+          "explanation": "`gh pr create`, `gh issue list`, `gh repo clone`. Streamlines GitHub workflows from the terminal."
+        },
+        {
+          "id": "gg-070",
+          "q": "What is two-factor authentication (2FA) on GitHub?",
+          "options": [
+            "A required security layer using a second device/app (TOTP, passkey) in addition to password",
+            "Optional security feature",
+            "Only for paid plans",
+            "An old feature now removed"
+          ],
+          "answer": 0,
+          "explanation": "GitHub requires 2FA for all accounts that contribute code to public repos. Use a passkey or authenticator app, not SMS."
+        }
+      ]
+    },
+    {
+      "topic": "Tags and releases",
+      "questions": [
+        {
+          "id": "gg-071",
+          "q": "What is a Git TAG?",
+          "options": [
+            "A permanent named pointer to a specific commit, usually used to mark releases (v1.0, v2.3.1)",
+            "A type of branch",
+            "A label on an issue",
+            "A pull request marker"
+          ],
+          "answer": 0,
+          "explanation": "Unlike branches, tags don't move. Use them to mark important commits like version releases."
+        },
+        {
+          "id": "gg-072",
+          "q": "How do you create an annotated tag?",
+          "options": [
+            "git tag -a v1.0 -m 'First release'",
+            "git tag v1.0",
+            "git release v1.0",
+            "git mark v1.0"
+          ],
+          "answer": 0,
+          "explanation": "Annotated tags (-a) include author, date, and message. Lightweight tags (no -a) are just a name. Annotated for releases."
+        },
+        {
+          "id": "gg-073",
+          "q": "How do you push tags to the remote?",
+          "options": [
+            "git push origin v1.0  (or git push --tags for all)",
+            "Tags push automatically",
+            "git tag --push",
+            "Tags can't be pushed"
+          ],
+          "answer": 0,
+          "explanation": "Tags don't push by default with regular git push. You must explicitly push them."
+        },
+        {
+          "id": "gg-074",
+          "q": "What is a GitHub RELEASE?",
+          "options": [
+            "A formal package created from a tag, with release notes, downloadable assets, and a dedicated page",
+            "Just a tag",
+            "A pull request",
+            "A type of branch"
+          ],
+          "answer": 0,
+          "explanation": "Releases turn tags into shareable artifacts with notes and downloads. Common for libraries, apps, and installers."
+        },
+        {
+          "id": "gg-075",
+          "q": "What is Semantic Versioning (SemVer)?",
+          "options": [
+            "A versioning convention: MAJOR.MINOR.PATCH where each part has specific meaning about breaking changes, features, fixes",
+            "Random version numbers",
+            "Sequential version numbers (1, 2, 3)",
+            "Date-based versioning"
+          ],
+          "answer": 0,
+          "explanation": "Major: breaking changes. Minor: new features (backward-compatible). Patch: bug fixes. Industry standard for libraries."
+        }
+      ]
+    },
+    {
+      "topic": "Collaboration workflows",
+      "questions": [
+        {
+          "id": "gg-076",
+          "q": "What is 'GitHub Flow'?",
+          "options": [
+            "A simple workflow: branch from main → commit → open PR → review → merge to main → deploy",
+            "A type of code linting",
+            "A permission system",
+            "A diagram of commits"
+          ],
+          "answer": 0,
+          "explanation": "Lightweight, well-suited for continuous deployment. Most modern teams use this or a close variant."
+        },
+        {
+          "id": "gg-077",
+          "q": "What is 'Git Flow' (the older alternative)?",
+          "options": [
+            "A more structured workflow with develop, release, and hotfix branches alongside main",
+            "The same as GitHub Flow",
+            "An automated tool",
+            "A type of branch"
+          ],
+          "answer": 0,
+          "explanation": "Useful for projects with scheduled releases (e.g., desktop apps). Overkill for most web teams using continuous deployment."
+        },
+        {
+          "id": "gg-078",
+          "q": "Why use BRANCH PROTECTION on main?",
+          "options": [
+            "Prevents direct pushes, requires PR review, enforces CI checks — protects production code from mistakes",
+            "It slows down development",
+            "It's required by Git",
+            "It's only for paid plans"
+          ],
+          "answer": 0,
+          "explanation": "Branch protection rules turn 'we should review code' into 'we cannot skip review'. Set them up on every important branch."
+        },
+        {
+          "id": "gg-079",
+          "q": "What is a CODEOWNERS file?",
+          "options": [
+            "A file mapping paths to GitHub users/teams who must review changes in those paths",
+            "A license file",
+            "A list of all contributors",
+            "A backup of permissions"
+          ],
+          "answer": 0,
+          "explanation": "When a PR touches files matched in CODEOWNERS, the matching owners are auto-requested for review. Great for accountability."
+        },
+        {
+          "id": "gg-080",
+          "q": "What's the BEST way to handle a botched force push that overwrote teammates' work?",
+          "options": [
+            "Use the reflog (git reflog) to find the lost commit, then reset/force-push to restore it — talk to your team",
+            "Pretend it didn't happen",
+            "Delete the repo",
+            "Push more force pushes to fix it"
+          ],
+          "answer": 0,
+          "explanation": "git reflog is your time machine — it records every change to HEAD. Most 'lost' commits can be recovered for 90 days."
+        }
+      ]
+    },
+    {
+      "topic": "GitHub Actions and CI",
+      "questions": [
+        {
+          "id": "gg-081",
+          "q": "What is GitHub Actions?",
+          "options": [
+            "A built-in CI/CD platform for running automated workflows (tests, builds, deployments) on Git events",
+            "A type of GitHub button",
+            "An issue tracker",
+            "A code linting service"
+          ],
+          "answer": 0,
+          "explanation": "Free for public repos and generous free tier for private repos. The standard for CI in GitHub-hosted projects."
+        },
+        {
+          "id": "gg-082",
+          "q": "Where do GitHub Actions workflows live?",
+          "options": [
+            ".github/workflows/*.yml files in the repo",
+            "GitHub website settings only",
+            "package.json",
+            "README.md"
+          ],
+          "answer": 0,
+          "explanation": "Workflows are YAML files version-controlled with your code. Triggers: push, pull_request, schedule, workflow_dispatch, etc."
+        },
+        {
+          "id": "gg-083",
+          "q": "What's a TYPICAL CI workflow on every PR?",
+          "options": [
+            "Install dependencies → run linter → run tests → build → report status on the PR",
+            "Just deploy to production",
+            "Send an email",
+            "Nothing"
+          ],
+          "answer": 0,
+          "explanation": "CI catches bugs before review. Failing CI on a PR usually blocks merge via branch protection rules."
+        },
+        {
+          "id": "gg-084",
+          "q": "What are GitHub Secrets used for?",
+          "options": [
+            "Storing sensitive values (API keys, tokens) that Actions can access without committing them to the repo",
+            "Hiding code from teammates",
+            "Encrypting commits",
+            "Anonymizing users"
+          ],
+          "answer": 0,
+          "explanation": "Secrets are env vars available only at runtime. Never log them. GitHub auto-redacts known secrets from workflow logs."
+        },
+        {
+          "id": "gg-085",
+          "q": "What's an Action 'marketplace' action?",
+          "options": [
+            "A reusable workflow step published by the community — use with `uses: actions/checkout@v4`",
+            "A paid Action",
+            "A new GitHub product",
+            "A type of issue"
+          ],
+          "answer": 0,
+          "explanation": "Common actions: actions/checkout, setup-node, cache, upload-artifact. Audit third-party actions before using — they run YOUR code."
+        }
+      ]
+    },
+    {
+      "topic": "Open source contribution",
+      "questions": [
+        {
+          "id": "gg-086",
+          "q": "How do you contribute to an open-source project on GitHub?",
+          "options": [
+            "Fork → clone → branch → commit → push → open PR to the original repo",
+            "Email the maintainer",
+            "Edit on the GitHub web interface only",
+            "Wait to be invited"
+          ],
+          "answer": 0,
+          "explanation": "This fork-and-PR flow is universal across virtually every OSS project hosted on GitHub."
+        },
+        {
+          "id": "gg-087",
+          "q": "What should you check BEFORE opening a PR to an open-source project?",
+          "options": [
+            "CONTRIBUTING.md, existing issues, project style guide, and ideally open an issue first to discuss",
+            "Nothing — just open the PR",
+            "Add your name as maintainer",
+            "Demand they merge it"
+          ],
+          "answer": 0,
+          "explanation": "Maintainers' time is precious. A well-researched PR with prior discussion is much more likely to be merged than a surprise drive-by."
+        },
+        {
+          "id": "gg-088",
+          "q": "What's a 'good first issue' label?",
+          "options": [
+            "Issues maintainers have flagged as beginner-friendly, with enough context for newcomers to tackle",
+            "The very first issue ever filed",
+            "An issue rated 5 stars",
+            "An issue from a senior dev"
+          ],
+          "answer": 0,
+          "explanation": "The best way to start contributing. Many projects also use 'help wanted', 'documentation', 'beginner-friendly'."
+        },
+        {
+          "id": "gg-089",
+          "q": "What's a LICENSE file?",
+          "options": [
+            "A file declaring the legal terms under which others can use, modify, and distribute your code",
+            "An optional marketing file",
+            "A list of contributors",
+            "A backup file"
+          ],
+          "answer": 0,
+          "explanation": "Without a license, code is 'all rights reserved' by default — nobody can legally use it. Add MIT/Apache 2.0/etc. early."
+        },
+        {
+          "id": "gg-090",
+          "q": "What is a Code of Conduct?",
+          "options": [
+            "A document setting community behavior expectations and reporting procedures for a project",
+            "A coding style guide",
+            "A list of forbidden contributors",
+            "A legal contract"
+          ],
+          "answer": 0,
+          "explanation": "Welcoming, professional communities ship more and last longer. CoCs (often based on the Contributor Covenant) set the tone."
+        }
+      ]
+    },
+    {
+      "topic": "Best practices and pitfalls",
+      "questions": [
+        {
+          "id": "gg-091",
+          "q": "Why is COMMITTING OFTEN better than rare giant commits?",
+          "options": [
+            "Small commits are easier to review, debug (git bisect), revert, and explain in messages",
+            "It looks more productive",
+            "Git runs faster with many commits",
+            "It's required by Git"
+          ],
+          "answer": 0,
+          "explanation": "Each commit should be one logical change. 'WIP' commits are fine on a feature branch — squash before merging."
+        },
+        {
+          "id": "gg-092",
+          "q": "What's an ANTI-PATTERN with Git?",
+          "options": [
+            "Force-pushing to shared branches without telling collaborators",
+            "Branching often",
+            "Writing detailed commit messages",
+            "Using .gitignore"
+          ],
+          "answer": 0,
+          "explanation": "Force pushes rewrite history. On shared branches, they overwrite others' work. Coordinate carefully if absolutely needed."
+        },
+        {
+          "id": "gg-093",
+          "q": "When should you NEVER commit something?",
+          "options": [
+            "When it contains secrets, credentials, large binary files, or sensitive personal data",
+            "When it's important code",
+            "When it's untested",
+            "When tests pass"
+          ],
+          "answer": 0,
+          "explanation": "Use .gitignore + tools like git-secrets to prevent. For large files, use Git LFS or a separate artifact store."
+        },
+        {
+          "id": "gg-094",
+          "q": "What's a HEALTHY commit message pattern?",
+          "options": [
+            "First line: short summary (<72 chars). Blank line. Then optional body explaining WHY (not WHAT — diff shows what)",
+            "One huge sentence",
+            "Random characters",
+            "Always 'fix'"
+          ],
+          "answer": 0,
+          "explanation": "Conventional Commits adds machine-readable prefixes (feat:, fix:, docs:). Pairs well with auto-changelogs and semver bumps."
+        },
+        {
+          "id": "gg-095",
+          "q": "What's the BEST way to recover lost work in Git?",
+          "options": [
+            "git reflog — shows every change to HEAD, even from operations you thought destroyed the commit",
+            "Restart the computer",
+            "Re-clone the repo",
+            "Email IT"
+          ],
+          "answer": 0,
+          "explanation": "Git rarely loses data permanently. reflog is your time machine for the last ~90 days, even after destructive operations."
+        }
+      ]
+    },
+    {
+      "topic": "Going further with Git",
+      "questions": [
+        {
+          "id": "gg-096",
+          "q": "What is `git bisect`?",
+          "options": [
+            "A binary search through commit history to find which commit introduced a bug",
+            "A merge tool",
+            "A way to delete commits",
+            "A backup utility"
+          ],
+          "answer": 0,
+          "explanation": "bisect can pinpoint the bad commit in a 1000-commit history with ~10 tests. Genuinely magical when debugging regressions."
+        },
+        {
+          "id": "gg-097",
+          "q": "What is `git cherry-pick`?",
+          "options": [
+            "Applies a specific commit from another branch onto the current branch",
+            "Selects best commits to keep",
+            "Picks random commits",
+            "Auto-merges commits"
+          ],
+          "answer": 0,
+          "explanation": "Useful for backporting fixes to a stable branch without merging the entire feature branch."
+        },
+        {
+          "id": "gg-098",
+          "q": "What is a Git 'hook'?",
+          "options": [
+            "A script that runs automatically on Git events (pre-commit, post-merge, pre-push) to enforce rules or run tasks",
+            "A type of branch",
+            "A GitHub feature",
+            "A merge strategy"
+          ],
+          "answer": 0,
+          "explanation": "Local hooks live in .git/hooks. Tools like Husky make them version-controlled and team-shared (e.g., run linters pre-commit)."
+        },
+        {
+          "id": "gg-099",
+          "q": "Which is a GOOD habit to develop with Git?",
+          "options": [
+            "Pull before you start work, commit often, push regularly, write meaningful messages",
+            "Commit only once a week",
+            "Never write commit messages",
+            "Push directly to main"
+          ],
+          "answer": 0,
+          "explanation": "Smooth Git habits prevent conflicts, lose less work, and make collaboration painless. Practice them daily."
+        },
+        {
+          "id": "gg-100",
+          "q": "What's the BEST way to keep learning Git?",
+          "options": [
+            "Use it daily on real projects, read the Pro Git book (free), and don't fear breaking things — Git is hard to truly break",
+            "Memorize every command",
+            "Avoid advanced features",
+            "Only use Git in tutorials"
+          ],
+          "answer": 0,
+          "explanation": "The free Pro Git book is the canonical reference. Confidence comes from doing — Git's safety net (reflog, branches) is huge."
+        }
+      ]
+    }
+  ]
+}

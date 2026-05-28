@@ -1,0 +1,1314 @@
+{
+  "id": "uiux-design",
+  "title": "UI/UX Design Principles",
+  "description": "Heuristics, typography, color, hierarchy. Design that users actually love.",
+  "category": "Design",
+  "icon": "🖌️",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What UI and UX are",
+      "questions": [
+        {
+          "id": "ux-001",
+          "q": "What's the DIFFERENCE between UI and UX?",
+          "options": [
+            "UI is the visual interface (buttons, layout, colors); UX is the entire experience including flows, emotions, and outcomes",
+            "They are identical",
+            "UI is for mobile, UX for desktop",
+            "UX is just animations"
+          ],
+          "answer": 0,
+          "explanation": "UI is what users SEE; UX is what they FEEL and accomplish. Beautiful UI with bad UX still fails. Functional UX with poor UI loses trust. Great products invest in both — but UX strategy comes first; UI executes the strategy."
+        },
+        {
+          "id": "ux-002",
+          "q": "What is the PRIMARY goal of UX design?",
+          "options": [
+            "Help users accomplish their goals efficiently, enjoyably, and reliably — making the right thing easy to do",
+            "Make the most beautiful interface",
+            "Use the trendiest design style",
+            "Add as many features as possible"
+          ],
+          "answer": 0,
+          "explanation": "UX is fundamentally about user outcomes, not aesthetics. A confusing checkout flow that looks gorgeous is still bad UX. The best UX often goes unnoticed — users just accomplish their goal and move on with their day."
+        },
+        {
+          "id": "ux-003",
+          "q": "Who is the customer of UX design?",
+          "options": [
+            "The actual end-users — NOT the executive, designer, or stakeholder making approval decisions",
+            "The CEO who approves the design",
+            "The marketing team",
+            "Other designers"
+          ],
+          "answer": 0,
+          "explanation": "Designers who design for the approver instead of the user create internally-pleasing products that real users struggle with. User research, testing, and direct observation keep the focus on actual users. Approvers should fund and trust the user-centered process."
+        },
+        {
+          "id": "ux-004",
+          "q": "What does 'USER-CENTERED DESIGN' mean?",
+          "options": [
+            "A process that involves users at every stage — researching their needs, testing prototypes with them, iterating based on real feedback",
+            "Designing for any user generically",
+            "Letting users design their own software",
+            "Hiring users as designers"
+          ],
+          "answer": 0,
+          "explanation": "User-centered design is a discipline popularized by Don Norman. It's the opposite of designing based purely on assumptions, internal opinions, or competitor copying. Mature design orgs build user research into every product decision."
+        },
+        {
+          "id": "ux-005",
+          "q": "What's a TRUE statement about great design?",
+          "options": [
+            "It feels invisible — users accomplish goals without thinking about the interface",
+            "It demands attention",
+            "It uses every visual trend",
+            "It impresses other designers most"
+          ],
+          "answer": 0,
+          "explanation": "Steve Krug's famous book is titled 'Don't Make Me Think'. Great design reduces cognitive load. When users have to consciously figure out how to use your product, you've added friction. Make the right action obvious."
+        }
+      ]
+    },
+    {
+      "topic": "Design thinking process",
+      "questions": [
+        {
+          "id": "ux-006",
+          "q": "What are the PHASES of design thinking?",
+          "options": [
+            "Empathize → Define → Ideate → Prototype → Test (then iterate)",
+            "Design → Build → Ship → Forget",
+            "Plan → Code → Launch",
+            "Research only"
+          ],
+          "answer": 0,
+          "explanation": "Popularized by IDEO and Stanford d.school. It's iterative, not linear — insights from testing send you back to redefine the problem or generate new ideas. The cycle continues forever in mature product teams."
+        },
+        {
+          "id": "ux-007",
+          "q": "What does EMPATHIZE mean in design thinking?",
+          "options": [
+            "Deeply understanding users — their needs, contexts, frustrations, and goals — through research and observation",
+            "Feeling sorry for users",
+            "Reading user manuals",
+            "Surveying internal stakeholders"
+          ],
+          "answer": 0,
+          "explanation": "Empathy in design is operational, not emotional. It means observing real users in real contexts: how they actually behave, what they actually struggle with, what they actually need — often very different from what they SAY they need."
+        },
+        {
+          "id": "ux-008",
+          "q": "What does the DEFINE phase do?",
+          "options": [
+            "Synthesize research into a clear problem statement that guides solution design",
+            "Define all the buttons in the design",
+            "Define the colors to use",
+            "Define every feature"
+          ],
+          "answer": 0,
+          "explanation": "A well-framed problem is half-solved. A clear 'How might we…' problem statement focuses team energy. Vague problems (eg 'make it better') produce vague solutions. Sharp problems unlock sharp solutions."
+        },
+        {
+          "id": "ux-009",
+          "q": "What is a PROTOTYPE in design?",
+          "options": [
+            "A scaled-down representation (sketch, wireframe, clickable mockup) used to test ideas cheaply before building the real thing",
+            "A finished product",
+            "A marketing video",
+            "A design document"
+          ],
+          "answer": 0,
+          "explanation": "Prototypes range from paper sketches to high-fidelity clickable Figma flows. The right fidelity matches the question being tested. Low-fi for early concept testing; high-fi for visual/interaction details. Cheaper to fail in prototype than in production code."
+        },
+        {
+          "id": "ux-010",
+          "q": "What is USABILITY TESTING?",
+          "options": [
+            "Watching real users attempt tasks with your product to find friction points — typically 5-7 users reveals most issues",
+            "Asking users if they like the design",
+            "QA testing for bugs",
+            "Performance benchmarking"
+          ],
+          "answer": 0,
+          "explanation": "Jakob Nielsen's research showed 5 users reveal ~85% of usability problems. Run usability tests early and often — every major feature, every redesign. Watching ONE real user struggle teaches more than ten internal opinions."
+        }
+      ]
+    },
+    {
+      "topic": "Visual hierarchy",
+      "questions": [
+        {
+          "id": "ux-011",
+          "q": "What is VISUAL HIERARCHY?",
+          "options": [
+            "Arranging visual elements so importance is immediately clear — what users see first, second, third",
+            "Color hierarchy only",
+            "Font size order",
+            "Vertical order on page"
+          ],
+          "answer": 0,
+          "explanation": "Hierarchy guides the eye through content. Without it, everything competes for attention and nothing wins. Strong hierarchy = clear primary action, supporting info, and skippable details. Foundation of all good interface design."
+        },
+        {
+          "id": "ux-012",
+          "q": "Which tools CREATE visual hierarchy?",
+          "options": [
+            "Size, weight, color contrast, spacing, position, and motion — used together to direct attention",
+            "Only font size",
+            "Only color",
+            "Only placement"
+          ],
+          "answer": 0,
+          "explanation": "Bigger, bolder, brighter, isolated, top-positioned elements draw attention. Combining multiple cues creates clear hierarchy. Using only one (e.g., everything just gets bigger) creates noisy interfaces with weak hierarchy."
+        },
+        {
+          "id": "ux-013",
+          "q": "What is the F-PATTERN and Z-PATTERN in reading layouts?",
+          "options": [
+            "Common eye-tracking patterns: F-pattern for text-heavy pages, Z-pattern for image/headline layouts — guide where to place key info",
+            "Types of fonts",
+            "Programming patterns",
+            "Color schemes"
+          ],
+          "answer": 0,
+          "explanation": "Originally documented by Nielsen Norman Group eye-tracking research. Place CTAs, headlines, and key information along these natural reading paths. Logo top-left, CTA top-right is a Z-pattern convention millions of sites follow."
+        },
+        {
+          "id": "ux-014",
+          "q": "Why is WHITESPACE important?",
+          "options": [
+            "Gives elements room to breathe, improves scannability, reduces cognitive load, and creates focus",
+            "Wastes screen space",
+            "Looks unfinished",
+            "Is only for print"
+          ],
+          "answer": 0,
+          "explanation": "Whitespace (negative space) isn't empty — it's an active design element. Crowded designs overwhelm users; generous spacing communicates confidence and focus. Apple, Google, and Stripe use whitespace masterfully to elevate their design feel."
+        },
+        {
+          "id": "ux-015",
+          "q": "What does it mean for a design to have a 'CLEAR PRIMARY ACTION'?",
+          "options": [
+            "One button or action is visually dominant — the most likely thing the user wants to do is obviously the most prominent",
+            "Multiple equally-styled buttons",
+            "Hidden CTAs",
+            "Many CTAs of different sizes"
+          ],
+          "answer": 0,
+          "explanation": "When everything is emphasized, nothing is. Strong design picks ONE primary action per screen. Secondary actions are clearly less prominent. Tertiary actions are subdued. Users feel guided, not overwhelmed by choice."
+        }
+      ]
+    },
+    {
+      "topic": "Color theory",
+      "questions": [
+        {
+          "id": "ux-016",
+          "q": "What are the KEY roles in a UI color palette?",
+          "options": [
+            "Primary (brand), Secondary (accent), CTA (action), Background, Text, Border — plus semantic colors (success, warning, error)",
+            "Just primary and secondary",
+            "Only red and blue",
+            "Whatever looks pretty"
+          ],
+          "answer": 0,
+          "explanation": "Structured palettes scale across products. Define each role once, use consistently. UI UX Pro Max-style systems define these palettes per industry (SaaS, healthcare, fintech, ecommerce) because conventions differ between domains."
+        },
+        {
+          "id": "ux-017",
+          "q": "What is COLOR CONTRAST in design?",
+          "options": [
+            "The difference in luminance between foreground (text) and background — affects readability and accessibility",
+            "How many colors are used",
+            "The brightness setting",
+            "Color temperature"
+          ],
+          "answer": 0,
+          "explanation": "WCAG defines minimum contrast ratios: 4.5:1 for normal text, 3:1 for large text (AA level). Tools (WebAIM Contrast Checker, browser DevTools) make checking trivial. Low contrast looks 'designer-y' but excludes users with low vision and harms readability for everyone."
+        },
+        {
+          "id": "ux-018",
+          "q": "How does COLOR carry MEANING in interfaces?",
+          "options": [
+            "Conventions: green = success/go, red = error/danger, yellow = warning, blue = info/trust, with cultural variations",
+            "Colors have no meaning",
+            "Each user assigns their own meaning",
+            "Colors are purely decorative"
+          ],
+          "answer": 0,
+          "explanation": "These conventions are strong globally for digital interfaces. Don't fight them needlessly — using red for the success state confuses users. Cultural variations exist (red = lucky in China; white = mourning in many Asian cultures). Consider audience."
+        },
+        {
+          "id": "ux-019",
+          "q": "What's a SMART approach to building a color palette?",
+          "options": [
+            "Start with a core brand color, generate tints/shades for variation, add semantic colors, test in light + dark modes",
+            "Pick 20 random colors",
+            "Copy a competitor exactly",
+            "Use rainbow palettes"
+          ],
+          "answer": 0,
+          "explanation": "Tools (Tailwind palette generator, Radix Colors, Open Color, Material You) provide systematic palettes. Each color should have 9-12 shades for use across UI states. Plan dark mode from the start — retrofitting is painful."
+        },
+        {
+          "id": "ux-020",
+          "q": "Why design for COLORBLIND users?",
+          "options": [
+            "~8% of men and 0.5% of women have color vision deficiency — never rely on color alone to convey information",
+            "Colorblindness doesn't exist",
+            "It's only for medical apps",
+            "Users will tell you if they can't see"
+          ],
+          "answer": 0,
+          "explanation": "Pair color with icons, patterns, text, or position. Red error message? Add an X icon. Green success? Add a checkmark. Use tools (Stark, Chrome's accessibility inspector, Sim Daltonism) to preview designs as colorblind users see them."
+        }
+      ]
+    },
+    {
+      "topic": "Typography",
+      "questions": [
+        {
+          "id": "ux-021",
+          "q": "Why does TYPOGRAPHY matter so much in UI?",
+          "options": [
+            "Text is 90%+ of most interfaces — typography directly affects readability, hierarchy, mood, and trust",
+            "Typography is only for print",
+            "Fonts don't matter on screens",
+            "All fonts look similar"
+          ],
+          "answer": 0,
+          "explanation": "Typography choices subtly shape user perception of your brand and product. A poorly chosen font can make professional content feel amateur. Mature design teams treat typography as a core branding decision, not an afterthought."
+        },
+        {
+          "id": "ux-022",
+          "q": "What's a TYPE SCALE?",
+          "options": [
+            "A predefined set of font sizes (eg 12, 14, 16, 20, 24, 32, 48) used consistently across a product",
+            "A musical scale",
+            "Font weight options",
+            "Color sizes"
+          ],
+          "answer": 0,
+          "explanation": "Common ratios: 1.125 (major second), 1.250 (major third), 1.333 (perfect fourth), 1.5 (perfect fifth). Pick a scale and stick to it. Random font sizes (13px here, 17px there) create visual noise. Tools like Modular Scale generate harmonious scales."
+        },
+        {
+          "id": "ux-023",
+          "q": "What is a FONT PAIRING?",
+          "options": [
+            "Choosing two (or more) fonts that work harmoniously — often a display font for headings and a body font for content",
+            "Two identical fonts",
+            "Two different colors",
+            "Two different sizes"
+          ],
+          "answer": 0,
+          "explanation": "Classic pairings: Playfair (serif headings) + Inter (sans body); Space Grotesk (modern headings) + Inter (body); Fredoka (playful) + Nunito (body). Stick to 2-3 fonts maximum; more creates chaos. Google Fonts makes high-quality pairing accessible globally."
+        },
+        {
+          "id": "ux-024",
+          "q": "What's a SAFE default font choice for modern UI?",
+          "options": [
+            "A clean sans-serif like Inter, Geist, Space Grotesk, or system fonts — high readability across screen sizes",
+            "Comic Sans",
+            "Decorative scripts",
+            "Pixel fonts"
+          ],
+          "answer": 0,
+          "explanation": "Inter (designed by Rasmus Andersson) became ubiquitous for good reason — designed for screens, exceptional readability, free, multilingual. System fonts (-apple-system, system-ui) are zero-load and feel native on each OS."
+        },
+        {
+          "id": "ux-025",
+          "q": "What is LINE HEIGHT (leading) and why does it matter?",
+          "options": [
+            "The vertical space between lines of text — affects readability dramatically; usually 1.4-1.7× the font size for body text",
+            "Font weight",
+            "Letter spacing",
+            "Word spacing"
+          ],
+          "answer": 0,
+          "explanation": "Too tight: lines crowd, hard to read. Too loose: lines feel disconnected. 1.5 is a safe default for body text. Headings can be tighter (1.1-1.2) because they're typically one line. Tighten as fonts get bolder."
+        }
+      ]
+    },
+    {
+      "topic": "Layout and spacing",
+      "questions": [
+        {
+          "id": "ux-026",
+          "q": "What is a SPACING SCALE?",
+          "options": [
+            "A consistent set of spacing values (eg 4, 8, 12, 16, 24, 32, 48) used throughout the design — usually based on a base unit",
+            "Distances between letters",
+            "Page dimensions",
+            "Color spacing"
+          ],
+          "answer": 0,
+          "explanation": "Tailwind's default scale (0.25rem increments) became near-universal. Consistent spacing creates visual harmony. Random spacing (this padding is 13px, that one is 17px) creates messy interfaces. Pick a scale; commit to it."
+        },
+        {
+          "id": "ux-027",
+          "q": "What is a GRID SYSTEM?",
+          "options": [
+            "A visual structure (typically 12-column) for aligning elements across a layout, ensuring consistency and balance",
+            "A chessboard pattern",
+            "A table grid",
+            "A type of background"
+          ],
+          "answer": 0,
+          "explanation": "Grids bring order. The 12-column grid (with various sub-divisions) is web's de facto standard. Modern CSS (Grid, Flexbox) makes implementation trivial. Mobile-first responsive design adapts grid columns per breakpoint."
+        },
+        {
+          "id": "ux-028",
+          "q": "What is the LAW OF PROXIMITY in design?",
+          "options": [
+            "Elements placed close together are perceived as related; spacing communicates grouping more than borders or backgrounds",
+            "Closer is always faster",
+            "Distance equals importance",
+            "Proximity is irrelevant"
+          ],
+          "answer": 0,
+          "explanation": "A core Gestalt principle. To group items visually, just bring them closer and move other items farther. To separate, increase space. Often more elegant than adding borders, boxes, or background colors to communicate grouping."
+        },
+        {
+          "id": "ux-029",
+          "q": "What's the difference between PADDING and MARGIN in design?",
+          "options": [
+            "Padding is internal (space inside an element); margin is external (space between elements)",
+            "They are identical",
+            "Padding is for text, margin for images",
+            "Both are external"
+          ],
+          "answer": 0,
+          "explanation": "Mastering this distinction is foundational for clean layouts. Use padding to give content room inside a card. Use margin to separate that card from siblings. Confusion between them is one of the most common beginner CSS issues."
+        },
+        {
+          "id": "ux-030",
+          "q": "What's a SAFE rule for content max-width?",
+          "options": [
+            "Limit body text to ~50-75 characters per line for optimal readability — full-width text is hard to read",
+            "Always full screen width",
+            "Always 200 pixels",
+            "Width doesn't matter"
+          ],
+          "answer": 0,
+          "explanation": "Eye fatigue increases dramatically with line length over ~75 characters. Long-line text causes readers to lose their place between lines. Even on large screens, body text should stay constrained. max-width: 65ch is a common CSS solution."
+        }
+      ]
+    },
+    {
+      "topic": "Modern UI styles",
+      "questions": [
+        {
+          "id": "ux-031",
+          "q": "What is GLASSMORPHISM?",
+          "options": [
+            "A style featuring frosted-glass effects: translucent backgrounds, blur filters, soft borders — used by Apple, Microsoft Fluent, and many SaaS apps",
+            "Drinking glass shapes",
+            "A type of grid",
+            "Black and white only"
+          ],
+          "answer": 0,
+          "explanation": "Glassmorphism gives depth and modernity. Implementation: backdrop-filter: blur(10px) + rgba background + subtle border. Works best on visually rich backgrounds (gradients, images). Used in Apple's macOS, Windows 11, fintech dashboards."
+        },
+        {
+          "id": "ux-032",
+          "q": "What is NEUMORPHISM?",
+          "options": [
+            "A style using subtle inner/outer shadows on flat surfaces to create soft, extruded 'pillow-like' UI elements",
+            "A new type of morphology",
+            "Brutalist design",
+            "Pixel art"
+          ],
+          "answer": 0,
+          "explanation": "Neumorphism (also called soft UI) trended in 2020. Looks beautiful but has poor accessibility — low contrast and weak affordance signals make buttons hard to spot and click. Use sparingly, with strong contrast adjustments for accessibility."
+        },
+        {
+          "id": "ux-033",
+          "q": "What is CLAYMORPHISM?",
+          "options": [
+            "A playful style featuring soft 3D 'clay-like' shapes with vibrant colors and gentle shadows — feels approachable and friendly",
+            "A type of pottery",
+            "Brutalist design",
+            "Glass effects"
+          ],
+          "answer": 0,
+          "explanation": "Claymorphism appears in educational platforms, consumer apps, and family-friendly products. Pairs well with rounded shapes, vibrant colors, and playful typography (Fredoka, Quicksand). Used in apps like Duolingo-style learning experiences."
+        },
+        {
+          "id": "ux-034",
+          "q": "What is BRUTALISM in web design?",
+          "options": [
+            "Raw, unpolished aesthetics using stark typography, jarring layouts, bold colors — pushing back against polished trends",
+            "Violent UI",
+            "Concrete textures",
+            "A type of error"
+          ],
+          "answer": 0,
+          "explanation": "Brutalism rejects 'safe' design conventions. Works for distinctive brands wanting to stand out (creative agencies, art-focused sites, indie projects). Risky for mainstream products where usability and clarity matter most."
+        },
+        {
+          "id": "ux-035",
+          "q": "What is AURORA UI?",
+          "options": [
+            "A style featuring soft, flowing gradients reminiscent of northern lights — often paired with dark backgrounds and glow effects",
+            "A weather-themed design",
+            "A type of font",
+            "An AI design tool"
+          ],
+          "answer": 0,
+          "explanation": "Aurora UI features in modern SaaS, AI products, fintech. Combines well with dark mode, smooth animations, and glassmorphism. Vercel, Linear, and many AI product launches showcase this aesthetic for premium feel."
+        }
+      ]
+    },
+    {
+      "topic": "Component design",
+      "questions": [
+        {
+          "id": "ux-036",
+          "q": "What is a DESIGN SYSTEM?",
+          "options": [
+            "A library of reusable components, patterns, and guidelines ensuring consistency across an entire product or company",
+            "A type of CRM",
+            "An IDE",
+            "A single design file"
+          ],
+          "answer": 0,
+          "explanation": "Major design systems: Material (Google), Fluent (Microsoft), Polaris (Shopify), Carbon (IBM), GitHub Primer, shadcn/ui. Design systems scale consistency. Without one, every new feature reinvents buttons, forms, modals — creating chaos."
+        },
+        {
+          "id": "ux-037",
+          "q": "Why are BUTTONS so important in UI?",
+          "options": [
+            "They're the primary call-to-action surface — clear, consistent, accessible buttons are foundational to usability",
+            "Buttons are obsolete",
+            "Only mobile uses buttons",
+            "All buttons look the same"
+          ],
+          "answer": 0,
+          "explanation": "Button design encodes hierarchy: primary (filled, brand color), secondary (outlined or tonal), tertiary (text only). Hover/focus/active/disabled states matter. Touch targets should be at least 44×44px (Apple HIG) for mobile usability."
+        },
+        {
+          "id": "ux-038",
+          "q": "What's a SMART pattern for FORMS?",
+          "options": [
+            "One column, labels above inputs, inline validation, clear errors, progressive disclosure for optional fields",
+            "Multi-column dense forms",
+            "Tiny labels",
+            "Validation only on submit"
+          ],
+          "answer": 0,
+          "explanation": "Form design directly impacts conversion. Single-column scans faster. Labels above (not beside) work better on mobile. Inline validation catches errors as users type. Real-time errors hurt more than help if too aggressive — find the right balance."
+        },
+        {
+          "id": "ux-039",
+          "q": "What is a MODAL (dialog) and when to use it?",
+          "options": [
+            "An overlay focusing the user on a single decision/action — use sparingly; modals interrupt flow",
+            "Always for any popup",
+            "Required for forms",
+            "Only for errors"
+          ],
+          "answer": 0,
+          "explanation": "Modals work for confirmations, focused tasks, or critical info. They're overused — every popup interrupts. Consider inline expansion or separate pages first. When you do use modals, make dismissal obvious (X, ESC, click-outside) and prevent accidental loss of work."
+        },
+        {
+          "id": "ux-040",
+          "q": "What is an EMPTY STATE in design?",
+          "options": [
+            "The first-impression screen when there's no data yet — opportunity to guide, educate, or delight (not just blank space)",
+            "An error screen",
+            "A 404 page",
+            "A loading screen"
+          ],
+          "answer": 0,
+          "explanation": "First-time users often see empty states. Great products use them to onboard ('Add your first project'), educate ('Here's what you'll see'), or motivate. Poor designs leave a blank screen — wasting a critical engagement moment."
+        }
+      ]
+    },
+    {
+      "topic": "Interaction and microinteractions",
+      "questions": [
+        {
+          "id": "ux-041",
+          "q": "What is a MICROINTERACTION?",
+          "options": [
+            "Small functional animations responding to user actions — hover effects, button presses, toggle states, loading indicators",
+            "A small product",
+            "Tiny text",
+            "Mobile-only feature"
+          ],
+          "answer": 0,
+          "explanation": "Microinteractions provide feedback ('I heard you'), guide attention, and add personality. The toggle switch flipping, the heart pulsing when liked, the input field briefly glowing when focused. Done right: delightful. Done wrong: annoying."
+        },
+        {
+          "id": "ux-042",
+          "q": "What is FEEDBACK in interaction design?",
+          "options": [
+            "Visual/auditory/haptic response confirming a user action was registered — critical for confidence",
+            "User reviews",
+            "Sales numbers",
+            "Survey responses"
+          ],
+          "answer": 0,
+          "explanation": "Every action needs feedback within ~100ms or users feel ignored. Click a button → it visibly depresses. Submit a form → loading indicator + success message. Without feedback, users repeat actions (double-clicks, duplicate submissions)."
+        },
+        {
+          "id": "ux-043",
+          "q": "What's a GOOD use of animation in UI?",
+          "options": [
+            "To smooth state transitions, draw attention to changes, communicate hierarchy or causation — purposefully, not decoratively",
+            "Animate everything constantly",
+            "Long entrance animations",
+            "Bouncing decorative effects"
+          ],
+          "answer": 0,
+          "explanation": "Material Design's motion principles capture this well. Movement should be informative, focused, expressive. Excessive animation feels slow, unprofessional, and accessibility-hostile (vestibular disorders). Subtle and fast usually wins."
+        },
+        {
+          "id": "ux-044",
+          "q": "What is the prefers-reduced-motion media query?",
+          "options": [
+            "A CSS media query letting users with motion sensitivity disable or reduce UI animations",
+            "Slow internet detection",
+            "A type of accessibility option",
+            "An iPhone setting"
+          ],
+          "answer": 0,
+          "explanation": "Some users get nausea or migraines from parallax, large transitions, or auto-playing motion. Respect the OS-level setting. Wrap big animations in @media (prefers-reduced-motion: no-preference). Provide instant alternatives by default."
+        },
+        {
+          "id": "ux-045",
+          "q": "What's the rule of thumb for ANIMATION DURATION?",
+          "options": [
+            "UI transitions: 150-300ms feels responsive; longer feels sluggish; complex spatial animations may need 400-600ms",
+            "Always 1+ seconds",
+            "Always instant",
+            "5+ seconds"
+          ],
+          "answer": 0,
+          "explanation": "Material Design suggests 200-300ms for most UI transitions. Faster than 100ms feels jarring. Slower than 500ms feels laggy. Easing curves matter too — ease-out feels natural for entering elements, ease-in for exiting."
+        }
+      ]
+    },
+    {
+      "topic": "Accessibility (a11y)",
+      "questions": [
+        {
+          "id": "ux-046",
+          "q": "Why does ACCESSIBILITY matter in design?",
+          "options": [
+            "~15% of the world's population lives with some disability — accessible design serves them AND benefits everyone",
+            "Only for legal compliance",
+            "Only for healthcare apps",
+            "Optional feature"
+          ],
+          "answer": 0,
+          "explanation": "WHO estimates 15%+ of the global population has some form of disability. Accessibility benefits go beyond: better SEO, better mobile UX, better usability for stressed/tired users, legal compliance, and ethical practice."
+        },
+        {
+          "id": "ux-047",
+          "q": "What is WCAG?",
+          "options": [
+            "Web Content Accessibility Guidelines — the international standard with A, AA, AAA conformance levels",
+            "Web Coding And Graphics",
+            "Web Construction Agency Group",
+            "World Computing And Graphics"
+          ],
+          "answer": 0,
+          "explanation": "WCAG 2.1 (and 2.2) is the practical international standard. AA is the legal/practical baseline for most public sites. Covers contrast, keyboard access, alt text, captions, focus indicators, error identification, and more."
+        },
+        {
+          "id": "ux-048",
+          "q": "How do KEYBOARD-ONLY users navigate interfaces?",
+          "options": [
+            "Tab to move forward, Shift+Tab back, Enter/Space to activate, arrows for menus/sliders — all interactive elements must be keyboard-reachable",
+            "Mouse only",
+            "Voice commands only",
+            "Cannot navigate"
+          ],
+          "answer": 0,
+          "explanation": "Test your designs by unplugging the mouse. Visible focus indicators are essential — never hide them with outline: none without replacing with something equally visible. Keyboard accessibility benefits power users too."
+        },
+        {
+          "id": "ux-049",
+          "q": "What is ALT TEXT?",
+          "options": [
+            "Descriptive text for images, read by screen readers — essential for visually impaired users and shown when images fail to load",
+            "Alternative font sizes",
+            "Backup text",
+            "A copyright notice"
+          ],
+          "answer": 0,
+          "explanation": "Write alt text describing the image's purpose, not just its appearance. Decorative images: empty alt='' so screen readers skip them. Functional images (e.g., icons in buttons): describe the action. Complex charts may need separate text descriptions."
+        },
+        {
+          "id": "ux-050",
+          "q": "What is FOCUS MANAGEMENT?",
+          "options": [
+            "Controlling which interactive element receives focus — especially important in modals, dynamic content, and SPAs",
+            "Concentrating during design",
+            "Camera focus",
+            "Image cropping"
+          ],
+          "answer": 0,
+          "explanation": "When a modal opens, focus should move into it. When it closes, focus returns to the trigger. Lost focus disorients keyboard and screen reader users. Single-page apps must explicitly manage focus on route changes (browsers don't do it automatically)."
+        }
+      ]
+    },
+    {
+      "topic": "UX heuristics",
+      "questions": [
+        {
+          "id": "ux-051",
+          "q": "What are NIELSEN'S USABILITY HEURISTICS?",
+          "options": [
+            "10 principles for usable interfaces (visibility of status, match real world, user control, consistency, error prevention, etc.) — foundational checklist",
+            "10 types of design",
+            "Nielsen's company products",
+            "AI design rules"
+          ],
+          "answer": 0,
+          "explanation": "Jakob Nielsen published these in 1994; they remain remarkably current. They're checklists, not rules — apply them as lenses for evaluating designs. Heuristic evaluation by 3-5 experts catches many usability issues cheaply."
+        },
+        {
+          "id": "ux-052",
+          "q": "What is VISIBILITY OF SYSTEM STATUS?",
+          "options": [
+            "The system should keep users informed about what's happening through appropriate feedback within reasonable time",
+            "Hide all errors",
+            "Show all internal logs",
+            "Display server uptime"
+          ],
+          "answer": 0,
+          "explanation": "Loading indicators, progress bars, success confirmations, error messages — all manifestations of this principle. Silence creates anxiety. Users who don't know what's happening assume the worst (broken, frozen, lost their data)."
+        },
+        {
+          "id": "ux-053",
+          "q": "What is the MATCH BETWEEN SYSTEM AND REAL WORLD?",
+          "options": [
+            "Use language and concepts familiar to users — not internal jargon, codes, or developer terminology",
+            "Match competitors exactly",
+            "Use technical accuracy over clarity",
+            "Always use English regardless of audience"
+          ],
+          "answer": 0,
+          "explanation": "Don't show 'Error 503' to users — say 'Our service is temporarily unavailable. Try again in a moment.' Use icons that match real-world objects users recognize. Speak users' language, not the database's language."
+        },
+        {
+          "id": "ux-054",
+          "q": "What is CONSISTENCY in interface design?",
+          "options": [
+            "Same elements behave the same way throughout the product — and follow platform conventions where possible",
+            "Use only one color",
+            "Use only one font",
+            "All buttons identical"
+          ],
+          "answer": 0,
+          "explanation": "Internal consistency (within your product) and external consistency (with platform/web norms). Users learn your interface faster when it behaves predictably. Breaking conventions for novelty's sake punishes users' existing knowledge."
+        },
+        {
+          "id": "ux-055",
+          "q": "What is ERROR PREVENTION?",
+          "options": [
+            "Designing so errors are hard or impossible to make in the first place — better than excellent error messages",
+            "Hiding errors from users",
+            "Disabling all features",
+            "Adding many warning popups"
+          ],
+          "answer": 0,
+          "explanation": "Confirmation dialogs, undo, smart defaults, format hints in inputs, disabled invalid actions. Best error message is the one not needed. Critical for destructive actions (delete account, send money, publish content)."
+        }
+      ]
+    },
+    {
+      "topic": "Mobile design",
+      "questions": [
+        {
+          "id": "ux-056",
+          "q": "What is MOBILE-FIRST design?",
+          "options": [
+            "Designing for small screens first, then progressively enhancing for larger — forces prioritization",
+            "Mobile-only apps",
+            "Phones over tablets",
+            "Mobile after desktop"
+          ],
+          "answer": 0,
+          "explanation": "Constraint as creativity. Mobile-first surfaces what's truly essential — there's no room for nice-to-have. Scaling up to desktop is easier than cramming a desktop design into mobile. Increasingly standard for global audiences (majority mobile usage in many markets)."
+        },
+        {
+          "id": "ux-057",
+          "q": "What's the MINIMUM touch target size for mobile?",
+          "options": [
+            "At least 44×44pt (Apple) or 48×48dp (Material) for comfortable tap accuracy",
+            "10×10 pixels",
+            "Any size works",
+            "100×100 pixels minimum"
+          ],
+          "answer": 0,
+          "explanation": "Smaller targets cause frustrating mis-taps. Apple HIG and Material Design both specify minimums. Spacing between targets matters too — closely packed small targets create accidental presses. Test on actual devices, not just simulators."
+        },
+        {
+          "id": "ux-058",
+          "q": "Why are THUMB ZONES important on mobile?",
+          "options": [
+            "Most users hold phones one-handed; bottom and middle of the screen are easiest to reach, top corners are hardest",
+            "All screen areas are equal",
+            "Top is always best",
+            "Designs ignore thumbs"
+          ],
+          "answer": 0,
+          "explanation": "Steven Hoober's research mapped thumb reach extensively. Primary actions belong in the bottom navigation area on mobile. iOS and Android both moved key controls down over time as phone screens grew taller."
+        },
+        {
+          "id": "ux-059",
+          "q": "What's the difference between RESPONSIVE and ADAPTIVE design?",
+          "options": [
+            "Responsive: one fluid layout adjusts to any size. Adaptive: distinct layouts for specific breakpoints, sometimes different markup",
+            "Same thing",
+            "Responsive is only for mobile",
+            "Adaptive is faster always"
+          ],
+          "answer": 0,
+          "explanation": "Responsive is the modern default. Adaptive sometimes makes sense when desktop and mobile experiences need to differ substantially. Many sites combine both — responsive within breakpoints, with different patterns across them."
+        },
+        {
+          "id": "ux-060",
+          "q": "How should MOBILE NAVIGATION typically work?",
+          "options": [
+            "Bottom tab bars for 3-5 primary destinations; hamburger menu for secondary — with consistent placement across screens",
+            "Top navigation only",
+            "Hidden navigation",
+            "Hover menus on mobile"
+          ],
+          "answer": 0,
+          "explanation": "Bottom tab bars succeed because they're thumb-reachable and persistently visible. Hamburger menus hide content — fine for secondary navigation, weak for primary. iOS HIG and Material guidelines both reflect this."
+        }
+      ]
+    },
+    {
+      "topic": "Information architecture",
+      "questions": [
+        {
+          "id": "ux-061",
+          "q": "What is INFORMATION ARCHITECTURE (IA)?",
+          "options": [
+            "The structural organization of content and navigation — how items are grouped, labeled, and connected for findability",
+            "Building architecture for servers",
+            "Database schema",
+            "File system structure"
+          ],
+          "answer": 0,
+          "explanation": "Strong IA makes products feel intuitive: users find what they need without thinking. Weak IA forces them to hunt, search, or guess. IA work often invisible but foundational — like a building's structural engineering."
+        },
+        {
+          "id": "ux-062",
+          "q": "What is a SITEMAP in UX?",
+          "options": [
+            "A visual diagram showing all pages/screens and their hierarchical relationships",
+            "An XML file for search engines",
+            "A type of contract",
+            "A travel guide"
+          ],
+          "answer": 0,
+          "explanation": "Sitemaps help stakeholders see the full scope of a product. Reveal redundancy ('three pages all about pricing?'), gaps (no contact page), and complexity (5 levels deep). Refine before designing individual screens."
+        },
+        {
+          "id": "ux-063",
+          "q": "What is CARD SORTING?",
+          "options": [
+            "A research method where users group content items into categories that make sense to them — informs information architecture",
+            "Sorting card games",
+            "Filing physical paperwork",
+            "Database indexing"
+          ],
+          "answer": 0,
+          "explanation": "Open card sort: users create and name their own categories. Closed: users sort into predefined categories. Tools (OptimalSort, UserZoom) make remote card sorting easy with global participants. Results reveal user mental models you might miss."
+        },
+        {
+          "id": "ux-064",
+          "q": "What is a TASK FLOW?",
+          "options": [
+            "A diagram showing the exact steps a user takes to complete a specific goal — reveals friction and complexity",
+            "A list of features",
+            "A bug report",
+            "A backup schedule"
+          ],
+          "answer": 0,
+          "explanation": "Mapping flows surfaces unnecessary steps. 'Signup' that requires 8 steps versus 3 is a conversion killer. Reducing steps without removing necessary information is a high-leverage UX activity for any product."
+        },
+        {
+          "id": "ux-065",
+          "q": "What's NAVIGATION DESIGN?",
+          "options": [
+            "The system of menus, links, and pathways helping users move through and discover content",
+            "Naval navigation",
+            "Maps and directions",
+            "Highway systems"
+          ],
+          "answer": 0,
+          "explanation": "Primary nav: top-level destinations (Home, Products, Pricing, Docs, Contact). Secondary: contextual within sections. Footer: utility links. Consistent placement and labeling across the product is more valuable than clever design."
+        }
+      ]
+    },
+    {
+      "topic": "Data visualization in UI",
+      "questions": [
+        {
+          "id": "ux-066",
+          "q": "What's a CORE rule for choosing a chart type?",
+          "options": [
+            "Match the chart to the question: comparison (bar), composition (stacked), trend (line), distribution (histogram), relationship (scatter)",
+            "Always use bar charts",
+            "Use the most colorful chart",
+            "Use the latest chart trend"
+          ],
+          "answer": 0,
+          "explanation": "Wrong chart type obscures the insight. UI UX Pro Max catalogs 24 chart types — each best for specific questions. Bar for category comparison, line for trends over time, pie sparingly for parts-of-whole, scatter for correlation."
+        },
+        {
+          "id": "ux-067",
+          "q": "Why are PIE CHARTS often a poor choice?",
+          "options": [
+            "Humans compare angles poorly; bar charts use length which we read accurately; pies break down with >3-4 slices",
+            "They're too colorful",
+            "Hard to render",
+            "Modern design prefers bars"
+          ],
+          "answer": 0,
+          "explanation": "Bar charts almost always communicate categorical comparisons more accurately. Reserve pies for simple parts-of-whole stories with 2-3 segments. Donut charts (pie with center cutout) work similarly with a hole for a key number."
+        },
+        {
+          "id": "ux-068",
+          "q": "What is a HEATMAP?",
+          "options": [
+            "A 2D matrix where color intensity represents values — great for showing patterns across two dimensions (day × hour, region × product)",
+            "A thermometer app",
+            "Map showing temperature",
+            "Weather visualization only"
+          ],
+          "answer": 0,
+          "explanation": "Heatmaps reveal patterns invisible in tables. Github contribution graphs are heatmaps. Common in analytics, performance monitoring, operations dashboards. Choose color scales carefully — sequential for ordered values, diverging for values around a midpoint."
+        },
+        {
+          "id": "ux-069",
+          "q": "Why do CHART AXES matter?",
+          "options": [
+            "Truncated or non-zero axes can mislead viewers — bars need to start at zero; line charts have more flexibility",
+            "Axes are optional",
+            "Charts work without axes",
+            "Axes just decorate"
+          ],
+          "answer": 0,
+          "explanation": "Starting a bar chart Y-axis at 50 makes a 2% change look like 50%. Bar charts need zero baselines. Line charts showing change can have non-zero baselines but should be labeled clearly. Honest axes communicate; dishonest axes deceive."
+        },
+        {
+          "id": "ux-070",
+          "q": "What's a SMART approach to chart color?",
+          "options": [
+            "Use color to highlight key data, gray for context, avoid rainbow palettes, consider colorblind users, use semantic colors purposefully",
+            "Use rainbows always",
+            "Color every data point uniquely",
+            "Single neutral color only"
+          ],
+          "answer": 0,
+          "explanation": "Strategic color directs attention. Highlight ONE data series; gray others. Use semantic colors (red = bad, green = good) consistently. Tools (ColorBrewer, viridis) provide perceptually accurate, colorblind-safe palettes."
+        }
+      ]
+    },
+    {
+      "topic": "Landing page patterns",
+      "questions": [
+        {
+          "id": "ux-071",
+          "q": "What's the STANDARD structure of a SaaS landing page?",
+          "options": [
+            "Hero (headline + value prop + CTA) → Social proof → Features/benefits → Use cases → Testimonials → FAQ → Final CTA",
+            "Just a hero image",
+            "Random sections",
+            "Just a contact form"
+          ],
+          "answer": 0,
+          "explanation": "This pattern (Hero + Features + Pricing variants) recurs because it works. UI UX Pro Max documents 29+ landing patterns variations. Each section serves a specific persuasion job from awareness through decision."
+        },
+        {
+          "id": "ux-072",
+          "q": "What makes a GREAT hero section?",
+          "options": [
+            "Clear headline stating what you do for whom + supporting subtext + one strong CTA + relevant visual",
+            "As much text as possible",
+            "Multiple equal CTAs",
+            "Cool animations without info"
+          ],
+          "answer": 0,
+          "explanation": "Visitors decide in seconds whether to scroll. Lead with WHO you help and HOW. Stripe's homepage exemplifies this — instant clarity on what they do. Vague heroes ('Reimagine your potential') tell visitors nothing about whether to stay."
+        },
+        {
+          "id": "ux-073",
+          "q": "Why include SOCIAL PROOF on landing pages?",
+          "options": [
+            "Demonstrates that real customers trust you — logos, testimonials, user counts, reviews, case studies",
+            "Decoration",
+            "Required by SEO",
+            "Legal requirement"
+          ],
+          "answer": 0,
+          "explanation": "Cialdini's social proof principle. Visitors look for evidence others trust you before they will. Placement matters: above the fold for instant credibility; throughout the page to reinforce. Specificity beats vague claims."
+        },
+        {
+          "id": "ux-074",
+          "q": "What's the role of FAQ sections on landing pages?",
+          "options": [
+            "Address common objections that block conversion — pricing concerns, security questions, integration worries",
+            "Decoration",
+            "Generic Q&A",
+            "SEO only"
+          ],
+          "answer": 0,
+          "explanation": "Talk to your sales team and support: what questions do prospects/customers most often ask? Those are your FAQ entries. Done right, FAQ removes friction. Done lazy (generic questions nobody asks), it wastes valuable real estate."
+        },
+        {
+          "id": "ux-075",
+          "q": "What's a COMMON landing page mistake?",
+          "options": [
+            "Too many CTAs competing for attention — clear hierarchy with ONE primary action converts much better",
+            "Too few features listed",
+            "Too short copy",
+            "Too few testimonials"
+          ],
+          "answer": 0,
+          "explanation": "When users face many equal choices, they often choose nothing. Pick THE most important action (sign up, book demo, start trial), make it visually dominant, and repeat it throughout the page. Secondary actions deserve secondary styling."
+        }
+      ]
+    },
+    {
+      "topic": "Design tools and workflow",
+      "questions": [
+        {
+          "id": "ux-076",
+          "q": "What is FIGMA?",
+          "options": [
+            "A browser-based collaborative design tool that became the industry standard for UI/UX design",
+            "A type of figure",
+            "A coding language",
+            "A backup tool"
+          ],
+          "answer": 0,
+          "explanation": "Figma's browser-based, real-time collaboration killed Sketch's dominance. Now the default for most modern design teams. Free tier generous; education plans available globally. Free alternative: Penpot (open source)."
+        },
+        {
+          "id": "ux-077",
+          "q": "What are DESIGN TOKENS?",
+          "options": [
+            "Stored design decisions (colors, spacing, fonts) as named values — shared between design tools and code for consistency",
+            "Login tokens",
+            "API credentials",
+            "Authentication keys"
+          ],
+          "answer": 0,
+          "explanation": "Tokens like 'color.primary' or 'spacing.md' bridge design and development. Change a token in one place; updates everywhere. Tools (Figma Variables, Style Dictionary) automate the design-to-code pipeline."
+        },
+        {
+          "id": "ux-078",
+          "q": "What is shadcn/ui?",
+          "options": [
+            "A collection of beautifully-designed accessible React components you copy into your project — built on Radix UI + Tailwind",
+            "A new framework",
+            "A backend library",
+            "An icon set"
+          ],
+          "answer": 0,
+          "explanation": "shadcn/ui changed the component library game. You own the source code, customize freely. Pairs perfectly with Tailwind. Massive adoption since 2023. Inspired similar approaches in Vue (shadcn-vue) and other ecosystems."
+        },
+        {
+          "id": "ux-079",
+          "q": "What's PROTOTYPING in modern design workflows?",
+          "options": [
+            "Creating clickable interactive versions of designs in Figma, Framer, or code — to test interactions before development",
+            "Building physical models",
+            "Writing requirements docs",
+            "Drawing static screens only"
+          ],
+          "answer": 0,
+          "explanation": "Modern prototypes can simulate real interactions, animations, and even simple logic. Framer and Figma's prototyping have closed the gap with code. Catch usability issues in prototype review before expensive engineering investment."
+        },
+        {
+          "id": "ux-080",
+          "q": "What's the DESIGN-TO-DEVELOPMENT handoff?",
+          "options": [
+            "The process of translating designs into working code — modern tools (Figma Dev Mode, code export) reduce friction but human collaboration still matters",
+            "Throwing files over a wall",
+            "Designers writing code",
+            "Developers designing everything"
+          ],
+          "answer": 0,
+          "explanation": "Old workflow: designers exported assets and specs PDFs. Modern: Figma Dev Mode gives devs CSS values, components reference shared design tokens. Best teams treat design and development as one collaborative process, not separate phases."
+        }
+      ]
+    },
+    {
+      "topic": "Dark mode and theming",
+      "questions": [
+        {
+          "id": "ux-081",
+          "q": "Why offer DARK MODE?",
+          "options": [
+            "User preference, reduced eye strain in low light, OLED battery savings, modern expectation in most apps",
+            "Just a trend",
+            "Required by law",
+            "All users prefer it"
+          ],
+          "answer": 0,
+          "explanation": "Dark mode adoption is highly individual — some users love it, others hate it. Best practice: respect system preference (prefers-color-scheme media query) and provide manual override. Don't force dark on everyone."
+        },
+        {
+          "id": "ux-082",
+          "q": "What's the BIGGEST mistake when implementing dark mode?",
+          "options": [
+            "Simply inverting colors — proper dark mode requires rethinking contrast, shadows, brand colors, and component aesthetics",
+            "Including dark mode at all",
+            "Using black for backgrounds",
+            "Lower brightness"
+          ],
+          "answer": 0,
+          "explanation": "Pure white text on pure black causes ghosting and eye strain. Better: off-white (#E5E5E5-ish) on dark gray (#0A0A0A or #121212). Brand colors may need adjustment for visibility on dark. Test thoroughly — many bugs only appear in one mode."
+        },
+        {
+          "id": "ux-083",
+          "q": "How do CSS VARIABLES enable easy theming?",
+          "options": [
+            "Define colors as variables (--color-bg, --color-text); switch values for dark mode by changing a parent class or attribute",
+            "Variables prevent theming",
+            "Required for any styling",
+            "Only for animations"
+          ],
+          "answer": 0,
+          "explanation": "Modern theme architecture: light theme + dark theme + brand variants by toggling CSS variable values. The whole UI updates instantly. Pair with Tailwind's dark: variant for elegant implementation."
+        },
+        {
+          "id": "ux-084",
+          "q": "Why test designs in BOTH light and dark mode?",
+          "options": [
+            "Issues invisible in one mode often appear in the other — contrast, shadows, brand color visibility all behave differently",
+            "Only test light mode",
+            "Dark mode is identical",
+            "Designs auto-adapt perfectly"
+          ],
+          "answer": 0,
+          "explanation": "A subtle box shadow that gives depth in light mode may disappear in dark mode. An accent color that pops on white may vanish on dark. Build review into both modes from the start — not as an afterthought."
+        },
+        {
+          "id": "ux-085",
+          "q": "What's a GOOD strategy for high-contrast modes?",
+          "options": [
+            "Support Windows High Contrast Mode and macOS Increase Contrast preferences — important for low-vision users",
+            "Ignore them entirely",
+            "Build only one theme",
+            "Use lightning bright colors"
+          ],
+          "answer": 0,
+          "explanation": "Beyond dark mode, system-level accessibility settings (forced colors, increased contrast) help users with specific vision needs. Test in these modes; ensure your design degrades gracefully rather than breaking."
+        }
+      ]
+    },
+    {
+      "topic": "Working with developers and stakeholders",
+      "questions": [
+        {
+          "id": "ux-086",
+          "q": "How should designers and developers COLLABORATE effectively?",
+          "options": [
+            "Continuous communication, shared design system, designers understand code constraints, developers understand design intent",
+            "Designers throw files to developers",
+            "Developers redesign everything",
+            "No collaboration needed"
+          ],
+          "answer": 0,
+          "explanation": "Best product teams treat design and engineering as one discipline. Designers who understand basic HTML/CSS make better decisions. Developers who appreciate UX produce better implementations. Mutual respect and pairing make magic."
+        },
+        {
+          "id": "ux-087",
+          "q": "What's the value of a SHARED DESIGN SYSTEM for designers AND devs?",
+          "options": [
+            "Components in Figma match components in code — designs that use the system are buildable; code respects designed values",
+            "Just for designers",
+            "Just for developers",
+            "Slows down both teams"
+          ],
+          "answer": 0,
+          "explanation": "Without shared systems, designers invent variations developers can't easily build. With them, design becomes composition of pre-built bricks. Both teams move faster; the product stays consistent. Storybook + Figma Components is a common pairing."
+        },
+        {
+          "id": "ux-088",
+          "q": "How should designers present work to STAKEHOLDERS?",
+          "options": [
+            "Frame in business outcomes, walk through user scenarios, explain trade-offs, invite questions — not just show pretty screens",
+            "Show beautiful renders only",
+            "Use design jargon",
+            "Avoid stakeholder feedback"
+          ],
+          "answer": 0,
+          "explanation": "Stakeholders care about business outcomes (conversions, retention, satisfaction). Tie design decisions to those outcomes. Telling the story of why behind every screen earns trust and reduces 'just make it pop' feedback."
+        },
+        {
+          "id": "ux-089",
+          "q": "What's the value of DESIGN CRITIQUE?",
+          "options": [
+            "Structured peer feedback that improves designs through fresh perspectives — focused on the work, not the person",
+            "Tearing down designers",
+            "Avoiding feedback",
+            "Praising everything"
+          ],
+          "answer": 0,
+          "explanation": "Healthy critique cultures separate ego from work. Focus on what the design needs to achieve and how well it achieves it. Best critiques ask clarifying questions before judging. Worst critiques become opinion wars."
+        },
+        {
+          "id": "ux-090",
+          "q": "How can designers HANDLE difficult stakeholder feedback?",
+          "options": [
+            "Listen for the underlying concern, restate it, propose alternative solutions, ground in user research data",
+            "Argue defensively",
+            "Make every change requested",
+            "Ignore feedback entirely"
+          ],
+          "answer": 0,
+          "explanation": "'I don't like the blue' often means 'I'm worried our brand isn't strong enough here'. Surface the real concern, then solve it. User data ('77% of users in testing successfully completed the task') diffuses many subjective objections."
+        }
+      ]
+    },
+    {
+      "topic": "Career in UI/UX",
+      "questions": [
+        {
+          "id": "ux-091",
+          "q": "What ROLES exist in modern UI/UX?",
+          "options": [
+            "UX/Product Designer, UI Designer, UX Researcher, Design Engineer, Design System Designer, Content Designer",
+            "Just one 'designer' role",
+            "Only graphic design",
+            "Only Figma operator"
+          ],
+          "answer": 0,
+          "explanation": "Specialization has grown. Large teams have distinct roles. Small teams have generalist designers wearing all hats. Either path is viable globally. Choose based on your interests and the company size you prefer."
+        },
+        {
+          "id": "ux-092",
+          "q": "What SKILLS make a designer hireable in 2026?",
+          "options": [
+            "Visual design + interaction design + understanding of code + research literacy + communication + AI fluency",
+            "Only Figma skills",
+            "Only graphic design",
+            "Only theory"
+          ],
+          "answer": 0,
+          "explanation": "Modern T-shaped designers are broad (cross-disciplinary) and deep (one specialty). Pure visual designers face shrinking demand. Designers who understand technology, business, and research command premium roles globally."
+        },
+        {
+          "id": "ux-093",
+          "q": "What makes a STRONG design portfolio?",
+          "options": [
+            "Case studies showing problem → process → solution → impact — not just pretty screens",
+            "100+ visual screenshots",
+            "Only finished work",
+            "Showing every project ever"
+          ],
+          "answer": 0,
+          "explanation": "Portfolios with 3-5 strong case studies beat portfolios with 50 unexplained screens. Tell the story: what was the problem, how did you approach it, what did you ship, what happened? Process is the differentiator."
+        },
+        {
+          "id": "ux-094",
+          "q": "How can designers GET STARTED in the field?",
+          "options": [
+            "Self-study (free + paid courses), redesign existing products as exercises, contribute to open source, take on small client work",
+            "Wait for the perfect opportunity",
+            "Only formal degrees",
+            "Avoid practice work"
+          ],
+          "answer": 0,
+          "explanation": "Resources: Figma's free courses, Refactoring UI, Laws of UX, Don't Make Me Think, Refactoring UI, Designed Today. Free Figma + free fonts + free icons = full toolkit. Practice publicly; share work openly."
+        },
+        {
+          "id": "ux-095",
+          "q": "What's the IMPACT of AI on design careers?",
+          "options": [
+            "AI accelerates execution (variations, copy, basic layouts) but doesn't replace strategy, taste, research, or systems thinking — designers who use AI well are more productive",
+            "AI replaces designers",
+            "AI is useless for design",
+            "AI is only for engineers"
+          ],
+          "answer": 0,
+          "explanation": "Tools like Galileo, Uizard, Vercel v0, and Figma's AI features accelerate execution. The bar for visual polish has risen for everyone. The differentiator is taste, judgment, and the human elements AI can't yet match."
+        }
+      ]
+    },
+    {
+      "topic": "Putting it all together",
+      "questions": [
+        {
+          "id": "ux-096",
+          "q": "What's the OVERALL workflow of a UX project?",
+          "options": [
+            "Discover (research) → Define (problem) → Ideate (solutions) → Prototype → Test → Refine → Ship → Measure → Iterate",
+            "Just design and ship",
+            "Research only",
+            "Build and forget"
+          ],
+          "answer": 0,
+          "explanation": "The 'double diamond' model formalizes this. Real projects rarely follow it linearly — you loop back constantly. The discipline is making each phase intentional, not skipping them. Even tight timelines benefit from compressed versions of all phases."
+        },
+        {
+          "id": "ux-097",
+          "q": "What's the BEST way to KEEP IMPROVING as a designer?",
+          "options": [
+            "Ship real work, get real user feedback, study great products, contribute to design communities, keep learning new tools and methods",
+            "Memorize design rules",
+            "Avoid criticism",
+            "Stick to one tool forever"
+          ],
+          "answer": 0,
+          "explanation": "Design skill compounds through doing, observing impact, and iterating. Read voraciously (Smashing Mag, Nielsen Norman Group, A List Apart). Study products you use daily — what works, what doesn't, why? Reverse-engineer excellence."
+        },
+        {
+          "id": "ux-098",
+          "q": "What's a SIGN your design is succeeding?",
+          "options": [
+            "Users accomplish their goals without confusion, friction, or asking for help — measured by usability tests AND product analytics",
+            "Visual design awards",
+            "Designer compliments",
+            "Stakeholders approving"
+          ],
+          "answer": 0,
+          "explanation": "External validation (awards, peer praise) is nice but secondary. The hard truth: does the design help real users accomplish real things? Quantitative (analytics, conversion) + qualitative (research, support tickets) signals together tell the real story."
+        },
+        {
+          "id": "ux-099",
+          "q": "What's the BIGGEST trap for designers in 2026?",
+          "options": [
+            "Chasing visual trends without understanding their purpose — design follows function, not the other way around",
+            "Using AI tools",
+            "Following trends thoughtfully",
+            "Learning new methods"
+          ],
+          "answer": 0,
+          "explanation": "Trends are seasonal; principles are durable. Glassmorphism is beautiful when it fits the brand context. Brutalism works for some products. Aurora UI suits certain AI tools. Use trends as tools, not as goals."
+        },
+        {
+          "id": "ux-100",
+          "q": "What's the MOST important meta-skill for long-term design careers?",
+          "options": [
+            "Empathy combined with rigor — understanding humans deeply AND building craft, taste, and systematic thinking",
+            "Just visual taste",
+            "Just technical skills",
+            "Memorizing tools"
+          ],
+          "answer": 0,
+          "explanation": "Tools change every few years. Visual trends shift constantly. What persists: the ability to understand users deeply, frame problems sharply, and craft solutions thoughtfully. Build those foundations; everything else compounds on top."
+        }
+      ]
+    }
+  ]
+}

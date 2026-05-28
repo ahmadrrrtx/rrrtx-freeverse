@@ -1,0 +1,1314 @@
+{
+  "id": "data-analysis",
+  "title": "Data Analysis Basics",
+  "description": "Mean, median, distributions, visualizations. Turn raw data into insights.",
+  "category": "Data",
+  "icon": "📊",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What data analysis is",
+      "questions": [
+        {
+          "id": "da-001",
+          "q": "What is the PRIMARY goal of data analysis?",
+          "options": [
+            "Turning raw data into insights that inform decisions",
+            "Generating the largest spreadsheet possible",
+            "Memorizing every number in a dataset",
+            "Creating animated charts"
+          ],
+          "answer": 0,
+          "explanation": "Data analysis is a means to an end: better decisions. The deliverable is insight (and an action) — not the chart, not the model, not the dashboard. If your analysis doesn't change what someone does, it didn't matter."
+        },
+        {
+          "id": "da-002",
+          "q": "What's the DIFFERENCE between data ANALYSIS and data SCIENCE?",
+          "options": [
+            "Analysis focuses on answering specific business questions from existing data; data science adds predictive modeling, ML, and statistical inference",
+            "They are identical",
+            "Analysis is for small data, science for big data",
+            "Analysis uses Excel, science uses Python only"
+          ],
+          "answer": 0,
+          "explanation": "Big overlap, but the emphasis differs. Analysts answer 'what happened and why?'. Data scientists also answer 'what will happen?' and 'what should we do?' using models. The line blurs more every year."
+        },
+        {
+          "id": "da-003",
+          "q": "Which is a TRUE statement about data analysis?",
+          "options": [
+            "Most analysis time is spent on cleaning and exploring data, not on flashy modeling or visualization",
+            "It's mostly machine learning",
+            "It's mostly making charts",
+            "It's mostly meetings"
+          ],
+          "answer": 0,
+          "explanation": "The famous 80/20 rule: 80% of an analyst's time is spent cleaning, validating, joining, and reshaping data. The actual 'analysis' part is fast once the data is trustworthy. Beginners underestimate this badly."
+        },
+        {
+          "id": "da-004",
+          "q": "What's the FIRST question to ask before starting any analysis?",
+          "options": [
+            "'What decision will this analysis inform, and who will use the result?'",
+            "'What chart should I use?'",
+            "'Which Python library is fastest?'",
+            "'How big is the dataset?'"
+          ],
+          "answer": 0,
+          "explanation": "Without a clear decision context, analysis becomes data-tourism — interesting but useless. Start from the decision: who decides what, when, with this output. Then work backward to data and method."
+        },
+        {
+          "id": "da-005",
+          "q": "Which analyst HABIT compounds the most over a career?",
+          "options": [
+            "Documenting your assumptions, data sources, and reasoning so others (and future you) can audit and reuse the work",
+            "Producing as many charts as possible",
+            "Using the newest tool every week",
+            "Hiding your methodology"
+          ],
+          "answer": 0,
+          "explanation": "Reproducibility is a superpower. Six months later, you'll have forgotten exactly what '2023_final_v2_FINAL.xlsx' contains. Notebooks, comments, version control, and data dictionaries pay massive dividends."
+        }
+      ]
+    },
+    {
+      "topic": "Types of data",
+      "questions": [
+        {
+          "id": "da-006",
+          "q": "What's the DIFFERENCE between quantitative and qualitative data?",
+          "options": [
+            "Quantitative is numeric and measurable; qualitative is categorical or descriptive (text, labels, observations)",
+            "Quantitative is always better",
+            "Qualitative is just opinions",
+            "They mean the same thing"
+          ],
+          "answer": 0,
+          "explanation": "Quantitative: revenue, age, response time. Qualitative: country, customer comments, product category. Modern analysis combines both — qualitative often surfaces the WHY behind quantitative patterns."
+        },
+        {
+          "id": "da-007",
+          "q": "What is CATEGORICAL data?",
+          "options": [
+            "Data representing distinct groups or labels — like country, gender, product category, status",
+            "Only numeric data",
+            "Data in categories of file types",
+            "Sorted data only"
+          ],
+          "answer": 0,
+          "explanation": "Categorical data has no inherent numeric meaning. 'Country = 5' doesn't mean anything. You can count and group categorical data; you can't average it. Visualize with bar charts, not line charts."
+        },
+        {
+          "id": "da-008",
+          "q": "What's the difference between ORDINAL and NOMINAL categorical data?",
+          "options": [
+            "Ordinal has a meaningful order (Small/Medium/Large); nominal does not (Red/Blue/Green)",
+            "They are identical",
+            "Ordinal is for numbers only",
+            "Nominal must always be sorted"
+          ],
+          "answer": 0,
+          "explanation": "This affects what you can do statistically. With ordinal data you can compute medians and percentiles. With pure nominal data you can only count, mode, and group. Treating nominal data as if it were ordinal is a classic beginner mistake."
+        },
+        {
+          "id": "da-009",
+          "q": "What is CONTINUOUS vs DISCRETE quantitative data?",
+          "options": [
+            "Continuous can take any value in a range (height, temperature); discrete takes specific values (number of children, ratings 1-5)",
+            "Continuous is always larger",
+            "Discrete is for integers only",
+            "They mean the same thing"
+          ],
+          "answer": 0,
+          "explanation": "This guides chart selection. Continuous → histograms, density plots. Discrete → bar charts. Treating discrete data as continuous (e.g., averaging ratings of 1-5 to get '3.7') is statistically lazy but common in practice."
+        },
+        {
+          "id": "da-010",
+          "q": "What is TIME-SERIES data?",
+          "options": [
+            "Data points indexed in time order — like daily sales, hourly traffic, monthly revenue",
+            "Any data with dates",
+            "Only stock prices",
+            "Static data"
+          ],
+          "answer": 0,
+          "explanation": "Time-series has special structure: trend, seasonality, autocorrelation. It demands different techniques than cross-sectional data. The order of observations carries information that you destroy if you shuffle them."
+        }
+      ]
+    },
+    {
+      "topic": "Data sources and collection",
+      "questions": [
+        {
+          "id": "da-011",
+          "q": "Which is a COMMON data source for analysis?",
+          "options": [
+            "Application databases (SQL), event logs, CRM exports, API responses, spreadsheets, public datasets",
+            "Only company-internal data",
+            "Only data you collect yourself",
+            "Only one source per analysis"
+          ],
+          "answer": 0,
+          "explanation": "Real analysis usually combines multiple sources: transactional DB + marketing platform + support tickets + a Google Sheet someone maintains manually. Joining them cleanly is half the work."
+        },
+        {
+          "id": "da-012",
+          "q": "What is METADATA?",
+          "options": [
+            "Data ABOUT the data — its source, structure, when it was collected, definitions, units, owner",
+            "Backup copies of data",
+            "Compressed data",
+            "Encrypted data"
+          ],
+          "answer": 0,
+          "explanation": "A column called 'amount' is meaningless without metadata: is it USD or PKR? Pre-tax or post-tax? When was it captured? Good metadata (a data dictionary) prevents months of confused decisions downstream."
+        },
+        {
+          "id": "da-013",
+          "q": "What's a 'data dictionary'?",
+          "options": [
+            "A document describing every table/column: name, type, meaning, units, allowed values, source",
+            "A list of all data files",
+            "A glossary of statistics terms",
+            "A backup index"
+          ],
+          "answer": 0,
+          "explanation": "Every serious data team maintains one. Without it, every analyst rediscovers tribal knowledge: 'Oh, status=4 means cancelled — not deleted, that's 7.' Hours wasted per analyst per week without good docs."
+        },
+        {
+          "id": "da-014",
+          "q": "Which is a SAFE practice when receiving a new dataset?",
+          "options": [
+            "Profile it first: row count, column types, null rates, value distributions, date ranges, unique IDs",
+            "Trust it immediately and start analyzing",
+            "Delete suspicious rows without checking",
+            "Average everything together"
+          ],
+          "answer": 0,
+          "explanation": "Profiling surfaces problems early: duplicate keys, missing dates, suspicious outliers, schema mismatches. Tools: pandas df.describe()/df.info(), ydata-profiling, Great Expectations. 30 minutes of profiling saves 30 hours of debugging later."
+        },
+        {
+          "id": "da-015",
+          "q": "What is 'survivorship bias' in data collection?",
+          "options": [
+            "When your data only includes 'survivors' (successful cases, current customers) — leading to misleading conclusions",
+            "When old data survives longer than new",
+            "A backup data strategy",
+            "When data files don't get deleted"
+          ],
+          "answer": 0,
+          "explanation": "Classic example: analyzing successful startups to find success factors misses the thousands of failed startups with the same factors. Your conclusion is biased toward survivors. Always ask: 'What's NOT in this data, and why?'"
+        }
+      ]
+    },
+    {
+      "topic": "Data cleaning",
+      "questions": [
+        {
+          "id": "da-016",
+          "q": "What is 'data cleaning'?",
+          "options": [
+            "Identifying and fixing errors, inconsistencies, missing values, duplicates, and outliers before analysis",
+            "Deleting all data and restarting",
+            "Compressing the data",
+            "Encrypting the data"
+          ],
+          "answer": 0,
+          "explanation": "Also called 'data wrangling' or 'data munging'. This step is unglamorous but essential — garbage in, garbage out. Every wrong analysis you've ever seen started with insufficient cleaning."
+        },
+        {
+          "id": "da-017",
+          "q": "How should you handle MISSING values?",
+          "options": [
+            "Investigate WHY they're missing first — the cause determines the right strategy (drop, impute mean/median, predict, or flag)",
+            "Always delete those rows",
+            "Always replace with 0",
+            "Always replace with the mean"
+          ],
+          "answer": 0,
+          "explanation": "Three patterns: MCAR (random — usually safe to drop), MAR (depends on observed data — imputable), MNAR (depends on the missing value itself — hardest). Always document your strategy and consider how it might bias the result."
+        },
+        {
+          "id": "da-018",
+          "q": "What's a DUPLICATE row, and why is it dangerous?",
+          "options": [
+            "Two rows that should represent one entity but appear twice — they inflate counts, sums, and averages",
+            "Two rows that look similar",
+            "Backup copies",
+            "A formatting issue"
+          ],
+          "answer": 0,
+          "explanation": "Duplicates from bad joins, double-clicked submit buttons, or syncing bugs silently corrupt every aggregate. Always check uniqueness on what should be your primary key. Pandas: df.duplicated().sum()."
+        },
+        {
+          "id": "da-019",
+          "q": "What's an OUTLIER?",
+          "options": [
+            "A value far outside the typical range — could be a data error, a rare real event, or a meaningful signal worth investigating",
+            "Always wrong data to be deleted",
+            "Always the most important data",
+            "Statistically irrelevant"
+          ],
+          "answer": 0,
+          "explanation": "Don't reflexively delete outliers. Sometimes the outlier IS the story (fraud, viral post, system bug). Investigate first. If you remove them, document why. The IQR rule (1.5×IQR beyond Q1/Q3) is a common starting heuristic."
+        },
+        {
+          "id": "da-020",
+          "q": "Which is a COMMON inconsistency in real data?",
+          "options": [
+            "Same value written differently: 'USA' vs 'usa' vs 'U.S.A.' vs 'United States' — all should normalize to one",
+            "Identical perfect values",
+            "Too many decimals",
+            "Sorted values"
+          ],
+          "answer": 0,
+          "explanation": "Standardize early. Lowercase strings, strip whitespace, normalize country codes (ISO 3166), unify date formats (ISO 8601: YYYY-MM-DD). One inconsistent string kills a join silently."
+        }
+      ]
+    },
+    {
+      "topic": "Descriptive statistics",
+      "questions": [
+        {
+          "id": "da-021",
+          "q": "What is the MEAN?",
+          "options": [
+            "The arithmetic average: sum of values divided by count — sensitive to outliers",
+            "The most common value",
+            "The middle value",
+            "The largest value"
+          ],
+          "answer": 0,
+          "explanation": "Mean is the most-used summary statistic — but easily distorted by outliers. One billionaire in a 'mean income' calculation can dwarf 999 regular people. Always pair mean with median when describing distributions."
+        },
+        {
+          "id": "da-022",
+          "q": "What is the MEDIAN?",
+          "options": [
+            "The middle value when data is sorted — robust to outliers",
+            "The average value",
+            "The most frequent value",
+            "The variance"
+          ],
+          "answer": 0,
+          "explanation": "Median is mean's robust cousin. If mean and median differ a lot, your distribution is skewed and you should investigate. Income, response time, and many real-world metrics are skewed — median often tells the truer story."
+        },
+        {
+          "id": "da-023",
+          "q": "What is the MODE?",
+          "options": [
+            "The most frequently occurring value(s) — the only summary that works on nominal categorical data",
+            "The middle value",
+            "The average",
+            "The range"
+          ],
+          "answer": 0,
+          "explanation": "Mode is useful for categorical data and for finding 'the typical case'. A distribution can have one mode (unimodal), two (bimodal), or none. Bimodal distributions often indicate two distinct populations mixed together — worth splitting them."
+        },
+        {
+          "id": "da-024",
+          "q": "What does STANDARD DEVIATION measure?",
+          "options": [
+            "The typical distance of values from the mean — how spread out the data is",
+            "The average value",
+            "The largest value",
+            "The number of rows"
+          ],
+          "answer": 0,
+          "explanation": "Low std dev = values cluster tightly around the mean. High std dev = spread out. Same mean + different std dev = very different stories. Always report spread (std dev, IQR, or range) alongside center (mean, median)."
+        },
+        {
+          "id": "da-025",
+          "q": "What are PERCENTILES?",
+          "options": [
+            "Values dividing data into 100 equal parts — the 75th percentile is the value below which 75% of data falls",
+            "The percentage of missing data",
+            "The error rate",
+            "The data size"
+          ],
+          "answer": 0,
+          "explanation": "Percentiles are how you describe distributions beyond the mean. Engineering teams care about p50/p95/p99 latency more than mean latency — because the user feels the tail, not the average."
+        }
+      ]
+    },
+    {
+      "topic": "Distributions",
+      "questions": [
+        {
+          "id": "da-026",
+          "q": "What is a DISTRIBUTION?",
+          "options": [
+            "How values are spread across the range — visualized with histograms or density plots",
+            "The total count of values",
+            "The average",
+            "Where data is stored"
+          ],
+          "answer": 0,
+          "explanation": "Understanding the shape of your data is the foundation of analysis. Many statistical methods assume specific distributions (often normal) — assuming wrongly produces wrong conclusions."
+        },
+        {
+          "id": "da-027",
+          "q": "What is a NORMAL DISTRIBUTION?",
+          "options": [
+            "A symmetric bell-shaped distribution where mean = median = mode — many natural measurements follow it",
+            "Any common distribution",
+            "A uniform distribution",
+            "Only used in finance"
+          ],
+          "answer": 0,
+          "explanation": "The famous 68-95-99.7 rule: ~68% of values within 1 std dev of mean, 95% within 2, 99.7% within 3. Natural measurements (height, measurement error, test scores) are often roughly normal — but business metrics often are NOT."
+        },
+        {
+          "id": "da-028",
+          "q": "What is SKEWNESS?",
+          "options": [
+            "A measure of asymmetry — right-skewed (long tail to the right) is common in income, prices, and counts",
+            "How smooth a curve is",
+            "The peak height",
+            "The number of modes"
+          ],
+          "answer": 0,
+          "explanation": "Right-skewed data has mean > median (the long tail pulls the mean up). Left-skewed: mean < median. Recognize skew before applying mean-based statistics — they may mislead."
+        },
+        {
+          "id": "da-029",
+          "q": "What is a LONG-TAIL distribution?",
+          "options": [
+            "A distribution where a small number of values are extreme — a few items account for disproportionate impact (the 80/20 rule)",
+            "A normal distribution",
+            "A short, flat distribution",
+            "A distribution with no variance"
+          ],
+          "answer": 0,
+          "explanation": "Most business data is long-tailed: a few products drive most revenue, a few customers drive most support tickets, a few pages drive most traffic. Plan analyses and dashboards around the tail, not the average."
+        },
+        {
+          "id": "da-030",
+          "q": "Why do many statistical methods ASSUME normality?",
+          "options": [
+            "The math is simpler and Central Limit Theorem makes sample means roughly normal even when the underlying data isn't",
+            "Normal data is the only valid data",
+            "All data should be normalized first",
+            "Normal is faster to compute"
+          ],
+          "answer": 0,
+          "explanation": "CLT is the foundation: even non-normal data produces approximately normal sample means with enough samples. This is why hypothesis testing and confidence intervals 'work' on many datasets — but always check assumptions for small samples or extreme skew."
+        }
+      ]
+    },
+    {
+      "topic": "Correlation and causation",
+      "questions": [
+        {
+          "id": "da-031",
+          "q": "What does CORRELATION measure?",
+          "options": [
+            "The strength and direction of a linear relationship between two variables, on a -1 to +1 scale",
+            "Whether one variable causes another",
+            "The size of the dataset",
+            "The variance"
+          ],
+          "answer": 0,
+          "explanation": "+1 = perfect positive linear relationship. -1 = perfect negative. 0 = no linear relationship (but non-linear may exist!). Always visualize the scatter plot — correlation alone hides curves, clusters, and outliers."
+        },
+        {
+          "id": "da-032",
+          "q": "What's the MOST DANGEROUS phrase in data analysis?",
+          "options": [
+            "'Correlation implies causation' — it does not, ever",
+            "'Let me check the data'",
+            "'I don't know yet'",
+            "'We need more data'"
+          ],
+          "answer": 0,
+          "explanation": "Ice cream sales correlate with drowning deaths (both rise in summer). Storks correlate with birth rates (both higher in rural areas). Establishing causation requires controlled experiments, careful design, or specialized methods — not just correlation coefficients."
+        },
+        {
+          "id": "da-033",
+          "q": "What is a CONFOUNDING variable?",
+          "options": [
+            "A hidden third variable that affects both observed variables, creating a false sense of causal relationship",
+            "A confusing data point",
+            "A duplicate column",
+            "An outlier"
+          ],
+          "answer": 0,
+          "explanation": "Coffee consumption correlates with heart disease — until you control for smoking (which correlates with both). Smoking is the confounder. Always ask 'what else could explain this?' before claiming causation."
+        },
+        {
+          "id": "da-034",
+          "q": "What is the GOLD STANDARD for establishing causation?",
+          "options": [
+            "Randomized controlled experiment (A/B test) — random assignment removes confounders",
+            "Large observational dataset",
+            "Strong correlation",
+            "Many data points"
+          ],
+          "answer": 0,
+          "explanation": "Random assignment makes the groups equivalent on average, so any difference in outcome must be caused by the treatment. This is why pharmaceuticals require RCTs and why tech companies A/B test every meaningful change."
+        },
+        {
+          "id": "da-035",
+          "q": "What is SPURIOUS CORRELATION?",
+          "options": [
+            "A statistically significant correlation that has no causal connection — often arising from chance or shared trends",
+            "A weak correlation",
+            "A negative correlation",
+            "A correlation in small data"
+          ],
+          "answer": 0,
+          "explanation": "tylervigen.com/spurious-correlations has hundreds of hilarious examples (Nicolas Cage films vs. drownings). With enough variables, random correlations are GUARANTEED. Domain knowledge separates signal from noise."
+        }
+      ]
+    },
+    {
+      "topic": "Comparing groups",
+      "questions": [
+        {
+          "id": "da-036",
+          "q": "When comparing two groups, why isn't 'group A's mean is higher' enough?",
+          "options": [
+            "The difference might be due to random sampling variation — you need to consider sample size and variability",
+            "Means are always meaningful",
+            "Higher is always better",
+            "Means can never be compared"
+          ],
+          "answer": 0,
+          "explanation": "Two random samples from the SAME population will have different means by chance. The question is: 'Is the observed difference larger than what chance alone would produce?' That's what hypothesis tests answer."
+        },
+        {
+          "id": "da-037",
+          "q": "What is a 'STATISTICALLY SIGNIFICANT' difference?",
+          "options": [
+            "A difference unlikely to be due to random chance alone (typically p < 0.05) — but significant ≠ important",
+            "A very large difference",
+            "A difference of any size",
+            "A difference in 100% of the data"
+          ],
+          "answer": 0,
+          "explanation": "Statistical significance and practical significance are different. With enough data, tiny meaningless differences become 'significant'. Always also report effect size and ask: 'Does this difference matter for the decision?'"
+        },
+        {
+          "id": "da-038",
+          "q": "What is a P-VALUE?",
+          "options": [
+            "The probability of observing your result (or more extreme) IF the null hypothesis (no real effect) were true",
+            "The probability that your hypothesis is correct",
+            "The size of the effect",
+            "Always a percentage"
+          ],
+          "answer": 0,
+          "explanation": "One of the most misinterpreted concepts in statistics. p < 0.05 does NOT mean '95% chance the effect is real'. It means 'if there were truly no effect, results this extreme would happen <5% of the time by chance'. Subtle but critical distinction."
+        },
+        {
+          "id": "da-039",
+          "q": "What is the MULTIPLE COMPARISONS problem?",
+          "options": [
+            "Testing many hypotheses raises the chance of false positives — 20 random tests at p<0.05 produce ~1 false discovery by chance",
+            "Comparing too many groups",
+            "Running tests too many times",
+            "Comparing different dataset types"
+          ],
+          "answer": 0,
+          "explanation": "If you slice your data 20 ways and report only the significant slice, you've engaged in 'p-hacking'. Pre-register hypotheses or apply corrections (Bonferroni, FDR) to keep error rates honest."
+        },
+        {
+          "id": "da-040",
+          "q": "What's the BEST way to present an A/B test result?",
+          "options": [
+            "Report the effect size, confidence interval, sample size, AND p-value — not just 'significant or not'",
+            "Just say 'significant' or 'not significant'",
+            "Only show the winning version",
+            "Show the p-value alone"
+          ],
+          "answer": 0,
+          "explanation": "A 95% confidence interval like '+3% to +7%' communicates the practical magnitude AND uncertainty far better than 'p = 0.03'. Decision-makers care about magnitudes, not p-values."
+        }
+      ]
+    },
+    {
+      "topic": "Excel and spreadsheets",
+      "questions": [
+        {
+          "id": "da-041",
+          "q": "Which spreadsheet function COUNTS rows matching a condition?",
+          "options": [
+            "COUNTIF (single condition) or COUNTIFS (multiple conditions)",
+            "COUNT()",
+            "SUMIF()",
+            "ROWS()"
+          ],
+          "answer": 0,
+          "explanation": "The IF-family functions (COUNTIF, SUMIF, AVERAGEIF, MAXIFS, MINIFS) are the workhorses of spreadsheet analysis. Master them before moving to pivot tables."
+        },
+        {
+          "id": "da-042",
+          "q": "What is a PIVOT TABLE?",
+          "options": [
+            "A tool that aggregates and reshapes data — group by one or more dimensions and summarize with sum/count/average",
+            "A type of chart",
+            "A backup table",
+            "A locked table"
+          ],
+          "answer": 0,
+          "explanation": "Pivot tables are the highest-leverage spreadsheet feature. They answer 'sales by region by month' or 'orders per customer by year' in seconds. Every analyst should be fluent in them."
+        },
+        {
+          "id": "da-043",
+          "q": "Which Excel function COMBINES data from two ranges by a key?",
+          "options": [
+            "XLOOKUP (modern, recommended) or VLOOKUP/INDEX-MATCH (older)",
+            "MERGE",
+            "JOIN",
+            "LINK"
+          ],
+          "answer": 0,
+          "explanation": "XLOOKUP (introduced in 2019) is far better than VLOOKUP: handles left-side keys, returns helpful errors, no column-index counting. Use it whenever available. For older Excel: INDEX(range, MATCH(key, lookup_range, 0))."
+        },
+        {
+          "id": "da-044",
+          "q": "What's a SMART pattern for keeping spreadsheets analysis-ready?",
+          "options": [
+            "One table per sheet, headers in row 1, no merged cells, no blank rows mid-data, consistent types per column",
+            "Lots of merged cells for visual grouping",
+            "Multiple tables on one sheet",
+            "Inline formatting as data"
+          ],
+          "answer": 0,
+          "explanation": "'Tidy data' principles apply to spreadsheets too. Clean tabular data is easy to pivot, filter, and import into Python/SQL. Visually decorated 'report' sheets are read-only — never analysis-ready."
+        },
+        {
+          "id": "da-045",
+          "q": "What's the LIMITATION of spreadsheets for analysis?",
+          "options": [
+            "Hard to reproduce, version-control, audit, or scale beyond ~1M rows — and silent errors are common",
+            "Spreadsheets are too fast",
+            "Spreadsheets only handle numbers",
+            "Spreadsheets have no functions"
+          ],
+          "answer": 0,
+          "explanation": "Spreadsheets are great for prototyping. For repeated, complex, or auditable analysis, move to SQL/Python — where logic is explicit, testable, and version-controlled. JPMorgan's London Whale loss was partly traced to a copy-paste error in a spreadsheet model."
+        }
+      ]
+    },
+    {
+      "topic": "Pandas (Python)",
+      "questions": [
+        {
+          "id": "da-046",
+          "q": "What is pandas?",
+          "options": [
+            "A Python library providing the DataFrame — a 2D labeled table optimized for fast data manipulation",
+            "A type of database",
+            "A visualization library",
+            "A web framework"
+          ],
+          "answer": 0,
+          "explanation": "Pandas is the lingua franca of Python data work. Built on NumPy. DataFrames feel like SQL tables + Excel pivot tables in code form. Essentially mandatory for serious Python analysis."
+        },
+        {
+          "id": "da-047",
+          "q": "How do you load a CSV into pandas?",
+          "options": [
+            "df = pd.read_csv('file.csv')",
+            "df = csv.load('file.csv')",
+            "df = pandas('file.csv')",
+            "df = load.csv('file.csv')"
+          ],
+          "answer": 0,
+          "explanation": "pd.read_csv has dozens of useful parameters: parse_dates, dtype, na_values, encoding, nrows. Use them to fix issues at load time instead of later."
+        },
+        {
+          "id": "da-048",
+          "q": "What does `df.describe()` show?",
+          "options": [
+            "Summary statistics for numeric columns: count, mean, std, min, quartiles, max",
+            "The first 5 rows",
+            "The data types",
+            "The file size"
+          ],
+          "answer": 0,
+          "explanation": "First thing to run on any new DataFrame. Pair with df.info() (types and null counts) and df.head() (peek at rows). These three calls reveal most data quality issues."
+        },
+        {
+          "id": "da-049",
+          "q": "How do you filter rows in pandas?",
+          "options": [
+            "df[df['age'] > 18]  (boolean indexing)",
+            "df.filter(age > 18)",
+            "df.where(df.age > 18)",
+            "df.select('age > 18')"
+          ],
+          "answer": 0,
+          "explanation": "Boolean indexing is the most pythonic pandas pattern. Combine with & (and), | (or), ~ (not): df[(df.age > 18) & (df.country == 'PK')]. Note: use & not 'and' inside boolean indexing."
+        },
+        {
+          "id": "da-050",
+          "q": "What is `df.groupby('country')['revenue'].sum()` doing?",
+          "options": [
+            "Grouping rows by country and summing revenue within each group — equivalent to SQL GROUP BY",
+            "Sorting by country",
+            "Filtering by country",
+            "Counting unique countries"
+          ],
+          "answer": 0,
+          "explanation": "GroupBy is the cornerstone of pandas analysis. Chain it with agg() for multiple aggregations: df.groupby('country').agg({'revenue': 'sum', 'orders': 'count'})."
+        }
+      ]
+    },
+    {
+      "topic": "Visualization fundamentals",
+      "questions": [
+        {
+          "id": "da-051",
+          "q": "Why visualize data at all?",
+          "options": [
+            "Humans understand visual patterns far faster than tables of numbers — charts reveal trends, outliers, and relationships at a glance",
+            "To make reports look pretty",
+            "Because executives can't read numbers",
+            "It's required by regulation"
+          ],
+          "answer": 0,
+          "explanation": "Anscombe's Quartet is the classic demonstration: four datasets with identical summary statistics but wildly different shapes. Visualization revealed what the means and std devs hid."
+        },
+        {
+          "id": "da-052",
+          "q": "Which chart type is BEST for comparing values across categories?",
+          "options": [
+            "Bar chart — easy to compare bar lengths accurately",
+            "Pie chart",
+            "3D pyramid",
+            "Word cloud"
+          ],
+          "answer": 0,
+          "explanation": "Bar charts win for category comparison because the human eye compares lengths well. Pie charts force angle-comparison, which we do poorly — especially with more than 3-4 slices."
+        },
+        {
+          "id": "da-053",
+          "q": "Which chart is BEST for showing a trend over time?",
+          "options": [
+            "Line chart — the slope reveals direction and rate of change",
+            "Bar chart",
+            "Scatter plot",
+            "Pie chart"
+          ],
+          "answer": 0,
+          "explanation": "Line charts are perfect for continuous time-series. Use bar charts when time is broken into discrete periods (monthly totals) and the comparison matters more than the trend."
+        },
+        {
+          "id": "da-054",
+          "q": "Which chart shows the RELATIONSHIP between two numeric variables?",
+          "options": [
+            "Scatter plot — each dot is one observation, revealing patterns, clusters, and outliers",
+            "Pie chart",
+            "Bar chart",
+            "Histogram"
+          ],
+          "answer": 0,
+          "explanation": "Scatter plots reveal correlations, non-linear patterns, and clusters that summary statistics miss. Always plot your data before computing a correlation coefficient."
+        },
+        {
+          "id": "da-055",
+          "q": "Which chart shows the DISTRIBUTION of a single numeric variable?",
+          "options": [
+            "Histogram (or box plot, density plot) — shows how values are spread across ranges",
+            "Line chart",
+            "Pie chart",
+            "Scatter plot"
+          ],
+          "answer": 0,
+          "explanation": "Histograms reveal skew, modes, outliers, and gaps. Bin width matters: too narrow = noisy, too wide = hides detail. Try a few."
+        }
+      ]
+    },
+    {
+      "topic": "Charting best practices",
+      "questions": [
+        {
+          "id": "da-056",
+          "q": "Why are PIE CHARTS often a poor choice?",
+          "options": [
+            "Humans compare angles poorly; bar charts use length which we read accurately; pies break down with >3-4 slices",
+            "They're too colorful",
+            "They can't be printed",
+            "They're deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Use pie charts only when there are 2-3 clear segments and you want to emphasize 'part of a whole'. For comparing multiple categories, a bar chart will always communicate better."
+        },
+        {
+          "id": "da-057",
+          "q": "What's a 'truncated Y-axis' and why is it usually a problem?",
+          "options": [
+            "When the Y-axis doesn't start at zero, exaggerating small differences — common in misleading charts",
+            "Y-axis with no values",
+            "Y-axis sorted differently",
+            "Y-axis too tall"
+          ],
+          "answer": 0,
+          "explanation": "Starting a bar chart Y-axis at 50 instead of 0 can make a 2% change look like a 50% change. For bars: always start at zero. For line charts showing change: truncation can be okay if labeled clearly."
+        },
+        {
+          "id": "da-058",
+          "q": "What's a SMART rule for chart colors?",
+          "options": [
+            "Use color to highlight, not decorate — use the same color for the same thing across charts, and consider colorblind users",
+            "Use as many colors as possible",
+            "Always use rainbow palettes",
+            "Color doesn't matter"
+          ],
+          "answer": 0,
+          "explanation": "About 8% of men and 0.5% of women have color vision deficiency. Red/green is the worst pairing. Tools like ColorBrewer and viridis palettes are designed for accessibility AND clarity."
+        },
+        {
+          "id": "da-059",
+          "q": "Which is a SIGN of a bad chart?",
+          "options": [
+            "3D effects, gradient fills, drop shadows, decorative icons — anything that doesn't serve comprehension",
+            "Clear axis labels",
+            "A title that states the insight",
+            "Simple flat design"
+          ],
+          "answer": 0,
+          "explanation": "Edward Tufte calls this 'chartjunk'. Every visual element should serve communication. Remove anything that doesn't. The best charts feel almost too simple."
+        },
+        {
+          "id": "da-060",
+          "q": "What should the TITLE of an analytical chart do?",
+          "options": [
+            "State the INSIGHT, not just describe the variables — e.g., 'Mobile traffic now exceeds desktop' instead of 'Traffic by Device'",
+            "Be as short as possible",
+            "Avoid stating opinions",
+            "Use complex jargon"
+          ],
+          "answer": 0,
+          "explanation": "An analytical chart has a point. The title should tell the reader what that point is. Make the chart's purpose explicit; let the viz support it."
+        }
+      ]
+    },
+    {
+      "topic": "Visualization tools",
+      "questions": [
+        {
+          "id": "da-061",
+          "q": "Which is a POPULAR Python visualization library?",
+          "options": [
+            "matplotlib (foundational), seaborn (statistical), plotly (interactive), altair (grammar of graphics)",
+            "pandas-viz",
+            "py-charts",
+            "data-paint"
+          ],
+          "answer": 0,
+          "explanation": "Each has strengths. matplotlib: ultimate control. seaborn: beautiful statistical defaults. plotly: interactive HTML charts. altair: clean declarative grammar. Most analysts mix them."
+        },
+        {
+          "id": "da-062",
+          "q": "Which TOOL is most associated with business intelligence dashboards?",
+          "options": [
+            "Tableau, Power BI, Looker, Metabase — visual tools for non-technical stakeholders",
+            "Excel only",
+            "Python notebooks",
+            "Static images"
+          ],
+          "answer": 0,
+          "explanation": "BI tools democratize data access. Built for self-service exploration: drag dimensions and measures, filter, drill down. Stakeholders explore on their own instead of asking analysts every question."
+        },
+        {
+          "id": "da-063",
+          "q": "What's a 'DASHBOARD'?",
+          "options": [
+            "A live visual summary of key metrics, designed for at-a-glance monitoring of an operation",
+            "A static report",
+            "A type of chart",
+            "An interactive game"
+          ],
+          "answer": 0,
+          "explanation": "Good dashboards answer 'how are we doing right now?' in seconds. Bad dashboards drown viewers in dozens of charts they never look at. Start with 5-7 key metrics; add more only by demand."
+        },
+        {
+          "id": "da-064",
+          "q": "What's the DIFFERENCE between a dashboard and a report?",
+          "options": [
+            "Dashboards are interactive and live (monitoring); reports are static narratives (insight delivery for a moment in time)",
+            "Dashboards are bigger",
+            "Reports are paper, dashboards are digital",
+            "They are identical"
+          ],
+          "answer": 0,
+          "explanation": "Dashboards = ongoing visibility. Reports = a story told once. They serve different purposes and design needs. Don't make a 50-chart 'dashboard' that's actually a report."
+        },
+        {
+          "id": "da-065",
+          "q": "What's the FREE go-to tool for sharing interactive charts on the web?",
+          "options": [
+            "Plotly, Observable, Streamlit, Datawrapper — many free options for sharing live data online",
+            "Only paid Tableau",
+            "PowerPoint",
+            "Microsoft Word"
+          ],
+          "answer": 0,
+          "explanation": "Datawrapper is especially loved by journalists for fast, beautiful, responsive charts. Observable is interactive notebooks. Streamlit turns Python scripts into web apps. All free for basic use."
+        }
+      ]
+    },
+    {
+      "topic": "Analytical thinking",
+      "questions": [
+        {
+          "id": "da-066",
+          "q": "What's the FIRST step of a good analysis?",
+          "options": [
+            "Clarify the question — what decision does this inform, what answer would change behavior, what are the constraints?",
+            "Open the data and start exploring",
+            "Build a complex model",
+            "Make a chart"
+          ],
+          "answer": 0,
+          "explanation": "Time invested in framing the question pays back 10x in saved analysis effort. Bad question → wrong analysis → wrong decision. Junior analysts dive into data; senior analysts dive into the question first."
+        },
+        {
+          "id": "da-067",
+          "q": "What is 'EXPLORATORY DATA ANALYSIS' (EDA)?",
+          "options": [
+            "Iteratively investigating data with summary stats and visualizations to understand its structure and surface patterns",
+            "A formal hypothesis test",
+            "Building production models",
+            "Cleaning data only"
+          ],
+          "answer": 0,
+          "explanation": "EDA is named and popularized by John Tukey. The mindset: be curious, plot things, ask 'what's weird here?', follow surprises. Often more valuable than the formal analysis that follows."
+        },
+        {
+          "id": "da-068",
+          "q": "What's the difference between EXPLORATORY and CONFIRMATORY analysis?",
+          "options": [
+            "Exploratory generates hypotheses from data; confirmatory tests pre-specified hypotheses with new data",
+            "They are identical",
+            "Exploratory uses computers, confirmatory uses pen and paper",
+            "Confirmatory is for big data only"
+          ],
+          "answer": 0,
+          "explanation": "Critical distinction. Generating AND testing a hypothesis on the same data is p-hacking. Best practice: explore on a sample or training set, confirm on held-out data or a new collection."
+        },
+        {
+          "id": "da-069",
+          "q": "What is 'SAMPLING BIAS'?",
+          "options": [
+            "When your data sample doesn't represent the population you want to draw conclusions about",
+            "When samples are too small",
+            "When sampling is too slow",
+            "When samples are too large"
+          ],
+          "answer": 0,
+          "explanation": "Survey only your active users → conclusions don't apply to lapsed users. Analyze only weekday traffic → miss weekend behavior. Always ask 'who or what is NOT in this sample, and how might they differ?'"
+        },
+        {
+          "id": "da-070",
+          "q": "What does it mean to 'STEEL-MAN' your own analysis?",
+          "options": [
+            "Actively look for ways your conclusion could be wrong — alternative explanations, data issues, confounders",
+            "Add steel to your charts",
+            "Make your analysis stronger by hiding flaws",
+            "Convince others your conclusion is right"
+          ],
+          "answer": 0,
+          "explanation": "Confirmation bias is the analyst's worst enemy. Treat your own analysis with the skepticism you'd apply to a competitor's. If you can't find weaknesses, ask someone else to try."
+        }
+      ]
+    },
+    {
+      "topic": "Storytelling with data",
+      "questions": [
+        {
+          "id": "da-071",
+          "q": "What separates great data communication from mediocre?",
+          "options": [
+            "Leading with the insight ('what'), supporting with evidence, and explicitly stating implications ('so what')",
+            "More charts",
+            "More precise numbers",
+            "Longer presentations"
+          ],
+          "answer": 0,
+          "explanation": "Stakeholders rarely care about your methodology — they care about decisions. Lead with the headline, support with key evidence, save methodology for an appendix. BLUF: Bottom Line Up Front."
+        },
+        {
+          "id": "da-072",
+          "q": "What's a SMART way to structure an analysis presentation?",
+          "options": [
+            "Question → Answer (headline) → Supporting evidence → Caveats → Recommended next steps",
+            "All charts on one slide",
+            "Chronological order of your work",
+            "Math first, conclusion last"
+          ],
+          "answer": 0,
+          "explanation": "Pyramid principle (popularized by McKinsey): start with the answer, then drill down. Respects the audience's time and primes them to evaluate the evidence."
+        },
+        {
+          "id": "da-073",
+          "q": "Why include CAVEATS in your analysis?",
+          "options": [
+            "To honestly communicate uncertainty, data limitations, and assumptions — credibility comes from intellectual honesty",
+            "To cover yourself if wrong",
+            "Because they're legally required",
+            "To make the report longer"
+          ],
+          "answer": 0,
+          "explanation": "Overclaiming destroys trust when caveats surface later (and they always do). Stating limitations upfront is a signal of expertise. Reviewers respect 'we're not sure about X' more than fake certainty."
+        },
+        {
+          "id": "da-074",
+          "q": "What's a COMMON mistake when presenting data to executives?",
+          "options": [
+            "Too much detail, no clear recommendation, focus on methodology over insight",
+            "Too few details",
+            "Not enough math",
+            "Charts too colorful"
+          ],
+          "answer": 0,
+          "explanation": "Executives need: the answer, why you believe it, what they should do. Not: every step of the analysis. Always have a 30-second version and a 5-minute version. Both end with a recommendation."
+        },
+        {
+          "id": "da-075",
+          "q": "What's a great analytical NARRATIVE structure?",
+          "options": [
+            "Setup (context, why this matters) → Conflict (what's happening, what's the problem) → Resolution (insight + recommended action)",
+            "Methods → Results → Discussion",
+            "Long story chronologically",
+            "Data dump"
+          ],
+          "answer": 0,
+          "explanation": "Cole Nussbaumer Knaflic's 'Storytelling with Data' is the canonical book. Stories engage humans in ways tables never will. Don't show every chart you made; tell a clear story with just the ones needed."
+        }
+      ]
+    },
+    {
+      "topic": "Common pitfalls",
+      "questions": [
+        {
+          "id": "da-076",
+          "q": "What is SIMPSON'S PARADOX?",
+          "options": [
+            "A trend appearing in groups disappears or reverses when groups are combined — a famous warning about aggregation",
+            "A statistics-themed cartoon",
+            "A type of regression",
+            "A sampling method"
+          ],
+          "answer": 0,
+          "explanation": "Classic example: UC Berkeley admissions appeared to discriminate against women overall — but within each department, women were admitted at equal or higher rates. The 'effect' was confounded by department choice. Always check whether aggregation hides important subgroup patterns."
+        },
+        {
+          "id": "da-077",
+          "q": "What is 'P-HACKING'?",
+          "options": [
+            "Trying many tests/cuts of data until you find statistically significant results, then reporting only those",
+            "Cracking passwords with statistics",
+            "A type of A/B test",
+            "Optimizing query performance"
+          ],
+          "answer": 0,
+          "explanation": "Major reason for the replication crisis in science. With enough tests, you'll find spurious 'significant' results by chance alone. Pre-register hypotheses; report all comparisons attempted."
+        },
+        {
+          "id": "da-078",
+          "q": "What does 'GARBAGE IN, GARBAGE OUT' mean?",
+          "options": [
+            "Sophisticated analysis on bad data produces bad conclusions — clean data is more valuable than complex methods",
+            "Garbage trucks have specific routes",
+            "AI generates garbage",
+            "Old data is garbage"
+          ],
+          "answer": 0,
+          "explanation": "The most expensive lesson in data is that data quality issues silently invalidate results. The most sophisticated model in the world can't rescue input data full of measurement errors, missing values, or biases."
+        },
+        {
+          "id": "da-079",
+          "q": "What's a WARNING sign that your analysis is wrong?",
+          "options": [
+            "The result is too good to be true, or matches your prior beliefs perfectly",
+            "The result is unexpected",
+            "You ran multiple sanity checks",
+            "Your team disagreed at first"
+          ],
+          "answer": 0,
+          "explanation": "Beautiful, clean, dramatic results often indicate a bug somewhere — a leak between train and test, a join error, double-counting. Senior analysts get MORE skeptical, not less, when results look perfect. Verify before publishing."
+        },
+        {
+          "id": "da-080",
+          "q": "What is 'OVERFITTING' in analysis?",
+          "options": [
+            "Finding patterns specific to your particular dataset that don't generalize to new data — false confidence in noise",
+            "Using too many charts",
+            "Analyzing data too thoroughly",
+            "Computing too many statistics"
+          ],
+          "answer": 0,
+          "explanation": "Common in machine learning, but also in regular analysis. Add enough variables and you can 'explain' anything in retrospect — but the explanation won't predict the future. Validate on held-out data whenever possible."
+        }
+      ]
+    },
+    {
+      "topic": "Tools and ecosystem",
+      "questions": [
+        {
+          "id": "da-081",
+          "q": "What's a JUPYTER NOTEBOOK?",
+          "options": [
+            "An interactive document combining code, output, charts, and prose — the standard tool for exploratory data work",
+            "A paper notebook for Python",
+            "A type of database",
+            "A backup file"
+          ],
+          "answer": 0,
+          "explanation": "Notebooks are great for exploration and communication. They're imperfect for production code (hidden state, hard to version-control diffs). Many teams use them for analysis and convert validated logic into scripts/modules for production."
+        },
+        {
+          "id": "da-082",
+          "q": "Which is THE essential Python data stack?",
+          "options": [
+            "pandas (manipulation), NumPy (math), matplotlib/seaborn (viz), scikit-learn (ML), Jupyter (interactive)",
+            "Only pandas",
+            "Only Excel",
+            "Only TensorFlow"
+          ],
+          "answer": 0,
+          "explanation": "This 'PyData stack' is the foundation. Every data analyst/scientist using Python will use these tools constantly. Newer additions: Polars (faster pandas alternative), DuckDB (in-process SQL), Plotly/Altair (interactive)."
+        },
+        {
+          "id": "da-083",
+          "q": "What is SQL's role in data analysis (vs Python)?",
+          "options": [
+            "SQL queries the database (where most data lives); Python adds transformation, modeling, and visualization on top",
+            "SQL is for storage only",
+            "They do the same thing",
+            "SQL is deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Pattern in modern teams: SQL for filtering/joining/aggregating at the source (efficient), Python for advanced analysis, modeling, and reporting (flexible). Both are essential, complementary skills."
+        },
+        {
+          "id": "da-084",
+          "q": "What is the modern alternative to pandas called POLARS?",
+          "options": [
+            "A Rust-based DataFrame library — much faster and more memory-efficient than pandas, with a similar but cleaner API",
+            "A polar opposite of pandas",
+            "A geographic database",
+            "A backup tool"
+          ],
+          "answer": 0,
+          "explanation": "Polars is rapidly gaining adoption (2024-2026). For datasets too large for pandas comfortably (>1GB), Polars often handles them effortlessly. Worth learning if you work with bigger data."
+        },
+        {
+          "id": "da-085",
+          "q": "What is DUCKDB?",
+          "options": [
+            "An in-process analytical SQL database — like SQLite for analytics, blazing fast on parquet/CSV files",
+            "A duck-themed game",
+            "A backup tool",
+            "A NoSQL database"
+          ],
+          "answer": 0,
+          "explanation": "DuckDB lets you run SQL on local files without setting up a server. Game-changing for analysts. Often outperforms pandas on aggregate queries by 10x+. Pairs beautifully with parquet files."
+        }
+      ]
+    },
+    {
+      "topic": "Reproducibility and rigor",
+      "questions": [
+        {
+          "id": "da-086",
+          "q": "Why is REPRODUCIBILITY important in analysis?",
+          "options": [
+            "Others (and future you) should be able to re-run your analysis and get the same answer — essential for trust and learning",
+            "It's only important in academia",
+            "Reproducibility slows things down",
+            "Reproducibility is just version control"
+          ],
+          "answer": 0,
+          "explanation": "Non-reproducible analyses can't be audited, extended, or debugged when results are questioned. 'I got this number from a spreadsheet a quarter ago, no idea how' is a career-limiting habit. Build reproducible by default."
+        },
+        {
+          "id": "da-087",
+          "q": "What enables a REPRODUCIBLE analysis?",
+          "options": [
+            "Version-controlled code, fixed data snapshots, pinned dependency versions, documented assumptions, parameterized inputs",
+            "A really good memory",
+            "Daily backups",
+            "Working alone"
+          ],
+          "answer": 0,
+          "explanation": "Tools: Git for code, DVC/lakeFS for data versioning, requirements.txt/uv.lock for dependencies, README + comments for assumptions. The Docker container gives full environment reproducibility for critical work."
+        },
+        {
+          "id": "da-088",
+          "q": "What's the RISK of doing analysis in 'finalReport_v4_FINAL_actualfinal.xlsx'?",
+          "options": [
+            "No version history, no change attribution, no ability to roll back — and impossible to know what's the 'real' version",
+            "Inefficient file name",
+            "Slow performance",
+            "It uses too much disk space"
+          ],
+          "answer": 0,
+          "explanation": "This file-naming pattern is a giant red flag. Version control (even just Git for code + a clear naming convention for data exports) solves this. Future you will be grateful."
+        },
+        {
+          "id": "da-089",
+          "q": "What's a 'data lineage'?",
+          "options": [
+            "A trace of where data came from, how it was transformed, and how it became the final number — essential for auditability",
+            "Data inheritance hierarchy",
+            "Data family tree app",
+            "Data backup chain"
+          ],
+          "answer": 0,
+          "explanation": "When a number on a dashboard is questioned, you need to trace it backward: this came from THIS query on THIS table, populated by THIS pipeline from THIS source. Tools like dbt make lineage explicit and auditable."
+        },
+        {
+          "id": "da-090",
+          "q": "What is 'PEER REVIEW' in data analysis?",
+          "options": [
+            "Having a colleague check your methods, assumptions, and conclusions before publishing — catches bugs and biases",
+            "An academic-only practice",
+            "A type of statistical test",
+            "A meeting format"
+          ],
+          "answer": 0,
+          "explanation": "Reviewing each other's analyses is one of the highest-leverage practices for data teams. Fresh eyes catch errors authors miss. Make it a normal part of your workflow, not a punitive exception."
+        }
+      ]
+    },
+    {
+      "topic": "Career and growth",
+      "questions": [
+        {
+          "id": "da-091",
+          "q": "What skills DIFFERENTIATE great analysts?",
+          "options": [
+            "Business understanding + clear communication + technical skill + skepticism — the technical skill alone is the smallest part",
+            "Knowing every Excel function",
+            "Memorizing statistics formulas",
+            "Avoiding stakeholders"
+          ],
+          "answer": 0,
+          "explanation": "Junior analysts focus on tools. Senior analysts focus on the right question, the right method, and the right delivery. Tools are commoditized; judgment is durable."
+        },
+        {
+          "id": "da-092",
+          "q": "What's a STRONG portfolio project for an aspiring analyst?",
+          "options": [
+            "Find a public dataset relevant to a domain you care about, ask interesting questions, document the analysis end-to-end",
+            "Memorize SQL syntax",
+            "Only do tutorials",
+            "Build a clone of Excel"
+          ],
+          "answer": 0,
+          "explanation": "Kaggle datasets, government open data, sports data, your city's open data — endless options. Show: question framing, cleaning, analysis, visualization, narrative. Better than 10 certificates."
+        },
+        {
+          "id": "da-093",
+          "q": "Which COMMUNITY skill matters most for data analysts?",
+          "options": [
+            "Translating business questions into data questions — and translating findings back into business language",
+            "Speaking multiple human languages",
+            "Coding alone",
+            "Avoiding meetings"
+          ],
+          "answer": 0,
+          "explanation": "The analyst sits between the business and the data. Both sides have their own vocabulary. Bridging them well — really understanding the business and respecting their language — is what makes an analyst indispensable."
+        },
+        {
+          "id": "da-094",
+          "q": "How can AI help an analyst — and where should it NOT take over?",
+          "options": [
+            "Help: writing queries, explaining code, generating chart options. Don't replace: judgment about which question to ask and whether the answer matters",
+            "AI should do everything",
+            "AI should do nothing",
+            "AI is only for engineers"
+          ],
+          "answer": 0,
+          "explanation": "AI accelerates the technical execution dramatically. It can't (yet) tell you which question is worth asking or whether you've found something important. Use AI as a multiplier on judgment, not a substitute for it."
+        },
+        {
+          "id": "da-095",
+          "q": "What's the META-SKILL for analysts in 2026 and beyond?",
+          "options": [
+            "Continuous learning — tools change every year, but curiosity, rigor, and clear thinking compound for a lifetime",
+            "Memorizing one tool forever",
+            "Avoiding new tools",
+            "Memorizing every chart type"
+          ],
+          "answer": 0,
+          "explanation": "Data analysis is one of the fastest-evolving fields. The analysts who thrive over decades have one common trait: relentless curiosity about both data and the world. Tools are temporary; thinking habits are permanent."
+        }
+      ]
+    },
+    {
+      "topic": "Putting it all together",
+      "questions": [
+        {
+          "id": "da-096",
+          "q": "What's the OVERALL workflow of a typical analysis?",
+          "options": [
+            "Define question → Gather data → Clean → Explore → Analyze → Validate → Communicate → Act",
+            "Just open data and chart it",
+            "Build model first, then collect data",
+            "Skip cleaning if data looks fine"
+          ],
+          "answer": 0,
+          "explanation": "Every analysis follows this rough shape, even if compressed. Skipping steps (especially defining and validating) is where most analyses go wrong. Frameworks like CRISP-DM formalize this."
+        },
+        {
+          "id": "da-097",
+          "q": "What's the value of CHECKING your numbers before publishing?",
+          "options": [
+            "Numbers presented to stakeholders create downstream decisions — errors propagate quickly and damage trust",
+            "It slows you down unnecessarily",
+            "Numbers are always right",
+            "Stakeholders don't notice errors"
+          ],
+          "answer": 0,
+          "explanation": "One wrong number in a leadership presentation can drive months of misallocated effort. Triple-check headline numbers. Sanity-check against historical data, against known baselines, against intuition. If something feels off, investigate before publishing."
+        },
+        {
+          "id": "da-098",
+          "q": "What's a SIMPLE rule for choosing the right analytical complexity?",
+          "options": [
+            "Use the simplest method that adequately answers the question — complexity should be earned, not defaulted to",
+            "Always use the most complex method",
+            "Always use linear regression",
+            "Always use deep learning"
+          ],
+          "answer": 0,
+          "explanation": "Occam's razor. A simple count or average might answer 80% of questions perfectly. Reserve complex methods for when simple ones genuinely fall short. Complexity has costs: explainability, debugability, time to deliver."
+        },
+        {
+          "id": "da-099",
+          "q": "Which is a SIGN that an analysis is genuinely valuable?",
+          "options": [
+            "It changes what someone decides or does — the same decision after the analysis means it didn't matter",
+            "It used the newest tool",
+            "It produced beautiful charts",
+            "It took a long time"
+          ],
+          "answer": 0,
+          "explanation": "'Did this change a decision?' is the harshest and most useful question to ask after any analysis. If the answer is no, examine why: wrong question, wrong audience, weak insight, bad timing? Each failure teaches."
+        },
+        {
+          "id": "da-100",
+          "q": "What's the MOST important habit for long-term growth as an analyst?",
+          "options": [
+            "Curiosity about both data and the world it describes — combined with rigorous skepticism about your own conclusions",
+            "Memorizing techniques",
+            "Avoiding new tools",
+            "Working in isolation"
+          ],
+          "answer": 0,
+          "explanation": "The world keeps changing; tools keep evolving; methods keep improving. What persists is the mindset: relentless curiosity paired with intellectual honesty. Cultivate both and you'll keep growing for decades."
+        }
+      ]
+    }
+  ]
+}

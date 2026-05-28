@@ -1,0 +1,1314 @@
+{
+  "id": "html-css",
+  "title": "HTML & CSS Fundamentals",
+  "description": "The building blocks of every website. Layouts, semantics, responsiveness.",
+  "category": "Web Dev",
+  "icon": "🎨",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What HTML and CSS do",
+      "questions": [
+        {
+          "id": "hc-001",
+          "q": "What is the role of HTML in a web page?",
+          "options": [
+            "It provides the structure and meaning of content (headings, paragraphs, links, images)",
+            "It controls how the page looks visually",
+            "It runs interactive behavior in the browser",
+            "It hosts the page on a server"
+          ],
+          "answer": 0,
+          "explanation": "HTML = structure & semantics. CSS = presentation. JavaScript = behavior. Each has a distinct role."
+        },
+        {
+          "id": "hc-002",
+          "q": "What does CSS stand for?",
+          "options": [
+            "Cascading Style Sheets",
+            "Computer Style Syntax",
+            "Creative Styling System",
+            "Content Structuring Standard"
+          ],
+          "answer": 0,
+          "explanation": "'Cascading' refers to how multiple style rules can apply to the same element, with conflicts resolved by specificity and order."
+        },
+        {
+          "id": "hc-003",
+          "q": "Which is TRUE about HTML and CSS?",
+          "options": [
+            "They are declarative languages — you describe what you want, the browser figures out how to render it",
+            "They are imperative languages with step-by-step logic",
+            "They are compiled to machine code",
+            "They run on the server only"
+          ],
+          "answer": 0,
+          "explanation": "Declarative thinking is fundamental to writing maintainable HTML/CSS. You describe outcomes, not procedures."
+        },
+        {
+          "id": "hc-004",
+          "q": "What does the browser do with HTML and CSS?",
+          "options": [
+            "Parses HTML into the DOM, applies CSS to build the render tree, then paints pixels to the screen",
+            "Compiles them to a binary executable",
+            "Stores them in a database",
+            "Translates them to a different language"
+          ],
+          "answer": 0,
+          "explanation": "Knowing the rendering pipeline (parse → DOM → CSSOM → render tree → layout → paint) is essential for performance work."
+        },
+        {
+          "id": "hc-005",
+          "q": "Which file extension is correct for an HTML file?",
+          "options": [
+            ".html",
+            ".htm5",
+            ".webpage",
+            ".hyper"
+          ],
+          "answer": 0,
+          "explanation": "Modern web pages use .html. (.htm exists for historical 8.3 filename compatibility but isn't needed today.)"
+        }
+      ]
+    },
+    {
+      "topic": "HTML document structure",
+      "questions": [
+        {
+          "id": "hc-006",
+          "q": "What does `<!DOCTYPE html>` do at the top of a file?",
+          "options": [
+            "Tells the browser to render the page in modern (standards) mode using HTML5 rules",
+            "Imports the HTML library",
+            "Defines a JavaScript variable",
+            "Specifies the document's color"
+          ],
+          "answer": 0,
+          "explanation": "Without DOCTYPE, browsers may switch to 'quirks mode' to emulate 1990s behavior — a debugging nightmare."
+        },
+        {
+          "id": "hc-007",
+          "q": "Which tag wraps the visible content of an HTML page?",
+          "options": [
+            "<body>",
+            "<head>",
+            "<html>",
+            "<main>"
+          ],
+          "answer": 0,
+          "explanation": "<head> contains metadata (title, links, scripts). <body> contains everything users actually see."
+        },
+        {
+          "id": "hc-008",
+          "q": "What goes inside the `<head>` tag?",
+          "options": [
+            "Title, meta tags, links to stylesheets, scripts, and other metadata",
+            "Headings like <h1>",
+            "The user-visible content",
+            "Footer information"
+          ],
+          "answer": 0,
+          "explanation": "Confusion alert: <head> ≠ <h1>. <head> is metadata; <h1>-<h6> are heading elements inside <body>."
+        },
+        {
+          "id": "hc-009",
+          "q": "Which is the CORRECT way to set the page title shown in the browser tab?",
+          "options": [
+            "<title>My Page</title>  inside <head>",
+            "<h1>My Page</h1>",
+            "<page-title>My Page</page-title>",
+            "<meta name='title' content='My Page'>"
+          ],
+          "answer": 0,
+          "explanation": "<title> is also used by search engines and bookmarks — make it descriptive and unique per page."
+        },
+        {
+          "id": "hc-010",
+          "q": "What does `<meta charset='utf-8'>` do?",
+          "options": [
+            "Tells the browser the file uses UTF-8 character encoding (essential for non-ASCII text)",
+            "Sets the page's metadata color",
+            "Adds a meta description for SEO",
+            "Encrypts the page"
+          ],
+          "answer": 0,
+          "explanation": "Always include this. Without it, characters like 'ا', 'é', or '中' may display as garbage."
+        }
+      ]
+    },
+    {
+      "topic": "Semantic HTML",
+      "questions": [
+        {
+          "id": "hc-011",
+          "q": "What is 'semantic HTML'?",
+          "options": [
+            "Using HTML tags that describe the MEANING of content, not just its appearance",
+            "Using shorter HTML tag names",
+            "Writing HTML in lowercase",
+            "Using only one tag type"
+          ],
+          "answer": 0,
+          "explanation": "Semantic tags help screen readers, search engines, and other developers understand your content's structure."
+        },
+        {
+          "id": "hc-012",
+          "q": "Which is a SEMANTIC HTML5 element?",
+          "options": [
+            "<article>",
+            "<div>",
+            "<span>",
+            "<center>"
+          ],
+          "answer": 0,
+          "explanation": "Other semantic elements: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>, <figure>, <time>."
+        },
+        {
+          "id": "hc-013",
+          "q": "When should you use `<div>` vs `<section>`?",
+          "options": [
+            "<section> for meaningful content groupings; <div> only when you need a generic container with no semantic meaning",
+            "Always use <div>",
+            "Always use <section>",
+            "They are identical"
+          ],
+          "answer": 0,
+          "explanation": "Default to semantic tags. Reach for <div> only when no semantic tag fits."
+        },
+        {
+          "id": "hc-014",
+          "q": "Which is the CORRECT heading hierarchy on a page?",
+          "options": [
+            "Exactly one <h1>, then <h2> for major sections, <h3> for sub-sections — no skipping levels",
+            "Many <h1>s scattered everywhere",
+            "Skip from <h1> to <h5> freely",
+            "Use only <h1> for everything"
+          ],
+          "answer": 0,
+          "explanation": "Heading order matters for accessibility and SEO. Screen reader users navigate by heading hierarchy."
+        },
+        {
+          "id": "hc-015",
+          "q": "Why is semantic HTML important for accessibility?",
+          "options": [
+            "Screen readers use semantic tags to navigate and convey structure to users with visual impairments",
+            "It makes the file size smaller",
+            "It looks nicer in code editors",
+            "It runs faster in the browser"
+          ],
+          "answer": 0,
+          "explanation": "Semantic HTML is the foundation of accessibility. <button> vs <div onclick> is a real, life-impacting difference."
+        }
+      ]
+    },
+    {
+      "topic": "Links and navigation",
+      "questions": [
+        {
+          "id": "hc-016",
+          "q": "Which tag creates a hyperlink?",
+          "options": [
+            "<a href='url'>text</a>",
+            "<link href='url'>text</link>",
+            "<url='url'>text</url>",
+            "<go to='url'>text</go>"
+          ],
+          "answer": 0,
+          "explanation": "<a> = anchor. The href attribute holds the URL. <link> is for stylesheet/manifest references in <head>."
+        },
+        {
+          "id": "hc-017",
+          "q": "How do you open a link in a NEW tab?",
+          "options": [
+            "Add target='_blank' to the <a> tag (and add rel='noopener' for security)",
+            "Add new-tab='true'",
+            "Press Ctrl while clicking",
+            "It always opens in a new tab"
+          ],
+          "answer": 0,
+          "explanation": "Always pair target='_blank' with rel='noopener noreferrer' to prevent security/performance issues with the new tab."
+        },
+        {
+          "id": "hc-018",
+          "q": "What is the difference between a RELATIVE and ABSOLUTE URL?",
+          "options": [
+            "Absolute starts with https://; relative is interpreted relative to the current page's location",
+            "Absolute is longer; relative is shorter",
+            "Absolute is paid; relative is free",
+            "There is no difference"
+          ],
+          "answer": 0,
+          "explanation": "Relative URLs (`/about` or `./page.html`) are portable across domains. Absolute (https://example.com/about) lock you to that domain."
+        },
+        {
+          "id": "hc-019",
+          "q": "Which is the CORRECT way to link to an email address?",
+          "options": [
+            "<a href='mailto:user@example.com'>Email</a>",
+            "<a email='user@example.com'>Email</a>",
+            "<email>user@example.com</email>",
+            "<a href='user@example.com'>Email</a>"
+          ],
+          "answer": 0,
+          "explanation": "mailto: is a URI scheme that opens the user's email client. You can also add ?subject= and ?body= params."
+        },
+        {
+          "id": "hc-020",
+          "q": "What does <a href='#contact'>Contact</a> do?",
+          "options": [
+            "Scrolls to the element with id='contact' on the same page",
+            "Opens a new tab",
+            "Reloads the page",
+            "Downloads a file"
+          ],
+          "answer": 0,
+          "explanation": "Hash links navigate to anchors within the same page. Perfect for in-page navigation menus."
+        }
+      ]
+    },
+    {
+      "topic": "Images and media",
+      "questions": [
+        {
+          "id": "hc-021",
+          "q": "Which tag embeds an image?",
+          "options": [
+            "<img src='photo.jpg' alt='description'>",
+            "<image href='photo.jpg'>",
+            "<picture file='photo.jpg'>",
+            "<src image='photo.jpg'>"
+          ],
+          "answer": 0,
+          "explanation": "<img> is a self-closing void element. src specifies the source; alt provides accessible alternative text."
+        },
+        {
+          "id": "hc-022",
+          "q": "Why is the `alt` attribute on <img> important?",
+          "options": [
+            "Screen readers read it aloud, and it's shown if the image fails to load (accessibility + fallback)",
+            "It's only for SEO",
+            "It speeds up the page",
+            "It's only required by law in some countries"
+          ],
+          "answer": 0,
+          "explanation": "Decorative images can have empty alt=''. Meaningful images MUST have descriptive alt text."
+        },
+        {
+          "id": "hc-023",
+          "q": "Which image format is BEST for photographs?",
+          "options": [
+            "JPEG or WebP (lossy compression, good for complex color)",
+            "PNG only",
+            "SVG only",
+            "BMP"
+          ],
+          "answer": 0,
+          "explanation": "JPEG/WebP for photos. PNG for graphics with transparency. SVG for icons/logos. AVIF is the newest, even better than WebP."
+        },
+        {
+          "id": "hc-024",
+          "q": "How do you make an image RESPONSIVE in CSS?",
+          "options": [
+            "img { max-width: 100%; height: auto; }",
+            "img { width: 50px; }",
+            "img { responsive: true; }",
+            "img { stretch: yes; }"
+          ],
+          "answer": 0,
+          "explanation": "max-width: 100% prevents the image from overflowing its container. height: auto preserves aspect ratio."
+        },
+        {
+          "id": "hc-025",
+          "q": "Which HTML element embeds a video file?",
+          "options": [
+            "<video src='movie.mp4' controls></video>",
+            "<media type='video' src='movie.mp4'>",
+            "<embed video='movie.mp4'>",
+            "<src='movie.mp4'>"
+          ],
+          "answer": 0,
+          "explanation": "<video> with controls attribute shows native browser playback controls. Add <source> children for multiple formats."
+        }
+      ]
+    },
+    {
+      "topic": "Forms and inputs",
+      "questions": [
+        {
+          "id": "hc-026",
+          "q": "Which tag wraps a form?",
+          "options": [
+            "<form>",
+            "<input>",
+            "<submit>",
+            "<entry>"
+          ],
+          "answer": 0,
+          "explanation": "<form> with method (GET/POST) and action (URL) attributes is the foundation of every HTML form."
+        },
+        {
+          "id": "hc-027",
+          "q": "Which input type shows a date picker?",
+          "options": [
+            "<input type='date'>",
+            "<input type='calendar'>",
+            "<input type='day'>",
+            "<input type='datetime'>"
+          ],
+          "answer": 0,
+          "explanation": "HTML5 added many specialized types: date, email, tel, number, color, range, file. Each provides appropriate UI."
+        },
+        {
+          "id": "hc-028",
+          "q": "What does the LABEL element do in forms?",
+          "options": [
+            "Associates a text label with an input field, improving accessibility and click target size",
+            "Adds a price label to a product",
+            "Labels a file with metadata",
+            "Creates a tooltip"
+          ],
+          "answer": 0,
+          "explanation": "<label for='email'>Email</label> + <input id='email'> — clicking the label focuses the input. Critical for accessibility."
+        },
+        {
+          "id": "hc-029",
+          "q": "Which attribute marks an input field as REQUIRED?",
+          "options": [
+            "required",
+            "mandatory='true'",
+            "must-fill",
+            "needed"
+          ],
+          "answer": 0,
+          "explanation": "<input required> triggers built-in browser validation when the form is submitted with that field empty."
+        },
+        {
+          "id": "hc-030",
+          "q": "What does <input type='email'> give you that <input type='text'> doesn't?",
+          "options": [
+            "Built-in email format validation and mobile keyboards optimized for email input",
+            "Free email sending",
+            "An email server connection",
+            "Spell checking"
+          ],
+          "answer": 0,
+          "explanation": "Use the most specific input type for free UX wins — better mobile keyboards, built-in validation, accessibility hints."
+        }
+      ]
+    },
+    {
+      "topic": "CSS selectors",
+      "questions": [
+        {
+          "id": "hc-031",
+          "q": "Which CSS selector targets all <p> elements?",
+          "options": [
+            "p",
+            ".p",
+            "#p",
+            "*p"
+          ],
+          "answer": 0,
+          "explanation": "Tag selector. No prefix needed. Selects every <p> on the page."
+        },
+        {
+          "id": "hc-032",
+          "q": "Which CSS selector targets elements with class='btn'?",
+          "options": [
+            ".btn",
+            "#btn",
+            "btn",
+            "*btn"
+          ],
+          "answer": 0,
+          "explanation": "Class selectors use a dot (.). IDs use a hash (#). Always prefer classes for styling — IDs are higher specificity and harder to override."
+        },
+        {
+          "id": "hc-033",
+          "q": "Which CSS selector targets the element with id='header'?",
+          "options": [
+            "#header",
+            ".header",
+            "header",
+            "*header"
+          ],
+          "answer": 0,
+          "explanation": "IDs use #. Each ID must be unique per page. Use sparingly for layout styling."
+        },
+        {
+          "id": "hc-034",
+          "q": "What does the selector `nav > a` target?",
+          "options": [
+            "<a> elements that are DIRECT children of <nav>",
+            "All <a> elements anywhere in the page",
+            "<nav> elements that contain <a>",
+            "Only the first <a> in <nav>"
+          ],
+          "answer": 0,
+          "explanation": "> = direct child only. nav a (space) = descendant at any nesting depth. Different behaviors!"
+        },
+        {
+          "id": "hc-035",
+          "q": "What is CSS specificity?",
+          "options": [
+            "A scoring system that determines which CSS rule wins when multiple rules target the same element",
+            "How specific your CSS comments are",
+            "How fast CSS loads",
+            "The number of CSS files"
+          ],
+          "answer": 0,
+          "explanation": "Roughly: inline > ID > class > tag. Higher specificity wins. !important overrides everything (and should be avoided)."
+        }
+      ]
+    },
+    {
+      "topic": "The box model",
+      "questions": [
+        {
+          "id": "hc-036",
+          "q": "What are the FOUR layers of the CSS box model?",
+          "options": [
+            "Content, padding, border, margin",
+            "Top, right, bottom, left",
+            "Width, height, depth, time",
+            "Color, font, size, weight"
+          ],
+          "answer": 0,
+          "explanation": "Every element is a box with these layers. Mastering the box model is mastering CSS layout."
+        },
+        {
+          "id": "hc-037",
+          "q": "What does `box-sizing: border-box` do?",
+          "options": [
+            "Makes width/height include padding and border, instead of just content",
+            "Adds a colored border to every element",
+            "Hides the box border",
+            "Doubles the box size"
+          ],
+          "answer": 0,
+          "explanation": "Most developers set * { box-sizing: border-box; } globally. Intuitive sizing — width: 200px means 200px total, not 200px + padding + border."
+        },
+        {
+          "id": "hc-038",
+          "q": "What's the DIFFERENCE between margin and padding?",
+          "options": [
+            "Padding is INSIDE the border (around content); margin is OUTSIDE the border (between elements)",
+            "Padding is always larger",
+            "Margin is for text, padding is for boxes",
+            "They're the same thing"
+          ],
+          "answer": 0,
+          "explanation": "Padding adds space inside; margin adds space outside. Margins collapse between adjacent block elements; padding does not."
+        },
+        {
+          "id": "hc-039",
+          "q": "What does `margin: 0 auto;` do on a block element?",
+          "options": [
+            "Centers it horizontally within its parent container",
+            "Removes all margin",
+            "Adds top margin only",
+            "Makes it full width"
+          ],
+          "answer": 0,
+          "explanation": "Classic horizontal centering trick. The auto distributes remaining space equally left and right."
+        },
+        {
+          "id": "hc-040",
+          "q": "What is 'margin collapse'?",
+          "options": [
+            "Vertical margins between adjacent block elements combine into a single margin (the larger of the two)",
+            "Margins disappear randomly",
+            "Margins double in size",
+            "Margins become negative"
+          ],
+          "answer": 0,
+          "explanation": "Surprising for beginners — two stacked elements with margin-bottom: 20px and margin-top: 30px get 30px total gap, not 50px."
+        }
+      ]
+    },
+    {
+      "topic": "Colors, units, and typography",
+      "questions": [
+        {
+          "id": "hc-041",
+          "q": "Which is a VALID way to specify a color in CSS?",
+          "options": [
+            "All of: #ff0000, rgb(255,0,0), hsl(0,100%,50%), red",
+            "Only hex codes",
+            "Only named colors",
+            "Only RGB values"
+          ],
+          "answer": 0,
+          "explanation": "CSS supports many formats. Modern code often uses hsl() (intuitive for theming) or oklch() (perceptually uniform)."
+        },
+        {
+          "id": "hc-042",
+          "q": "What's the DIFFERENCE between px, em, and rem?",
+          "options": [
+            "px = fixed pixels; em = relative to parent's font-size; rem = relative to root font-size",
+            "They are identical",
+            "Only rem works in modern browsers",
+            "px is for fonts, em for sizes"
+          ],
+          "answer": 0,
+          "explanation": "Use rem for scalable, accessible typography. em for component-internal spacing. px for borders and fixed details."
+        },
+        {
+          "id": "hc-043",
+          "q": "Which unit is BEST for responsive layouts?",
+          "options": [
+            "Relative units like %, rem, vw, vh — they scale with viewport and user preferences",
+            "Always pixels",
+            "Always points",
+            "Always inches"
+          ],
+          "answer": 0,
+          "explanation": "Relative units make sites adapt naturally. Fixed pixels lock the design to one viewport size."
+        },
+        {
+          "id": "hc-044",
+          "q": "What does `font-family: 'Inter', sans-serif;` do?",
+          "options": [
+            "Tries to use Inter first; falls back to any sans-serif font if Inter isn't available",
+            "Always uses Inter no matter what",
+            "Combines Inter and sans-serif into one font",
+            "Uses two fonts simultaneously"
+          ],
+          "answer": 0,
+          "explanation": "Always provide a generic fallback (serif, sans-serif, monospace, cursive). Never trust that custom fonts will always load."
+        },
+        {
+          "id": "hc-045",
+          "q": "What is the difference between `font-weight: bold` and `font-weight: 700`?",
+          "options": [
+            "Functionally identical — 700 is the numeric value for bold",
+            "They produce different weights",
+            "Bold is for older browsers only",
+            "700 only works in modern CSS"
+          ],
+          "answer": 0,
+          "explanation": "Font weights are 100-900. 400 = normal, 700 = bold. Variable fonts allow any value in between."
+        }
+      ]
+    },
+    {
+      "topic": "Display and positioning",
+      "questions": [
+        {
+          "id": "hc-046",
+          "q": "What's the difference between `display: block` and `display: inline`?",
+          "options": [
+            "Block elements take full width and stack vertically; inline elements flow horizontally like text",
+            "Block is for buttons, inline for links",
+            "They are interchangeable",
+            "Inline elements are always wider"
+          ],
+          "answer": 0,
+          "explanation": "<div>, <p>, <h1> are block by default. <span>, <a>, <em> are inline. display can override defaults."
+        },
+        {
+          "id": "hc-047",
+          "q": "What does `display: inline-block` do?",
+          "options": [
+            "Elements flow inline (side by side) but accept width, height, padding, and margin like blocks",
+            "Same as inline",
+            "Same as block",
+            "Hides the element"
+          ],
+          "answer": 0,
+          "explanation": "Useful for buttons in a row — inline behavior with full box-model control. Largely superseded by flexbox today."
+        },
+        {
+          "id": "hc-048",
+          "q": "What does `position: absolute` do?",
+          "options": [
+            "Removes the element from normal flow and positions it relative to the nearest positioned ancestor",
+            "Locks it to the viewport",
+            "Hides it completely",
+            "Centers it on the page"
+          ],
+          "answer": 0,
+          "explanation": "Common mistake: absolute is NOT relative to the page — it's relative to the nearest ancestor with position set (or <html>)."
+        },
+        {
+          "id": "hc-049",
+          "q": "What does `position: sticky` do?",
+          "options": [
+            "Element scrolls with the page normally until it hits a threshold, then sticks in place",
+            "Glues the element with permanent adhesive",
+            "Makes the element clickable",
+            "Adds a sticky note appearance"
+          ],
+          "answer": 0,
+          "explanation": "Perfect for sticky table headers and navigation bars. position: sticky + top: 0 is the magic combo."
+        },
+        {
+          "id": "hc-050",
+          "q": "What is the z-index?",
+          "options": [
+            "A CSS property that controls vertical stacking order of overlapping positioned elements",
+            "The depth of the website",
+            "The page's loading speed",
+            "A type of CSS variable"
+          ],
+          "answer": 0,
+          "explanation": "Higher z-index = on top. Only works on positioned elements (not position: static). Manage z-index carefully to avoid 'z-index wars'."
+        }
+      ]
+    },
+    {
+      "topic": "Flexbox",
+      "questions": [
+        {
+          "id": "hc-051",
+          "q": "What does `display: flex` do to a container?",
+          "options": [
+            "Makes its DIRECT children flex items, arranged in a row by default with powerful alignment options",
+            "Makes the container itself flexible in size",
+            "Hides the container",
+            "Centers everything inside automatically"
+          ],
+          "answer": 0,
+          "explanation": "Flexbox transforms layout. Set display: flex on a parent and all the alignment/distribution superpowers unlock."
+        },
+        {
+          "id": "hc-052",
+          "q": "How do you HORIZONTALLY center items in a flex container?",
+          "options": [
+            "justify-content: center;",
+            "align-items: center;",
+            "text-align: center;",
+            "margin: auto;"
+          ],
+          "answer": 0,
+          "explanation": "In a default (row) flex container, justify-content controls horizontal alignment along the main axis."
+        },
+        {
+          "id": "hc-053",
+          "q": "How do you VERTICALLY center items in a flex container?",
+          "options": [
+            "align-items: center;",
+            "justify-content: center;",
+            "vertical-align: middle;",
+            "margin-top: auto;"
+          ],
+          "answer": 0,
+          "explanation": "align-items controls cross-axis (perpendicular) alignment. In a row flex, that's vertical."
+        },
+        {
+          "id": "hc-054",
+          "q": "How do you center BOTH horizontally AND vertically?",
+          "options": [
+            "display: flex; justify-content: center; align-items: center;",
+            "text-align: center;",
+            "margin: 0 auto;",
+            "position: absolute"
+          ],
+          "answer": 0,
+          "explanation": "The classic three lines that solved the legendary 'how do I center a div' problem forever."
+        },
+        {
+          "id": "hc-055",
+          "q": "What does `flex-wrap: wrap` do?",
+          "options": [
+            "Allows flex items to wrap to multiple lines when they don't fit on one line",
+            "Wraps each item in a span",
+            "Adds a wrapping border",
+            "Disables flexbox"
+          ],
+          "answer": 0,
+          "explanation": "Default is nowrap (items shrink to fit). flex-wrap: wrap is essential for responsive layouts with variable content."
+        }
+      ]
+    },
+    {
+      "topic": "CSS Grid",
+      "questions": [
+        {
+          "id": "hc-056",
+          "q": "What's CSS Grid BEST suited for?",
+          "options": [
+            "Two-dimensional layouts where you control both rows AND columns precisely",
+            "Centering a single item",
+            "Animating elements",
+            "Replacing all flexbox use"
+          ],
+          "answer": 0,
+          "explanation": "Flexbox = 1D (row OR column). Grid = 2D (rows AND columns). They complement each other; learn both."
+        },
+        {
+          "id": "hc-057",
+          "q": "How do you create a 3-column grid?",
+          "options": [
+            "display: grid; grid-template-columns: repeat(3, 1fr);",
+            "display: flex; columns: 3;",
+            "display: grid; columns: 3;",
+            "grid-cols: 3;"
+          ],
+          "answer": 0,
+          "explanation": "1fr = one fraction of available space. repeat(3, 1fr) = three equal columns. 1fr is the magic Grid unit."
+        },
+        {
+          "id": "hc-058",
+          "q": "What does the `gap` property do in Grid (and Flexbox)?",
+          "options": [
+            "Adds consistent spacing between grid/flex items without affecting outer edges",
+            "Removes all spacing",
+            "Creates a gap in the layout",
+            "Forces items to be different sizes"
+          ],
+          "answer": 0,
+          "explanation": "gap replaced the old margin-based hacks. Works in Grid (since launch) and Flexbox (since 2021)."
+        },
+        {
+          "id": "hc-059",
+          "q": "What is a `minmax(200px, 1fr)` value in Grid?",
+          "options": [
+            "Column is at least 200px wide, but grows up to 1fr (filling available space)",
+            "Always 200px wide",
+            "Always 1fr wide",
+            "Hides the column"
+          ],
+          "answer": 0,
+          "explanation": "minmax() is essential for responsive grids that need a floor width but want to grow when there's space."
+        },
+        {
+          "id": "hc-060",
+          "q": "What does `repeat(auto-fit, minmax(250px, 1fr))` do?",
+          "options": [
+            "Creates as many 250px-min columns as fit the container, expanding them to fill space — fully responsive without media queries",
+            "Creates exactly one column",
+            "Creates 250 columns",
+            "Centers a single column"
+          ],
+          "answer": 0,
+          "explanation": "The ultimate responsive grid one-liner. Magical for card layouts that adapt from 1 column on mobile to N columns on desktop."
+        }
+      ]
+    },
+    {
+      "topic": "Responsive design",
+      "questions": [
+        {
+          "id": "hc-061",
+          "q": "What is 'responsive design'?",
+          "options": [
+            "A design approach where the layout adapts to different screen sizes from mobile to desktop",
+            "A site that responds to clicks",
+            "A site with animations",
+            "A site that loads fast"
+          ],
+          "answer": 0,
+          "explanation": "One codebase, all screens. The standard since ~2012, made possible by CSS media queries and flexible units."
+        },
+        {
+          "id": "hc-062",
+          "q": "What is a `@media` query?",
+          "options": [
+            "A CSS rule that applies styles only when the screen matches conditions (e.g., min-width: 768px)",
+            "An HTML media tag",
+            "A way to play music in CSS",
+            "A type of file upload"
+          ],
+          "answer": 0,
+          "explanation": "Media queries are how CSS becomes responsive. @media (min-width: 768px) { /* tablet+ styles */ }"
+        },
+        {
+          "id": "hc-063",
+          "q": "What's the 'mobile-first' approach?",
+          "options": [
+            "Write base styles for mobile, then progressively enhance for larger screens via min-width media queries",
+            "Only design for phones",
+            "Test mobile last",
+            "Build mobile and desktop separately"
+          ],
+          "answer": 0,
+          "explanation": "Mobile-first encourages cleaner code and better performance. Most production sites use it."
+        },
+        {
+          "id": "hc-064",
+          "q": "Why include `<meta name='viewport' content='width=device-width, initial-scale=1'>`?",
+          "options": [
+            "Tells mobile browsers to use the device width instead of an arbitrary virtual width that breaks responsive design",
+            "Sets the viewport color",
+            "Enables PWA mode",
+            "Hides the URL bar"
+          ],
+          "answer": 0,
+          "explanation": "Without this meta tag, mobile browsers may render the page at ~980px wide and zoom out — breaking your responsive layout."
+        },
+        {
+          "id": "hc-065",
+          "q": "What's a COMMON responsive breakpoint range?",
+          "options": [
+            "~640px (sm), ~768px (md), ~1024px (lg), ~1280px (xl) — used by Tailwind and many others",
+            "100px and 500px only",
+            "Exactly 800px is the only breakpoint",
+            "Always 1920px"
+          ],
+          "answer": 0,
+          "explanation": "Don't overthink breakpoints — design for content, not specific devices. Add a breakpoint when your layout breaks."
+        }
+      ]
+    },
+    {
+      "topic": "CSS variables and theming",
+      "questions": [
+        {
+          "id": "hc-066",
+          "q": "What is a CSS variable (custom property)?",
+          "options": [
+            "A reusable value defined with --name and accessed with var(--name)",
+            "A JavaScript variable",
+            "A SASS feature only",
+            "A type of selector"
+          ],
+          "answer": 0,
+          "explanation": "CSS variables enable runtime theming, dark mode, dynamic colors. Native, no preprocessor needed."
+        },
+        {
+          "id": "hc-067",
+          "q": "How do you DEFINE a CSS variable globally?",
+          "options": [
+            ":root { --primary: #3b82f6; }",
+            "$primary: #3b82f6;",
+            "var primary = #3b82f6;",
+            "@var primary #3b82f6;"
+          ],
+          "answer": 0,
+          "explanation": ":root targets <html>. Variables defined there are accessible everywhere. Use anywhere with var(--primary)."
+        },
+        {
+          "id": "hc-068",
+          "q": "How do you USE a CSS variable?",
+          "options": [
+            "color: var(--primary);",
+            "color: $primary;",
+            "color: --primary;",
+            "color: get(primary);"
+          ],
+          "answer": 0,
+          "explanation": "var() with a fallback: var(--primary, #000) uses #000 if --primary isn't defined."
+        },
+        {
+          "id": "hc-069",
+          "q": "What's a STRONG use case for CSS variables?",
+          "options": [
+            "Theming — switch themes by changing a few variables on a parent, the whole UI updates",
+            "Replacing all CSS",
+            "Animations only",
+            "Layout only"
+          ],
+          "answer": 0,
+          "explanation": "Dark mode = toggle a class that redefines color variables. The entire UI updates instantly. Pure CSS."
+        },
+        {
+          "id": "hc-070",
+          "q": "Can CSS variables be modified by JavaScript?",
+          "options": [
+            "Yes — element.style.setProperty('--primary', '#ff0000') updates the variable live",
+            "No, they're immutable",
+            "Only on page load",
+            "Only in dark mode"
+          ],
+          "answer": 0,
+          "explanation": "CSS variables + JS = powerful runtime customization. Perfect for color pickers, theme builders, A/B tests."
+        }
+      ]
+    },
+    {
+      "topic": "Pseudo-classes and pseudo-elements",
+      "questions": [
+        {
+          "id": "hc-071",
+          "q": "What does `:hover` do?",
+          "options": [
+            "Applies styles when the user's mouse is over the element",
+            "Hovers the element above others",
+            "Adds a floating animation",
+            "Centers the element"
+          ],
+          "answer": 0,
+          "explanation": ":hover is a pseudo-class. Others: :focus, :active, :visited, :disabled, :checked, :first-child, :nth-child(n)."
+        },
+        {
+          "id": "hc-072",
+          "q": "What's the difference between `:hover` and `:focus`?",
+          "options": [
+            ":hover is for mouse pointer; :focus is for keyboard/programmatic focus (also triggered by tab/click on inputs)",
+            "They are identical",
+            ":hover is for mobile only",
+            ":focus is deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Critical accessibility: always style :focus for keyboard users. Better yet, use :focus-visible for the modern best practice."
+        },
+        {
+          "id": "hc-073",
+          "q": "What does `::before` do?",
+          "options": [
+            "Inserts a pseudo-element BEFORE the element's content (requires content property)",
+            "Runs CSS before the page loads",
+            "Hides the element until later",
+            "Adds a comment"
+          ],
+          "answer": 0,
+          "explanation": "Pseudo-elements use :: (double colon) to distinguish from pseudo-classes. Common uses: icons, decorations, clearing floats."
+        },
+        {
+          "id": "hc-074",
+          "q": "What does `:nth-child(2n)` target?",
+          "options": [
+            "Every even-numbered child element",
+            "Only the second child",
+            "The 2nd-from-last child",
+            "Every other element on the page"
+          ],
+          "answer": 0,
+          "explanation": "nth-child accepts formulas: 2n = even, 2n+1 = odd, 3n = every third, 5 = the 5th specifically."
+        },
+        {
+          "id": "hc-075",
+          "q": "What does `:not(.active)` target?",
+          "options": [
+            "Every element that does NOT have the class 'active'",
+            "Elements with the active class",
+            "Disabled elements",
+            "Hidden elements"
+          ],
+          "answer": 0,
+          "explanation": ":not() is the negation pseudo-class. Cleaner than writing 'select all, then exclude' logic in JavaScript."
+        }
+      ]
+    },
+    {
+      "topic": "Animations and transitions",
+      "questions": [
+        {
+          "id": "hc-076",
+          "q": "What's the DIFFERENCE between a CSS transition and animation?",
+          "options": [
+            "Transition animates from one state to another on a trigger (like :hover); animation runs through keyframes independently",
+            "They are identical",
+            "Transitions are deprecated",
+            "Animation is for SVG only"
+          ],
+          "answer": 0,
+          "explanation": "Transitions are simple state-to-state. Animations support complex multi-step keyframes that play on their own."
+        },
+        {
+          "id": "hc-077",
+          "q": "What does `transition: all 0.3s ease;` do?",
+          "options": [
+            "Animates ALL changing properties over 0.3 seconds with an ease timing function",
+            "Removes all animations",
+            "Animates the page transition",
+            "Adds 0.3s delay to clicks"
+          ],
+          "answer": 0,
+          "explanation": "transition: all is convenient but inefficient. Prefer naming specific properties: transition: transform 0.3s ease, opacity 0.3s ease."
+        },
+        {
+          "id": "hc-078",
+          "q": "Which CSS properties are MOST performant to animate?",
+          "options": [
+            "transform and opacity (GPU-accelerated, don't trigger layout)",
+            "width and height",
+            "top and left",
+            "margin"
+          ],
+          "answer": 0,
+          "explanation": "Animating layout properties (width, top, etc.) triggers expensive reflow. transform/opacity are smooth at 60fps."
+        },
+        {
+          "id": "hc-079",
+          "q": "What does `@keyframes` define?",
+          "options": [
+            "A reusable named animation sequence with multiple states (0%, 50%, 100%)",
+            "Keyboard shortcuts in CSS",
+            "A media query",
+            "A frame around an element"
+          ],
+          "answer": 0,
+          "explanation": "Define once with @keyframes, apply many times with animation: name duration timing iteration. Highly reusable."
+        },
+        {
+          "id": "hc-080",
+          "q": "Why should you respect `prefers-reduced-motion`?",
+          "options": [
+            "Some users have vestibular disorders triggered by animation — respecting the OS setting is an accessibility win",
+            "It speeds up the page",
+            "It's required by all browsers",
+            "It makes animations look better"
+          ],
+          "answer": 0,
+          "explanation": "Wrap big animations in @media (prefers-reduced-motion: no-preference) — disable or tone down by default."
+        }
+      ]
+    },
+    {
+      "topic": "Accessibility basics",
+      "questions": [
+        {
+          "id": "hc-081",
+          "q": "What is the WCAG?",
+          "options": [
+            "Web Content Accessibility Guidelines — the international standard for web accessibility",
+            "Web Compression and Graphics",
+            "World Coding Action Group",
+            "Wireless Content Access Gateway"
+          ],
+          "answer": 0,
+          "explanation": "WCAG defines A, AA, AAA conformance levels. AA is the legal/practical target for most public websites."
+        },
+        {
+          "id": "hc-082",
+          "q": "Why is COLOR CONTRAST important?",
+          "options": [
+            "Low contrast makes text unreadable for users with low vision, dyslexia, or in bright light",
+            "It makes the design look fancy",
+            "It's required by all browsers",
+            "It speeds up loading"
+          ],
+          "answer": 0,
+          "explanation": "WCAG AA requires 4.5:1 contrast for body text, 3:1 for large text. Tools like WebAIM Contrast Checker make this easy."
+        },
+        {
+          "id": "hc-083",
+          "q": "What's a TRUE statement about screen readers?",
+          "options": [
+            "They rely on semantic HTML, alt text, labels, and ARIA — bad HTML makes them useless",
+            "They auto-fix any HTML",
+            "They only read text inside <p> tags",
+            "They aren't used by anyone today"
+          ],
+          "answer": 0,
+          "explanation": "Screen readers like NVDA, JAWS, VoiceOver navigate by heading, list, landmark, form. Good HTML = good screen reader UX."
+        },
+        {
+          "id": "hc-084",
+          "q": "When should you use ARIA attributes?",
+          "options": [
+            "When semantic HTML isn't enough — but FIRST rule of ARIA is don't use ARIA if a native element will do",
+            "On every element to be safe",
+            "Only in old browsers",
+            "Never"
+          ],
+          "answer": 0,
+          "explanation": "Common mistake: ARIA-bombing your HTML. Native <button> beats <div role='button' aria-*> every time. Use ARIA sparingly."
+        },
+        {
+          "id": "hc-085",
+          "q": "What is keyboard accessibility?",
+          "options": [
+            "Every interactive element must be reachable and operable using only the keyboard (Tab, Enter, Space, Arrow keys)",
+            "Adding a keyboard shortcut to every button",
+            "Optimizing for laptops only",
+            "Disabling the mouse"
+          ],
+          "answer": 0,
+          "explanation": "Test by tabbing through your page. If you can't reach or use something with keyboard alone, neither can many users."
+        }
+      ]
+    },
+    {
+      "topic": "Modern CSS features",
+      "questions": [
+        {
+          "id": "hc-086",
+          "q": "What is a `:has()` selector?",
+          "options": [
+            "A parent selector that targets elements containing matching descendants (e.g., div:has(img))",
+            "A type of class selector",
+            "A JavaScript function",
+            "An animation timing function"
+          ],
+          "answer": 0,
+          "explanation": ":has() is the long-awaited 'parent selector'. Universally supported in modern browsers since 2023."
+        },
+        {
+          "id": "hc-087",
+          "q": "What is `container queries`?",
+          "options": [
+            "A way to style elements based on the size of their CONTAINER (not just the viewport)",
+            "A type of SQL",
+            "A media query for shipping containers",
+            "A CSS bug"
+          ],
+          "answer": 0,
+          "explanation": "Game-changer for component-based design. A card component can adapt based on the sidebar/main area it's placed in."
+        },
+        {
+          "id": "hc-088",
+          "q": "What is the CSS `clamp()` function?",
+          "options": [
+            "Clamps a value between a min and max with a preferred value: clamp(min, preferred, max)",
+            "Locks elements in place",
+            "Restricts CSS to one rule",
+            "Compresses CSS files"
+          ],
+          "answer": 0,
+          "explanation": "clamp() is perfect for fluid typography: font-size: clamp(1rem, 2vw, 1.5rem) scales smoothly between sizes."
+        },
+        {
+          "id": "hc-089",
+          "q": "What does `aspect-ratio: 16 / 9` do?",
+          "options": [
+            "Keeps the element at a 16:9 width/height ratio regardless of size",
+            "Sets the screen aspect ratio",
+            "Crops images to 16:9",
+            "Creates a 16x9 grid"
+          ],
+          "answer": 0,
+          "explanation": "Eliminates the old padding-bottom hack for responsive video and image containers. Set width OR height, ratio handles the other."
+        },
+        {
+          "id": "hc-090",
+          "q": "What is `gap` in CSS?",
+          "options": [
+            "Adds space between flex/grid items without affecting outer edges (replaces margin hacks)",
+            "Hides element gaps",
+            "Adds a colored gap line",
+            "Removes spacing"
+          ],
+          "answer": 0,
+          "explanation": "Now works in flexbox too (since 2021). Cleaner than child margin tricks for spacing."
+        }
+      ]
+    },
+    {
+      "topic": "Modern CSS workflows",
+      "questions": [
+        {
+          "id": "hc-091",
+          "q": "What is Tailwind CSS?",
+          "options": [
+            "A utility-first CSS framework where you compose styles via class names (bg-blue-500, p-4, etc.)",
+            "A type of CSS preprocessor like SASS",
+            "A new browser feature",
+            "An icon library"
+          ],
+          "answer": 0,
+          "explanation": "Tailwind dominates modern web dev. Steeper initial learning curve, faster long-term development once you internalize it."
+        },
+        {
+          "id": "hc-092",
+          "q": "What is a CSS preprocessor like SASS?",
+          "options": [
+            "A tool that adds variables, nesting, mixins, and functions to CSS, then compiles to standard CSS",
+            "A faster CSS parser",
+            "A type of bundler",
+            "A JavaScript framework"
+          ],
+          "answer": 0,
+          "explanation": "SASS was huge before CSS got variables natively. Still widely used in legacy codebases and component libraries."
+        },
+        {
+          "id": "hc-093",
+          "q": "What does PostCSS do?",
+          "options": [
+            "A toolchain that transforms CSS with plugins (autoprefixer, nesting, modern features for older browsers)",
+            "Posts CSS to social media",
+            "A CSS analytics tool",
+            "A static site generator"
+          ],
+          "answer": 0,
+          "explanation": "PostCSS is the foundation of many modern tools. Autoprefixer alone (adds vendor prefixes) is a near-universal use."
+        },
+        {
+          "id": "hc-094",
+          "q": "What's the BENEFIT of CSS Modules?",
+          "options": [
+            "Class names are scoped to the file/component, preventing global style conflicts",
+            "Compresses CSS files smaller",
+            "Speeds up the browser",
+            "Auto-generates styles"
+          ],
+          "answer": 0,
+          "explanation": "Scoping solves the biggest CSS pain at scale — naming conflicts. Used heavily in React/Next.js projects."
+        },
+        {
+          "id": "hc-095",
+          "q": "What's a SMART CSS organization strategy for a large project?",
+          "options": [
+            "Component-scoped styles (CSS Modules, Tailwind, CSS-in-JS) over global stylesheets",
+            "One giant style.css with thousands of lines",
+            "Inline styles everywhere",
+            "Random CSS files everywhere"
+          ],
+          "answer": 0,
+          "explanation": "Locality of behavior. Keep styles close to the markup they style. Avoid the global-stylesheet anti-pattern at scale."
+        }
+      ]
+    },
+    {
+      "topic": "Best practices and pitfalls",
+      "questions": [
+        {
+          "id": "hc-096",
+          "q": "Why should you AVOID `!important` in CSS?",
+          "options": [
+            "It bypasses normal specificity rules and creates maintenance nightmares — fix the underlying specificity instead",
+            "It slows down the browser",
+            "It's deprecated",
+            "It only works in old browsers"
+          ],
+          "answer": 0,
+          "explanation": "!important is a code smell. If you find yourself reaching for it, your CSS architecture likely needs work."
+        },
+        {
+          "id": "hc-097",
+          "q": "What's an HTML accessibility anti-pattern?",
+          "options": [
+            "<div onclick='...'> as a button instead of <button>",
+            "Using <button> elements",
+            "Using semantic landmarks",
+            "Adding alt text to images"
+          ],
+          "answer": 0,
+          "explanation": "Native <button> gives keyboard focus, Enter/Space activation, screen reader announcement, AND your visual styling — free."
+        },
+        {
+          "id": "hc-098",
+          "q": "What's a COMMON beginner CSS mistake?",
+          "options": [
+            "Fighting specificity by stacking more selectors instead of refactoring class structure",
+            "Using classes for styling",
+            "Adding comments to CSS",
+            "Using rem units"
+          ],
+          "answer": 0,
+          "explanation": "When your CSS gets gnarly, the answer is usually 'simplify and refactor', not 'add more specificity'."
+        },
+        {
+          "id": "hc-099",
+          "q": "Why is INLINE STYLE generally discouraged?",
+          "options": [
+            "Hard to override, can't reuse, mixes structure with presentation, and clutters HTML",
+            "It's deprecated",
+            "Browsers can't render it",
+            "It causes errors"
+          ],
+          "answer": 0,
+          "explanation": "Inline styles override class styles (high specificity), making them hard to theme or maintain. Use class-based styling instead."
+        },
+        {
+          "id": "hc-100",
+          "q": "What's the BEST way to keep improving at HTML/CSS?",
+          "options": [
+            "Build real projects, read MDN docs, study other sites' CSS, follow accessibility guidelines, practice rebuilding designs",
+            "Memorize all CSS property names",
+            "Avoid all new features for stability",
+            "Only watch tutorial videos"
+          ],
+          "answer": 0,
+          "explanation": "Real practice + great references (MDN) + curiosity about other people's code is the proven path. Build often."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "rrrtx-freeverse",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "RRRTX FreeVerse — Free certification platform. Real skills. Real certificates. Forever free.",
+  "author": "Muhammad Ahmad (ahmadrrrtx)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "zustand": "^5.0.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2",
+    "jspdf": "^2.5.2",
+    "html2canvas": "^1.4.1",
+    "qrcode": "^1.5.4",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^11.5.4",
+    "lucide-react": "^0.445.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/canvas-confetti": "^1.6.4",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

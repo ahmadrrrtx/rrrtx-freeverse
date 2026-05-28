@@ -1,0 +1,1314 @@
+{
+  "id": "javascript-essentials",
+  "title": "JavaScript Essentials",
+  "description": "The language of the web. Variables, functions, async, DOM — the must-knows.",
+  "category": "Web Dev",
+  "icon": "📜",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "Variables and declarations",
+      "questions": [
+        {
+          "id": "js-001",
+          "q": "Which keyword creates a variable whose value CAN be reassigned later?",
+          "options": [
+            "let",
+            "const",
+            "function",
+            "class"
+          ],
+          "answer": 0,
+          "explanation": "let allows reassignment. const does not. Always prefer const, fall back to let only when reassignment is genuinely needed."
+        },
+        {
+          "id": "js-002",
+          "q": "What happens if you reassign a const variable?",
+          "options": [
+            "A TypeError is thrown at runtime",
+            "The reassignment silently fails",
+            "The new value is accepted",
+            "JavaScript warns but allows it"
+          ],
+          "answer": 0,
+          "explanation": "TypeError: Assignment to constant variable. const bindings are immutable; the variable cannot point to a new value."
+        },
+        {
+          "id": "js-003",
+          "q": "What is the scope of a variable declared with 'let' inside a {} block?",
+          "options": [
+            "Block-scoped — only accessible inside that block",
+            "Globally accessible",
+            "Function-scoped",
+            "Module-scoped only"
+          ],
+          "answer": 0,
+          "explanation": "let and const are block-scoped. var is function-scoped, which is why var is generally avoided in modern code."
+        },
+        {
+          "id": "js-004",
+          "q": "What does this code log? `const arr = [1, 2]; arr.push(3); console.log(arr);`",
+          "options": [
+            "[1, 2, 3]",
+            "TypeError because arr is const",
+            "[1, 2]",
+            "[3]"
+          ],
+          "answer": 0,
+          "explanation": "const prevents reassigning the variable, but the array itself is mutable. You can push, pop, splice — just not reassign arr."
+        },
+        {
+          "id": "js-005",
+          "q": "Which declaration is HOISTED but throws ReferenceError if accessed before its declaration line?",
+          "options": [
+            "let and const (the 'temporal dead zone')",
+            "var",
+            "function declarations",
+            "Nothing in JavaScript is hoisted"
+          ],
+          "answer": 0,
+          "explanation": "let/const are hoisted but uninitialized until their line. Accessing them before is the 'temporal dead zone' error."
+        }
+      ]
+    },
+    {
+      "topic": "Data types",
+      "questions": [
+        {
+          "id": "js-006",
+          "q": "Which is NOT a primitive type in JavaScript?",
+          "options": [
+            "Array",
+            "String",
+            "Number",
+            "Boolean"
+          ],
+          "answer": 0,
+          "explanation": "The 7 primitives: string, number, boolean, null, undefined, symbol, bigint. Arrays and objects are reference types."
+        },
+        {
+          "id": "js-007",
+          "q": "What does `typeof null` return?",
+          "options": [
+            "'object'",
+            "'null'",
+            "'undefined'",
+            "TypeError"
+          ],
+          "answer": 0,
+          "explanation": "A famous JavaScript bug preserved for backwards compatibility. typeof null === 'object' even though null is a primitive."
+        },
+        {
+          "id": "js-008",
+          "q": "Which value is FALSY in JavaScript?",
+          "options": [
+            "0",
+            "'0'",
+            "[]",
+            "{}"
+          ],
+          "answer": 0,
+          "explanation": "The falsy values are: false, 0, '', null, undefined, NaN, 0n. Note: '0' (string), [] and {} are all truthy!"
+        },
+        {
+          "id": "js-009",
+          "q": "What's the difference between `null` and `undefined`?",
+          "options": [
+            "null is an intentional 'no value'; undefined means a value was never assigned",
+            "They are exactly the same",
+            "null is a number, undefined is an object",
+            "null is for objects, undefined is for arrays"
+          ],
+          "answer": 0,
+          "explanation": "Use null when you mean 'deliberately empty'. undefined is JavaScript's default for unassigned variables and missing properties."
+        },
+        {
+          "id": "js-010",
+          "q": "What is the result of `0.1 + 0.2 === 0.3`?",
+          "options": [
+            "false (floating-point precision issue)",
+            "true",
+            "TypeError",
+            "undefined"
+          ],
+          "answer": 0,
+          "explanation": "Classic IEEE 754 issue: 0.1 + 0.2 === 0.30000000000000004. Use Number.EPSILON or a decimal library for money math."
+        }
+      ]
+    },
+    {
+      "topic": "Operators",
+      "questions": [
+        {
+          "id": "js-011",
+          "q": "What's the difference between `==` and `===`?",
+          "options": [
+            "=== checks value AND type without coercion; == coerces types before comparing",
+            "They are identical",
+            "=== is faster but less accurate",
+            "== only works on numbers"
+          ],
+          "answer": 0,
+          "explanation": "Always prefer ===. == has surprising rules (e.g., '' == 0 is true). === gives predictable behavior."
+        },
+        {
+          "id": "js-012",
+          "q": "What does the `??` operator do?",
+          "options": [
+            "Nullish coalescing — returns the right side only if the left side is null or undefined",
+            "Logical OR",
+            "Bitwise XOR",
+            "String concatenation"
+          ],
+          "answer": 0,
+          "explanation": "?? differs from || by only treating null/undefined as 'missing'. So `0 || 5` is 5, but `0 ?? 5` is 0."
+        },
+        {
+          "id": "js-013",
+          "q": "What does `user?.address?.city` do?",
+          "options": [
+            "Safely accesses nested properties, returning undefined if any link is null/undefined",
+            "Throws an error if user is undefined",
+            "Always returns null",
+            "Asks the user if they want to access city"
+          ],
+          "answer": 0,
+          "explanation": "Optional chaining (?.) short-circuits to undefined instead of crashing on null/undefined intermediates."
+        },
+        {
+          "id": "js-014",
+          "q": "What does the spread operator `...` do in `[...arr1, ...arr2]`?",
+          "options": [
+            "Expands arr1 and arr2 into individual elements of a new array",
+            "Deletes the arrays",
+            "Multiplies the arrays",
+            "Comments out the arrays"
+          ],
+          "answer": 0,
+          "explanation": "Spread is essential for immutable updates and function calls. `Math.max(...nums)` and `[...old, newItem]` are common patterns."
+        },
+        {
+          "id": "js-015",
+          "q": "What does `2 ** 3` evaluate to?",
+          "options": [
+            "8 (exponentiation: 2 to the power of 3)",
+            "6",
+            "5",
+            "23"
+          ],
+          "answer": 0,
+          "explanation": "** is the exponentiation operator (ES2016). Equivalent to Math.pow(2, 3)."
+        }
+      ]
+    },
+    {
+      "topic": "Functions",
+      "questions": [
+        {
+          "id": "js-016",
+          "q": "Which is an arrow function?",
+          "options": [
+            "const add = (a, b) => a + b;",
+            "function add(a, b) { return a + b; }",
+            "const add = function(a, b) { return a + b; }",
+            "let add = a + b;"
+          ],
+          "answer": 0,
+          "explanation": "Arrow functions are concise and don't bind their own `this` — making them great for callbacks but unsuitable for object methods that need `this`."
+        },
+        {
+          "id": "js-017",
+          "q": "What does this return? `function greet(name = 'World') { return 'Hello ' + name; }; greet();`",
+          "options": [
+            "'Hello World'",
+            "'Hello undefined'",
+            "TypeError",
+            "''"
+          ],
+          "answer": 0,
+          "explanation": "Default parameters kick in when an argument is omitted (or explicitly undefined)."
+        },
+        {
+          "id": "js-018",
+          "q": "What is a 'callback function'?",
+          "options": [
+            "A function passed as an argument to another function, to be invoked later",
+            "A function that calls itself",
+            "A function that returns to a previous page",
+            "A built-in JavaScript method"
+          ],
+          "answer": 0,
+          "explanation": "Callbacks underpin JavaScript's async model (setTimeout, event listeners, array methods like .map, .filter)."
+        },
+        {
+          "id": "js-019",
+          "q": "What is a 'pure function'?",
+          "options": [
+            "A function that always returns the same output for the same input and has no side effects",
+            "A function written in pure JavaScript",
+            "A function declared with the 'pure' keyword",
+            "Any function under 5 lines"
+          ],
+          "answer": 0,
+          "explanation": "Pure functions are predictable, testable, and cache-friendly. They form the heart of functional programming."
+        },
+        {
+          "id": "js-020",
+          "q": "What does `arr.map(x => x * 2)` return?",
+          "options": [
+            "A NEW array with each element doubled",
+            "The original array, mutated",
+            "A single number",
+            "undefined"
+          ],
+          "answer": 0,
+          "explanation": "map() returns a new array of the same length, with the callback's return value at each index. The original is unchanged."
+        }
+      ]
+    },
+    {
+      "topic": "Scope and closures",
+      "questions": [
+        {
+          "id": "js-021",
+          "q": "What is a 'closure' in JavaScript?",
+          "options": [
+            "A function that 'remembers' variables from the scope where it was defined, even after that scope exits",
+            "A way to close a browser tab",
+            "A loop that closes itself",
+            "A keyword to end a function"
+          ],
+          "answer": 0,
+          "explanation": "Closures are how counters, private state, and most callback patterns work in JS. A function 'closes over' its surrounding variables."
+        },
+        {
+          "id": "js-022",
+          "q": "What does this counter pattern demonstrate? `function makeCounter() { let n = 0; return () => ++n; }`",
+          "options": [
+            "A closure capturing private state n",
+            "A pure function with no state",
+            "A class constructor",
+            "A syntax error"
+          ],
+          "answer": 0,
+          "explanation": "Each call to makeCounter() creates a fresh n. The returned function keeps a private reference to that n via closure."
+        },
+        {
+          "id": "js-023",
+          "q": "What is 'lexical scope'?",
+          "options": [
+            "Scope is determined by where code is written, not where it's called from",
+            "Scope is determined by who calls the function",
+            "Scope is random",
+            "Scope only applies to global variables"
+          ],
+          "answer": 0,
+          "explanation": "JavaScript uses lexical (static) scoping. A function's accessible variables are decided by its location in source code."
+        },
+        {
+          "id": "js-024",
+          "q": "What does the `this` keyword refer to inside a regular function called as `obj.method()`?",
+          "options": [
+            "The object before the dot — obj",
+            "The global object always",
+            "undefined always",
+            "The function itself"
+          ],
+          "answer": 0,
+          "explanation": "Method invocation: `this` = the object before the dot. Calling the same function standalone makes `this` undefined (strict) or window (sloppy)."
+        },
+        {
+          "id": "js-025",
+          "q": "Why don't arrow functions have their own `this`?",
+          "options": [
+            "They inherit `this` from the enclosing lexical scope, which avoids common bugs in callbacks",
+            "It's a parser bug",
+            "They have a hidden this that's hard to access",
+            "They're slower with this"
+          ],
+          "answer": 0,
+          "explanation": "Arrow functions' lexical `this` is what makes them perfect for callbacks inside class methods — no more `.bind(this)` boilerplate."
+        }
+      ]
+    },
+    {
+      "topic": "Arrays and array methods",
+      "questions": [
+        {
+          "id": "js-026",
+          "q": "Which method REMOVES the last element from an array and returns it?",
+          "options": [
+            "pop()",
+            "push()",
+            "shift()",
+            "splice()"
+          ],
+          "answer": 0,
+          "explanation": "pop() = remove last. push() = add last. shift() = remove first. unshift() = add first."
+        },
+        {
+          "id": "js-027",
+          "q": "What does `[1,2,3,4].filter(x => x > 2)` return?",
+          "options": [
+            "[3, 4]",
+            "[1, 2]",
+            "2",
+            "true"
+          ],
+          "answer": 0,
+          "explanation": "filter() returns a new array with only elements where the callback returns truthy."
+        },
+        {
+          "id": "js-028",
+          "q": "What does `[1,2,3].reduce((sum, n) => sum + n, 0)` return?",
+          "options": [
+            "6",
+            "[6]",
+            "[1, 2, 3]",
+            "undefined"
+          ],
+          "answer": 0,
+          "explanation": "reduce() folds an array into a single value by accumulating. Sum, product, group-by, and many transforms are reduce in disguise."
+        },
+        {
+          "id": "js-029",
+          "q": "Which method finds the FIRST element matching a condition?",
+          "options": [
+            "find()",
+            "filter()",
+            "map()",
+            "forEach()"
+          ],
+          "answer": 0,
+          "explanation": "find() returns the first matching element (or undefined). findIndex() returns its index."
+        },
+        {
+          "id": "js-030",
+          "q": "What does the spread operator return when combining arrays? `const c = [...a, ...b];`",
+          "options": [
+            "A new array containing all elements of a followed by all elements of b",
+            "An array of two arrays: [a, b]",
+            "An error",
+            "The shorter of the two arrays"
+          ],
+          "answer": 0,
+          "explanation": "Spread + array literal is the modern, immutable way to concatenate arrays."
+        }
+      ]
+    },
+    {
+      "topic": "Objects",
+      "questions": [
+        {
+          "id": "js-031",
+          "q": "What does this code log? `const o = {a: 1}; const p = o; p.a = 2; console.log(o.a);`",
+          "options": [
+            "2",
+            "1",
+            "undefined",
+            "TypeError"
+          ],
+          "answer": 0,
+          "explanation": "Objects are reference types. p and o point to the same object — changing one changes both."
+        },
+        {
+          "id": "js-032",
+          "q": "Which is the CORRECT way to make a shallow copy of an object?",
+          "options": [
+            "{ ...original }",
+            "= original",
+            "JSON.stringify(original)",
+            "Object.original()"
+          ],
+          "answer": 0,
+          "explanation": "Spread (or Object.assign) creates a shallow copy. For deep copies use structuredClone() or a library."
+        },
+        {
+          "id": "js-033",
+          "q": "What does destructuring do? `const {name, age} = user;`",
+          "options": [
+            "Extracts named properties from user into individual variables",
+            "Deletes properties from user",
+            "Creates a new user object",
+            "Throws an error"
+          ],
+          "answer": 0,
+          "explanation": "Destructuring is essential for clean code — function parameters, hook returns, API responses all benefit."
+        },
+        {
+          "id": "js-034",
+          "q": "What is shorthand property syntax? `const obj = { name };`",
+          "options": [
+            "Equivalent to { name: name } — uses the variable name as both key and value",
+            "Creates an empty object",
+            "Imports the name module",
+            "A TypeScript-only feature"
+          ],
+          "answer": 0,
+          "explanation": "If the key and variable have the same name, you can write it once. Saves boilerplate in modern JS code."
+        },
+        {
+          "id": "js-035",
+          "q": "How do you iterate over an object's KEYS?",
+          "options": [
+            "Object.keys(obj).forEach(k => ...)",
+            "obj.forEach()",
+            "Array.from(obj)",
+            "Object iterates automatically"
+          ],
+          "answer": 0,
+          "explanation": "Object.keys(), Object.values(), Object.entries() return arrays you can iterate. Or use `for (const key in obj)`."
+        }
+      ]
+    },
+    {
+      "topic": "Async fundamentals: Promises",
+      "questions": [
+        {
+          "id": "js-036",
+          "q": "What is a Promise in JavaScript?",
+          "options": [
+            "An object representing the eventual result (success or failure) of an asynchronous operation",
+            "A guarantee from JavaScript to run code",
+            "A synchronous data structure",
+            "A type of variable declaration"
+          ],
+          "answer": 0,
+          "explanation": "Promises replace callback hell with a cleaner .then/.catch chain — and underpin async/await."
+        },
+        {
+          "id": "js-037",
+          "q": "What are the three states of a Promise?",
+          "options": [
+            "Pending, fulfilled, rejected",
+            "Loading, done, error",
+            "Start, middle, end",
+            "True, false, null"
+          ],
+          "answer": 0,
+          "explanation": "A pending Promise eventually becomes either fulfilled (with a value) or rejected (with a reason). Settled = either of the latter two."
+        },
+        {
+          "id": "js-038",
+          "q": "What does .then() return?",
+          "options": [
+            "A new Promise — enabling chaining",
+            "The original Promise",
+            "The value passed to it",
+            "undefined"
+          ],
+          "answer": 0,
+          "explanation": "Returning a new Promise is what makes .then chains work. Each .then can return a value or another Promise."
+        },
+        {
+          "id": "js-039",
+          "q": "How do you handle errors in a Promise chain?",
+          "options": [
+            "Add .catch() at the end of the chain",
+            "Use try/catch around .then()",
+            "Errors silently disappear",
+            "Promises don't have errors"
+          ],
+          "answer": 0,
+          "explanation": ".catch() handles any rejection in the chain above it. Always add one — unhandled rejections will eventually crash your app."
+        },
+        {
+          "id": "js-040",
+          "q": "What does `Promise.all([p1, p2, p3])` do?",
+          "options": [
+            "Returns a Promise that fulfills when ALL inputs fulfill, or rejects on the FIRST rejection",
+            "Runs the promises one at a time",
+            "Returns only the first result",
+            "Cancels all promises"
+          ],
+          "answer": 0,
+          "explanation": "Promise.all is your go-to for parallel async work. Use Promise.allSettled if you want all results regardless of failures."
+        }
+      ]
+    },
+    {
+      "topic": "Async/await",
+      "questions": [
+        {
+          "id": "js-041",
+          "q": "What does the `async` keyword do to a function?",
+          "options": [
+            "Makes it return a Promise automatically, and allows `await` inside it",
+            "Makes it run faster",
+            "Marks it as a callback",
+            "Prevents errors"
+          ],
+          "answer": 0,
+          "explanation": "An async function always returns a Promise. Even `async () => 1` returns a Promise that resolves to 1."
+        },
+        {
+          "id": "js-042",
+          "q": "What does `await` do?",
+          "options": [
+            "Pauses the async function until a Promise settles, then resumes with the resolved value",
+            "Stops the entire program",
+            "Makes JavaScript synchronous globally",
+            "Cancels the Promise"
+          ],
+          "answer": 0,
+          "explanation": "await only pauses the local async function — the rest of the JS thread keeps running. This is non-blocking concurrency."
+        },
+        {
+          "id": "js-043",
+          "q": "How do you handle errors with async/await?",
+          "options": [
+            "Wrap the await in a try/catch block",
+            "Use .catch() on the function",
+            "Errors are silently logged",
+            "Promise errors don't work with await"
+          ],
+          "answer": 0,
+          "explanation": "try/catch around await is the standard pattern. Cleaner than .catch chains for sequential logic."
+        },
+        {
+          "id": "js-044",
+          "q": "What's the MISTAKE in: `async function fetchAll() { const a = await fetch(u1); const b = await fetch(u2); return [a, b]; }`?",
+          "options": [
+            "The fetches run sequentially instead of in parallel — use Promise.all",
+            "fetch needs await twice",
+            "async functions can't return arrays",
+            "fetch is not a function"
+          ],
+          "answer": 0,
+          "explanation": "Common bug! Each await pauses for the previous. Use `await Promise.all([fetch(u1), fetch(u2)])` for parallel speedup."
+        },
+        {
+          "id": "js-045",
+          "q": "Can you use `await` at the top level of a module?",
+          "options": [
+            "Yes, in ES modules — top-level await is supported",
+            "No, never",
+            "Only in browsers, not Node",
+            "Only inside loops"
+          ],
+          "answer": 0,
+          "explanation": "Top-level await works in ES modules (since 2020). Useful for dynamic imports and initialization."
+        }
+      ]
+    },
+    {
+      "topic": "The DOM (Document Object Model)",
+      "questions": [
+        {
+          "id": "js-046",
+          "q": "What is the DOM?",
+          "options": [
+            "A tree-like programming interface representing the structure of an HTML document",
+            "A type of database",
+            "A JavaScript framework",
+            "A CSS file format"
+          ],
+          "answer": 0,
+          "explanation": "The DOM lets JavaScript read and modify the page structure, styles, and content dynamically."
+        },
+        {
+          "id": "js-047",
+          "q": "Which method selects the FIRST element matching a CSS selector?",
+          "options": [
+            "document.querySelector('.btn')",
+            "document.getElementByClass('.btn')",
+            "document.find('.btn')",
+            "document.select('.btn')"
+          ],
+          "answer": 0,
+          "explanation": "querySelector is the modern, flexible selector — supports any valid CSS selector. querySelectorAll returns all matches."
+        },
+        {
+          "id": "js-048",
+          "q": "How do you change an element's text content?",
+          "options": [
+            "element.textContent = 'Hello'",
+            "element.text = 'Hello'",
+            "element.value = 'Hello'",
+            "element.write('Hello')"
+          ],
+          "answer": 0,
+          "explanation": "textContent is safe (no HTML parsing). innerHTML parses HTML but is risky with user input (XSS)."
+        },
+        {
+          "id": "js-049",
+          "q": "How do you attach a click handler to a button?",
+          "options": [
+            "button.addEventListener('click', handler)",
+            "button.click = handler",
+            "button.onClick(handler)",
+            "button.bind('click', handler)"
+          ],
+          "answer": 0,
+          "explanation": "addEventListener is the standard. Multiple listeners can be attached for the same event, unlike onClick= assignment."
+        },
+        {
+          "id": "js-050",
+          "q": "What is 'event bubbling'?",
+          "options": [
+            "When an event fires on a child, it propagates up through parent elements",
+            "When events appear in a popup bubble",
+            "When events bubble away into nothing",
+            "When events are duplicated"
+          ],
+          "answer": 0,
+          "explanation": "Bubbling enables event delegation — a single listener on a parent can handle clicks on many children."
+        }
+      ]
+    },
+    {
+      "topic": "Fetch and HTTP",
+      "questions": [
+        {
+          "id": "js-051",
+          "q": "What does `fetch(url)` return?",
+          "options": [
+            "A Promise that resolves to a Response object",
+            "A string of the response body",
+            "The status code",
+            "An array of headers"
+          ],
+          "answer": 0,
+          "explanation": "fetch resolves to a Response object. You typically chain `.then(r => r.json())` to parse the body."
+        },
+        {
+          "id": "js-052",
+          "q": "Does fetch reject on HTTP error status (404, 500)?",
+          "options": [
+            "No — it only rejects on network failures. You must check response.ok manually",
+            "Yes, always",
+            "Only on 500 errors",
+            "Only in Node.js"
+          ],
+          "answer": 0,
+          "explanation": "A common gotcha. response.ok is true for 200-299. Always check it before assuming success."
+        },
+        {
+          "id": "js-053",
+          "q": "How do you send a POST request with JSON body using fetch?",
+          "options": [
+            "fetch(url, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) })",
+            "fetch.post(url, data)",
+            "fetch(url, data, 'POST')",
+            "fetch(url, 'POST')"
+          ],
+          "answer": 0,
+          "explanation": "Pass method, headers, and a string body. JSON.stringify() is required — fetch won't auto-serialize objects."
+        },
+        {
+          "id": "js-054",
+          "q": "What is CORS?",
+          "options": [
+            "Cross-Origin Resource Sharing — a browser security model controlling cross-domain HTTP requests",
+            "Cascading Object Reference Syntax",
+            "Conditional Output Rendering Style",
+            "Cached Origin Response Standard"
+          ],
+          "answer": 0,
+          "explanation": "CORS errors are one of every web dev's rites of passage. The fix is server-side: send proper Access-Control-Allow-Origin headers."
+        },
+        {
+          "id": "js-055",
+          "q": "How do you parse a JSON response from fetch?",
+          "options": [
+            "await response.json()",
+            "JSON.parse(response)",
+            "response.parse()",
+            "response.body"
+          ],
+          "answer": 0,
+          "explanation": "Response has helper methods: .json(), .text(), .blob(), .arrayBuffer(). Each returns a Promise."
+        }
+      ]
+    },
+    {
+      "topic": "ES6+ modern features",
+      "questions": [
+        {
+          "id": "js-056",
+          "q": "What does template literal syntax look like?",
+          "options": [
+            "`Hello ${name}, you have ${count} messages`",
+            "'Hello %s, you have %d messages'",
+            "\"Hello \" + name + \", you have \" + count + \" messages\"",
+            "'Hello {name}, you have {count} messages'"
+          ],
+          "answer": 0,
+          "explanation": "Backticks + ${} interpolation. Cleaner than concatenation and supports multi-line strings."
+        },
+        {
+          "id": "js-057",
+          "q": "What does the rest parameter `...args` do in a function signature?",
+          "options": [
+            "Collects all remaining arguments into a real array",
+            "Spreads an array into arguments",
+            "Restricts argument count",
+            "Makes the function async"
+          ],
+          "answer": 0,
+          "explanation": "Rest gives you a true array of args, unlike the old `arguments` object."
+        },
+        {
+          "id": "js-058",
+          "q": "What is a JavaScript module?",
+          "options": [
+            "A file that uses import/export to share code with other files",
+            "Any .js file",
+            "A specific framework feature",
+            "A function with no parameters"
+          ],
+          "answer": 0,
+          "explanation": "ES modules (import/export) are the modern standard. They enable tree-shaking, lazy loading, and proper encapsulation."
+        },
+        {
+          "id": "js-059",
+          "q": "What's the difference between default and named exports?",
+          "options": [
+            "Default: one per module, imported by any name. Named: many per module, imported by exact name",
+            "Default exports are slower",
+            "Named exports are deprecated",
+            "There is no difference"
+          ],
+          "answer": 0,
+          "explanation": "Prefer named exports for clarity and refactor safety. Use default for the 'primary' export of a single-purpose module."
+        },
+        {
+          "id": "js-060",
+          "q": "What does `class Foo extends Bar {}` enable?",
+          "options": [
+            "Foo inherits properties and methods from Bar (prototype-based inheritance with class syntax)",
+            "Foo replaces Bar in memory",
+            "Bar is deleted",
+            "Foo runs faster than Bar"
+          ],
+          "answer": 0,
+          "explanation": "Classes are syntactic sugar over JS's prototype-based inheritance. Useful for OOP-style code; not always necessary."
+        }
+      ]
+    },
+    {
+      "topic": "Error handling",
+      "questions": [
+        {
+          "id": "js-061",
+          "q": "How do you catch a synchronous error in JavaScript?",
+          "options": [
+            "try { /* code */ } catch (err) { /* handle */ }",
+            "if (error) { handle() }",
+            "errors are automatic",
+            "use Promise.catch()"
+          ],
+          "answer": 0,
+          "explanation": "try/catch is the synchronous pattern. For async code, wrap awaits in try/catch or chain .catch()."
+        },
+        {
+          "id": "js-062",
+          "q": "What's the BEST way to handle an error that you can't recover from?",
+          "options": [
+            "Log it and let it propagate with `throw` — don't swallow it silently",
+            "Catch and ignore",
+            "Pretend it didn't happen",
+            "console.log() and continue"
+          ],
+          "answer": 0,
+          "explanation": "Silent failures are the worst kind. Either handle meaningfully or let it bubble to a higher layer that can."
+        },
+        {
+          "id": "js-063",
+          "q": "What is `throw new Error('message')` doing?",
+          "options": [
+            "Creating a new Error object and throwing it as an exception",
+            "Logging an error to the console",
+            "Crashing the browser",
+            "Setting an error flag"
+          ],
+          "answer": 0,
+          "explanation": "throw can throw any value, but use Error objects so you get a stack trace and consistent .message/.stack properties."
+        },
+        {
+          "id": "js-064",
+          "q": "What's a custom error class useful for?",
+          "options": [
+            "Distinguishing different error types so catch blocks can react differently (ValidationError, NotFoundError, etc.)",
+            "Making errors look prettier in the console",
+            "Speeding up code execution",
+            "There's no reason to use them"
+          ],
+          "answer": 0,
+          "explanation": "Custom error classes let `instanceof` checks branch your error handling — much cleaner than parsing error messages."
+        },
+        {
+          "id": "js-065",
+          "q": "What is an 'unhandled promise rejection'?",
+          "options": [
+            "A rejected Promise with no .catch handler — modern Node and browsers will warn or crash on these",
+            "A successful Promise",
+            "A pending Promise",
+            "Normal expected behavior"
+          ],
+          "answer": 0,
+          "explanation": "Always handle Promise rejections. Unhandled rejections will terminate the process in modern Node.js versions."
+        }
+      ]
+    },
+    {
+      "topic": "Truthy, falsy, and coercion",
+      "questions": [
+        {
+          "id": "js-066",
+          "q": "What does `Boolean('false')` return?",
+          "options": [
+            "true (non-empty strings are truthy)",
+            "false",
+            "TypeError",
+            "null"
+          ],
+          "answer": 0,
+          "explanation": "ANY non-empty string is truthy, including the string 'false'. Only empty string '' is falsy."
+        },
+        {
+          "id": "js-067",
+          "q": "What does `'5' + 3` evaluate to?",
+          "options": [
+            "'53' (string concatenation)",
+            "8",
+            "NaN",
+            "Error"
+          ],
+          "answer": 0,
+          "explanation": "If either operand is a string, + concatenates. Use Number() or unary + for explicit conversion: `Number('5') + 3 === 8`."
+        },
+        {
+          "id": "js-068",
+          "q": "What does `'5' - 3` evaluate to?",
+          "options": [
+            "2 (subtraction coerces strings to numbers)",
+            "'53'",
+            "NaN",
+            "Error"
+          ],
+          "answer": 0,
+          "explanation": "Unlike +, the - operator has no string meaning, so it coerces operands to numbers. JS is wild."
+        },
+        {
+          "id": "js-069",
+          "q": "What does `[] == false` evaluate to?",
+          "options": [
+            "true (== coerces both to numbers, both become 0)",
+            "false",
+            "TypeError",
+            "undefined"
+          ],
+          "answer": 0,
+          "explanation": "Another == oddity. Stick to === to avoid these traps in production code."
+        },
+        {
+          "id": "js-070",
+          "q": "What's a SAFE way to check if a variable is null or undefined?",
+          "options": [
+            "if (value == null)  — intentionally uses == to match both null and undefined",
+            "if (value === undefined)",
+            "if (!value)",
+            "if (value !== '')"
+          ],
+          "answer": 0,
+          "explanation": "value == null is the one accepted use of == in many style guides — it cleanly catches both null and undefined."
+        }
+      ]
+    },
+    {
+      "topic": "Browser APIs",
+      "questions": [
+        {
+          "id": "js-071",
+          "q": "What does `localStorage.setItem('key', 'value')` do?",
+          "options": [
+            "Persists a key/value string in the browser, surviving page reloads",
+            "Sends data to the server",
+            "Sets a cookie",
+            "Stores data in memory only"
+          ],
+          "answer": 0,
+          "explanation": "localStorage is synchronous, ~5MB limit, strings only. For objects, JSON.stringify before storing."
+        },
+        {
+          "id": "js-072",
+          "q": "What's the difference between localStorage and sessionStorage?",
+          "options": [
+            "localStorage persists until cleared; sessionStorage is wiped when the tab closes",
+            "They are identical",
+            "sessionStorage is for sessions only",
+            "localStorage requires login"
+          ],
+          "answer": 0,
+          "explanation": "Pick based on lifetime needs. sessionStorage is great for in-progress form data; localStorage for user preferences."
+        },
+        {
+          "id": "js-073",
+          "q": "What does `setTimeout(fn, 1000)` do?",
+          "options": [
+            "Schedules fn to run AFTER at least 1000ms (non-blocking)",
+            "Blocks the page for 1000ms",
+            "Runs fn 1000 times",
+            "Adds 1000ms to the page load time"
+          ],
+          "answer": 0,
+          "explanation": "JS is single-threaded but non-blocking. setTimeout queues fn for later; the rest of your code keeps running immediately."
+        },
+        {
+          "id": "js-074",
+          "q": "What is the Console API mostly used for?",
+          "options": [
+            "Debugging — console.log, console.error, console.table, console.time",
+            "Building user interfaces",
+            "Sending HTTP requests",
+            "Compiling code"
+          ],
+          "answer": 0,
+          "explanation": "console has many useful methods beyond log: table, group, time/timeEnd, assert, trace. Worth exploring."
+        },
+        {
+          "id": "js-075",
+          "q": "What does `window.location.href = 'https://example.com'` do?",
+          "options": [
+            "Navigates the browser to that URL",
+            "Fetches the page in the background",
+            "Renames the current page",
+            "Sends an HTTP request"
+          ],
+          "answer": 0,
+          "explanation": "Assigning to location.href performs a full navigation. For SPA-style routing without reload, use the History API or a router."
+        }
+      ]
+    },
+    {
+      "topic": "JSON and data",
+      "questions": [
+        {
+          "id": "js-076",
+          "q": "What does `JSON.stringify(obj)` do?",
+          "options": [
+            "Converts a JavaScript object/array to a JSON string",
+            "Parses a JSON string into an object",
+            "Pretty-prints to the console",
+            "Validates JSON syntax"
+          ],
+          "answer": 0,
+          "explanation": "Essential for storage and transport. Skips functions, undefined, and Symbol values. Pass `null, 2` for pretty-printing."
+        },
+        {
+          "id": "js-077",
+          "q": "What does `JSON.parse(str)` do?",
+          "options": [
+            "Converts a JSON string into a JavaScript value",
+            "Validates the string",
+            "Encrypts the string",
+            "Logs the string"
+          ],
+          "answer": 0,
+          "explanation": "Inverse of stringify. Throws SyntaxError on malformed JSON — always wrap in try/catch for untrusted input."
+        },
+        {
+          "id": "js-078",
+          "q": "Why might `JSON.stringify({a: undefined, b: 1})` surprise you?",
+          "options": [
+            "The undefined value is omitted from the output: '{\"b\":1}'",
+            "It throws an error",
+            "undefined is converted to null",
+            "It includes 'undefined' as a string"
+          ],
+          "answer": 0,
+          "explanation": "JSON has no undefined. Functions and undefined values silently disappear when stringifying objects."
+        },
+        {
+          "id": "js-079",
+          "q": "What's the safe way to deep-clone a JSON-safe object?",
+          "options": [
+            "structuredClone(obj)",
+            "Object.assign(obj)",
+            "Array.from(obj)",
+            "obj.clone()"
+          ],
+          "answer": 0,
+          "explanation": "structuredClone() (since 2022) is the modern built-in deep clone. JSON.parse(JSON.stringify(obj)) is the old workaround."
+        },
+        {
+          "id": "js-080",
+          "q": "Can a JSON file contain comments?",
+          "options": [
+            "No — pure JSON does not support comments",
+            "Yes, with // syntax",
+            "Yes, with /* */ syntax",
+            "Yes, in any format"
+          ],
+          "answer": 0,
+          "explanation": "Common pain point. Use JSONC or JSON5 if you need comments (but they're not standard JSON)."
+        }
+      ]
+    },
+    {
+      "topic": "Iteration",
+      "questions": [
+        {
+          "id": "js-081",
+          "q": "Which loop iterates over the VALUES of an array?",
+          "options": [
+            "for...of",
+            "for...in",
+            "while",
+            "do...while"
+          ],
+          "answer": 0,
+          "explanation": "for...of is for iterables (arrays, strings, Maps, Sets). for...in is for object keys — don't use it on arrays!"
+        },
+        {
+          "id": "js-082",
+          "q": "Why is `for...in` BAD for iterating arrays?",
+          "options": [
+            "It iterates keys as strings and includes inherited properties — order is also not guaranteed",
+            "It's slower",
+            "It causes crashes",
+            "It only works in old browsers"
+          ],
+          "answer": 0,
+          "explanation": "Use for...of, .forEach(), or a classic for loop with indices for arrays. for...in is for plain objects only."
+        },
+        {
+          "id": "js-083",
+          "q": "What does `.forEach` NOT support that a for loop does?",
+          "options": [
+            "break and continue — forEach can't be exited early",
+            "Callbacks",
+            "Variable declarations",
+            "Conditions"
+          ],
+          "answer": 0,
+          "explanation": "forEach always runs to completion. Use for...of (with break) or .some()/.every() if you need early exit."
+        },
+        {
+          "id": "js-084",
+          "q": "What does `Array.from({length: 5}, (_, i) => i)` produce?",
+          "options": [
+            "[0, 1, 2, 3, 4]",
+            "[5]",
+            "[undefined, undefined, ...]",
+            "Error"
+          ],
+          "answer": 0,
+          "explanation": "Common pattern for generating sequences. Array.from accepts an array-like + a map function."
+        },
+        {
+          "id": "js-085",
+          "q": "How do you iterate over an object's [key, value] PAIRS?",
+          "options": [
+            "for (const [k, v] of Object.entries(obj))",
+            "for (const k in obj) — only gets keys",
+            "obj.forEach()",
+            "Object.iterate(obj)"
+          ],
+          "answer": 0,
+          "explanation": "Object.entries + destructuring is the cleanest way. Or Object.keys + .map((k) => [k, obj[k]])."
+        }
+      ]
+    },
+    {
+      "topic": "Best practices and pitfalls",
+      "questions": [
+        {
+          "id": "js-086",
+          "q": "Which keyword should you AVOID in modern JavaScript?",
+          "options": [
+            "var",
+            "let",
+            "const",
+            "function"
+          ],
+          "answer": 0,
+          "explanation": "var has function scope and hoisting quirks. Modern code uses const by default, let when reassignment is needed."
+        },
+        {
+          "id": "js-087",
+          "q": "What does 'use strict' do at the top of a file?",
+          "options": [
+            "Enables stricter parsing and error handling (e.g., assigning to undeclared variables throws)",
+            "Speeds up the code",
+            "Hides the source from users",
+            "Enables async functions"
+          ],
+          "answer": 0,
+          "explanation": "Strict mode catches more mistakes. ES modules are strict by default — explicit 'use strict' is mostly legacy now."
+        },
+        {
+          "id": "js-088",
+          "q": "Why is mutating function arguments BAD?",
+          "options": [
+            "It causes surprising side effects for the caller and breaks the principle of pure functions",
+            "It causes memory leaks",
+            "It throws errors",
+            "It is forbidden in strict mode"
+          ],
+          "answer": 0,
+          "explanation": "Return new values instead of mutating inputs. Predictability is worth a tiny performance overhead."
+        },
+        {
+          "id": "js-089",
+          "q": "What is the 'principle of least surprise' in JS?",
+          "options": [
+            "Code should behave the way readers would intuitively expect — favor clarity over cleverness",
+            "Always surprise users",
+            "Hide as much logic as possible",
+            "Avoid all comments"
+          ],
+          "answer": 0,
+          "explanation": "Boring code is good code. Reach for clever tricks only when they meaningfully improve clarity or performance."
+        },
+        {
+          "id": "js-090",
+          "q": "Which is a HEALTHY rule of thumb for modern JS?",
+          "options": [
+            "Prefer const, use === over ==, prefer immutability, handle Promise rejections, type your data (TS)",
+            "Use var and == everywhere",
+            "Mutate everything for speed",
+            "Avoid all error handling"
+          ],
+          "answer": 0,
+          "explanation": "These habits prevent the most common production bugs. TypeScript on top adds another safety net."
+        }
+      ]
+    },
+    {
+      "topic": "Tooling and environment",
+      "questions": [
+        {
+          "id": "js-091",
+          "q": "What is npm?",
+          "options": [
+            "Node Package Manager — installs and manages JavaScript libraries",
+            "A JavaScript runtime",
+            "A browser",
+            "A code editor"
+          ],
+          "answer": 0,
+          "explanation": "npm is the default package manager bundled with Node.js. Alternatives: pnpm (faster, disk-efficient) and yarn."
+        },
+        {
+          "id": "js-092",
+          "q": "What's the purpose of `package.json`?",
+          "options": [
+            "Lists a project's dependencies, scripts, metadata, and other config",
+            "Stores user passwords",
+            "Contains all source code",
+            "A CSS configuration file"
+          ],
+          "answer": 0,
+          "explanation": "Every Node/npm project has one. Run `npm init` to create. `dependencies` for runtime libs, `devDependencies` for build/test tools."
+        },
+        {
+          "id": "js-093",
+          "q": "What is a 'bundler' like Vite or Webpack?",
+          "options": [
+            "A tool that combines, transforms, and optimizes your source files for production",
+            "A backup tool",
+            "A database",
+            "A type of CSS"
+          ],
+          "answer": 0,
+          "explanation": "Bundlers handle modules, JSX/TS compilation, code splitting, minification, dev servers — they make modern frontend possible."
+        },
+        {
+          "id": "js-094",
+          "q": "What is TypeScript?",
+          "options": [
+            "A superset of JavaScript that adds static types, compiled to JavaScript before running",
+            "A new JavaScript runtime",
+            "A JavaScript framework",
+            "A CSS preprocessor"
+          ],
+          "answer": 0,
+          "explanation": "TS catches bugs at compile time that JS would only catch at runtime. Now the default for serious frontend projects."
+        },
+        {
+          "id": "js-095",
+          "q": "What does ESLint do?",
+          "options": [
+            "Statically analyzes JS/TS code to flag stylistic and potential bug issues",
+            "Runs the JavaScript code",
+            "Compiles TypeScript",
+            "Optimizes bundle size"
+          ],
+          "answer": 0,
+          "explanation": "Linters keep code consistent across teams and catch many subtle bugs. Pair with Prettier for autoformatting."
+        }
+      ]
+    },
+    {
+      "topic": "Working in real projects",
+      "questions": [
+        {
+          "id": "js-096",
+          "q": "What's the FIRST thing to do in a new JS project?",
+          "options": [
+            "Run `npm init` (or scaffold via Vite/CRA/Next), commit to git, write a README",
+            "Start coding immediately with no setup",
+            "Ship to production first",
+            "Read every documentation page first"
+          ],
+          "answer": 0,
+          "explanation": "Proper setup pays compound interest. Even a 1-hour project benefits from git + a README + a tiny package.json."
+        },
+        {
+          "id": "js-097",
+          "q": "Why are AUTOMATED TESTS valuable in JS projects?",
+          "options": [
+            "They catch regressions when you change code, enable safe refactoring, and document expected behavior",
+            "They slow down development",
+            "They are only for big companies",
+            "They replace the need for understanding the code"
+          ],
+          "answer": 0,
+          "explanation": "Tests are an investment in your future self's velocity. Start with the most critical paths; expand from there."
+        },
+        {
+          "id": "js-098",
+          "q": "What's the value of a `.gitignore` file in a JS project?",
+          "options": [
+            "Excludes node_modules, build artifacts, secrets, and .env files from version control",
+            "Speeds up Git operations",
+            "Makes commits anonymous",
+            "Removes files from disk"
+          ],
+          "answer": 0,
+          "explanation": "Without it you'd commit 100MB+ of node_modules and possibly leak secrets. ALWAYS configure .gitignore early."
+        },
+        {
+          "id": "js-099",
+          "q": "When debugging in the browser, which tool is MOST powerful?",
+          "options": [
+            "DevTools' debugger with breakpoints, watch expressions, and the call stack",
+            "Only console.log",
+            "Just reading the code carefully",
+            "Trial and error"
+          ],
+          "answer": 0,
+          "explanation": "console.log is great; the debugger is greater. Learning breakpoints + step-through is a career-multiplying skill."
+        },
+        {
+          "id": "js-100",
+          "q": "What's the best way to keep IMPROVING at JavaScript?",
+          "options": [
+            "Build real projects, read good code, write tests, learn the standard library deeply, follow MDN",
+            "Memorize syntax tables",
+            "Avoid all new features",
+            "Only watch tutorial videos"
+          ],
+          "answer": 0,
+          "explanation": "Real practice + reading great code + the official MDN docs is the proven recipe. Compound learning beats binge learning."
+        }
+      ]
+    }
+  ]
+}

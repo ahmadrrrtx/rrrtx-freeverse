@@ -1,0 +1,1314 @@
+{
+  "id": "ai-productivity",
+  "title": "AI for Productivity",
+  "description": "Use AI tools to automate workflows, write faster, and ship more.",
+  "category": "AI",
+  "icon": "⚡",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "AI productivity mindset",
+      "questions": [
+        {
+          "id": "ap-001",
+          "q": "What is the BEST way to think about AI in your workflow?",
+          "options": [
+            "A multiplier on the skills you already have, not a replacement for thinking",
+            "A magic oracle that's always right",
+            "A toy with no real business value",
+            "A threat to be ignored"
+          ],
+          "answer": 0,
+          "explanation": "AI is most powerful as an augmentation layer — it amplifies expertise rather than replacing judgment."
+        },
+        {
+          "id": "ap-002",
+          "q": "Which workflow benefits the MOST from AI assistance?",
+          "options": [
+            "Tasks with a blank-page problem — emails, outlines, first drafts, brainstorming",
+            "Tasks that require physical presence",
+            "Tasks requiring emotional intelligence with people",
+            "Tasks where you already know the exact answer"
+          ],
+          "answer": 0,
+          "explanation": "AI shines at getting you from 0 to 50%. You handle the 50-100% where judgment and refinement matter most."
+        },
+        {
+          "id": "ap-003",
+          "q": "What is the 'AI-first' workflow approach?",
+          "options": [
+            "Default to asking AI before doing routine knowledge work manually, then refine the output",
+            "Use AI for every single decision in your life",
+            "Replace all human collaboration with AI",
+            "Never use AI for any work"
+          ],
+          "answer": 0,
+          "explanation": "AI-first doesn't mean AI-only. It means using AI as your default starting point for repetitive cognitive tasks."
+        },
+        {
+          "id": "ap-004",
+          "q": "Which mindset SLOWS down AI productivity gains?",
+          "options": [
+            "Demanding the first output be perfect instead of iterating quickly",
+            "Treating AI output as a draft to refine",
+            "Sharing context generously with the AI",
+            "Testing multiple prompt variations"
+          ],
+          "answer": 0,
+          "explanation": "Speed compounds with iteration. The fastest AI users ship rough drafts and refine, not chase the perfect first prompt."
+        },
+        {
+          "id": "ap-005",
+          "q": "What's a TRUE statement about AI's impact on productivity?",
+          "options": [
+            "Gains are highly task-dependent — some tasks see 5x speedup, others see no improvement",
+            "It speeds up every task uniformly",
+            "It only helps with coding tasks",
+            "It always makes things slower"
+          ],
+          "answer": 0,
+          "explanation": "AI helps most with text-heavy, pattern-based work. Manual data entry, simple research, drafting — huge wins. Novel reasoning — modest wins."
+        }
+      ]
+    },
+    {
+      "topic": "Writing and content creation",
+      "questions": [
+        {
+          "id": "ap-006",
+          "q": "What's the MOST effective way to use AI for writing?",
+          "options": [
+            "Provide context, audience, tone, and length — then edit the AI's draft heavily",
+            "Type 'write something good' and ship the output",
+            "Have AI write the final version with no edits",
+            "Copy AI output without reading it"
+          ],
+          "answer": 0,
+          "explanation": "Context-rich prompts produce useful drafts. Heavy editing is where YOUR voice and judgment shape the final piece."
+        },
+        {
+          "id": "ap-007",
+          "q": "Which task is AI ESPECIALLY good at for writers?",
+          "options": [
+            "Generating headline variations, outlines, and rewrites in different tones",
+            "Verifying obscure historical facts without sources",
+            "Capturing your unique authentic voice without examples",
+            "Predicting which post will go viral"
+          ],
+          "answer": 0,
+          "explanation": "Variation-generation is AI's sweet spot. You provide judgment; it provides breadth."
+        },
+        {
+          "id": "ap-008",
+          "q": "How can you make AI sound MORE like YOU?",
+          "options": [
+            "Show it 2-3 examples of your past writing and say 'match this tone and style'",
+            "Use only generic prompts",
+            "Trust that AI knows your voice automatically",
+            "Always set temperature to 0"
+          ],
+          "answer": 0,
+          "explanation": "Few-shot prompting with your own writing is the simplest, most reliable voice-matching technique."
+        },
+        {
+          "id": "ap-009",
+          "q": "What's a PITFALL of AI-written marketing copy?",
+          "options": [
+            "It often sounds generic and full of clichés if not heavily prompted and edited",
+            "It's too creative",
+            "It uses too many emojis automatically",
+            "It refuses to write any copy"
+          ],
+          "answer": 0,
+          "explanation": "Default LLM tone is corporate-pleasant. Distinct brand voice requires explicit prompting, examples, and ruthless editing."
+        },
+        {
+          "id": "ap-010",
+          "q": "Which is a SMART use of AI for long-form content?",
+          "options": [
+            "Generate an outline first, then expand each section, then unify the voice in a final pass",
+            "Generate the entire 5000-word article in one prompt and publish",
+            "Never use AI for long content",
+            "Write the whole thing yourself then ask AI to summarize"
+          ],
+          "answer": 0,
+          "explanation": "Chunked workflows produce higher-quality long content than one giant generation. Outline → expand → unify is the proven pattern."
+        }
+      ]
+    },
+    {
+      "topic": "Email and communication",
+      "questions": [
+        {
+          "id": "ap-011",
+          "q": "What's a high-leverage use of AI for email?",
+          "options": [
+            "Drafting replies to common requests, summarizing long threads, and suggesting tone adjustments",
+            "Replying without reading the incoming email",
+            "Sending mass spam emails",
+            "Auto-firing employees via email"
+          ],
+          "answer": 0,
+          "explanation": "Email triage + drafting is one of the highest ROI personal AI use cases — saves 30-60 minutes per day for many professionals."
+        },
+        {
+          "id": "ap-012",
+          "q": "Before sending an AI-drafted email, what should you ALWAYS do?",
+          "options": [
+            "Read it carefully — AI may add details, names, or commitments that aren't accurate",
+            "Trust the AI completely",
+            "Send immediately without reading",
+            "Have another AI rewrite it"
+          ],
+          "answer": 0,
+          "explanation": "AI can fabricate plausible-sounding details. Especially dangerous in business emails — always verify before sending."
+        },
+        {
+          "id": "ap-013",
+          "q": "Which AI feature helps make emails sound MORE professional?",
+          "options": [
+            "Tone adjustment prompts like 'rewrite this in a more formal, polite, concise tone'",
+            "Adding more exclamation marks",
+            "Capitalizing the whole email",
+            "Using only emoji"
+          ],
+          "answer": 0,
+          "explanation": "Tone transformation is a fast way to translate a quick brain-dump into a polished message."
+        },
+        {
+          "id": "ap-014",
+          "q": "What's a GREAT prompt structure for an AI email assistant?",
+          "options": [
+            "'Reply to this email. Tone: friendly but professional. Length: 3 sentences. Goal: politely decline and suggest next week.'",
+            "'reply'",
+            "'help with email'",
+            "'email please'"
+          ],
+          "answer": 0,
+          "explanation": "Goal + tone + length + context = high-quality drafts. Vague prompts produce vague replies."
+        },
+        {
+          "id": "ap-015",
+          "q": "When should you AVOID using AI for email?",
+          "options": [
+            "Highly personal, condolence, or sensitive interpersonal messages where authenticity matters",
+            "Routine confirmations",
+            "Standard meeting requests",
+            "Newsletter drafts"
+          ],
+          "answer": 0,
+          "explanation": "Some moments require the human signal of effort and care. AI can help you start, but the words must come from you."
+        }
+      ]
+    },
+    {
+      "topic": "AI for coding and development",
+      "questions": [
+        {
+          "id": "ap-016",
+          "q": "What's the BEST way to use AI coding assistants?",
+          "options": [
+            "Pair-programming style — generate code, review it carefully, test it, never blindly accept",
+            "Generate code and ship to production without review",
+            "Refuse to use any AI for coding",
+            "Only use AI for boilerplate, never for logic"
+          ],
+          "answer": 0,
+          "explanation": "AI coding tools (Copilot, Cursor, Claude Code) are pair partners, not autopilots. Reviews and tests are non-negotiable."
+        },
+        {
+          "id": "ap-017",
+          "q": "Which coding task does AI handle EXCEPTIONALLY well?",
+          "options": [
+            "Boilerplate, format conversions, simple refactors, repetitive transformations",
+            "Novel algorithm design with no precedent",
+            "Debugging production race conditions blindly",
+            "Architecting a 10-year system roadmap"
+          ],
+          "answer": 0,
+          "explanation": "AI excels at high-pattern, well-documented work. Novel reasoning and ambiguous tradeoffs still need human judgment."
+        },
+        {
+          "id": "ap-018",
+          "q": "What's a SECURITY risk of AI-generated code?",
+          "options": [
+            "AI may suggest deprecated, insecure, or vulnerable patterns it learned from old training data",
+            "AI code always crashes",
+            "AI code is too slow",
+            "AI code has too many comments"
+          ],
+          "answer": 0,
+          "explanation": "Always check AI-generated code against current best practices. Run linters, security scanners, and dependency audits."
+        },
+        {
+          "id": "ap-019",
+          "q": "Which is a HEALTHY workflow with AI coding tools?",
+          "options": [
+            "Use AI to draft, understand every line, test thoroughly, then commit with attribution if required",
+            "Copy-paste blindly into production",
+            "Never write tests for AI code",
+            "Disable code review for AI commits"
+          ],
+          "answer": 0,
+          "explanation": "Understanding the code you ship is your responsibility — AI didn't write it, YOU did."
+        },
+        {
+          "id": "ap-020",
+          "q": "What is 'vibe coding'?",
+          "options": [
+            "A casual style where you describe the goal in natural language and iterate with AI on the result",
+            "A coding language designed in 2026",
+            "A code formatting tool",
+            "A type of code review"
+          ],
+          "answer": 0,
+          "explanation": "Coined by Andrej Karpathy — vibe coding emphasizes intent and iteration over manual line-by-line authorship. Best for prototypes and personal tools."
+        }
+      ]
+    },
+    {
+      "topic": "AI for research and learning",
+      "questions": [
+        {
+          "id": "ap-021",
+          "q": "What's a SMART way to use AI to learn a new topic?",
+          "options": [
+            "Ask AI to explain concepts in multiple ways, then verify key facts against authoritative sources",
+            "Trust AI's first explanation completely",
+            "Avoid AI for learning anything",
+            "Have AI take exams for you"
+          ],
+          "answer": 0,
+          "explanation": "AI is a phenomenal personal tutor — patient, infinitely available, multi-perspective. But verify facts before relying on them."
+        },
+        {
+          "id": "ap-022",
+          "q": "How can AI help you DEEPLY understand a complex topic?",
+          "options": [
+            "Ask it to use analogies, give simpler explanations, then explain why those analogies break down",
+            "Ask one question and stop there",
+            "Memorize AI responses without questioning",
+            "Only ask yes/no questions"
+          ],
+          "answer": 0,
+          "explanation": "The 'explain it to me like I'm 12, then like I'm an expert, then where does the analogy fail?' chain forces deep understanding."
+        },
+        {
+          "id": "ap-023",
+          "q": "What is the 'Feynman technique' enhanced by AI?",
+          "options": [
+            "Explain a concept aloud in your own words, then have AI critique your explanation for gaps",
+            "Have AI explain everything to you with no participation",
+            "Memorize AI explanations word-for-word",
+            "Watch AI lecture videos passively"
+          ],
+          "answer": 0,
+          "explanation": "Active retrieval + AI feedback compounds learning. You think, AI critiques, you refine — the loop builds real understanding."
+        },
+        {
+          "id": "ap-024",
+          "q": "What's a GOOD AI prompt for research?",
+          "options": [
+            "'Summarize the main arguments for and against X, then list the strongest counterpoints to each.'",
+            "'tell me about X'",
+            "'X'",
+            "'research X for me'"
+          ],
+          "answer": 0,
+          "explanation": "Specific, multi-perspective prompts produce balanced research outputs. Always cross-check sources."
+        },
+        {
+          "id": "ap-025",
+          "q": "What should you NEVER do with AI for academic work?",
+          "options": [
+            "Submit AI-generated content as your own original work in violation of academic integrity policies",
+            "Use AI to brainstorm topic ideas",
+            "Use AI to check grammar in your draft",
+            "Use AI to explain a confusing concept"
+          ],
+          "answer": 0,
+          "explanation": "Disclose AI use per your institution's policy. Academic dishonesty with AI carries the same consequences as any plagiarism."
+        }
+      ]
+    },
+    {
+      "topic": "AI for meetings and notes",
+      "questions": [
+        {
+          "id": "ap-026",
+          "q": "What can AI meeting note-takers do?",
+          "options": [
+            "Transcribe audio, produce summaries, extract action items and decisions, identify speakers",
+            "Replace meetings entirely",
+            "Hire and fire participants",
+            "Schedule the meetings on your calendar"
+          ],
+          "answer": 0,
+          "explanation": "Tools like Otter, Fireflies, Zoom AI Companion, Granola free you from note-taking so you can fully engage in the conversation."
+        },
+        {
+          "id": "ap-027",
+          "q": "What's a PRIVACY consideration with AI meeting tools?",
+          "options": [
+            "All participants should know recording is happening — disclosure is legally required in many regions",
+            "Disclosure is never needed",
+            "Only the host needs to consent",
+            "Privacy doesn't apply to virtual meetings"
+          ],
+          "answer": 0,
+          "explanation": "Two-party consent laws apply in many jurisdictions. Always disclose AI recording before pressing record."
+        },
+        {
+          "id": "ap-028",
+          "q": "Which is a HIGH-VALUE post-meeting AI workflow?",
+          "options": [
+            "Generate summary → extract action items → assign owners → auto-draft follow-up email",
+            "Delete all meeting notes immediately",
+            "Never share meeting outcomes",
+            "Replay the entire recording for everyone"
+          ],
+          "answer": 0,
+          "explanation": "Action-item extraction + auto-follow-up is where AI meeting tools earn their keep. Closes the meetings-to-execution gap."
+        },
+        {
+          "id": "ap-029",
+          "q": "How can AI help you PREPARE for a meeting?",
+          "options": [
+            "Summarize prior meeting notes, draft an agenda, prep talking points based on attendees and goals",
+            "Cancel the meeting automatically",
+            "Send threatening pre-meeting emails",
+            "Skip preparation entirely"
+          ],
+          "answer": 0,
+          "explanation": "Pre-meeting prep is often skipped because it's tedious. AI removes the friction."
+        },
+        {
+          "id": "ap-030",
+          "q": "What's a TRAP of relying on AI meeting summaries?",
+          "options": [
+            "AI may misattribute statements, miss nuance, or hallucinate details — review summaries before acting on them",
+            "Summaries are always 100% accurate",
+            "Summaries auto-correct themselves",
+            "Summaries replace the original meeting"
+          ],
+          "answer": 0,
+          "explanation": "Treat AI summaries as a first draft. Verify critical decisions against the recording before taking action."
+        }
+      ]
+    },
+    {
+      "topic": "AI for data and spreadsheets",
+      "questions": [
+        {
+          "id": "ap-031",
+          "q": "How can AI help with spreadsheet work?",
+          "options": [
+            "Generate formulas from natural language, clean data, explain unfamiliar formulas, suggest pivot tables",
+            "Replace the spreadsheet entirely",
+            "Delete data you no longer need",
+            "Print spreadsheets automatically"
+          ],
+          "answer": 0,
+          "explanation": "'Write me a formula to sum sales by region for Q3' is the killer use case. Saves hours of Stack Overflow searching."
+        },
+        {
+          "id": "ap-032",
+          "q": "What's a GOOD prompt for AI spreadsheet help?",
+          "options": [
+            "'Write an Excel formula that returns the average of column B where column A equals \"Lahore\".'",
+            "'help with excel'",
+            "'fix my sheet'",
+            "'do math'"
+          ],
+          "answer": 0,
+          "explanation": "Specific column references + exact goal = correct formula. Vague prompts produce vague (and wrong) formulas."
+        },
+        {
+          "id": "ap-033",
+          "q": "How can AI help CLEAN messy data?",
+          "options": [
+            "Standardize formats, detect duplicates, fill missing values intelligently, normalize text",
+            "Delete all the data without asking",
+            "Encrypt the data so nobody can read it",
+            "Convert all data to images"
+          ],
+          "answer": 0,
+          "explanation": "Data cleaning is the most tedious part of analytics. AI can suggest cleanup rules — but always spot-check the output."
+        },
+        {
+          "id": "ap-034",
+          "q": "Which is a SAFE practice with AI and sensitive spreadsheets?",
+          "options": [
+            "Redact or anonymize sensitive columns before uploading to a third-party AI",
+            "Upload all customer data to any free AI tool",
+            "Email the spreadsheet to strangers",
+            "Never use spreadsheets again"
+          ],
+          "answer": 0,
+          "explanation": "Treat third-party AI like a public log. Strip PII, IDs, and confidential data before sharing for analysis."
+        },
+        {
+          "id": "ap-035",
+          "q": "What CAN'T AI do reliably with numeric data?",
+          "options": [
+            "Precise calculations on large numbers without a calculator tool — it predicts digits, not computes them",
+            "Suggest formulas",
+            "Explain what a column means",
+            "Spot obvious patterns"
+          ],
+          "answer": 0,
+          "explanation": "Always use AI for STRUCTURE (formulas, logic) and a real spreadsheet for COMPUTATION. Don't trust AI arithmetic."
+        }
+      ]
+    },
+    {
+      "topic": "AI for slides and presentations",
+      "questions": [
+        {
+          "id": "ap-036",
+          "q": "What can AI presentation tools (Gamma, Beautiful.ai) do?",
+          "options": [
+            "Generate full slide decks from a topic or outline, with layouts, content, and images",
+            "Physically print slides",
+            "Deliver the presentation for you",
+            "Memorize the content for you"
+          ],
+          "answer": 0,
+          "explanation": "Modern AI slide tools generate decks in minutes. Treat them as first drafts — refine content and visuals to match your brand."
+        },
+        {
+          "id": "ap-037",
+          "q": "What's a GOOD prompt for an AI slide generator?",
+          "options": [
+            "'10-slide pitch deck for a Pakistani Edtech startup targeting university students. Include problem, solution, market, traction.'",
+            "'deck'",
+            "'make slides'",
+            "'pitch'"
+          ],
+          "answer": 0,
+          "explanation": "Audience + length + sections + context = a usable starting point. Generic prompts produce generic decks."
+        },
+        {
+          "id": "ap-038",
+          "q": "What's a CONTENT trap with AI-generated slides?",
+          "options": [
+            "Too much text per slide — AI defaults to verbose; great presentations are visual",
+            "Too few slides",
+            "Wrong file format",
+            "Too colorful by default"
+          ],
+          "answer": 0,
+          "explanation": "Always edit AI slides down. The 6x6 rule (max 6 lines, 6 words each) still beats AI's default verbosity."
+        },
+        {
+          "id": "ap-039",
+          "q": "How can AI help with REHEARSING a talk?",
+          "options": [
+            "Generate likely audience questions, suggest counterarguments, simulate Q&A scenarios",
+            "Memorize the talk for you",
+            "Speak in your voice live",
+            "Eliminate the need to rehearse"
+          ],
+          "answer": 0,
+          "explanation": "Pre-mortem Q&A prep is a high-leverage AI use case for big presentations. AI plays the skeptical audience for you."
+        },
+        {
+          "id": "ap-040",
+          "q": "What's the BEST division of labor for an AI-assisted talk?",
+          "options": [
+            "AI generates first draft and visuals; you bring stories, insights, voice, and live delivery",
+            "AI does everything including delivery",
+            "You do everything alone",
+            "AI delivers, you watch"
+          ],
+          "answer": 0,
+          "explanation": "Great talks need a human heart. AI accelerates the production; YOU bring the meaning."
+        }
+      ]
+    },
+    {
+      "topic": "Automation with no-code AI",
+      "questions": [
+        {
+          "id": "ap-041",
+          "q": "What is a 'no-code AI workflow' platform?",
+          "options": [
+            "Tools like Make.com, Zapier, n8n that let you connect apps and AI models without writing code",
+            "A code-free smartphone",
+            "A platform that disables all code",
+            "A type of CMS"
+          ],
+          "answer": 0,
+          "explanation": "These platforms turn 'when X happens, ask AI to do Y, then send to Z' into a few clicks. Massive productivity unlock."
+        },
+        {
+          "id": "ap-042",
+          "q": "Which is a CLASSIC no-code AI automation?",
+          "options": [
+            "New form submission → AI analyzes → custom email reply sent automatically",
+            "Manually typing each email",
+            "Calling each customer by phone",
+            "Printing forms and faxing"
+          ],
+          "answer": 0,
+          "explanation": "Form-to-response pipelines are the 'hello world' of AI automation. Save hours per week with one workflow."
+        },
+        {
+          "id": "ap-043",
+          "q": "What's a SMART first AI automation to build?",
+          "options": [
+            "Something that solves YOUR own repetitive task — you'll catch bugs faster and feel the value",
+            "Something you don't need but looks impressive",
+            "Something for a client without testing",
+            "Something with 50 steps right away"
+          ],
+          "answer": 0,
+          "explanation": "Build for yourself first. You're your own best QA tester for an automation that affects your daily life."
+        },
+        {
+          "id": "ap-044",
+          "q": "What's a COMMON failure mode in no-code AI automations?",
+          "options": [
+            "Silent failures — when an AI step returns weird output and the rest of the workflow blindly continues",
+            "Too many notifications",
+            "Working too fast",
+            "Running too cheap"
+          ],
+          "answer": 0,
+          "explanation": "Always add error handling and output validation in AI steps. Don't let bad AI output cascade through the rest of your flow."
+        },
+        {
+          "id": "ap-045",
+          "q": "How can you DEBUG a complex no-code workflow?",
+          "options": [
+            "Use the platform's run history, log every step's input/output, test with sample data before going live",
+            "Hope it works",
+            "Delete and rebuild from scratch every time",
+            "Avoid debugging"
+          ],
+          "answer": 0,
+          "explanation": "Modern no-code platforms have great run-history viewers. Test with realistic sample data before turning on automation triggers."
+        }
+      ]
+    },
+    {
+      "topic": "AI for design and visuals",
+      "questions": [
+        {
+          "id": "ap-046",
+          "q": "What can AI image generators (DALL-E, Midjourney, Imagen) do?",
+          "options": [
+            "Create custom illustrations, mockups, product shots, and visual concepts from text descriptions",
+            "Edit existing photos perfectly",
+            "Replace all human designers",
+            "Print physical posters"
+          ],
+          "answer": 0,
+          "explanation": "Great for thumbnails, marketing visuals, ideation. Still requires design taste to pick and refine outputs."
+        },
+        {
+          "id": "ap-047",
+          "q": "What's a STRONG image prompt structure?",
+          "options": [
+            "Subject + style + lighting + composition + medium + mood",
+            "Just one vague word",
+            "Pixel-by-pixel specifications",
+            "Only color hex codes"
+          ],
+          "answer": 0,
+          "explanation": "'Cinematic 35mm portrait, golden hour, shallow DOF, melancholic mood' >>> 'photo'. Specificity is everything in image gen."
+        },
+        {
+          "id": "ap-048",
+          "q": "What's a LIMITATION of current AI image gen?",
+          "options": [
+            "Struggles with consistent characters across multiple images, complex hands, and precise text rendering",
+            "Can't generate any images",
+            "Only works in black and white",
+            "Generates only landscapes"
+          ],
+          "answer": 0,
+          "explanation": "Recent models improved dramatically on hands and text but still aren't perfect. Plan for multiple attempts on these."
+        },
+        {
+          "id": "ap-049",
+          "q": "How can AI help with brand design?",
+          "options": [
+            "Generate color palette options, logo concepts, font pairings, and mood boards quickly",
+            "Replace a brand identity overnight",
+            "Skip all brand strategy",
+            "Auto-trademark your brand"
+          ],
+          "answer": 0,
+          "explanation": "AI accelerates exploration in early brand work. Final identity decisions still benefit from human expertise and strategy."
+        },
+        {
+          "id": "ap-050",
+          "q": "What's an ETHICAL concern with AI-generated images?",
+          "options": [
+            "Training data copyright issues and impact on working artists' livelihoods",
+            "Images are too high quality",
+            "Images are too cheap to generate",
+            "Images load too slowly"
+          ],
+          "answer": 0,
+          "explanation": "Use AI imagery thoughtfully. For commercial work, prefer models with clear training data provenance and licensing."
+        }
+      ]
+    },
+    {
+      "topic": "AI for project management",
+      "questions": [
+        {
+          "id": "ap-051",
+          "q": "What's a HIGH-VALUE PM use of AI?",
+          "options": [
+            "Generating task breakdowns, estimating effort, identifying risks, and writing status updates",
+            "Replacing the PM entirely",
+            "Auto-firing team members",
+            "Making decisions without input"
+          ],
+          "answer": 0,
+          "explanation": "AI accelerates the writing and structuring side of PM. Strategic decisions still need experienced humans."
+        },
+        {
+          "id": "ap-052",
+          "q": "Which AI workflow helps with sprint planning?",
+          "options": [
+            "AI breaks down a feature into user stories with acceptance criteria, then estimates relative complexity",
+            "AI assigns tasks to team members without their input",
+            "AI cancels all sprints",
+            "AI works in isolation from the team"
+          ],
+          "answer": 0,
+          "explanation": "Story breakdown is tedious work AI does well. Team review and adjustment remain essential — AI estimates are starting points."
+        },
+        {
+          "id": "ap-053",
+          "q": "How can AI help write better STATUS UPDATES?",
+          "options": [
+            "Convert raw notes into structured updates with progress, blockers, next steps in audience-appropriate tone",
+            "Inflate accomplishments artificially",
+            "Hide all problems",
+            "Remove the need for status updates"
+          ],
+          "answer": 0,
+          "explanation": "Status updates are a brain-tax. AI converts your messy notes into clean updates in seconds. Always factual, never inflate."
+        },
+        {
+          "id": "ap-054",
+          "q": "What's a SMART use of AI for risk management?",
+          "options": [
+            "Ask AI to list potential risks and edge cases for your project plan as a brainstorming partner",
+            "Trust AI to predict the future",
+            "Skip risk planning entirely",
+            "Hide risks from stakeholders"
+          ],
+          "answer": 0,
+          "explanation": "AI pre-mortems surface risks you might miss. You still evaluate likelihood, impact, and mitigations as the human PM."
+        },
+        {
+          "id": "ap-055",
+          "q": "Which PM task should AI NOT do alone?",
+          "options": [
+            "High-stakes decisions about scope, deadlines, or team changes that affect people's careers and lives",
+            "Drafting documentation",
+            "Summarizing standups",
+            "Generating retrospective questions"
+          ],
+          "answer": 0,
+          "explanation": "AI assists with the work; humans own accountability for impact on people. Match autonomy level to stakes."
+        }
+      ]
+    },
+    {
+      "topic": "AI prompt libraries and templates",
+      "questions": [
+        {
+          "id": "ap-056",
+          "q": "What is a 'prompt library'?",
+          "options": [
+            "A personal or team collection of reusable, tested prompts for recurring tasks",
+            "A book about prompts",
+            "A type of AI model",
+            "A library that lends books about AI"
+          ],
+          "answer": 0,
+          "explanation": "Stop re-writing the same prompts. Save the winners; iterate on them. A good prompt library is a productivity multiplier."
+        },
+        {
+          "id": "ap-057",
+          "q": "What's a GOOD format for storing reusable prompts?",
+          "options": [
+            "Versioned text files in a folder or Notion database, with notes on context and example outputs",
+            "Memorize them all",
+            "Random sticky notes",
+            "Email yourself each prompt"
+          ],
+          "answer": 0,
+          "explanation": "Treat prompts like code — version them, document them, share with your team. They are intellectual property."
+        },
+        {
+          "id": "ap-058",
+          "q": "What is 'prompt chaining'?",
+          "options": [
+            "Using the output of one AI call as input to the next, building multi-step workflows",
+            "Chaining prompts to a physical keyboard",
+            "Using only one prompt forever",
+            "Repeating the same prompt 10 times"
+          ],
+          "answer": 0,
+          "explanation": "Chaining handles complex tasks by decomposing them. Used heavily in agents, RAG, and content pipelines."
+        },
+        {
+          "id": "ap-059",
+          "q": "Which is a CLASSIC reusable prompt template?",
+          "options": [
+            "'You are a [role]. Given [input], produce [output] in [format]. Constraints: [list].'",
+            "'help'",
+            "'do thing'",
+            "'output'"
+          ],
+          "answer": 0,
+          "explanation": "Role + input + output + format + constraints is a battle-tested pattern that works across most tasks."
+        },
+        {
+          "id": "ap-060",
+          "q": "How do you IMPROVE a prompt over time?",
+          "options": [
+            "Track when it fails, identify the failure mode, refine, and version the new prompt",
+            "Never change it once written",
+            "Rewrite it from scratch every time",
+            "Add 100 random instructions"
+          ],
+          "answer": 0,
+          "explanation": "Prompt engineering is iterative. Maintain a changelog so you can roll back if a 'small improvement' actually broke things."
+        }
+      ]
+    },
+    {
+      "topic": "Choosing the right AI model",
+      "questions": [
+        {
+          "id": "ap-061",
+          "q": "When should you use a FRONTIER model (GPT-5, Claude Opus, Gemini Ultra)?",
+          "options": [
+            "Complex reasoning, nuanced writing, multi-step tasks where quality outweighs cost",
+            "Simple text classification",
+            "High-volume cheap tasks",
+            "Tasks needing instant response"
+          ],
+          "answer": 0,
+          "explanation": "Match the model to the task. Don't burn frontier-model dollars on tasks a small model handles fine."
+        },
+        {
+          "id": "ap-062",
+          "q": "When is a SMALL/FAST model the right choice?",
+          "options": [
+            "Bulk processing, simple classification, real-time chat, on-device use",
+            "All complex tasks",
+            "Tasks needing deep reasoning",
+            "Creative writing with nuance"
+          ],
+          "answer": 0,
+          "explanation": "Speed and cost matter. Small models (GPT-mini, Claude Haiku, Gemini Flash, Groq-hosted Llama) shine for high-volume simple tasks."
+        },
+        {
+          "id": "ap-063",
+          "q": "What's the value of trying MULTIPLE AI models for the same task?",
+          "options": [
+            "Different models have different strengths — comparing reveals which is best for YOUR use case",
+            "It's a waste of time",
+            "All models are identical",
+            "It violates terms of service"
+          ],
+          "answer": 0,
+          "explanation": "Models genuinely differ in tone, accuracy, instruction-following, and creativity. Test before committing."
+        },
+        {
+          "id": "ap-064",
+          "q": "What is 'model routing' in productivity workflows?",
+          "options": [
+            "Automatically picking different models for different requests based on complexity, cost, and speed needs",
+            "Choosing the model's IP address",
+            "Picking GPU hardware",
+            "Routing emails to AI"
+          ],
+          "answer": 0,
+          "explanation": "Smart apps cascade — simple stuff to cheap model, hard stuff to expensive model. Saves money without quality loss."
+        },
+        {
+          "id": "ap-065",
+          "q": "Why use an OPEN-SOURCE model (Llama, Mistral, Qwen) instead of paid APIs?",
+          "options": [
+            "Self-hosting for privacy, no per-call cost, and full customization control",
+            "They're always smarter",
+            "They're easier for non-developers",
+            "They have no limitations"
+          ],
+          "answer": 0,
+          "explanation": "Open models trade ops effort for control. Great for privacy-sensitive workloads or huge volume where API costs add up."
+        }
+      ]
+    },
+    {
+      "topic": "AI integrations with existing tools",
+      "questions": [
+        {
+          "id": "ap-066",
+          "q": "Which apps now have NATIVE AI features built in?",
+          "options": [
+            "Notion, Google Workspace, Microsoft 365, Slack, Figma, GitHub — almost every major productivity app",
+            "Only standalone AI apps",
+            "Only apps in 2030",
+            "Only paid enterprise tools"
+          ],
+          "answer": 0,
+          "explanation": "Native AI is now table stakes. Most pros use AI inside existing tools more than in standalone chat apps."
+        },
+        {
+          "id": "ap-067",
+          "q": "What is a 'browser AI extension'?",
+          "options": [
+            "A browser plugin (like Sider, Monica, Merlin) that lets you use AI on ANY webpage",
+            "A browser made entirely by AI",
+            "An ad blocker",
+            "A password manager"
+          ],
+          "answer": 0,
+          "explanation": "Browser AI extensions are huge for research and writing on the web. They eliminate copy-paste-back tab-switching."
+        },
+        {
+          "id": "ap-068",
+          "q": "What can AI in your CODE EDITOR do that ChatGPT can't easily?",
+          "options": [
+            "See your entire codebase context and suggest changes inline as you type",
+            "Run on a phone better",
+            "Cost less than ChatGPT",
+            "Train its own model"
+          ],
+          "answer": 0,
+          "explanation": "Editor AI (Copilot, Cursor, Claude Code) sees your code. That context makes its suggestions vastly more relevant."
+        },
+        {
+          "id": "ap-069",
+          "q": "What's a key INTEGRATION question for AI tools?",
+          "options": [
+            "Does this tool access my data securely, and what does it do with that data afterward?",
+            "Does it have the best logo?",
+            "Is it the newest tool released?",
+            "Does it have the most features?"
+          ],
+          "answer": 0,
+          "explanation": "Permission scope and data handling matter more than feature count. Audit before granting access to your accounts."
+        },
+        {
+          "id": "ap-070",
+          "q": "What is MCP (Model Context Protocol)?",
+          "options": [
+            "A standard protocol for connecting AI models to tools and data sources (introduced by Anthropic)",
+            "A new TCP/IP variant",
+            "A type of memory card",
+            "A music compression format"
+          ],
+          "answer": 0,
+          "explanation": "MCP is becoming the 'USB-C of AI integrations' — letting any AI client talk to any tool server. Watch this space."
+        }
+      ]
+    },
+    {
+      "topic": "Time management with AI",
+      "questions": [
+        {
+          "id": "ap-071",
+          "q": "How can AI help with CALENDAR management?",
+          "options": [
+            "Suggest optimal meeting times, draft scheduling messages, summarize your upcoming week",
+            "Cancel all your meetings without asking",
+            "Hide events from your calendar",
+            "Move events randomly"
+          ],
+          "answer": 0,
+          "explanation": "Tools like Reclaim, Motion, and built-in Google/Outlook AI help offload scheduling tetris to AI."
+        },
+        {
+          "id": "ap-072",
+          "q": "What's a SMART AI prompt for daily planning?",
+          "options": [
+            "'Here's my task list and meeting schedule. Help me prioritize using the Eisenhower matrix and identify what to drop.'",
+            "'plan my day'",
+            "'be productive'",
+            "'help'"
+          ],
+          "answer": 0,
+          "explanation": "Give AI the inputs AND the framework. It can then apply structure to your chaos."
+        },
+        {
+          "id": "ap-073",
+          "q": "How can AI help you OVERCOME procrastination?",
+          "options": [
+            "Break a vague intimidating task into a small concrete next step you can do in 5 minutes",
+            "Do the task entirely for you",
+            "Tell you to stop being lazy",
+            "Hide the task from your view"
+          ],
+          "answer": 0,
+          "explanation": "Decomposition is half the productivity battle. AI is patient and structured — exactly what you need when motivation is low."
+        },
+        {
+          "id": "ap-074",
+          "q": "What's a PITFALL of using AI for time management?",
+          "options": [
+            "Spending more time configuring the AI than the AI saves you",
+            "Saving too much time",
+            "Working too efficiently",
+            "Being too productive"
+          ],
+          "answer": 0,
+          "explanation": "Don't over-engineer your workflow. Start simple. Add complexity only when a specific friction repeats."
+        },
+        {
+          "id": "ap-075",
+          "q": "Which AI productivity habit COMPOUNDS the most over time?",
+          "options": [
+            "Capturing prompts that worked well and reusing/improving them across similar tasks",
+            "Trying every new AI tool weekly",
+            "Ignoring AI entirely",
+            "Switching tools constantly"
+          ],
+          "answer": 0,
+          "explanation": "Your personal prompt library is intellectual capital. It gets more valuable every month you keep curating it."
+        }
+      ]
+    },
+    {
+      "topic": "Avoiding AI pitfalls",
+      "questions": [
+        {
+          "id": "ap-076",
+          "q": "What is 'AI slop'?",
+          "options": [
+            "Low-quality, generic, mass-produced AI-generated content lacking originality or human insight",
+            "Spilled AI training data",
+            "A type of AI model",
+            "AI that runs slowly"
+          ],
+          "answer": 0,
+          "explanation": "The internet is flooding with AI slop. The premium for genuinely thoughtful, original human work is rising in response."
+        },
+        {
+          "id": "ap-077",
+          "q": "How can you AVOID producing AI slop?",
+          "options": [
+            "Bring real perspective, specific stories, and ruthless editing — never publish AI's first draft raw",
+            "Use only AI and no human input",
+            "Generate as much content as possible",
+            "Skip editing"
+          ],
+          "answer": 0,
+          "explanation": "AI is fast at first drafts. Your taste, voice, and judgment are what make the final piece worth reading."
+        },
+        {
+          "id": "ap-078",
+          "q": "What's the RISK of letting AI 'think' for you too much?",
+          "options": [
+            "Skill atrophy — your own analytical and creative abilities can weaken from disuse",
+            "You become smarter",
+            "You sleep better",
+            "You earn more money"
+          ],
+          "answer": 0,
+          "explanation": "Use AI to augment thinking, not replace it. Wrestle with hard problems yourself before reaching for AI."
+        },
+        {
+          "id": "ap-079",
+          "q": "Which AI behavior should you watch out for?",
+          "options": [
+            "Confident-sounding hallucinations — convincingly wrong answers presented as facts",
+            "Slow response times",
+            "Capital letters",
+            "Polite tone"
+          ],
+          "answer": 0,
+          "explanation": "AI confidence is NOT a signal of correctness. The most dangerous outputs are the wrong ones that sound right."
+        },
+        {
+          "id": "ap-080",
+          "q": "What's a healthy weekly AI habit?",
+          "options": [
+            "Review your AI use — what tasks worked well, what didn't, what to automate next, what to take back manually",
+            "Use AI more without reflection",
+            "Avoid all reflection",
+            "Add 10 new tools each week"
+          ],
+          "answer": 0,
+          "explanation": "Weekly retros on your AI workflow surface optimization opportunities — and tasks where AI is hurting more than helping."
+        }
+      ]
+    },
+    {
+      "topic": "AI for team collaboration",
+      "questions": [
+        {
+          "id": "ap-081",
+          "q": "How can teams share AI productivity gains?",
+          "options": [
+            "Build shared prompt libraries, document AI-assisted workflows, train team on best practices",
+            "Keep all AI knowledge secret",
+            "Force everyone to use the same prompts",
+            "Ban AI for the whole team"
+          ],
+          "answer": 0,
+          "explanation": "Individual AI productivity stays individual. Team AI productivity requires shared docs, training, and norms."
+        },
+        {
+          "id": "ap-082",
+          "q": "What is an 'AI usage policy' for teams?",
+          "options": [
+            "A written agreement on what data can be shared with AI, how to disclose AI use, and approved tools",
+            "A ban on all AI tools",
+            "A list of AI tools to install",
+            "A marketing document"
+          ],
+          "answer": 0,
+          "explanation": "Clear policies prevent leaks, set quality standards, and protect both the company and its employees."
+        },
+        {
+          "id": "ap-083",
+          "q": "How should teams handle DISCLOSURE of AI assistance?",
+          "options": [
+            "Be transparent — note when AI was used heavily in deliverables, especially client-facing work",
+            "Hide AI use always",
+            "Brag about AI use even when minor",
+            "Disclosure isn't needed"
+          ],
+          "answer": 0,
+          "explanation": "Transparency builds trust. Many clients are fine with AI use; surprise discovery later is what damages relationships."
+        },
+        {
+          "id": "ap-084",
+          "q": "What's a TEAM ANTI-PATTERN with AI?",
+          "options": [
+            "Some team members use AI heavily while pretending not to, creating uneven quality and trust issues",
+            "Everyone learning AI together",
+            "Sharing prompts openly",
+            "Discussing AI tradeoffs in retros"
+          ],
+          "answer": 0,
+          "explanation": "Address AI use openly as a team. Norms work better than rules; conversations work better than mandates."
+        },
+        {
+          "id": "ap-085",
+          "q": "Which AI feature helps REMOTE teams?",
+          "options": [
+            "Async meeting summaries, translation, async voice-to-text — bridging timezone gaps",
+            "Forcing everyone into the same timezone",
+            "Disabling chat tools",
+            "Mandatory video calls only"
+          ],
+          "answer": 0,
+          "explanation": "AI removes friction from async collaboration — exactly what distributed teams need to communicate well."
+        }
+      ]
+    },
+    {
+      "topic": "AI security and data hygiene",
+      "questions": [
+        {
+          "id": "ap-086",
+          "q": "What should you NEVER paste into a public AI chatbot?",
+          "options": [
+            "Passwords, API keys, customer PII, confidential business data, unreleased code with IP value",
+            "Polite words",
+            "Punctuation marks",
+            "Emoji"
+          ],
+          "answer": 0,
+          "explanation": "Assume anything you paste may be logged, trained on, or breached. Minimum-necessary-data principle always."
+        },
+        {
+          "id": "ap-087",
+          "q": "Which is a SAFER AI option for confidential work?",
+          "options": [
+            "Enterprise plans with no-training clauses, or self-hosted open-source models",
+            "Free public chatbots",
+            "Cracked AI software",
+            "Pirated API keys"
+          ],
+          "answer": 0,
+          "explanation": "Enterprise tiers from OpenAI, Anthropic, Google explicitly don't train on your data. Self-hosting (Ollama, vLLM) keeps data local."
+        },
+        {
+          "id": "ap-088",
+          "q": "What is 'prompt injection' and why should productivity users care?",
+          "options": [
+            "Malicious input crafted to make AI ignore instructions — risky when AI processes user emails, web pages, or documents",
+            "A vitamin for AI",
+            "A type of SQL injection",
+            "A backup feature"
+          ],
+          "answer": 0,
+          "explanation": "If AI summarizes a website or email, that content could contain hidden instructions. Be cautious with AI tools that auto-act on external content."
+        },
+        {
+          "id": "ap-089",
+          "q": "What's a SAFE practice for AI browser extensions?",
+          "options": [
+            "Audit permissions, prefer extensions with clear privacy policies, disable when not actively in use",
+            "Install every AI extension you see",
+            "Grant all permissions blindly",
+            "Ignore privacy policies"
+          ],
+          "answer": 0,
+          "explanation": "Browser extensions can read everything you see online. Vet carefully. Less is more with extension count."
+        },
+        {
+          "id": "ap-090",
+          "q": "What's a GOOD habit for managing AI subscriptions?",
+          "options": [
+            "Periodically audit which AI tools you actually use and cancel the rest — they add up fast",
+            "Subscribe to every AI tool",
+            "Never cancel anything",
+            "Forget about subscriptions"
+          ],
+          "answer": 0,
+          "explanation": "AI tool sprawl is a real budget leak. Quarterly subscription audits keep your stack lean and focused."
+        }
+      ]
+    },
+    {
+      "topic": "Long-term AI productivity",
+      "questions": [
+        {
+          "id": "ap-091",
+          "q": "What META-SKILL matters most for long-term AI productivity?",
+          "options": [
+            "Continuous learning — the field changes fast, the tools that win in 2026 won't dominate in 2028",
+            "Mastering one tool forever",
+            "Avoiding all new tools",
+            "Memorizing AI history"
+          ],
+          "answer": 0,
+          "explanation": "AI is moving faster than any field in tech history. Curious learners compound; resisters fall behind."
+        },
+        {
+          "id": "ap-092",
+          "q": "Which AI skill TRANSFERS across tools and models?",
+          "options": [
+            "Clear thinking, structured prompts, evaluation skills, knowing your own workflow well",
+            "Knowing one specific UI by muscle memory",
+            "Memorizing all the model names",
+            "Speed-typing prompts"
+          ],
+          "answer": 0,
+          "explanation": "The fundamentals — communication, evaluation, judgment — outlast any specific tool generation."
+        },
+        {
+          "id": "ap-093",
+          "q": "What's the RIGHT mindset toward AI replacing tasks?",
+          "options": [
+            "Move up the value chain — let AI handle the tasks; you focus on judgment, strategy, and human connection",
+            "Pretend it's not happening",
+            "Compete with AI on its strengths",
+            "Avoid all changing tasks"
+          ],
+          "answer": 0,
+          "explanation": "AI commoditizes execution; it elevates the value of strategy, taste, and accountability. Adapt your work accordingly."
+        },
+        {
+          "id": "ap-094",
+          "q": "How should you evaluate a NEW AI tool to adopt?",
+          "options": [
+            "Test on your real tasks for a week, measure time saved, evaluate quality, then decide",
+            "Adopt instantly based on Twitter hype",
+            "Refuse to try new tools",
+            "Adopt only after 5 years"
+          ],
+          "answer": 0,
+          "explanation": "Hype cycles are loud; your workflow data is the truth. A short structured trial beats both blind adoption and blind rejection."
+        },
+        {
+          "id": "ap-095",
+          "q": "What's an UNDERRATED AI productivity skill?",
+          "options": [
+            "Knowing when NOT to use AI — for tasks where human attention, presence, or originality matters most",
+            "Using AI for literally everything",
+            "Refusing all AI",
+            "Always using the cheapest model"
+          ],
+          "answer": 0,
+          "explanation": "Judgment about when AI helps vs. hurts is the most underrated skill. It's how power users distinguish themselves."
+        }
+      ]
+    },
+    {
+      "topic": "Building your AI workflow",
+      "questions": [
+        {
+          "id": "ap-096",
+          "q": "What's a GOOD first step to build your AI workflow?",
+          "options": [
+            "Identify the 3 most repetitive tasks in your week — those are your highest-leverage AI targets",
+            "Replace your job with AI immediately",
+            "Buy every AI tool on the market",
+            "Wait until AI is perfect"
+          ],
+          "answer": 0,
+          "explanation": "Find friction first. Repetitive + cognitively demanding = where AI saves the most time per dollar."
+        },
+        {
+          "id": "ap-097",
+          "q": "How do you MEASURE if AI is actually helping you?",
+          "options": [
+            "Track time spent on key tasks before and after; note quality changes and energy/stress levels",
+            "Trust the hype",
+            "Don't measure anything",
+            "Compare yourself to social media posts"
+          ],
+          "answer": 0,
+          "explanation": "Personal productivity is hard to feel accurately. A 2-week before/after time-log beats guesswork."
+        },
+        {
+          "id": "ap-098",
+          "q": "What's a SUSTAINABLE AI adoption pace?",
+          "options": [
+            "Add one new tool/workflow at a time, master it, then add the next — avoid context-switching overload",
+            "Try 20 new tools per week",
+            "Adopt nothing ever",
+            "Random unstructured exploration"
+          ],
+          "answer": 0,
+          "explanation": "AI fatigue is real. Deep adoption of a few tools beats shallow flailing across many."
+        },
+        {
+          "id": "ap-099",
+          "q": "How should you SHARE your AI workflow with others?",
+          "options": [
+            "Document with examples and screenshots, teach in small sessions, encourage adaptation not copying",
+            "Hide your workflows",
+            "Demand others use your exact setup",
+            "Give vague high-level advice only"
+          ],
+          "answer": 0,
+          "explanation": "Teaching multiplies value. Documenting forces you to refine your own workflow. Everyone wins."
+        },
+        {
+          "id": "ap-100",
+          "q": "What's the END GOAL of AI productivity?",
+          "options": [
+            "More time and energy for the work and relationships that actually matter to you",
+            "Maximum tools adopted",
+            "Replacing all human connection",
+            "Working 24/7"
+          ],
+          "answer": 0,
+          "explanation": "Productivity is a means, not an end. The point of saving time is to spend that time on what you actually care about."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ────────────────────────────────────────────────────────────
+ * RRRTX FREEVERSE — Terminal OS aesthetic
+ * Dev tool meets premium product.
+ * ──────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+    min-height: 100dvh;
+    font-feature-settings: 'ss01' on, 'cv01' on, 'cv02' on, 'cv11' on;
+  }
+
+  button, a, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* Terminal-green focus ring */
+  *:focus-visible {
+    outline: 2px solid theme('colors.term.glow');
+    outline-offset: 3px;
+    border-radius: 0;
+  }
+
+  /* Terminal-green selection */
+  ::selection {
+    background-color: theme('colors.term.glow');
+    color: theme('colors.bg.0');
+  }
+
+  /* Dark scrollbar (Terminal-style) */
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: theme('colors.bg.0'); }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.bg.3');
+    border: 3px solid theme('colors.bg.0');
+  }
+  ::-webkit-scrollbar-thumb:hover { background: theme('colors.bg.4'); }
+  ::-webkit-scrollbar-corner { background: theme('colors.bg.0'); }
+}
+
+/* ────────────────────────────────────────────────────────────
+ * Component layer — reusable patterns
+ * ──────────────────────────────────────────────────────────── */
+@layer components {
+  /* Dashed divider used between metadata and content */
+  .border-dashed-term {
+    border-style: dashed;
+    border-color: theme('colors.bg.3');
+  }
+
+  /* Hairline border crisp on retina */
+  .border-hairline {
+    border-width: 1px;
+    @media (min-resolution: 2dppx) {
+      border-width: 0.5px;
+    }
+  }
+}
+
+/* ────────────────────────────────────────────────────────────
+ * Respect reduced motion
+ * ──────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

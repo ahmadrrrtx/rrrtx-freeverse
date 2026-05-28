@@ -1,0 +1,1314 @@
+{
+  "id": "digital-marketing",
+  "title": "Digital Marketing Fundamentals",
+  "description": "SEO, social, email, ads. The skills every freelancer and founder needs.",
+  "category": "Career",
+  "icon": "📣",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What digital marketing is",
+      "questions": [
+        {
+          "id": "dm-001",
+          "q": "What is digital marketing?",
+          "options": [
+            "Promoting products or services through digital channels — search, social, email, content, ads, influencer, affiliate",
+            "Marketing only on social media",
+            "Marketing without computers",
+            "Marketing only paid ads"
+          ],
+          "answer": 0,
+          "explanation": "Digital marketing is an umbrella covering every channel where customers spend time online. The mix depends on who you're trying to reach, your budget, and your business model. No single channel is 'the answer' for every business."
+        },
+        {
+          "id": "dm-002",
+          "q": "What's the FUNDAMENTAL difference between digital and traditional marketing?",
+          "options": [
+            "Digital is measurable, targetable, two-way, and iterable — traditional is mostly broadcast and harder to attribute",
+            "Digital is always cheaper",
+            "Digital reaches more people",
+            "Digital is for younger audiences"
+          ],
+          "answer": 0,
+          "explanation": "Measurability is digital's superpower. You can see exactly which ad drove which sale, A/B test creative, and adjust budgets daily. Traditional (TV, billboards, print) reaches scale but you can't easily attribute results to individual exposures."
+        },
+        {
+          "id": "dm-003",
+          "q": "What's the SINGLE most important question before any marketing activity?",
+          "options": [
+            "'Who is the customer, what do they want, and where do they already spend attention?'",
+            "'What's the cheapest channel?'",
+            "'What's the newest tool?'",
+            "'What did competitors do last year?'"
+          ],
+          "answer": 0,
+          "explanation": "Marketing without a clear audience definition is shouting into a void. Specificity in audience → specificity in message → specificity in channel → results. Generic targeting + generic message = wasted money, always."
+        },
+        {
+          "id": "dm-004",
+          "q": "What is a 'BUYER PERSONA'?",
+          "options": [
+            "A semi-fictional profile of your ideal customer — demographics, goals, pain points, behaviors, decision triggers",
+            "A real customer's personal data",
+            "A celebrity endorsement",
+            "A marketing intern"
+          ],
+          "answer": 0,
+          "explanation": "Personas keep teams aligned on who they're serving. Done well, they guide product, content, and channel decisions for years. Done poorly (vague stereotypes), they're useless. Base them on real interviews and data, not assumptions."
+        },
+        {
+          "id": "dm-005",
+          "q": "What does ROI stand for in marketing?",
+          "options": [
+            "Return On Investment — how much revenue/value each marketing dollar produced",
+            "Rate Of Interest",
+            "Range Of Influence",
+            "Reach Online Index"
+          ],
+          "answer": 0,
+          "explanation": "ROI = (gain - cost) / cost. Marketing ROI is harder to measure than it looks because of attribution issues (which channel actually drove the sale?), time delays, and brand effects that don't show up in any single campaign. Use it as a guide, not gospel."
+        }
+      ]
+    },
+    {
+      "topic": "Marketing funnel",
+      "questions": [
+        {
+          "id": "dm-006",
+          "q": "What is the 'MARKETING FUNNEL'?",
+          "options": [
+            "A model of the customer journey: Awareness → Interest → Consideration → Purchase → Retention/Advocacy",
+            "A funnel-shaped chart",
+            "A spam filter",
+            "A type of ad format"
+          ],
+          "answer": 0,
+          "explanation": "Funnels narrow at each step because not everyone progresses. The shape reveals where you're losing people. Modern variations (loops, flywheels) emphasize retention and referrals more — but the funnel mental model is still useful."
+        },
+        {
+          "id": "dm-007",
+          "q": "What are TOP-OF-FUNNEL (TOFU) marketing activities?",
+          "options": [
+            "Building awareness with people who don't know your brand yet — SEO content, social, PR, brand ads",
+            "Closing deals",
+            "Onboarding new customers",
+            "Customer support"
+          ],
+          "answer": 0,
+          "explanation": "TOFU is broad and brand-building. Don't measure it with bottom-funnel metrics like immediate sales — measure with reach, brand recall, branded search lift over time. Mistaking TOFU for performance marketing kills brand growth."
+        },
+        {
+          "id": "dm-008",
+          "q": "What are BOTTOM-OF-FUNNEL (BOFU) marketing activities?",
+          "options": [
+            "Convincing ready-to-buy prospects to choose you — comparison pages, demos, free trials, retargeting, reviews",
+            "Cold outreach",
+            "Brand campaigns",
+            "Public relations"
+          ],
+          "answer": 0,
+          "explanation": "BOFU is high-intent. People here are researching specific solutions. Content like 'X vs Y' comparisons, case studies, ROI calculators, and detailed product pages dominate the bottom of funnel and tend to convert at much higher rates."
+        },
+        {
+          "id": "dm-009",
+          "q": "What's a COMMON funnel mistake?",
+          "options": [
+            "Investing only at the bottom (chasing immediate conversions) and starving the top — eventually the pipeline dries up",
+            "Investing only at the top",
+            "Measuring at every stage",
+            "Using multiple channels"
+          ],
+          "answer": 0,
+          "explanation": "Bottom-funnel ads work — until you've exhausted the in-market audience. Without TOFU feeding the funnel, costs rise and growth stalls. Balance is key; the right ratio depends on your stage and product."
+        },
+        {
+          "id": "dm-010",
+          "q": "What is 'CUSTOMER LIFETIME VALUE' (CLV or LTV)?",
+          "options": [
+            "The total revenue (or profit) a customer generates over their entire relationship with you — the cap on what you can spend to acquire them",
+            "First purchase only",
+            "Annual revenue",
+            "Cost of customer service"
+          ],
+          "answer": 0,
+          "explanation": "LTV determines how much you can profitably spend acquiring a customer (CAC). If LTV is $300 and CAC is $400, you're losing money on every sale. LTV:CAC ratios of 3:1+ are healthy in SaaS; ratios vary by industry."
+        }
+      ]
+    },
+    {
+      "topic": "Search Engine Optimization (SEO)",
+      "questions": [
+        {
+          "id": "dm-011",
+          "q": "What is SEO?",
+          "options": [
+            "Optimizing your website and content so search engines (Google, Bing) rank it higher for relevant queries",
+            "Paying search engines for placement",
+            "A specific tool name",
+            "Hiding from search engines"
+          ],
+          "answer": 0,
+          "explanation": "SEO is unpaid (organic) traffic. It compounds: a great page can drive traffic for years. But it takes 3-12+ months to see results — patient channel, not a quick win. Best for businesses with long-term thinking."
+        },
+        {
+          "id": "dm-012",
+          "q": "What's the DIFFERENCE between SEO and SEM/PPC?",
+          "options": [
+            "SEO is organic (unpaid) listings; SEM/PPC (pay-per-click) is paid ad placements like Google Ads",
+            "They're identical",
+            "SEO is for mobile, SEM for desktop",
+            "SEM is illegal"
+          ],
+          "answer": 0,
+          "explanation": "Both target search engines but operate completely differently. SEO is a long-term content + technical investment. PPC is instant traffic for money. Most mature businesses do both because they serve different objectives."
+        },
+        {
+          "id": "dm-013",
+          "q": "What are KEYWORDS in SEO?",
+          "options": [
+            "The actual terms people type into search engines that you want to rank for",
+            "Hidden code keywords",
+            "Code variable names",
+            "Passwords for search engines"
+          ],
+          "answer": 0,
+          "explanation": "Keyword research is the foundation of SEO strategy. Tools (Ahrefs, SEMrush, Google Keyword Planner) reveal what people search for, how often, and how competitive each term is. Match keywords to user intent for best results."
+        },
+        {
+          "id": "dm-014",
+          "q": "What is SEARCH INTENT and why does it matter?",
+          "options": [
+            "The reason behind a search — informational, navigational, commercial, transactional — matching intent is more important than matching keywords",
+            "How fast someone types",
+            "What time of day they search",
+            "How long they search"
+          ],
+          "answer": 0,
+          "explanation": "Someone searching 'best running shoes' wants to compare; someone searching 'buy Nike Pegasus 41' wants to purchase. Your page must match the intent or it won't rank/convert. Google's algorithm is increasingly intent-focused, not keyword-focused."
+        },
+        {
+          "id": "dm-015",
+          "q": "What's 'ON-PAGE' vs 'OFF-PAGE' SEO?",
+          "options": [
+            "On-page: things on your site (content, title, structure, speed). Off-page: signals from elsewhere (backlinks, mentions, brand searches)",
+            "They are identical",
+            "On-page is for blogs, off-page for ecommerce",
+            "Off-page is illegal"
+          ],
+          "answer": 0,
+          "explanation": "Both matter. On-page is what you fully control. Off-page (especially backlinks) is harder to build but historically the strongest ranking factor. Modern SEO also weighs E-E-A-T: Experience, Expertise, Authoritativeness, Trust."
+        }
+      ]
+    },
+    {
+      "topic": "Content marketing",
+      "questions": [
+        {
+          "id": "dm-016",
+          "q": "What is CONTENT MARKETING?",
+          "options": [
+            "Attracting and retaining customers by consistently creating valuable, relevant content rather than directly pitching products",
+            "Posting ads in different formats",
+            "Email spam",
+            "Stock content for social media"
+          ],
+          "answer": 0,
+          "explanation": "Built on the insight that buyers research before they buy. If your content educates them through that journey, you earn trust and become the natural choice. Content marketing compounds over time — articles published years ago still drive traffic and leads today."
+        },
+        {
+          "id": "dm-017",
+          "q": "What makes content GREAT for marketing?",
+          "options": [
+            "Genuinely useful to a specific audience, actionable, well-written, and aligned with a business question they actually have",
+            "As long and as detailed as possible",
+            "Filled with keywords",
+            "Written by an AI quickly"
+          ],
+          "answer": 0,
+          "explanation": "Generic 'top 10' listicles don't differentiate anyone anymore — AI floods the internet with them. Winning content has a clear point of view, real expertise, original data, or a specific angle that surfaces something readers can't get elsewhere."
+        },
+        {
+          "id": "dm-018",
+          "q": "What's the DIFFERENCE between content marketing and brand journalism?",
+          "options": [
+            "Content marketing tries to attract leads to YOUR product; brand journalism builds audience trust without direct product pitches",
+            "They are identical",
+            "Brand journalism is for newspapers only",
+            "Content marketing only uses video"
+          ],
+          "answer": 0,
+          "explanation": "Best B2B brands (Stripe, Notion, HubSpot) do both. Pure brand journalism (HubSpot's Hustle, Shopify's blog) builds enormous audiences who later choose the parent company because of trust accumulated over years."
+        },
+        {
+          "id": "dm-019",
+          "q": "Why is CONSISTENCY more important than perfection in content?",
+          "options": [
+            "Algorithms reward regular publishing, audiences develop expectations, and compounding only works with continuity",
+            "It actually isn't important",
+            "Algorithms ignore consistency",
+            "Consistency hurts quality"
+          ],
+          "answer": 0,
+          "explanation": "One amazing article every six months loses to one good article every week. Build a sustainable cadence (whatever you can maintain) and stick to it. Most content marketing failures are abandonment, not quality issues."
+        },
+        {
+          "id": "dm-020",
+          "q": "What's a SMART way to repurpose content?",
+          "options": [
+            "Turn one long-form piece into multiple formats: blog → newsletter → tweet thread → LinkedIn post → video → podcast",
+            "Post the exact same text on every platform",
+            "Never reuse content",
+            "Always start from scratch"
+          ],
+          "answer": 0,
+          "explanation": "Different platforms reward different formats, but the underlying insight can be the same. Repurposing multiplies the reach of one piece of thinking. Successful creators have systematic repurposing workflows."
+        }
+      ]
+    },
+    {
+      "topic": "Social media marketing",
+      "questions": [
+        {
+          "id": "dm-021",
+          "q": "How should you CHOOSE which social platforms to use?",
+          "options": [
+            "Go where your audience already spends time; don't try to be everywhere — depth beats spread",
+            "Be present on every platform",
+            "Always pick the newest platform",
+            "Pick whatever your competitors use"
+          ],
+          "answer": 0,
+          "explanation": "Pakistani SaaS founder → LinkedIn + Twitter probably. Local restaurant → Instagram + Facebook + TikTok. B2B accountant → LinkedIn primarily. Trying to maintain 6 channels poorly is worse than 1-2 channels well."
+        },
+        {
+          "id": "dm-022",
+          "q": "What works on LINKEDIN?",
+          "options": [
+            "Professional insights, personal stories with business lessons, industry analysis — long-form posts perform well",
+            "Memes",
+            "Vacation photos",
+            "Quick one-liners"
+          ],
+          "answer": 0,
+          "explanation": "LinkedIn audiences want professional value but appreciate humanity. The platform rewards posts that keep readers ON LinkedIn (no external links in main text, dwell time, comments). Document, don't just promote."
+        },
+        {
+          "id": "dm-023",
+          "q": "What works on TWITTER/X?",
+          "options": [
+            "Quick takes, conversations, threads on focused topics, fast iteration — and replying to others matters as much as posting",
+            "Long essays",
+            "Stock images",
+            "Daily product ads"
+          ],
+          "answer": 0,
+          "explanation": "Twitter rewards being part of conversations, not broadcasting at them. Replies, quote-tweets, and consistent voice build audiences faster than scheduled corporate posts. Smaller accounts can grow fast through engagement."
+        },
+        {
+          "id": "dm-024",
+          "q": "What's the SECRET to TikTok / short-form video?",
+          "options": [
+            "Strong hook in first 2 seconds, fast pacing, vertical format, native style (not repurposed ads), watch-completion drives reach",
+            "High production budget",
+            "Long intros",
+            "Horizontal videos"
+          ],
+          "answer": 0,
+          "explanation": "Algorithm rewards completion rate and re-watches. Hooks matter immensely. Polished broadcast-style videos often underperform native, casual, authentic content. The format is unique — repurposing landscape YouTube content rarely works."
+        },
+        {
+          "id": "dm-025",
+          "q": "What's the MOST UNDERVALUED metric on social media?",
+          "options": [
+            "Saves, shares, and direct messages — these signal value to the algorithm AND to potential customers",
+            "Vanity metrics like total followers",
+            "Likes",
+            "Comments only"
+          ],
+          "answer": 0,
+          "explanation": "Saves and shares mean the content was useful enough to want again or send to someone. Algorithms increasingly weight these over likes. DMs often indicate buying interest in B2B/creator businesses."
+        }
+      ]
+    },
+    {
+      "topic": "Email marketing",
+      "questions": [
+        {
+          "id": "dm-026",
+          "q": "Why is EMAIL still a top marketing channel in 2026?",
+          "options": [
+            "You OWN your email list — no algorithm changes can take it away. ROI is consistently among the highest of all channels",
+            "It's free",
+            "Everyone reads every email",
+            "It's the oldest channel"
+          ],
+          "answer": 0,
+          "explanation": "Social platforms can throttle reach, ban accounts, or change algorithms. Your email list is your most durable marketing asset. Mature businesses treat it accordingly — email rarely declines in relative ROI even as new channels emerge."
+        },
+        {
+          "id": "dm-027",
+          "q": "What's the DIFFERENCE between email MARKETING and email SPAM?",
+          "options": [
+            "Marketing emails are sent to people who explicitly opted in and contain content they expect and value",
+            "There is no difference",
+            "Marketing is from companies, spam is from individuals",
+            "Marketing emails are shorter"
+          ],
+          "answer": 0,
+          "explanation": "Permission is everything. Buying lists or scraping addresses is spam, hurts deliverability, and is illegal in many places (CAN-SPAM, GDPR). Build lists from people who actually want your email."
+        },
+        {
+          "id": "dm-028",
+          "q": "What's the MOST IMPORTANT email metric?",
+          "options": [
+            "Conversion to the action you actually wanted (purchase, signup, reply) — opens and clicks are leading indicators only",
+            "Open rate",
+            "Click rate",
+            "Total sends"
+          ],
+          "answer": 0,
+          "explanation": "Opens (now unreliable due to Apple Mail Privacy Protection) and clicks are leading indicators. What matters is the business outcome. Optimize for that, not vanity engagement metrics."
+        },
+        {
+          "id": "dm-029",
+          "q": "What's an EMAIL AUTOMATION (drip campaign)?",
+          "options": [
+            "A pre-built sequence triggered by user actions — welcome series, abandoned cart, re-engagement, onboarding",
+            "Sending email manually each day",
+            "A type of newsletter",
+            "Random emails"
+          ],
+          "answer": 0,
+          "explanation": "Automations work 24/7 in the background. A great welcome sequence might generate 30%+ of total email revenue from new subscribers. Spend serious time on the first 5 emails any new subscriber receives."
+        },
+        {
+          "id": "dm-030",
+          "q": "What's the SECRET to high-performing subject lines?",
+          "options": [
+            "Specific, curiosity-inducing, relevant — and tested on each list (one list's winner is another's flop)",
+            "All caps and exclamation marks",
+            "Always identical",
+            "Always short"
+          ],
+          "answer": 0,
+          "explanation": "There's no universal formula. Curiosity gaps, specificity, personalization, and brevity often work — but only A/B testing on YOUR audience tells you what works for them. Avoid spam triggers ('FREE!!!', excessive emojis, all caps)."
+        }
+      ]
+    },
+    {
+      "topic": "Paid advertising",
+      "questions": [
+        {
+          "id": "dm-031",
+          "q": "What is PPC?",
+          "options": [
+            "Pay-Per-Click — you pay only when someone clicks your ad (Google Ads is the most common example)",
+            "Pay-Per-Customer",
+            "Pay-Per-Conversion",
+            "Pay-Per-Cent"
+          ],
+          "answer": 0,
+          "explanation": "PPC enables precise control: target keywords/audiences, set bids, measure cost per click and cost per conversion. Different from CPM (pay per 1000 impressions, typical for awareness/branding campaigns)."
+        },
+        {
+          "id": "dm-032",
+          "q": "What is CAC?",
+          "options": [
+            "Customer Acquisition Cost — total marketing spend divided by new customers acquired",
+            "Customer Annual Cost",
+            "Conversion And Click",
+            "Cost After Conversion"
+          ],
+          "answer": 0,
+          "explanation": "CAC is one of the two most important business numbers (alongside LTV). If CAC exceeds the contribution margin of a customer's lifetime, you can't grow profitably. Reducing CAC and increasing LTV are the two paths to growth efficiency."
+        },
+        {
+          "id": "dm-033",
+          "q": "What's the DIFFERENCE between Google Search Ads and Display Ads?",
+          "options": [
+            "Search ads appear when people actively search for terms (high intent); Display ads appear on partner websites (lower intent, broader reach)",
+            "Display is more expensive",
+            "Search ads only on Google.com",
+            "They're identical"
+          ],
+          "answer": 0,
+          "explanation": "Search Ads = pull marketing (capturing demand). Display = push (creating awareness). Different goals, different creative, different metrics. Don't measure them the same way."
+        },
+        {
+          "id": "dm-034",
+          "q": "Why are RETARGETING ads so effective?",
+          "options": [
+            "They target people who already visited your site — much higher intent than cold audiences",
+            "They're cheaper",
+            "They use better creative",
+            "They reach more people"
+          ],
+          "answer": 0,
+          "explanation": "Average conversion rates are higher because retargeted users already showed interest. But: respect frequency caps — chasing visitors with ads for weeks irritates more than it converts. Cap exposures, refresh creative."
+        },
+        {
+          "id": "dm-035",
+          "q": "What's the BIGGEST mistake new advertisers make?",
+          "options": [
+            "Sending paid traffic to a generic homepage instead of a focused landing page matching the ad's promise",
+            "Spending too little",
+            "Targeting too narrowly",
+            "Using too few keywords"
+          ],
+          "answer": 0,
+          "explanation": "Ad → landing page mismatch wastes most of your budget. A targeted ad deserves a targeted landing page. Even 'just a homepage' campaigns can often double conversions with focused landing pages."
+        }
+      ]
+    },
+    {
+      "topic": "Conversion optimization",
+      "questions": [
+        {
+          "id": "dm-036",
+          "q": "What is CRO?",
+          "options": [
+            "Conversion Rate Optimization — improving the percentage of visitors who take a desired action",
+            "Customer Relations Office",
+            "Cost Reduction Operations",
+            "Click Rate Optimization"
+          ],
+          "answer": 0,
+          "explanation": "CRO often delivers higher ROI than driving more traffic. Doubling conversion rate is equivalent to doubling traffic — for far less cost. It's the unglamorous but highest-leverage work in marketing."
+        },
+        {
+          "id": "dm-037",
+          "q": "What's an A/B TEST in marketing?",
+          "options": [
+            "Showing two variants (A and B) to different visitor segments to measure which performs better",
+            "Two different ad campaigns",
+            "Two different products",
+            "Two different prices"
+          ],
+          "answer": 0,
+          "explanation": "Discipline matters: test ONE variable at a time, ensure enough sample size, run long enough to capture relevant variation (don't end Friday at 2pm). Tools: Google Optimize (sunset), VWO, Optimizely, server-side testing."
+        },
+        {
+          "id": "dm-038",
+          "q": "What's a 'CALL TO ACTION' (CTA)?",
+          "options": [
+            "A clear, specific instruction telling visitors exactly what to do next ('Start Free Trial', not 'Click Here')",
+            "An emergency phone number",
+            "A meeting invitation",
+            "A type of ad"
+          ],
+          "answer": 0,
+          "explanation": "Vague CTAs lose conversions. Specificity wins: 'Start your 14-day free trial' beats 'Sign up'. 'Get the free SEO checklist' beats 'Subscribe'. Make the value crystal clear in the button itself."
+        },
+        {
+          "id": "dm-039",
+          "q": "What does 'FRICTION' mean in conversion design?",
+          "options": [
+            "Anything that makes the desired action harder — too many form fields, slow load, confusing copy, surprise costs",
+            "Heat from servers",
+            "Customer service issues",
+            "Marketing spend"
+          ],
+          "answer": 0,
+          "explanation": "Audit your conversion funnel ruthlessly. Each extra form field reduces conversions. Hidden shipping costs at checkout cause cart abandonment. Slow pages lose mobile users. Removing friction is often higher ROI than adding features."
+        },
+        {
+          "id": "dm-040",
+          "q": "What's 'SOCIAL PROOF'?",
+          "options": [
+            "Evidence that others use and value your product — testimonials, reviews, customer logos, usage numbers, case studies",
+            "Likes on social media",
+            "Friend recommendations only",
+            "Celebrity endorsements only"
+          ],
+          "answer": 0,
+          "explanation": "Robert Cialdini's 'Influence' identified social proof as one of six core persuasion principles. People look to others' behavior to guide their own — especially under uncertainty. Display real, specific, credible proof prominently."
+        }
+      ]
+    },
+    {
+      "topic": "Analytics and measurement",
+      "questions": [
+        {
+          "id": "dm-041",
+          "q": "What is Google Analytics 4 (GA4)?",
+          "options": [
+            "Google's free web analytics platform — tracks visitors, behavior, conversions on your website and app",
+            "A search engine",
+            "An ad platform",
+            "An email tool"
+          ],
+          "answer": 0,
+          "explanation": "GA4 replaced Universal Analytics in 2023. Event-based model (vs page-view based) suits modern apps. Free for most users, with paid 360 tier for enterprise. Still the default web analytics for most websites."
+        },
+        {
+          "id": "dm-042",
+          "q": "What's a CONVERSION (in marketing analytics)?",
+          "options": [
+            "A measurable desired action — signup, purchase, download, demo booking — defined by you for each campaign",
+            "Any website visit",
+            "Just a sale",
+            "An email open"
+          ],
+          "answer": 0,
+          "explanation": "Define conversions to match business value. For an ecommerce site: purchase. For SaaS: signup or qualified trial. For media: newsletter signup. Set them up explicitly in your analytics; don't rely on raw traffic data."
+        },
+        {
+          "id": "dm-043",
+          "q": "What's an ATTRIBUTION MODEL?",
+          "options": [
+            "A method for assigning credit for conversions across multiple touchpoints in the customer journey",
+            "A type of report",
+            "A backup system",
+            "A marketing budget"
+          ],
+          "answer": 0,
+          "explanation": "Customers rarely convert on first touch. They might see a YouTube ad, then read a blog post, then click an email, then buy. Different attribution models (last-click, first-click, linear, time-decay) assign credit differently — and each tells a different story."
+        },
+        {
+          "id": "dm-044",
+          "q": "Why is 'LAST-CLICK ATTRIBUTION' often misleading?",
+          "options": [
+            "It gives all credit to the final touchpoint, undervaluing upper-funnel channels that started the customer journey",
+            "It's always wrong",
+            "Last-click is illegal",
+            "It's only for ecommerce"
+          ],
+          "answer": 0,
+          "explanation": "If you cut all 'low-converting' brand campaigns because last-click shows them not converting, you may starve the awareness that feeds eventual conversions. Mature marketers look at multi-touch attribution and incrementality testing."
+        },
+        {
+          "id": "dm-045",
+          "q": "What is INCREMENTALITY testing?",
+          "options": [
+            "Measuring whether marketing actually CAUSES additional sales, vs just taking credit for sales that would have happened anyway",
+            "Adding more campaigns gradually",
+            "Increasing budgets monthly",
+            "Adding more keywords"
+          ],
+          "answer": 0,
+          "explanation": "If you target existing customers with 'Buy now' ads, attribution credits the ad — but they might have bought anyway. Geo-holdout tests or PSA-controlled experiments isolate the true incremental impact of marketing spend."
+        }
+      ]
+    },
+    {
+      "topic": "Branding",
+      "questions": [
+        {
+          "id": "dm-046",
+          "q": "What is a BRAND?",
+          "options": [
+            "The collective perception, associations, and emotional response people have when they encounter your business",
+            "Just a logo and colors",
+            "A company name",
+            "A trademark"
+          ],
+          "answer": 0,
+          "explanation": "Brand is what people feel and say about you when you're not in the room. Logo, colors, voice, and customer experience all CONTRIBUTE to brand — but brand IS the impression they create in minds, not the assets themselves."
+        },
+        {
+          "id": "dm-047",
+          "q": "What's the VALUE of strong branding?",
+          "options": [
+            "Higher pricing power, faster trust, lower CAC over time, premium talent attraction, defensibility",
+            "Just looking nicer",
+            "Higher legal protection",
+            "More likes on social"
+          ],
+          "answer": 0,
+          "explanation": "Brand is one of the few moats that compounds. Apple's brand allows premium pricing. Patagonia's brand enables values-driven loyalty. Brand often takes years to build but pays back for decades."
+        },
+        {
+          "id": "dm-048",
+          "q": "What's BRAND POSITIONING?",
+          "options": [
+            "The specific space your brand occupies in customers' minds relative to competitors — what you stand for and against",
+            "Where ads are placed",
+            "The price tier",
+            "Geographic targeting"
+          ],
+          "answer": 0,
+          "explanation": "Volvo = safety. BMW = driving. Tesla = the future. Strong positions are simple, specific, and earned through consistent action over years. A muddled position means customers can't quickly explain why you're different."
+        },
+        {
+          "id": "dm-049",
+          "q": "What's BRAND VOICE?",
+          "options": [
+            "The consistent personality, tone, and style of how a brand communicates across all touchpoints",
+            "Audio recordings",
+            "The CEO speaking publicly",
+            "Customer service scripts"
+          ],
+          "answer": 0,
+          "explanation": "Slack's voice is playful but capable. Apple's is confident and minimal. Mailchimp's is warm and a bit irreverent. A documented voice guide ensures consistency across writers, designers, and channels — especially as teams grow."
+        },
+        {
+          "id": "dm-050",
+          "q": "Why does brand matter MORE in the AI era?",
+          "options": [
+            "When AI can mass-produce content, the differentiator is genuine human perspective, taste, and trust — exactly what brand provides",
+            "Brand matters less now",
+            "AI replaces brand",
+            "AI hates brands"
+          ],
+          "answer": 0,
+          "explanation": "AI floods every market with generic content. The premium for distinctive, trustworthy voices is rising, not falling. Building a real brand is one of the most AI-resistant moats you can create."
+        }
+      ]
+    },
+    {
+      "topic": "Copywriting basics",
+      "questions": [
+        {
+          "id": "dm-051",
+          "q": "What's the JOB of marketing copywriting?",
+          "options": [
+            "Make the reader take an action (read more, click, sign up, buy) — clarity beats cleverness",
+            "Show off vocabulary",
+            "Use as many words as possible",
+            "Win poetry awards"
+          ],
+          "answer": 0,
+          "explanation": "Marketing copy is functional writing with a specific job. Clarity, specificity, and benefits-language usually beat clever wordplay. If readers don't immediately understand what you offer and why they should care, the copy failed."
+        },
+        {
+          "id": "dm-052",
+          "q": "What's the difference between FEATURES and BENEFITS?",
+          "options": [
+            "Features describe what a product does; benefits describe what the customer GAINS from those features",
+            "They're the same",
+            "Features are visual, benefits are written",
+            "Benefits are for B2B only"
+          ],
+          "answer": 0,
+          "explanation": "Feature: '500GB SSD'. Benefit: 'Hundreds of movies and games, instantly accessible'. Customers care about outcomes, not specs. Translate features to benefits relentlessly. People buy outcomes, not features."
+        },
+        {
+          "id": "dm-053",
+          "q": "What's the AIDA framework?",
+          "options": [
+            "Attention → Interest → Desire → Action — a classic copywriting structure",
+            "An AI assistant",
+            "An advertising agency",
+            "A pricing strategy"
+          ],
+          "answer": 0,
+          "explanation": "AIDA is one of marketing's oldest frameworks (1898) but still useful. Many strong sales pages, emails, and ads naturally follow this arc. Other frameworks (PAS — Problem/Agitate/Solution; BAB — Before/After/Bridge) work similarly."
+        },
+        {
+          "id": "dm-054",
+          "q": "Why is SPECIFICITY persuasive?",
+          "options": [
+            "Specific claims feel credible; vague claims feel like marketing fluff anyone could write",
+            "Generic copy is more flexible",
+            "Specific copy uses more words",
+            "Vague copy hides flaws"
+          ],
+          "answer": 0,
+          "explanation": "'Save time on email' (generic) vs 'Save 3 hours/week on email triage' (specific). The second feels real because it's measurable. Numbers, customer names, and specific outcomes build instant credibility."
+        },
+        {
+          "id": "dm-055",
+          "q": "What's the BIGGEST copywriting mistake?",
+          "options": [
+            "Writing about YOURSELF and your features instead of the READER's problems and outcomes",
+            "Using short sentences",
+            "Including a CTA",
+            "Adding social proof"
+          ],
+          "answer": 0,
+          "explanation": "Read your own marketing pages with this lens: how often do you say 'we', 'our', 'us' vs 'you'? Customer-centric copy uses 'you' 2-3x more than 'we'. It's a small linguistic shift that fundamentally changes perception."
+        }
+      ]
+    },
+    {
+      "topic": "Influencer and creator marketing",
+      "questions": [
+        {
+          "id": "dm-056",
+          "q": "What is INFLUENCER MARKETING?",
+          "options": [
+            "Partnering with creators who have engaged audiences to promote products in their authentic voice",
+            "Hiring celebrities for TV ads",
+            "Buying followers",
+            "Bots posting reviews"
+          ],
+          "answer": 0,
+          "explanation": "Influencer marketing exploded because audiences trust people they follow more than brands. Authentic recommendations from trusted creators convert dramatically better than traditional ads — but only when the match is genuine."
+        },
+        {
+          "id": "dm-057",
+          "q": "What's the difference between MEGA, MACRO, MID, MICRO and NANO influencers?",
+          "options": [
+            "Roughly by audience size: mega (1M+), macro (100K-1M), mid (50K-100K), micro (10K-50K), nano (<10K)",
+            "By age",
+            "By country",
+            "By topic"
+          ],
+          "answer": 0,
+          "explanation": "Counterintuitively, smaller influencers often have HIGHER engagement rates and stronger audience relationships. Nano/micro can be more cost-effective and authentic than mega for many brands. Match scale to budget AND goal."
+        },
+        {
+          "id": "dm-058",
+          "q": "What makes an INFLUENCER PARTNERSHIP successful?",
+          "options": [
+            "Genuine alignment between creator + product + audience — forced fit fails publicly",
+            "Highest follower count",
+            "Lowest fee",
+            "Most posts"
+          ],
+          "answer": 0,
+          "explanation": "Audiences detect inauthentic promotions instantly. Pick creators who would genuinely use your product. Give them creative freedom — they know their audience better than you do. Treat them as partners, not billboards."
+        },
+        {
+          "id": "dm-059",
+          "q": "What's the LEGAL requirement for sponsored content (in most countries)?",
+          "options": [
+            "Clear disclosure that the content is paid — #ad, 'Paid partnership', or platform-native disclosure tools",
+            "No disclosure needed",
+            "Only on YouTube",
+            "Only for celebrities"
+          ],
+          "answer": 0,
+          "explanation": "FTC (US), ASA (UK), and equivalents globally require clear disclosure. Undisclosed promotions can result in fines and reputation damage. Disclosure also signals integrity — audiences respect creators who are transparent."
+        },
+        {
+          "id": "dm-060",
+          "q": "What is the CREATOR ECONOMY?",
+          "options": [
+            "The growing ecosystem of individual creators (YouTubers, podcasters, newsletter writers, course creators) making a living through their audience",
+            "Big tech companies",
+            "Hollywood",
+            "Stock trading"
+          ],
+          "answer": 0,
+          "explanation": "Estimated 200M+ creators globally. Modern marketing increasingly means partnering with this distributed creative class. Tools like Substack, Patreon, Beehiiv, YouTube monetization make audience-direct businesses viable."
+        }
+      ]
+    },
+    {
+      "topic": "Affiliate and partnerships",
+      "questions": [
+        {
+          "id": "dm-061",
+          "q": "What is AFFILIATE MARKETING?",
+          "options": [
+            "A model where partners earn commission on sales they refer — performance-based, low risk for the brand",
+            "A type of MLM scheme",
+            "A retail strategy",
+            "A type of franchise"
+          ],
+          "answer": 0,
+          "explanation": "Major affiliates: Amazon Associates, ShareASale, Impact, PartnerStack. Works especially well for high-margin products with long sales cycles. The brand pays only when actual sales happen — making it CAC-efficient."
+        },
+        {
+          "id": "dm-062",
+          "q": "What's a SMART affiliate commission structure?",
+          "options": [
+            "High enough to motivate effort but sustainable on your margins — often 10-30% for digital products, 3-10% for physical",
+            "Always 50% or higher",
+            "Always 1%",
+            "Same for all affiliates"
+          ],
+          "answer": 0,
+          "explanation": "Test commission tiers. Higher % can attract better affiliates AND let them invest in promoting you. For high-margin SaaS, recurring commissions (% of MRR for the customer's lifetime) align incentives extremely well."
+        },
+        {
+          "id": "dm-063",
+          "q": "What's a 'STRATEGIC PARTNERSHIP' in marketing?",
+          "options": [
+            "Two non-competing businesses sharing audiences for mutual benefit — bundles, co-marketing, integrations",
+            "Joint legal entity",
+            "Hiring competitors",
+            "Buying another company"
+          ],
+          "answer": 0,
+          "explanation": "If your customer also needs X, partnering with X's provider can multiply both audiences instantly. Common patterns: integration partners (Stripe x Shopify), co-marketing webinars, co-branded content, bundled offers."
+        },
+        {
+          "id": "dm-064",
+          "q": "What's the BIG advantage of partnership-driven growth?",
+          "options": [
+            "Borrowed trust — your partner's audience already trusts them, accelerating the trust-building you'd otherwise have to do alone",
+            "It's free",
+            "It's easier",
+            "It's instant"
+          ],
+          "answer": 0,
+          "explanation": "A recommendation from a trusted source compresses months of brand-building into a single moment. Partnerships are particularly powerful in trust-heavy purchases (B2B, professional services, health)."
+        },
+        {
+          "id": "dm-065",
+          "q": "What's a PITFALL of affiliate-heavy strategies?",
+          "options": [
+            "Over-reliance on partners makes you vulnerable to their decisions; build direct channels alongside",
+            "Affiliates are too expensive",
+            "Affiliates always cheat",
+            "Affiliates take too much time"
+          ],
+          "answer": 0,
+          "explanation": "If one mega-affiliate drives 60% of your revenue, they can renegotiate, leave, or change focus and crater your business. Use affiliates as multipliers on direct channels, not as your only channel."
+        }
+      ]
+    },
+    {
+      "topic": "Marketing in Pakistan and emerging markets",
+      "questions": [
+        {
+          "id": "dm-066",
+          "q": "Which channel matters EXTRA in Pakistan and many emerging markets?",
+          "options": [
+            "WhatsApp — used for business communication, customer service, and even payments",
+            "Snapchat",
+            "Pinterest",
+            "Reddit"
+          ],
+          "answer": 0,
+          "explanation": "WhatsApp Business is essential infrastructure for SMBs in Pakistan, India, Brazil, Africa. Customer support, order management, and informal commerce all flow through it. Western-centric marketing playbooks miss this."
+        },
+        {
+          "id": "dm-067",
+          "q": "Why does VIDEO CONTENT often work especially well in Pakistan/India?",
+          "options": [
+            "Mobile-first audiences, strong visual storytelling traditions, multilingual reach via voice/captions",
+            "Slower internet helps",
+            "Video is cheaper to make",
+            "Text doesn't work"
+          ],
+          "answer": 0,
+          "explanation": "TikTok, Instagram Reels, YouTube Shorts dominate attention. Local creators in Urdu, Hindi, Punjabi, Bengali can reach hundreds of millions. Western brands often miss this by defaulting to English-only English-centric content."
+        },
+        {
+          "id": "dm-068",
+          "q": "What's a SMART approach to LOCAL MARKETING in Pakistan?",
+          "options": [
+            "Local language content, locally relevant examples, awareness of cultural calendar (Ramadan, Eid, cricket events)",
+            "Just translate English content",
+            "Use only Karachi/Lahore references",
+            "Ignore local context"
+          ],
+          "answer": 0,
+          "explanation": "Generic global content underperforms local-context content massively. Adjust messaging for Ramadan, Eid, exam season, cricket matches. Use names, places, scenarios audiences recognize. Authenticity matters more than polish."
+        },
+        {
+          "id": "dm-069",
+          "q": "What PAYMENT consideration matters in Pakistani digital marketing?",
+          "options": [
+            "Many users prefer bank transfer, EasyPaisa, JazzCash, or Cash-on-Delivery over international credit cards",
+            "Everyone uses credit cards",
+            "Cash is impossible online",
+            "Only Stripe matters"
+          ],
+          "answer": 0,
+          "explanation": "Friction in payment kills conversions everywhere. Local payment methods (mobile wallets, COD for ecommerce) often double conversion rates vs requiring international credit cards. Meet customers where they are."
+        },
+        {
+          "id": "dm-070",
+          "q": "What's a UNIQUE opportunity for Pakistani digital marketers in 2026?",
+          "options": [
+            "Serving international clients via freelance platforms and offering local-market expertise to global brands entering South Asia",
+            "Marketing is dying",
+            "There's no opportunity",
+            "Only domestic markets"
+          ],
+          "answer": 0,
+          "explanation": "Combination of strong English skills, lower cost base, and growing local market expertise creates a real opportunity. Pakistani marketing freelancers and agencies serve clients in US/EU/Middle East while building local case studies."
+        }
+      ]
+    },
+    {
+      "topic": "AI in marketing",
+      "questions": [
+        {
+          "id": "dm-071",
+          "q": "How is AI changing marketing in 2026?",
+          "options": [
+            "AI accelerates content production, personalization, ad creative variations, and analytics — but doesn't replace strategy or judgment",
+            "AI is replacing marketers entirely",
+            "AI hasn't affected marketing",
+            "AI is too expensive for marketers"
+          ],
+          "answer": 0,
+          "explanation": "Marketers who use AI well are ~10x more productive at content production. Those who refuse fall behind. But AI commoditizes execution — making strategy, taste, and authentic voice MORE valuable, not less."
+        },
+        {
+          "id": "dm-072",
+          "q": "What's a HIGH-LEVERAGE AI use in marketing?",
+          "options": [
+            "Generating variations: ad copy, subject lines, landing page hooks — for A/B testing at scale",
+            "Replacing all human writers",
+            "Auto-running ad campaigns blindly",
+            "Creating fake reviews"
+          ],
+          "answer": 0,
+          "explanation": "AI is excellent at exploring the variant space quickly. Pair it with rigorous A/B testing to find winning combinations you'd never have manually written. The combination is more powerful than either alone."
+        },
+        {
+          "id": "dm-073",
+          "q": "What's a DANGER of over-relying on AI content?",
+          "options": [
+            "AI-generated content tends toward generic — flooding the internet with similar-sounding material erodes brand differentiation",
+            "AI is too slow",
+            "AI is too expensive",
+            "AI cannot write at all"
+          ],
+          "answer": 0,
+          "explanation": "Google announced focus on 'helpful content from real expertise' partly in response to AI content floods. Pure AI-generated content rarely ranks anymore. AI as a co-pilot for human experts works; AI as a replacement doesn't."
+        },
+        {
+          "id": "dm-074",
+          "q": "What's the FUTURE of search and AI?",
+          "options": [
+            "AI Overviews, ChatGPT search, and Perplexity-style answer engines are reshaping how people find information — affecting traditional SEO",
+            "Search is unchanged",
+            "Google will disappear",
+            "Only voice search matters"
+          ],
+          "answer": 0,
+          "explanation": "Brands need to be cited BY AI systems, not just rank in blue links. Strategies like structured data, clear authoritative content, brand mentions, and being where users ask AI questions are emerging fields."
+        },
+        {
+          "id": "dm-075",
+          "q": "Which marketing SKILL becomes more valuable in the AI era?",
+          "options": [
+            "Strategic thinking, brand-building, customer empathy, and creative judgment — uniquely human capabilities",
+            "Faster typing",
+            "Bigger ad budgets",
+            "Memorizing tool features"
+          ],
+          "answer": 0,
+          "explanation": "AI commoditizes execution. The differentiator is what only humans bring: strategy, taste, judgment, real relationships, distinctive voice. Lean into those; let AI handle the rest."
+        }
+      ]
+    },
+    {
+      "topic": "Ethics and privacy",
+      "questions": [
+        {
+          "id": "dm-076",
+          "q": "What is GDPR and why does it matter for marketers?",
+          "options": [
+            "EU privacy regulation requiring explicit consent for tracking and data collection — fines up to 4% of global revenue",
+            "A type of analytics tool",
+            "An ad platform",
+            "A marketing certification"
+          ],
+          "answer": 0,
+          "explanation": "GDPR (2018) set the global tone for privacy regulation. Even outside the EU, similar laws exist (CCPA in California, PIPEDA in Canada). Privacy-by-default is the modern standard; old 'track everything' approaches are increasingly illegal."
+        },
+        {
+          "id": "dm-077",
+          "q": "What's the END of the THIRD-PARTY COOKIE era?",
+          "options": [
+            "Browsers (Safari, Firefox, eventually Chrome) are phasing out cross-site tracking — forcing marketing to adapt to first-party data and contextual targeting",
+            "Cookies are getting bigger",
+            "Cookies are deprecated everywhere",
+            "Cookies remain unchanged"
+          ],
+          "answer": 0,
+          "explanation": "Apple's ATT and browser changes have already hugely impacted ad attribution. Future-proof marketing focuses on first-party data (your own customers), contextual targeting (relevant content placement), and consent-based personalization."
+        },
+        {
+          "id": "dm-078",
+          "q": "What's the ETHICAL line in persuasion?",
+          "options": [
+            "Persuading people toward something genuinely in their interest is ethical; manipulating against their interest (dark patterns, false claims) is not",
+            "Persuasion is always unethical",
+            "Anything legal is ethical",
+            "There is no line"
+          ],
+          "answer": 0,
+          "explanation": "Dark patterns (hidden fees, fake urgency, hard-to-cancel subscriptions) might work short-term but destroy trust, brand, and increasingly trigger legal action. Build a business that thrives on genuine value, not manipulation."
+        },
+        {
+          "id": "dm-079",
+          "q": "What's the marketer's RESPONSIBILITY around customer data?",
+          "options": [
+            "Collect only what's needed, secure it carefully, use it as customers reasonably expect, delete when no longer needed",
+            "Collect as much as possible",
+            "Share it freely",
+            "Sell it to brokers"
+          ],
+          "answer": 0,
+          "explanation": "Customer data is a liability AND an asset. Breaches damage trust and trigger regulatory penalties. Privacy-respectful marketing is increasingly a competitive advantage, not just a compliance requirement."
+        },
+        {
+          "id": "dm-080",
+          "q": "What's a HEALTHY long-term marketing philosophy?",
+          "options": [
+            "Build genuine value, communicate it clearly, respect your audience, and play the long game — short-term tricks erode the long term",
+            "Maximize short-term metrics regardless",
+            "Use any tactic that works today",
+            "Avoid measuring at all"
+          ],
+          "answer": 0,
+          "explanation": "Great marketing departments think in years, not weeks. Trust takes years to build, seconds to lose. The brands that last (Stripe, Apple, Patagonia) built over decades. Don't trade long-term equity for short-term metric pumps."
+        }
+      ]
+    },
+    {
+      "topic": "Strategy and planning",
+      "questions": [
+        {
+          "id": "dm-081",
+          "q": "What's a MARKETING STRATEGY (vs marketing tactics)?",
+          "options": [
+            "Strategy: who you serve, what value you provide, how you're different. Tactics: specific channels and campaigns executing the strategy",
+            "They are identical",
+            "Strategy is for big companies only",
+            "Tactics come first"
+          ],
+          "answer": 0,
+          "explanation": "Without strategy, tactics are random activity. Without tactics, strategy is fantasy. Most failed marketing is tactically busy but strategically empty — running ads and posts without a clear position or audience focus."
+        },
+        {
+          "id": "dm-082",
+          "q": "What's a MARKETING PLAN?",
+          "options": [
+            "A document defining objectives, target audience, positioning, channels, budget, timelines, and success metrics — usually annual",
+            "A list of tactics",
+            "A budget spreadsheet",
+            "A creative brief"
+          ],
+          "answer": 0,
+          "explanation": "A plan turns strategy into executable reality. Reviewed quarterly. Adjusts based on what's working. Without a plan, marketing teams optimize locally without coordination — wasted spend, missed opportunities."
+        },
+        {
+          "id": "dm-083",
+          "q": "What's SMART goal setting in marketing?",
+          "options": [
+            "Specific, Measurable, Achievable, Relevant, Time-bound — turning vague wishes into trackable outcomes",
+            "Stupidly Marketing Adverts Really Tactically",
+            "A type of AI tool",
+            "An ad platform feature"
+          ],
+          "answer": 0,
+          "explanation": "'Grow brand' isn't measurable. 'Increase branded search volume by 40% over 6 months' is. SMART goals force clarity about what success actually looks like and when to evaluate. Vague goals get vague results."
+        },
+        {
+          "id": "dm-084",
+          "q": "How should marketing budget be ALLOCATED?",
+          "options": [
+            "Based on the stage of business, customer journey balance, channel ROI, and strategic priorities — not just on what worked last year",
+            "Equally across all channels",
+            "All on the cheapest channel",
+            "Whatever's left over from other budgets"
+          ],
+          "answer": 0,
+          "explanation": "Early stage: heavier on awareness and brand. Growth stage: balance acquisition and retention. Mature: defend share and expand into adjacent segments. The right mix changes as the business evolves."
+        },
+        {
+          "id": "dm-085",
+          "q": "What's the BIGGEST predictor of marketing success?",
+          "options": [
+            "Product-market fit — great marketing of a weak product still fails, weak marketing of a great product can still succeed",
+            "Marketing budget size",
+            "Tool sophistication",
+            "Creative awards"
+          ],
+          "answer": 0,
+          "explanation": "Marketing amplifies what's already there. If the product isn't delivering value, marketing accelerates the rate at which dissatisfied customers spread word-of-mouth — backwards. Fix the product before scaling spend."
+        }
+      ]
+    },
+    {
+      "topic": "Career in marketing",
+      "questions": [
+        {
+          "id": "dm-086",
+          "q": "What ROLES exist in modern marketing teams?",
+          "options": [
+            "Content, SEO, paid acquisition, lifecycle/email, brand, product marketing, marketing ops, analytics — often blended in small teams",
+            "Just one 'marketer' role",
+            "Only sales and PR",
+            "Only ad buyers"
+          ],
+          "answer": 0,
+          "explanation": "In small teams, one person wears all hats. In large teams, specialists own each function. Learn the basics across all areas early; specialize later based on what you enjoy AND where you create the most value."
+        },
+        {
+          "id": "dm-087",
+          "q": "What SKILLS make a marketer hireable in 2026?",
+          "options": [
+            "Strategic thinking + at least one strong technical skill (analytics, SEO, paid, content) + strong communication + AI fluency",
+            "Memorizing tool features",
+            "Being on every social platform",
+            "Generic marketing degrees"
+          ],
+          "answer": 0,
+          "explanation": "Generic 'marketing' generalists are abundant. T-shaped marketers (broad understanding + one deep specialty) and strategic operators who can also execute are in high demand. Develop both breadth and depth."
+        },
+        {
+          "id": "dm-088",
+          "q": "What's a GREAT marketing PORTFOLIO project?",
+          "options": [
+            "Real campaigns you ran (even for free for friends/small businesses or your own project) with documented results",
+            "Generic course completion certificates",
+            "Memorized marketing concepts",
+            "Long resumes"
+          ],
+          "answer": 0,
+          "explanation": "Practical evidence beats theoretical knowledge. Even small projects (grew a friend's restaurant Instagram from 100 to 5K) show real skill. Document the strategy, execution, and learnings — that's what hiring managers want to see."
+        },
+        {
+          "id": "dm-089",
+          "q": "How can freelance marketers find clients?",
+          "options": [
+            "Build in public, share work openly, contribute to communities, leverage existing networks, niche down on a specific service",
+            "Cold email randomly",
+            "Wait for clients to find you",
+            "Compete only on price"
+          ],
+          "answer": 0,
+          "explanation": "Being visibly good at one specific thing for one specific audience beats being a generic 'marketing consultant'. Pakistani marketers serve global SaaS, ecommerce, or local industries — clarity attracts clients."
+        },
+        {
+          "id": "dm-090",
+          "q": "What's a COMMON career mistake for marketers?",
+          "options": [
+            "Optimizing for short-term metrics over long-term skill compounding — chasing tools, hot tactics, and vanity titles",
+            "Learning fundamentals deeply",
+            "Building a portfolio",
+            "Working with mentors"
+          ],
+          "answer": 0,
+          "explanation": "Tools come and go. Fundamentals (audience understanding, persuasion, measurement, strategy) compound for decades. Invest in foundational skills; use whatever tools are currently best to execute. Tools follow fundamentals, never the reverse."
+        }
+      ]
+    },
+    {
+      "topic": "Putting it all together",
+      "questions": [
+        {
+          "id": "dm-091",
+          "q": "What's an INTEGRATED marketing approach?",
+          "options": [
+            "Coordinating multiple channels to reinforce each other — same message, adapted for each channel's format",
+            "Doing everything at once",
+            "Using only one channel deeply",
+            "Random uncoordinated campaigns"
+          ],
+          "answer": 0,
+          "explanation": "A blog post can fuel an email, social posts, and SEO. An ad can match a landing page that matches a follow-up email. Integration multiplies impact. Siloed channels duplicate work and confuse audiences."
+        },
+        {
+          "id": "dm-092",
+          "q": "What's the BIGGEST FACTOR in marketing success?",
+          "options": [
+            "Clarity: who you serve, what you offer, why it matters, and how to take action — clarity beats cleverness every time",
+            "Cleverness",
+            "Budget size",
+            "Tool sophistication"
+          ],
+          "answer": 0,
+          "explanation": "When in doubt, simplify. Confused customers don't buy. The clearest brands grow fastest. Test your homepage with a stranger: can they explain in 10 seconds what you do and why they should care?"
+        },
+        {
+          "id": "dm-093",
+          "q": "What's the RIGHT MINDSET about marketing failures?",
+          "options": [
+            "Most campaigns will underperform — celebrate the learnings, kill the losers fast, double down on winners",
+            "Avoid all failures",
+            "Hide failures",
+            "Quit if anything fails"
+          ],
+          "answer": 0,
+          "explanation": "Marketing is iterative. Even sophisticated teams have ~70%+ underperforming campaigns. The skill is rapid testing, honest measurement, fast killing of losers, and aggressive scaling of winners. Process matters more than any single bet."
+        },
+        {
+          "id": "dm-094",
+          "q": "What's the META-SKILL for long-term marketing growth?",
+          "options": [
+            "Reading customer psychology, internet culture, and platform shifts faster than competitors — and adapting strategy accordingly",
+            "Memorizing one playbook",
+            "Avoiding all change",
+            "Working alone"
+          ],
+          "answer": 0,
+          "explanation": "Marketing platforms, formats, and customer behaviors change constantly. Marketers who thrive across decades aren't the ones who learned the perfect playbook once — they're the ones who keep learning, testing, and adapting."
+        },
+        {
+          "id": "dm-095",
+          "q": "What's the SIMPLEST way to keep improving as a marketer?",
+          "options": [
+            "Run real campaigns, measure honestly, study why things worked or failed, and apply lessons to the next attempt",
+            "Read books only",
+            "Avoid execution",
+            "Memorize frameworks"
+          ],
+          "answer": 0,
+          "explanation": "Marketing is learned by doing. Run something, measure honestly, learn, run again. Books and courses accelerate learning, but only execution teaches what really happens when ideas meet real audiences."
+        }
+      ]
+    },
+    {
+      "topic": "Sustainable growth",
+      "questions": [
+        {
+          "id": "dm-096",
+          "q": "What's the difference between GROWTH HACKING and sustainable marketing?",
+          "options": [
+            "Growth hacks are short-term experiments to find leverage; sustainable marketing builds compounding assets (brand, audience, content) over time",
+            "They are identical",
+            "Growth hacking is illegal",
+            "Sustainable marketing is for non-profits only"
+          ],
+          "answer": 0,
+          "explanation": "Both have a role. Hacks find quick wins; sustainable marketing creates lasting moats. The best operators do both — quick wins to fund the slower compounding investments that pay off in years 3-10."
+        },
+        {
+          "id": "dm-097",
+          "q": "Why is RETENTION often more important than acquisition?",
+          "options": [
+            "Existing customers cost less to keep, often spend more, and refer others — retention compounds, churn breaks the compound",
+            "Acquisition is impossible",
+            "Retention is free",
+            "All customers stay anyway"
+          ],
+          "answer": 0,
+          "explanation": "A 5% increase in retention can lift profits 25-95% in many businesses (Bain study). Leaky bucket: pouring water in (acquisition) is wasted if the bucket leaks (churn). Fix retention before scaling acquisition."
+        },
+        {
+          "id": "dm-098",
+          "q": "What's WORD-OF-MOUTH marketing?",
+          "options": [
+            "Customers recommending you to others — the most trusted and highest-converting marketing channel of all",
+            "Talking out loud",
+            "Phone marketing",
+            "Verbal contracts"
+          ],
+          "answer": 0,
+          "explanation": "Recommendations from people we know outperform any advertising channel by huge margins. The 'cheat code' is making a product/service so good that customers naturally recommend it. Marketing amplifies word-of-mouth; it can't replace it."
+        },
+        {
+          "id": "dm-099",
+          "q": "What's a HEALTHY metric to track LONG-TERM marketing health?",
+          "options": [
+            "Branded search volume (people searching for YOUR brand) — reflects brand awareness and demand strength",
+            "Daily ad spend",
+            "Number of tools used",
+            "Hours worked"
+          ],
+          "answer": 0,
+          "explanation": "Branded search is the cleanest signal of brand growth. It compounds with awareness, content, PR, and customer experience. Steady upward branded search = healthy long-term brand. Declining = something's wrong even if short-term metrics look fine."
+        },
+        {
+          "id": "dm-100",
+          "q": "What's the MOST important truth about marketing?",
+          "options": [
+            "Marketing amplifies what already exists — great products spread, weak products don't matter how clever the marketing",
+            "Marketing creates value from nothing",
+            "Marketing is more important than product",
+            "Marketing is unimportant"
+          ],
+          "answer": 0,
+          "explanation": "The fastest way to dramatically improve marketing results is often to improve the product itself. Marketing is a megaphone, not a magic wand. Great products + good marketing wins. Weak products + brilliant marketing always loses eventually."
+        }
+      ]
+    }
+  ]
+}

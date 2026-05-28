@@ -1,0 +1,1314 @@
+{
+  "id": "generative-ai-basics",
+  "title": "Generative AI Basics",
+  "description": "Understand how LLMs work, what they can do, and where they fall short.",
+  "category": "AI",
+  "icon": "✨",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What is Generative AI",
+      "questions": [
+        {
+          "id": "ga-001",
+          "q": "What does 'Generative AI' fundamentally do?",
+          "options": [
+            "Produces new content (text, images, code, audio, video) based on patterns learned from training data",
+            "Searches the internet and returns existing web pages",
+            "Stores and retrieves data from a fixed database",
+            "Encrypts files for secure storage"
+          ],
+          "answer": 0,
+          "explanation": "Generative AI creates new outputs by sampling from learned probability distributions, unlike search engines which retrieve existing content."
+        },
+        {
+          "id": "ga-002",
+          "q": "Which of these is NOT a generative AI capability?",
+          "options": [
+            "Guaranteeing 100% factually accurate answers to every question",
+            "Writing essays from a topic prompt",
+            "Generating images from text descriptions",
+            "Translating between languages"
+          ],
+          "answer": 0,
+          "explanation": "Generative models are probabilistic — they can hallucinate. Accuracy guarantees require verification systems, not the raw model."
+        },
+        {
+          "id": "ga-003",
+          "q": "What is the KEY difference between generative AI and traditional ('discriminative') AI?",
+          "options": [
+            "Generative AI creates new outputs; discriminative AI classifies or predicts from inputs",
+            "Generative AI runs on GPUs; discriminative AI runs on CPUs",
+            "Generative AI is free; discriminative AI is paid",
+            "There is no real difference"
+          ],
+          "answer": 0,
+          "explanation": "Classifier: 'is this email spam?' (discriminative). Writer: 'compose a reply' (generative). Different goals, different math."
+        },
+        {
+          "id": "ga-004",
+          "q": "Which is a TRUE statement about modern generative AI models?",
+          "options": [
+            "They learn statistical patterns from data but do not 'understand' meaning the way humans do",
+            "They have true consciousness and emotions",
+            "They access the live internet by default",
+            "They store every training example verbatim"
+          ],
+          "answer": 0,
+          "explanation": "LLMs are extraordinary pattern matchers but lack grounded understanding, intentions, or self-awareness."
+        },
+        {
+          "id": "ga-005",
+          "q": "Why did Generative AI explode into mainstream around 2022-2023?",
+          "options": [
+            "The transformer architecture + huge models + massive compute + chat interfaces finally produced human-quality outputs at scale",
+            "AI was invented in 2022 for the first time",
+            "The internet finally got fast enough",
+            "Governments mandated AI usage"
+          ],
+          "answer": 0,
+          "explanation": "Each piece existed earlier; the combination (especially ChatGPT's chat UX) made it suddenly accessible to billions."
+        }
+      ]
+    },
+    {
+      "topic": "Large Language Models (LLMs)",
+      "questions": [
+        {
+          "id": "ga-006",
+          "q": "What does 'LLM' stand for?",
+          "options": [
+            "Large Language Model",
+            "Linear Logic Machine",
+            "Long-Lasting Memory",
+            "Latent Language Mapping"
+          ],
+          "answer": 0,
+          "explanation": "Large = billions of parameters. Language = trained on text. Model = a mathematical function."
+        },
+        {
+          "id": "ga-007",
+          "q": "At the core, what does an LLM actually DO when generating text?",
+          "options": [
+            "Predicts the next token (word fragment) based on all previous tokens, one token at a time",
+            "Looks up the answer in a database",
+            "Translates the question into machine code and runs it",
+            "Asks another LLM and copies the response"
+          ],
+          "answer": 0,
+          "explanation": "Generation is iterative next-token prediction. The 'magic' is that this simple loop produces coherent paragraphs."
+        },
+        {
+          "id": "ga-008",
+          "q": "What is a 'parameter' in an LLM?",
+          "options": [
+            "A learnable numerical weight that the model adjusts during training; modern LLMs have billions",
+            "A setting the user adjusts in the UI",
+            "A type of API key",
+            "A file format"
+          ],
+          "answer": 0,
+          "explanation": "GPT-3 had 175B parameters. Larger ≠ always better, but more parameters generally = more capability."
+        },
+        {
+          "id": "ga-009",
+          "q": "What does a model's 'training cutoff date' mean?",
+          "options": [
+            "The model has no knowledge of events that happened after that date",
+            "The model stops working on that date",
+            "Users can't access the model past that date",
+            "The model gets retrained every day"
+          ],
+          "answer": 0,
+          "explanation": "Training data is a snapshot in time. Without web access tools, the model literally doesn't know recent news, releases, or events."
+        },
+        {
+          "id": "ga-010",
+          "q": "Which is a famous LLM family?",
+          "options": [
+            "GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta)",
+            "Photoshop, Excel, Word",
+            "Windows, macOS, Linux",
+            "iPhone, Galaxy, Pixel"
+          ],
+          "answer": 0,
+          "explanation": "These 4 dominate the LLM landscape in 2026, alongside open-source players like Mistral, Qwen, and DeepSeek."
+        }
+      ]
+    },
+    {
+      "topic": "Tokens and tokenization",
+      "questions": [
+        {
+          "id": "ga-011",
+          "q": "What is a 'token' in the context of LLMs?",
+          "options": [
+            "A unit of text the model processes — often a word, sub-word, or punctuation mark",
+            "An NFT collectible",
+            "A login credential",
+            "A type of cryptocurrency"
+          ],
+          "answer": 0,
+          "explanation": "Models don't see characters or full words — they see tokens. Tokenization is the bridge between raw text and the model."
+        },
+        {
+          "id": "ga-012",
+          "q": "Roughly how many tokens does one average English word use?",
+          "options": [
+            "About 1.3 tokens",
+            "Always exactly 1 token",
+            "About 10 tokens",
+            "About 100 tokens"
+          ],
+          "answer": 0,
+          "explanation": "Rule of thumb: 1 token ≈ 4 characters ≈ 0.75 words. Code, non-English text, and rare words use more tokens per word."
+        },
+        {
+          "id": "ga-013",
+          "q": "Why do LLMs charge by tokens instead of by words?",
+          "options": [
+            "Tokens are the actual unit of computation the model processes, so cost scales linearly with tokens",
+            "Words are too hard to count",
+            "Marketing reasons only",
+            "Words don't exist in all languages"
+          ],
+          "answer": 0,
+          "explanation": "Each token = one forward pass through the model. Pricing by the actual compute unit makes economic sense."
+        },
+        {
+          "id": "ga-014",
+          "q": "Which type of text typically uses the MOST tokens per character?",
+          "options": [
+            "Non-English text and code with many special characters or rare words",
+            "Simple English prose",
+            "Numbers only",
+            "Single-word sentences"
+          ],
+          "answer": 0,
+          "explanation": "Tokenizers are trained mostly on English. Urdu, Chinese, Arabic, and code often need 2-4x more tokens per character."
+        },
+        {
+          "id": "ga-015",
+          "q": "What is a 'tokenizer'?",
+          "options": [
+            "The component that splits raw text into tokens (and back) before/after the model processes it",
+            "A type of car part",
+            "A login security device",
+            "A blockchain transaction system"
+          ],
+          "answer": 0,
+          "explanation": "Each model family has its own tokenizer (BPE, WordPiece, SentencePiece variants). Same text → different token counts per model."
+        }
+      ]
+    },
+    {
+      "topic": "How LLMs are trained",
+      "questions": [
+        {
+          "id": "ga-016",
+          "q": "What is 'pretraining' for an LLM?",
+          "options": [
+            "Training the model on a massive corpus of text to learn general language patterns",
+            "Pre-installing the model on hardware before shipping",
+            "Training the user before they use the model",
+            "Pre-encrypting the model's weights"
+          ],
+          "answer": 0,
+          "explanation": "Pretraining is the heavy-lift phase — months of GPU time on terabytes of internet text, books, code, etc."
+        },
+        {
+          "id": "ga-017",
+          "q": "What is 'fine-tuning' an LLM?",
+          "options": [
+            "Further training a pretrained model on a smaller, specialized dataset to specialize its behavior",
+            "Adjusting the volume of the model's voice",
+            "Polishing the model's user interface",
+            "Decreasing the model's size"
+          ],
+          "answer": 0,
+          "explanation": "Fine-tuning takes a base model and teaches it a specific task or style (e.g., medical Q&A, brand voice, JSON output)."
+        },
+        {
+          "id": "ga-018",
+          "q": "What does 'RLHF' stand for?",
+          "options": [
+            "Reinforcement Learning from Human Feedback",
+            "Reactive Learning from Hashed Files",
+            "Relational Logic for Hidden Features",
+            "Random Learning from Historic Failures"
+          ],
+          "answer": 0,
+          "explanation": "RLHF is the technique that turned raw LLMs into the helpful chat assistants we know — humans rate outputs, model learns preferences."
+        },
+        {
+          "id": "ga-019",
+          "q": "Why doesn't training data include the live internet?",
+          "options": [
+            "Training happens once on a fixed snapshot; live updates would be impractical and unsafe",
+            "The internet is too expensive to download",
+            "Training is illegal on live data",
+            "Models can't read web pages"
+          ],
+          "answer": 0,
+          "explanation": "Training is a months-long batch process. For real-time info, models use external tools (search, RAG) at inference time."
+        },
+        {
+          "id": "ga-020",
+          "q": "What is the role of GPUs in training LLMs?",
+          "options": [
+            "They perform the massive parallel matrix math required, far faster than CPUs",
+            "They display the training progress on screen",
+            "They store the training data",
+            "They are optional for training"
+          ],
+          "answer": 0,
+          "explanation": "LLM training requires thousands of GPUs running in parallel for months. Compute is the #1 cost."
+        }
+      ]
+    },
+    {
+      "topic": "The transformer architecture",
+      "questions": [
+        {
+          "id": "ga-021",
+          "q": "What architectural breakthrough enabled modern LLMs?",
+          "options": [
+            "The Transformer (introduced in 'Attention Is All You Need', 2017)",
+            "The internet itself",
+            "Quantum computing",
+            "Solid-state drives"
+          ],
+          "answer": 0,
+          "explanation": "The transformer's self-attention mechanism replaced slower RNNs and enabled massive parallel training."
+        },
+        {
+          "id": "ga-022",
+          "q": "What does 'attention' do in a transformer?",
+          "options": [
+            "Lets each token weigh its relationship to every other token in the context to capture meaning",
+            "Listens to the user with a microphone",
+            "Pays attention to error logs",
+            "Watches the screen for the user"
+          ],
+          "answer": 0,
+          "explanation": "Self-attention is how transformers understand 'it' refers to 'the cat' three sentences earlier."
+        },
+        {
+          "id": "ga-023",
+          "q": "Why are transformers parallelizable in training?",
+          "options": [
+            "Self-attention processes all tokens simultaneously, unlike sequential RNNs",
+            "They use multiple programming languages at once",
+            "They run on multiple screens",
+            "They split into smaller models"
+          ],
+          "answer": 0,
+          "explanation": "Parallelism = the breakthrough that made training on huge datasets practical."
+        },
+        {
+          "id": "ga-024",
+          "q": "What are the THREE main components of attention math?",
+          "options": [
+            "Query, Key, Value (Q, K, V)",
+            "Red, Green, Blue (R, G, B)",
+            "Past, Present, Future",
+            "Subject, Verb, Object"
+          ],
+          "answer": 0,
+          "explanation": "Each token generates Q, K, V vectors. Attention = softmax(Q·K) · V. This is the heart of every modern LLM."
+        },
+        {
+          "id": "ga-025",
+          "q": "Which of these is also based on the transformer architecture?",
+          "options": [
+            "BERT, T5, GPT, Claude, Gemini, Llama — virtually all modern major language models",
+            "Microsoft Excel only",
+            "Photoshop only",
+            "None of them"
+          ],
+          "answer": 0,
+          "explanation": "Since 2018, the transformer has dominated NLP. Almost every major language model is a transformer variant."
+        }
+      ]
+    },
+    {
+      "topic": "Capabilities of generative AI",
+      "questions": [
+        {
+          "id": "ga-026",
+          "q": "Which is a STRONG suit of modern LLMs?",
+          "options": [
+            "Summarizing long documents into concise key points",
+            "Performing 10-digit multiplication reliably without tools",
+            "Predicting tomorrow's stock prices accurately",
+            "Replacing all human experts in medicine"
+          ],
+          "answer": 0,
+          "explanation": "Summarization is a sweet spot — pattern matching across long text is exactly what transformers do well."
+        },
+        {
+          "id": "ga-027",
+          "q": "What can image generation models (DALL-E, Midjourney, Imagen) do?",
+          "options": [
+            "Create novel images from text descriptions, in many styles and compositions",
+            "Edit videos only",
+            "Print 3D objects directly",
+            "Translate text into audio"
+          ],
+          "answer": 0,
+          "explanation": "Diffusion models (which power image gen) learn to denoise random patterns into coherent images guided by text."
+        },
+        {
+          "id": "ga-028",
+          "q": "Which of these has Generative AI become especially good at since 2024?",
+          "options": [
+            "Writing functional code from natural-language descriptions",
+            "Predicting next week's weather perfectly",
+            "Detecting all internet fraud",
+            "Solving climate change"
+          ],
+          "answer": 0,
+          "explanation": "Code generation is now production-quality for many tasks — GitHub Copilot, Claude Code, Cursor exemplify this."
+        },
+        {
+          "id": "ga-029",
+          "q": "What's a realistic use of generative AI for productivity?",
+          "options": [
+            "Drafting emails, summarizing meetings, generating first drafts of reports",
+            "Filing your physical paper documents",
+            "Driving your car",
+            "Cooking your meals"
+          ],
+          "answer": 0,
+          "explanation": "Drafting is the highest-ROI use. AI is fast at first drafts; humans excel at editing and judgment."
+        },
+        {
+          "id": "ga-030",
+          "q": "Which is a NEW capability in 2024-2025 generative AI?",
+          "options": [
+            "Long-context reasoning, native multimodality (text+image+audio+video), and agentic tool use",
+            "Searching Google",
+            "Sending text messages",
+            "Reading PDFs"
+          ],
+          "answer": 0,
+          "explanation": "Long context (1M+ tokens), multimodal input, and tool-using agents are the defining frontier capabilities of this era."
+        }
+      ]
+    },
+    {
+      "topic": "Limitations of generative AI",
+      "questions": [
+        {
+          "id": "ga-031",
+          "q": "What is a 'hallucination' in generative AI?",
+          "options": [
+            "The model generates plausible-sounding information that is actually false or invented",
+            "The model overheats",
+            "The model shows ASCII art accidentally",
+            "The model translates to a wrong language"
+          ],
+          "answer": 0,
+          "explanation": "Hallucinations are the #1 reliability issue. They occur because models predict probable text, not verified truth."
+        },
+        {
+          "id": "ga-032",
+          "q": "Which task do LLMs struggle with WITHOUT tools?",
+          "options": [
+            "Precise arithmetic on large numbers",
+            "Writing a poem",
+            "Summarizing an article",
+            "Translating common phrases"
+          ],
+          "answer": 0,
+          "explanation": "LLMs do math by predicting digits, not computing. Use a calculator tool for any non-trivial arithmetic."
+        },
+        {
+          "id": "ga-033",
+          "q": "Why might an LLM give DIFFERENT answers to the same question?",
+          "options": [
+            "Sampling randomness (temperature) introduces variability in token selection",
+            "The model rewrites itself",
+            "The internet keeps changing",
+            "Users are confusing it"
+          ],
+          "answer": 0,
+          "explanation": "Most LLMs sample probabilistically. Set temperature to 0 for deterministic outputs (when supported)."
+        },
+        {
+          "id": "ga-034",
+          "q": "What ethical concern is associated with LLMs being trained on internet data?",
+          "options": [
+            "They can absorb and replicate human biases, stereotypes, and copyrighted content",
+            "They become too polite to be useful",
+            "They forget all human languages",
+            "They prefer ads"
+          ],
+          "answer": 0,
+          "explanation": "Bias and copyright are unresolved issues. RLHF mitigates some, but not all, of these problems."
+        },
+        {
+          "id": "ga-035",
+          "q": "What is a key reason NOT to use LLMs for high-stakes decisions alone?",
+          "options": [
+            "They are probabilistic and lack accountability — a human should remain responsible for critical outcomes",
+            "They are too slow",
+            "They cost too much money",
+            "They only work in English"
+          ],
+          "answer": 0,
+          "explanation": "Medical, legal, and financial decisions need accountable human judgment. AI is a copilot, not a replacement."
+        }
+      ]
+    },
+    {
+      "topic": "Prompts and instructions",
+      "questions": [
+        {
+          "id": "ga-036",
+          "q": "What is the FIRST thing every interaction with an LLM requires?",
+          "options": [
+            "A prompt — the input text that asks or instructs the model",
+            "A credit card payment",
+            "A signed legal agreement",
+            "Webcam access"
+          ],
+          "answer": 0,
+          "explanation": "Prompts are the universal interface. Without one, the model has nothing to respond to."
+        },
+        {
+          "id": "ga-037",
+          "q": "Which prompt produces the BEST output?",
+          "options": [
+            "'Write a 3-paragraph beginner-friendly guide to budgeting for university students in Pakistan.'",
+            "'budget'",
+            "'help'",
+            "'write something'"
+          ],
+          "answer": 0,
+          "explanation": "Specificity (audience, length, topic, region) gives the model what it needs to produce a useful response."
+        },
+        {
+          "id": "ga-038",
+          "q": "What role does 'context' play in a prompt?",
+          "options": [
+            "Providing relevant background helps the model produce on-target, accurate responses",
+            "Context confuses the model",
+            "Context is automatically detected",
+            "Context is illegal in some prompts"
+          ],
+          "answer": 0,
+          "explanation": "Models can't read your mind. The more context you give (audience, goal, constraints), the better the response."
+        },
+        {
+          "id": "ga-039",
+          "q": "What does 'show your work' or 'think step by step' do in a prompt?",
+          "options": [
+            "Triggers Chain-of-Thought reasoning, often improving accuracy on multi-step problems",
+            "Makes the model use a different font",
+            "Forces the model to respond in code",
+            "Increases the temperature setting"
+          ],
+          "answer": 0,
+          "explanation": "This simple phrase consistently boosts performance on reasoning-heavy tasks."
+        },
+        {
+          "id": "ga-040",
+          "q": "What is the BEST way to learn good prompting?",
+          "options": [
+            "Practice, iterate, and observe — try variations and see what changes the output",
+            "Memorize one perfect prompt",
+            "Never write your own prompts",
+            "Use only one-word prompts"
+          ],
+          "answer": 0,
+          "explanation": "Prompting is a craft learned through deliberate practice. Iteration > theory."
+        }
+      ]
+    },
+    {
+      "topic": "Generative AI tools landscape",
+      "questions": [
+        {
+          "id": "ga-041",
+          "q": "Which is a popular general-purpose chat-based AI?",
+          "options": [
+            "ChatGPT, Claude, Gemini, Perplexity, Copilot",
+            "Microsoft Paint",
+            "Notepad",
+            "Calculator"
+          ],
+          "answer": 0,
+          "explanation": "These five dominate the general chat AI market in 2026. Each has unique strengths and pricing."
+        },
+        {
+          "id": "ga-042",
+          "q": "Which tool category does Midjourney belong to?",
+          "options": [
+            "Text-to-image generation",
+            "Text-to-code generation",
+            "Text-to-spreadsheet",
+            "Email autoresponder"
+          ],
+          "answer": 0,
+          "explanation": "Midjourney is one of the leading image generation tools, alongside DALL-E, Stable Diffusion, and Imagen."
+        },
+        {
+          "id": "ga-043",
+          "q": "What is GitHub Copilot?",
+          "options": [
+            "An AI pair-programming assistant that suggests code as you type in your editor",
+            "A GitHub mascot character",
+            "A backup tool for GitHub repos",
+            "A Microsoft Office plugin"
+          ],
+          "answer": 0,
+          "explanation": "Copilot was the first widely-adopted AI coding assistant, powered by OpenAI models, now joined by Cursor, Claude Code, Windsurf."
+        },
+        {
+          "id": "ga-044",
+          "q": "Which tool is designed for AI-powered web search?",
+          "options": [
+            "Perplexity",
+            "Microsoft Word",
+            "PowerPoint",
+            "Notion"
+          ],
+          "answer": 0,
+          "explanation": "Perplexity combines LLMs with live search to answer questions with cited sources. Bing Chat and Google's AI Overviews are similar."
+        },
+        {
+          "id": "ga-045",
+          "q": "What is 'open source' in the context of LLMs?",
+          "options": [
+            "Models whose weights are publicly downloadable and can be self-hosted (e.g., Llama, Mistral, Qwen)",
+            "Free trials of paid models",
+            "Models that cost less than $10",
+            "Models with source-code comments"
+          ],
+          "answer": 0,
+          "explanation": "Open weights = you can run them yourself. Best for privacy, customization, and no per-call cost."
+        }
+      ]
+    },
+    {
+      "topic": "Multimodal AI",
+      "questions": [
+        {
+          "id": "ga-046",
+          "q": "What is 'multimodal' AI?",
+          "options": [
+            "An AI that can accept and/or produce multiple input/output types (text, image, audio, video) in one model",
+            "An AI with multiple installation modes",
+            "An AI that runs on multiple devices simultaneously",
+            "An AI translated to multiple languages"
+          ],
+          "answer": 0,
+          "explanation": "GPT-4o, Claude 3.5, Gemini 1.5 can all see images, hear audio, and produce text — all in one model call."
+        },
+        {
+          "id": "ga-047",
+          "q": "What can you do with a vision-capable LLM?",
+          "options": [
+            "Upload an image and ask questions about it: describe it, extract text, identify objects, analyze charts",
+            "Edit the image directly",
+            "Print the image to paper",
+            "Convert the image to a video"
+          ],
+          "answer": 0,
+          "explanation": "Vision LLMs read images much like they read text — answering questions, extracting structure, comparing, classifying."
+        },
+        {
+          "id": "ga-048",
+          "q": "What's a realistic use case for multimodal AI?",
+          "options": [
+            "Extracting structured data from receipts, invoices, or screenshots",
+            "Replacing human eyes for surgery",
+            "Reading printed books physically",
+            "Generating taste sensations"
+          ],
+          "answer": 0,
+          "explanation": "Document understanding (receipts, ID cards, forms) is a huge production use case for multimodal LLMs."
+        },
+        {
+          "id": "ga-049",
+          "q": "What is 'text-to-speech' (TTS) generative AI?",
+          "options": [
+            "AI that converts written text into natural-sounding spoken audio",
+            "AI that talks back to humans",
+            "AI that records conversations",
+            "AI that plays music"
+          ],
+          "answer": 0,
+          "explanation": "Modern TTS (ElevenLabs, OpenAI, Google) produces near-human voice quality, with cloning and emotion control."
+        },
+        {
+          "id": "ga-050",
+          "q": "What is 'text-to-video' generative AI?",
+          "options": [
+            "AI that creates short video clips from text descriptions (Sora, Veo, Runway)",
+            "Video editing software",
+            "A YouTube uploader",
+            "A screen recorder"
+          ],
+          "answer": 0,
+          "explanation": "Video generation is the newest frontier — quality jumped dramatically with OpenAI's Sora, Google's Veo, and Runway in 2024-25."
+        }
+      ]
+    },
+    {
+      "topic": "AI agents and automation",
+      "questions": [
+        {
+          "id": "ga-051",
+          "q": "What is an 'AI agent'?",
+          "options": [
+            "An AI system that can autonomously plan, use tools, and take multi-step actions to accomplish a goal",
+            "A human salesperson for AI products",
+            "A virus that infects AI",
+            "An AI lawyer"
+          ],
+          "answer": 0,
+          "explanation": "Agents = LLM + memory + tools + planning loop. They turn chatbots into autonomous workers."
+        },
+        {
+          "id": "ga-052",
+          "q": "Which is an example of an AI agent task?",
+          "options": [
+            "'Book a flight to Karachi under $400 for next Friday, then email me the confirmation.'",
+            "'What is 2+2?'",
+            "'Translate hello.'",
+            "'Write a single haiku.'"
+          ],
+          "answer": 0,
+          "explanation": "Agent tasks require multi-step planning, web access, and tool use — not just text generation."
+        },
+        {
+          "id": "ga-053",
+          "q": "What is 'function calling' / 'tool use' in LLMs?",
+          "options": [
+            "The model returns a structured request for the host application to run an external function (API call, database query, etc.)",
+            "The model writes its own Python and runs it directly",
+            "The model calls customer support",
+            "The model bills the user for each call"
+          ],
+          "answer": 0,
+          "explanation": "Function calling is the mechanism that lets agents act on the real world — calling APIs, querying databases, sending messages."
+        },
+        {
+          "id": "ga-054",
+          "q": "What is the risk of fully autonomous AI agents?",
+          "options": [
+            "They can take incorrect, irreversible actions without human review",
+            "They become emotional",
+            "They charge too much money",
+            "They forget how to type"
+          ],
+          "answer": 0,
+          "explanation": "Agent autonomy is a tradeoff — more power = more risk. Keep humans in the loop for high-stakes actions."
+        },
+        {
+          "id": "ga-055",
+          "q": "Which is a popular framework for building AI agents?",
+          "options": [
+            "LangChain, LangGraph, AutoGen, CrewAI, OpenAI Assistants API",
+            "Excel, Word, PowerPoint",
+            "Photoshop, Illustrator",
+            "Visual Studio Code"
+          ],
+          "answer": 0,
+          "explanation": "Agent frameworks handle the planning loop, tool registration, memory management, and orchestration."
+        }
+      ]
+    },
+    {
+      "topic": "Retrieval-Augmented Generation (RAG)",
+      "questions": [
+        {
+          "id": "ga-056",
+          "q": "What is 'RAG' in generative AI?",
+          "options": [
+            "Retrieval-Augmented Generation — fetching relevant documents and injecting them into the prompt before the model answers",
+            "A clothing recycling system",
+            "A type of file compression",
+            "A new programming language"
+          ],
+          "answer": 0,
+          "explanation": "RAG = give the model access to YOUR knowledge base at query time. The most common production pattern for custom AI."
+        },
+        {
+          "id": "ga-057",
+          "q": "Why use RAG instead of fine-tuning for a company knowledge base?",
+          "options": [
+            "RAG lets you update knowledge instantly without retraining and grounds answers in verifiable sources",
+            "RAG is impossible without fine-tuning",
+            "Fine-tuning has no benefits",
+            "RAG only works on weekends"
+          ],
+          "answer": 0,
+          "explanation": "RAG = fresh info + source citations + no retraining. Fine-tuning = bake behavior in, hard to update knowledge."
+        },
+        {
+          "id": "ga-058",
+          "q": "What is a 'vector database' in RAG systems?",
+          "options": [
+            "A specialized database storing text as numerical embeddings, enabling semantic similarity search",
+            "A spreadsheet of vectors",
+            "A database for graphic vectors only",
+            "A backup database"
+          ],
+          "answer": 0,
+          "explanation": "Vector DBs (Pinecone, Weaviate, Chroma, pgvector) let you find documents 'similar in meaning' to a query, not just keyword matches."
+        },
+        {
+          "id": "ga-059",
+          "q": "What are 'embeddings'?",
+          "options": [
+            "Numerical representations of text (vectors) that capture semantic meaning for similarity comparison",
+            "Images embedded in HTML",
+            "Quotes embedded in essays",
+            "Videos embedded in PDFs"
+          ],
+          "answer": 0,
+          "explanation": "Embeddings convert text to ~1500-dim vectors. Similar meanings end up near each other in vector space."
+        },
+        {
+          "id": "ga-060",
+          "q": "When does RAG go WRONG?",
+          "options": [
+            "When retrieval returns irrelevant or misleading documents, causing the model to confidently generate wrong answers from bad sources",
+            "When the model speaks too quietly",
+            "When the model is too polite",
+            "When the documents are PDFs"
+          ],
+          "answer": 0,
+          "explanation": "Garbage in → garbage out. RAG quality lives or dies by the retrieval step's relevance."
+        }
+      ]
+    },
+    {
+      "topic": "Safety and ethics",
+      "questions": [
+        {
+          "id": "ga-061",
+          "q": "What is 'AI bias'?",
+          "options": [
+            "When AI systems reflect or amplify unfair patterns present in their training data",
+            "When AI prefers certain colors",
+            "When AI runs faster on certain CPUs",
+            "When AI users are biased against AI"
+          ],
+          "answer": 0,
+          "explanation": "If training data reflects historical inequalities, the model can reinforce them in hiring, lending, medical, and policing applications."
+        },
+        {
+          "id": "ga-062",
+          "q": "What is 'AI alignment'?",
+          "options": [
+            "The research field focused on making AI systems behave in line with human values and intentions",
+            "Aligning AI hardware in a server rack",
+            "Aligning AI fonts on a webpage",
+            "Setting AI to the correct time zone"
+          ],
+          "answer": 0,
+          "explanation": "Alignment is THE big open problem: how do we ensure powerful AI does what we actually want, not just what we literally said?"
+        },
+        {
+          "id": "ga-063",
+          "q": "Which is a RESPONSIBLE practice for AI product builders?",
+          "options": [
+            "Implement safety filters, rate limits, transparency about AI use, and clear user feedback mechanisms",
+            "Hide that AI is involved",
+            "Allow any output without filtering",
+            "Avoid all user feedback"
+          ],
+          "answer": 0,
+          "explanation": "Responsible AI = transparency + guardrails + accountability + ability to course-correct based on user feedback."
+        },
+        {
+          "id": "ga-064",
+          "q": "Why is 'deepfake' technology a serious concern?",
+          "options": [
+            "It can create convincing fake images, audio, and video of real people, enabling fraud and misinformation",
+            "It is too slow to be a problem",
+            "It only works for fictional characters",
+            "It is universally banned globally"
+          ],
+          "answer": 0,
+          "explanation": "Deepfakes are a misinformation, election, and personal-harm risk. Detection tech is in an arms race with generation tech."
+        },
+        {
+          "id": "ga-065",
+          "q": "What's an important question to ask before deploying AI in a sensitive domain?",
+          "options": [
+            "'What happens if the AI is wrong, and who is accountable?'",
+            "'What font should the AI use?'",
+            "'What color should the AI's logo be?'",
+            "'How many emojis should the AI use?'"
+          ],
+          "answer": 0,
+          "explanation": "Liability + recourse + auditability are the questions that separate toys from production AI in healthcare, finance, law."
+        }
+      ]
+    },
+    {
+      "topic": "Privacy and data",
+      "questions": [
+        {
+          "id": "ga-066",
+          "q": "Why should you be cautious about sharing sensitive data with public AI chatbots?",
+          "options": [
+            "Inputs may be logged, used for training, or accessed by the provider — treat them like public posts",
+            "Chatbots delete everything immediately",
+            "Chatbots are legally bound to secrecy",
+            "AI cannot read English"
+          ],
+          "answer": 0,
+          "explanation": "Most consumer chatbot Terms allow some data use. For sensitive info, use enterprise plans with no-training guarantees, or self-host."
+        },
+        {
+          "id": "ga-067",
+          "q": "What is 'data residency' in AI?",
+          "options": [
+            "The country/region where AI providers store and process user data, which has legal implications (GDPR, HIPAA, etc.)",
+            "Where AI models physically live in homes",
+            "The data's IP address",
+            "The data's email signature"
+          ],
+          "answer": 0,
+          "explanation": "Many regulations require data to stay within specific jurisdictions. Major providers offer regional endpoints to comply."
+        },
+        {
+          "id": "ga-068",
+          "q": "Which is a PRIVACY-FRIENDLY option for using LLMs at work?",
+          "options": [
+            "Self-hosted open-source models, or enterprise plans with explicit no-training clauses",
+            "Free public chatbots with all company data pasted in",
+            "Sharing API keys with everyone in the company",
+            "Posting sensitive prompts on social media"
+          ],
+          "answer": 0,
+          "explanation": "Self-hosting (Ollama, vLLM) keeps data on your hardware. Enterprise APIs add contractual privacy guarantees."
+        },
+        {
+          "id": "ga-069",
+          "q": "What is the safest way to share PII (personally identifiable information) with an LLM?",
+          "options": [
+            "Redact or pseudonymize the PII first; only share what's strictly needed",
+            "Always include all PII for context",
+            "Convert PII to images first",
+            "PII is fine to share publicly"
+          ],
+          "answer": 0,
+          "explanation": "Minimum-necessary-data principle. Strip names, emails, IDs, etc. before sending to any third-party AI."
+        },
+        {
+          "id": "ga-070",
+          "q": "What does 'opt-out of training' mean in AI APIs?",
+          "options": [
+            "A setting (or contractual term) that prevents the provider from using your data to train future models",
+            "Opting out of receiving emails",
+            "Opting out of using AI",
+            "Opting out of payment"
+          ],
+          "answer": 0,
+          "explanation": "Most enterprise plans default to no-training. Free consumer products often default the other way — read the fine print."
+        }
+      ]
+    },
+    {
+      "topic": "AI for productivity",
+      "questions": [
+        {
+          "id": "ga-071",
+          "q": "Which is a HIGH-LEVERAGE personal use of generative AI?",
+          "options": [
+            "Drafting first versions of emails, documents, and content you then edit",
+            "Letting AI make all your decisions automatically",
+            "Replacing all human relationships with AI",
+            "Generating spam at scale"
+          ],
+          "answer": 0,
+          "explanation": "AI is fastest at the blank-page problem. You provide judgment; it provides velocity."
+        },
+        {
+          "id": "ga-072",
+          "q": "What is 'meeting summarization' AI?",
+          "options": [
+            "AI that transcribes a meeting and produces a concise summary with action items and decisions",
+            "AI that schedules meetings",
+            "AI that joins meetings as a participant",
+            "AI that ends meetings early"
+          ],
+          "answer": 0,
+          "explanation": "Tools like Otter, Fireflies, and Zoom AI Companion are now standard productivity stack additions."
+        },
+        {
+          "id": "ga-073",
+          "q": "Which is a SMART way to use AI for learning?",
+          "options": [
+            "Ask AI to explain concepts in multiple ways, generate practice problems, and quiz yourself",
+            "Have AI take exams for you",
+            "Believe everything AI says without checking",
+            "Skip learning entirely"
+          ],
+          "answer": 0,
+          "explanation": "AI as a personal tutor is a killer educational use. Always verify factual claims with authoritative sources."
+        },
+        {
+          "id": "ga-074",
+          "q": "What's a PITFALL of relying too heavily on AI for writing?",
+          "options": [
+            "Skill atrophy — if you stop thinking, your own writing and analysis abilities weaken over time",
+            "Your typing speed increases",
+            "Your eyesight improves",
+            "Your handwriting becomes neater"
+          ],
+          "answer": 0,
+          "explanation": "Use AI to enhance your thinking, not replace it. The goal is augmentation, not abdication."
+        },
+        {
+          "id": "ga-075",
+          "q": "Which is a GOOD workflow for AI-assisted coding?",
+          "options": [
+            "Have AI draft code, then review, test, and verify it carefully — never ship code you don't understand",
+            "Copy-paste AI output without reading",
+            "Ship AI code straight to production untested",
+            "Never let AI write any code"
+          ],
+          "answer": 0,
+          "explanation": "Trust but verify. AI-generated code can have subtle bugs, security flaws, or outdated patterns."
+        }
+      ]
+    },
+    {
+      "topic": "Cost and access",
+      "questions": [
+        {
+          "id": "ga-076",
+          "q": "How do LLM APIs typically charge?",
+          "options": [
+            "Per million tokens of input and output, with different prices for each",
+            "Per second of conversation",
+            "Per user account",
+            "Per word in English"
+          ],
+          "answer": 0,
+          "explanation": "Pricing is per-token. Output tokens are usually 3-5x more expensive than input tokens."
+        },
+        {
+          "id": "ga-077",
+          "q": "Which is a way to get high-quality generative AI for FREE?",
+          "options": [
+            "Free tiers of Gemini, Claude, ChatGPT, Groq, Copilot, plus open-source models you can self-host",
+            "Pirating commercial software",
+            "Hacking provider servers",
+            "Asking your friend to share their password"
+          ],
+          "answer": 0,
+          "explanation": "Generous free tiers exist in 2026. Combined with open-source models, you can do serious AI work at $0 cost."
+        },
+        {
+          "id": "ga-078",
+          "q": "Why is generating a long response MORE expensive than a short one?",
+          "options": [
+            "Each generated token requires a separate forward pass through the model",
+            "Long responses use a different model",
+            "Servers charge more for long files",
+            "Long responses are taxed"
+          ],
+          "answer": 0,
+          "explanation": "Generation is sequential and per-token. 1000 tokens out ≈ 1000 model calls. Input is processed once in parallel — cheaper per token."
+        },
+        {
+          "id": "ga-079",
+          "q": "Which factor will MOST reduce your AI API bill?",
+          "options": [
+            "Caching responses for repeated/similar queries",
+            "Using more expensive models for simple tasks",
+            "Adding random characters to prompts",
+            "Sending each word as a separate API call"
+          ],
+          "answer": 0,
+          "explanation": "Caching is the single biggest cost lever. Many production AI apps cache 60-90% of requests."
+        },
+        {
+          "id": "ga-080",
+          "q": "What is 'inference' in AI?",
+          "options": [
+            "Running a trained model to generate a response — distinct from training",
+            "Inferring user feelings",
+            "Inferring missing data",
+            "An inference about API costs"
+          ],
+          "answer": 0,
+          "explanation": "Training = expensive one-time. Inference = cheap per-call, but you pay it every time anyone uses the model."
+        }
+      ]
+    },
+    {
+      "topic": "Working alongside AI",
+      "questions": [
+        {
+          "id": "ga-081",
+          "q": "Which is the BEST mental model for using AI?",
+          "options": [
+            "A brilliant but inexperienced intern — fast, eager, but needs supervision and clear instructions",
+            "A perfect oracle that's always right",
+            "A search engine with verified answers",
+            "A magic black box you should never question"
+          ],
+          "answer": 0,
+          "explanation": "The intern analogy is widely used by AI practitioners. Helpful, fast, but needs review on important work."
+        },
+        {
+          "id": "ga-082",
+          "q": "What is 'human-in-the-loop' (HITL) AI?",
+          "options": [
+            "AI systems where humans review, approve, or correct AI outputs at critical points",
+            "AI that needs human power to run",
+            "AI installed inside a human",
+            "AI that loops without humans"
+          ],
+          "answer": 0,
+          "explanation": "HITL is the responsible default for production AI. Full autonomy is appropriate only for low-stakes, easily-reversible actions."
+        },
+        {
+          "id": "ga-083",
+          "q": "Which jobs are LEAST likely to be fully replaced by current AI?",
+          "options": [
+            "Roles requiring physical presence, emotional judgment, accountability, and novel reasoning under uncertainty",
+            "All jobs are equally at risk",
+            "Only programmers are at risk",
+            "Only artists are at risk"
+          ],
+          "answer": 0,
+          "explanation": "AI changes most jobs faster than it replaces them. The pattern: tasks within jobs get automated; new tasks emerge."
+        },
+        {
+          "id": "ga-084",
+          "q": "What's a HEALTHY mindset toward AI in your career?",
+          "options": [
+            "Learn to use AI as a multiplier on your existing skills; treat it as a tool, not a threat or a savior",
+            "Pretend AI doesn't exist",
+            "Believe AI will solve every problem automatically",
+            "Refuse to use any AI ever"
+          ],
+          "answer": 0,
+          "explanation": "Practitioners who learn AI early become more valuable, not less. Fearing it or ignoring it both hurt long-term."
+        },
+        {
+          "id": "ga-085",
+          "q": "Which is TRUE about AI literacy in 2026?",
+          "options": [
+            "It's becoming a baseline skill — like email and Excel were in previous eras",
+            "It's only useful for engineers",
+            "It's a fad that will pass soon",
+            "It's banned in most countries"
+          ],
+          "answer": 0,
+          "explanation": "AI literacy (knowing how to prompt, what models can do, where they fail) is now expected across white-collar work."
+        }
+      ]
+    },
+    {
+      "topic": "AI in business and creative work",
+      "questions": [
+        {
+          "id": "ga-086",
+          "q": "Which business function has AI rapidly transformed?",
+          "options": [
+            "Customer support (chatbots, ticket triage, agent assist)",
+            "Physical product manufacturing only",
+            "Building construction",
+            "Cooking in restaurants"
+          ],
+          "answer": 0,
+          "explanation": "Customer support is one of the largest commercial AI markets — AI handles tier-1 questions, agents handle complex cases."
+        },
+        {
+          "id": "ga-087",
+          "q": "What is 'AI marketing copywriting'?",
+          "options": [
+            "Using AI to draft ad copy, email subject lines, social posts, and product descriptions at scale",
+            "Marketing AI products to customers",
+            "Writing about AI for newspapers",
+            "Translating ads via AI"
+          ],
+          "answer": 0,
+          "explanation": "Marketing teams use AI for high-volume copy variations. Brand consistency requires templates + human editing."
+        },
+        {
+          "id": "ga-088",
+          "q": "Which is a creative use of generative AI?",
+          "options": [
+            "Brainstorming, generating image references, drafting story outlines, exploring 'what if' variations",
+            "Replacing human creativity entirely",
+            "Plagiarizing other artists",
+            "Forging legal documents"
+          ],
+          "answer": 0,
+          "explanation": "AI shines at expanding the creative search space. Humans pick the gems and add the soul."
+        },
+        {
+          "id": "ga-089",
+          "q": "What's a key copyright concern with AI-generated content?",
+          "options": [
+            "Legal status of AI output and training data is still evolving; commercial use should be reviewed carefully",
+            "AI content is always public domain",
+            "AI content always belongs to OpenAI",
+            "AI content has no copyright issues anywhere"
+          ],
+          "answer": 0,
+          "explanation": "Copyright law for AI is unsettled in most jurisdictions in 2026. Major lawsuits are still in progress."
+        },
+        {
+          "id": "ga-090",
+          "q": "Why do many companies have an 'AI usage policy'?",
+          "options": [
+            "To clarify what data can be shared with AI, what AI output can be used commercially, and how to disclose AI assistance",
+            "To make AI sound official",
+            "Because regulators require it everywhere",
+            "To restrict AI to executives only"
+          ],
+          "answer": 0,
+          "explanation": "Clear policies protect both the company and employees by establishing safe and consistent AI usage practices."
+        }
+      ]
+    },
+    {
+      "topic": "The future of generative AI",
+      "questions": [
+        {
+          "id": "ga-091",
+          "q": "What does 'AGI' stand for?",
+          "options": [
+            "Artificial General Intelligence — AI matching or exceeding human cognitive ability across most domains",
+            "Automated Graphics Interface",
+            "Active Gaming Intelligence",
+            "Augmented Geographic Index"
+          ],
+          "answer": 0,
+          "explanation": "AGI is the long-debated goal of broadly capable AI. We are not there in 2026, but progress is rapid and disputed."
+        },
+        {
+          "id": "ga-092",
+          "q": "What is 'multimodal native' AI?",
+          "options": [
+            "Models built from the ground up to handle text, images, audio, and video as first-class inputs and outputs",
+            "AI that only works in native languages",
+            "AI made in the user's home country",
+            "AI with native ad placements"
+          ],
+          "answer": 0,
+          "explanation": "Earlier models bolted vision on later. Modern frontier models (GPT-4o, Gemini, Claude) are increasingly multimodal-native."
+        },
+        {
+          "id": "ga-093",
+          "q": "Which trend is making AI more affordable?",
+          "options": [
+            "Smaller, more efficient models that match larger models on common tasks at a fraction of the cost",
+            "Subscription prices going up",
+            "More expensive hardware",
+            "Fewer providers in the market"
+          ],
+          "answer": 0,
+          "explanation": "Model efficiency is improving fast. Phi, Llama 3.x small, Gemma, Qwen small are remarkable at tiny sizes."
+        },
+        {
+          "id": "ga-094",
+          "q": "What is 'on-device AI'?",
+          "options": [
+            "AI models running directly on your phone or laptop, with no cloud round-trip",
+            "AI installed at hospitals only",
+            "AI on movie theater devices",
+            "AI that requires a specific device store"
+          ],
+          "answer": 0,
+          "explanation": "Apple Intelligence, Pixel's Gemini Nano, on-device Llama, MLC — on-device AI brings privacy and offline use."
+        },
+        {
+          "id": "ga-095",
+          "q": "Which is a REALISTIC near-term AI development?",
+          "options": [
+            "AI agents that complete multi-step tasks across multiple apps autonomously",
+            "True consciousness in models",
+            "AI that solves all of physics",
+            "AI that eliminates need for any human work"
+          ],
+          "answer": 0,
+          "explanation": "Agentic AI for routine multi-step work is happening now (2025-2026). The grander claims remain speculative."
+        }
+      ]
+    },
+    {
+      "topic": "Getting started with AI",
+      "questions": [
+        {
+          "id": "ga-096",
+          "q": "What's the FIRST step for someone new to generative AI?",
+          "options": [
+            "Pick a free chatbot (ChatGPT, Claude, Gemini) and use it daily for real tasks to build intuition",
+            "Read 10 textbooks on linear algebra",
+            "Buy expensive hardware",
+            "Apply to AI PhD programs"
+          ],
+          "answer": 0,
+          "explanation": "Hands-on use teaches more in a week than passive reading does in a month. Just start using it."
+        },
+        {
+          "id": "ga-097",
+          "q": "Which is a GREAT first project to learn AI?",
+          "options": [
+            "Build a small tool that automates a real annoying task in your own life or work",
+            "Try to recreate GPT-4 from scratch",
+            "Launch a $1M startup before writing any code",
+            "Memorize the math behind transformers first"
+          ],
+          "answer": 0,
+          "explanation": "Real projects that solve real problems teach you the most. Start tiny. Ship. Iterate."
+        },
+        {
+          "id": "ga-098",
+          "q": "Where can you learn AI for FREE?",
+          "options": [
+            "DeepLearning.AI, freeCodeCamp, Hugging Face, Anthropic Docs, OpenAI Cookbook, YouTube channels",
+            "Only paid university programs",
+            "Only books costing $100+",
+            "Only by working at AI labs"
+          ],
+          "answer": 0,
+          "explanation": "Top-quality AI education is freely available online. The bottleneck is time and consistency, not money."
+        },
+        {
+          "id": "ga-099",
+          "q": "Which community is GOOD for AI learners?",
+          "options": [
+            "Hugging Face forums, Reddit r/LocalLLaMA, AI Discord servers, Twitter/X AI builders",
+            "Only academic conferences",
+            "No communities exist",
+            "Only invite-only paid masterminds"
+          ],
+          "answer": 0,
+          "explanation": "Active, generous AI communities exist on every platform. Learn out loud, ask questions, share what you build."
+        },
+        {
+          "id": "ga-100",
+          "q": "What's the MOST important meta-skill for working with AI long-term?",
+          "options": [
+            "Curiosity and the willingness to keep learning as the field evolves rapidly",
+            "Memorizing one specific model version forever",
+            "Avoiding all new tools after the first one you learn",
+            "Refusing to verify outputs"
+          ],
+          "answer": 0,
+          "explanation": "AI changes faster than any field in history. Stay curious. The fundamentals (prompting, evaluation, judgment) compound."
+        }
+      ]
+    }
+  ]
+}

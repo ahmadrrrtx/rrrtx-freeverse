@@ -1,0 +1,1314 @@
+{
+  "id": "react-basics",
+  "title": "React Basics",
+  "description": "Components, props, state, hooks. Build modern UIs with the most popular library.",
+  "category": "Web Dev",
+  "icon": "⚛️",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What React is",
+      "questions": [
+        {
+          "id": "rc-001",
+          "q": "What is React?",
+          "options": [
+            "A JavaScript library for building user interfaces using a component-based architecture",
+            "A full-stack framework with built-in database",
+            "A CSS preprocessor",
+            "A backend runtime like Node.js"
+          ],
+          "answer": 0,
+          "explanation": "React is intentionally a 'library' (just the UI layer). Frameworks like Next.js add routing, SSR, and conventions on top."
+        },
+        {
+          "id": "rc-002",
+          "q": "Who originally created React?",
+          "options": [
+            "Facebook (now Meta) — first released in 2013",
+            "Google",
+            "Microsoft",
+            "Twitter"
+          ],
+          "answer": 0,
+          "explanation": "React was open-sourced in 2013 and has dominated frontend development ever since. Meta still maintains it actively."
+        },
+        {
+          "id": "rc-003",
+          "q": "What problem does React PRIMARILY solve?",
+          "options": [
+            "Efficiently keeping the UI in sync with changing application state through a component model",
+            "Replacing all backend code",
+            "Compressing image files",
+            "Hosting websites"
+          ],
+          "answer": 0,
+          "explanation": "Before React, mutating the DOM imperatively was error-prone at scale. React's declarative model + diffing made complex UIs manageable."
+        },
+        {
+          "id": "rc-004",
+          "q": "What is the 'Virtual DOM' in React?",
+          "options": [
+            "An in-memory representation of the UI that React diffs against the previous version to update the real DOM efficiently",
+            "A virtual reality interface",
+            "A backup copy of HTML files",
+            "A database for storing components"
+          ],
+          "answer": 0,
+          "explanation": "React builds a Virtual DOM tree, compares it to the previous tree (reconciliation), and applies the minimum necessary real DOM changes."
+        },
+        {
+          "id": "rc-005",
+          "q": "Which is TRUE about React?",
+          "options": [
+            "It is declarative — you describe what the UI should look like for a given state, not how to update it",
+            "It is imperative — you manually update DOM elements",
+            "It only works in Chrome",
+            "It requires a database connection"
+          ],
+          "answer": 0,
+          "explanation": "Declarative thinking is the React mindset shift. You return 'the UI for this state'; React figures out the updates."
+        }
+      ]
+    },
+    {
+      "topic": "JSX",
+      "questions": [
+        {
+          "id": "rc-006",
+          "q": "What is JSX?",
+          "options": [
+            "A syntax extension that lets you write HTML-like markup directly inside JavaScript",
+            "A new programming language",
+            "A type of CSS",
+            "A bundler for React"
+          ],
+          "answer": 0,
+          "explanation": "JSX is syntactic sugar that compiles to React.createElement() calls. Optional but used in ~99% of React codebases."
+        },
+        {
+          "id": "rc-007",
+          "q": "Why is `className` used instead of `class` in JSX?",
+          "options": [
+            "`class` is a reserved word in JavaScript, so JSX uses `className` to avoid conflict",
+            "React doesn't support class attribute",
+            "It's just a Facebook preference",
+            "className is shorter to type"
+          ],
+          "answer": 0,
+          "explanation": "Same reason `for` becomes `htmlFor`. JSX attributes follow camelCase JavaScript naming conventions, not HTML conventions."
+        },
+        {
+          "id": "rc-008",
+          "q": "How do you embed a JavaScript expression in JSX?",
+          "options": [
+            "Wrap it in curly braces: <p>{user.name}</p>",
+            "Wrap it in {{ double braces }}",
+            "Use the @ symbol: <p>@user.name</p>",
+            "Use string concatenation only"
+          ],
+          "answer": 0,
+          "explanation": "Single curly braces enclose any JS expression — variable, function call, ternary, arithmetic. Statements (if, for) are NOT allowed."
+        },
+        {
+          "id": "rc-009",
+          "q": "What does this JSX render? `<div>{2 + 3}</div>`",
+          "options": [
+            "<div>5</div>",
+            "<div>2 + 3</div>",
+            "<div>{5}</div>",
+            "An error"
+          ],
+          "answer": 0,
+          "explanation": "JS expressions inside JSX evaluate first, then render. Useful for conditional rendering, calculations, and string interpolation."
+        },
+        {
+          "id": "rc-010",
+          "q": "Why must a JSX component return ONE root element (or a Fragment)?",
+          "options": [
+            "A function can only return one value — multiple sibling elements need a wrapper or <> </> Fragment",
+            "Multiple roots crash React",
+            "It's a CSS limitation",
+            "Multiple elements use more memory"
+          ],
+          "answer": 0,
+          "explanation": "Use <> ... </> (Fragment) when you don't want an extra wrapper DOM element. Available since React 16.2."
+        }
+      ]
+    },
+    {
+      "topic": "Components",
+      "questions": [
+        {
+          "id": "rc-011",
+          "q": "What is a React component?",
+          "options": [
+            "A reusable function that returns JSX describing a piece of UI",
+            "A CSS class",
+            "A backend route",
+            "A database table"
+          ],
+          "answer": 0,
+          "explanation": "Components are the fundamental unit of React. Compose them like LEGO bricks to build entire applications."
+        },
+        {
+          "id": "rc-012",
+          "q": "Which is a VALID React functional component?",
+          "options": [
+            "function Welcome() { return <h1>Hi</h1>; }",
+            "component Welcome() { <h1>Hi</h1> }",
+            "<Welcome>Hi</Welcome>",
+            "Welcome = h1('Hi')"
+          ],
+          "answer": 0,
+          "explanation": "Functional components are just JavaScript functions returning JSX. The dominant pattern since React Hooks (2019)."
+        },
+        {
+          "id": "rc-013",
+          "q": "Why must React component names start with a CAPITAL letter?",
+          "options": [
+            "JSX uses capitalization to distinguish custom components from native HTML tags",
+            "It's a CSS convention",
+            "Lowercase names cause runtime errors",
+            "It's a style preference only"
+          ],
+          "answer": 0,
+          "explanation": "<Button> renders your custom Button component; <button> renders the HTML element. Capitalization is meaningful, not stylistic."
+        },
+        {
+          "id": "rc-014",
+          "q": "Which is the DIFFERENCE between class and functional components today?",
+          "options": [
+            "Functional components with Hooks are the modern standard; class components are legacy",
+            "Class components are required for state",
+            "They are identical",
+            "Class components only work in mobile"
+          ],
+          "answer": 0,
+          "explanation": "Since 2019, functional components with Hooks do everything class components can do, with less boilerplate. Classes are maintained for legacy."
+        },
+        {
+          "id": "rc-015",
+          "q": "What is component COMPOSITION?",
+          "options": [
+            "Building complex UIs by combining smaller components — the React way to reuse code",
+            "Writing music for components",
+            "Compressing component files",
+            "A database technique"
+          ],
+          "answer": 0,
+          "explanation": "Composition over inheritance is a core React principle. A Page contains a Header, Sidebar, and Content — each a component."
+        }
+      ]
+    },
+    {
+      "topic": "Props",
+      "questions": [
+        {
+          "id": "rc-016",
+          "q": "What are 'props' in React?",
+          "options": [
+            "Read-only inputs passed from a parent component to a child component",
+            "Properties of the user",
+            "A type of CSS rule",
+            "Database properties"
+          ],
+          "answer": 0,
+          "explanation": "Props (short for properties) are how parents configure children. Treat props as immutable inside the receiving component."
+        },
+        {
+          "id": "rc-017",
+          "q": "How do you pass a prop to a component?",
+          "options": [
+            "<Greeting name='Ahmad' />",
+            "<Greeting>name = 'Ahmad'</Greeting>",
+            "<Greeting set='name=Ahmad'>",
+            "Greeting.props.name = 'Ahmad'"
+          ],
+          "answer": 0,
+          "explanation": "Props look like HTML attributes. String values use quotes; JS values use curly braces: <Greeting count={5} />."
+        },
+        {
+          "id": "rc-018",
+          "q": "How does the receiving component access its props?",
+          "options": [
+            "As a parameter: function Greeting({ name }) { return <p>Hi {name}</p>; }",
+            "Via window.props",
+            "Through a global props variable",
+            "Props are inaccessible"
+          ],
+          "answer": 0,
+          "explanation": "Destructuring props in the parameter list is the modern convention. Older code uses function Greeting(props) { props.name }."
+        },
+        {
+          "id": "rc-019",
+          "q": "Why are props READ-ONLY?",
+          "options": [
+            "Modifying props would break React's data flow assumptions and cause unpredictable bugs",
+            "JavaScript doesn't allow it",
+            "It's a performance optimization",
+            "Props are stored in a database"
+          ],
+          "answer": 0,
+          "explanation": "Data flows down (parent to child). To change shared data, lift state up to the common parent and pass new props down."
+        },
+        {
+          "id": "rc-020",
+          "q": "What does this prop spread do? `<Button {...props} />`",
+          "options": [
+            "Passes all properties of the props object as individual props to Button",
+            "Concatenates props as a string",
+            "Spreads props across multiple components",
+            "Deletes the props"
+          ],
+          "answer": 0,
+          "explanation": "Spread is handy but be careful — you can accidentally pass unwanted DOM attributes or override important props."
+        }
+      ]
+    },
+    {
+      "topic": "State and useState",
+      "questions": [
+        {
+          "id": "rc-021",
+          "q": "What is 'state' in React?",
+          "options": [
+            "Data that can change over time within a component and triggers a re-render when updated",
+            "The state of the server",
+            "A type of prop",
+            "An immutable constant"
+          ],
+          "answer": 0,
+          "explanation": "State is mutable data owned by a component. When state changes, React re-renders the component with the new value."
+        },
+        {
+          "id": "rc-022",
+          "q": "How do you declare state in a functional component?",
+          "options": [
+            "const [count, setCount] = useState(0);",
+            "let state = { count: 0 };",
+            "this.state = { count: 0 };",
+            "var count = state(0);"
+          ],
+          "answer": 0,
+          "explanation": "useState returns a pair: the current value and a setter function. Destructure it on declaration."
+        },
+        {
+          "id": "rc-023",
+          "q": "Why must you use the setter function (setCount) instead of `count = 5` to update state?",
+          "options": [
+            "Direct mutation doesn't trigger a re-render — React needs the setter to know state changed",
+            "JavaScript doesn't allow it",
+            "It's a syntax preference",
+            "Direct mutation is faster"
+          ],
+          "answer": 0,
+          "explanation": "React tracks state via the setter call. Direct assignment makes the new value invisible to React's reconciliation."
+        },
+        {
+          "id": "rc-024",
+          "q": "What's the SAFE way to update state based on the previous value?",
+          "options": [
+            "setCount(prev => prev + 1) — use the function form",
+            "setCount(count + 1)",
+            "count = count + 1",
+            "setCount(++count)"
+          ],
+          "answer": 0,
+          "explanation": "The function form guarantees you operate on the latest state, avoiding stale-closure bugs in batched updates."
+        },
+        {
+          "id": "rc-025",
+          "q": "What happens when state changes in a React component?",
+          "options": [
+            "React schedules a re-render of that component (and its children)",
+            "The page reloads",
+            "The browser refreshes",
+            "Nothing visible changes"
+          ],
+          "answer": 0,
+          "explanation": "Re-render means React calls the component function again with the new state, computes new JSX, diffs, and updates the real DOM."
+        }
+      ]
+    },
+    {
+      "topic": "Conditional rendering",
+      "questions": [
+        {
+          "id": "rc-026",
+          "q": "How do you conditionally render content in JSX?",
+          "options": [
+            "{isLoggedIn && <Dashboard />}  OR  {isLoggedIn ? <Dashboard /> : <Login />}",
+            "if (isLoggedIn) { <Dashboard /> }",
+            "switch (state) { case true: <Dashboard /> }",
+            "render(isLoggedIn, <Dashboard />)"
+          ],
+          "answer": 0,
+          "explanation": "JSX accepts JS expressions, not statements. Use && for show/hide, ternary for either/or, or extract logic to a helper function."
+        },
+        {
+          "id": "rc-027",
+          "q": "What's the BUG in this code? `{count && <p>Count: {count}</p>}`",
+          "options": [
+            "When count is 0, React renders '0' instead of nothing (0 is falsy but renderable)",
+            "It causes infinite re-renders",
+            "It crashes the browser",
+            "It is perfectly safe"
+          ],
+          "answer": 0,
+          "explanation": "Common gotcha. Use {count > 0 && <p>...</p>} or {!!count && <p>...</p>} to avoid showing '0' on the page."
+        },
+        {
+          "id": "rc-028",
+          "q": "Which is a CLEAN way to render different UIs based on a status?",
+          "options": [
+            "A switch statement OR an object map: const views = { loading: <Spin/>, error: <Err/> }; return views[status];",
+            "Multiple useState calls",
+            "Nested ternaries 5 levels deep",
+            "if statements outside JSX with no return"
+          ],
+          "answer": 0,
+          "explanation": "Object maps and early returns produce much cleaner code than nested ternary expressions."
+        },
+        {
+          "id": "rc-029",
+          "q": "How do you EARLY RETURN to skip rendering?",
+          "options": [
+            "if (!user) return null;  before the main return statement",
+            "Throw an error",
+            "Use a break statement",
+            "Return undefined inside JSX"
+          ],
+          "answer": 0,
+          "explanation": "Returning null tells React to render nothing for this component. Returning undefined or omitting return is an error."
+        },
+        {
+          "id": "rc-030",
+          "q": "Which approach AVOIDS deeply nested conditional JSX?",
+          "options": [
+            "Extract conditional logic into separate components or helper functions",
+            "Add more nesting",
+            "Use multiple useState",
+            "Use class components"
+          ],
+          "answer": 0,
+          "explanation": "When conditions get complex, that's a signal to compose smaller components. Each does one thing."
+        }
+      ]
+    },
+    {
+      "topic": "Lists and keys",
+      "questions": [
+        {
+          "id": "rc-031",
+          "q": "How do you render a list of items in JSX?",
+          "options": [
+            "{items.map(item => <li key={item.id}>{item.name}</li>)}",
+            "<for each={items}>...</for>",
+            "<list>{items}</list>",
+            "Use a for loop inside JSX"
+          ],
+          "answer": 0,
+          "explanation": ".map() transforms an array of data into an array of JSX. JSX accepts arrays of elements."
+        },
+        {
+          "id": "rc-032",
+          "q": "Why does React require a `key` prop on list items?",
+          "options": [
+            "Keys help React efficiently identify which items changed, were added, or removed between renders",
+            "Keys are required by HTML",
+            "Keys make the list look nicer",
+            "Keys add encryption"
+          ],
+          "answer": 0,
+          "explanation": "Without stable keys, React may incorrectly reuse DOM elements, causing visual bugs and lost component state."
+        },
+        {
+          "id": "rc-033",
+          "q": "What's a BAD key for list items?",
+          "options": [
+            "The array index — when items can be reordered, added, or removed",
+            "A unique database ID",
+            "A unique slug or UUID",
+            "A unique server-generated key"
+          ],
+          "answer": 0,
+          "explanation": "Index keys are OK for static lists. They cause subtle bugs for dynamic lists — use stable unique IDs whenever possible."
+        },
+        {
+          "id": "rc-034",
+          "q": "Where does the `key` prop go on a list item?",
+          "options": [
+            "On the outermost element returned in each iteration",
+            "On the <ul> wrapping the items",
+            "Inside the children",
+            "Nowhere — keys aren't needed"
+          ],
+          "answer": 0,
+          "explanation": "Each top-level element in a map() result needs a key. React reads it before rendering — it's not accessible via props."
+        },
+        {
+          "id": "rc-035",
+          "q": "What happens if you forget to add keys to a list?",
+          "options": [
+            "React warns in the console; bugs may appear when items are reordered or removed",
+            "The list won't render at all",
+            "The browser crashes",
+            "React adds random keys automatically"
+          ],
+          "answer": 0,
+          "explanation": "Always check the browser console for 'Each child in a list should have a unique key prop' warnings."
+        }
+      ]
+    },
+    {
+      "topic": "Event handling",
+      "questions": [
+        {
+          "id": "rc-036",
+          "q": "How do you attach a click handler in JSX?",
+          "options": [
+            "<button onClick={handleClick}>Click</button>",
+            "<button onclick='handleClick()'>Click</button>",
+            "<button on:click={handleClick}>Click</button>",
+            "<button click={handleClick}>Click</button>"
+          ],
+          "answer": 0,
+          "explanation": "React event names use camelCase (onClick, onChange). The value must be a function reference (not a function call)."
+        },
+        {
+          "id": "rc-037",
+          "q": "What's the BUG in `<button onClick={handleClick()}>Click</button>`?",
+          "options": [
+            "The function is CALLED immediately on render instead of on click — should be onClick={handleClick}",
+            "onClick is misspelled",
+            "The button needs an id",
+            "It's fine"
+          ],
+          "answer": 0,
+          "explanation": "Common beginner mistake. Pass the function reference, not the result of calling it. Use an arrow if you need arguments: onClick={() => handleClick(id)}."
+        },
+        {
+          "id": "rc-038",
+          "q": "How do you pass an ARGUMENT to an event handler?",
+          "options": [
+            "Wrap it in an arrow: onClick={() => handleClick(id)}",
+            "onClick={handleClick(id)}",
+            "onClick='handleClick(id)'",
+            "Arguments aren't supported"
+          ],
+          "answer": 0,
+          "explanation": "The arrow creates a new function that calls handleClick with id when clicked. Pre-binding (.bind) is the older pattern."
+        },
+        {
+          "id": "rc-039",
+          "q": "What is the React 'synthetic event'?",
+          "options": [
+            "A wrapper around the browser's native event that normalizes behavior across browsers",
+            "An event that didn't really happen",
+            "A custom event you create",
+            "A backup event"
+          ],
+          "answer": 0,
+          "explanation": "React's SyntheticEvent works identically across browsers. e.preventDefault(), e.target, e.stopPropagation() all work as expected."
+        },
+        {
+          "id": "rc-040",
+          "q": "How do you handle FORM input changes?",
+          "options": [
+            "onChange={(e) => setName(e.target.value)} on the <input>",
+            "Listen for the change globally",
+            "Read the input value after submit",
+            "React doesn't handle inputs"
+          ],
+          "answer": 0,
+          "explanation": "Controlled inputs: state drives the input value, onChange updates state. Predictable and easy to validate."
+        }
+      ]
+    },
+    {
+      "topic": "useEffect",
+      "questions": [
+        {
+          "id": "rc-041",
+          "q": "What is useEffect for?",
+          "options": [
+            "Running side effects (data fetching, subscriptions, manual DOM ops) after the component renders",
+            "Replacing useState",
+            "Validating forms",
+            "Routing between pages"
+          ],
+          "answer": 0,
+          "explanation": "Side effects = anything that touches the world outside React (network, timers, DOM, third-party libraries)."
+        },
+        {
+          "id": "rc-042",
+          "q": "What does the dependency array do? `useEffect(fn, [count])`",
+          "options": [
+            "Re-runs the effect only when items in the array change between renders",
+            "Passes count as an argument to fn",
+            "Disables the effect",
+            "Forces the effect to run forever"
+          ],
+          "answer": 0,
+          "explanation": "Empty array [] = run once after first render. No array = run after every render. [count] = run when count changes."
+        },
+        {
+          "id": "rc-043",
+          "q": "What does an EMPTY dependency array `[]` mean?",
+          "options": [
+            "The effect runs once after the initial mount (like componentDidMount)",
+            "The effect never runs",
+            "The effect runs on every render",
+            "The effect is disabled"
+          ],
+          "answer": 0,
+          "explanation": "Useful for one-time setup like fetching initial data or subscribing to an event. Watch out for stale closures over state/props."
+        },
+        {
+          "id": "rc-044",
+          "q": "How do you CLEAN UP inside useEffect (e.g., remove an event listener)?",
+          "options": [
+            "Return a cleanup function from the effect: useEffect(() => { ...; return () => cleanup(); })",
+            "Use a separate useCleanup hook",
+            "Cleanup is automatic",
+            "Throw a cleanup error"
+          ],
+          "answer": 0,
+          "explanation": "The returned function runs before the next effect AND on unmount. Always clean up timers, subscriptions, and event listeners."
+        },
+        {
+          "id": "rc-045",
+          "q": "What's a COMMON useEffect mistake?",
+          "options": [
+            "Forgetting a dependency, causing stale state/props inside the effect",
+            "Using too many hooks",
+            "Returning JSX from useEffect",
+            "Calling useEffect once"
+          ],
+          "answer": 0,
+          "explanation": "ESLint's react-hooks/exhaustive-deps rule catches these. Always include every prop/state used inside the effect."
+        }
+      ]
+    },
+    {
+      "topic": "Hooks overview",
+      "questions": [
+        {
+          "id": "rc-046",
+          "q": "What are React Hooks?",
+          "options": [
+            "Functions starting with 'use' that let you tap into React features (state, effects, context) from functional components",
+            "Class methods",
+            "A type of prop",
+            "Special HTML elements"
+          ],
+          "answer": 0,
+          "explanation": "Introduced in React 16.8 (2019). Hooks replaced class components for nearly all new React code."
+        },
+        {
+          "id": "rc-047",
+          "q": "What are the RULES of Hooks?",
+          "options": [
+            "Only call them at the top level (no loops/conditions) and only from React functions",
+            "Call them anywhere",
+            "Call them inside event handlers only",
+            "Hooks have no rules"
+          ],
+          "answer": 0,
+          "explanation": "Hooks track state by call order. Conditional calls would scramble the order. The ESLint plugin enforces this rule."
+        },
+        {
+          "id": "rc-048",
+          "q": "Which is NOT a built-in React hook?",
+          "options": [
+            "useDatabase",
+            "useState",
+            "useEffect",
+            "useContext"
+          ],
+          "answer": 0,
+          "explanation": "Built-ins: useState, useEffect, useContext, useReducer, useRef, useMemo, useCallback, useLayoutEffect, useId, useTransition."
+        },
+        {
+          "id": "rc-049",
+          "q": "What is a 'custom hook'?",
+          "options": [
+            "A function starting with 'use' that combines built-in hooks to package reusable stateful logic",
+            "A class method",
+            "A JSX element",
+            "A CSS rule"
+          ],
+          "answer": 0,
+          "explanation": "Custom hooks let you share logic between components without HOCs or render props. e.g., useLocalStorage, useFetch, useDebounce."
+        },
+        {
+          "id": "rc-050",
+          "q": "Why must custom hook names start with 'use'?",
+          "options": [
+            "React's linter relies on the prefix to enforce the Rules of Hooks",
+            "It's a JavaScript requirement",
+            "Compilation fails otherwise",
+            "Naming is purely cosmetic"
+          ],
+          "answer": 0,
+          "explanation": "The 'use' prefix tells the linter (and humans) 'this is a hook, treat it accordingly'."
+        }
+      ]
+    },
+    {
+      "topic": "useRef",
+      "questions": [
+        {
+          "id": "rc-051",
+          "q": "What is useRef PRIMARILY for?",
+          "options": [
+            "Holding a mutable value that doesn't trigger re-renders, or referencing a DOM element",
+            "Replacing useState",
+            "Routing between pages",
+            "Form validation"
+          ],
+          "answer": 0,
+          "explanation": "Two use cases: (1) imperative DOM access (focus, scroll), (2) mutable values you don't want to cause re-renders (timer IDs)."
+        },
+        {
+          "id": "rc-052",
+          "q": "How do you reference a DOM element with useRef?",
+          "options": [
+            "const inputRef = useRef(null); <input ref={inputRef} />; then inputRef.current.focus()",
+            "useRef passes DOM directly",
+            "Use document.querySelector inside JSX",
+            "Refs aren't allowed on DOM"
+          ],
+          "answer": 0,
+          "explanation": "Standard pattern for imperative DOM operations like focus(), scroll(), play()/pause() on media elements."
+        },
+        {
+          "id": "rc-053",
+          "q": "Does changing `ref.current` trigger a re-render?",
+          "options": [
+            "No — that's a key difference from useState",
+            "Yes, always",
+            "Only in development mode",
+            "Only on first change"
+          ],
+          "answer": 0,
+          "explanation": "Use refs when you need to store something across renders WITHOUT triggering re-renders. Perfect for timer IDs, prev values, etc."
+        },
+        {
+          "id": "rc-054",
+          "q": "What's a COMMON misuse of useRef?",
+          "options": [
+            "Using it for data that SHOULD trigger UI updates — that data belongs in state",
+            "Using it for DOM access",
+            "Using it inside hooks",
+            "Using it for timer IDs"
+          ],
+          "answer": 0,
+          "explanation": "If the UI needs to reflect a value, it's state. If you just need to remember something between renders without re-rendering, it's a ref."
+        },
+        {
+          "id": "rc-055",
+          "q": "When does React assign the ref to a DOM element?",
+          "options": [
+            "After the DOM is committed — meaning inside useEffect or event handlers, not during render",
+            "Before render",
+            "Never",
+            "Only after manually calling assignRef()"
+          ],
+          "answer": 0,
+          "explanation": "Accessing ref.current during render returns null. Use it in useEffect for DOM measurements or in event handlers."
+        }
+      ]
+    },
+    {
+      "topic": "Context API",
+      "questions": [
+        {
+          "id": "rc-056",
+          "q": "What does the Context API solve?",
+          "options": [
+            "Passing data through many levels of components without prop-drilling",
+            "Performance issues",
+            "Form validation",
+            "Routing"
+          ],
+          "answer": 0,
+          "explanation": "Great for global-ish data: theme, current user, locale. Avoid for frequently-changing values (causes re-renders everywhere)."
+        },
+        {
+          "id": "rc-057",
+          "q": "How do you create a context?",
+          "options": [
+            "const ThemeContext = createContext('light');",
+            "const theme = useContext('light');",
+            "<Context theme='light' />",
+            "context.create('light')"
+          ],
+          "answer": 0,
+          "explanation": "createContext returns an object with .Provider and .Consumer. The argument is the default value."
+        },
+        {
+          "id": "rc-058",
+          "q": "How do you PROVIDE a context value?",
+          "options": [
+            "<ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>",
+            "<ThemeContext value={theme} />",
+            "<Provider context='theme'>{children}</Provider>",
+            "Context.set(theme)"
+          ],
+          "answer": 0,
+          "explanation": "Every descendant of the Provider can access the value. Re-renders trigger when value changes (use a stable reference!)."
+        },
+        {
+          "id": "rc-059",
+          "q": "How does a component CONSUME a context value?",
+          "options": [
+            "const theme = useContext(ThemeContext);",
+            "const theme = ThemeContext.value;",
+            "const theme = props.theme;",
+            "context.get('theme')"
+          ],
+          "answer": 0,
+          "explanation": "useContext is the modern hook-based way. Components re-render whenever the context value reference changes."
+        },
+        {
+          "id": "rc-060",
+          "q": "What's a DOWNSIDE of overusing Context?",
+          "options": [
+            "Any change re-renders ALL consumers — splitting contexts or using state libraries (Zustand, Redux) may be better",
+            "It's deprecated",
+            "It's slow to set up",
+            "It doesn't work in production"
+          ],
+          "answer": 0,
+          "explanation": "Context is for low-frequency global data. For complex state, Zustand/Redux/Jotai offer fine-grained reactivity."
+        }
+      ]
+    },
+    {
+      "topic": "Forms and controlled inputs",
+      "questions": [
+        {
+          "id": "rc-061",
+          "q": "What is a CONTROLLED input in React?",
+          "options": [
+            "An input whose value is driven by React state (value + onChange)",
+            "An input wrapped in a try/catch",
+            "A read-only input",
+            "A disabled input"
+          ],
+          "answer": 0,
+          "explanation": "Controlled = single source of truth. Easier to validate, transform, and integrate with the rest of your state."
+        },
+        {
+          "id": "rc-062",
+          "q": "What's the difference between controlled and UNCONTROLLED inputs?",
+          "options": [
+            "Uncontrolled inputs manage their own state internally; you read the value via a ref when needed",
+            "Uncontrolled inputs don't work",
+            "Controlled inputs are deprecated",
+            "They're identical"
+          ],
+          "answer": 0,
+          "explanation": "Uncontrolled is fine for simple cases (file inputs, integrating with non-React code). Controlled is the React-y default."
+        },
+        {
+          "id": "rc-063",
+          "q": "How do you HANDLE a form submission in React?",
+          "options": [
+            "<form onSubmit={(e) => { e.preventDefault(); ...do stuff }}>",
+            "Use a regular HTML form submission",
+            "Submit via a global handler",
+            "React forms can't be submitted"
+          ],
+          "answer": 0,
+          "explanation": "e.preventDefault() stops the default page reload. Then handle the data with state or pass to a fetch call."
+        },
+        {
+          "id": "rc-064",
+          "q": "Why use a form library like react-hook-form for complex forms?",
+          "options": [
+            "Validation, error handling, performance, and less boilerplate for multi-field forms",
+            "It's required by React",
+            "It replaces JSX",
+            "It speeds up the browser"
+          ],
+          "answer": 0,
+          "explanation": "React Hook Form, Formik, and TanStack Form are popular choices. For 2-3 fields, plain useState is fine."
+        },
+        {
+          "id": "rc-065",
+          "q": "What's the BEST way to handle form state for many fields?",
+          "options": [
+            "A single state object: const [form, setForm] = useState({ name: '', email: '' });",
+            "One useState per field is always best",
+            "Store fields in refs",
+            "Don't use state at all"
+          ],
+          "answer": 0,
+          "explanation": "A single object is cleaner for many related fields. Update with spread: setForm(prev => ({ ...prev, [name]: value }))."
+        }
+      ]
+    },
+    {
+      "topic": "Fetching data",
+      "questions": [
+        {
+          "id": "rc-066",
+          "q": "What's the SIMPLE way to fetch data on component mount?",
+          "options": [
+            "useEffect(() => { fetch(url).then(r => r.json()).then(setData); }, []);",
+            "Fetch inside the return statement",
+            "Use a useState callback",
+            "Fetch in the constructor"
+          ],
+          "answer": 0,
+          "explanation": "Empty dependency array = run once after mount. Always handle loading, error, and success states properly."
+        },
+        {
+          "id": "rc-067",
+          "q": "What states does a typical data-fetching component track?",
+          "options": [
+            "loading, error, data — the three states of any async operation",
+            "Only data",
+            "data and error",
+            "Only loading"
+          ],
+          "answer": 0,
+          "explanation": "Loading spinners, error messages, and success rendering are all expected UX. Plan for all three from day one."
+        },
+        {
+          "id": "rc-068",
+          "q": "Why is React Query (TanStack Query) popular for data fetching?",
+          "options": [
+            "It handles caching, refetching, deduplication, and loading/error states with minimal boilerplate",
+            "It replaces React entirely",
+            "It's required by React",
+            "It's the only way to fetch data"
+          ],
+          "answer": 0,
+          "explanation": "TanStack Query (or SWR) is the modern standard. Eliminates 90% of the boilerplate of raw useEffect + useState."
+        },
+        {
+          "id": "rc-069",
+          "q": "What's a COMMON useEffect fetching bug?",
+          "options": [
+            "Not handling the case where the component unmounts before the fetch resolves (potential memory leak)",
+            "Fetching too much data",
+            "Using fetch instead of axios",
+            "Calling JSON.parse twice"
+          ],
+          "answer": 0,
+          "explanation": "Use AbortController to cancel pending requests on unmount, or check a 'cancelled' flag before calling setState."
+        },
+        {
+          "id": "rc-070",
+          "q": "What is 'race condition' in React fetching?",
+          "options": [
+            "A new fetch's response arriving AFTER an older fetch's response, causing stale data to overwrite fresh data",
+            "Two components racing",
+            "A CSS animation bug",
+            "Slow internet"
+          ],
+          "answer": 0,
+          "explanation": "Common when user changes filters/search rapidly. Cancel old requests (AbortController) or check request IDs before updating state."
+        }
+      ]
+    },
+    {
+      "topic": "Performance and rendering",
+      "questions": [
+        {
+          "id": "rc-071",
+          "q": "When does a React component RE-RENDER?",
+          "options": [
+            "When its state changes, its props change, or its parent re-renders",
+            "Every second automatically",
+            "Only on user click",
+            "Only on page reload"
+          ],
+          "answer": 0,
+          "explanation": "Understanding this is foundational. Most React perf bugs are unnecessary re-renders triggered by changing props/parents."
+        },
+        {
+          "id": "rc-072",
+          "q": "What does React.memo do?",
+          "options": [
+            "Wraps a component to skip re-renders when its props haven't changed (shallow comparison)",
+            "Stores component history",
+            "Memorizes user inputs",
+            "Speeds up CSS rendering"
+          ],
+          "answer": 0,
+          "explanation": "Useful for expensive children with stable props. Don't slap it on every component — premature optimization."
+        },
+        {
+          "id": "rc-073",
+          "q": "What is useMemo for?",
+          "options": [
+            "Caching the result of an expensive calculation between renders",
+            "Storing components",
+            "Replacing useState",
+            "Memorizing event handlers"
+          ],
+          "answer": 0,
+          "explanation": "useMemo(() => heavyCalc(data), [data]). Only re-runs when data changes. Use when calculations are actually expensive."
+        },
+        {
+          "id": "rc-074",
+          "q": "What is useCallback for?",
+          "options": [
+            "Memoizing a function reference so child components don't re-render when the parent re-renders",
+            "Replacing useEffect",
+            "Calling APIs",
+            "Validating inputs"
+          ],
+          "answer": 0,
+          "explanation": "Pairs with React.memo'd children. Without useCallback, every parent render creates a new function = new prop = child re-renders."
+        },
+        {
+          "id": "rc-075",
+          "q": "What is the React Compiler (introduced in 2024)?",
+          "options": [
+            "An optimizing compiler that auto-memoizes components, reducing the need for manual React.memo/useMemo/useCallback",
+            "A new bundler",
+            "A replacement for Webpack",
+            "A CSS preprocessor"
+          ],
+          "answer": 0,
+          "explanation": "React Compiler analyzes your code at build time and adds memoization automatically. The future of React performance."
+        }
+      ]
+    },
+    {
+      "topic": "Routing",
+      "questions": [
+        {
+          "id": "rc-076",
+          "q": "Why doesn't React include routing out of the box?",
+          "options": [
+            "React is a UI library, not a framework — routing is a separate concern handled by libraries or frameworks",
+            "Routing isn't important",
+            "It's coming soon",
+            "Browsers handle it"
+          ],
+          "answer": 0,
+          "explanation": "Use React Router for SPAs, or Next.js / Remix / TanStack Router for framework-level routing."
+        },
+        {
+          "id": "rc-077",
+          "q": "What is React Router?",
+          "options": [
+            "The most popular client-side routing library for React SPAs",
+            "Part of React core",
+            "A backend framework",
+            "A CSS framework"
+          ],
+          "answer": 0,
+          "explanation": "React Router (now v6+) handles URL → component mapping, nested routes, navigation, and dynamic params."
+        },
+        {
+          "id": "rc-078",
+          "q": "What is a 'Single Page Application' (SPA)?",
+          "options": [
+            "A web app that loads one HTML page and uses JS to dynamically update content without full page reloads",
+            "An app with exactly one page",
+            "A page with a single feature",
+            "An app that's only on one server"
+          ],
+          "answer": 0,
+          "explanation": "SPAs feel app-like — no flash between pages. Drawback: heavier initial load, weaker default SEO."
+        },
+        {
+          "id": "rc-079",
+          "q": "What is the difference between React Router and Next.js routing?",
+          "options": [
+            "React Router is client-side; Next.js routing is filesystem-based with SSR/SSG built in",
+            "They are identical",
+            "React Router is deprecated",
+            "Next.js doesn't have routing"
+          ],
+          "answer": 0,
+          "explanation": "Next.js auto-routes based on /app or /pages folder structure and renders server-side by default. Different paradigm."
+        },
+        {
+          "id": "rc-080",
+          "q": "How do you navigate programmatically in React Router?",
+          "options": [
+            "const navigate = useNavigate(); navigate('/about');",
+            "window.location = '/about'",
+            "<navigate to='/about' />",
+            "React.go('/about')"
+          ],
+          "answer": 0,
+          "explanation": "useNavigate is the hook for programmatic navigation (e.g., after a form submit). For simple links, use <Link to='/about'>."
+        }
+      ]
+    },
+    {
+      "topic": "State management at scale",
+      "questions": [
+        {
+          "id": "rc-081",
+          "q": "When do you NEED a state management library beyond useState?",
+          "options": [
+            "When many distant components need to share and update the same data",
+            "Always — useState is for beginners",
+            "Never — useState is enough for any app",
+            "Only for class components"
+          ],
+          "answer": 0,
+          "explanation": "useState is fine for local component state. Cross-cutting global state (user, theme, cart) benefits from a state library."
+        },
+        {
+          "id": "rc-082",
+          "q": "What is Zustand?",
+          "options": [
+            "A small, fast state management library with a minimal API — no boilerplate, no providers",
+            "A type of useState hook",
+            "A CSS framework",
+            "A backend ORM"
+          ],
+          "answer": 0,
+          "explanation": "Zustand has surpassed Redux as the popular choice for new projects. Tiny API, great DX, no Provider wrapping required."
+        },
+        {
+          "id": "rc-083",
+          "q": "What problem does Redux historically solve?",
+          "options": [
+            "Predictable centralized state management with strict patterns (actions, reducers, store)",
+            "DOM manipulation",
+            "Styling",
+            "Routing"
+          ],
+          "answer": 0,
+          "explanation": "Redux dominated 2016-2020. Still widely used in enterprise. Modern alternatives (Zustand, Jotai, Redux Toolkit) reduce boilerplate."
+        },
+        {
+          "id": "rc-084",
+          "q": "What is TanStack Query for?",
+          "options": [
+            "Server state — caching, syncing, and updating data fetched from APIs",
+            "Local UI state",
+            "Routing",
+            "Form validation"
+          ],
+          "answer": 0,
+          "explanation": "Big insight: server state ≠ client state. Use Query for the former, Zustand/useState for the latter. They complement each other."
+        },
+        {
+          "id": "rc-085",
+          "q": "Which is a HEALTHY state management strategy?",
+          "options": [
+            "useState for local, Context for theme/auth, TanStack Query for server data, Zustand for complex global UI state",
+            "Redux for everything",
+            "useState for everything",
+            "Don't manage state at all"
+          ],
+          "answer": 0,
+          "explanation": "Right tool for the job. Most apps don't need a single all-encompassing state library."
+        }
+      ]
+    },
+    {
+      "topic": "Common pitfalls",
+      "questions": [
+        {
+          "id": "rc-086",
+          "q": "What happens if you call a hook inside an `if` statement?",
+          "options": [
+            "React throws an error or warns — hooks must be called in the same order every render",
+            "Nothing — it works fine",
+            "Performance improves",
+            "Hooks become optional"
+          ],
+          "answer": 0,
+          "explanation": "Hooks rely on call order. Conditional calls break that. The ESLint plugin react-hooks/rules-of-hooks catches this."
+        },
+        {
+          "id": "rc-087",
+          "q": "Why is mutating state directly (state.push(item)) a BUG?",
+          "options": [
+            "React compares references — mutating doesn't create a new reference, so React doesn't detect the change",
+            "It's a JavaScript syntax error",
+            "It crashes the page",
+            "It's a CSS issue"
+          ],
+          "answer": 0,
+          "explanation": "Always create new objects/arrays: setItems([...items, item]). This is core to React's update detection."
+        },
+        {
+          "id": "rc-088",
+          "q": "What's the FIX for an infinite re-render loop with useEffect?",
+          "options": [
+            "Check the dependency array — a non-stable reference (object/array/function) is recreated every render",
+            "Use more useEffect calls",
+            "Disable strict mode",
+            "Refresh the page"
+          ],
+          "answer": 0,
+          "explanation": "Objects/arrays/functions get new references each render. Wrap them in useMemo/useCallback or restructure to compare primitives."
+        },
+        {
+          "id": "rc-089",
+          "q": "What does React's Strict Mode do in development?",
+          "options": [
+            "Intentionally double-invokes effects and renders to surface bugs from impure code or missing cleanup",
+            "Disables all React features",
+            "Speeds up the app",
+            "Required for production"
+          ],
+          "answer": 0,
+          "explanation": "Strict Mode catches side effects and stale closures in dev. Production behavior is unchanged. Keep it on; fix what it surfaces."
+        },
+        {
+          "id": "rc-090",
+          "q": "Why should event handlers be defined OUTSIDE the JSX return?",
+          "options": [
+            "For readability and to easily wrap in useCallback if needed — but inline arrows are fine for simple cases",
+            "It's required",
+            "Inline handlers cause errors",
+            "Inline handlers don't work"
+          ],
+          "answer": 0,
+          "explanation": "Both work. Extract complex handlers for clarity. Inline arrows are fine for one-liners — premature optimization is the enemy."
+        }
+      ]
+    },
+    {
+      "topic": "React ecosystem and tooling",
+      "questions": [
+        {
+          "id": "rc-091",
+          "q": "What is Vite?",
+          "options": [
+            "A fast modern build tool and dev server used to scaffold React (and other) projects",
+            "A React component library",
+            "A state management tool",
+            "A type of database"
+          ],
+          "answer": 0,
+          "explanation": "Vite replaced Create React App as the recommended starter for SPAs. Lightning-fast HMR and lean output."
+        },
+        {
+          "id": "rc-092",
+          "q": "What is Next.js?",
+          "options": [
+            "A React framework with file-system routing, SSR, SSG, API routes, and image optimization",
+            "A React replacement",
+            "A CSS framework",
+            "A database"
+          ],
+          "answer": 0,
+          "explanation": "Next.js is the default for production React apps that need SEO, performance, or backend logic in one repo."
+        },
+        {
+          "id": "rc-093",
+          "q": "What is Tailwind CSS?",
+          "options": [
+            "A utility-first CSS framework commonly used with React (className-based styling)",
+            "A React state library",
+            "A type of hook",
+            "A bundler"
+          ],
+          "answer": 0,
+          "explanation": "Tailwind dominates modern React styling for many teams. Pairs well with shadcn/ui components."
+        },
+        {
+          "id": "rc-094",
+          "q": "What is shadcn/ui?",
+          "options": [
+            "A set of beautifully designed React components you COPY into your project (not an npm install)",
+            "An icon library",
+            "A React replacement",
+            "A backend framework"
+          ],
+          "answer": 0,
+          "explanation": "shadcn/ui ships source code to your repo. You own and modify it. Built on Radix primitives + Tailwind. Huge in 2024-2026."
+        },
+        {
+          "id": "rc-095",
+          "q": "What is TypeScript's role in modern React?",
+          "options": [
+            "Adds static typing to props, state, and APIs — catches bugs at compile time before they reach production",
+            "Replaces React",
+            "Required for React to work",
+            "A styling library"
+          ],
+          "answer": 0,
+          "explanation": "Most serious React projects use TypeScript. The DX with typed props and IntelliSense is dramatically better than plain JS."
+        }
+      ]
+    },
+    {
+      "topic": "Modern React (Server Components, RSC)",
+      "questions": [
+        {
+          "id": "rc-096",
+          "q": "What are React Server Components (RSC)?",
+          "options": [
+            "Components that render on the server, never ship to the client, and can directly access databases/APIs",
+            "Components hosted on a remote server",
+            "A new type of class component",
+            "Components that only work offline"
+          ],
+          "answer": 0,
+          "explanation": "RSC is React's biggest architectural shift in years. Default in Next.js App Router; reduces client JS bundle size dramatically."
+        },
+        {
+          "id": "rc-097",
+          "q": "What's the DIFFERENCE between Server Components and Client Components?",
+          "options": [
+            "Server Components run only on the server; Client Components are interactive and run in the browser (marked with 'use client')",
+            "Server components are faster but identical",
+            "Client components are deprecated",
+            "There is no difference"
+          ],
+          "answer": 0,
+          "explanation": "Mental model: render data on server (RSC); add interactivity at the leaves with 'use client' components."
+        },
+        {
+          "id": "rc-098",
+          "q": "What does the 'use client' directive do?",
+          "options": [
+            "Marks a file/component as client-side — it runs in the browser and can use state, effects, event handlers",
+            "Forces server rendering",
+            "Adds CSS class 'client'",
+            "Disables hooks"
+          ],
+          "answer": 0,
+          "explanation": "By default in App Router, components are Server. Add 'use client' at the top of a file to opt into client behavior."
+        },
+        {
+          "id": "rc-099",
+          "q": "What are React Server Actions?",
+          "options": [
+            "Functions marked 'use server' that run on the server and can be called from client components — used for mutations",
+            "Reusable server scripts",
+            "Cron jobs",
+            "Server-side hooks"
+          ],
+          "answer": 0,
+          "explanation": "Server Actions enable form submissions and mutations without writing API routes. Type-safe RPC built into React/Next."
+        },
+        {
+          "id": "rc-100",
+          "q": "What's the BEST way to keep up with React in 2026 and beyond?",
+          "options": [
+            "Follow the official React blog, build projects, read React Docs (react.dev), follow core team on X/Twitter",
+            "Memorize React 16 patterns forever",
+            "Avoid all updates",
+            "Only use legacy class components"
+          ],
+          "answer": 0,
+          "explanation": "React evolves fast. The new docs (react.dev) and the React blog are the canonical sources of truth."
+        }
+      ]
+    }
+  ]
+}

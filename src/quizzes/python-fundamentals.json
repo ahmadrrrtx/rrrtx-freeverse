@@ -1,0 +1,1314 @@
+{
+  "id": "python-fundamentals",
+  "title": "Python Fundamentals",
+  "description": "The world's most popular language. Syntax, data types, control flow, functions.",
+  "category": "Programming",
+  "icon": "🐍",
+  "estimatedMinutes": 20,
+  "passingScore": 80,
+  "questionsPerAttempt": 20,
+  "durationSec": 1200,
+  "version": "1.0",
+  "subPools": [
+    {
+      "topic": "What Python is",
+      "questions": [
+        {
+          "id": "py-001",
+          "q": "What is Python?",
+          "options": [
+            "A high-level, interpreted, general-purpose programming language known for readable syntax",
+            "A compiled low-level language like C",
+            "A markup language like HTML",
+            "A database query language"
+          ],
+          "answer": 0,
+          "explanation": "Python's design philosophy emphasizes readability. It's the most-used language for AI, data science, scripting, and automation."
+        },
+        {
+          "id": "py-002",
+          "q": "Who created Python?",
+          "options": [
+            "Guido van Rossum, first released in 1991",
+            "Microsoft in 2005",
+            "Google in 2010",
+            "Linus Torvalds in 1991"
+          ],
+          "answer": 0,
+          "explanation": "Guido created Python as a successor to ABC language. The name is from Monty Python's Flying Circus, not the snake."
+        },
+        {
+          "id": "py-003",
+          "q": "Which is a TRUE statement about Python?",
+          "options": [
+            "It is dynamically typed — you don't declare variable types explicitly",
+            "It requires variable type declarations like Java",
+            "It must be compiled before running",
+            "It only works on Windows"
+          ],
+          "answer": 0,
+          "explanation": "Type inference at runtime makes Python flexible but means errors that other languages catch at compile time appear at runtime."
+        },
+        {
+          "id": "py-004",
+          "q": "Why is Python especially popular for AI and data science?",
+          "options": [
+            "Rich ecosystem (NumPy, Pandas, PyTorch, TensorFlow), readable syntax, and massive community",
+            "It's the fastest language",
+            "It's the only language that supports AI",
+            "It compiles to GPU directly"
+          ],
+          "answer": 0,
+          "explanation": "Python won AI/data dominance through libraries, not speed. The heavy computation happens in C/C++/CUDA under the hood."
+        },
+        {
+          "id": "py-005",
+          "q": "What does 'Pythonic' mean?",
+          "options": [
+            "Code that follows Python's idioms and style conventions — clean, readable, expressive",
+            "Code that's about snakes",
+            "Code that's intentionally obscure",
+            "Code translated from another language"
+          ],
+          "answer": 0,
+          "explanation": "The Zen of Python (`import this`) outlines the principles. 'There should be one obvious way to do it' is the most quoted."
+        }
+      ]
+    },
+    {
+      "topic": "Syntax and indentation",
+      "questions": [
+        {
+          "id": "py-006",
+          "q": "What does Python use to define code blocks?",
+          "options": [
+            "Indentation (whitespace) — typically 4 spaces",
+            "Curly braces { }",
+            "Begin/end keywords",
+            "Square brackets [ ]"
+          ],
+          "answer": 0,
+          "explanation": "No braces, no semicolons. Indentation IS the syntax. Mixing tabs and spaces causes IndentationError."
+        },
+        {
+          "id": "py-007",
+          "q": "Which is the CORRECT way to write an if statement?",
+          "options": [
+            "if x > 5:\\n    print('big')",
+            "if (x > 5) { print('big'); }",
+            "if x > 5 then print('big')",
+            "if x > 5: print('big');"
+          ],
+          "answer": 0,
+          "explanation": "Colon ends the condition; the next line is indented. No parentheses required around the condition."
+        },
+        {
+          "id": "py-008",
+          "q": "How do you write a single-line comment in Python?",
+          "options": [
+            "# This is a comment",
+            "// This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+          ],
+          "answer": 0,
+          "explanation": "# starts a single-line comment. Triple quotes ''' ''' are technically strings but commonly used as multi-line docs."
+        },
+        {
+          "id": "py-009",
+          "q": "Are semicolons required at the end of Python statements?",
+          "options": [
+            "No — newlines end statements (though semicolons CAN separate multiple statements on one line)",
+            "Yes, always",
+            "Only at the end of functions",
+            "Only in scripts, not in modules"
+          ],
+          "answer": 0,
+          "explanation": "Python uses newlines as statement terminators. Putting multiple statements on one line with ; is legal but unpythonic."
+        },
+        {
+          "id": "py-010",
+          "q": "What is PEP 8?",
+          "options": [
+            "The official Python style guide — covers naming, spacing, line length, and conventions",
+            "The 8th Python version",
+            "A Python package",
+            "A type of comment"
+          ],
+          "answer": 0,
+          "explanation": "PEP 8 is the most influential PEP. Tools like Black, Ruff, and flake8 enforce or autoformat to PEP 8 conventions."
+        }
+      ]
+    },
+    {
+      "topic": "Variables and basic types",
+      "questions": [
+        {
+          "id": "py-011",
+          "q": "How do you assign a value to a variable in Python?",
+          "options": [
+            "x = 5",
+            "var x = 5",
+            "let x = 5",
+            "int x = 5;"
+          ],
+          "answer": 0,
+          "explanation": "No declaration keyword and no type annotation needed. Python figures out the type from the value."
+        },
+        {
+          "id": "py-012",
+          "q": "What are the BASIC numeric types in Python?",
+          "options": [
+            "int (whole numbers), float (decimals), complex (real + imaginary)",
+            "Just one number type",
+            "int, double, decimal",
+            "number and bignumber"
+          ],
+          "answer": 0,
+          "explanation": "Python's int has arbitrary precision — no overflow on huge numbers. float follows IEEE 754 (same precision quirks as JS/Java)."
+        },
+        {
+          "id": "py-013",
+          "q": "What does `type(5)` return?",
+          "options": [
+            "<class 'int'>",
+            "'int'",
+            "Number",
+            "5"
+          ],
+          "answer": 0,
+          "explanation": "type() returns the class object. Use isinstance(x, int) for type checks in production code (it respects inheritance)."
+        },
+        {
+          "id": "py-014",
+          "q": "What's the difference between `True` and `true` in Python?",
+          "options": [
+            "Only `True` (capitalized) is a valid boolean — Python is case-sensitive",
+            "They are identical",
+            "true is for older Python versions",
+            "Both work in all cases"
+          ],
+          "answer": 0,
+          "explanation": "Common gotcha for JS/Java devs. Python's booleans are True and False (capital T/F). Also: None, not null."
+        },
+        {
+          "id": "py-015",
+          "q": "What is `None` in Python?",
+          "options": [
+            "A singleton representing the absence of a value (similar to null in other languages)",
+            "The number zero",
+            "An empty string",
+            "An error value"
+          ],
+          "answer": 0,
+          "explanation": "Check with `x is None`, never `x == None`. There's only one None object in memory; identity check is faster and idiomatic."
+        }
+      ]
+    },
+    {
+      "topic": "Strings",
+      "questions": [
+        {
+          "id": "py-016",
+          "q": "Which is a VALID way to create a string in Python?",
+          "options": [
+            "Both 'hello' and \"hello\" (single or double quotes)",
+            "Only \"hello\"",
+            "Only 'hello'",
+            "Strings must use backticks"
+          ],
+          "answer": 0,
+          "explanation": "Single and double quotes are interchangeable. Triple-quoted '''...''' allow multi-line strings."
+        },
+        {
+          "id": "py-017",
+          "q": "What is an f-string?",
+          "options": [
+            "A string literal prefixed with f that allows {expression} interpolation: f'Hi {name}'",
+            "A fast-loading string",
+            "A formatted string from a file",
+            "A frozen string"
+          ],
+          "answer": 0,
+          "explanation": "f-strings (Python 3.6+) are the modern, fastest way to format strings. Far more readable than % or .format()."
+        },
+        {
+          "id": "py-018",
+          "q": "What does `'hello'.upper()` return?",
+          "options": [
+            "'HELLO' — strings have methods like upper(), lower(), strip(), split()",
+            "Modifies the original in place",
+            "An error",
+            "['H','E','L','L','O']"
+          ],
+          "answer": 0,
+          "explanation": "Strings are IMMUTABLE in Python. All string methods return a new string; they never modify the original."
+        },
+        {
+          "id": "py-019",
+          "q": "How do you check if a substring exists in a string?",
+          "options": [
+            "'py' in 'python'  → True",
+            "'python'.contains('py')",
+            "'python'.find('py') == True",
+            "'python'.has('py')"
+          ],
+          "answer": 0,
+          "explanation": "The `in` operator is the most pythonic. Also works on lists, dicts (checks keys), sets, and any iterable."
+        },
+        {
+          "id": "py-020",
+          "q": "What does `'a-b-c'.split('-')` return?",
+          "options": [
+            "['a', 'b', 'c'] — a list",
+            "'abc'",
+            "'a b c'",
+            "An error"
+          ],
+          "answer": 0,
+          "explanation": "split converts string → list. The inverse is '-'.join(['a','b','c']) → 'a-b-c'. Master both."
+        }
+      ]
+    },
+    {
+      "topic": "Lists",
+      "questions": [
+        {
+          "id": "py-021",
+          "q": "How do you create a list in Python?",
+          "options": [
+            "fruits = ['apple', 'banana', 'mango']",
+            "fruits = ('apple', 'banana')",
+            "fruits = {'apple', 'banana'}",
+            "fruits = <'apple', 'banana'>"
+          ],
+          "answer": 0,
+          "explanation": "Square brackets create a list. Parentheses make a tuple. Curly braces make a set (or dict)."
+        },
+        {
+          "id": "py-022",
+          "q": "What does `fruits.append('orange')` do?",
+          "options": [
+            "Adds 'orange' to the end of the list, modifying it in place (returns None)",
+            "Returns a new list with 'orange'",
+            "Replaces all items",
+            "Removes 'orange'"
+          ],
+          "answer": 0,
+          "explanation": "Many list methods mutate in place and return None. Common bug: `fruits = fruits.append(x)` → fruits becomes None."
+        },
+        {
+          "id": "py-023",
+          "q": "How do you access the LAST item in a list?",
+          "options": [
+            "fruits[-1]",
+            "fruits[len(fruits)]",
+            "fruits.last()",
+            "fruits[fruits.length - 1]"
+          ],
+          "answer": 0,
+          "explanation": "Negative indices count from the end. [-1] is last, [-2] is second-to-last. Very pythonic."
+        },
+        {
+          "id": "py-024",
+          "q": "What does `nums[1:4]` do (slicing)?",
+          "options": [
+            "Returns a new list with elements at index 1, 2, 3 (4 is excluded)",
+            "Returns elements 1 through 4 inclusive",
+            "Returns indices [1, 4]",
+            "Removes elements 1-4"
+          ],
+          "answer": 0,
+          "explanation": "Slicing is end-exclusive. [start:stop:step]. nums[::-1] is the classic reverse-a-list trick."
+        },
+        {
+          "id": "py-025",
+          "q": "What is a LIST COMPREHENSION?",
+          "options": [
+            "A concise way to build a new list: [x*2 for x in nums if x > 0]",
+            "A type of for loop",
+            "A list method",
+            "Documentation for lists"
+          ],
+          "answer": 0,
+          "explanation": "List comprehensions are pythonic, fast, and readable for simple transformations. Don't nest them deeply — clarity matters."
+        }
+      ]
+    },
+    {
+      "topic": "Dictionaries",
+      "questions": [
+        {
+          "id": "py-026",
+          "q": "How do you create a dictionary in Python?",
+          "options": [
+            "user = {'name': 'Ahmad', 'age': 17}",
+            "user = ['name': 'Ahmad']",
+            "user = ('name', 'Ahmad')",
+            "user = dict<'name', 'Ahmad'>"
+          ],
+          "answer": 0,
+          "explanation": "Curly braces with key:value pairs. Also: dict(name='Ahmad', age=17). Keys must be hashable (strings, numbers, tuples)."
+        },
+        {
+          "id": "py-027",
+          "q": "How do you access a dictionary value by key?",
+          "options": [
+            "user['name'] or user.get('name')",
+            "user->name",
+            "user.name",
+            "user(name)"
+          ],
+          "answer": 0,
+          "explanation": "user['name'] raises KeyError if missing; user.get('name') returns None. get also accepts a default: user.get('age', 0)."
+        },
+        {
+          "id": "py-028",
+          "q": "What does `user.get('age', 0)` do?",
+          "options": [
+            "Returns user['age'] if it exists, otherwise 0",
+            "Always returns 0",
+            "Always returns user['age']",
+            "Throws KeyError"
+          ],
+          "answer": 0,
+          "explanation": "Always prefer .get() with a default when a key may be missing. Avoids try/except KeyError boilerplate."
+        },
+        {
+          "id": "py-029",
+          "q": "How do you ITERATE over key-value pairs?",
+          "options": [
+            "for key, value in user.items(): ...",
+            "for key in user.keys(): user[key]",
+            "for item in user: ...",
+            "Dictionaries can't be iterated"
+          ],
+          "answer": 0,
+          "explanation": ".items() is the cleanest way. Iterating `for k in dict` gives keys only — useful but easy to confuse with values."
+        },
+        {
+          "id": "py-030",
+          "q": "What's a DICT COMPREHENSION?",
+          "options": [
+            "{key: value for key, value in pairs}",
+            "A dictionary of comprehensions",
+            "A type of class",
+            "A documentation tool"
+          ],
+          "answer": 0,
+          "explanation": "Same idea as list comprehensions but for dicts. Example: {n: n*n for n in range(5)} → {0:0, 1:1, 2:4, 3:9, 4:16}."
+        }
+      ]
+    },
+    {
+      "topic": "Tuples and sets",
+      "questions": [
+        {
+          "id": "py-031",
+          "q": "What is a TUPLE in Python?",
+          "options": [
+            "An immutable ordered collection: (1, 2, 3) — can't be modified after creation",
+            "A mutable list",
+            "A type of dict",
+            "A function"
+          ],
+          "answer": 0,
+          "explanation": "Use tuples for fixed collections (coordinates, RGB values, function returns). Faster than lists and hashable."
+        },
+        {
+          "id": "py-032",
+          "q": "What is the MAIN difference between a list and a tuple?",
+          "options": [
+            "Lists are mutable (can be changed); tuples are immutable (fixed once created)",
+            "Tuples are slower",
+            "Tuples can only hold numbers",
+            "There is no difference"
+          ],
+          "answer": 0,
+          "explanation": "Choose by intent. Mutating sequence → list. Fixed record-like data → tuple. Tuples can also be dict keys; lists can't."
+        },
+        {
+          "id": "py-033",
+          "q": "What is a SET in Python?",
+          "options": [
+            "An unordered collection of UNIQUE items: {1, 2, 3}",
+            "An ordered list",
+            "A type of tuple",
+            "A dictionary with no values"
+          ],
+          "answer": 0,
+          "explanation": "Sets are perfect for deduplication and membership tests (O(1) lookup vs O(n) for lists). Use set(list) to dedupe quickly."
+        },
+        {
+          "id": "py-034",
+          "q": "What does `set([1,2,2,3,3])` return?",
+          "options": [
+            "{1, 2, 3}",
+            "[1, 2, 3]",
+            "[1, 2, 2, 3, 3]",
+            "An error"
+          ],
+          "answer": 0,
+          "explanation": "Classic deduplication idiom. Note: sets don't preserve insertion order (though they do in CPython 3.7+ implementation detail)."
+        },
+        {
+          "id": "py-035",
+          "q": "What operations do sets SUPPORT that lists don't?",
+          "options": [
+            "Mathematical operations: union (|), intersection (&), difference (-)",
+            "Appending elements",
+            "Indexing",
+            "Sorting"
+          ],
+          "answer": 0,
+          "explanation": "Sets shine for set algebra. a & b → items in both. a | b → items in either. a - b → items in a but not b."
+        }
+      ]
+    },
+    {
+      "topic": "Control flow",
+      "questions": [
+        {
+          "id": "py-036",
+          "q": "Which is the CORRECT if/elif/else syntax?",
+          "options": [
+            "if x > 0:\\n    ...\\nelif x == 0:\\n    ...\\nelse:\\n    ...",
+            "if (x > 0) elif (x == 0) else",
+            "if x > 0 else if x == 0 else",
+            "switch x case 0:"
+          ],
+          "answer": 0,
+          "explanation": "elif is Python's 'else if'. Note the colons after each condition. No parentheses needed around conditions."
+        },
+        {
+          "id": "py-037",
+          "q": "What does this loop do? `for i in range(5):`",
+          "options": [
+            "Iterates i over 0, 1, 2, 3, 4 (5 numbers, 0 to 4)",
+            "Iterates 1 to 5",
+            "Iterates 5 times starting from 1",
+            "Runs forever"
+          ],
+          "answer": 0,
+          "explanation": "range(stop) → 0 to stop-1. range(start, stop) → start to stop-1. range(start, stop, step) for full control."
+        },
+        {
+          "id": "py-038",
+          "q": "What's a `while` loop in Python?",
+          "options": [
+            "Runs as long as a condition is True: while count < 10: count += 1",
+            "Runs exactly once",
+            "Loops backward only",
+            "Loops in random order"
+          ],
+          "answer": 0,
+          "explanation": "Use while when you don't know the iteration count in advance. Always include something that changes the condition to avoid infinite loops."
+        },
+        {
+          "id": "py-039",
+          "q": "What does `break` do inside a loop?",
+          "options": [
+            "Immediately exits the innermost loop",
+            "Skips to the next iteration",
+            "Pauses the loop",
+            "Restarts the loop"
+          ],
+          "answer": 0,
+          "explanation": "break exits early. continue skips to the next iteration. pass does nothing (useful as a placeholder)."
+        },
+        {
+          "id": "py-040",
+          "q": "What's the PYTHONIC way to loop with an index AND value?",
+          "options": [
+            "for i, value in enumerate(items): ...",
+            "for i in range(len(items)): items[i]",
+            "for i in items.keys() values()",
+            "Python doesn't support indexed loops"
+          ],
+          "answer": 0,
+          "explanation": "enumerate is one of the most underused built-ins. Cleaner than manual index tracking."
+        }
+      ]
+    },
+    {
+      "topic": "Functions",
+      "questions": [
+        {
+          "id": "py-041",
+          "q": "How do you DEFINE a function?",
+          "options": [
+            "def add(a, b):\\n    return a + b",
+            "function add(a, b) { return a + b }",
+            "func add(a, b) -> a + b",
+            "define add(a, b) = a + b"
+          ],
+          "answer": 0,
+          "explanation": "def keyword, function name, parameters in parens, colon, indented body. return is optional (defaults to None)."
+        },
+        {
+          "id": "py-042",
+          "q": "What's a DEFAULT parameter value?",
+          "options": [
+            "A value used if the caller doesn't provide that argument: def greet(name='World'): ...",
+            "A required argument",
+            "A global variable",
+            "A type annotation"
+          ],
+          "answer": 0,
+          "explanation": "Defaults make arguments optional. WARNING: never use mutable defaults like [] or {} — they're shared across calls (classic gotcha)."
+        },
+        {
+          "id": "py-043",
+          "q": "What are KEYWORD ARGUMENTS?",
+          "options": [
+            "Passing arguments by name: greet(name='Ahmad') instead of relying on position",
+            "Special reserved words",
+            "Function decorators",
+            "Class methods"
+          ],
+          "answer": 0,
+          "explanation": "Keyword args make function calls self-documenting. Especially valuable with functions that have many parameters."
+        },
+        {
+          "id": "py-044",
+          "q": "What is `*args` in a function definition?",
+          "options": [
+            "Collects all extra positional arguments into a tuple",
+            "Multiplies arguments",
+            "A pointer to arguments",
+            "Required reserved word"
+          ],
+          "answer": 0,
+          "explanation": "**kwargs does the same for keyword arguments (into a dict). Together they let functions accept any number of args."
+        },
+        {
+          "id": "py-045",
+          "q": "What is a LAMBDA function?",
+          "options": [
+            "A small anonymous function: lambda x: x * 2",
+            "A type of generator",
+            "A Greek-letter operator",
+            "A debugging tool"
+          ],
+          "answer": 0,
+          "explanation": "Lambdas are limited to a single expression. Great for short callbacks (map, filter, sorted with a key). For anything bigger, use def."
+        }
+      ]
+    },
+    {
+      "topic": "Modules and imports",
+      "questions": [
+        {
+          "id": "py-046",
+          "q": "How do you IMPORT a module?",
+          "options": [
+            "import math  (then use math.sqrt(4))",
+            "include math",
+            "require('math')",
+            "use math"
+          ],
+          "answer": 0,
+          "explanation": "Imports give access to module contents via dot notation. Always at the top of the file by convention (PEP 8)."
+        },
+        {
+          "id": "py-047",
+          "q": "What does `from math import sqrt` do?",
+          "options": [
+            "Imports only sqrt into the namespace — call as sqrt(4) instead of math.sqrt(4)",
+            "Renames math to sqrt",
+            "Imports all of math",
+            "Throws an error"
+          ],
+          "answer": 0,
+          "explanation": "Cleaner for frequently-used names. Use sparingly to avoid namespace pollution. Avoid `from X import *` in production code."
+        },
+        {
+          "id": "py-048",
+          "q": "What does `import numpy as np` do?",
+          "options": [
+            "Imports numpy and gives it the local alias np for shorter code",
+            "Renames numpy permanently",
+            "Imports two modules",
+            "Imports numpy version np"
+          ],
+          "answer": 0,
+          "explanation": "Standard convention in data science: numpy as np, pandas as pd, matplotlib.pyplot as plt."
+        },
+        {
+          "id": "py-049",
+          "q": "What is a Python PACKAGE?",
+          "options": [
+            "A folder containing Python modules (and an __init__.py file traditionally)",
+            "A zip file of Python code",
+            "A class",
+            "A function"
+          ],
+          "answer": 0,
+          "explanation": "Packages organize modules hierarchically. In modern Python (3.3+), __init__.py is optional for namespace packages."
+        },
+        {
+          "id": "py-050",
+          "q": "What does `if __name__ == '__main__':` do?",
+          "options": [
+            "Runs the block only when the file is executed directly, not when imported as a module",
+            "Required at the start of every file",
+            "Defines the main function",
+            "Checks for command-line arguments"
+          ],
+          "answer": 0,
+          "explanation": "Lets a file work as both a script AND a reusable module. Idiomatic guard for entry-point code."
+        }
+      ]
+    },
+    {
+      "topic": "File I/O",
+      "questions": [
+        {
+          "id": "py-051",
+          "q": "What's the RECOMMENDED way to open a file?",
+          "options": [
+            "with open('file.txt') as f:\\n    data = f.read()",
+            "f = open('file.txt')\\nf.read()\\nf.close()",
+            "open file.txt",
+            "Python doesn't support files"
+          ],
+          "answer": 0,
+          "explanation": "The with statement (context manager) auto-closes the file even on errors. Never use bare open() in production code."
+        },
+        {
+          "id": "py-052",
+          "q": "What does `open('data.txt', 'r')` mean?",
+          "options": [
+            "Opens data.txt in READ mode (default if mode is omitted)",
+            "Opens data.txt with row layout",
+            "Reads only one line",
+            "Returns text in reverse"
+          ],
+          "answer": 0,
+          "explanation": "Modes: 'r' read, 'w' write (truncates!), 'a' append, 'b' binary, '+' read-write. e.g., 'rb' = read binary."
+        },
+        {
+          "id": "py-053",
+          "q": "How do you read a JSON file?",
+          "options": [
+            "import json; with open('file.json') as f: data = json.load(f)",
+            "f.readjson()",
+            "import json; data = json.read('file.json')",
+            "JSON requires a separate library install"
+          ],
+          "answer": 0,
+          "explanation": "json is a built-in standard-library module. json.load reads from file; json.loads parses a string."
+        },
+        {
+          "id": "py-054",
+          "q": "What's the difference between `read()` and `readlines()`?",
+          "options": [
+            "read() returns the whole file as one string; readlines() returns a list of lines",
+            "They're identical",
+            "read() is for binary, readlines() for text",
+            "readlines() is deprecated"
+          ],
+          "answer": 0,
+          "explanation": "For huge files, iterate the file object directly: `for line in f:` — memory-efficient, doesn't load the whole file."
+        },
+        {
+          "id": "py-055",
+          "q": "How do you WRITE to a file?",
+          "options": [
+            "with open('out.txt', 'w') as f: f.write('hello')",
+            "write('out.txt', 'hello')",
+            "file.save('out.txt', 'hello')",
+            "echo 'hello' > out.txt"
+          ],
+          "answer": 0,
+          "explanation": "Mode 'w' truncates the file first! Use 'a' to append. Always use the with statement to ensure proper closing."
+        }
+      ]
+    },
+    {
+      "topic": "Error handling",
+      "questions": [
+        {
+          "id": "py-056",
+          "q": "How do you handle an exception in Python?",
+          "options": [
+            "try:\\n    risky()\\nexcept ValueError as e:\\n    handle(e)",
+            "try { risky() } catch (e) { }",
+            "if error: handle()",
+            "Python doesn't have exceptions"
+          ],
+          "answer": 0,
+          "explanation": "try/except/else/finally is Python's exception model. Always catch specific exceptions, not bare except (which hides bugs)."
+        },
+        {
+          "id": "py-057",
+          "q": "Why is `except:` (bare except) considered BAD?",
+          "options": [
+            "It catches EVERYTHING including KeyboardInterrupt and SystemExit, hiding real bugs",
+            "It's slower",
+            "It's deprecated",
+            "It only works in Python 2"
+          ],
+          "answer": 0,
+          "explanation": "Always except specific types: except (ValueError, KeyError). Use except Exception only at top-level error boundaries."
+        },
+        {
+          "id": "py-058",
+          "q": "What does the `finally` block do?",
+          "options": [
+            "Runs whether the try succeeds, fails, or raises — useful for cleanup",
+            "Runs only on success",
+            "Runs only on failure",
+            "Logs all errors automatically"
+          ],
+          "answer": 0,
+          "explanation": "finally guarantees cleanup (close files, release locks). Modern code often prefers context managers (with) over try/finally."
+        },
+        {
+          "id": "py-059",
+          "q": "What does `raise ValueError('bad input')` do?",
+          "options": [
+            "Raises a ValueError exception with the given message",
+            "Logs an error",
+            "Returns ValueError",
+            "Crashes the interpreter silently"
+          ],
+          "answer": 0,
+          "explanation": "Use raise to signal errors. Raise specific built-in exceptions or define custom ones inheriting from Exception."
+        },
+        {
+          "id": "py-060",
+          "q": "What's the PYTHONIC philosophy for errors?",
+          "options": [
+            "EAFP — 'Easier to Ask Forgiveness than Permission' (try/except over check-first)",
+            "Always check before doing",
+            "Never raise errors",
+            "Errors should silently pass"
+          ],
+          "answer": 0,
+          "explanation": "EAFP is more pythonic than LBYL ('Look Before You Leap'). Example: `try: d['key'] except KeyError:` over `if 'key' in d:`."
+        }
+      ]
+    },
+    {
+      "topic": "Object-oriented Python",
+      "questions": [
+        {
+          "id": "py-061",
+          "q": "How do you DEFINE a class?",
+          "options": [
+            "class Dog:\\n    def __init__(self, name):\\n        self.name = name",
+            "class Dog { Dog(name) { this.name = name } }",
+            "def class Dog(name):",
+            "object Dog: name"
+          ],
+          "answer": 0,
+          "explanation": "__init__ is the constructor. self is the instance reference (similar to this in other languages) — always the first parameter."
+        },
+        {
+          "id": "py-062",
+          "q": "What is `self` in a class method?",
+          "options": [
+            "A reference to the current instance — must be the first parameter of instance methods",
+            "A keyword for static methods",
+            "An automatic global variable",
+            "A type annotation"
+          ],
+          "answer": 0,
+          "explanation": "self is convention, not syntax — you could name it anything, but don't. It's how methods access instance attributes."
+        },
+        {
+          "id": "py-063",
+          "q": "What's INHERITANCE?",
+          "options": [
+            "A class can inherit attributes/methods from a parent: class Puppy(Dog): ...",
+            "Copying methods manually",
+            "Sharing variables globally",
+            "A type of import"
+          ],
+          "answer": 0,
+          "explanation": "Inheritance enables code reuse and polymorphism. Python supports multiple inheritance (be careful with the method resolution order)."
+        },
+        {
+          "id": "py-064",
+          "q": "What's a `@dataclass`?",
+          "options": [
+            "A decorator (3.7+) that auto-generates __init__, __repr__, __eq__ from class attributes",
+            "A pandas data class",
+            "A database class",
+            "A debugging tool"
+          ],
+          "answer": 0,
+          "explanation": "@dataclass eliminates boilerplate for value classes. Often preferred over plain classes for data-holding objects."
+        },
+        {
+          "id": "py-065",
+          "q": "What's a class with `__init__` and `__repr__` used for?",
+          "options": [
+            "Creating objects (constructor) and defining how they print/show in the REPL",
+            "Initializing variables only",
+            "Configuring imports",
+            "Optimizing the class"
+          ],
+          "answer": 0,
+          "explanation": "Dunder (double underscore) methods customize built-in behavior: __len__, __iter__, __eq__, __add__, etc. Powerful."
+        }
+      ]
+    },
+    {
+      "topic": "Iterators and generators",
+      "questions": [
+        {
+          "id": "py-066",
+          "q": "What is an ITERATOR in Python?",
+          "options": [
+            "An object that produces values one at a time when next() is called on it",
+            "A type of for loop",
+            "A list",
+            "An iteration counter"
+          ],
+          "answer": 0,
+          "explanation": "All iterables (lists, dicts, files, generators) can become iterators. Iterators implement __iter__ and __next__."
+        },
+        {
+          "id": "py-067",
+          "q": "What is a GENERATOR function?",
+          "options": [
+            "A function that uses `yield` to produce values lazily — one at a time, memory-efficient",
+            "A function that generates random numbers",
+            "A class generator",
+            "A static function"
+          ],
+          "answer": 0,
+          "explanation": "Generators are perfect for streams of data, infinite sequences, or large datasets where loading all in memory is wasteful."
+        },
+        {
+          "id": "py-068",
+          "q": "What's the difference between `return` and `yield`?",
+          "options": [
+            "return ends the function; yield pauses it and returns a value, resuming on the next next() call",
+            "yield is faster than return",
+            "They are identical",
+            "yield is for classes only"
+          ],
+          "answer": 0,
+          "explanation": "yield turns a function into a generator. Each yield pauses execution and produces a value. Truly mind-expanding pattern."
+        },
+        {
+          "id": "py-069",
+          "q": "What's a GENERATOR EXPRESSION?",
+          "options": [
+            "Like a list comprehension but with parentheses: (x*2 for x in nums)  — produces values lazily",
+            "A regex pattern",
+            "A type of class",
+            "A debugging tool"
+          ],
+          "answer": 0,
+          "explanation": "Use generator expressions when you don't need the full list in memory — e.g., sum(x*2 for x in big_data). Saves memory."
+        },
+        {
+          "id": "py-070",
+          "q": "When should you prefer a GENERATOR over a list?",
+          "options": [
+            "When iterating once over potentially large data, or when memory matters",
+            "Always — generators are always better",
+            "Never — lists are always better",
+            "Only in async code"
+          ],
+          "answer": 0,
+          "explanation": "Lists are random-access and reusable. Generators are one-pass and lazy. Choose based on access pattern + size."
+        }
+      ]
+    },
+    {
+      "topic": "Working with the standard library",
+      "questions": [
+        {
+          "id": "py-071",
+          "q": "Which built-in module handles dates and times?",
+          "options": [
+            "datetime",
+            "time-and-date",
+            "moment",
+            "timestamp"
+          ],
+          "answer": 0,
+          "explanation": "datetime.date, datetime.time, datetime.datetime, datetime.timedelta. For timezone-aware ops use the zoneinfo module (3.9+)."
+        },
+        {
+          "id": "py-072",
+          "q": "Which built-in module handles JSON?",
+          "options": [
+            "json",
+            "JSONParser",
+            "jsonlib",
+            "json must be installed via pip"
+          ],
+          "answer": 0,
+          "explanation": "Built-in. json.dumps (Python → str), json.loads (str → Python), json.dump/load for files."
+        },
+        {
+          "id": "py-073",
+          "q": "Which built-in module handles file/directory paths?",
+          "options": [
+            "pathlib (modern) or os.path (older)",
+            "fileutil",
+            "diskpath",
+            "Python doesn't handle paths natively"
+          ],
+          "answer": 0,
+          "explanation": "pathlib.Path is the modern object-oriented API. Path('data') / 'file.txt' beats os.path.join() in readability."
+        },
+        {
+          "id": "py-074",
+          "q": "Which module helps with COLLECTIONS like default dicts and counters?",
+          "options": [
+            "collections (Counter, defaultdict, deque, OrderedDict, namedtuple)",
+            "data-structures",
+            "containers",
+            "collect"
+          ],
+          "answer": 0,
+          "explanation": "collections is a treasure trove. Counter(['a','b','a']) → Counter({'a': 2, 'b': 1}). Saves so much boilerplate."
+        },
+        {
+          "id": "py-075",
+          "q": "Which built-in is for COMMAND-LINE arguments?",
+          "options": [
+            "argparse",
+            "sys.argv (basic) or argparse (full-featured)",
+            "command-line",
+            "cli-args"
+          ],
+          "answer": 0,
+          "explanation": "argparse handles help text, type validation, subcommands, and defaults. For modern projects, also consider Typer or Click."
+        }
+      ]
+    },
+    {
+      "topic": "Virtual environments and pip",
+      "questions": [
+        {
+          "id": "py-076",
+          "q": "What is a VIRTUAL ENVIRONMENT?",
+          "options": [
+            "An isolated Python environment with its own packages, preventing version conflicts between projects",
+            "A type of cloud VM",
+            "A virtual machine for Python",
+            "A Python IDE"
+          ],
+          "answer": 0,
+          "explanation": "Always use a virtualenv per project. Standard tool: python -m venv .venv. Activate with source .venv/bin/activate (Linux/Mac)."
+        },
+        {
+          "id": "py-077",
+          "q": "What is pip?",
+          "options": [
+            "Python's standard package installer — installs from PyPI (Python Package Index)",
+            "A type of variable",
+            "A debugging tool",
+            "Python's web server"
+          ],
+          "answer": 0,
+          "explanation": "pip install requests, pip uninstall x, pip list, pip freeze > requirements.txt. The backbone of Python project management."
+        },
+        {
+          "id": "py-078",
+          "q": "What's `requirements.txt` for?",
+          "options": [
+            "Lists all packages (with versions) needed to run your project — others install via pip install -r requirements.txt",
+            "Required documentation",
+            "A list of TODOs",
+            "Test cases"
+          ],
+          "answer": 0,
+          "explanation": "Critical for reproducibility. Pin versions for production (requests==2.31.0) to avoid surprise breakages from upstream changes."
+        },
+        {
+          "id": "py-079",
+          "q": "What is `uv` (a modern Python tool)?",
+          "options": [
+            "A fast, Rust-based package manager and virtualenv tool — a modern alternative to pip + venv",
+            "A type of UV light",
+            "A unit testing framework",
+            "A database driver"
+          ],
+          "answer": 0,
+          "explanation": "uv is rapidly gaining adoption in 2025-2026 for being 10-100x faster than pip. Also consider Poetry and pdm for project management."
+        },
+        {
+          "id": "py-080",
+          "q": "Why should you NEVER `pip install` globally on a system?",
+          "options": [
+            "It can corrupt system Python, cause version conflicts, and may require sudo (risky)",
+            "Pip doesn't have a global install option",
+            "It's illegal",
+            "It's slower"
+          ],
+          "answer": 0,
+          "explanation": "Always pip install inside an activated virtualenv. Or use pipx for installing CLI tools globally in isolated envs."
+        }
+      ]
+    },
+    {
+      "topic": "Common Python libraries",
+      "questions": [
+        {
+          "id": "py-081",
+          "q": "Which library is THE standard for data analysis in Python?",
+          "options": [
+            "pandas",
+            "datalib",
+            "table-tools",
+            "csv-pro"
+          ],
+          "answer": 0,
+          "explanation": "pandas provides DataFrames (2D labeled data) — Excel on steroids. Built on NumPy. The lingua franca of Python data work."
+        },
+        {
+          "id": "py-082",
+          "q": "What is NumPy used for?",
+          "options": [
+            "Fast numerical computing on N-dimensional arrays — the foundation of scientific Python",
+            "Networking",
+            "Number formatting only",
+            "GUI development"
+          ],
+          "answer": 0,
+          "explanation": "NumPy arrays are 10-100x faster than Python lists for math. Underlies pandas, PyTorch, TensorFlow, scikit-learn, and more."
+        },
+        {
+          "id": "py-083",
+          "q": "Which library makes HTTP REQUESTS to APIs?",
+          "options": [
+            "requests (or httpx for modern async support)",
+            "http",
+            "url-lib",
+            "fetch"
+          ],
+          "answer": 0,
+          "explanation": "requests is the most-loved Python library. requests.get(url).json() is one line that solves what takes 10 in stdlib's urllib."
+        },
+        {
+          "id": "py-084",
+          "q": "Which library is the standard for MACHINE LEARNING in Python?",
+          "options": [
+            "scikit-learn for classical ML; PyTorch/TensorFlow for deep learning",
+            "machine-learn",
+            "ml-py",
+            "neural"
+          ],
+          "answer": 0,
+          "explanation": "scikit-learn covers regression, classification, clustering, preprocessing. PyTorch dominates research; both are widely used in industry."
+        },
+        {
+          "id": "py-085",
+          "q": "Which framework is most popular for WEB APIs in Python?",
+          "options": [
+            "FastAPI (modern, async, typed) or Flask (simple, classic) or Django (full-stack)",
+            "python-web",
+            "webserver",
+            "html-py"
+          ],
+          "answer": 0,
+          "explanation": "FastAPI exploded since 2019 thanks to type hints + auto OpenAPI docs + async speed. Django for full-stack apps. Flask for tiny services."
+        }
+      ]
+    },
+    {
+      "topic": "Modern Python features",
+      "questions": [
+        {
+          "id": "py-086",
+          "q": "What are TYPE HINTS in Python?",
+          "options": [
+            "Optional annotations: def add(a: int, b: int) -> int: — checked by tools, not at runtime",
+            "Required type declarations",
+            "A different language",
+            "Comments only"
+          ],
+          "answer": 0,
+          "explanation": "Type hints (PEP 484) enable IDE intelligence, mypy/pyright type checking, and self-documenting code. Embrace them in modern code."
+        },
+        {
+          "id": "py-087",
+          "q": "What does `match` do (Python 3.10+)?",
+          "options": [
+            "Structural pattern matching — like a smarter switch statement: match x: case 1: ... case _: ...",
+            "Regex matching",
+            "String comparison",
+            "Variable assignment"
+          ],
+          "answer": 0,
+          "explanation": "match/case can pattern-match against types, structures, and bindings. Much more powerful than switch in other languages."
+        },
+        {
+          "id": "py-088",
+          "q": "What does the walrus operator `:=` do (Python 3.8+)?",
+          "options": [
+            "Assigns and returns a value in one expression: if (n := len(x)) > 10: ...",
+            "Mathematical operator",
+            "Comparison operator",
+            "A type of generator"
+          ],
+          "answer": 0,
+          "explanation": "Saves repetition in conditions and comprehensions. Use sparingly — overusing reduces readability."
+        },
+        {
+          "id": "py-089",
+          "q": "What are F-STRING formatting specs?",
+          "options": [
+            "f'{value:.2f}' formats to 2 decimals; f'{x:>10}' pads right-aligned; f'{n:,}' adds thousand separators",
+            "Just for string concatenation",
+            "Required for all strings",
+            "Only for debugging"
+          ],
+          "answer": 0,
+          "explanation": "f-strings have full format spec mini-language. f'{pi=:.3f}' (3.8+) shows 'pi=3.142' — great for debugging."
+        },
+        {
+          "id": "py-090",
+          "q": "What is `async`/`await` for in Python?",
+          "options": [
+            "Writing concurrent code that can wait on I/O without blocking — used with asyncio for async programs",
+            "Faster math operations",
+            "Multi-threading",
+            "Database queries only"
+          ],
+          "answer": 0,
+          "explanation": "Best for I/O-bound concurrency (web requests, DB queries). For CPU-bound work, use multiprocessing instead."
+        }
+      ]
+    },
+    {
+      "topic": "Best practices and pitfalls",
+      "questions": [
+        {
+          "id": "py-091",
+          "q": "Why is `def f(items=[])` a CLASSIC BUG?",
+          "options": [
+            "Default mutable arguments persist across calls — items keeps growing between calls",
+            "It causes a syntax error",
+            "It's slower than lists",
+            "Lists can't be defaults"
+          ],
+          "answer": 0,
+          "explanation": "Use def f(items=None): if items is None: items = []. One of the most-asked Python interview gotchas."
+        },
+        {
+          "id": "py-092",
+          "q": "What's a 'truthy' and 'falsy' value in Python?",
+          "options": [
+            "Falsy: False, None, 0, '', [], {}, set(). Everything else is truthy.",
+            "Only True and False",
+            "Only None is falsy",
+            "There are no truthy/falsy values"
+          ],
+          "answer": 0,
+          "explanation": "if my_list: works for 'non-empty'. Pythonic. Don't write if len(my_list) > 0 — Python idiom is the implicit truthiness check."
+        },
+        {
+          "id": "py-093",
+          "q": "What's the DIFFERENCE between `==` and `is`?",
+          "options": [
+            "== compares values; `is` checks identity (same object in memory)",
+            "They're identical",
+            "is is for strings only",
+            "== only works on numbers"
+          ],
+          "answer": 0,
+          "explanation": "Use `is None`, `is True`, `is False` (singletons). Use == for value comparison. Common bug: `x is 'hello'` works by accident due to string interning."
+        },
+        {
+          "id": "py-094",
+          "q": "Why use a LINTER and FORMATTER for Python?",
+          "options": [
+            "Catch bugs early, enforce consistent style — tools: Ruff (fast linter), Black (formatter), mypy (type checker)",
+            "Required by Python",
+            "Only for large teams",
+            "It's deprecated"
+          ],
+          "answer": 0,
+          "explanation": "Modern stack: Ruff (replaces flake8/isort/pylint, blazing fast) + Black or Ruff format + mypy/pyright for types."
+        },
+        {
+          "id": "py-095",
+          "q": "What's a HEALTHY rule for Python imports?",
+          "options": [
+            "Group: stdlib, third-party, local — separated by blank lines (PEP 8)",
+            "All imports anywhere",
+            "Only at the bottom of files",
+            "One import per line is forbidden"
+          ],
+          "answer": 0,
+          "explanation": "isort or Ruff can auto-sort imports. Always import at module top (avoid inside functions unless avoiding circular imports)."
+        }
+      ]
+    },
+    {
+      "topic": "Getting better at Python",
+      "questions": [
+        {
+          "id": "py-096",
+          "q": "What's the BEST way to learn Python deeply?",
+          "options": [
+            "Build real projects, read the official docs, study other people's clean code, contribute to open source",
+            "Memorize syntax tables",
+            "Only watch tutorial videos",
+            "Avoid documentation"
+          ],
+          "answer": 0,
+          "explanation": "Python's official docs (docs.python.org) are excellent. The standard library tour alone is worth a weekend of study."
+        },
+        {
+          "id": "py-097",
+          "q": "Which type of projects accelerate Python learning?",
+          "options": [
+            "Automate something annoying in your life — file renaming, web scraping, daily reports, API wrappers",
+            "Recreate the Python interpreter",
+            "Build only games",
+            "Wait until you know everything before building"
+          ],
+          "answer": 0,
+          "explanation": "'Automate the Boring Stuff with Python' (free online book) is the canonical practical Python introduction."
+        },
+        {
+          "id": "py-098",
+          "q": "Which Python skill UNLOCKS the most career value?",
+          "options": [
+            "Working with data (pandas + SQL + a visualization library) — data is everywhere",
+            "Memorizing all built-ins",
+            "Mastering metaclasses",
+            "Avoiding all libraries"
+          ],
+          "answer": 0,
+          "explanation": "Data analysis + automation = 80% of paid Python jobs. AI/ML is a strong second. Web dev a strong third."
+        },
+        {
+          "id": "py-099",
+          "q": "What's a great community for Python learners?",
+          "options": [
+            "r/learnpython, Real Python, Python Discord, Talk Python To Me podcast, Stack Overflow",
+            "Only commercial training programs",
+            "There is no Python community",
+            "Only academic conferences"
+          ],
+          "answer": 0,
+          "explanation": "Python has one of the friendliest tech communities. Ask questions early and often."
+        },
+        {
+          "id": "py-100",
+          "q": "What's the MOST important meta-skill for Python long-term?",
+          "options": [
+            "Writing readable, maintainable code that others (and future you) can understand",
+            "Writing one-line solutions to everything",
+            "Avoiding all libraries",
+            "Memorizing PEP numbers"
+          ],
+          "answer": 0,
+          "explanation": "Code is read more than written. Readability is what makes Python Python. Internalize that and the rest follows."
+        }
+      ]
+    }
+  ]
+}
