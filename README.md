@@ -117,7 +117,6 @@ Then in the Vercel dashboard:
 
 ## 📂 Project structure
 
-Project Structure
 rrrtx-freeverse/
 ├── public/
 │   ├── favicon.svg
