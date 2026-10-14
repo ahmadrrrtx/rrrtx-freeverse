@@ -1,0 +1,3339 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "generative-ai-basics",
+    "title": "Generative AI Basics",
+    "description": "Understand how LLMs work, what they can do, and where they fall short.",
+    "category": "AI",
+    "icon": "✨",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What is Generative AI",
+      "skill_id": "rfv.skill.generative-ai-basics.01-what-is-generative-ai",
+      "items": [
+        {
+          "id": "ga-001",
+          "prompt": "What does 'Generative AI' fundamentally do?",
+          "options": [
+            "Encrypts files for secure storage",
+            "Searches the internet and returns existing web pages",
+            "Stores and retrieves data from a fixed database",
+            "Produces new content (text, images, code, audio, video) based on patterns learned from training data"
+          ],
+          "answer_commit": "hmac-sha256:43a8a941e90b775f6671b0bf311d6503",
+          "explanation_enc": "aes-256-gcm.v1:7bilFuV7m4U1nqlS:XSQKL9UKUvav3J1dkw6ZVzE8pm54Pcj2uMxXI6vYtAqQbfwBOequRhxNSZjBNlG5h8ZfomhYULW1QmgU65KTKAgBx2WfIBMgXjD85qJpnMGjSkferAzStx5dRuqjrUDZxiHpt9qFajRIbFrBPt4UCSP8AcJCCHlPZ00rG5T8yRoEdIQz-_ZhcXhtb2tgUs5c8ZuWYNE6gPsgiWjJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.923,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-002",
+          "prompt": "Which of these is NOT a generative AI capability?",
+          "options": [
+            "Writing essays from a topic prompt",
+            "Generating images from text descriptions",
+            "Guaranteeing 100% factually accurate answers to every question",
+            "Translating between languages"
+          ],
+          "answer_commit": "hmac-sha256:3a35e6bade23021844a3b4df3775218b",
+          "explanation_enc": "aes-256-gcm.v1:uoI7ij7fsPUjqBDs:wKS4f6wLn42o24nTUkWh3M9sigvZJMWEJBf9vRdZNdDxlDvDCi9AroOzFm07iA8b9CVyOgSGK1p52XXlaf_SWLxDQtStqiH7Ei_pNHWIqnZsGNXe4NCtJstuGQRoaW0XVah_2JC6KemtL2vLA04EF-U2PFkoTerLqmu-27J-8qO35qXFm9wo-k9MoYBLmmyGElc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.55,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-003",
+          "prompt": "What is the KEY difference between generative AI and traditional ('discriminative') AI?",
+          "options": [
+            "Generative AI runs on GPUs; discriminative AI runs on CPUs",
+            "There is no real difference",
+            "Generative AI creates new outputs; discriminative AI classifies or predicts from inputs",
+            "Generative AI is free; discriminative AI is paid"
+          ],
+          "answer_commit": "hmac-sha256:c964f6b454607999bb1289443c26d423",
+          "explanation_enc": "aes-256-gcm.v1:023pfLlQzjFt6FEo:DDtDVc8PqF_tCicFmmmlm6sExWFbTajXOqszJH4b41xUPxRWFRCv8XC-PZNXxUPMgHdwpWWUvIGXWcYMiquSD83fjcoyFcLOsRnU_gnM9vbM57PNknBtRTUVGRbr5TV181m-m1v482Upt12SXJWbUN-DZ0xJCRgE6edMCEJDY6lFG3MafON66nqX_9Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-004",
+          "prompt": "Which is a TRUE statement about modern generative AI models?",
+          "options": [
+            "They learn statistical patterns from data but do not 'understand' meaning the way humans do",
+            "They have true consciousness and emotions",
+            "They access the live internet by default",
+            "They store every training example verbatim"
+          ],
+          "answer_commit": "hmac-sha256:4ec9534e9e4233b18bed584f78a233ac",
+          "explanation_enc": "aes-256-gcm.v1:VMvyxiVuDzB7duCs:Sfue-aQO76gL5rnc78Nl7hNHUxz82rtglL1h59LcG_pD_mbCT9LYTFmfW-nKP2FNiEAVXf7ZZZcEsM-FrZ9nhXrz_gGAZ16wIQgQDs2b6PCzik9da964c8ZUbwr_zGSd9RSHHpKflCwpL4AfWNJHUzXsMyUbM7A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-005",
+          "prompt": "Why did Generative AI explode into mainstream around 2022-2023?",
+          "options": [
+            "The transformer architecture + huge models + massive compute + chat interfaces finally produced human-quality outputs at scale",
+            "The internet finally got fast enough",
+            "AI was invented in 2022 for the first time",
+            "Governments mandated AI usage"
+          ],
+          "answer_commit": "hmac-sha256:633eb29e634e44c0d38f391002a29241",
+          "explanation_enc": "aes-256-gcm.v1:gtwSdXLe5qq69c6I:n_9XQ9kJXLcmanmihoKXxpCu6Eqh-ZlpoQL3ixZueaWj67QDQPmjpQH0y3ipULbcFXj0vXfNy4qlJgLR1id3H_AKAX6YKAbuYBc0iVqBbueSRoRA_MtxlUrS6jhpS3YtCPPYeB27oVUeuc7cd_GF_omZBxtFTelwsmHFlbZGVZuplNs",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Large Language Models (LLMs)",
+      "skill_id": "rfv.skill.generative-ai-basics.02-large-language-models-llms",
+      "items": [
+        {
+          "id": "ga-006",
+          "prompt": "What does 'LLM' stand for?",
+          "options": [
+            "Linear Logic Machine",
+            "Latent Language Mapping",
+            "Long-Lasting Memory",
+            "Large Language Model"
+          ],
+          "answer_commit": "hmac-sha256:f5dac57a05dd3dc3fae8ecbbc0bb9b1e",
+          "explanation_enc": "aes-256-gcm.v1:-q9VBazXreGRbslU:FUxhLRoJuVW5ofAo9v6Js3pKQH0czRBjDfw4hkWiKGm6QGRMwuBF_Xt8GqqCQ5NHlgDCo-PjNzgwfg0BM5R-PPz5S-ICphLFzhg9mp53gFkF6i_ezIcVBIMf9wpg0FSy-fBO3CAAQ5i5xuRm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.87,
+          "findings": []
+        },
+        {
+          "id": "ga-007",
+          "prompt": "At the core, what does an LLM actually DO when generating text?",
+          "options": [
+            "Asks another LLM and copies the response",
+            "Predicts the next token (word fragment) based on all previous tokens, one token at a time",
+            "Translates the question into machine code and runs it",
+            "Looks up the answer in a database"
+          ],
+          "answer_commit": "hmac-sha256:3e26c0d9d1c01882a0f6c1fee95166cd",
+          "explanation_enc": "aes-256-gcm.v1:DRAh4dzlNnXYw8QR:3QQ1Awqtlqu2AHTvyf8ZIJvf8k6LLXdwv9xOBwqCn1_-SkQ1Sib5qY_F9xuc7bZro9pdAhCKy8kI2l5eDMTLm6sxQFIogp6ta4scMyf-aYEX67A2-SxmyZjjU8KLdRw3-i-Yp4ZJ9kOJtBVuF963l_18zFqGSZFksGb0UsZTxDSr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.679,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-008",
+          "prompt": "What is a 'parameter' in an LLM?",
+          "options": [
+            "A file format",
+            "A learnable numerical weight that the model adjusts during training; modern LLMs have billions",
+            "A type of API key",
+            "A setting the user adjusts in the UI"
+          ],
+          "answer_commit": "hmac-sha256:4b415b417e6ad4c62a22fd2231412920",
+          "explanation_enc": "aes-256-gcm.v1:xOjei7mLrI5c1sv3:p8tSxEhYVw5frWTazqq1yQcSZ7hswAyjbbgAZaFd7jxNGK23ChzmfVAk-wb_iXvcirdGcLcxmUgXDbfE22NdXTIMjEdy7vYg35nKONMsJLgLin6xrTkH5A9XyzN_COxSS-ZxeWeiWInBtyL_wEfe6uCa9Hdu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.611,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-009",
+          "prompt": "What does a model's 'training cutoff date' mean?",
+          "options": [
+            "The model gets retrained every day",
+            "The model has no knowledge of events that happened after that date",
+            "The model stops working on that date",
+            "Users can't access the model past that date"
+          ],
+          "answer_commit": "hmac-sha256:3fd0f3887cfdba6ab304bbffd5d5a733",
+          "explanation_enc": "aes-256-gcm.v1:XZpIYQsI09DUVd0S:ZHdHGV97eLpPGerkhYe7BLVfGOBF2QPS1yy1FmPFOZbr5qCAkzDbLacLDlc-_tU41B-1BKv3TXt1oal0GcdmUfiTlJRg4ux599-P4rusKEBlEub-PW2lh7y0n80HdxIesLHBKLcvmx3FVcSIeVXzEaZewoa2Otd-PZhjYLdxIzFO_dU6HjmcGJsxMLrVmroCcw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.535,
+          "findings": []
+        },
+        {
+          "id": "ga-010",
+          "prompt": "Which is a famous LLM family?",
+          "options": [
+            "GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta)",
+            "Photoshop, Excel, Word",
+            "iPhone, Galaxy, Pixel",
+            "Windows, macOS, Linux"
+          ],
+          "answer_commit": "hmac-sha256:ca2770179653d9347e8a4fe03aa96481",
+          "explanation_enc": "aes-256-gcm.v1:hB2p_-8yd4XbqVO7:x9210WNBGTG4oNenXZ6w8_AXHiZxsgM7vyCudzFzfpiyYlZzV5dJUsTNC1eMtUGvM8XRrYNVuALV9uV0UPeLKcqX_mUqUwQ3c0leQ9VhD9SFOaj1A7MSYDPkOpKyWoetEdBoZlUugQIcEvPTzNrcKjPiLOsdBMafBM-t",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.864,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Tokens and tokenization",
+      "skill_id": "rfv.skill.generative-ai-basics.03-tokens-and-tokenization",
+      "items": [
+        {
+          "id": "ga-011",
+          "prompt": "What is a 'token' in the context of LLMs?",
+          "options": [
+            "A login credential",
+            "A type of cryptocurrency",
+            "A unit of text the model processes — often a word, sub-word, or punctuation mark",
+            "An NFT collectible"
+          ],
+          "answer_commit": "hmac-sha256:e3a95c69b7de083582870626502b8caf",
+          "explanation_enc": "aes-256-gcm.v1:dnvI9-_pSrjMjXtN:N7fT_QJc9zR9epnGfeWOr59ySDYrtcdOViD3TWh1IBXyIk0KrmTXqCX3xlnSOv9IbPmhkoEBvROL_leK-tmaVK86-9LRXLRNQX1MbTKPUWp6a6JyhCNM_OXN92WUn8bIeP2MDnJx9GceFodYDP5qzJ6Y3qFQvOmsnBe2rk2GITHu_y2ptXRR3IA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-012",
+          "prompt": "Roughly how many tokens does one average English word use?",
+          "options": [
+            "About 1.3 tokens",
+            "Always exactly 1 token",
+            "About 100 tokens",
+            "About 10 tokens"
+          ],
+          "answer_commit": "hmac-sha256:a391e7d2935aba63a9c9cabc9d046336",
+          "explanation_enc": "aes-256-gcm.v1:0uKIYiHX_Fz6gqVT:D-tzCaE8oVmJX3MYEfCwZ1UOxGowIzow54AXBPlnJyHCY8YgmGAz9oSID5SKsQxq0ZY9WAe7AszI00dHuUrWSBEw6qb1uMCPwSCmJS_D93RWkd7TslfXATyRrg6mC0z_N7ytHGODMG7volhKhNfh7WuOe1nZFMn8CN-nxdSSeYtjIgajT55Xsg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.727,
+          "findings": []
+        },
+        {
+          "id": "ga-013",
+          "prompt": "Why do LLMs charge by tokens instead of by words?",
+          "options": [
+            "Marketing reasons only",
+            "Tokens are the actual unit of computation the model processes, so cost scales linearly with tokens",
+            "Words don't exist in all languages",
+            "Words are too hard to count"
+          ],
+          "answer_commit": "hmac-sha256:1645d6654f2fee220aeca3b2326d07cb",
+          "explanation_enc": "aes-256-gcm.v1:PCZF-uhofDsokZ-T:68_elaWgFLVj_K4Tb6tXZqP7Z6STLF0L8cbFT8gJCwz4Ayq_2JD4rPiae8R8UkLYOK3rAHgUWpIQLYfcieou1KXoqt3m7Z-70nLdmg0k6m4xpHmAkL7-HN7kDefn2ANlhJo88iugUoMl_AxNQLTV2LH5GPH_Und3Tg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.882,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-014",
+          "prompt": "Which type of text typically uses the MOST tokens per character?",
+          "options": [
+            "Simple English prose",
+            "Numbers only",
+            "Non-English text and code with many special characters or rare words",
+            "Single-word sentences"
+          ],
+          "answer_commit": "hmac-sha256:aa4355b7e6159eaa93bcdc570a5d4646",
+          "explanation_enc": "aes-256-gcm.v1:Z6eHjBrqK8btt0E5:piSXT34E6zN4nFXYjRJTS9nvLvpbATGClNhyuOPxAPse891Y-JoxEN8A7zRHyg-X0_nWCOI85gw1AWIk5iq3RfoUaVWo4NxX_EUUsD0lzexIYoH3yzWFxKfTzx9FtP6coCnS4SbKAc0slqSMcOnyqljYDRjwttC_T_CXBERYzJ6PNs6j",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.238,
+          "findings": []
+        },
+        {
+          "id": "ga-015",
+          "prompt": "What is a 'tokenizer'?",
+          "options": [
+            "A blockchain transaction system",
+            "A login security device",
+            "The component that splits raw text into tokens (and back) before/after the model processes it",
+            "A type of car part"
+          ],
+          "answer_commit": "hmac-sha256:13c88230f2d1a5dadf73924abf025eaa",
+          "explanation_enc": "aes-256-gcm.v1:lDO6P_4BLihVQyRI:7XEbOddu0YVg_MhZV9F-bOfQ4XJH26gg-xOW8l502lvOCwM-U6qQ26FAZhorAuEAs7hTXdMu_BXpxXFciXIClxwnEuL073jbNmlXkoW_5i6B_4GRcoUuB8atc6r-06SjbuxpLNey7CNhbjK49a4AbHNOwTwWK7m7CmotD2lm8i6gvufSBtlLSLA3YJ2aGHnSxA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "How LLMs are trained",
+      "skill_id": "rfv.skill.generative-ai-basics.04-how-llms-are-trained",
+      "items": [
+        {
+          "id": "ga-016",
+          "prompt": "What is 'pretraining' for an LLM?",
+          "options": [
+            "Training the model on a massive corpus of text to learn general language patterns",
+            "Training the user before they use the model",
+            "Pre-encrypting the model's weights",
+            "Pre-installing the model on hardware before shipping"
+          ],
+          "answer_commit": "hmac-sha256:7e3c0e5d7fb3de5043214a592c23617f",
+          "explanation_enc": "aes-256-gcm.v1:nKWBjoJRqgPsh-RW:9vSaUyieG3Vxs8JgfkDhXiVMtWNK8wVjHuozm_6LvEXQCLvwEYUfiaGYAOiQ_JN8D_pJu9YydOOdF4L2klh6xJPYhwW0YFnByHuFbun0KDzKz0P3IGbiKVTVokbPFQqFt3RiDVxX48MzYUrN2CI726EGTyUg3MSAx1L_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.558,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-017",
+          "prompt": "What is 'fine-tuning' an LLM?",
+          "options": [
+            "Decreasing the model's size",
+            "Further training a pretrained model on a smaller, specialized dataset to specialize its behavior",
+            "Polishing the model's user interface",
+            "Adjusting the volume of the model's voice"
+          ],
+          "answer_commit": "hmac-sha256:10c0cbe66a553610016aee474cfacaa7",
+          "explanation_enc": "aes-256-gcm.v1:O0GCYSFAEoFEgGMp:BGXmS0t-RMcdNibg5kJwBfNFj24tmo6EC26vJmumTT_S3PmC3PprjgC_ykbHWM-U_JaEFGVnhXU3gFR6DXCJMq9ZSy9eN5VfwdP5pVHFFJDirT_OtgARJnOykhoC51dlr8zZ8v4uKV9cT87kQY_VKXhap5prk1Ox0y5igm11aahKq5c5SQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.341,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-018",
+          "prompt": "What does 'RLHF' stand for?",
+          "options": [
+            "Reactive Learning from Hashed Files",
+            "Random Learning from Historic Failures",
+            "Relational Logic for Hidden Features",
+            "Reinforcement Learning from Human Feedback"
+          ],
+          "answer_commit": "hmac-sha256:d84762890a25cc095e224ffc18fe1d6d",
+          "explanation_enc": "aes-256-gcm.v1:gJ5RnY3LcpzuCx7T:rt_ACCTJPmNyaO3Oy4GcIm17Qe4HnbY-lFeAjeif7_3MGBvXfUTv1czyIi9NUILiGsiqrvsdKuV_S41Ilg2SIvGVFdDRKfS0-9uhHyZVOuWX8ksbq_IdgGFa_oA9EIQssfGXGmB9hyAvfgvcye2HBWIVbrVJjJdOksabj0rtRZNb6YLU_c2e4djHO2L0mUsD8RoeiUa2",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.105,
+          "findings": []
+        },
+        {
+          "id": "ga-019",
+          "prompt": "Why doesn't training data include the live internet?",
+          "options": [
+            "Training is illegal on live data",
+            "Training happens once on a fixed snapshot; live updates would be impractical and unsafe",
+            "Models can't read web pages",
+            "The internet is too expensive to download"
+          ],
+          "answer_commit": "hmac-sha256:88bc3d2d6df5fa2d2f8bc05b60dfec7c",
+          "explanation_enc": "aes-256-gcm.v1:lXqRQYCYTLCnv-9R:96kLBubZgTfwTwzQpESWBsR6Ekf6o3v-dLR7GNWBXOd27MBy08v7K6FOm3PePacTLVUmID4qV9XagXM7uKXpUIRQtB1uSt7p8LF_U0lhVNuaEttYk2716sCeSoSIeQvFYemGWymK8Y1_bEkaH55PMfJ8ABOkPoQXuc1QY64WYb9IW-j9MvDD",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.122,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-020",
+          "prompt": "What is the role of GPUs in training LLMs?",
+          "options": [
+            "They display the training progress on screen",
+            "They are optional for training",
+            "They perform the massive parallel matrix math required, far faster than CPUs",
+            "They store the training data"
+          ],
+          "answer_commit": "hmac-sha256:992c8c26c1c894b59c6dafccb7e4e531",
+          "explanation_enc": "aes-256-gcm.v1:yYkRZyT9aNXtfkrP:GRQyFPCD1VWxeKfPe3bawja_-XvoYeNBMt4tgoxPvWHhV5zD-tRRR5K7yFbWAek33k7JrDN_cXS5Rw15uPVbsm_7ePC9CWcSeVYdpEl5AlaM3gBcWmhhgOpvs6XBkV6zqdAhhI9BPza1k5el1NgN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "The transformer architecture",
+      "skill_id": "rfv.skill.generative-ai-basics.05-the-transformer-architecture",
+      "items": [
+        {
+          "id": "ga-021",
+          "prompt": "What architectural breakthrough enabled modern LLMs?",
+          "options": [
+            "Quantum computing",
+            "The Transformer (introduced in 'Attention Is All You Need', 2017)",
+            "Solid-state drives",
+            "The internet itself"
+          ],
+          "answer_commit": "hmac-sha256:9af0f3764af031ed989ca2924f3eb70b",
+          "explanation_enc": "aes-256-gcm.v1:2nybLdAi7Cri5OWm:Es-vkIv-m47O5LbFsx6J1zY4PcRSl_FhwGPgPWShfY0CGDL1EqLjyJFrvmeQJc0rc37yd--IMCPwx2rvs1FCM9_CmAE4HWXuVbyv5ikgljTasH5RaciROkPUkeATsRSqgfr0uY7sTDxKefMXptmmNn-K_oB5ow",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.421,
+          "findings": []
+        },
+        {
+          "id": "ga-022",
+          "prompt": "What does 'attention' do in a transformer?",
+          "options": [
+            "Lets each token weigh its relationship to every other token in the context to capture meaning",
+            "Pays attention to error logs",
+            "Listens to the user with a microphone",
+            "Watches the screen for the user"
+          ],
+          "answer_commit": "hmac-sha256:41a668d208d3349c1638a0143406c65d",
+          "explanation_enc": "aes-256-gcm.v1:ruDawUyPrcwwEQol:5tiXG_I4IMlCtRut1LCWsnZ9FuHHioiWwf3z1iErL_CH3g5CKVmbSYLyURgr_xxVyIKwuiYkixsvlOMsE9_dZTMc-h8qBqoEyq40j6F5gm22eGlKnc4FSAGp3QBhrsACKKJ5TtXw8mvup8r9WD3a",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.514,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-023",
+          "prompt": "Why are transformers parallelizable in training?",
+          "options": [
+            "They use multiple programming languages at once",
+            "They split into smaller models",
+            "Self-attention processes all tokens simultaneously, unlike sequential RNNs",
+            "They run on multiple screens"
+          ],
+          "answer_commit": "hmac-sha256:107cf116ca9310c966ba6090066b4684",
+          "explanation_enc": "aes-256-gcm.v1:-Pj2MOpSXzhlYeH1:Vx8Y-heV5twxVOO87Busoap4uHsxVlO8QrsU0Trv2Za6DAhGnAGH6ZqZJWbTkyvgNilsocXyBg0j3_q0zadyc8ZSN7Z6kvc1lh6p0AE8lddEAufuW9OBST6Jr9mI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.574,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-024",
+          "prompt": "What are the THREE main components of attention math?",
+          "options": [
+            "Query, Key, Value (Q, K, V)",
+            "Red, Green, Blue (R, G, B)",
+            "Past, Present, Future",
+            "Subject, Verb, Object"
+          ],
+          "answer_commit": "hmac-sha256:5e328ba30aea6e06bf7899f51b6ef4ff",
+          "explanation_enc": "aes-256-gcm.v1:I0ElnQcB79ZW7wwD:hcl4GRnwUym5KrdxYgk_SPheH7pyr6ez7MyOg5tkuFbdmn3ACLtPWc_0roAigd_Eb9K_6qnn-KoQhicVC0sOPUdpgq-Ej7xwvaBATMKIuMNgfPZvt6x5N4QOYensrInm3wbAtI4aaVntL5qQRvJ5mXuDW2GeKkCy_s3vUw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.038,
+          "findings": []
+        },
+        {
+          "id": "ga-025",
+          "prompt": "Which of these is also based on the transformer architecture?",
+          "options": [
+            "Photoshop only",
+            "None of them",
+            "Microsoft Excel only",
+            "BERT, T5, GPT, Claude, Gemini, Llama — virtually all modern major language models"
+          ],
+          "answer_commit": "hmac-sha256:df54573c693010172befc15ce9f0b156",
+          "explanation_enc": "aes-256-gcm.v1:vJI_Rdv6ZhvHjg4I:8iVJuLYPP7eV7CluI8o9-WRBnJsebSOe657nkzM-OwHa7J6B828aoBorw_QOJ9MvWOW_4iMakS_EqVwsT_LNjfzEExgUhtnMSjmMII_I8mX7VxeQ3SoRXnKNk0DlaBHbnYkdB95zSvJaZW7jF0GO9H2fJtb0NIXOqog",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.05,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Capabilities of generative AI",
+      "skill_id": "rfv.skill.generative-ai-basics.06-capabilities-of-generative-ai",
+      "items": [
+        {
+          "id": "ga-026",
+          "prompt": "Which is a STRONG suit of modern LLMs?",
+          "options": [
+            "Performing 10-digit multiplication reliably without tools",
+            "Replacing all human experts in medicine",
+            "Summarizing long documents into concise key points",
+            "Predicting tomorrow's stock prices accurately"
+          ],
+          "answer_commit": "hmac-sha256:20dac10dc9675bfe6f18553aed6336d1",
+          "explanation_enc": "aes-256-gcm.v1:Nc6_vccB2ukPQf2m:2oYs1HEOGGVNuJCyiwcvr4OMSMsOiUnChuXa4V5ZzjQ1DFV2VEKLJY3ZhTr8MqUflwb74QXNTPhwIdC62z-BiGRc3yE7Gy6wjeviZRrbaS9fuc1lAVpY9e9IqKeTWI37vy2tkWWGU1JM5qQ-uSrn0v5upiLFdEh6oQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.877,
+          "findings": []
+        },
+        {
+          "id": "ga-027",
+          "prompt": "What can image generation models (DALL-E, Midjourney, Imagen) do?",
+          "options": [
+            "Translate text into audio",
+            "Print 3D objects directly",
+            "Edit videos only",
+            "Create novel images from text descriptions, in many styles and compositions"
+          ],
+          "answer_commit": "hmac-sha256:df7650def51266c991410493c9c7bede",
+          "explanation_enc": "aes-256-gcm.v1:s3R1z5ocrQjrH_X9:w466hxGIsRVVH2I1lna1HA15biVQiniHjFpBgd-zMTt3DQgy2Kp14CIPIX7YQvZfwpf6iVxxYcoIfWE3sW92aJ-yWq37Go3ZraH_z_yI64UCNH2gzvJceYOr8lH9mg3W6764lDCWEKVGjpZG66_rmAbwFpt8GY4xGmAUrIyz",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-028",
+          "prompt": "Which of these has Generative AI become especially good at since 2024?",
+          "options": [
+            "Predicting next week's weather perfectly",
+            "Detecting all internet fraud",
+            "Writing functional code from natural-language descriptions",
+            "Solving climate change"
+          ],
+          "answer_commit": "hmac-sha256:18a66ce9ed471d266be37112aa879cb2",
+          "explanation_enc": "aes-256-gcm.v1:e0F6xCigV9uFSgzJ:V1P865XzxFgjPz39VlCwBse3EsSovRknxFB_gH6ddA3kJMobLoCY2ZZu_K6t_A9KyVJ8dUsbVqtfz0NZ7VjbpnJeMJ81mxSyKVRQMjtbOIoXKatz1PFs35qCk3IlHJ3OwhZLnDnb-T4g_AQb4v5wBbk-xuryi5Qn-AWyy0y8HEY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.45,
+          "findings": []
+        },
+        {
+          "id": "ga-029",
+          "prompt": "What's a realistic use of generative AI for productivity?",
+          "options": [
+            "Filing your physical paper documents",
+            "Drafting emails, summarizing meetings, generating first drafts of reports",
+            "Driving your car",
+            "Cooking your meals"
+          ],
+          "answer_commit": "hmac-sha256:0d2a83b49c0bc3e9cddf3f282bf58483",
+          "explanation_enc": "aes-256-gcm.v1:DvbtRYG5FL49a-Lf:Klr4QWicsGmqiREuv9R8N_Hw6QwnrnyAHajaonMO4CgLPZxUiaF-dW0-CVKLxg7F2zecfczc-qJpffLKKOLB4AOU7i6qHvHCgUQz-VtgmzR-TOpPE2p_zAjyop2YZnhlJRNseJBlDFfw4tmnaKB8QJvU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.028,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-030",
+          "prompt": "Which is a NEW capability in 2024-2025 generative AI?",
+          "options": [
+            "Searching Google",
+            "Reading PDFs",
+            "Sending text messages",
+            "Long-context reasoning, native multimodality (text+image+audio+video), and agentic tool use"
+          ],
+          "answer_commit": "hmac-sha256:83d6579519756d784825ea4d0366a766",
+          "explanation_enc": "aes-256-gcm.v1:xHQkWsG86ivkghvd:ztu4ihxCQ3BkN1gnfEji_buPIvqt1LYtLivz6LcbstYEE7t3y26yLcQN8FHyoCy0X0Z0JRuYsCE_RX8gb9b4A8cVsfaImXUsBRP_Z60aQAXurHzMuw-U-Xp7lbVCPpqYyjrwb2meOBHT2_zJLqv9Gl63ch5mQkzKHkPZ9ivMFW3L4E8o-nQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Limitations of generative AI",
+      "skill_id": "rfv.skill.generative-ai-basics.07-limitations-of-generative-ai",
+      "items": [
+        {
+          "id": "ga-031",
+          "prompt": "What is a 'hallucination' in generative AI?",
+          "options": [
+            "The model overheats",
+            "The model generates plausible-sounding information that is actually false or invented",
+            "The model shows ASCII art accidentally",
+            "The model translates to a wrong language"
+          ],
+          "answer_commit": "hmac-sha256:0845c3467b39f34048fcb25465179dea",
+          "explanation_enc": "aes-256-gcm.v1:I8iuV4RvcblRtOuN:xdQ3u4SeL_-8ZGAZlSD7DFPmY6wyZVSDBnIUWm5QLIzjGJ6Veeb0v9aOi8THFMOkJ4uL3_3PuK0sPy-j35L7dyKvSB8S8ibNJYLKZqkELHXWP6wswp2XobokLMzbsZPWksqynh7Qbk24Q6-Plhw2qrlvL5G2Rq8MgtI01umC0N1N",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-032",
+          "prompt": "Which task do LLMs struggle with WITHOUT tools?",
+          "options": [
+            "Translating common phrases",
+            "Writing a poem",
+            "Precise arithmetic on large numbers",
+            "Summarizing an article"
+          ],
+          "answer_commit": "hmac-sha256:b8c1a34f1c40e1582b718aec4400d349",
+          "explanation_enc": "aes-256-gcm.v1:WVF5tGQqBG5RCEON:TO9t5MrIBP-Gfc-DpYBjiEYI7cpJo-FbmpimTTKkcj1SuMGJAA6yqIDRmUWpsUPPvo9ze-BVyEeqv4SPkKjnrtcGztS1KX3W7eFcGyTpdNNdOmJeozLs01ZUxjbNRdgTL1W-VKATYr9UXmwvVGDv_Y6-KKZM9e0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.346,
+          "findings": []
+        },
+        {
+          "id": "ga-033",
+          "prompt": "Why might an LLM give DIFFERENT answers to the same question?",
+          "options": [
+            "The internet keeps changing",
+            "Sampling randomness (temperature) introduces variability in token selection",
+            "Users are confusing it",
+            "The model rewrites itself"
+          ],
+          "answer_commit": "hmac-sha256:c78758d07eb2666beb071c8867e8d972",
+          "explanation_enc": "aes-256-gcm.v1:pRR1IdAiz3v6DnZU:GZzCMk8wHkTu-4kntUpQGd5TGLBtU6TsSbzQ6tzS6WqA7qHsrdWfUir1dSbmhwgUeb_L2NHuq2mvSbrbbQaPAiPFJxQOIV8wXnolxvwVklNuhrHcbF356PJc8XrMGHHTpHwTWVLON4UvKqA1WzpBG1C4dUM",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.778,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-034",
+          "prompt": "What ethical concern is associated with LLMs being trained on internet data?",
+          "options": [
+            "They forget all human languages",
+            "They become too polite to be useful",
+            "They can absorb and replicate human biases, stereotypes, and copyrighted content",
+            "They prefer ads"
+          ],
+          "answer_commit": "hmac-sha256:d6e13006a4cc8b7e8f3178e625230db3",
+          "explanation_enc": "aes-256-gcm.v1:lkNLL9TmvCJp9Mg9:Th_CedrBjQviJXTvUaA0vz9-euCDB3Z_Q3uqyHAft49ItdU8X7DqHbj-d7qVaCNGuvCUgla9LnXddfhlev0njbazLEVw6E7Bt9Zka7G6N6IP8kmAOhCCNm-765HpFIofn-GxjrkFlpA5Ga6KKeI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.286,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-035",
+          "prompt": "What is a key reason NOT to use LLMs for high-stakes decisions alone?",
+          "options": [
+            "They are probabilistic and lack accountability — a human should remain responsible for critical outcomes",
+            "They are too slow",
+            "They cost too much money",
+            "They only work in English"
+          ],
+          "answer_commit": "hmac-sha256:3fde1dad8685f6faf20b4d086e269417",
+          "explanation_enc": "aes-256-gcm.v1:IwUEsjhDHApoVjTX:96b8S1FW1tOQSNbOp4afmJw3YvHkC6REFU5-3Cn2E4M2TZyy1I2w1LVLGBRhiGmVug0ImIBFZT3FYIhjNTp2WeUCyE34VmqM0ICe6rCmGkinf3JPNzPYfcr05773c-w5AjQ868_CUu8S0UCSS54YXR5PjKrID3cFZ70Usw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.16,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Prompts and instructions",
+      "skill_id": "rfv.skill.generative-ai-basics.08-prompts-and-instructions",
+      "items": [
+        {
+          "id": "ga-036",
+          "prompt": "What is the FIRST thing every interaction with an LLM requires?",
+          "options": [
+            "A prompt — the input text that asks or instructs the model",
+            "Webcam access",
+            "A signed legal agreement",
+            "A credit card payment"
+          ],
+          "answer_commit": "hmac-sha256:0355671900b6e78a6b2bcb863c1f4a8e",
+          "explanation_enc": "aes-256-gcm.v1:VtlZeq1ZOreoTWiO:QD3geVGGH-y0jcJcEkpqKuTNQNO8Bi5sB8ta6htTdXeMHkA9FQ1WsO1PvrYos4JnmnhrR1RQVEW2WuwZYuaTHircqKeIAf3fuJDo9N-8dzSU4YAPJ5dZ2-RRKtYK2YkVPwDazRLx",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.417,
+          "findings": []
+        },
+        {
+          "id": "ga-037",
+          "prompt": "Which prompt produces the BEST output?",
+          "options": [
+            "'budget'",
+            "'help'",
+            "'write something'",
+            "'Write a 3-paragraph beginner-friendly guide to budgeting for university students in Pakistan.'"
+          ],
+          "answer_commit": "hmac-sha256:76f4e39e379e71c44bb9db9365aebdf4",
+          "explanation_enc": "aes-256-gcm.v1:P30NlHv_NCtsQdJF:o5DxoIFba3GyCsUWu7tyFCIqr5TvG6nf87jr3wmOm1v6gslo4gRmDRZ5vmZGIkIfoGnEORaY6Twe4sdjkytdoBUk76kx0rE2mJEtuiDBg5aKOa3zvQ69eFx4DVVF2JzDb3poAnE1IqWza_daD_SWH9Tv2GofiB70xg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.588,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-038",
+          "prompt": "What role does 'context' play in a prompt?",
+          "options": [
+            "Providing relevant background helps the model produce on-target, accurate responses",
+            "Context confuses the model",
+            "Context is automatically detected",
+            "Context is illegal in some prompts"
+          ],
+          "answer_commit": "hmac-sha256:685597f61fbed6bb5c173b769c257d9a",
+          "explanation_enc": "aes-256-gcm.v1:6-o6VsTOWUT0-szt:ESEwO0TnpWMA9zg5E9-VhdxpL0LTNzIJz2K5lO1y40ig-5dlXiEr26H_-r-5Uz1px5fLyALhdlPJ4X6ORPb8n3HUb5I2z_2GBllFcsvcoKNGjUg6qjhuwMzE5bu4QXAjNg3ACKWgdO-y3rRLmqJZ7CMoUeQ-w1FkMMyPf1xW",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.441,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-039",
+          "prompt": "What does 'show your work' or 'think step by step' do in a prompt?",
+          "options": [
+            "Makes the model use a different font",
+            "Triggers Chain-of-Thought reasoning, often improving accuracy on multi-step problems",
+            "Increases the temperature setting",
+            "Forces the model to respond in code"
+          ],
+          "answer_commit": "hmac-sha256:bd2bc1202c17fdb42bb6c843363921a4",
+          "explanation_enc": "aes-256-gcm.v1:fhkailMfTvkxK3YJ:42Z3xpmgINLO9Eir3KC0SHq37b_KojaI9thjCSPUbCP8_pnNlqEcRN2CGhUKUeho_912fg5ehgWcHNJoZcG_9SomtTAi_W67tSjxivf0V9ZeW6TruCjR7TRNGok",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-040",
+          "prompt": "What is the BEST way to learn good prompting?",
+          "options": [
+            "Practice, iterate, and observe — try variations and see what changes the output",
+            "Never write your own prompts",
+            "Memorize one perfect prompt",
+            "Use only one-word prompts"
+          ],
+          "answer_commit": "hmac-sha256:4b1e3f873feecfae554cf75323bfe72b",
+          "explanation_enc": "aes-256-gcm.v1:hfWB4sGtqGbFRuqY:JSQVZUi3v9qdF_20FyxmwnZYQJWU94VW2_CBh3aMsfmzfaH36J0j9aq74a4E2q-j3p9AfmPVDAvSIkS4kYehx8dvs17gWNF9dL_OZm6eqcLyWVbZeug3QWybZIf_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.821,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Generative AI tools landscape",
+      "skill_id": "rfv.skill.generative-ai-basics.09-generative-ai-tools-landscape",
+      "items": [
+        {
+          "id": "ga-041",
+          "prompt": "Which is a popular general-purpose chat-based AI?",
+          "options": [
+            "Notepad",
+            "Calculator",
+            "ChatGPT, Claude, Gemini, Perplexity, Copilot",
+            "Microsoft Paint"
+          ],
+          "answer_commit": "hmac-sha256:9f841f129456926c53ee2fde81bc6205",
+          "explanation_enc": "aes-256-gcm.v1:9iEkLlEyGmvhzV_x:3eZNfjoAVzHMgw-2isuKXBYNI_GcVTdwdVsN7ElHp0KgzsRdwDwukoFZaRqvRO-7g0oqg3Dh1RRLfq4w7y3N0IHxdvuHPHkigMmd2WW8g1E-2SIAeotqev8JtYTREkAlnp1L_LJx0dMtfVnX9eo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.933,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-042",
+          "prompt": "Which tool category does Midjourney belong to?",
+          "options": [
+            "Text-to-code generation",
+            "Email autoresponder",
+            "Text-to-spreadsheet",
+            "Text-to-image generation"
+          ],
+          "answer_commit": "hmac-sha256:eb81c0cf9ebef93eb44c2daece07358b",
+          "explanation_enc": "aes-256-gcm.v1:azOXS6JZSYVeRGFs:bhTh7NG_MYJrAGQwQVX-4r3pmgLEwnBFUbRe2oMwqh4znodVoITCNMbtI6IQOfQk-JcRr-fPJ8olALHP_b-3AywpafwANlPctRPfRFBdWJ_eQWwLW3P3I9bcc4Zwq162DHr1gDt9JZIhGRiO7R-3gzgfYQ6BAB5d",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.043,
+          "findings": []
+        },
+        {
+          "id": "ga-043",
+          "prompt": "What is GitHub Copilot?",
+          "options": [
+            "A Microsoft Office plugin",
+            "A GitHub mascot character",
+            "A backup tool for GitHub repos",
+            "An AI pair-programming assistant that suggests code as you type in your editor"
+          ],
+          "answer_commit": "hmac-sha256:6eaadcdb605b267883168a010433952e",
+          "explanation_enc": "aes-256-gcm.v1:jNlAQzE5MTm46SS-:nVkbdLwtOfVMq7ZpiChVSz6Q9wcI1OieiwJN3YSxrAEGrOTIvRIQqk-75pB1QjbwAqYNVeWg8vMgQYLW98cjGiDs4UWl4ZnwL6cb2ZYxUj6ViugBTL3AoclAmtWTLf6ZBqOMJc7vKsyZ7UxQqIvIY4aL7jdSgtsEh778fFFuhGPxXDq1Ul8tCYdaN6wP_xjD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-044",
+          "prompt": "Which tool is designed for AI-powered web search?",
+          "options": [
+            "PowerPoint",
+            "Notion",
+            "Perplexity",
+            "Microsoft Word"
+          ],
+          "answer_commit": "hmac-sha256:d89f5b60ff1578a0b9e4d9623f500071",
+          "explanation_enc": "aes-256-gcm.v1:BLZspFzClebq84zA:YaaiP6bUhPp2kEhbSYoTbTNX1ypkYRih-zjrjae-cO6lmpU01SY29KqtnDnu0CKOwk1ECvZuYFDeSW0aKHkx19kLi-PArkI1X7gOziBdUL8d3zCRf6mMBPKW7yML24ioJsJ30dUtlOMXKsCEHdguLl92N5D7cvqlma6HoLbCldjDFfVCdMIPYpWjFgyO_C8NiY4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.714,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-045",
+          "prompt": "What is 'open source' in the context of LLMs?",
+          "options": [
+            "Models with source-code comments",
+            "Models that cost less than $10",
+            "Free trials of paid models",
+            "Models whose weights are publicly downloadable and can be self-hosted (e.g., Llama, Mistral, Qwen)"
+          ],
+          "answer_commit": "hmac-sha256:6c5f96798f5a53a74c68778a639897a6",
+          "explanation_enc": "aes-256-gcm.v1:KGiGv-X0Hv2VVsTF:VGNEDf5z-lnZcFK1ULVLs-1c2l3FA9gl5eMXJshM-TDdaYNsU3hxqFU4CO7BHehzYaGEkbJPj7FVDRcCsuvXbkNtWqNDkestRWEtdMrrE1ZyJZQ7oPO8aY0I3RdCntF5oEjrSaJWhVbl60-Im1ggjA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.063,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Multimodal AI",
+      "skill_id": "rfv.skill.generative-ai-basics.10-multimodal-ai",
+      "items": [
+        {
+          "id": "ga-046",
+          "prompt": "What is 'multimodal' AI?",
+          "options": [
+            "An AI that can accept and/or produce multiple input/output types (text, image, audio, video) in one model",
+            "An AI that runs on multiple devices simultaneously",
+            "An AI translated to multiple languages",
+            "An AI with multiple installation modes"
+          ],
+          "answer_commit": "hmac-sha256:c1efdd803dfb5ea8b3f5852aac762430",
+          "explanation_enc": "aes-256-gcm.v1:zoDpVNDR8QFCM-0Z:xGf1QnjjchaEpQmGZtigD51-2EGBwofu6hUXMK0omZZw8S7uv3sZu9lRzfVUyuie7bWnqBvffprrVCVKOdyaPzVV0-mDqjIbsR17LPsckAZgFFNI8unGl2XbIc5CvASnNsbfLeQGYduHHDUmTVsqm-w_Ee6x8fGx4bE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.1,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-047",
+          "prompt": "What can you do with a vision-capable LLM?",
+          "options": [
+            "Edit the image directly",
+            "Print the image to paper",
+            "Upload an image and ask questions about it: describe it, extract text, identify objects, analyze charts",
+            "Convert the image to a video"
+          ],
+          "answer_commit": "hmac-sha256:a41018273d740169a77e2adc822123a2",
+          "explanation_enc": "aes-256-gcm.v1:PEnYv4euCvIfnCHg:pBuwUuGT6GrXjQMQmJfyhemTdZ5qzvBwvzCIvjxGcHhwg-IaBLJe9bCYeFjjQx7nfFPiVaRspHeW3WshJyDlExjfQs4IrJ1RynYdmKzVtlgOe63E_0nCIc2cwnRa98CSHkjXTuvet2ybNxtriyf9CFr0z0zsIOewFtNdZOdQzs3jZRelR4fE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.679,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-048",
+          "prompt": "What's a realistic use case for multimodal AI?",
+          "options": [
+            "Extracting structured data from receipts, invoices, or screenshots",
+            "Reading printed books physically",
+            "Replacing human eyes for surgery",
+            "Generating taste sensations"
+          ],
+          "answer_commit": "hmac-sha256:4ed087ad95ce70c1a485a25e47731c73",
+          "explanation_enc": "aes-256-gcm.v1:HjzlY1-4eZQXg_9s:0S_ARD3SXp4Mh_al7gA0qkiRC4cJoWI3_9E6ifk6RKQL5FZOGruTKZyH-fsn2Vv5lXvB4YJ3hsLq6buIMbSyS89Cxf1Y0qk5860ZPYGeyG7a4Ww1N8Fnysq3mPSrl-_aIseBz7Qi8mPQo5DsK-F0tK33ACCA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.063,
+          "findings": []
+        },
+        {
+          "id": "ga-049",
+          "prompt": "What is 'text-to-speech' (TTS) generative AI?",
+          "options": [
+            "AI that converts written text into natural-sounding spoken audio",
+            "AI that plays music",
+            "AI that talks back to humans",
+            "AI that records conversations"
+          ],
+          "answer_commit": "hmac-sha256:9f50c6e2031d5c3f7dd63ad775b478dd",
+          "explanation_enc": "aes-256-gcm.v1:hlyRlN9jciWs0RUm:0Jkb6EP-TX4c9CQyIFQuPJQSvsBYQTQW1UTY-1mrqhBcA0iwQk_TUwg8GxsYDgwi3KvMbMWYA9bWxPSqg93udLOUwimV-v-f1WwlvjNsnybaUL1F4lKQ8uDFA_C2ytMHCwCDsxxayNWlfHwMXaXe9PpA7OgcIRX4-iq_0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.207,
+          "findings": []
+        },
+        {
+          "id": "ga-050",
+          "prompt": "What is 'text-to-video' generative AI?",
+          "options": [
+            "A screen recorder",
+            "Video editing software",
+            "AI that creates short video clips from text descriptions (Sora, Veo, Runway)",
+            "A YouTube uploader"
+          ],
+          "answer_commit": "hmac-sha256:3ce22a6366f7c66daf816dc64abef496",
+          "explanation_enc": "aes-256-gcm.v1:7ugofbRYXf3dvcfA:Lwk9KFeRd9cUvxvkP7flbp2t5nODyMp9kMEGF4Gtcg9h9TorydKIj_9k1hv-JxIdjaLJ6RY65Z7l73ph1iat_2ofEeF-j81NTTicCB1uYjqneWAs6Xyj9BCTSaLTPBe1luuv6rJWvi7a4lh6vvsf3wyMyi48Og5RKhRx-0wRpk9arzQgf0uUYe0cmZA3klRp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.455,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "AI agents and automation",
+      "skill_id": "rfv.skill.generative-ai-basics.11-ai-agents-and-automation",
+      "items": [
+        {
+          "id": "ga-051",
+          "prompt": "What is an 'AI agent'?",
+          "options": [
+            "An AI lawyer",
+            "A virus that infects AI",
+            "A human salesperson for AI products",
+            "An AI system that can autonomously plan, use tools, and take multi-step actions to accomplish a goal"
+          ],
+          "answer_commit": "hmac-sha256:68edf5719f2a5c40fcf4d859ab39b6f0",
+          "explanation_enc": "aes-256-gcm.v1:cK6Aab3R_hEQwzlw:EgFiGwpOlIhvpnIIncsNBaCq-k9abpbxSjow3HQAOQs3wdFCORxlk5tCsXSLQwunGPMKd2qHjTNfWQgvwjxL9oug-h15iuIM53O7nNevq_JPwJGv7auVsirxFsccuViCPkkLvl7wrvE4Jw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-052",
+          "prompt": "Which is an example of an AI agent task?",
+          "options": [
+            "'Book a flight to Karachi under $400 for next Friday, then email me the confirmation.'",
+            "'Translate hello.'",
+            "'Write a single haiku.'",
+            "'What is 2+2?'"
+          ],
+          "answer_commit": "hmac-sha256:750547ae355381d6a1b7cf74c6e10eba",
+          "explanation_enc": "aes-256-gcm.v1:5JWGo6LUi2eUKJO5:a0l16Ja3RMWWB7EX4j9o4rO5M_C9jIR-T5lgiwq_HVwcUKpMFuiii-HeYuzvGbRngrGmR6dwNfI5sn8cf2OB5zjlZXpCFRbSQ7blP4JGnsFfMUHjoUKe4KH88jDBzMzxKqQB_rOkOgWJOkN5UsIL",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.739,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-053",
+          "prompt": "What is 'function calling' / 'tool use' in LLMs?",
+          "options": [
+            "The model calls customer support",
+            "The model writes its own Python and runs it directly",
+            "The model bills the user for each call",
+            "The model returns a structured request for the host application to run an external function (API call, database query, etc.)"
+          ],
+          "answer_commit": "hmac-sha256:6d9aaf1902a33e14a55365eeeff40d6c",
+          "explanation_enc": "aes-256-gcm.v1:6Z8fb64LZWfdvQCC:6QY5I9VbiC5Ih7E6baPSwhPiq8OzKjKeo_fsQuqaKpQU1aiJ7ramm74ZlzedEfjKhEQQGlk7dGUS_-rSuGOu9ouDDbQg8BFBq7plr4KZUNpI89Z9nBhze867UXzDdz7CJeCCOws6czSM-XLvKlyveKTZtTeP2Ff7u7rDRztbKXLbVgaFfiLYwZuhGq3-o0Jt",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.385,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-054",
+          "prompt": "What is the risk of fully autonomous AI agents?",
+          "options": [
+            "They can take incorrect, irreversible actions without human review",
+            "They become emotional",
+            "They charge too much money",
+            "They forget how to type"
+          ],
+          "answer_commit": "hmac-sha256:1cf79e63ea4f91f9a9149b45f2038be8",
+          "explanation_enc": "aes-256-gcm.v1:4Ldu-_SCUN8L3SeV:C8JcPQBgE6rQtVRdkUZxGvRNr_W27E9M9xZ8OuHKslp8sZK9wR98ntkun4JjUi5207ktI7zdi4Tug2MbhvgsSJcJDav7-xltfOrvbsjIUvjlzRUjWsX0p_XMY95cczJg9Wg0Cpb0m_1Hyd5tpLFjiFPP-6xLQXActg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.538,
+          "findings": []
+        },
+        {
+          "id": "ga-055",
+          "prompt": "Which is a popular framework for building AI agents?",
+          "options": [
+            "LangChain, LangGraph, AutoGen, CrewAI, OpenAI Assistants API",
+            "Photoshop, Illustrator",
+            "Visual Studio Code",
+            "Excel, Word, PowerPoint"
+          ],
+          "answer_commit": "hmac-sha256:1a97d23d8a12acfb63f53444b47afdac",
+          "explanation_enc": "aes-256-gcm.v1:AI40Zew78XpFM88h:KNCYNWdVg_JeElXbd9TARHoGfqfJHxB1jY7eajHP2V2l53jJ89jsMMvFIrY53QtAYFSdDXrxpyb0jeSTMnNftiAT7LVVCDkYkrR7uBaCuNboZK7TDE-6FgP1xK9B9DAGVVES1mn6PiGzZv7Tt03JpSYfXw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.609,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Retrieval-Augmented Generation (RAG)",
+      "skill_id": "rfv.skill.generative-ai-basics.12-retrieval-augmented-generation-rag",
+      "items": [
+        {
+          "id": "ga-056",
+          "prompt": "What is 'RAG' in generative AI?",
+          "options": [
+            "A clothing recycling system",
+            "Retrieval-Augmented Generation — fetching relevant documents and injecting them into the prompt before the model answers",
+            "A new programming language",
+            "A type of file compression"
+          ],
+          "answer_commit": "hmac-sha256:9e3c1afd64b3eb5e0109b4f1071b6d6d",
+          "explanation_enc": "aes-256-gcm.v1:Suc95LeFjfbxakDB:RtBiipMs5ikp7nXXsp_2cjvLGm2J7S5DygZKcPtbRfKyKlIVAkrUHOrg3f5oTzrHjPynek5UQZzUdfbfJ0FCnCJUesF-q9DYum_U7nJOBda3iYrDXCi5Mg3_nYjxnUcgTPNaSRWyE5KQGzK-HkPIE_WkPUGiJjljrj-SqOAaRiky84U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.444,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-057",
+          "prompt": "Why use RAG instead of fine-tuning for a company knowledge base?",
+          "options": [
+            "RAG is impossible without fine-tuning",
+            "RAG lets you update knowledge instantly without retraining and grounds answers in verifiable sources",
+            "Fine-tuning has no benefits",
+            "RAG only works on weekends"
+          ],
+          "answer_commit": "hmac-sha256:17d44b8331fa655ce7c988a01ce239e4",
+          "explanation_enc": "aes-256-gcm.v1:NCG54sZXPAXElWmW:arnsFEzWCLTASTZnFRClx6y4gM0eZ4x_2Sz-JC-ZZS4xOMBgdPfj8KCGzCUAJr8s69F-iudJ8OzqIFO24l2mxXY4t9zkLyJQzCBs9N8Kg1CKPccCOpf2kkA0BT8mvy4j5bUFUUzBHGflsYkRqig5lwOp-mF5-uS2_RjpX_qg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.703,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-058",
+          "prompt": "What is a 'vector database' in RAG systems?",
+          "options": [
+            "A spreadsheet of vectors",
+            "A database for graphic vectors only",
+            "A backup database",
+            "A specialized database storing text as numerical embeddings, enabling semantic similarity search"
+          ],
+          "answer_commit": "hmac-sha256:f1813fb800bfae7a546147f8f8213529",
+          "explanation_enc": "aes-256-gcm.v1:WoXwY9O4lEjpGKlG:O1b8pm84H-za8tJypfNo0MxzuJJD1CMsPbr3OZwQx7qkAf0cUUBtPtGVzsGeDokiJk9O0JkjRT_85LYq0hN1f8c08a2WMb1QyMu2OOYkoeGUbdcAxrolr-nZk8MpcLsPCcCYWmKUzBIiVG_bAa66SJHJroRYrbjFtWniZz0lxHB5tYPFIqGR4W6VydiXRa0szvLp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.743,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-059",
+          "prompt": "What are 'embeddings'?",
+          "options": [
+            "Images embedded in HTML",
+            "Quotes embedded in essays",
+            "Numerical representations of text (vectors) that capture semantic meaning for similarity comparison",
+            "Videos embedded in PDFs"
+          ],
+          "answer_commit": "hmac-sha256:2fb1b94043155020a8d5ab0b0047b057",
+          "explanation_enc": "aes-256-gcm.v1:fkqhD47IAaYOkwNL:j6KPBAz6QYX2YifzWSWTe6gXjYYfXtBfGKsa3jbxmxJ_MeRf5Qp4qPJbFuSa19Z70CxCyyJewrHgxri-9C2MsBptwy7nUiXY9Q29Oce5s58SCUaOFoE9_IvUke3kE-tqX05YDv-gyw_K8KCgpClJQvcyV9_BUw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.96,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-060",
+          "prompt": "When does RAG go WRONG?",
+          "options": [
+            "When the model speaks too quietly",
+            "When retrieval returns irrelevant or misleading documents, causing the model to confidently generate wrong answers from bad sources",
+            "When the model is too polite",
+            "When the documents are PDFs"
+          ],
+          "answer_commit": "hmac-sha256:48fe2e980723b4073ede64301c00d839",
+          "explanation_enc": "aes-256-gcm.v1:de8S5HvgeEhYrhL6:BrOqOFxMFCIrNlULsksUXAxK7muEsZ0L4F_jYI7rwOQH52r1vZUt5CNMSU7m5kF73cZhTH9Xs1cNL9_krgpSElTE_KOpcG_MmAvqYT0tW2ZLZy5ML8h601Go0xLptqtCuGqsvJRamIY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.97,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Safety and ethics",
+      "skill_id": "rfv.skill.generative-ai-basics.13-safety-and-ethics",
+      "items": [
+        {
+          "id": "ga-061",
+          "prompt": "What is 'AI bias'?",
+          "options": [
+            "When AI users are biased against AI",
+            "When AI runs faster on certain CPUs",
+            "When AI prefers certain colors",
+            "When AI systems reflect or amplify unfair patterns present in their training data"
+          ],
+          "answer_commit": "hmac-sha256:d6a91a7914ba8d7750493c1277c9c254",
+          "explanation_enc": "aes-256-gcm.v1:vQaRRwu-IZoDWfY7:o0d_KD_BZbvlogJUJ_fW4yY9cF__R_IbvJHuZ_8xi8YtAeZZYlQKG71RXtOUoyqiUxQMw-Re4TJNdrOa_f5g0Ve7vBnnSS6BW50-MhFYndxjy_ZckD4jLugIqrtVvKTGdRyAyLDsTO5e97IjqqdAgXC5XZD8xYHoSB8LNTEJCDwGlMP6UdY56tsDCGwXXQS4CJ3ewHHDig",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.314,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-062",
+          "prompt": "What is 'AI alignment'?",
+          "options": [
+            "The research field focused on making AI systems behave in line with human values and intentions",
+            "Aligning AI fonts on a webpage",
+            "Aligning AI hardware in a server rack",
+            "Setting AI to the correct time zone"
+          ],
+          "answer_commit": "hmac-sha256:51193d6ff85ab403aab1fa1c7ad85dbe",
+          "explanation_enc": "aes-256-gcm.v1:8VOmo8EqBl9QXmt_:XKDNl3t7WZOo2t6I-L0vzXQixq0TltEG5hG7aiUEq-u5dA_CbjsiwisM3S-QVsXUaH9eD-oFpHuabtzKJk-tDG7C3HP1Hv6_xvvJgj88Dc3KGUujdzBH09Je6TCzIK6WEjU_h4Xdsxpq61f6FQMop4GBkktMDJtHCL2XG_wYpNCUoKqzH7wK4aZgmDQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.568,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-063",
+          "prompt": "Which is a RESPONSIBLE practice for AI product builders?",
+          "options": [
+            "Implement safety filters, rate limits, transparency about AI use, and clear user feedback mechanisms",
+            "Hide that AI is involved",
+            "Allow any output without filtering",
+            "Avoid all user feedback"
+          ],
+          "answer_commit": "hmac-sha256:a87f8524ea998c692cd483481835a166",
+          "explanation_enc": "aes-256-gcm.v1:x04a2xiqhV5Xampi:Wxq5oSh-3_uR2yfU1kH9f-GCO4n-wNVyHQWM7GSPaIwSBwXVwQ6ZhO5kwIcHKz9HCNzD9HUOOpeCKJMexjoSBZ422jcSnx1_S61wjgr2ZYEKUDhjgMfeIA_tp4UNAWPKIjUh3lrZTPUfhGjU-S4t_8v2sSN-3upHyYQQ_mS6bQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.941,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-064",
+          "prompt": "Why is 'deepfake' technology a serious concern?",
+          "options": [
+            "It is universally banned globally",
+            "It is too slow to be a problem",
+            "It can create convincing fake images, audio, and video of real people, enabling fraud and misinformation",
+            "It only works for fictional characters"
+          ],
+          "answer_commit": "hmac-sha256:d8e1b9faf6e0ae224cf9efd40b344fa3",
+          "explanation_enc": "aes-256-gcm.v1:fafr55n3s7QY0UDr:-Q1xN9AMn9UOzq6M6mvOiMEm1VCDR92fRX9NGeQ_3qQC_np9JUP_9cIrJIjw5hxzmfAcUsJBuOCOQpchKbJkbqr9loFkVyFeee02L_x2KtxixpQkhMbrd_S7AL9lYBkvEVe4NmvN6eGjA2qDeIkTLw3PU9xnC8CLoJGkf6v_SsF10MsjJNt2ai0",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.737,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-065",
+          "prompt": "What's an important question to ask before deploying AI in a sensitive domain?",
+          "options": [
+            "'What color should the AI's logo be?'",
+            "'What font should the AI use?'",
+            "'How many emojis should the AI use?'",
+            "'What happens if the AI is wrong, and who is accountable?'"
+          ],
+          "answer_commit": "hmac-sha256:e77c092cc6515f1b02433b02b64a1fdc",
+          "explanation_enc": "aes-256-gcm.v1:qEjdxtctv8UZ6Edp:s7Jxgm6fTm6XLYcszNEw7evOALqQp2SJclWv-yHtQG8Hf6Wf0FmCcNBO9lChFge02l1N3AlTrxTFgHHNbFaUJlwvcjC-oNtLWR4iJKgFSx1eu3ETbB7OfThnS53tzGGEpXqE1GCF9TlIB8x9DaJgcRvdwQHgKfO0eK1wP-NGALI10-i2K0bRCQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.568,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Privacy and data",
+      "skill_id": "rfv.skill.generative-ai-basics.14-privacy-and-data",
+      "items": [
+        {
+          "id": "ga-066",
+          "prompt": "Why should you be cautious about sharing sensitive data with public AI chatbots?",
+          "options": [
+            "AI cannot read English",
+            "Chatbots delete everything immediately",
+            "Chatbots are legally bound to secrecy",
+            "Inputs may be logged, used for training, or accessed by the provider — treat them like public posts"
+          ],
+          "answer_commit": "hmac-sha256:5de1c1cfc12bbce2217d191a9faf4ce1",
+          "explanation_enc": "aes-256-gcm.v1:VozPgIPH9SaOoNmW:Rr3MtNGuErvt9VrJPUGmOZQFlO-gr_AkT72XYFl4LISckKPaLePayvuTNSuGclc_g8sNBsiHWTtJydZz6wEhB9Tc1-sJ24c-Pmxe2y8QTuQm2nsKX89yt1r1oFyJpqASRrpNmKzKHCx7IZp0kFsEcUlEHI4Vxl6aOq7T-y4_-GcjjZwejD0PxWx9g_GwtY-7Lf0ANw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.605,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-067",
+          "prompt": "What is 'data residency' in AI?",
+          "options": [
+            "The data's IP address",
+            "Where AI models physically live in homes",
+            "The data's email signature",
+            "The country/region where AI providers store and process user data, which has legal implications (GDPR, HIPAA, etc.)"
+          ],
+          "answer_commit": "hmac-sha256:b5290d540215b0dd1a1b22669e85486f",
+          "explanation_enc": "aes-256-gcm.v1:E88OKUVylLUwCkHd:eqdkOMnTY0nHKGQZVDxLIKcwxmGx6aGOU7tXoO4zll5ZUlxjVrSWcHHb37hFxNSMzaBA4jrCKau0Q4B91f3o7pdqdkMpTG43x2nxYauME--FJIFhVudfr9YKGcKsqkSGn5iZW5g8wwGEBtcQ9XbJNp5yi60b4x5Zd-m4QJg5-A_8bX6kWO8qPQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-068",
+          "prompt": "Which is a PRIVACY-FRIENDLY option for using LLMs at work?",
+          "options": [
+            "Self-hosted open-source models, or enterprise plans with explicit no-training clauses",
+            "Sharing API keys with everyone in the company",
+            "Free public chatbots with all company data pasted in",
+            "Posting sensitive prompts on social media"
+          ],
+          "answer_commit": "hmac-sha256:510ebdbbfff0c2885c58626f2caf919b",
+          "explanation_enc": "aes-256-gcm.v1:IO_Z6qPKA3bpiOlM:vfWRhZDWNh3FCRvlkBMGWGxFmAZVdsI8hRrYxYUogPknLhqBdfJlZOsEOOKRiuu9UBdnKNOh6TVhqzPBtlmJwqjaFOf4XPyDHCMZdCevMOfz2m5UmAxzPQ0edyi5CffcXZhD-EAVBQmSiOSjDaI7msIsPkpHjFA06b8ATA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.635,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-069",
+          "prompt": "What is the safest way to share PII (personally identifiable information) with an LLM?",
+          "options": [
+            "PII is fine to share publicly",
+            "Convert PII to images first",
+            "Always include all PII for context",
+            "Redact or pseudonymize the PII first; only share what's strictly needed"
+          ],
+          "answer_commit": "hmac-sha256:a65fd818d9b8b7fe4b7a6137c3c7e124",
+          "explanation_enc": "aes-256-gcm.v1:ASAEFIu-si2tvtn6:JMdjl9lRyoN8mljYAeJI55Cyb0FSp97Iu8KdV4yRRzPxwhssYDxxUNPoPv7DxHu7aO2nvEiGMemNUe36-9qwHIdW3snjaHBayKzKksCKcUJF0_FcfRI-GZc3UxwzbLtQeUOtM93p6fJa9QwQ5LnaqFDvrXBu3A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.088,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-070",
+          "prompt": "What does 'opt-out of training' mean in AI APIs?",
+          "options": [
+            "Opting out of receiving emails",
+            "Opting out of using AI",
+            "Opting out of payment",
+            "A setting (or contractual term) that prevents the provider from using your data to train future models"
+          ],
+          "answer_commit": "hmac-sha256:35ba2d5961010aa70f43c0e9de37f816",
+          "explanation_enc": "aes-256-gcm.v1:gJGOpFA5pLO-Wvbc:cgHO6bKo89XqKfcogs51dK9KIZcEfpWinf-ogHR8tGc-DDm8bbneeR0-KBX3iFVVk835kN8YLUObTaOhPv97cM_rBU4EvHSGh_b7CnOeM29zSph0ET4K4guXkLj-h9AVgAGk-LB9DONJeNiT-sLq-L_M-81ppO4ltgBTymYixnrwJuDjfMJ5hxE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "AI for productivity",
+      "skill_id": "rfv.skill.generative-ai-basics.15-ai-for-productivity",
+      "items": [
+        {
+          "id": "ga-071",
+          "prompt": "Which is a HIGH-LEVERAGE personal use of generative AI?",
+          "options": [
+            "Replacing all human relationships with AI",
+            "Generating spam at scale",
+            "Letting AI make all your decisions automatically",
+            "Drafting first versions of emails, documents, and content you then edit"
+          ],
+          "answer_commit": "hmac-sha256:9c72dd3390c60c01f890bb8cbdc390f5",
+          "explanation_enc": "aes-256-gcm.v1:bU3-sNhYGPSpKTRm:f7wNbQQl1WEJ1BOMoZd-bwhP5ddnsOk_654zCKosguk03jSLlCFWvdFWSftv-3FNjnCMx3nG149MzlHMOAyNcQu7wYtMnNmUXnn8lO3l83xn9Byz30Fquzz4ra5w99jmWJLHzw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.479,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-072",
+          "prompt": "What is 'meeting summarization' AI?",
+          "options": [
+            "AI that ends meetings early",
+            "AI that joins meetings as a participant",
+            "AI that transcribes a meeting and produces a concise summary with action items and decisions",
+            "AI that schedules meetings"
+          ],
+          "answer_commit": "hmac-sha256:595e5b8268c4bb37474dc864e064af36",
+          "explanation_enc": "aes-256-gcm.v1:4TtKZ5I-pkCFnImU:xNCGc0V__d7SnGgoKl0Y-KeGLkpQbENSNzelSImL3cJTAFz6xn2IATuPnESu4ECrNdgu8-LBXOctXclx2oLW0uAciQpqOq5ckZwFQCEWs8tUDRmZ-hyUCz-mg4AM_Eeu3cWSfHfgBw1UN8wdXZAdo-M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.359,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-073",
+          "prompt": "Which is a SMART way to use AI for learning?",
+          "options": [
+            "Ask AI to explain concepts in multiple ways, generate practice problems, and quiz yourself",
+            "Have AI take exams for you",
+            "Believe everything AI says without checking",
+            "Skip learning entirely"
+          ],
+          "answer_commit": "hmac-sha256:5a026ad98f75e96214623deeaf0cb6f5",
+          "explanation_enc": "aes-256-gcm.v1:dnGrc-ZSoHHPiLg5:M0Zj0jsxc8pCD9Qn5sjEvd0SVPTmRhbfMDyRU8WrcglPrJe-Q2qRXquf9IFFx5Wdq4fYy8BHvVZEPr2GRGtGbeKxTlMueSPbVg9s2jdQPAPyjsckLTR58dzcr4yW85f5DJ7X3VGxDGeo-DfKg6ZadFWl_e9Q1UjyOh9sNw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.093,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-074",
+          "prompt": "What's a PITFALL of relying too heavily on AI for writing?",
+          "options": [
+            "Your eyesight improves",
+            "Your typing speed increases",
+            "Your handwriting becomes neater",
+            "Skill atrophy — if you stop thinking, your own writing and analysis abilities weaken over time"
+          ],
+          "answer_commit": "hmac-sha256:eb8a62dfdea6ff00ad9f3b9ea9058583",
+          "explanation_enc": "aes-256-gcm.v1:o6rvfFe3DozPOfNa:8CqC841VV234yK3xh-l2YIsi_Cc_m-9ja6HeqvYNlXMzj_vXEci46r93zqJN4Qy81hMxsR_83BoOvsD9-yzziLSq7-b5p5E0q4Rof1XdGwHBFQODVWd3GUowGiJMIIujBdfgqOcWBf5QnQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.032,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-075",
+          "prompt": "Which is a GOOD workflow for AI-assisted coding?",
+          "options": [
+            "Have AI draft code, then review, test, and verify it carefully — never ship code you don't understand",
+            "Never let AI write any code",
+            "Copy-paste AI output without reading",
+            "Ship AI code straight to production untested"
+          ],
+          "answer_commit": "hmac-sha256:916cefaad71a42ca8a6aa1c100f2af21",
+          "explanation_enc": "aes-256-gcm.v1:1rkTmQBpmgL6Ibnz:NFRgquWxsSBtswUs6Zdk1VprCAiHv7RHFi-TpVJ6Do0DLcWhg4lIN-wjmDR7On_-hSRkgsTElgSrd5cVfZg6mmqvu2YUHt4BM99Hx-ks9GPCW8sDNqAKAbsQKS8J0z_dlpc0MqTmWhOcj9VI_E3l",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.295,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Cost and access",
+      "skill_id": "rfv.skill.generative-ai-basics.16-cost-and-access",
+      "items": [
+        {
+          "id": "ga-076",
+          "prompt": "How do LLM APIs typically charge?",
+          "options": [
+            "Per second of conversation",
+            "Per user account",
+            "Per word in English",
+            "Per million tokens of input and output, with different prices for each"
+          ],
+          "answer_commit": "hmac-sha256:4955c450138bfa6090a3f5cb0a3e645c",
+          "explanation_enc": "aes-256-gcm.v1:yKeg_dL51hqOnC7S:-fLodxBlfyknVTOB8JZLNuuPCVgtcOyuJRZkNA4su9rKmlJH06JI5veEe21l8ctGYoHDs6HE-eXoiU7Yw0eLbuHp1R4x8ATSNqf8mEefSVBGCIPFdZ9Mblod_6esHMb8y87BTIgZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.692,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-077",
+          "prompt": "Which is a way to get high-quality generative AI for FREE?",
+          "options": [
+            "Pirating commercial software",
+            "Asking your friend to share their password",
+            "Hacking provider servers",
+            "Free tiers of Gemini, Claude, ChatGPT, Groq, Copilot, plus open-source models you can self-host"
+          ],
+          "answer_commit": "hmac-sha256:101c6a05ceaa07713502b2939a37194b",
+          "explanation_enc": "aes-256-gcm.v1:qJNKvjZDV49Wv2R0:rTf6_DgI4zICG9IVqgbKR--X0oSP6YxOMZ0si9YGeS5yCdIoBT-RkduFgU6rY9MJug0X7wfXt7Vhpf8u4HHbQOTNWPxZtFXHwqFv99O-n2hM8ckIJxKu-ghgDPxOrVySTksiqzB0vemceSOsKRDPBEgPQSxb_SGoxAU1",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.262,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-078",
+          "prompt": "Why is generating a long response MORE expensive than a short one?",
+          "options": [
+            "Servers charge more for long files",
+            "Long responses are taxed",
+            "Long responses use a different model",
+            "Each generated token requires a separate forward pass through the model"
+          ],
+          "answer_commit": "hmac-sha256:6be88cd78a769b165c5e0b3bee4f41bf",
+          "explanation_enc": "aes-256-gcm.v1:8E3xK1WAjxUf9haY:xfFJ8uGGE3bz7LnLxaYXMj_r-N7nGZ00TuIxjfCvc7-FMtHMPeJ06QtANKaZbt6chLE37yY2yuF8xbLUENXKoTJqLpEUkConvMFbbXD_Qwo0earE-p5gd3JKSWWwUwDhQv8j7zu7T8WziTdG332WRXNnoDW3mMfXqdJs8-HVpKlM5PR78ccaD-suO5Y3c_Lg4OA0PCd0iUI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.972,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-079",
+          "prompt": "Which factor will MOST reduce your AI API bill?",
+          "options": [
+            "Adding random characters to prompts",
+            "Using more expensive models for simple tasks",
+            "Sending each word as a separate API call",
+            "Caching responses for repeated/similar queries"
+          ],
+          "answer_commit": "hmac-sha256:e7bf3cda04cbe093ff896dfcdcb57d5d",
+          "explanation_enc": "aes-256-gcm.v1:OJgEqgnXNfaqEMa5:DKZt_WrhlBJsszGrqc9QtC56TlXH79J0ipezBJ6Knb9dJCZM1YSHfqLqafbwXWXN7BV4fimQHF1nFem2D3Fo5F7zDpGrO-QK6qp-j_jpTzytGY-UU-on0oD2oI1Rk20i30xjn79p2DmjHw4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.045,
+          "findings": []
+        },
+        {
+          "id": "ga-080",
+          "prompt": "What is 'inference' in AI?",
+          "options": [
+            "Inferring user feelings",
+            "An inference about API costs",
+            "Inferring missing data",
+            "Running a trained model to generate a response — distinct from training"
+          ],
+          "answer_commit": "hmac-sha256:f19533d46aa9a8b2a899175b52ae1cae",
+          "explanation_enc": "aes-256-gcm.v1:3hSspdkVWr-Ojs2a:xnLuHiuRFI7hRoTxf72FV2XlzHCL4HijkkcYV_cVQjjUJa7tzY11cbPS7EASg6HRvROoOOwyodtlIAvuB2m6YWMnUzFqxGrZDemoeEDldUY-I2cc3Vcsfvol77MnFmHmn5CPzG8c2TUst1ntbQFva5glpvTyqavwPXEL",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.536,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Working alongside AI",
+      "skill_id": "rfv.skill.generative-ai-basics.17-working-alongside-ai",
+      "items": [
+        {
+          "id": "ga-081",
+          "prompt": "Which is the BEST mental model for using AI?",
+          "options": [
+            "A brilliant but inexperienced intern — fast, eager, but needs supervision and clear instructions",
+            "A magic black box you should never question",
+            "A search engine with verified answers",
+            "A perfect oracle that's always right"
+          ],
+          "answer_commit": "hmac-sha256:3b408bc710f311287636a5e064712bfd",
+          "explanation_enc": "aes-256-gcm.v1:X-TcSlQ4xBYPbprf:dG5Zt_2IVYn1a8116haYmOI9sbJMVS89wEINnADLmpimrV3lthtbTQ39z_ocCDOy6I9W9ww2-Cz71gIyUsqVeDMn48QvQLSZaWW4OupoiXSXT2VulCq1OdoUgCpQuleYQRrQolDSCKZOIiQxT4TzZcWo4CqfDulecg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.233,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-082",
+          "prompt": "What is 'human-in-the-loop' (HITL) AI?",
+          "options": [
+            "AI systems where humans review, approve, or correct AI outputs at critical points",
+            "AI that loops without humans",
+            "AI installed inside a human",
+            "AI that needs human power to run"
+          ],
+          "answer_commit": "hmac-sha256:0e627637ce99dafce0073597ddb3696c",
+          "explanation_enc": "aes-256-gcm.v1:djjf657Jq8mLzKXY:VjzB5JaC0Nxn3TYey9BSIibQI0Chkz-_qqaX7vmd3EDlVtDTRB8JhDIvNVueSw4ugKLNbJEeQhP4Vp5o8xESvSNqKbWC-jflTjOmYCbRcSA4CRAdkwAQ9BzH93wgBAy-PNq0k6rnFqoXBiPG6_Qqa7ryr_r8ZEBVTvlkw1XoME2ZJHv2btDVCsUkyZHdXxs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.531,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-083",
+          "prompt": "Which jobs are LEAST likely to be fully replaced by current AI?",
+          "options": [
+            "All jobs are equally at risk",
+            "Only programmers are at risk",
+            "Only artists are at risk",
+            "Roles requiring physical presence, emotional judgment, accountability, and novel reasoning under uncertainty"
+          ],
+          "answer_commit": "hmac-sha256:c1584d3020cd692d0a3f058bfb466b58",
+          "explanation_enc": "aes-256-gcm.v1:-qSFZ36JtlUHCkQT:kpOdYLG6Ce8-ToYZUBK5vSt8QPNbUaW-PnMPrTKGYM3adNqpesQtAw0dSIsiG3qymLfEZJ20QpVW8viNc5psuDGH3J5WWkxYGu5N7dwiaZKiV7gI5381IarflCeq6JSfRdzFb5U4R_ulg6qzQVg0tAkGq9_FPdfBlMOqlua-uh6ynA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-084",
+          "prompt": "What's a HEALTHY mindset toward AI in your career?",
+          "options": [
+            "Refuse to use any AI ever",
+            "Pretend AI doesn't exist",
+            "Learn to use AI as a multiplier on your existing skills; treat it as a tool, not a threat or a savior",
+            "Believe AI will solve every problem automatically"
+          ],
+          "answer_commit": "hmac-sha256:0a0acd801010a644f863999408b15bb9",
+          "explanation_enc": "aes-256-gcm.v1:1Evpo2j6MCBJGXUX:n0dSJqIjaOpGQfjHu6NwBzS0K0Np4gQx-no0E-0JrqdmwplkLMP1bGVQc5JHoE-k4gKTbPvcqhZHwYmiZqa5ToVptHe63F1prorM4RcobyERXaB2vmDTL6Hbbkmwrzl89K6qGm-VTQSAgchpe5VIEzd2rL4asiVqYS7naX1heg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.061,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-085",
+          "prompt": "Which is TRUE about AI literacy in 2026?",
+          "options": [
+            "It's becoming a baseline skill — like email and Excel were in previous eras",
+            "It's banned in most countries",
+            "It's only useful for engineers",
+            "It's a fad that will pass soon"
+          ],
+          "answer_commit": "hmac-sha256:340783f158cf9d8e7ade819b8bf0c2b4",
+          "explanation_enc": "aes-256-gcm.v1:sMO2w3bTjWTPefAc:MJKtF8NAMyRVjggq-tiN1teYHwcxGFwQjpmaIGpvRA61XZwNJ6RIyx5H3p398PAYD35Ro1PlOgiTQnQgv8netZ-4Pa75W4CLU6QKPAwmP3hOm7Z-a8h7czAwxLD73jxM_Lv4RlkvWpduzhooQu7oKaNzi6s3skJBrGnE8ZuUnR9GaA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "AI in business and creative work",
+      "skill_id": "rfv.skill.generative-ai-basics.18-ai-in-business-and-creative-work",
+      "items": [
+        {
+          "id": "ga-086",
+          "prompt": "Which business function has AI rapidly transformed?",
+          "options": [
+            "Building construction",
+            "Cooking in restaurants",
+            "Physical product manufacturing only",
+            "Customer support (chatbots, ticket triage, agent assist)"
+          ],
+          "answer_commit": "hmac-sha256:e48943c8f1e3fb1cc9f391067aca4846",
+          "explanation_enc": "aes-256-gcm.v1:hjsMacDntXCocyo2:E-qxyMpTyhzIMZaS46XgXnrsjRik5O2_2VAJh-PluEoM4PaEgcxERhsaMz2PCMoE1NJFhx2xmL_7muNjEYfmaQaumceh4F6qwafj7fNDxpWfLF1gQ5KIvjL9Bm1eTfrZdb4ktGF6_b2WEq5FHE3a-i4KLNP98Ffw4ZlolC5N_bac-EdaCxvawpSO",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.6,
+          "findings": []
+        },
+        {
+          "id": "ga-087",
+          "prompt": "What is 'AI marketing copywriting'?",
+          "options": [
+            "Using AI to draft ad copy, email subject lines, social posts, and product descriptions at scale",
+            "Marketing AI products to customers",
+            "Writing about AI for newspapers",
+            "Translating ads via AI"
+          ],
+          "answer_commit": "hmac-sha256:5d153315eb01d4988130439fbe29f321",
+          "explanation_enc": "aes-256-gcm.v1:UUEw1Gurj2oFmR5W:chcFlF-P9giFMdimfc9any3V18ypv0WH75qEKw1S5DnIBv8hivCcE9YjDUykYS49tDvN8fDajr2IEy6Qj71G3M40IEfINbgySC1LozdAJwJUHQKUz0d1ftd4laFq1bp4hH3vjMkuZgHRE2chQqz8hdAYZVGtcQd9NYz5Lmw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.794,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-088",
+          "prompt": "Which is a creative use of generative AI?",
+          "options": [
+            "Brainstorming, generating image references, drafting story outlines, exploring 'what if' variations",
+            "Forging legal documents",
+            "Plagiarizing other artists",
+            "Replacing human creativity entirely"
+          ],
+          "answer_commit": "hmac-sha256:db0f1586ba57aed7495acf66f39edb46",
+          "explanation_enc": "aes-256-gcm.v1:NQqfD2FBZv8lIxWj:ZSKG3_v6aRe0tAd3baxrRtzip5J4YfKG3MnXwD7GFVO-JGw6cKRyjJ0F1yOZTaMsZmm-BDWUd5fGNBq3PYlyb-l8iLlIEAcRhqujkf_m0YcdpK9RoSPNvwhTFUKZ9RHSwe1JLyBrV2k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.829,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-089",
+          "prompt": "What's a key copyright concern with AI-generated content?",
+          "options": [
+            "AI content is always public domain",
+            "AI content has no copyright issues anywhere",
+            "AI content always belongs to OpenAI",
+            "Legal status of AI output and training data is still evolving; commercial use should be reviewed carefully"
+          ],
+          "answer_commit": "hmac-sha256:eb287a5a7bfdcc8dea982771868cdae6",
+          "explanation_enc": "aes-256-gcm.v1:IagsEy3NAO3qD9XA:prfSN2nkZGCTIbVykQqyJTznGta49__MrUsYAFSmWAL-ddNooObFuId_bvr0h9z1fkRmHidLrQ-3Awv8PleuNR4DzeSyhPTCRAr-Y7MIVE45EyvHnBYyZa4mb_8nIdsORSxusCVZR820zfWGA1jOdSdTNkzMag",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.465,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-090",
+          "prompt": "Why do many companies have an 'AI usage policy'?",
+          "options": [
+            "To make AI sound official",
+            "To clarify what data can be shared with AI, what AI output can be used commercially, and how to disclose AI assistance",
+            "Because regulators require it everywhere",
+            "To restrict AI to executives only"
+          ],
+          "answer_commit": "hmac-sha256:4f662dcec30ef0118996eec57d1e11ec",
+          "explanation_enc": "aes-256-gcm.v1:5FjwpRps_0rZBoEV:ACYbkaKDRlu71bXeuMVOuPsePwv191eGlRMrv8AtPuN_tcMJxPqnf3YgtdYPBwkmnTGikBH17AQVZ2i5A8xie2OJpsei8_0VOC4G59cjYJx7_Xjhv3q860AhNpw496JyHxRttBfhacpufMpCDtS_AjKWjke3Rwypj2lQ6NI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.95,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "The future of generative AI",
+      "skill_id": "rfv.skill.generative-ai-basics.19-the-future-of-generative-ai",
+      "items": [
+        {
+          "id": "ga-091",
+          "prompt": "What does 'AGI' stand for?",
+          "options": [
+            "Active Gaming Intelligence",
+            "Automated Graphics Interface",
+            "Artificial General Intelligence — AI matching or exceeding human cognitive ability across most domains",
+            "Augmented Geographic Index"
+          ],
+          "answer_commit": "hmac-sha256:9b116d8ef081a9ed10c77049dd7ee16c",
+          "explanation_enc": "aes-256-gcm.v1:XtMfSnyHRDZrgUHa:hiSLytkFdh8ph_8KGQ4gvRSvABb1MCKhil4bArHsY07KFkABo5tR-uCipQI0FIMrtcxRuX4r03h8MIveAZofA28ZfH9qF4lDizM9PtTh7LNk8TEOuYnEI1lRecv7LkMRiiw-USAXxfHek2tyQKlMxuSSO_4OYZwprySTvjG3Q9PZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-092",
+          "prompt": "What is 'multimodal native' AI?",
+          "options": [
+            "AI made in the user's home country",
+            "AI with native ad placements",
+            "Models built from the ground up to handle text, images, audio, and video as first-class inputs and outputs",
+            "AI that only works in native languages"
+          ],
+          "answer_commit": "hmac-sha256:e913fad4b313ac963fa55151e9ce6832",
+          "explanation_enc": "aes-256-gcm.v1:8GH4fNWIRIkTyQ2c:_0puncgwqfKK5iUEeGRDre9DnSHYu0JYhSVb1Q9VOMhlfMbi_WGdobeZaAQ3OL6JNKoepLUUu3gl1cBauRhxdLGQ7z9QZvfhoOn_5k7glGpnI4idf-okbCjhuIb8JwDsiHHQdp3pxFc8wNAFS_BquPQlHmLz8qMm9r57HTJg_Gud-ukU2-MjEti3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.789,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-093",
+          "prompt": "Which trend is making AI more affordable?",
+          "options": [
+            "More expensive hardware",
+            "Smaller, more efficient models that match larger models on common tasks at a fraction of the cost",
+            "Subscription prices going up",
+            "Fewer providers in the market"
+          ],
+          "answer_commit": "hmac-sha256:caf754e69a21a98f8911d8a5590d5071",
+          "explanation_enc": "aes-256-gcm.v1:LyT9LtyIxJQEGGVK:qD7k0ZCnVpC6Ym9MBwLGyZlCJ9Rv06uTDLlh5iWPIN85xVR82a8bqoKMQBY4pMPBwnTzRDi_bQWCbjRljNcDln82c1WY0ctafZYsfIZ4RHv81L1lCBQvgq1EFW3Fzm-qgMCiicRy0XgDX82t4doQhO69m0vfb1iNQg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.345,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-094",
+          "prompt": "What is 'on-device AI'?",
+          "options": [
+            "AI that requires a specific device store",
+            "AI models running directly on your phone or laptop, with no cloud round-trip",
+            "AI installed at hospitals only",
+            "AI on movie theater devices"
+          ],
+          "answer_commit": "hmac-sha256:cc1d7dd488a985496587eb92c98bd592",
+          "explanation_enc": "aes-256-gcm.v1:em_E6IR1qK6bOPbM:gHBKzfOf5NeYR4rEsqSsnkTfMBTjEF_L14SlaLaoNMSeAfwd4vgFbO1kd3fzdv-UvY4Iac3cuLqFet92FpT40u8X1g7hshUpV4Nt9rlc5ETEbFywOo8p1kRRR_ZyJ1DbBJeNv2iW6HSXXDTjXPu3yy4fdo34XhyyUBsG6I5_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-095",
+          "prompt": "Which is a REALISTIC near-term AI development?",
+          "options": [
+            "AI that eliminates need for any human work",
+            "AI agents that complete multi-step tasks across multiple apps autonomously",
+            "True consciousness in models",
+            "AI that solves all of physics"
+          ],
+          "answer_commit": "hmac-sha256:2e6c480a40aeb872bc9c146731ef2270",
+          "explanation_enc": "aes-256-gcm.v1:b3hxnM2_t8j1Xbh_:SvpIBPxZ_MO9FHSGkoe8QKivsWe8N7HiFxtc40kaU3M8c20W-w_liEES45ExoucZNBnb5b2K-dYTrW7A5l3sIX7-5YPwpZASUr0TJaRlV8toDsW3RYqx5oSigfAX8Bnqa-KUeRZzuQTmooABWT8nwA4Po-y84zTJWkYq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.762,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Getting started with AI",
+      "skill_id": "rfv.skill.generative-ai-basics.20-getting-started-with-ai",
+      "items": [
+        {
+          "id": "ga-096",
+          "prompt": "What's the FIRST step for someone new to generative AI?",
+          "options": [
+            "Read 10 textbooks on linear algebra",
+            "Apply to AI PhD programs",
+            "Pick a free chatbot (ChatGPT, Claude, Gemini) and use it daily for real tasks to build intuition",
+            "Buy expensive hardware"
+          ],
+          "answer_commit": "hmac-sha256:5e3bfab3ca0a9a269364c8301d6c4fcd",
+          "explanation_enc": "aes-256-gcm.v1:pW3Igqrf0p5-C38Z:vDXf3NSYyAUbtglFU4dp1BmT136WrKYnvqz0DCGWS4SpA6xwc74PpfldJS9t9fqk3uzyNG6MsdLVTH9UiTGzURygfA0ARTonCQZDzpV52vy88FYms2RaZzDe8RtZ3aadRtan9HmhMMdSvfTX00Y",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.743,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-097",
+          "prompt": "Which is a GREAT first project to learn AI?",
+          "options": [
+            "Launch a $1M startup before writing any code",
+            "Build a small tool that automates a real annoying task in your own life or work",
+            "Try to recreate GPT-4 from scratch",
+            "Memorize the math behind transformers first"
+          ],
+          "answer_commit": "hmac-sha256:042e9fccc1d79a04d5acac327d31c84a",
+          "explanation_enc": "aes-256-gcm.v1:oZcUHEDQFE-CHkK5:HfqC2jjisu3oC85on9dJKdn1Z_Z-U-7N_pCLZogrNe7-86-YOiYaxAVdTX724hzWBFvfnC8eF5joHuoaW9vlxpIJXpErJ-fWGrTMW6Cn3klnrRrNv9GUeto_gzQ-bm8IT4U89BM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.795,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-098",
+          "prompt": "Where can you learn AI for FREE?",
+          "options": [
+            "Only by working at AI labs",
+            "Only paid university programs",
+            "Only books costing $100+",
+            "DeepLearning.AI, freeCodeCamp, Hugging Face, Anthropic Docs, OpenAI Cookbook, YouTube channels"
+          ],
+          "answer_commit": "hmac-sha256:9e7c2a78d4fbb89af1ce4d5efa6a9937",
+          "explanation_enc": "aes-256-gcm.v1:W-3p_LU60p1O-xRS:HIBcuPl8uky4Ql1Sl9X-RB5cPVeI2BZfpyn6iCOWoGPkVRbN3IUbycfWEZ6pv9rSDWNdEEOFVOtbNfLnOYTvJaBppHPqWq7-1qavPZspbu71WQRTgVBBzCWd5Z5gBgPljnCr7kAUefzJKD5InXhw_wReAnCM1yU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.241,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-099",
+          "prompt": "Which community is GOOD for AI learners?",
+          "options": [
+            "Hugging Face forums, Reddit r/LocalLLaMA, AI Discord servers, Twitter/X AI builders",
+            "Only invite-only paid masterminds",
+            "Only academic conferences",
+            "No communities exist"
+          ],
+          "answer_commit": "hmac-sha256:035fcb3954d1ac988375d35a9eb57210",
+          "explanation_enc": "aes-256-gcm.v1:BarMks7DH1dGHs3Y:Oyj-tcDpOmAX8njv9fxP8Dkt0jBVJ6awcvyi-P98WxQVojGD8t18JHkV4QLC8R71EIYibmtHtMpjq55oVTXxhdnDAx4Eiw6Ah8Ym6_kIDKcRZJ_3jzAr0YUr9gWxMoEnCs-FHI1bPgCi6sjRs-_MWiFo34GvLEFVOf_mFOc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.515,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ga-100",
+          "prompt": "What's the MOST important meta-skill for working with AI long-term?",
+          "options": [
+            "Memorizing one specific model version forever",
+            "Avoiding all new tools after the first one you learn",
+            "Curiosity and the willingness to keep learning as the field evolves rapidly",
+            "Refusing to verify outputs"
+          ],
+          "answer_commit": "hmac-sha256:6830eeab8f4c6155b7406a8733d63a09",
+          "explanation_enc": "aes-256-gcm.v1:cfyw5oKV8G2nTw_2:MEpnUBK2F3dPAztWTijiJal1_gluB4zF9HCYiQ4BNzvlz7WgfuwLk0xP2lyvJY0bDVzJxsN2Utc6MzQIadKzS5UJfSveiRL279g3YKZbKGfyIbobG--Ga4mYI7D4-YlZoZAC-Taq3FGkXI68wbmAeboMjZaAvkdQpydKnP01iPdGjN0rHNyb",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.442,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:7ed8bdc7f6e62b4d236756449865d45cefc11265309bee24be4ceb78d174288f"
+}

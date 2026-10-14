@@ -31,8 +31,8 @@ export function QuizGrid() {
           Choose your <span className="text-term-glow">first test.</span>
         </SectionHeading>
         <SectionSub>
-          All quizzes follow the same standard — 20 questions, 20 minutes, 80% to pass.
-          One certificate per test. No tiers.
+          Every assessment uses the same structure: 20 server-drawn questions per attempt, 80% to pass at Foundation
+          and Intermediate, 85% at Advanced, one credential per pass. Each topic publishes its own item-quality status.
         </SectionSub>
 
         {/* Category filter chips */}

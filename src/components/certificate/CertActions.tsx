@@ -8,7 +8,7 @@ import {
   buildWhatsAppShareLink,
   buildFacebookShareLink,
 } from '../../lib/pdfGenerator';
-import type { Certificate as CertificateRecord } from '../../types';
+import type { PublicCredential } from '../../types';
 import { cn } from '../../lib/cn';
 
 interface CertActionsProps {
@@ -20,8 +20,7 @@ interface CertActionsProps {
   /** Live ref to the rendered certificate. Prevents the stale-null bug where
    * download buttons stay disabled even after the certificate mounts. */
   paperRef?: RefObject<HTMLElement | null>;
-  cert: CertificateRecord;
-  baseUrl: string;
+  credential: PublicCredential;
 }
 
 /**
@@ -33,7 +32,7 @@ interface CertActionsProps {
  *
  * Mobile: stacks vertically. Desktop: side by side.
  */
-export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsProps) {
+export function CertActions({ paperEl, paperRef, credential }: CertActionsProps) {
   const [downloadingPdf, setDownloadingPdf] = useState(false);
   const [downloadingJpg, setDownloadingJpg] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -44,7 +43,7 @@ export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsPro
     // 2. Backward compatible prop
     if (paperEl) return paperEl;
     // 3. Last-resort DOM lookup for older pages / hydration timing edge cases
-    return document.getElementById(`cert-export-${cert.id}`)
+    return document.getElementById(`cert-export-${credential.id}`)
       ?? document.getElementById('cert-export')
       ?? document.getElementById('cert-paper')?.parentElement
       ?? null;
@@ -62,7 +61,7 @@ export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsPro
     }
     setDownloadingPdf(true);
     try {
-      await downloadCertificatePDF(target, cert);
+      await downloadCertificatePDF(target, credential);
     } catch (e) {
       console.error(e);
       alert('Failed to generate PDF. Please try again.');
@@ -79,7 +78,7 @@ export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsPro
     }
     setDownloadingJpg(true);
     try {
-      await downloadCertificateJPG(target, cert);
+      await downloadCertificateJPG(target, credential);
     } catch (e) {
       console.error(e);
       alert('Failed to generate image. Please try again.');
@@ -89,17 +88,17 @@ export function CertActions({ paperEl, paperRef, cert, baseUrl }: CertActionsPro
   }
 
   function handleCopyLink() {
-    const url = `${baseUrl}/cert/${cert.id}`;
+    const url = credential.verifyUrl || `${window.location.origin}/cert/${credential.id}`;
     navigator.clipboard?.writeText(url).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
   }
 
-  const linkedInUrl = buildLinkedInAddLink(cert, baseUrl);
-  const twitterUrl  = buildTwitterShareLink(cert, baseUrl);
-  const whatsappUrl = buildWhatsAppShareLink(cert, baseUrl);
-  const facebookUrl = buildFacebookShareLink(cert, baseUrl);
+  const linkedInUrl = buildLinkedInAddLink(credential);
+  const twitterUrl  = buildTwitterShareLink(credential);
+  const whatsappUrl = buildWhatsAppShareLink(credential);
+  const facebookUrl = buildFacebookShareLink(credential);
 
   return (
     <div className="flex flex-col gap-6 sm:gap-8">

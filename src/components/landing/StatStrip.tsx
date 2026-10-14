@@ -1,15 +1,19 @@
 import { Container } from '../atoms/Container';
+import { CATALOG_TOTALS } from '../../data/quizMeta';
 
 interface Stat {
   num: string;
   label: string;
 }
 
+// Every number here is measured from the generated catalog
+// (src/data/bankCatalog.json) so the landing page cannot drift from the bank,
+// the levels or the pass marks the server actually enforces.
 const STATS: Stat[] = [
-  { num: '15',     label: 'certifications' },
-  { num: '1,500',  label: 'questions written' },
-  { num: '80%',    label: 'to pass' },
-  { num: '$0',     label: 'forever' },
+  { num: String(CATALOG_TOTALS.topics), label: 'skill assessments' },
+  { num: CATALOG_TOTALS.questions.toLocaleString('en-US'), label: 'questions, analysed' },
+  { num: `${CATALOG_TOTALS.levels}`, label: 'levels per topic' },
+  { num: '$0', label: 'paywall' },
 ];
 
 /**

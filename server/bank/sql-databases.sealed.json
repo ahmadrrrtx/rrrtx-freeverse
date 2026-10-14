@@ -1,0 +1,3398 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "sql-databases",
+    "title": "SQL & Databases",
+    "description": "Query, join, filter, aggregate. The universal language of data.",
+    "category": "Data",
+    "icon": "🗄️",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What SQL is",
+      "skill_id": "rfv.skill.sql-databases.01-what-sql-is",
+      "items": [
+        {
+          "id": "sq-001",
+          "prompt": "What does SQL stand for?",
+          "options": [
+            "Standard Quick Language",
+            "Structured Query Language",
+            "System Query Layer",
+            "Stored Query Library"
+          ],
+          "answer_commit": "hmac-sha256:b7d9be34b49a9bf4a4ae4883c244276c",
+          "explanation_enc": "aes-256-gcm.v1:n2udl4IQP6CVWXfl:ifAvpSZ6jRDhXGk2TeO2tFkAERPrRp_MnJalWh4n1Wktz2E7jDJte8Y4iAmqDOD6PylgLNnerANJPdW2f2YHmoxqn2q00RgXhqV7ZaQoW6dKZL0aa5ScVe7hzjdXVe31hfgsoEdcKnAFqWXPyTPHKmt6RdlVlVUbILfIcg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.087,
+          "findings": []
+        },
+        {
+          "id": "sq-002",
+          "prompt": "What is a RELATIONAL DATABASE?",
+          "options": [
+            "A database for family trees",
+            "A database for storing relationships only",
+            "A database with a single table",
+            "A database that organizes data into tables (rows and columns) with defined relationships between them"
+          ],
+          "answer_commit": "hmac-sha256:c2ebd9dfc594dd19c9f31e0df4d55a0a",
+          "explanation_enc": "aes-256-gcm.v1:UhF4xYCr34vxUs8G:Me2xKiq76khDgDL2xAi9yt-SSJ6DkX6Z-aIT4tvVoHk0tB8gtau47Y_HrzLtzCfsgm4OEKeu0UbNkmQ6eRw4bpCQ3_D2iohnXLnruDuDOoM7Oxh4vaEr5scxPpdvvaot4Pk3PV4ORI4B58buUswV-EInIWjI8IEqzrudovtf0jzWdHydp44KJhy9",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.463,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-003",
+          "prompt": "Which is a TRUE statement about SQL?",
+          "options": [
+            "It is mostly standardized across database engines, with small dialect differences (PostgreSQL, MySQL, SQLite, SQL Server)",
+            "SQL only works in one specific database",
+            "Each database uses a completely different language",
+            "SQL is being replaced by NoSQL"
+          ],
+          "answer_commit": "hmac-sha256:c31fb6526be5c1a82c3d156e61c382e8",
+          "explanation_enc": "aes-256-gcm.v1:Cn-cViUowsb3a6XW:Tn1fu1odmMCCy727I6mFy7YTROEd8TRk8ctkhfJlnrE5gGtvaQUw2lUMIGF5lsBU892km4l46O596GOWTmTFjVzbG98xjS1qf6tAYGgLZw2kIwc6IGIwo4Cww9c2DoB_PfrWLxgHiod9T57hGWiDcbcYTvAEkkMSsjvnqxuuGA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.42,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-004",
+          "prompt": "Which is a popular OPEN-SOURCE relational database?",
+          "options": [
+            "Microsoft SQL Server",
+            "PostgreSQL (and MySQL, SQLite, MariaDB)",
+            "Oracle Database",
+            "Notion DB"
+          ],
+          "answer_commit": "hmac-sha256:342d2412f93486db99a4c89e312ce337",
+          "explanation_enc": "aes-256-gcm.v1:SqnPn_nMvNxv83Y0:7UB_Q5loh1iEcrE-4KSVjEmC8_-6zW13HeEV3tQU0O4JhomyaAmRiaErA6lanQqqwCk8-Q0kZ75sCRoZw97Yg8GJCzwzRJfQrgby6uAPmDZJoJrdrCCnRTKK93l_4ieWJAguhPUe7weNYoHy-DuenpFwQmfejsO6kXoYeWPIGe5NrPJRuKjPdTVs3f9nIbKu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.95,
+          "findings": []
+        },
+        {
+          "id": "sq-005",
+          "prompt": "Why is SQL still HIGHLY relevant in 2026?",
+          "options": [
+            "It only works on old systems",
+            "Most business data still lives in relational databases — every data engineer/analyst/backend dev needs it",
+            "It's deprecated and being removed",
+            "AI replaced it"
+          ],
+          "answer_commit": "hmac-sha256:2891821fb3767ae77fb52f6d99bb4454",
+          "explanation_enc": "aes-256-gcm.v1:w4OiIuLTUQlc58Yk:QLYOFaoQAu5fs94B7pT9vbe9GUjArmO4B-J9o2nRhIV8u92Te9lzi6AoSk0tRMv-i0XnmHeEbaLv8E_UdQZvrY_b5v0y7GeamSajCMvZPRRHopgIBPGblgXYCi66VLdZhAFHrsbov1dKCrc2Ii-HWvyaEh7fhvs2crhFDQdqzkyvAVYEMncC8oI5HGs6iaP7",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.182,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Tables, rows, columns",
+      "skill_id": "rfv.skill.sql-databases.02-tables-rows-columns",
+      "items": [
+        {
+          "id": "sq-006",
+          "prompt": "What is a TABLE in SQL?",
+          "options": [
+            "A type of view",
+            "A collection of related data organized into rows and columns with a defined schema",
+            "A function",
+            "A backup file"
+          ],
+          "answer_commit": "hmac-sha256:00a1cd51ba5daaabde00ef8ca41eb5aa",
+          "explanation_enc": "aes-256-gcm.v1:JDp4oLAOPj-VD7oi:sBc_oGMFaA2NV_ypj0jRUIas3I0UjNozjWNfJ_MlUv9n0D6ZMSjmWsAfadUeuM17A-kwaDRQv8PIcw1wNfhtF1Cu2UsOl-mo7KLCMIjeb7CDPFbrgfAefT-0ZT1mzC1MIVuWVniK45zuPSESOKcceh_Ryh_YSB9MMp315mo9",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-007",
+          "prompt": "What is a ROW (record) in a table?",
+          "options": [
+            "A single entry containing one value for each column",
+            "A type of constraint",
+            "A backup of the table",
+            "A query result"
+          ],
+          "answer_commit": "hmac-sha256:9b328fc931b1530b19396863995fe7ac",
+          "explanation_enc": "aes-256-gcm.v1:Q6RQKujNapKPT74d:kta7Hhc0hSVuDTVw6tVD3cfu4IY0KiLa37gurJtpkmA_7Ffz_WIjbsNNfZp8E6iekZe8QhF3wu3bKSsU1p5lwHpDMctyJqNqMsrndt86oOokE-SYStWCR1jmcqpPzbPFnP796xIwSY1IqfTpSP7JSrjld-X4zA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.429,
+          "findings": []
+        },
+        {
+          "id": "sq-008",
+          "prompt": "What is a COLUMN (field) in a table?",
+          "options": [
+            "A query output",
+            "A named attribute with a specific data type that every row in the table can have a value for",
+            "A type of join",
+            "A subset of rows"
+          ],
+          "answer_commit": "hmac-sha256:dc849963e21d360472fa2075eb01167a",
+          "explanation_enc": "aes-256-gcm.v1:Q9SvHFsHIdbUuLiK:6Pp4x48GxDGbXENHld-xra1YtLHnvfxNLa8gE3Z5lQNlIa9ab3GQvPcK-BDacHudgOuF4ka72rvrm2fptjdEQGD5RpNASF9GpTWQLQjFezMl50GMca3T9jncFqvLKhaMUIV-MQt7guPdYy33iiyTAMw7888HtOA1hynvDc9K",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-009",
+          "prompt": "What is a SCHEMA in SQL?",
+          "options": [
+            "An error log",
+            "A type of query",
+            "A specific row of data",
+            "The structure (tables, columns, types, constraints) that defines how data is organized"
+          ],
+          "answer_commit": "hmac-sha256:19899cd9701f609942a684830849de65",
+          "explanation_enc": "aes-256-gcm.v1:mE1z2zEzS_zNLPjG:f04h3uc_ZmZDA30Apq8nH3U0qKm8Lw6NdXlyjmqIKkEpH9jo96XigYswr8t0Ai6Antomp_Z6j-IUgK0DzYK49ONjGXtWnEVPcZJr97Cjz6-DeZQqIMLctESBj3KL9M3TuUvhAIQI540p2NOPk8VwufZ66-ODvawvDo6Ty4REWIeTmjtgPxbRNnB0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.909,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-010",
+          "prompt": "What is a NULL value?",
+          "options": [
+            "An error condition",
+            "Equivalent to an empty string",
+            "Equivalent to 0",
+            "A special marker meaning 'no value' or 'unknown' — distinct from 0 or empty string"
+          ],
+          "answer_commit": "hmac-sha256:5a85ff7e82831199a987fb5a35c23a96",
+          "explanation_enc": "aes-256-gcm.v1:LmZnxVmMFgeIca2R:LW4MKzmkpUAqgPM52irOQaRQT9duQLEDt7u99h6quC--KwuocJ_Pc4fUKZ2aQe3TG1CTdk9fN9UrSAooORMG8pmDHNxaP4AyLEGSfhsPvbkhFRnk3-ioadKqKqZ9POQz--ECydJk6y2W6gzSyHaQXEARJQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.828,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Basic SELECT",
+      "skill_id": "rfv.skill.sql-databases.03-basic-select",
+      "items": [
+        {
+          "id": "sq-011",
+          "prompt": "Which query retrieves all columns from the users table?",
+          "options": [
+            "QUERY users;",
+            "SELECT * FROM users;",
+            "GET ALL users;",
+            "FETCH * users;"
+          ],
+          "answer_commit": "hmac-sha256:1c1e3934b9d0da8d2ef026574af65d7c",
+          "explanation_enc": "aes-256-gcm.v1:NJsXEnOeX3KNWGZ9:cuTvAH0JE_TQNZUjSEYGnYhKMia4IWttaPMBJpaSygLNkuWLaWwLdxhWIfYGo2WuVGRYwvpDueZEU2D6cLNY6SKUhnssU5HROVBNoHRGL7PMzTjhy20SCFc9ynlIGFvgF7La6Xzrd98JslX7FdCb38UmqezIZSvHq6dXzqBH09J3k-C90u_ofX87fgWerG1y2Wug",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.429,
+          "findings": []
+        },
+        {
+          "id": "sq-012",
+          "prompt": "How do you select SPECIFIC columns?",
+          "options": [
+            "SELECT name AND email IN users;",
+            "SELECT [name, email] FROM users;",
+            "SELECT users.name, users.email;",
+            "SELECT name, email FROM users;"
+          ],
+          "answer_commit": "hmac-sha256:ff603c5f122c4d6cc12472c076eabe4a",
+          "explanation_enc": "aes-256-gcm.v1:RfYaoIom7DGImbFJ:37hS3A5vbGY1DAg7AQGZpRN25S9-AnFXjD194j2YASmH5IGfCyRfSk55cm5oraOeoKj7VNmcS_KxXfekMtcUhW8yHdOX-nPfrw1v-I9CaTCjPKClMNAfWZWjwvhw3zm3qHFLxxK__Ep23_agedlEdte0jcsPHb80Rj_XNYutp2osFA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.938,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "sq-013",
+          "prompt": "How do you LIMIT the number of returned rows?",
+          "options": [
+            "SELECT 10 * FROM users;",
+            "SELECT * MAX 10 FROM users;",
+            "SELECT * WHERE rows < 10;",
+            "SELECT * FROM users LIMIT 10;  (or TOP 10 in SQL Server)"
+          ],
+          "answer_commit": "hmac-sha256:2bd4a80298ce941d1f7b24e40053f12f",
+          "explanation_enc": "aes-256-gcm.v1:aYLmzsmrFEcu6akL:nCnlRxX-cCVpobp8zcDs68IXUgudyyVnmS73hdUeO8G0UQRq2Y_Ms6A1-PPj6ejL3VC9QTwd-GV0i_9AN9PMSNZAgasbRcxDvjJJ0HUMF8_l0qvcYgsZcljuD0Xg0CHDchikhAUEpavTKCg-2ZR8Nvgi4oWlUNzOQV_nE1-dXw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.074,
+          "findings": []
+        },
+        {
+          "id": "sq-014",
+          "prompt": "How do you RENAME a column in the query output?",
+          "options": [
+            "SELECT name RENAME user_name;",
+            "SELECT name AS user_name FROM users;",
+            "SELECT name => user_name FROM users;",
+            "SELECT user_name = name FROM users;"
+          ],
+          "answer_commit": "hmac-sha256:c7e23eefbedc6dc62a2021981e07304c",
+          "explanation_enc": "aes-256-gcm.v1:NiCW98llD0tA-Re_:2SeasLZjVBVMMghSUmEDSzkONCvSXl8LZKEpPBHiLmdLK56Kqsc3kUQwBv_G9Il5-onTCVS5FCtgKeXINlLvTN-0-3-qa_7MGPwLYkHlLlwxrETz898OQTMf7ma7Tbr7vjuEyC8s1bp1SVn2SnMbXG5o_KDv9AOtEXYE-g5SutKGB2YY0rp8TLES",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "sq-015",
+          "prompt": "What does `SELECT DISTINCT category FROM products;` do?",
+          "options": [
+            "Throws an error",
+            "Returns only the most popular category",
+            "Returns each unique category value (deduplicated)",
+            "Returns all categories with duplicates"
+          ],
+          "answer_commit": "hmac-sha256:af05ca12ccfe7099590d303f49f0403c",
+          "explanation_enc": "aes-256-gcm.v1:_zEfTOSndY1zGpfM:BAM29qDcCdUHtcbDtW3YuWnkBvKR0rmmCrlIVoXMABiZBUFrf1LVSSYUnoECR_UCe3Itd_HH2y_gHVe-qrblpgt_qEALv5t7fnGuzW4AfaLUa8YE0s9MDsKSGuCEwlsEJqrbvNP1OOZU_z5NfhzOEhrkRsw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.289,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "WHERE clause",
+      "skill_id": "rfv.skill.sql-databases.04-where-clause",
+      "items": [
+        {
+          "id": "sq-016",
+          "prompt": "How do you FILTER rows?",
+          "options": [
+            "FILTER users BY age > 18;",
+            "SELECT * FROM users IF age > 18;",
+            "SELECT * FROM users WHERE age > 18;",
+            "SELECT * FROM users HAVING age > 18;"
+          ],
+          "answer_commit": "hmac-sha256:a20c80cd9bec1960a850e5577f740bfd",
+          "explanation_enc": "aes-256-gcm.v1:tOi4rZZVeWi0Ph_G:ktalhlfq4zdXWAdkP9hL1uJsu-ZQPAzsr3rCFd5URQEytBXxcvPlYTS9mo7Kb08U1GWybH6FDssCuR4I40-n_3G8Xok4eM6w8FwfMLyWBSnFEpAfh-dnup7PdGbM1pU8yfAfp0aL_Kj-wvtkp3gd-DU7",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.972,
+          "findings": []
+        },
+        {
+          "id": "sq-017",
+          "prompt": "Which operator checks if a value is IN a list?",
+          "options": [
+            "WHERE status HAS active",
+            "WHERE status IN ('active', 'pending')",
+            "WHERE status BETWEEN active AND pending",
+            "WHERE status = ['active', 'pending']"
+          ],
+          "answer_commit": "hmac-sha256:9555fd8ba89d7c21ea410ba7a89e66d8",
+          "explanation_enc": "aes-256-gcm.v1:-KhN54yRC7tFhDWo:WnmGFeKw6DhFIXzyStX72giz4yd5RuYsKgy3WiMvGrPqa0ykSuSDRwuo2CTBEnSX6UvpzkW1IYzAMpctIHJDsuwOkmoFnbztF-29l826OzOuqGaWikBE_uvFOVZX-9ueIJlPYBBknzT-ZsC2MqJoCpGwE9la2tiDkzn-8u__ZpC6lw7wVSNXapTCChb2vg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.949,
+          "findings": []
+        },
+        {
+          "id": "sq-018",
+          "prompt": "What does `WHERE name LIKE 'A%'` do?",
+          "options": [
+            "Matches names with at least one A",
+            "Matches rows where name is exactly 'A%'",
+            "Matches rows where name starts with 'A' (% is the wildcard for any sequence)",
+            "Matches A divided by 100"
+          ],
+          "answer_commit": "hmac-sha256:02933799497816b25a6456e83abec627",
+          "explanation_enc": "aes-256-gcm.v1:_nJsjKQizg5RDFHE:ipMULoSJZfILHmMDdu2nPWvTqHf871bmFHlpHnayJpWHsnC9XBJG8kt4vgnu6nqwJZXWGBnRx-5ffqGRmnUM5do7HOh4rO11jSNIAaPOGBdsXT4k9iND7T_H0gKeZKb8DN0EpaEwUSQ8wxi2J3rhCsxG4tnH3w68HQTz6vGskT0DgW7Ok8S7urr2oDzRV2HRmGEbfLwCYCKpm9Bz8_3RYWDKWLtTHaTRR9DfM6SdRQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.949,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-019",
+          "prompt": "How do you check for a NULL value?",
+          "options": [
+            "WHERE email = NULL",
+            "WHERE email IS NULL  (not = NULL!)",
+            "WHERE email = ''",
+            "WHERE NOT email"
+          ],
+          "answer_commit": "hmac-sha256:f8cd3c4ccbbe259e5ca9ccf27b552259",
+          "explanation_enc": "aes-256-gcm.v1:m1MI3ZtAeMFNLRGl:xw26M4eci-iHfOFu_Aodr7aaWUOR1z0Kk03YwiEx3Rdv-bRrKcsRwIkktZeJ2VBchnPHnLleFMRQdGN-LNm-rSzwX4Ia35Ytik3g2-_9z5RNJ2UdM2bADjUpWJUEyUp2andm4Y8kixcQX1pBUIJD6rglQbv8i7CzHBO9pCkrHpKy_Bxw_RA7QAFtmk3O",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.889,
+          "findings": []
+        },
+        {
+          "id": "sq-020",
+          "prompt": "How do you combine multiple conditions?",
+          "options": [
+            "WHERE age > 18 AND country = 'PK'",
+            "WHERE age > 18 PLUS country = 'PK'",
+            "WHERE age > 18 & country = 'PK'",
+            "WHERE age > 18 ALSO country = 'PK'"
+          ],
+          "answer_commit": "hmac-sha256:4c598aef7b24b89111ac64de6f08ab3e",
+          "explanation_enc": "aes-256-gcm.v1:EJdNCVQVnvMhqGNd:9Qmr_5DXkxgnkgCQ1Quq3dmLV_4ReKK2XYj1Q_iU-vEGv_vb_GmcNPIkQMW2pNA9Gpz0OVvoToHRBJhedHFWtTBfOH2m-fEF3EyYOZDOKnwwjpJNaP1YwIVb-tj--U4QoD8_zjqWwds1knMqUUcAVRB1Gw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.971,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Sorting and ordering",
+      "skill_id": "rfv.skill.sql-databases.05-sorting-and-ordering",
+      "items": [
+        {
+          "id": "sq-021",
+          "prompt": "How do you SORT results?",
+          "options": [
+            "SELECT * FROM users ORDER BY age;",
+            "SELECT * FROM users WITH age ORDER;",
+            "SORT users BY age;",
+            "SELECT * FROM users SORT BY age;"
+          ],
+          "answer_commit": "hmac-sha256:f5703e960a586c1855f90fddfe7405ea",
+          "explanation_enc": "aes-256-gcm.v1:d3tDPlCM2zMEHONL:15o0wiNnDovFjdz3Cgxh4NSEJJal6Wv0n0TCSEnRmnOzbEDRjOLeakTb5wUp8WORbjWiI081_Dz-tkhXBVZKt6nSiw3aErglMQ8Q6EYXxDq38ctMBGHrBT5Aw6kOIpJLCbYMHeFJFzTecbQKHChzaIK2",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.943,
+          "findings": []
+        },
+        {
+          "id": "sq-022",
+          "prompt": "How do you sort by MULTIPLE columns?",
+          "options": [
+            "Multiple sorts not allowed",
+            "ORDER BY country, age DESC",
+            "ORDER BY country THEN age",
+            "ORDER BY country AND age"
+          ],
+          "answer_commit": "hmac-sha256:f2c903604ee78ecc86572ff4029f0100",
+          "explanation_enc": "aes-256-gcm.v1:3i0CXBiJvp95iKOd:s-pMlfFmRbxOlpYQfN2vEx88YuVEiASFUE_hkqt06MRhKn4NoIhi9da24ldfEbSIohnGJDg6-kYLm0x6eVrugPHrlIi92TUbVcQGVurjZHWAIPpOoPEyzY15sssI0xSkN4efMD4yOEdiR04pd6tV7PNSkkrXKUrnoKHZdprQsdMzXcy2YA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "sq-023",
+          "prompt": "Where do NULL values appear in an ORDER BY?",
+          "options": [
+            "Always first",
+            "Always last",
+            "They are excluded automatically",
+            "Database-dependent — PostgreSQL puts them last by default; you can control with NULLS FIRST/LAST"
+          ],
+          "answer_commit": "hmac-sha256:7145c95c7827d9c362d129c33e74602a",
+          "explanation_enc": "aes-256-gcm.v1:prMKa1BkgvRr-TKL:OB_CMl2bNsUeeKMgBKp0pfDMflsEwQzYdiSwGuqRb42aVCk2DYAvZjrYdRmCPJfIkgNQF76CX0HxZ-_LE45QeyQmiXCDfewLnCa3d1TsNqdGENLnWyfN-frNFR4LrUUNpUPLBEVTuoTGhFeS7G2vYHZGd0chV8N_smECqH8T-N813YPYQWO7bI3H",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.097,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-024",
+          "prompt": "What does `ORDER BY price DESC LIMIT 10` give you?",
+          "options": [
+            "The 10 most expensive items",
+            "The 10 cheapest items",
+            "The first 10 items added",
+            "10 random items"
+          ],
+          "answer_commit": "hmac-sha256:c22483796e30eaa58940140d49651c0b",
+          "explanation_enc": "aes-256-gcm.v1:WRLBKGFLphAm0f3B:KoE7k0Ch8W9NGSZyxpaTFq0J3eUo8UkpnWp-4R1NYH_5GFXNcdw4eFL5JaszeCzLU-ZEoVIlqFH_N1PUO7XvmhS57BdeHRjW46iyRaBytEy3Sdn4rxMicPq1oz7UO93Bn7Zyjmo2zQWB8V5xkqTguXrQ7w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.125,
+          "findings": []
+        },
+        {
+          "id": "sq-025",
+          "prompt": "How do you PAGINATE results (page 2 of 10 per page)?",
+          "options": [
+            "LIMIT 10 OFFSET 10",
+            "LIMIT 10-20",
+            "PAGE 2 SIZE 10",
+            "LIMIT 10 SKIP 10"
+          ],
+          "answer_commit": "hmac-sha256:f68edddfe12e1a18557b29fe01c3cde9",
+          "explanation_enc": "aes-256-gcm.v1:8pPSrmkv6lN7E7_t:HiC80j7KpEVknBwqVssT5_XxQyJsEzVTlyzueZmySS8K19qkv3pAq_mTs5VKcAOhJ4Q_U1plBQkefL02Ug5gvTK7MaRIzlon25uK-cEv4-M2eEN16bUlWsrhi_oXTtWp9vr80EJqdXMvEocNndBc2BYNp0yjwUwM83-R0fEU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.125,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Aggregation functions",
+      "skill_id": "rfv.skill.sql-databases.06-aggregation-functions",
+      "items": [
+        {
+          "id": "sq-026",
+          "prompt": "Which aggregation COUNTS rows?",
+          "options": [
+            "ROWCOUNT()",
+            "SIZE()",
+            "COUNT(*) — counts all rows; COUNT(column) — counts non-NULL values",
+            "TOTAL()"
+          ],
+          "answer_commit": "hmac-sha256:09507b95ced7ff40a40c33f3e64369cb",
+          "explanation_enc": "aes-256-gcm.v1:J8VxyfevSP6vjXmZ:yxKRJf8rwzzVyI_xOmy7Tn5DpiEa4eCGfQUnWs5JQ0r3O856USKhgSbn8-rmqAvUsdRbJ_kU98sYoe97gaRWiZ7sVfNR6415PcUn-RT8WQMVxzsxyNclWWYYAAHSvwnMfS9CTKpwAU0vKWm25ZdKQjHiCD0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.6,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-027",
+          "prompt": "Which aggregation SUMS values?",
+          "options": [
+            "TOTAL(amount)",
+            "AGGREGATE(amount)",
+            "ADD(amount)",
+            "SUM(amount)"
+          ],
+          "answer_commit": "hmac-sha256:98fc277e4e2a4a7e10ac2c7c6b748feb",
+          "explanation_enc": "aes-256-gcm.v1:DnmNx7h69uzm2VmV:EdbdTD_-zotqAxLy59c8V7HY-IPdSxtcpLRk1w0E7G7Uq8Ehp7RQ0XgnfQQk1IEgNvi9-MfgGyAiFAKiqYuQxWTzsOdDbn5pkUxO2-viZDLRYhI0ThxqEG8i4MT1QW8ccF-lSPKdlKHwRyQZy3M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.647,
+          "findings": []
+        },
+        {
+          "id": "sq-028",
+          "prompt": "What does AVG return for an empty result?",
+          "options": [
+            "0",
+            "Infinity",
+            "An error",
+            "NULL (not 0)"
+          ],
+          "answer_commit": "hmac-sha256:221ac0b89a6d7a016df59a245667828d",
+          "explanation_enc": "aes-256-gcm.v1:ooRoNn1gzUUffHiB:kVhqkC0JGHuIF9UxUPfaZut2ZaUgA9KWMNQ3Zexg13vcmb5huszRWxsEvu88zeSSc2aAFMzOvmhdLDjpobCGjVnufIbHywpZUeugD5LqIXDW3PJGwi2w13JXwNQyxHSMZ-4P6oBqZRfIX_vv7jVdLVZMkdH7EUOv91Kvvdds",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-029",
+          "prompt": "What does GROUP BY do?",
+          "options": [
+            "Renames columns",
+            "Removes duplicates",
+            "Groups rows sharing a value, so aggregations are computed per group",
+            "Sorts rows"
+          ],
+          "answer_commit": "hmac-sha256:097ddc28eb27b54390d78d6b75630990",
+          "explanation_enc": "aes-256-gcm.v1:U1bzmV7E4a46uQPM:TTLYXaunJCo4OzMWWIcllfpnprDBst4hTJCge_OZkUntTL2ZTc6U7SZIbrlwnf_NKpMtaXABOilnRDe1F3JlxQS-dTyVgcLSoedb_MSi75Nr8bPCGrJ8f51nhwHNVvvzp_vUOKnmWLna31ZxlEJty_in6uQbaGfDW7_sa_Y7ZMTgcz6LOwTsUU4-IMgk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.722,
+          "findings": []
+        },
+        {
+          "id": "sq-030",
+          "prompt": "What's the difference between WHERE and HAVING?",
+          "options": [
+            "HAVING is faster",
+            "WHERE is deprecated",
+            "They are identical",
+            "WHERE filters individual rows BEFORE grouping; HAVING filters groups AFTER grouping"
+          ],
+          "answer_commit": "hmac-sha256:b70ad2ff6c0501e3bacb86fda38d0946",
+          "explanation_enc": "aes-256-gcm.v1:JoDwsVniOCC87hsx:_fAi6rAWbQDoEcsKaPniPlR4zi91HU7ZLSDTvUz4vy2H1W9St3-UdfhTYdK4btHHSBXsY2JQ9MKcMhiNuU1oPZAex36iIuc1ZJPNVPVG0NZmOWXAC18tUkQd2wi0uhE20ttTtkTOt9behEYLxuf9RYBES5f_",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.368,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Joins",
+      "skill_id": "rfv.skill.sql-databases.07-joins",
+      "items": [
+        {
+          "id": "sq-031",
+          "prompt": "What is a JOIN in SQL?",
+          "options": [
+            "A clause that combines rows from two or more tables based on a related column",
+            "A way to merge databases",
+            "A type of insert",
+            "A backup operation"
+          ],
+          "answer_commit": "hmac-sha256:c3ee70c590b12f1b7f394385cd81be3a",
+          "explanation_enc": "aes-256-gcm.v1:9oL8s5ktcAg7aGHW:F0xTJeTKun_23vdqKMq9yjGqlk-mo0MKpnSLxkcPSOeTMk6llNumTQ70_auedljiMznAf4WEF8oA_GFHp_1IV0hpGgQOKPmlUglrZxEkBiVT2__pwzouYA01RAtJH6y6stxtaASleMRIjdY9WusLg2w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.208,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-032",
+          "prompt": "What does an INNER JOIN return?",
+          "options": [
+            "All rows from the right table only",
+            "All rows from both tables",
+            "All rows from the left table only",
+            "Only rows that have matches in BOTH tables based on the join condition"
+          ],
+          "answer_commit": "hmac-sha256:451fa4f926fc8d89da6ecbb57ddd9e31",
+          "explanation_enc": "aes-256-gcm.v1:r0Ia-ENolbyoqmdb:izVNGXfZLGO4hqqILLU8Ipdy4ZUvMgzsVUXNteuenz1zA9EpQnlK2VkFsNJGlTqMOs_Nge2LSr8MQZkoo5GyZsQc6Z99RVRkEvYS4ksjLHgZRwIYQd9zkH7DXCqzTdxqnn0DkE_1ofXE7RwAmIFX3u5PUcSQCWXpMAUS30WE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.059,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-033",
+          "prompt": "What does a LEFT JOIN do?",
+          "options": [
+            "Returns only right-table rows",
+            "Returns only left-table rows",
+            "Returns ALL rows from the left table, plus matching right-table rows (NULL if no match)",
+            "Excludes all matches"
+          ],
+          "answer_commit": "hmac-sha256:225b706aafa2f5193919a58fd4ec3405",
+          "explanation_enc": "aes-256-gcm.v1:P1Snsg0_KDB_-e6X:RQ7esD0zp9uYozijMdjP2JHwuJoDa_vaS92fVmbECfSm-MmonvAxHuOPMjW6h2ujb79Nh1HeqJIFj1SIxlh0hISBJq8K0IJZR6-9LezWbrMpk1MNG6ChKQP-obb25LGszWGraRcBCkL2L-QLBsBwFHhY7keYBBsoaDo1X28Gqfh6mdIelr6d_iPjdcZ9WFS30AN4JXqMSkvrzXY4DpUcNH4H9FwGAL8mORnq9A2HNUc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-034",
+          "prompt": "Which join clause specifies HOW tables relate?",
+          "options": [
+            "MATCH",
+            "RELATE",
+            "ON — e.g., ON users.id = orders.user_id",
+            "WHERE"
+          ],
+          "answer_commit": "hmac-sha256:06efa2f25806811c71dcfb35dc490623",
+          "explanation_enc": "aes-256-gcm.v1:bxaafzpP_Vj3NVam:4Sy1-ByMjwSHgAWf-jKXBrRgzkMoT8-IAlflBqcjae2AP4BwPe1AgoAI5F5_666kLT0Hgj2yLUne2erupwEorQ5tPbFBTyzXEvIh2kaTSeMoBnWNtAx2OONMo-q9zlCheuSpZricPKl5QWdSbinayygq7jBUCPmwxgc4fw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-035",
+          "prompt": "What is a FOREIGN KEY?",
+          "options": [
+            "An external user",
+            "A column referencing the primary key of another table — enforces referential integrity",
+            "A password",
+            "A backup key"
+          ],
+          "answer_commit": "hmac-sha256:e79ad4506bcd1a68695fd5e187876ebe",
+          "explanation_enc": "aes-256-gcm.v1:umjmdlUJDJMA3Seh:xcaLrzTJ1YdN6p-vAHJHMbz9WgJShQl0Jj4a4w8FU2p49P70xvlX3zgEswvnsin7rzJVpFhEepb7EkGRbQZMvZRHOM37MA8-tgB6fz-LLnSGaZRtsQrOMvdIEwffOKnLQFsvGbbVpV7WSpibyXuCNpDnKGyKJmafV--WCbVCCrdQQPZ2ectRViFzwPNbCgUC28k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "INSERT, UPDATE, DELETE",
+      "skill_id": "rfv.skill.sql-databases.08-insert-update-delete",
+      "items": [
+        {
+          "id": "sq-036",
+          "prompt": "How do you INSERT a new row?",
+          "options": [
+            "CREATE ROW users ...",
+            "INSERT INTO users (name, email) VALUES ('Ahmad', 'a@x.com');",
+            "ADD users name='Ahmad';",
+            "PUT users INTO ..."
+          ],
+          "answer_commit": "hmac-sha256:00cb33f537876b1a7118422095d182ea",
+          "explanation_enc": "aes-256-gcm.v1:mfXjt7XJxlPsIxuh:ApqZ7pPh4rWjLTgKpTE5JHgLrOWEkCWhLRZcp6xVj9BqmxZGtXvQbj5AtTjB5TmvIJ4uWCYqKxMvbmoIoKt9QLFXwXjaVE76hVb6-KK0_ozmdfkFxQqyQDN0KQuSen_kPOz6vnG-bvDB9CUqyHFqQKgg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.609,
+          "findings": []
+        },
+        {
+          "id": "sq-037",
+          "prompt": "How do you INSERT multiple rows at once?",
+          "options": [
+            "Multiple INSERTs are required",
+            "INSERT MULTIPLE INTO users (name) ...",
+            "INSERT INTO users (name) VALUES ('A'), ('B'), ('C');",
+            "Use bulk_insert()"
+          ],
+          "answer_commit": "hmac-sha256:5fdef9676fd907faa6a409daa74a2980",
+          "explanation_enc": "aes-256-gcm.v1:qTodd7eDL2_1xsSp:e-hsBw7ke5454jMP3K7av8hlsTtn_Oi99em-joKMGXAvlk5TvNgpMvHPNuV3ktfZIS7Vl3BYXsP9GCjMfDbNXf8nzLKXlQyTxAhfrQQdxYR_knC4f6K_gw_kesR5VbpPxQZ8e3AACW5VneXobLM3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.405,
+          "findings": []
+        },
+        {
+          "id": "sq-038",
+          "prompt": "How do you UPDATE rows?",
+          "options": [
+            "CHANGE users TO email='new@x.com';",
+            "UPDATE users SET email = 'new@x.com' WHERE id = 5;",
+            "SET users.email = 'new@x.com' WHERE id = 5;",
+            "MODIFY users email = 'new@x.com' WHERE id = 5;"
+          ],
+          "answer_commit": "hmac-sha256:bf5b7751c03e4b03ae01798b3b3f5d52",
+          "explanation_enc": "aes-256-gcm.v1:2M5NhSPkBteBbA5V:i-c2q4iPYPy553QaO0FAMhGrnqQaMkoIt718Q2gRtMqTxSmsJNXmrjFKJmqVzXiVqaxCvKrusoyEOMGRR4OBsll01p_D9GO7sPXJbpIE3qAth0LSEmxnQOFuukVi35wyQHeOM0krRxsztkcFtygn8a1l4XaUH-ZTWZUY_tfhiguPXkmR7QYq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.087,
+          "findings": []
+        },
+        {
+          "id": "sq-039",
+          "prompt": "What's the BIG RISK with `DELETE FROM users;`?",
+          "options": [
+            "It backs up the data first automatically",
+            "Without a WHERE clause, this deletes EVERY row in the table",
+            "It deletes the table itself",
+            "It only deletes one row"
+          ],
+          "answer_commit": "hmac-sha256:6af1fd2f201f94fb26179caf57314255",
+          "explanation_enc": "aes-256-gcm.v1:and-N16eMXE3xrow:eyJf7WwrR_AxWlC4Ye8qz71iF2naENmcRTJT9zaxGSEMd5L6bWXy6rXOw6c54pz-DefUO1xXQRD6xx8WLBsbRTvRqSzq3rQ2K7EfFccn-EtYl0mxD2P_KY1ac85AH5Y7dMr1OJQsMbrwvxUNGXhqFOlnVAPo5PCUi0AkZXH04w",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.475,
+          "findings": []
+        },
+        {
+          "id": "sq-040",
+          "prompt": "What's the DIFFERENCE between DELETE and TRUNCATE?",
+          "options": [
+            "They're identical",
+            "DELETE removes rows (one by one, with WHERE); TRUNCATE empties the entire table fast but resets sequences",
+            "DELETE is for tables, TRUNCATE for databases",
+            "TRUNCATE can have WHERE"
+          ],
+          "answer_commit": "hmac-sha256:252bcb949b5bbd2ccb085b35bdfff51e",
+          "explanation_enc": "aes-256-gcm.v1:gKzqkWQDjaxONZKg:dUhHJmQEUf2hbO3_kOjsWvgPvdru809GgUTfqFx8nZmgk44yFTd91YXJmdiFB_ryK-nhohL57J45cI-5sbme4sEVGwbBDZ7Y2e_ouWoTamRwpIb1e1Z1hwThDTCbCMYGP6tMllxZiKbFFlxoztVvANjq8_aOASMPEzl5",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.386,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Primary keys and indexes",
+      "skill_id": "rfv.skill.sql-databases.09-primary-keys-and-indexes",
+      "items": [
+        {
+          "id": "sq-041",
+          "prompt": "What is a PRIMARY KEY?",
+          "options": [
+            "An encryption key",
+            "A column (or set of columns) that uniquely identifies each row in a table",
+            "A backup identifier",
+            "The first column"
+          ],
+          "answer_commit": "hmac-sha256:513835e5586f030b4583f3c86c748d7d",
+          "explanation_enc": "aes-256-gcm.v1:fZ7vslBkIW8dMhhT:Vfxcbs6jJbfy2ym9pWcYiprL7FBYgc03A-w2-w7-k9nZzGkIoUeXouwHbrEEAnih5XiBJtUDw825pelHfq_Rme0v_kCL_tHWWHF0B-PFq_LJvdIgRnKvo8piVesVe5NMhNQw5snWurvHvpHOVqnPeB0XAiHaTDUcqI_dVCW6vvfkjC1I4ZiTa_JBIA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.842,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-042",
+          "prompt": "Why use a UNIQUE constraint?",
+          "options": [
+            "Speeds up insertions",
+            "Ensures no two rows have the same value for that column (e.g., email)",
+            "Encrypts the column",
+            "Makes the column required"
+          ],
+          "answer_commit": "hmac-sha256:d61cd630ad64dc754489e16fd8d0faf8",
+          "explanation_enc": "aes-256-gcm.v1:vUSMaI6Ljma7HK65:r2kfqxgMEuYE1eks4w__bnwT9mdWoK6kJZO3cmp2uMATFRGM2Js3VxaW_UT-RKK6MsoQ8Ll01iYM7pEduEhioLQ6Ts1RQ3eo3MsV-XRhxZHiqgaurRQ4D4pB0ZozbIIE5uNlOfyMh23yzbLxdXMeu-utTTtdglZzgcEUD9sl14cZmY1XVWj_kQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.76,
+          "findings": []
+        },
+        {
+          "id": "sq-043",
+          "prompt": "What is an INDEX in SQL?",
+          "options": [
+            "A backup of the table",
+            "A data structure that speeds up queries by enabling fast lookups (like a book's index)",
+            "A view",
+            "A type of join"
+          ],
+          "answer_commit": "hmac-sha256:1390e2f2d693b9e5da7a0642a9321da9",
+          "explanation_enc": "aes-256-gcm.v1:CqdBIHIJ3vt3zbFj:-N_dpLPFmYEBFYD2N3ACx2xMDzqPHf5amIc7b49uUVbbT3Mr702vQg_LcPNPwRsA9tMW3y4mrpd1i9MFI5OaKeWxK2I75UBdRN6hn-EDrbGiY0mbdAKHUOp4UamjmxqpJ322IG4BdP-fsFfpEnHhEyidZu1smJNdBMm2hko",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.095,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-044",
+          "prompt": "When does an index NOT help a query?",
+          "options": [
+            "When the table is small",
+            "All of the above are partially true",
+            "When the WHERE clause uses a function on the column (e.g., WHERE LOWER(email) = ...)",
+            "When using SELECT *"
+          ],
+          "answer_commit": "hmac-sha256:ac0bdf5eef68ddb16a9ab619ca0b6ea4",
+          "explanation_enc": "aes-256-gcm.v1:kWRKWaO7gYFLWmL_:3vvIXw4hV49dE-e-Z-YSl5h9fRb9LcKakJztAp8d6jYNd791hNC847xPET402p4xowpsZmaneNNyKIh_lZx4YSzW4zXJ9ufzw9G3zVM4L_QOlJGJIE8B3HWSJsAaTJz2mi0aehwntgWUAe-7wSVeGwE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.4,
+          "findings": [
+            {
+              "code": "all_or_none_of_the_above",
+              "severity": "medium"
+            },
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-045",
+          "prompt": "What's the DOWNSIDE of too many indexes?",
+          "options": [
+            "Indexes have no downsides",
+            "Indexes are only theoretical",
+            "Indexes corrupt data",
+            "Each index slows down INSERT/UPDATE/DELETE and takes extra disk space"
+          ],
+          "answer_commit": "hmac-sha256:a97c473dfa74ba2499c4522ced5c25e8",
+          "explanation_enc": "aes-256-gcm.v1:h5DCacA-joWHtejG:zpA6vtpE0Z3uTC6j_tmrZ7qe_mP3fqkD9PqhAmEB7AqQ_jxsB0bcUQvIlrPMUslw1pGiTg7ojhCg6MOGmXJ_HbKduCmE11JVUSM0t1TLZ2bGT215vyhanGZ2HwxhaVa0sXCi0tND_KO8n2WNM1c3yawoFL1iDVpk5wdOF25rdpF0e0ZYtng",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.464,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Data types and constraints",
+      "skill_id": "rfv.skill.sql-databases.10-data-types-and-constraints",
+      "items": [
+        {
+          "id": "sq-046",
+          "prompt": "Which is a COMMON SQL data type?",
+          "options": [
+            "html, css, js",
+            "INTEGER, VARCHAR/TEXT, BOOLEAN, DATE, TIMESTAMP, DECIMAL",
+            "object, array, function",
+            "let, const, var"
+          ],
+          "answer_commit": "hmac-sha256:3b49f08e0b31b971c2d59212b7128d13",
+          "explanation_enc": "aes-256-gcm.v1:XKBsOuoXz-2xC6Ki:lm_-oKQM_AlCGH4u-5fwsZQJjiAHauK2mm70BwlrmjHR5ysLM7-dCtmtevb-2ZgrUNsgabtzA0NKbnAT9MdwskmJmDiSxT0pfOrle9MNyE_ZoNPa9IqnYq0_PD5Ro25qOL2FYIW8I9gZ6XYV7ApC1uo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.435,
+          "findings": []
+        },
+        {
+          "id": "sq-047",
+          "prompt": "What does NOT NULL do?",
+          "options": [
+            "Makes the column auto-incrementing",
+            "Adds a default value",
+            "Constrains a column so it cannot have NULL values — every row MUST have a value",
+            "Encrypts the column"
+          ],
+          "answer_commit": "hmac-sha256:e2b9c88d0d58ab7dd4ec7079b96ff96a",
+          "explanation_enc": "aes-256-gcm.v1:_Pv5NhLcMo9LerIt:fJMq4RsjvfIDnuqETpYRWHpJrHpqkOQW8TOOjROP2FkBtkm4SiM4l_-fun_nKMYj3DydGLj2yEAkt75cJMEURjha-QqFWl2N4dfqnXPBcXscmh-S1_TK-Lkoeq4hxL73rcYBaokyIxcJsJZpt2a3LqQSPdr7hQJ67NrfbIK_W-SX-gcAeA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.324,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-048",
+          "prompt": "What does DEFAULT do?",
+          "options": [
+            "Makes the column required",
+            "Drops the column",
+            "Sets a value to use when none is provided on INSERT (e.g., DEFAULT NOW() for timestamps)",
+            "Creates an index"
+          ],
+          "answer_commit": "hmac-sha256:1290954d144aa4da313ce226918a5380",
+          "explanation_enc": "aes-256-gcm.v1:sM0xZRXLdvlRTpjS:2_v7qavZbB6YNwS5_BhDbwS5l5KNcxQImfO5tWbiaheewhprLxhtBg6ZPywGjQ0GJHTmbemzY9_YpGFm-AlIvbfsSKetSGQvJC-eY0S0BRfNWoKzeIbz4haLS1r5DJwLWyCstHsFeSkLEQuj8U8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.52,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-049",
+          "prompt": "What's the difference between VARCHAR(n) and TEXT?",
+          "options": [
+            "TEXT is faster",
+            "VARCHAR has a length limit; TEXT can hold unlimited (or very large) text — depends on the database engine",
+            "VARCHAR is for numbers",
+            "They're identical"
+          ],
+          "answer_commit": "hmac-sha256:832daf1989bed76935864de506ef0d5a",
+          "explanation_enc": "aes-256-gcm.v1:Za367Nx8aUc6_kty:Tn6dOtdK0JtHTJsGJ9GDj2ai3BT4L4qT4UF2m5UqPIoG8nMYBEM897f9pyW5vIDWj9DNorIf3WWBfUrcGK6O7xJaEZ2Wvw4wrIdq3Gp015jOK-9D4o2dx6edmoSTNuIHU9xHQm0B6Ksg8XyPxGY1GAePKN45wviJlqJGX6zFG4xddO0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.773,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-050",
+          "prompt": "What does CHECK do?",
+          "options": [
+            "Backs up the column",
+            "Verifies the entire table for errors",
+            "Comments on the column",
+            "Constrains a column to only allow values matching a condition (e.g., CHECK (age >= 0))"
+          ],
+          "answer_commit": "hmac-sha256:d7cc76f634c859546760988b926e3b51",
+          "explanation_enc": "aes-256-gcm.v1:IijfH8SJ7jMoF1V-:slCyPzz3Z63pRNprRL7mEyGqYfL4kZShal5QYOoVdmGWhrdcbjRF66R55xOHYSuvAhKyqAd2JGEIs9paZRsbvHzkJWtFoqPcz01veQazYBDb7oO-1a8s4BA5jZsr1ZnY6f8HR4iDZTlEJ7C2sTjZPsGargYFMFpp2wvc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.389,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Subqueries and CTEs",
+      "skill_id": "rfv.skill.sql-databases.11-subqueries-and-ctes",
+      "items": [
+        {
+          "id": "sq-051",
+          "prompt": "What is a SUBQUERY?",
+          "options": [
+            "A query that runs offline",
+            "A type of join",
+            "A query nested inside another query — its result is used by the outer query",
+            "A stored procedure"
+          ],
+          "answer_commit": "hmac-sha256:c09976a380adc4670a4e9ac36cf7ddd1",
+          "explanation_enc": "aes-256-gcm.v1:fi5NJVU8kIGd8kbC:Owo3WFTGo5Q-9Kbb6Ae94wJlx4aRd_4V81C4CBRs4HVI3o42mTy5K86FI3zM7cDBW79JfzDsNquKHHEg_MGPLOQgNChWHgojEC2A3ZXY_c_xz_D7LUx1hZU-sY6I4p1k2wGsZ_WJLE-0j8QjzyuPZRUtRzDLk9RMj8ETftnoiaeJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-052",
+          "prompt": "What is a CTE (Common Table Expression)?",
+          "options": [
+            "A named temporary result set defined with WITH, usable in the main query — more readable than nested subqueries",
+            "A type of table",
+            "A copy of the table",
+            "A stored function"
+          ],
+          "answer_commit": "hmac-sha256:027c7e52636ea8fae44825093c005a68",
+          "explanation_enc": "aes-256-gcm.v1:E7Z7q-PccQDqGEDG:mmjrN3u-44Nx7AuUI3eYsxTm3nYQolKbbN-5gnfa80a_qAjmoYVgKJN2v__tojAREwzh9XNaKCqWYDTw99BVR4utpyY5A5S4eGBpQ6WmlGRE1LN7rXtXrWCCE5MVwhzJkH_fQ41cI0bk7uQFQHy8_FmSxFw9MB5rkzG7w6_MRfNyrA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.842,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-053",
+          "prompt": "When should you PREFER a CTE over a subquery?",
+          "options": [
+            "For complex queries, repeated subexpressions, or when readability matters",
+            "Only in MySQL",
+            "Only on weekends",
+            "Never — subqueries are always better"
+          ],
+          "answer_commit": "hmac-sha256:45d40ba092c5a4d54ef07786eed5c701",
+          "explanation_enc": "aes-256-gcm.v1:ZPADhzlL8lBjOBri:dkuPJf3idxb8r8tZE3dq9Hj6L6DT0-p-s2nMgY1Oke83UaMBmU2CGbyt6PJfFFOy-K9_nV7AgboSqBfX9ZwAbbmJADu6awwxjF5uAAmfy2VYO32pHCVar_UfGYYlpMf72l3kjhsdkoyl8mqAeO9kfYSh_Baq-HSW0LwPG-jy9mS5DzDtoPVGjcz8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.028,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-054",
+          "prompt": "What is a RECURSIVE CTE used for?",
+          "options": [
+            "Backups",
+            "Indexing",
+            "Loops in SQL",
+            "Querying hierarchical/tree data — e.g., organizational charts, comment trees, category trees"
+          ],
+          "answer_commit": "hmac-sha256:74a737d44d03dbe72b7567fd01370ef4",
+          "explanation_enc": "aes-256-gcm.v1:g7MvC24VCn_K2WG7:WaWAsjo5YqqTjW6rvxoapFnV0So8BgKsQoC6KN2bjbLMlotBa_sBlaWeR0oGnSmsCCf1OYjTCcLR5TJGjnNQFpNPYHkt_zS9ui2aeM3eZFrDpXjISBzZqgvNytejE_2NLfwfdB4t",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.667,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-055",
+          "prompt": "What does EXISTS check?",
+          "options": [
+            "Whether a column exists in the table",
+            "Whether the database exists",
+            "Whether the table exists",
+            "Whether a subquery returns ANY rows — efficient for 'does X exist?' checks"
+          ],
+          "answer_commit": "hmac-sha256:2457f3f69c7f3a590bccaa5091e988a5",
+          "explanation_enc": "aes-256-gcm.v1:Ud6dc6DdovaXsxWz:GeV0x8qS546G-TqAqJG1_jw_IqeD4XGGczXaviB81ptUaBhe7EdLLn3Z6RrRgJINAPcO_fu_8mhAtlaiirfe04lDRbqNrvz4sOt4XwhnvI_iCh5bJBx6E6WSGF9AcPRlXCTFO33ox3d-4Vo2lbIJqkg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.056,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Window functions",
+      "skill_id": "rfv.skill.sql-databases.12-window-functions",
+      "items": [
+        {
+          "id": "sq-056",
+          "prompt": "What is a WINDOW FUNCTION?",
+          "options": [
+            "A backup function",
+            "A function that opens a window",
+            "A function that computes across a set of rows (a 'window') without collapsing them like GROUP BY",
+            "A type of subquery"
+          ],
+          "answer_commit": "hmac-sha256:6d7196cc4170634f7abacde76bdd5531",
+          "explanation_enc": "aes-256-gcm.v1:8xVz_IB2tHxWkpVP:IM3Ky0pp8ANqPkY3WXK8V3k0T8DXHeO1fRUSMEgp2GonlPmp_Ci-UZyUj78KtcvyFyH6bKXbTv1lIwg2TYlpAtwlwficGZc2KcQ1B3qmQ9ErTCs5olw-QkNbyKwc87AmkfTjjHVxniEjxK94rV-aFjIW3ljgxF_djwfbotbP",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-057",
+          "prompt": "What does ROW_NUMBER() OVER (ORDER BY ...) do?",
+          "options": [
+            "Counts rows in the table",
+            "Returns the row's primary key",
+            "Returns a random number",
+            "Assigns a sequential number to each row based on the ordering"
+          ],
+          "answer_commit": "hmac-sha256:220b2951424844c387d29d38489724c2",
+          "explanation_enc": "aes-256-gcm.v1:5oRdtU1YIXZPeRrK:XRvQwNxybsX4dwh734srH9cd2BwEyj3NBV0jh4rY1rEbl0Vdt2HvunPB9wlH_J281IUlXVQODbaSdhXxKkuCKn7lg8AT-LEoIdLrwxCwe9CuMXv-riyNOwyTRp4I7NmTpkeCZcy6",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.103,
+          "findings": []
+        },
+        {
+          "id": "sq-058",
+          "prompt": "What does PARTITION BY do in a window function?",
+          "options": [
+            "Same as GROUP BY",
+            "Creates indexes",
+            "Splits the database into partitions",
+            "Computes the window function SEPARATELY within each group, but doesn't collapse rows"
+          ],
+          "answer_commit": "hmac-sha256:493b2a6e121f530b9cb88bdb6b4a4d0c",
+          "explanation_enc": "aes-256-gcm.v1:XwNW2miDquSooIsI:fG6MxLJmhMRoiVakFcnnylGpI60TFKa9-HmQ56pJe4nYMKHh_xol2UK9F5rAeOjRLnP2wHfDSOVlFAyHQUHCYGzP6Wrmu-E89aCDvFaaXxoqtF8Heo8HF4ZWhbpsFaOifdddpMWUWFfqFHKBjF18PMItClcRHA4T-nJ5Twv5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-059",
+          "prompt": "What does RANK() do?",
+          "options": [
+            "Sorts the table",
+            "Counts ranks",
+            "Returns the primary key",
+            "Assigns ranks with ties getting the same rank, leaving gaps (1, 2, 2, 4)"
+          ],
+          "answer_commit": "hmac-sha256:a84e0163ed0b94fb50bdfa576f921a0b",
+          "explanation_enc": "aes-256-gcm.v1:9GZfhMN1cB0MmXrK:GUbQ866RsgWESJT4xq7nDZKqk3X7XvX4n91QxdMg8r2m3Q_oxMucFKFpHdUZoTkpCaOEQ6bGgaDE1W5_ouKdQG2X9J6hn1LsrXqy5d7G1pSQW76JDpvH49SSIwBNyeN-j2_761gu3yLSoJouIRFltWt0-N_vwnOIt-RdIXJNqPB57oiuvI3Zdw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.13,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-060",
+          "prompt": "What does LAG() do?",
+          "options": [
+            "Delays execution",
+            "Returns a value from a PREVIOUS row — great for comparing each row to the row before it",
+            "Slows down the query",
+            "Returns the latest row"
+          ],
+          "answer_commit": "hmac-sha256:267489f1fd8c7c5b46dba6320115f8ca",
+          "explanation_enc": "aes-256-gcm.v1:6gRPJ3suN70pmZ-N:qNuY3Zv4dWchFkIamJPPc_UVAozI4VztZDRMqxVpCMLbdoJXY2h_Ym_ar9gQF_d_bEgjcgl_tdOkgz1Ev5g_nbKcni7TKjP4moQJcNyZys2PheGEI-n2Hv_xfj0eVC-Dqr0Dn9YjEK6LOWR_fskUPVLi-hd68RZFfkrURniaVQx08O3gnpuSomtYYX_P9rI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.955,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Transactions",
+      "skill_id": "rfv.skill.sql-databases.13-transactions",
+      "items": [
+        {
+          "id": "sq-061",
+          "prompt": "What is a TRANSACTION?",
+          "options": [
+            "A type of payment",
+            "A network request",
+            "A single SQL statement",
+            "A group of SQL statements treated as one unit — all succeed or all fail together (atomicity)"
+          ],
+          "answer_commit": "hmac-sha256:7eb3ab63fd01115e8dd8d7031cb47f72",
+          "explanation_enc": "aes-256-gcm.v1:etlFG2mXW8fPIlFj:9JsIXjAGaGh0d7e_apUaSWFo_bHERwxrGzMSgBTxdDLZ1HOkfnjXybwjEZVYtEPpsurG08Iaksd8bVuzfcV00u9pi1r6gOv7BPUmxYR93UxtvNf0p__z_trvRhzGob537dsPyA0lbmyghikH6kcUjdKHbQg4C5wE_X_L7B8boGi0YT0fEqKHO-qsf1V8Nw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.182,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-062",
+          "prompt": "What does ACID stand for in databases?",
+          "options": [
+            "Accuracy, Compactness, Identity, Distribution",
+            "Atomicity, Consistency, Isolation, Durability",
+            "Available, Consistent, Indexed, Distributed",
+            "Async, Cached, Indexed, Distributed"
+          ],
+          "answer_commit": "hmac-sha256:d9d29524066ecb0fdac7ff9efaed516f",
+          "explanation_enc": "aes-256-gcm.v1:pgB-miLbiZ4SZoyY:JeiSF9pzMtyP7H06dctS7yPEyV2mLwzcOT8dk7aiTF8Y99S77xiZqknR45zfqFhm-NbFYtwGaoBtZRV4xNRWq59cSj5uvWB6hPS4bPgHNDWFta-rgjx4xy3gpCSRQV8pUzQNwUlTuPq5SmPaswxBkY-xOANQnHaYVWie",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "sq-063",
+          "prompt": "How do you start a transaction?",
+          "options": [
+            "OPEN TRANSACTION;",
+            "TRANSACTION;",
+            "Transactions are automatic",
+            "BEGIN; (or START TRANSACTION;)"
+          ],
+          "answer_commit": "hmac-sha256:fa7a5bc6077eeb6ac300be7ef99004f8",
+          "explanation_enc": "aes-256-gcm.v1:X8bl9ZrRMrr7X5jx:sb_6B9LQQNTkJ4Im5_FmFjPKT1ZenRq9BpPooCVdUnqJRI0r0U9F53OORFNYMOB_qlt6h0tzSqGNGyyIwQqJLH7OHTpMpzlyuRBBBZAB3j-bFH32IHMVanmi6O5t-QGcWanrUFZnW9s",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.154,
+          "findings": [
+            {
+              "code": "distractor_contained_in_answer",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-064",
+          "prompt": "When does data become PERMANENT in a transaction?",
+          "options": [
+            "When the connection closes",
+            "Never",
+            "Immediately on each statement",
+            "After COMMIT — until then changes are visible only to your transaction"
+          ],
+          "answer_commit": "hmac-sha256:29de40f26e4c1b3fb2268fc2bea35409",
+          "explanation_enc": "aes-256-gcm.v1:hr2is_m-zk50y-7Q:ahQ68LpLfFo55vqfqGmqNIIrhwOSPynrPqvkB6JOyzd4xpkJr4xx3vTVV9hmKkvn6URCb4IymKm5TjdTuluUTPDv6pLC4b4OOPJnBwveu0XmdrFdfjUtxOtyCkWtJxdzS7btSshem6hDzEoljx5jM6T9grNcqNvZ1sS4lSdOY1_Wi6pi_QzjbN3wjMY_oDHxHXTOWj8Q9xk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.414,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-065",
+          "prompt": "What is a 'race condition' in databases?",
+          "options": [
+            "When queries run faster than expected",
+            "When two databases compete",
+            "When indexes race to update",
+            "When concurrent transactions interact unexpectedly, leading to incorrect results"
+          ],
+          "answer_commit": "hmac-sha256:901515391dfc16186a97fa739d380373",
+          "explanation_enc": "aes-256-gcm.v1:SuQXccuwuWFwpz8C:TtHdy1MWEkqulXR6puyWKxoUmV6Kkw7ziTmjwvavLlrjfEoSw2DlFDKYDpuCAzxKJHSRZh8Kvf7ZQ9iWFnD3G_AfL-d9RaX3_qJZXKpW4KT8jUoL5XbAtKpso2T-6Q9qXrxh1aI3Nm7NojYAJA4fwF8Uh2jmPMMYOeZ9EnVNPHWKP2wFRZgTgFE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.162,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Database design basics",
+      "skill_id": "rfv.skill.sql-databases.14-database-design-basics",
+      "items": [
+        {
+          "id": "sq-066",
+          "prompt": "What is database NORMALIZATION?",
+          "options": [
+            "Making all tables the same size",
+            "Organizing data to reduce redundancy and improve integrity (typically through forms 1NF, 2NF, 3NF)",
+            "Backing up the database",
+            "Standardizing column names"
+          ],
+          "answer_commit": "hmac-sha256:c6869dec5a81dd1fadcbc81ed6e805ad",
+          "explanation_enc": "aes-256-gcm.v1:heJBOVuKf6GH2MFa:u9U5l5RPmJBOdohI89w1cedx6HLfo3hCTpuuVi7tqitREtckA--viEkP0LAXW036pf7jSEoCFsORs9EuGESj29bjQJEdRQ1ExbGEi3ueMEA-InUDu1kRThztkPXHECcIj-NxvUwZvW4yr6yZiA2ubpGD7OTW3zOV-mKS66A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.161,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-067",
+          "prompt": "What's a ONE-TO-MANY relationship?",
+          "options": [
+            "All rows are related",
+            "One row maps to one row",
+            "One row in table A relates to many rows in table B (e.g., one user has many orders)",
+            "Many rows to one row"
+          ],
+          "answer_commit": "hmac-sha256:4670e8dd3d8318c0f899375a51edd084",
+          "explanation_enc": "aes-256-gcm.v1:e6IgEtfUykoloQAU:yTnxMZIpWroe9CzhWaCZgQceuZ1Zbf6pOPrezsVWg_7QwYVqpZTA3fJ3C4y1jkmp0aAzh8WN4ULQGrLK21yxHi0DUhGMPf3KC394aYWIamecxb5t0JI9TEGVM6K9R_OVJbA5iAIzU9SIxbmLM1D5pbrSkWivdJhyY6kk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.609,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-068",
+          "prompt": "What's a MANY-TO-MANY relationship?",
+          "options": [
+            "A self-join",
+            "An impossible relationship",
+            "Both sides relate to multiple of each other — implemented with a JUNCTION TABLE in between",
+            "A one-to-many in reverse"
+          ],
+          "answer_commit": "hmac-sha256:a4ba2f92210f0ca849384b75bcbca17b",
+          "explanation_enc": "aes-256-gcm.v1:Nd5ch36hOsbXCeYl:gJ3cK-5_z5LGDc1m4jLPL1LMBkchUse80ifyACsQ6j5hUEdcNyUYHFPYNZG_VhoCl9CnmcP9FXX1qGVFvcd_0gDI-yksjIuvNLFQUGvXdAnywCehgTCJ4sRPhBpd3hyZfjRZRtT0zWofod-bJBeDPJm3gqAHHXoW-qv7TtVJnVw9Ary6kg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-069",
+          "prompt": "When is DENORMALIZATION appropriate?",
+          "options": [
+            "Never",
+            "Always — denormalization is always better",
+            "Only for small databases",
+            "When read performance is critical and the cost of duplicated data is acceptable (often in analytics/reporting tables)"
+          ],
+          "answer_commit": "hmac-sha256:9df929aa0b0a9632312c45e9a2b75072",
+          "explanation_enc": "aes-256-gcm.v1:i1hbhVG-VIQJrlyq:z_ehs5Km1DZA0Lerta_rGR23NjbyCPYZM36eJwqru2Cd7RoGMfOkHigqTRfUiIk-YlbXO5MVFFWZQAlB_ZRhIrt8XG6WDIh5U7f858TNEsD3Wvz9ezx1MWPpDD29O2xMtm-s1wILcZP431kr9PDH2Gy5CPA9bQOu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.854,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-070",
+          "prompt": "What's a JUNCTION TABLE?",
+          "options": [
+            "A type of view",
+            "A backup table",
+            "The first table in the database",
+            "A table connecting two others to model many-to-many relationships (also called bridge/link/join table)"
+          ],
+          "answer_commit": "hmac-sha256:26db60e9032510c6fcbd23fcaa7d5cba",
+          "explanation_enc": "aes-256-gcm.v1:2bdisK1h4BZssp2b:R5GlNLn-6HyJop_Bj8HzT5ZEQQ-BP_l9T24GEpj0zmxWVXDqqqND6W2ZkqyBcIxAHj7hAfp5tYWxIwZtnBbNejW1NcWYOpp3GY06mpRiuqi2Xa6Gsu6nc-W0xeP73_1QDmm2nNyrbDaivsgxw557WQwmjgXyJds4_VIAwzqT",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.29,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Performance and query optimization",
+      "skill_id": "rfv.skill.sql-databases.15-performance-and-query-optimization",
+      "items": [
+        {
+          "id": "sq-071",
+          "prompt": "What does EXPLAIN do?",
+          "options": [
+            "Runs the query in slow motion",
+            "Shows how the database PLANS to execute your query — essential for performance tuning",
+            "Returns a documentation page",
+            "Generates a backup"
+          ],
+          "answer_commit": "hmac-sha256:235cc9146499c90029e783fe3ad67b64",
+          "explanation_enc": "aes-256-gcm.v1:NPxxZ43lRuVCuUnk:cN841jkTsFdNnxAw1ulIawf_1oxlQBNcdd9ysSWhfOjw4XH5SB_EnDvJ3paihSw7c6LOGlUdp0zDXiCyUMP-MfmqtDAeWKWfC4SsanqahT_JUKIH04zxIKyA_3gWUtzxlWLZSMJwdq604VVxWMMy0dqTIu2gkmhc_ZfXF13Y31xZJdyitp984CROshJH3K8dqrI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.931,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-072",
+          "prompt": "Why is `SELECT *` discouraged in production?",
+          "options": [
+            "Returns more data than needed, harms performance, and breaks if schema changes",
+            "It causes errors",
+            "It's a syntax error",
+            "It's deprecated"
+          ],
+          "answer_commit": "hmac-sha256:1cd99d99032e4fcd0be27f97e73c5c62",
+          "explanation_enc": "aes-256-gcm.v1:aYVcR5BSgjv38sO_:XnRQXCMpqxPVChho8omRBTuaOP0e5SwM-YukDnfWuUvKZMo75WBDK26XuAc45F1AI7RHFnoTi5iaDIv6psvbJzPcPUf9zXL0ofxxlyijQZV8xiIfex6AhLWih8P9amtAiAhevazw2djB4bjwUg8og6lrCM0",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.105,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-073",
+          "prompt": "What's a SLOW QUERY?",
+          "options": [
+            "A query taking too long — usually because it scans large tables without using indexes",
+            "Any query over 1ms",
+            "A query during peak hours",
+            "A query with many words"
+          ],
+          "answer_commit": "hmac-sha256:bc5b66d6da5cc6b0fcdce3a4e3a88523",
+          "explanation_enc": "aes-256-gcm.v1:CTXcsICp0bLB0dtz:LzNAri5G7mdGYK4YeIsU8cJFL5saDaYpbviboFwVJOzATtPMm_GZCxkWMVzrwmILiiahJ9k1LPDCFab7lO-wwZjUTKE1WL-_Q3jmmUwnnY6JLT6kk_qeK5Tq5E1dvbSVwhKovAM5P5549jWnHX5iZNdCuPw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-074",
+          "prompt": "What's a COMMON cause of slow JOINs?",
+          "options": [
+            "Using column aliases",
+            "Too few rows",
+            "Missing index on the foreign key / join column",
+            "Sorting alphabetically"
+          ],
+          "answer_commit": "hmac-sha256:8a7888f00ea20f4d90edd4c25c848db0",
+          "explanation_enc": "aes-256-gcm.v1:C7BioGS1EhQtjRAu:l_-d8yU9ATA70Xsqx4kpMSlar0C2WUu2EK4sd7I-Y30IEBgUcGGgOnxE7VU-cxAfPbtwWK6S5QjIW4dg632zRa0Qc18OgYhyJWAcMejVwYXYP_mTsCQGO1dbI4B6iXpsLKLENvPtXxgWo8nZ7ZBmzV7Qh-ww7SJdrlnMEW7C5y7uZ3iRyUW7",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.091,
+          "findings": []
+        },
+        {
+          "id": "sq-075",
+          "prompt": "What is 'N+1 queries'?",
+          "options": [
+            "A backup strategy",
+            "A SQL operator",
+            "An anti-pattern where code runs 1 query then N additional queries (often hidden in ORMs)",
+            "A type of join"
+          ],
+          "answer_commit": "hmac-sha256:fdbeaf3061694a38ff42a85c46e6ae47",
+          "explanation_enc": "aes-256-gcm.v1:bO-GULtZexWm9HwC:edgVqZx25E9YVmbhWmqD13eD44fJ9z3PoabEEYXgzC5bKlgb6b7leVM64G5WLGnDdJLVLgzV8NLBuELCdvwkQ_ou1fjzA_tOb3taae6cFkjGn7vX5N9zwLrsdmcjRPmV2bZaLOKntCpUr3Tnv-2AXRLpj1ptlttQelX4Qrqw33WvqKdcJQCj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.176,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "NoSQL and alternatives",
+      "skill_id": "rfv.skill.sql-databases.16-nosql-and-alternatives",
+      "items": [
+        {
+          "id": "sq-076",
+          "prompt": "What is NoSQL?",
+          "options": [
+            "Free databases only",
+            "A type of relational database",
+            "Non-relational databases (document, key-value, graph, column-family) designed for different access patterns",
+            "A NoSQL stands for No Standard Query Language"
+          ],
+          "answer_commit": "hmac-sha256:cbc6d9e75392a8ce276246b7be6b8194",
+          "explanation_enc": "aes-256-gcm.v1:64CC1ggR9C8CObfT:rTN7d1u4lxJccKRLyPNUQUABc3UtwgBNMxNz15WqyVrQGDCoBuRzjlwbuVopA5DC1ZLkadzGJjdpu0evn4NK-jiJH4JFpCnLgSYcevLJqlMqKBJ-hxxZE6pdfCO7_AXhFqUO2deH7JBHJk9lxOVT7-9ehV58Fwvimnmn6gIKjZasjdb_j5D-ZAZVVaGCei-vIsT29Oc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.378,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-077",
+          "prompt": "Which is a popular DOCUMENT database?",
+          "options": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB (stores JSON-like documents)",
+            "Microsoft SQL Server"
+          ],
+          "answer_commit": "hmac-sha256:443ed7e061524f444dd37117d1925eea",
+          "explanation_enc": "aes-256-gcm.v1:TTac-HQw8prI0Wkx:j-6sfK4xFAuB2Dkl-ul_dLu0CpfGeZZwv_X3y0d4TK8VA9sTbSZ7YazHv3ZDzpx6nuelBZ8yuonqJuY-UCfkg8eqwGs9wreNH8czxE50ES_YwoZ92unJNLGMPjDse_eNxVA0pwuWUr52q1dHFVFTQ7Xglxqwg9un-0gvZE6CntoQMSxHo2UqVVbr-Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-078",
+          "prompt": "Which is a popular KEY-VALUE store?",
+          "options": [
+            "SQLite",
+            "Redis (in-memory, blazing fast — used for caching, sessions, queues)",
+            "PostgreSQL",
+            "MongoDB"
+          ],
+          "answer_commit": "hmac-sha256:2ffa2bc84f8c714c06126a2c45ebd427",
+          "explanation_enc": "aes-256-gcm.v1:0Jvbp_E24HNpxRGJ:Be4wz2ZyezyfW0bNl2A2gCo1LEyxCoqTrVqXbjDlm6uHWaBUObWgk_9ootObE_pV3OmnkO3nIoWDgkcOb3TEAVdBn3P_dWSdTqGkGFblOGV_4x5V89YypVFRNV5z3kIDTIOybqf9hPgbDTkol0aUyNFF_c-PCCAVQ0i-GJW_CQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-079",
+          "prompt": "When might NoSQL be a BETTER choice than SQL?",
+          "options": [
+            "Never — SQL is always better",
+            "Only for small datasets",
+            "Massive horizontal scaling, very flexible schema, or specific access patterns (graphs, time-series)",
+            "Always — NoSQL is always better"
+          ],
+          "answer_commit": "hmac-sha256:52a8439dc852378789c0fc58f18dea94",
+          "explanation_enc": "aes-256-gcm.v1:hw-wnqoa8WClik9D:YxPmKnVRkTktiAxnI1XqTlG5Kp2vKhnA6GEqRO-rgheLogtBiLMEnMecPUxIsXshTe8nSXwC9sifQl28iXMdnW-OYDoEOV-nRjHu3ppYeuZcaDm3w8os5qPyfWb-K4tvE150Ygh8_gOB7Ni96OH6JHDHU3EG9nycqFIvgOn0wiPD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.194,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-080",
+          "prompt": "What does CAP theorem say?",
+          "options": [
+            "Databases can't be distributed",
+            "A distributed system can guarantee only 2 of: Consistency, Availability, Partition tolerance",
+            "All databases must use SQL",
+            "All distributed systems are perfect"
+          ],
+          "answer_commit": "hmac-sha256:87ef48e06be3e8ee2b596f2cb830e637",
+          "explanation_enc": "aes-256-gcm.v1:MTSihpepUaozXGRi:dVNNUsJU19jZLRHyQoZ2jF-uIf2OrPgZGl8p8SUwtPnvPkOI5b13Ji39oj6_FUzs4KKfRRA_UPAacfQup2NpubHGszEo1ofh4IbVjUM5dRdtBnTL8AI8L6s_l7gHj7eD6aT1DAODiaJkZ3hdXO4TT2iHaZp6gbg8e_LfO0A9rAOPnX5NTeQtduwPT6zyuyx2eZmy2UiCU4DNczZvy99t",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.629,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Security basics",
+      "skill_id": "rfv.skill.sql-databases.17-security-basics",
+      "items": [
+        {
+          "id": "sq-081",
+          "prompt": "What is SQL INJECTION?",
+          "options": [
+            "A type of join",
+            "A backup vulnerability",
+            "An attack where user input is treated as SQL code, letting attackers run arbitrary queries",
+            "Injecting data into the database"
+          ],
+          "answer_commit": "hmac-sha256:232793be5856cc7b32b8e79a2be9b955",
+          "explanation_enc": "aes-256-gcm.v1:YjprMBWpMgJ3ZoDS:3Ele-qAoHzoo3IBbd3VQjTUJBieCIn0Zeg8m1-unrfDAKtC1t36jncjw-jYhqGKe-F-K1Zs5i3zpvgXNHx8vTluQvhQzwtUrRNNmlGQRkAF1tvqpUWoKlEEFCSaEslMf9lWxxsk6mvM3j_emQ1OCWmf8CqW90eD1EM_xJQNsSEo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.813,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-082",
+          "prompt": "How do you PREVENT SQL injection?",
+          "options": [
+            "Use parameterized queries / prepared statements — NEVER concatenate user input into SQL strings",
+            "Add WHERE clauses",
+            "Validate input length only",
+            "Use HTTPS"
+          ],
+          "answer_commit": "hmac-sha256:d807aecf9b944293ac2434b19069d347",
+          "explanation_enc": "aes-256-gcm.v1:LoPN3bHdrODGI27N:ynFdOj0Kd78rlUk4GN0Qcbb1zVF7Ul6NlhsYh2rKj1qNJaXapjt5C7uF58zKuBYCtz4rOCupWitFJLMeca7NCu3cn0KxlxFUyAJonykxEL5_bqLMI6loz92YtkGdT4gxc8rByySIb5y55uuvxz7ohkcrbZQu6B-UEqRzmkX_BgDM5lR60M5caQVdNR89Id3v5cUH2gp-RR9aEC51sBNCww",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.654,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-083",
+          "prompt": "Why shouldn't you store passwords as PLAIN TEXT in a database?",
+          "options": [
+            "It's a syntax error",
+            "It takes too much space",
+            "If the database is breached, all passwords are exposed — use a strong hash like bcrypt or Argon2 instead",
+            "Plain text is too fast"
+          ],
+          "answer_commit": "hmac-sha256:bad21d5ce29edc99f7b00571428719c6",
+          "explanation_enc": "aes-256-gcm.v1:kH1d75YgLn1Hzoia:yELdy8LyUIcH8Vv8XOX-EHt4nuVQmof3SrrapP2Hhp7LGgC8LYeAlaHi62llqkI0fEYRnBAOv9rJkMxSvNBOSajPxzGW2yUY43t09ZuxcVgcdmo-CO_tDVIBUIWSiNG6TSXF9w1EoS09yXRFoT83T8-oZxLnpCO5",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.522,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-084",
+          "prompt": "What is the PRINCIPLE OF LEAST PRIVILEGE for databases?",
+          "options": [
+            "Use the root user for everything",
+            "Always grant all permissions",
+            "Avoid users entirely",
+            "Give each app/user only the minimum DB permissions they need (no DROP TABLE for a read-only API)"
+          ],
+          "answer_commit": "hmac-sha256:a109b683e82706e3be22e6591c03c0be",
+          "explanation_enc": "aes-256-gcm.v1:dLQGktyUtxMMxYso:plWi5qq6TPo1tR5W1J3sAfej6YsrU_a0WNlNnzCQ5M2MjIMSsBCkn-YxXU331gei47aBMWFTAfNw_71npqId6C1qTTHGWv_KCUtI1UQ3NcAV_wF957Nh5MUVtKVLFUOYiie8pIrMKZCmoQk-7X0lDNbOBcrKH0p16F683Z1mrD8YrP6RKoWSgO1p",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-085",
+          "prompt": "What's a SAFE way to manage database credentials?",
+          "options": [
+            "Environment variables or a secrets manager — NEVER commit them to git",
+            "Store them in a public README",
+            "Send them via email",
+            "Hardcode them in the source code"
+          ],
+          "answer_commit": "hmac-sha256:4656da47f28c947020c63a1fe8e0bd20",
+          "explanation_enc": "aes-256-gcm.v1:fXSenHJdFOvEaMS3:oZGj0gTxbsBV26w9Rg6-2DaBjWQSWpfbBF3MGQek2se_inv-3jNHeKQ94q8ujlzI8vFPI8RumYleCTFOh2K8UV4FQASKWA34hpuEcdbNjt-HXJ9RYWfrH7oQNeZ8w7jCXQ0RvxQkgNFy6-vjeD_evvOhHSRc5Y2TwkB91rz812R6nQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.156,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Modern database trends",
+      "skill_id": "rfv.skill.sql-databases.18-modern-database-trends",
+      "items": [
+        {
+          "id": "sq-086",
+          "prompt": "What is a SERVERLESS database?",
+          "options": [
+            "A managed database that automatically scales without provisioning servers (e.g., Neon, PlanetScale, Supabase)",
+            "A NoSQL database",
+            "A database that runs in the browser",
+            "A database with no server at all"
+          ],
+          "answer_commit": "hmac-sha256:8bc51196eaec3542b175e244aab8ecc5",
+          "explanation_enc": "aes-256-gcm.v1:bpx_QyZd21a3i5EA:x73xybyaHDVBNviaisjJebeywg4Z-3Lc8V5oJ0qCIpiaDrMsPkgW_AnqAOZcHPt9Gq3n9QiSpCEoI2eu_qAFhyYHjLAN-7bVdTg-PbeNDPh3e6l-pXc3Xq7rAzUNGGeCOiClq65pSQtxBXd_SgBx44rwDFn8GJg_gmLejNfDQ7jIJam8gZ4ZUn_-JQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.114,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-087",
+          "prompt": "What is an ORM?",
+          "options": [
+            "A backup format",
+            "An optimization tool",
+            "A type of database",
+            "Object-Relational Mapper — translates between database tables and code objects (Prisma, SQLAlchemy, Django ORM)"
+          ],
+          "answer_commit": "hmac-sha256:64dfff81bafc4ec72ea91b582c699cea",
+          "explanation_enc": "aes-256-gcm.v1:WijaGHwl50kijQUe:PxMpAlU9BPc4mJiOirg1EAMhJysnzuvmKTYTUgDVIW_ztaE0N0NUoQGAMTMv1LOvjMPxytlzcHs_wb3pE8pmF8NmrtkVUm2oGT_nm10jMe0mi13N-MCbwJ26qDT3L0FIROYaEL5s_kWJvr-iXqcCzINkxb5A8vAq5Jq2guaU6zhjfzzxah_XtdFeJdzAvKd2hL-tYd_y9g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.55,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-088",
+          "prompt": "What is a 'migration' in databases?",
+          "options": [
+            "Moving data between countries",
+            "Switching database vendors",
+            "Backing up the database",
+            "A version-controlled change to the database schema, applied in order across environments"
+          ],
+          "answer_commit": "hmac-sha256:dde90482600d2e8cf744d36149b75c3d",
+          "explanation_enc": "aes-256-gcm.v1:DCMa6wFLXSZpurMl:IHjVvGWL26s_5UOBoJG8itqLJ_FRYRNsspgnSqHWUtZlScQXt42InIxIYctbj2IouUXHRFMxa5ShoxUFFQHrZY0HJAWO5OfH1xghPhPteo6jpHMHNg_azB83f5OC7Idr9loBZ923bKoWqORaW8nCQHSX-tRYH_bsYmXhn_xCXaz-ril678Dmu-bA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.034,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-089",
+          "prompt": "What's a vector database used for?",
+          "options": [
+            "Storing and searching high-dimensional vectors (embeddings) for AI similarity search",
+            "Storing arrows",
+            "Geographic data",
+            "Math operations"
+          ],
+          "answer_commit": "hmac-sha256:0b0cc4d9fc31d5a240d92ca6c27a9aed",
+          "explanation_enc": "aes-256-gcm.v1:Q2IGh9GTgvXO7-MB:ueRjsbMY2GcRmNUsxj-CLhw_mGULouJ_96G9B_nZw2pp-VVCSHF-dNyxWjhbC8GI7tVefmvCaUzqddnNQANHyECgYYqD5QFepJPE-ibwgLfWujWC4jHO1bzDO_R_owBmE9Rz-F2-2sAjIHMIkktV-93u7vNUv5_yxg4bb_R1AVnOIcikJ5gHoxkSE3s5urYWdA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-090",
+          "prompt": "What is SQLite often used for?",
+          "options": [
+            "Embedded local databases — every smartphone, browser, and many apps ship with it",
+            "Vector databases",
+            "Cloud databases",
+            "Only large servers"
+          ],
+          "answer_commit": "hmac-sha256:e1362b287c8535ff2999e4b85e1ff0f4",
+          "explanation_enc": "aes-256-gcm.v1:YHv91L2zZ6j_OvNq:RYQTEfz-OEiQuZCdyfEZ-Tcl-K6M_RoZ-qIiae4IHdYQyM39MHC0nEDil0O4wCxMKWEbuqY0iOkYRAXv4qLLGLnePXHZGIUCYYAVQaUfTvEqVdszUAN8Tt3XjpLc3KpXAAn2oJZquAjdUSH6YIpQJfDLhDZZ2xVETv035_2_s9B52dsIMSfDtpc2XOI64DQeifafyFkXqT7o5HBVrszNLoiGMjknxOagsJwrOKvtzsWToc7cId86FoW4xc9kF2NgWif_TSGitA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.444,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Best practices",
+      "skill_id": "rfv.skill.sql-databases.19-best-practices",
+      "items": [
+        {
+          "id": "sq-091",
+          "prompt": "What's a GOOD column naming convention?",
+          "options": [
+            "Reserved words",
+            "Spaces in column names",
+            "snake_case lowercase: created_at, user_id (consistent, portable, readable)",
+            "CAMELCASE everywhere"
+          ],
+          "answer_commit": "hmac-sha256:3e13536b70f7747c44692f26033df2af",
+          "explanation_enc": "aes-256-gcm.v1:U7oX06kD2Jna8AyV:RMAJorlGpRSgy78_iTrn3pOG0DrjgIV2Yu-tiNcQJxBjGyUA1Rf8JsYPtfIzjp-Q7gIxGID54Ewhjc6oct1rbsI8r6s0vu1alv6hIg9zSm6mfKK0Vb0sV3xfx6CHpRyJTXGSuTMNjXj_kx_ylMF3PKY05fyQxClfgpvMxSLSLFfO4KxHQ4-L1CwpyA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.364,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-092",
+          "prompt": "Which is a HEALTHY rule about database backups?",
+          "options": [
+            "Manual once a year is enough",
+            "Backups aren't needed",
+            "Automate them, test the restore process regularly, and keep multiple recent + older copies",
+            "Store backups on the same server"
+          ],
+          "answer_commit": "hmac-sha256:6321da0bf07e9338a900cda75195075e",
+          "explanation_enc": "aes-256-gcm.v1:htRLKO8hE7MKElle:kyA3uLdgI5sH4P-6gxA8Efy9T6HFwiVwur94DnL1oIux6ysGCll-Ci8wZVaX4sgdIVJgSV8vP0otSYxSZ6dVU7rXRhfKz4gTYvu6U2RthW_2NxjIZHjJMmsFp87llxbqylu5ftaYnr1PIs1zknw3_G1JYVF92UyQ_iAz",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.813,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-093",
+          "prompt": "Why is keeping production data OUT of dev environments important?",
+          "options": [
+            "Cost",
+            "Simplicity",
+            "Performance",
+            "Privacy (real user data in dev exposes them to breaches and developer access), compliance, and reduces blast radius"
+          ],
+          "answer_commit": "hmac-sha256:47b231628f1a81ab6b57a8318869c912",
+          "explanation_enc": "aes-256-gcm.v1:I3jwxgKJwVaRfa1-:7tAFXOZr0tmSgbgbdgDh6e7rzK-QQxDd92ZpxoNHGoNVf93QAGWc67qznYWzNhaQnXYQ8WB3_PTf9Q0N_ilkb_0dedmqNIWpXwIjvVwvFIPD2jau79BTOMu--kdZ7uwrHo13a2Z93P5Y9k81wmNjzmXnntX8H_pITi0xUw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 10.455,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-094",
+          "prompt": "Which is a SMART approach to writing complex SQL?",
+          "options": [
+            "Skip testing",
+            "Never use comments",
+            "Write everything as a giant subquery",
+            "Use CTEs, format with indentation, comment intent, and test incrementally with small datasets first"
+          ],
+          "answer_commit": "hmac-sha256:d47954ad1a5d99b5f56f15cb5a80cba9",
+          "explanation_enc": "aes-256-gcm.v1:kRIICdlmgMBurcOh:Ut1GVtw36KHJLR9h9v0moonIgP2Z2trFjMyoPT5SGBO6kNFJ0Z8djcqzhYk64XnFc3YJqHou0Fb8k1NQBRLr2wC7rR7sbhMmOdBZQkSY92dZZyXkcJqlbWl0j4E1LU5g6vN0gnDbl_aCMEOPU0Nc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-095",
+          "prompt": "What's the GOLDEN RULE for destructive operations?",
+          "options": [
+            "Just run it and see what happens",
+            "Always test with SELECT first, run in a transaction, and have a backup before UPDATE/DELETE on large datasets",
+            "Always use TRUNCATE",
+            "Skip backups for speed"
+          ],
+          "answer_commit": "hmac-sha256:4a7e0bb9f772d5f0c4738b23520af8bc",
+          "explanation_enc": "aes-256-gcm.v1:LTGLHPQxzCok64CE:gF_uSMuOaxXULQA2fz5ZJlGcjRrtfgqHXamQOwiLtlhJgUxEHdsvKtagzTyFrCyhjg3JksVss7kJcGNeUeu4Cmk7KDd1-RuPNYQP7-OCY53mATvGW4jk3ff-j-BKik4521s5rZiSlxk8GVg2mFgNiJhCKYpGwkE",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.406,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Getting better at SQL",
+      "skill_id": "rfv.skill.sql-databases.20-getting-better-at-sql",
+      "items": [
+        {
+          "id": "sq-096",
+          "prompt": "What's the BEST way to learn SQL deeply?",
+          "options": [
+            "Avoid hands-on practice",
+            "Work with real data — connect to a database, run real queries, optimize slow ones",
+            "Memorize syntax",
+            "Only read books"
+          ],
+          "answer_commit": "hmac-sha256:7e598e7da6bbdde25f81107467bbd3e5",
+          "explanation_enc": "aes-256-gcm.v1:yX7WRrm3jdqh_Jqo:J2DD56O7AhO_IN-FNnPCggi7j0tHZG8hOazdEousDVqLEMV8qH8_jFTkFI5RWAAGd9-2TCokzZcxKFF4uMFPBuRwAK8nkurnsfh0Bxcr0vIcAAvrqkOwUHQQawVqapLQX43RByzEf3Zc03uEnKuYuuDX6N_c3g086kCsOwLeB0pT2RS6Lgov",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.522,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-097",
+          "prompt": "Which SQL skill makes you most VALUABLE in the job market?",
+          "options": [
+            "Knowing every dialect detail",
+            "Avoiding all complex queries",
+            "Comfortable with JOINs, window functions, CTEs, and reading EXPLAIN output",
+            "Memorizing all built-in functions"
+          ],
+          "answer_commit": "hmac-sha256:9c0ab241ff1cf56798d29ad4e04dcb99",
+          "explanation_enc": "aes-256-gcm.v1:4AYgyG-ts9PdPaV7:m6-aqTkFoy_JBGgIPjwNqrDPTeA9aMB-h-xnsXbEgA-5W9kKxuic_L7PGcwuWu74qR3hQoaYY4sKdt93hITtbVCC2zOW1wXFWMVo2IiHsDAER8mWIlTsTAchzWQYNxjc9EOvLHzh80k9nw74JXR_mMkbQq80eNtjFLDOuexi-7qmAf-e",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.242,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-098",
+          "prompt": "How can AI help you LEARN SQL?",
+          "options": [
+            "Blindly trust AI-generated SQL",
+            "Explain queries you don't understand, suggest optimizations, generate sample data — but always verify the SQL it writes",
+            "Avoid AI for SQL",
+            "Have AI run your production queries"
+          ],
+          "answer_commit": "hmac-sha256:cd7e04e81456007dbe1583aa1f1617e9",
+          "explanation_enc": "aes-256-gcm.v1:5Xn3MxKJP2d-w0ct:0Ulb3ZAorsjY96O2NrqM7JLhgVe32xotyv8kjlv5Cowq_oirVpOja2rgQW1HjUjrta9Co638T7Bgg4Y3nNxxl-Xd8t2zr9nX8sAlo0JxyYEQ7ZvfOXuyJLIxbkk1eOuD5DsZ6ejfOtA5BXPoalpFKMJWaDOiZBbB03kFj5hibiwxddKVp3s2i_Qu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-099",
+          "prompt": "Which is a STRONG project to practice SQL?",
+          "options": [
+            "Memorize SELECT statements",
+            "Skip practice",
+            "Read database textbooks only",
+            "Pick a public dataset (Kaggle, government open data), import it, and answer real questions about it"
+          ],
+          "answer_commit": "hmac-sha256:150ed2e30a0b2d926ffa07b741848cee",
+          "explanation_enc": "aes-256-gcm.v1:w0kQAggDJc2DJZWW:gqYl1HcQkABuGFuGqDBb7nigZCjq7Dpps2_0HwBdOUbs528_w_uzkSTM2MI-fFfSRec6KVNjEYPQZxETnsrw9VRCXBPnQQApxLHNECx_Q-X9GjM9m468pGFkysayLQFmk0kMC5XOw6sKO3dOaf8qYGsDWCbGZ99eNpUBT4bMTK6boSf0YM4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.536,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sq-100",
+          "prompt": "What's the MOST important meta-skill in working with databases?",
+          "options": [
+            "Working alone",
+            "Memorizing SQL",
+            "Caring deeply about data integrity, performance, and security — small mistakes have big consequences at scale",
+            "Avoiding writes"
+          ],
+          "answer_commit": "hmac-sha256:07081869444e6b2af2fdc6cee9d2d94a",
+          "explanation_enc": "aes-256-gcm.v1:zP5ZPe2PwVyJ8hT6:wOa2AIH4tMlxVgit8wiMJ6ScHz9bUtfPdfHEp_8LUBnJVKpVv0xwiIMfR0rkzRQaJzC1TYtkqiun_JFXke2E5v7RgA6-hcKgbr2LNitXBgYew85s9vn3vhk7tSU6AEwZ4-p-edo5UoQde6JUgSB6hBAy0cwKlJxZYyeWSxCaALo4OnHqtkU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.267,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:392f72d2a266b0209ea4a1647ba6f2a36ede27ad0f440707321afa13661a1420"
+}

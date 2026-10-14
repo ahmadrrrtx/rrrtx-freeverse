@@ -1,0 +1,3369 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "python-fundamentals",
+    "title": "Python Fundamentals",
+    "description": "The world's most popular language. Syntax, data types, control flow, functions.",
+    "category": "Programming",
+    "icon": "🐍",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What Python is",
+      "skill_id": "rfv.skill.python-fundamentals.01-what-python-is",
+      "items": [
+        {
+          "id": "py-001",
+          "prompt": "What is Python?",
+          "options": [
+            "A compiled low-level language like C",
+            "A database query language",
+            "A high-level, interpreted, general-purpose programming language known for readable syntax",
+            "A markup language like HTML"
+          ],
+          "answer_commit": "hmac-sha256:0fee0493bcaa74399dbe0fb58f5e5554",
+          "explanation_enc": "aes-256-gcm.v1:QyHt1XtkvQTXWJUl:N7664YhM7bTBvBGe8ZYvACBNksIE2cFALEh5vrMvgqIxgTIBp6l3B3Rge9Xu7NSmLAp1UcQpwPRH1entgDMBPLhjVBFy59dvpXxEeTII89kLH1114732Psth4zEc-Skg8qIi9T4w29S4mln7m2EQsjwBgeosz-OStIAUyB3vLffpz87FZW94gw7FfOHIitk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.472,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-002",
+          "prompt": "Who created Python?",
+          "options": [
+            "Guido van Rossum, first released in 1991",
+            "Microsoft in 2005",
+            "Linus Torvalds in 1991",
+            "Google in 2010"
+          ],
+          "answer_commit": "hmac-sha256:253c8bcfa3c683b09958f7662757266e",
+          "explanation_enc": "aes-256-gcm.v1:9mVZTnaSGyYiiXOa:ybUwz5E5IItLsx_gnhWc7m2pRfoBY8X1AA3zYVX5EEDBC2IMDhaSrVuZ3iAebG8Ss4bCNzyt7R9pTbSowl943iqz1tOXntnl01QmWcBH6AU1i7ZvnnlDdBkopnJ9kuVYenyueH2Nah-q3RPEOv8XOZH0MPnpjgo16nQ_kgB2sD9x4A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.818,
+          "findings": []
+        },
+        {
+          "id": "py-003",
+          "prompt": "Which is a TRUE statement about Python?",
+          "options": [
+            "It is dynamically typed — you don't declare variable types explicitly",
+            "It requires variable type declarations like Java",
+            "It must be compiled before running",
+            "It only works on Windows"
+          ],
+          "answer_commit": "hmac-sha256:004d02b26e70b8065b79473ef3b8c594",
+          "explanation_enc": "aes-256-gcm.v1:Tx63Aa4-i_E-9qit:HX2j96WjGwzuYZiGy7LAuw2k709Ywv2d1fX4XxEcaA86YPvA_r7RdmgQvch_fPRp-Wvya6HfeoJdnVY930qBLcEclkOjVESsVy53BmdYnossBFjDt6R1oagSeXqgCHd8hDq7XOqmb_G2_lK0Pq6Kumj4wUHxUsHTZ8ruyx1CQf3gcvYhk0fElJJ1MKSWjQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.438,
+          "findings": []
+        },
+        {
+          "id": "py-004",
+          "prompt": "Why is Python especially popular for AI and data science?",
+          "options": [
+            "It's the only language that supports AI",
+            "It's the fastest language",
+            "Rich ecosystem (NumPy, Pandas, PyTorch, TensorFlow), readable syntax, and massive community",
+            "It compiles to GPU directly"
+          ],
+          "answer_commit": "hmac-sha256:c8f4bbf6f3ebf29a1b222024d60282ae",
+          "explanation_enc": "aes-256-gcm.v1:FAzhutPYNN7-fH32:ApCwvQ_LFIGwAGHzNGIOAqrGxzcYKcb2U9aIBBJ7PO4NkhGCkYTdrY7zOpI-NMQnuF4REDroK_vWt15lP3AgmY6b2yamnskUquksHGlnSAX5xAeJEbMpR2tY8TpAQvlplo6SrQFh-xQmJ0BWU90X1LcJOSf7YdieB3zQmOY_vzmKTsY-MWU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-005",
+          "prompt": "What does 'Pythonic' mean?",
+          "options": [
+            "Code that follows Python's idioms and style conventions — clean, readable, expressive",
+            "Code that's about snakes",
+            "Code that's intentionally obscure",
+            "Code translated from another language"
+          ],
+          "answer_commit": "hmac-sha256:5fd666a2791389cbff621f98d50bc84a",
+          "explanation_enc": "aes-256-gcm.v1:VTs3PQl3xOsuiiRG:9t6-SfWVUyOHbEM9Wh6RNwQHNrvjOh_N9a66a1I314CSp9SK6fpwPDVkUIzw4WLmRtROPvXYPwMWufXe_MB9rr_G9s2N7l4vGIKxBUhgCrkIaR2tsqqo2ny_GvcS2G7hk42ycsjydLuold6OmLfxcnhZwVgh-IN4Arg9LA5tRStvN7KzP1DoHgM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.297,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Syntax and indentation",
+      "skill_id": "rfv.skill.python-fundamentals.02-syntax-and-indentation",
+      "items": [
+        {
+          "id": "py-006",
+          "prompt": "What does Python use to define code blocks?",
+          "options": [
+            "Square brackets [ ]",
+            "Begin/end keywords",
+            "Curly braces { }",
+            "Indentation (whitespace) — typically 4 spaces"
+          ],
+          "answer_commit": "hmac-sha256:12efe7afc305f7c77be2526db77dd596",
+          "explanation_enc": "aes-256-gcm.v1:KSz_kH14zukkMQrB:t0Y5BDqLW_Y-kDkakhHORSgt9twLyH2zK_M9tlsCO1EYN9Bm4rVb4b89CCWoruq1bkQgN53hsgtT7lqYXqjWYK8j6JIoeCDsYhekErSOT7FEyWlCuw9PEHQLuLzTqynjQbs1wbrINHctmSpQdOblM0TpIHo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.368,
+          "findings": []
+        },
+        {
+          "id": "py-007",
+          "prompt": "Which is the CORRECT way to write an if statement?",
+          "options": [
+            "if (x > 5) { print('big'); }",
+            "if x > 5 then print('big')",
+            "if x > 5:\\n    print('big')",
+            "if x > 5: print('big');"
+          ],
+          "answer_commit": "hmac-sha256:c4f27b2cd29e25f5f78ed5d6ab18c58e",
+          "explanation_enc": "aes-256-gcm.v1:FxeGVk4gZWYdxgwF:j4ERCL9DByUmWjQVeBUa9p_H3lWJY5_e9bXPsKKDbTKfaniLq5IuAJr8P3XmfZYYWcRW15mILj7lrm9_K6ZMqULNNyfHuYZ4i-9pXgf8zUuIw2OcIGRIxR8l106q3ODGGq4kOCXq3P1pM4X4WqubCLby",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.964,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-008",
+          "prompt": "How do you write a single-line comment in Python?",
+          "options": [
+            "// This is a comment",
+            "<!-- This is a comment -->",
+            "/* This is a comment */",
+            "# This is a comment"
+          ],
+          "answer_commit": "hmac-sha256:44d64d863ee4b73472275b377a624635",
+          "explanation_enc": "aes-256-gcm.v1:E4GJykNye8imd5O2:BgBLbeRj2rmKp-TzXUR9QwckDtsr_VxV1g9pKUc0PYW6XSAYAgFqNoYorrdBgIaDJP5TMnBgCmRJiy2uoOuk3hbzPDMplmKVyApFHw8Xuv0M59FpaW5u_v_KwuAFvqHaiC_R_X03UBVVs_0i2t2zvmDj0kZRoJNTvK-mrUuzGXJjBdg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.731,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-009",
+          "prompt": "Are semicolons required at the end of Python statements?",
+          "options": [
+            "Yes, always",
+            "Only in scripts, not in modules",
+            "Only at the end of functions",
+            "No — newlines end statements (though semicolons CAN separate multiple statements on one line)"
+          ],
+          "answer_commit": "hmac-sha256:fef66e9addb1449319dc1544304a1b17",
+          "explanation_enc": "aes-256-gcm.v1:YbBLU6DBRJo83ZnE:PXEzG4Ts0PJ9r9R1MfDuxdfRDC73c_OLXyKxLiYhx4Gz2NaF2kvHQl0C6c2I0bN19hAypcWMMGJJ_DrXByShZH3aZl5YSsqODhRid3rOBeM4A7EwzudV6Ow5hocmDHcZlZ3pHp9GnDXOh8zYJxeX_RREFb_38qWxETekZpNgmVTowX07XFc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-010",
+          "prompt": "What is PEP 8?",
+          "options": [
+            "A type of comment",
+            "A Python package",
+            "The 8th Python version",
+            "The official Python style guide — covers naming, spacing, line length, and conventions"
+          ],
+          "answer_commit": "hmac-sha256:f573be9752ef977007e63c26fa716902",
+          "explanation_enc": "aes-256-gcm.v1:rM0L1_oAcpj54I48:Mt5MuI-3-TPbc3ulSSExXlWPxIfweJXPFkJWneVmNmnmI4wBYfC5w8N4G366Tv4axC7H82qXAewsXYToSSgJWftlhexsHgEiJO-OBP7QAst-PP2_UYuYuMwgOgtj4IkTk8ZWbMk-MkkFidLTRznCCZdatxVqNDxkNyKLkbgcbhPx",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.909,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Variables and basic types",
+      "skill_id": "rfv.skill.python-fundamentals.03-variables-and-basic-types",
+      "items": [
+        {
+          "id": "py-011",
+          "prompt": "How do you assign a value to a variable in Python?",
+          "options": [
+            "let x = 5",
+            "x = 5",
+            "var x = 5",
+            "int x = 5;"
+          ],
+          "answer_commit": "hmac-sha256:1b29f8047931ded0d423bad4baf69ad9",
+          "explanation_enc": "aes-256-gcm.v1:sfwm5RlodmxtLa0I:TJBQrVfC5Rgd2kRRuGfY8_8lmHbp_3Oevcghi_Vsxkkc147HMi6w1hXX8ajgoLCD2EgvR36EFZDSaGQN_mWrHw6mV0sezb-eXqnILrCmP0-i3W2PHa82xnCjJI_RaQ7WVzNaAf-ftWku2zEDxewWTj0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-012",
+          "prompt": "What are the BASIC numeric types in Python?",
+          "options": [
+            "Just one number type",
+            "number and bignumber",
+            "int (whole numbers), float (decimals), complex (real + imaginary)",
+            "int, double, decimal"
+          ],
+          "answer_commit": "hmac-sha256:42b02b5cae7dd8482bd4b5e9a85421ef",
+          "explanation_enc": "aes-256-gcm.v1:bKEpHhDyAuEt9GrT:F3evbRQh26MY4zbFF7LGTjmUXDwWgcJ7v5kKA9dssFUFYXzeR8T2P8bJruDRgQpBA1fUkgI1ZqudjzQpYS0Ipa9wRmGVJvYsnQOFH2k8otb-rH84C2ebfGt8fGWlJaiSxfp7hAcpk3QlYoeRNRCD32eYqoOA9lQg39YV5H0obSCVWlXMYF_L5DJTxV1NkrsT",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": []
+        },
+        {
+          "id": "py-013",
+          "prompt": "What does `type(5)` return?",
+          "options": [
+            "5",
+            "<class 'int'>",
+            "'int'",
+            "Number"
+          ],
+          "answer_commit": "hmac-sha256:e4da756949ae6de931b9b20422a52c5d",
+          "explanation_enc": "aes-256-gcm.v1:8B7nUMQX8jPuK2ZR:X3L5Rzf_bzCHqxmDOJ7wJC-_sNB66tZjU9CFU6mEulLQIDJWbbboBVSGO9_if1Ts5qZ7_x11xYyymEolH5TSlmzrfBZWhbb7cvXrrFa-X27XFbonF0jVNwX2Ypkhzqqt2KPh6GhYYHfokPUHaCyCS2L-Eu-puhArcJgJOAIyLgSuIZgdsw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.167,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-014",
+          "prompt": "What's the difference between `True` and `true` in Python?",
+          "options": [
+            "They are identical",
+            "Both work in all cases",
+            "true is for older Python versions",
+            "Only `True` (capitalized) is a valid boolean — Python is case-sensitive"
+          ],
+          "answer_commit": "hmac-sha256:ef385f3586c57ef5acb50e1cc44a226b",
+          "explanation_enc": "aes-256-gcm.v1:xHgjwTD_jwYnounV:4ZFwrjSup5O6IAO_9z5COP_qQ4Ka1-wK8k1E9CtTllH57F-QvH3wS-xadcNm7qdHDecJuK1Wmi42p-7eZRZMmHvM7qm8FSjAyADVnMS_8F0EmM4xokdccDSEoDae5XgrFcxent3hAJU-I3IF1G06Ll6f8W36F0aYlQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.152,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-015",
+          "prompt": "What is `None` in Python?",
+          "options": [
+            "The number zero",
+            "An error value",
+            "An empty string",
+            "A singleton representing the absence of a value (similar to null in other languages)"
+          ],
+          "answer_commit": "hmac-sha256:a8427388d0ce787e60b1e1a3fcc90e76",
+          "explanation_enc": "aes-256-gcm.v1:5aCyIQSyFHroKfSF:JFoHl7jEMgfFGXdo5f31lW4WHZTFCA4src1lTfK730E5KAKrUlcvnWK3m0c3YjgyJj9Aec7Urww_U8MDu4MP-fDx7X6NBFI0lWJwrdFTxSJ5q6LhoCkjNKv7JNs7nB0F6SniKnVxKi9dI1EMy6Krk2xWIeicY0zuZo0GgGKhEDADCRJJ0RJMm4Di",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Strings",
+      "skill_id": "rfv.skill.python-fundamentals.04-strings",
+      "items": [
+        {
+          "id": "py-016",
+          "prompt": "Which is a VALID way to create a string in Python?",
+          "options": [
+            "Strings must use backticks",
+            "Only \"hello\"",
+            "Both 'hello' and \"hello\" (single or double quotes)",
+            "Only 'hello'"
+          ],
+          "answer_commit": "hmac-sha256:f58c81c4473a1b580b5934363c56c57b",
+          "explanation_enc": "aes-256-gcm.v1:SvBKLVgZ1BUqgfDw:TErKrBmVe0e5VM5qoGG_NfMasVqCgDH6vqNu8VkYiZ-UZ9yBLLJKD968EmOr7NZmn-xtGS2s8S1diC4Qk-qIBgXZIxm0EeuCkOvzEisiSUFdiys6iVGNZAsRimKqHXjQr62v-6LArEFU1VoH3xky",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.923,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-017",
+          "prompt": "What is an f-string?",
+          "options": [
+            "A string literal prefixed with f that allows {expression} interpolation: f'Hi {name}'",
+            "A frozen string",
+            "A formatted string from a file",
+            "A fast-loading string"
+          ],
+          "answer_commit": "hmac-sha256:ccabde52bfb36a751a6931659c53b897",
+          "explanation_enc": "aes-256-gcm.v1:e1jwf4C87AYudsPp:rolx2UxJpgujOHfEAMEujY0LEdaXhiKpVqRuHC_9cJ0gOR7OdowzBbw7m45dVaXrLdWPXCu1h0nUQsCZflBnsvYzP9pCoZAQFv6QV-B5BJLNosgkOIKarFuLspXFrdvEaYLwz4unipBAB-JPZ4NteRsfcnOqU-Vd4R41YOg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.833,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-018",
+          "prompt": "What does `'hello'.upper()` return?",
+          "options": [
+            "'HELLO' — strings have methods like upper(), lower(), strip(), split()",
+            "An error",
+            "['H','E','L','L','O']",
+            "Modifies the original in place"
+          ],
+          "answer_commit": "hmac-sha256:1ac97121020ffec65be6a7d82c474e91",
+          "explanation_enc": "aes-256-gcm.v1:54f3oOc3cPqTytvj:IKYZuU_XuazC1l0FeXyej2y4TpgpB71luEzXnCNFNr7Im-xXRYrDEbAc6Ra1LSAPxCXcXTbnJGQ220BovfpT-SJ4GZHkUJNwJ4EzWRQp05OwSiLGS1aWPtr1UouDDTuGDtaohPA8lhj5vTO6bYOKBLMvpAnbvLw8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-019",
+          "prompt": "How do you check if a substring exists in a string?",
+          "options": [
+            "'python'.find('py') == True",
+            "'py' in 'python'  → True",
+            "'python'.has('py')",
+            "'python'.contains('py')"
+          ],
+          "answer_commit": "hmac-sha256:9bf1f3f853eb2e71f312b3a7e76999b9",
+          "explanation_enc": "aes-256-gcm.v1:bIjb4SMmH4YIChcT:oYTTgX8w280m3h5u8ykiG0_FbNdUkgk3wSIvrOINhaDFP7iLYdYS98_8RXNFuiN-YNX7rL_OKwX7MhpqKZHEO_zBzTkOdoTl2kGoyLOPPQmaQ2kVxnZmqqm6sogwTCI2-T1bAi26wCIrp7rJCEY2wq_Y6Rp6zwYYkg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.889,
+          "findings": []
+        },
+        {
+          "id": "py-020",
+          "prompt": "What does `'a-b-c'.split('-')` return?",
+          "options": [
+            "An error",
+            "'abc'",
+            "'a b c'",
+            "['a', 'b', 'c'] — a list"
+          ],
+          "answer_commit": "hmac-sha256:14bf0307c07e7e28a3a215d21bc296d2",
+          "explanation_enc": "aes-256-gcm.v1:0gv-Fc1wDGkclksJ:w9l3yABMrxqhuedw4J1BfzO5LISrDDjvPituKSzdp6hXRJpYFM4iu2FhC0IvCsV6FtsMmfr2HBfDoMI8U-AReLaD7ASvAPahHxqIoYCydiSBPRRDmeffHC5_82XKaENCgGLTyYVqJ6otNPebvXHDvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Lists",
+      "skill_id": "rfv.skill.python-fundamentals.05-lists",
+      "items": [
+        {
+          "id": "py-021",
+          "prompt": "How do you create a list in Python?",
+          "options": [
+            "fruits = ('apple', 'banana')",
+            "fruits = <'apple', 'banana'>",
+            "fruits = {'apple', 'banana'}",
+            "fruits = ['apple', 'banana', 'mango']"
+          ],
+          "answer_commit": "hmac-sha256:fbe46a029ccbd63b686017a332ab9a2a",
+          "explanation_enc": "aes-256-gcm.v1:4KfMxGt927OzSw6Q:rDkou6n60F3oe2EfeSkrzdE_1nqhjsE7lXlXvJjprj831cq0K41LCCMFJmWOdPCMd_l2BeYhMTXbmqRkC8QcEydOmU-cQarv3dG6oYrHxNTC1mpIX6E1Kf9tYmboWgV1qz4eOexnRJDN8xg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.321,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-022",
+          "prompt": "What does `fruits.append('orange')` do?",
+          "options": [
+            "Adds 'orange' to the end of the list, modifying it in place (returns None)",
+            "Returns a new list with 'orange'",
+            "Replaces all items",
+            "Removes 'orange'"
+          ],
+          "answer_commit": "hmac-sha256:28d5df222c824bc6c0b8e0ec08e3464a",
+          "explanation_enc": "aes-256-gcm.v1:Q9VCiyXAYw7S2aGY:RIVwnYc_ahCdaO-505vB5-cxYtic5jjo-ZgH-YQZwDOdbBDgXj8e2iCdl9Hxaepm2nZX9w0oq_R7ia1rXgHYEAZEJNedCp-ntTipbME0LAEMndThTV2XxpeiLTf9J6r5iOUJ2bMnbrf7mLIQgK8fD4x-jpBfuELeYxwmpYX3fzOwDFs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.313,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-023",
+          "prompt": "How do you access the LAST item in a list?",
+          "options": [
+            "fruits[-1]",
+            "fruits[len(fruits)]",
+            "fruits[fruits.length - 1]",
+            "fruits.last()"
+          ],
+          "answer_commit": "hmac-sha256:c5010fab05e2f9b759f83045d3141f45",
+          "explanation_enc": "aes-256-gcm.v1:uuLbrR1CZ4cgufxw:0eBPiwNfXcj5UHi2oqF6Q9BRpyYmahWtVWrzRCePqkPb9Z_pLiYtUKvYZu8pl2e4UFpj-qTrP2U5XWeh6ckXRdDNQwKkU5c7B1lig-whc6bpNjT8WhwabGxB7wXbr-NGISOx5Ix6u2iu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.4,
+          "findings": []
+        },
+        {
+          "id": "py-024",
+          "prompt": "What does `nums[1:4]` do (slicing)?",
+          "options": [
+            "Returns elements 1 through 4 inclusive",
+            "Returns a new list with elements at index 1, 2, 3 (4 is excluded)",
+            "Returns indices [1, 4]",
+            "Removes elements 1-4"
+          ],
+          "answer_commit": "hmac-sha256:2f3820022a2f41afe4bf0de78b17068a",
+          "explanation_enc": "aes-256-gcm.v1:_anEZKMFzZJagNX2:nPPQNlVN1x_CPu625W9HrfqiGM5Xhw6LWyDeCrJggJ5IhpdUe-QDA51jdjcbBpbe9c0DGjdyACGGs8tVnDvzKPXjBMUkmB93Z2zh7HKDOn9HtYwNBJJUxFZiLSDktk0klgv6YBKe_Sux7F08",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.711,
+          "findings": []
+        },
+        {
+          "id": "py-025",
+          "prompt": "What is a LIST COMPREHENSION?",
+          "options": [
+            "Documentation for lists",
+            "A type of for loop",
+            "A list method",
+            "A concise way to build a new list: [x*2 for x in nums if x > 0]"
+          ],
+          "answer_commit": "hmac-sha256:b8242392a135b44fdd92b8368c3e036b",
+          "explanation_enc": "aes-256-gcm.v1:wHVGinxqtMAbdAom:6bCvoEXUI2lQU0d2cw4bv0Hbd5JX_YZPHLTc2mgArMmPmIQZB8stz-gXXVYVMcTRK2-_aqmDhCX8Dq2RNKBNumTa5RRwvnWREq2f-X3kRe09mNFgjr4CpYzDbmGE21wPGMwymDkxCJBu65BXT9eB1wH-3wDtFBIGc4UyWE3bNaIxdRO7C2Hnb2c00BY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.739,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Dictionaries",
+      "skill_id": "rfv.skill.python-fundamentals.06-dictionaries",
+      "items": [
+        {
+          "id": "py-026",
+          "prompt": "How do you create a dictionary in Python?",
+          "options": [
+            "user = {'name': 'Ahmad', 'age': 17}",
+            "user = dict<'name', 'Ahmad'>",
+            "user = ('name', 'Ahmad')",
+            "user = ['name': 'Ahmad']"
+          ],
+          "answer_commit": "hmac-sha256:4fdb8384cabb2377acb65dda4ad2834d",
+          "explanation_enc": "aes-256-gcm.v1:iO_ye4ZpqiWqzUh8:JTwLpqx5yp7TQT5mLEoYCdNmV5SrDMf2yPIHNxMB-Cf1pNQqUJ6KTRa1G3oFG2K6xUIVwgY4Ln5n4ilqJUVShTz5JJE6oCrpFryS_d0o62y-vwNhRDE3xsp7bvECUlYR5iBlZVkVyKOPB4bjyMPH5gW3eHIdOodemSK0uVNSF6rI1kd_pEI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.25,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-027",
+          "prompt": "How do you access a dictionary value by key?",
+          "options": [
+            "user(name)",
+            "user.name",
+            "user->name",
+            "user['name'] or user.get('name')"
+          ],
+          "answer_commit": "hmac-sha256:4f7676a642df7cf11fbe61e3ae7729bc",
+          "explanation_enc": "aes-256-gcm.v1:AairrIj7swlooYKV:NH2MP_UvXSAk460-LTcMmsySZrmlf1z9zjGNybmepSR4fwGaBUk6qO7IW8AU6KNQBztXDUJb1LmfVsBajphq11pn8qMUlirFiW-R479I5QPPt49Irh_hQ_1W08zNjz52xiroEdWn2Opq2N377acNIbrwqltwo_Q73DZqGSO27Xq_IrPOK7Be",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.2,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-028",
+          "prompt": "What does `user.get('age', 0)` do?",
+          "options": [
+            "Always returns user['age']",
+            "Throws KeyError",
+            "Always returns 0",
+            "Returns user['age'] if it exists, otherwise 0"
+          ],
+          "answer_commit": "hmac-sha256:bb8da31e8f801dd78b345a0f5a695405",
+          "explanation_enc": "aes-256-gcm.v1:sHK6_YEIoHzNHrHg:obBCiyOJccHISovu60rx3C920OOuTpP_lPehmUh5RgtTuN83aWLyuLGBwT2iRaDRXuukPmDuUJrbfMmCywLxf03Y5QzUhcQyWOugoRpiGFZe-N2oUvIxifVs7Npy-J185yGo8K6fGTR6y7CJ6zbS7C-n_le1Tw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.731,
+          "findings": []
+        },
+        {
+          "id": "py-029",
+          "prompt": "How do you ITERATE over key-value pairs?",
+          "options": [
+            "Dictionaries can't be iterated",
+            "for item in user: ...",
+            "for key, value in user.items(): ...",
+            "for key in user.keys(): user[key]"
+          ],
+          "answer_commit": "hmac-sha256:214372f0c638417e62d41e599a7c7042",
+          "explanation_enc": "aes-256-gcm.v1:M3eLSNB1Ry0TaPDZ:8ci4LaiYbtWUqINBiLboBeSFzDSg1QPjK2Pzuh3y1UHa1VcSeIQN4QCscFeYGhXtVt1PTdKIw9dkwTxZrcNAeVrDnjUwjt9M2Q5wigpJEpBj9XMbo5dT059dYCvOqr3KcQfVTKXbmn0vPbeQKvFP-LFbIbW3pK1Rg4Dh_rjZw-kp3UY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.061,
+          "findings": []
+        },
+        {
+          "id": "py-030",
+          "prompt": "What's a DICT COMPREHENSION?",
+          "options": [
+            "A dictionary of comprehensions",
+            "A type of class",
+            "{key: value for key, value in pairs}",
+            "A documentation tool"
+          ],
+          "answer_commit": "hmac-sha256:7defacbf45a12c25361f0faa705a65ef",
+          "explanation_enc": "aes-256-gcm.v1:hCRd5qaSgLMCzz59:QIGou6UQM-rgcCGIuCMIfn8YHT1vyQUAbZnYfpiScpfT-K6RM_mhV4nwdG5JFp9A6v5LGfyWOcWAP1tq9KymkkpaQTNdMckp1N4ZlR2AcR6GkmV8zhKdMFs-SzxeT9R06nasRTxMZWl6iAqOzAwJyd69FBidpiYljdrxQzqpFY-gHcA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.2,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Tuples and sets",
+      "skill_id": "rfv.skill.python-fundamentals.07-tuples-and-sets",
+      "items": [
+        {
+          "id": "py-031",
+          "prompt": "What is a TUPLE in Python?",
+          "options": [
+            "An immutable ordered collection: (1, 2, 3) — can't be modified after creation",
+            "A function",
+            "A mutable list",
+            "A type of dict"
+          ],
+          "answer_commit": "hmac-sha256:0d4366b105f3bc82c7c53704094acf45",
+          "explanation_enc": "aes-256-gcm.v1:K_W252FNp-STof4e:W9IkiyBuJRQPRnBqEoHH7_P1L8y5s_QEMynDjCz1XRbG0lAxws6GgygEpAQD0Aje8rD0XEXYSm7Qsg7ST3UBy7NHWFM6NMnPTs3pQCzlzwZVF97MoTVFpQsmB0HmnxkLRFfBBhr0VefGS7ekWbl0HPt0yn_axpRvv8QpMN0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-032",
+          "prompt": "What is the MAIN difference between a list and a tuple?",
+          "options": [
+            "Tuples are slower",
+            "Tuples can only hold numbers",
+            "Lists are mutable (can be changed); tuples are immutable (fixed once created)",
+            "There is no difference"
+          ],
+          "answer_commit": "hmac-sha256:054131a6d77f82e63d23cd9cf437ef07",
+          "explanation_enc": "aes-256-gcm.v1:IcRETR_YAIYSA1dV:QRhscVrcniXT-3b9FfH4veXJU0XEBCIUpCTsCndOItwVkUrdq4Jq1N8d1oXcpuvssOXR3EhjzL4XCfn3vUA2Yjmfkcak3tgXPjCZRmoB2l9xCtXYYXsOv2RWSjzLAhDbRoJakZSs58nRe-089BkbqMeMCpQhSQ9PimAb2ICgAgwBVUgmuWHyUOVW",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-033",
+          "prompt": "What is a SET in Python?",
+          "options": [
+            "An unordered collection of UNIQUE items: {1, 2, 3}",
+            "An ordered list",
+            "A dictionary with no values",
+            "A type of tuple"
+          ],
+          "answer_commit": "hmac-sha256:16d96eaec4f47d3c3e2b497499178a9a",
+          "explanation_enc": "aes-256-gcm.v1:jy7MY1l7Ouk-Qyr2:f7bZGIz9JWH5jsnTL0SYM1pB0ReGyV4pxFY9lx1OMBrIhi6yzmYYawoF51AaxF3houAghLBzKQFbytpONjzrfGA84MlXzcKSFrhxHMUxHx9kMkSUxOYYd5UbbPf_sG9L0K0OcuWLxJ5Z9LgoGQfrC8HqfaJQ4Fovz76gRIyqJfMBNwblNq-BcGw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.852,
+          "findings": []
+        },
+        {
+          "id": "py-034",
+          "prompt": "What does `set([1,2,2,3,3])` return?",
+          "options": [
+            "An error",
+            "[1, 2, 2, 3, 3]",
+            "{1, 2, 3}",
+            "[1, 2, 3]"
+          ],
+          "answer_commit": "hmac-sha256:a24fa2c3faec00227d95823b7545d6e1",
+          "explanation_enc": "aes-256-gcm.v1:VnOOvQ53fA1-4-6a:Ba2ywUfEBH-XXatpACrW9VPT5dpda5iUm78d2CnVlALmIT5KkcwzUkL3VAJJSDIv3ME_aIbLwMu1tkYDmWPT6mcVzbQIJmDfdkA39KBfzOJrNL6rs_9RLon_rS5Um3XlsZA3Q_AmTOy7c0mUypZC-c6WwjBe7JTFQDvvKPW2GDz1D1LDDJbWinmeQqHJCA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.6,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "py-035",
+          "prompt": "What operations do sets SUPPORT that lists don't?",
+          "options": [
+            "Mathematical operations: union (|), intersection (&), difference (-)",
+            "Sorting",
+            "Indexing",
+            "Appending elements"
+          ],
+          "answer_commit": "hmac-sha256:c5bceef66a0958b549facbbf9ffc318d",
+          "explanation_enc": "aes-256-gcm.v1:ZwMA8j_L2ipdUdNX:oyeV_Dl8PEMw6EaLpcu2YfNSfOnzdhf2nRvIOctl1bZgq2JLNW1XhSGAS2RrbvWjaxLedt79Yz_NP9HrTpgK_OiBTFvzAarnsWCY8sotuRnhYMXylMM4ONqmSt5mBDyOzsv2Eun-7Vko0mwF_tTjwl3yoF9z1KuHzOQejqVxkQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.778,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Control flow",
+      "skill_id": "rfv.skill.python-fundamentals.08-control-flow",
+      "items": [
+        {
+          "id": "py-036",
+          "prompt": "Which is the CORRECT if/elif/else syntax?",
+          "options": [
+            "if x > 0 else if x == 0 else",
+            "switch x case 0:",
+            "if x > 0:\\n    ...\\nelif x == 0:\\n    ...\\nelse:\\n    ...",
+            "if (x > 0) elif (x == 0) else"
+          ],
+          "answer_commit": "hmac-sha256:e43d3201d74f4e4fa9da69daef2708ec",
+          "explanation_enc": "aes-256-gcm.v1:wowLNIyf3VHuXJan:-tt9YpZcL5FQkxduBinLGHc8xXYpIjGOLWcbY6qUHM0e3LohrcDvjksj2hcQsmiTBL06mbaQMOGVOzug4IwLXuLjoaci-UuZPMFBkhq2h4KvJNCzpxI3KK02WiJwI53ibVN-Ue8w5CyAhVHDUYZHXC4IuhZnF3XvaMQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.966,
+          "findings": []
+        },
+        {
+          "id": "py-037",
+          "prompt": "What does this loop do? `for i in range(5):`",
+          "options": [
+            "Iterates i over 0, 1, 2, 3, 4 (5 numbers, 0 to 4)",
+            "Runs forever",
+            "Iterates 1 to 5",
+            "Iterates 5 times starting from 1"
+          ],
+          "answer_commit": "hmac-sha256:3ee0a1e167c7f6b7d7fec4e7d6dcfbb8",
+          "explanation_enc": "aes-256-gcm.v1:mdo8zbwR_BPVCfY2:Oyrd5VcOUPF5wqR01tlKKaK53LgXoOUs1eRXNpFIvLHLodr_8570KEIJ1wzbbJFUaVVRtPtOkh69B-iWsmBhnzoFm8I1RKZkJQn9sPSZyBaF1ki-cDEg2a2UIALN0sm-NWzLEDrDuN2odzJfV-LRksv9lPjrE3eZyTS1ImXT1A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.531,
+          "findings": []
+        },
+        {
+          "id": "py-038",
+          "prompt": "What's a `while` loop in Python?",
+          "options": [
+            "Loops backward only",
+            "Runs as long as a condition is True: while count < 10: count += 1",
+            "Loops in random order",
+            "Runs exactly once"
+          ],
+          "answer_commit": "hmac-sha256:db282e1e213643893298e0fc5172c744",
+          "explanation_enc": "aes-256-gcm.v1:mysklFsMEqn-Ajzc:_QXu8i22Yl2_mjY56gkYImWyCKNgFQ2rAYaxIVArtMUoT5W7iQDmYa66UKtolKf2lUwFBpJ_lcUl1fCmCllX5-jdjBgAu69tJ0nnN41kA0SAT7A5fmOF7bDrnxpnxjvJ7GAnWP5xJtczdUhXLjWS1qJx_B5yaQV1OMyiZA3hO05RKFFoS_C4P2OAcxTJDXpSzGbvLTwTbOX9vg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.095,
+          "findings": []
+        },
+        {
+          "id": "py-039",
+          "prompt": "What does `break` do inside a loop?",
+          "options": [
+            "Restarts the loop",
+            "Pauses the loop",
+            "Skips to the next iteration",
+            "Immediately exits the innermost loop"
+          ],
+          "answer_commit": "hmac-sha256:2c382c356155e5ff48506d10daac2e6a",
+          "explanation_enc": "aes-256-gcm.v1:xRC-rqyMe2MqaNdn:3wAhyIxNAYmT5Kry__Lv1eHwVFjnn5MYzEuxd2X6Fm2bYHirEzbhuS4I-G2HYwme_IwhBgRzK87osVFfon2Aefhqdl94BEk4f6Hpn6EaN37sxFI_k9MZLyGDEyi97ho_-BTkQ4BoQzTEvNqr1b449TVNtWXD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.333,
+          "findings": []
+        },
+        {
+          "id": "py-040",
+          "prompt": "What's the PYTHONIC way to loop with an index AND value?",
+          "options": [
+            "Python doesn't support indexed loops",
+            "for i in items.keys() values()",
+            "for i, value in enumerate(items): ...",
+            "for i in range(len(items)): items[i]"
+          ],
+          "answer_commit": "hmac-sha256:a90fc1e065c0fe804d0713c3a8fe4134",
+          "explanation_enc": "aes-256-gcm.v1:NJK_oVk53Qc0d0iT:LI1Ugcntyuz3IVD3FcpmRiXZUX9vzwqdGlnB2bD2WgrNIhJtagGoFpa7VdnIWJku3mO3SvBbRf4RctKBFF2qhuJpeyX2NkbNTZ10k00Ed8ooW951-76MjS-07zLNkmcFMGB3f98",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.028,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Functions",
+      "skill_id": "rfv.skill.python-fundamentals.09-functions",
+      "items": [
+        {
+          "id": "py-041",
+          "prompt": "How do you DEFINE a function?",
+          "options": [
+            "define add(a, b) = a + b",
+            "function add(a, b) { return a + b }",
+            "def add(a, b):\\n    return a + b",
+            "func add(a, b) -> a + b"
+          ],
+          "answer_commit": "hmac-sha256:493e6735374ad200fc2b966451d09f80",
+          "explanation_enc": "aes-256-gcm.v1:VRMxtAi3ph4yztmv:ZyUASukE6Bykskt4AkI7xlqRHDw9O9L7PL6FCDxFKTNNcvSmBVWSRHmr2hJu9u5zdh3LPLWrq6amaXbKkzLRgwLFtELZSJ7hy5c7pxyHzAyH2iIgbM2da9u72sg0KRRQZ7022gZ3DIeW0NRbl9EVa7wAfuaIx9E9l1OsfNOH",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.914,
+          "findings": []
+        },
+        {
+          "id": "py-042",
+          "prompt": "What's a DEFAULT parameter value?",
+          "options": [
+            "A global variable",
+            "A type annotation",
+            "A value used if the caller doesn't provide that argument: def greet(name='World'): ...",
+            "A required argument"
+          ],
+          "answer_commit": "hmac-sha256:76b02c46ca7c90b8fa5dca09511fb0b5",
+          "explanation_enc": "aes-256-gcm.v1:r0jj_L-3fZ2yzEbO:f2U1zzI9Jln-G8WRm54J4sskoA3fs7qDvnjOp0OEAzH0C3K2Co2rd7ZQucdp-GOtbpSKza5bPi1WxDviG9OAu8qC4263b295q6Cc5-RYytfBC_StZ7XEunlEj9pLOzyeP1bji4WtqxUChwbabY3cv_L2nU-G7e-8YLk6O35e-pwOfjwP_P8KB28TpsQpRa3Tay5yQ90",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.526,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-043",
+          "prompt": "What are KEYWORD ARGUMENTS?",
+          "options": [
+            "Passing arguments by name: greet(name='Ahmad') instead of relying on position",
+            "Function decorators",
+            "Class methods",
+            "Special reserved words"
+          ],
+          "answer_commit": "hmac-sha256:04deed991708653840528ef47d5ac586",
+          "explanation_enc": "aes-256-gcm.v1:_Sjx5shRdFEyYxTj:s2-3_TUb94UEIo08dhw8oW3isBcK4axdGhsoDWyXATWew-ewm5--Tlp8hqqwEm2PYi3md027FgxRN_UIgNQGS0hdAqsZEVB8rERzGgX8tw77oehg1MN8Y-ArUarqDfLd9x5JYwgcqYQVzvnGpRXzotmHN61Zi80e2tBW2UW4fYQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-044",
+          "prompt": "What is `*args` in a function definition?",
+          "options": [
+            "Multiplies arguments",
+            "Required reserved word",
+            "Collects all extra positional arguments into a tuple",
+            "A pointer to arguments"
+          ],
+          "answer_commit": "hmac-sha256:c6fbbb09c2bf66adcd2818bddb4a25b3",
+          "explanation_enc": "aes-256-gcm.v1:0UKqXzulFnJ3d-ND:s68qAf5xdBRcnZVg-FB3IphW730EICgEFYUrupHcdFF8fwy7EgunyYZy8Uff-ir96zSVleftRyYYA2o2R_ZZGPQn1cFUZ4PhpYokLw9nR0j-S_K-Z2-qedZ3vomva-SOD9-N0XqlCRV6diyHHdBiG9gC8B99I3c0lWt5Bc7XPuz1YQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.364,
+          "findings": []
+        },
+        {
+          "id": "py-045",
+          "prompt": "What is a LAMBDA function?",
+          "options": [
+            "A debugging tool",
+            "A Greek-letter operator",
+            "A small anonymous function: lambda x: x * 2",
+            "A type of generator"
+          ],
+          "answer_commit": "hmac-sha256:4f6e26d1b2353481fdc5a5d602b1e27f",
+          "explanation_enc": "aes-256-gcm.v1:vVPDcrdSs-ZjPZL6:R5MISOUGOk8KdkVCqW07TtVlqZAXxKluc5P1KaFBoloWEmGFQNAqqiA4X04IBuoR2q3vZXjVBChof31-Fi4KoPXY26JsSvYb_q8zI68zU8o4OAute0l9SAzoi-7Aks_qTg3ApSt8pW-eCz_ySdimxaaEoDlXDhllPNEFZRTAQ8I5G9hRQ0uZFfmL4y63kkJMtCi3O2o",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.87,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Modules and imports",
+      "skill_id": "rfv.skill.python-fundamentals.10-modules-and-imports",
+      "items": [
+        {
+          "id": "py-046",
+          "prompt": "How do you IMPORT a module?",
+          "options": [
+            "use math",
+            "import math  (then use math.sqrt(4))",
+            "include math",
+            "require('math')"
+          ],
+          "answer_commit": "hmac-sha256:6d4fc4901e256d65e1af241fe3867f80",
+          "explanation_enc": "aes-256-gcm.v1:81fO4D1IBvUccMyy:A44ZLh6Fet4Mti4eWrabwFUjwqhqQbMCpQR2i6CSh7BQ4PK8W0TnwphCNVRhN_815-eMpCyHTQybZPVvWyxWxILzqc1QMd-mD9BBpdhWOjqLIPzl6O0US45iuYy5i59XC8CSr-kv1H4f1hoiAXGdrmBUQU8YlY1GoAga3XA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.4,
+          "findings": []
+        },
+        {
+          "id": "py-047",
+          "prompt": "What does `from math import sqrt` do?",
+          "options": [
+            "Imports all of math",
+            "Throws an error",
+            "Renames math to sqrt",
+            "Imports only sqrt into the namespace — call as sqrt(4) instead of math.sqrt(4)"
+          ],
+          "answer_commit": "hmac-sha256:dc4865ad71d0e89b6303a3a55f0052b7",
+          "explanation_enc": "aes-256-gcm.v1:mgk7qjjhZsEW9Pw6:0d1gIq-sawLqBnnzeAoWZ4inz-FWuEqDl1urn1RO0xP944aOS5arxBbPdyXfvLJa4by-k4Itv3t-zMzRROwQQ4jgQZEtIbCg1D_x9HXthDWIYpi5IBzDzKIAB4FJUWWhhk60SMSLiWgXk9q6S8OOOsrvv9gmh1B-fq85l7qJb-SbA1eKmR7XcOMZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-048",
+          "prompt": "What does `import numpy as np` do?",
+          "options": [
+            "Imports two modules",
+            "Renames numpy permanently",
+            "Imports numpy and gives it the local alias np for shorter code",
+            "Imports numpy version np"
+          ],
+          "answer_commit": "hmac-sha256:358afdd7a705b0d661d5b0359c81210e",
+          "explanation_enc": "aes-256-gcm.v1:BOAFdbGOqgEkCLyf:wEA0GAF1v_B-oZe0IAN1R9IA0ioosMWLA_HVq83QXt1Xrc2c6Rs7ABPRVPUvzmkp-EO4kLPsPSI8FtCe0OI92zOFt84NthQZNPL6rnr1uxTNjP0m2ZjNVd7RJ_tpQcU09CMs0XQ0UwN1",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.48,
+          "findings": []
+        },
+        {
+          "id": "py-049",
+          "prompt": "What is a Python PACKAGE?",
+          "options": [
+            "A function",
+            "A zip file of Python code",
+            "A folder containing Python modules (and an __init__.py file traditionally)",
+            "A class"
+          ],
+          "answer_commit": "hmac-sha256:a757ea1c30e3fd1b06daeb1e2d04ce59",
+          "explanation_enc": "aes-256-gcm.v1:_KJxngp_nUYJkQR1:S2XPJJNOnMW3hOZhW126WCXEWN_z2FD2ySVOGs5BusE8OfPOQZzJJiUxn2yZ8mYP6rNwHb0q75gbpjOX2av7x1vBmt-s_UBdk97BdNe_BfSkoYmFoqZRESN2xQ0BtSj4zG-RLZFw_M3jvtLEX2FTdz9Jv0G6x4oeKtYXypcBp4fnyQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.96,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-050",
+          "prompt": "What does `if __name__ == '__main__':` do?",
+          "options": [
+            "Checks for command-line arguments",
+            "Defines the main function",
+            "Required at the start of every file",
+            "Runs the block only when the file is executed directly, not when imported as a module"
+          ],
+          "answer_commit": "hmac-sha256:e8206662407ba7d5f6b67adb0057a8c2",
+          "explanation_enc": "aes-256-gcm.v1:8oAVba48RSxWQVo9:F5yNfVChyTEo_qecqx62kEr7lJR5oDcTg796lvpPQ0m8U1mniLAK6ITkBRnCqjYr2Xf4LhrfvcXk2gRq72h5nyeFb6U6OhY2_U9rM3w1hckSHRWHbfFeUkcN3E1HJbJbSPK07XoAVqivSgp5_SA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.429,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "File I/O",
+      "skill_id": "rfv.skill.python-fundamentals.11-file-i-o",
+      "items": [
+        {
+          "id": "py-051",
+          "prompt": "What's the RECOMMENDED way to open a file?",
+          "options": [
+            "with open('file.txt') as f:\\n    data = f.read()",
+            "f = open('file.txt')\\nf.read()\\nf.close()",
+            "open file.txt",
+            "Python doesn't support files"
+          ],
+          "answer_commit": "hmac-sha256:49a0c9f450d7272e72decf68546a0b28",
+          "explanation_enc": "aes-256-gcm.v1:ehgA_JT5Krc4hzEe:VQp67KmyRP3pNqINNpYqOZmRDzwtXpV5D6a2p4HE98Y_of3agTkXxY3VwwPdFStR7h3e-ZDstGaxJrnb3juNcz6T5m96CnE5j2c1bcIGiP7VX_qYRUML8iloU6k0dpgjkyMDvSTwxAV7z6bWnRpJgU6Pkqd7Lk3BwMJm2tOGNiMtpX4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.171,
+          "findings": []
+        },
+        {
+          "id": "py-052",
+          "prompt": "What does `open('data.txt', 'r')` mean?",
+          "options": [
+            "Opens data.txt in READ mode (default if mode is omitted)",
+            "Returns text in reverse",
+            "Opens data.txt with row layout",
+            "Reads only one line"
+          ],
+          "answer_commit": "hmac-sha256:566f2affd946db286040a9d44fd25bfe",
+          "explanation_enc": "aes-256-gcm.v1:PbXC7H96mlRANWEB:rbKg6QZ9KUUxbL8tTDW8_2FHaBXlqgPcyhkQv0-iS9DJ3e7JrXmq3Yfh0-aH8PsseiT09ODJFa4d2EAtxuYX-hVvzWJdejSuUTrhPAYHbjJmGu3EG_e0Lp6lZ2AhMSx9HtxQqy2rH3xfvwaD3Fz7I0O_M_WjIn0mLDQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.867,
+          "findings": []
+        },
+        {
+          "id": "py-053",
+          "prompt": "How do you read a JSON file?",
+          "options": [
+            "import json; data = json.read('file.json')",
+            "f.readjson()",
+            "JSON requires a separate library install",
+            "import json; with open('file.json') as f: data = json.load(f)"
+          ],
+          "answer_commit": "hmac-sha256:4b94393e3b8d7450b5e9a0bd663136c8",
+          "explanation_enc": "aes-256-gcm.v1:G1HURYCvEMUFNRIe:9F2AZoOo86ofte_-Q107yBLq5BtKgSmqc6G_LbjlzNFx8T8VpgT5TTaP5KsZJd1kfjavpQ47zhSAtpy4NR0P-OjsYNzumCDMmFavVPRJbcDuMTGkkgg1MWEuFU9flSEZB-f4EjdHs2AvjQgOuJt0uPkg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.452,
+          "findings": []
+        },
+        {
+          "id": "py-054",
+          "prompt": "What's the difference between `read()` and `readlines()`?",
+          "options": [
+            "read() returns the whole file as one string; readlines() returns a list of lines",
+            "readlines() is deprecated",
+            "read() is for binary, readlines() for text",
+            "They're identical"
+          ],
+          "answer_commit": "hmac-sha256:57495084832abda4c1e9e7549f2440e5",
+          "explanation_enc": "aes-256-gcm.v1:DVOAAzQvNQdM1erh:-gquwi_SRRPeUD5bCFxqJj2ptbsJpat1WcSmLCeLqVQC3NPi0tzKnJ4-at7nc6Bm9mC5D_B5K9HrtEgaSiblOJrN3HTOnoBdH-q2VYeUzi-a9afOFqQUHFCqtWOxm1kfln9pJFFLcqF-HFm6jkp44T6S7UupLLG2r_3MAe8VbXJKBd8OLw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.905,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-055",
+          "prompt": "How do you WRITE to a file?",
+          "options": [
+            "echo 'hello' > out.txt",
+            "write('out.txt', 'hello')",
+            "with open('out.txt', 'w') as f: f.write('hello')",
+            "file.save('out.txt', 'hello')"
+          ],
+          "answer_commit": "hmac-sha256:fd25b65916a1bb81c19fe7517055512c",
+          "explanation_enc": "aes-256-gcm.v1:ihzuaipYnV2lQPjY:oq_dSA6wREUTr5gxo8Tv2vQ8QMpn1I-qYkJtLdgGLw4Io9u8-jaP2Z7y1GJQmS6NBnp9qcqvJG10XaXn3KA-I4EMFerUWWFusS6k1SNa2q8veYRNkh-iUsYQFPLHXDN638S26yh-yBnnDWt6ZbHI0IbbLYclB8eDyP3w50k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.655,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Error handling",
+      "skill_id": "rfv.skill.python-fundamentals.12-error-handling",
+      "items": [
+        {
+          "id": "py-056",
+          "prompt": "How do you handle an exception in Python?",
+          "options": [
+            "try { risky() } catch (e) { }",
+            "try:\\n    risky()\\nexcept ValueError as e:\\n    handle(e)",
+            "if error: handle()",
+            "Python doesn't have exceptions"
+          ],
+          "answer_commit": "hmac-sha256:dd564bc99d6a698e6826ae4172e6fb51",
+          "explanation_enc": "aes-256-gcm.v1:3IABt_ZfzqzwAqIv:NPxskesaXdu0tth971-W_g5oRuMd1cJt_jNa6w3p5NBqEa5jSPmPxusH-0EoMJo_jX1dqHMEtqTQC2mWrpVke8e--ExHdU5aS-buAPDCJlKe1tbho6ZidrHFnE6oiHvteeoaLMd__CBHJr5rt6MU3j9Y04v47G25o6MAtaJKjUMCB59cHtu3e0KU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.9,
+          "findings": []
+        },
+        {
+          "id": "py-057",
+          "prompt": "Why is `except:` (bare except) considered BAD?",
+          "options": [
+            "It catches EVERYTHING including KeyboardInterrupt and SystemExit, hiding real bugs",
+            "It's slower",
+            "It's deprecated",
+            "It only works in Python 2"
+          ],
+          "answer_commit": "hmac-sha256:7126fc555f6f882fe29db086e1a50231",
+          "explanation_enc": "aes-256-gcm.v1:tkmzQBl7WZXv1GjC:bOgD3v9rTea8rUye6IAuk-L_Cb0-fYOfjP-NKeSfBhAFV3trmihL6rYi1Oy8MfzlxCgEBN-kut340cD_q_e7Rism03Mxn_CVU8_ywIv56ZLdb5BC6YdAlhDAyoBzK96iot0iY9-EYt-DEzEAHIcu16kdJzEa87RVljrha3ravoDP99ENtQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.28,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-058",
+          "prompt": "What does the `finally` block do?",
+          "options": [
+            "Runs only on failure",
+            "Runs whether the try succeeds, fails, or raises — useful for cleanup",
+            "Runs only on success",
+            "Logs all errors automatically"
+          ],
+          "answer_commit": "hmac-sha256:2a7fb9a17f5fb60aa23cd32c668fe48e",
+          "explanation_enc": "aes-256-gcm.v1:XAMKgkb-07QMHTjd:WOfgzU-juD6dU4eucM5uA3Pje08BTYUVZrYz2jA5sfXSc-Onei1bwhFR0D0JNHflp7rZFZZhu3Co-pZYKPUPRciEzi0jrYG4EKf0P7q0ikanuqQdr3JMj-2m6Cruq43BRI9GGs77En0RpabEitri1FL9c9ZuKJrY8TD16COeoTTbqCjI9sS5SBmPvqU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.345,
+          "findings": []
+        },
+        {
+          "id": "py-059",
+          "prompt": "What does `raise ValueError('bad input')` do?",
+          "options": [
+            "Returns ValueError",
+            "Crashes the interpreter silently",
+            "Raises a ValueError exception with the given message",
+            "Logs an error"
+          ],
+          "answer_commit": "hmac-sha256:9d775c074f3cf7655b41210e1e8a2446",
+          "explanation_enc": "aes-256-gcm.v1:6V0pKBLiRS0jbmEb:3zcNJBo08BTVWIpEaZ6N-NIyccSkspsZf29xbum5uSw1PwjxaeIr1BSEAwi7kg1xGBXlouF65JtKAfc01uH1XCuOSQUcDNvaLTegIL-EFHbFjaLSYExzq26x0Au2a3OkhdbCCVArNUc5f3NUN-mbBqgugFEKMK8dFcOPeCqu8g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.625,
+          "findings": []
+        },
+        {
+          "id": "py-060",
+          "prompt": "What's the PYTHONIC philosophy for errors?",
+          "options": [
+            "EAFP — 'Easier to Ask Forgiveness than Permission' (try/except over check-first)",
+            "Always check before doing",
+            "Never raise errors",
+            "Errors should silently pass"
+          ],
+          "answer_commit": "hmac-sha256:5554589a2a2dbfaf3acdba9ccd5c1013",
+          "explanation_enc": "aes-256-gcm.v1:AzxfbNicn70X_ss7:Ks61cjUcZBBwQKQGBSwDBiXeNqkzXX705W2fEKiYNQFPs2ahaOlCZEg6a9WWM0HoN1mKuIEZra_CU-tsFRXodjxYx2SQJB9qkoiwDuW3AN5Q9z8hxliRNINcxVe2GxFauV9cuVefGt6xmfZTj9kwz9VkBM-DBrIyPPNFxT4zUsHTntfDHgaMrdXQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.963,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Object-oriented Python",
+      "skill_id": "rfv.skill.python-fundamentals.13-object-oriented-python",
+      "items": [
+        {
+          "id": "py-061",
+          "prompt": "How do you DEFINE a class?",
+          "options": [
+            "class Dog { Dog(name) { this.name = name } }",
+            "object Dog: name",
+            "def class Dog(name):",
+            "class Dog:\\n    def __init__(self, name):\\n        self.name = name"
+          ],
+          "answer_commit": "hmac-sha256:81e301c8f72d084408bd932c2698e597",
+          "explanation_enc": "aes-256-gcm.v1:Ye3nZaM7MvYBWzjL:P9-GIRth9VJkbSemjNuZgYEMOZDVHmxtwbZhtbU1AJWjtilKuaGg_91AKbn7Q_IiUW11uqu42Zk9rLSyzMeIKE877Tzv5mzS69TmYbcX0_bifo2tgXNKI28BgkoG2nYo6M37OR-aid6Uo4c2lobAPCVLeO7Mx4IeHG6yysD0zbTu2KAMAmc8DaeAfpBuAhPC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.523,
+          "findings": []
+        },
+        {
+          "id": "py-062",
+          "prompt": "What is `self` in a class method?",
+          "options": [
+            "A reference to the current instance — must be the first parameter of instance methods",
+            "A type annotation",
+            "A keyword for static methods",
+            "An automatic global variable"
+          ],
+          "answer_commit": "hmac-sha256:521cddab33e9f2e07a1072212f0a56f8",
+          "explanation_enc": "aes-256-gcm.v1:IUMkJo_dUYdWZ8VN:qT7pDYABQwjLKqORy87oTQRo0Ke2_bz0TU2JoCOm9JwBG2AodL5WwkeDRf38Fvj7yPH7HGznyGOL2amMH2Kpk30Qzys1H1NArswhITWx3wI8nmamfFY8luFVO3TKRlzS0McVC6jYsSXL5xZE0goBGPMOLfUNCd38P2V_SbP8qOVhMSJSfUg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.036,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-063",
+          "prompt": "What's INHERITANCE?",
+          "options": [
+            "A class can inherit attributes/methods from a parent: class Puppy(Dog): ...",
+            "Copying methods manually",
+            "A type of import",
+            "Sharing variables globally"
+          ],
+          "answer_commit": "hmac-sha256:efbf042daa7d14f60f702555b7a68f6d",
+          "explanation_enc": "aes-256-gcm.v1:3ZKt6uTpU7p9By2b:ZYMhfdQ1D_sBiBlHJlPv02_lZGMYQbQ0gwKdxW1oURXDG4iqfW7cWGP_MlVgvpP8d93i7rA0bxFEkXdYDdJxzSEhQTNPgOV39KiMASJZ0m7yDBxfm2SAS7xJbXxqK0Gc3HBFmZncgpgtR6Xccs4E5ByBoHjgt-s9AtKWyLUKWQrohHGTj0YUXM7jgb3ubyFDKlXhsg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.885,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-064",
+          "prompt": "What's a `@dataclass`?",
+          "options": [
+            "A database class",
+            "A decorator (3.7+) that auto-generates __init__, __repr__, __eq__ from class attributes",
+            "A pandas data class",
+            "A debugging tool"
+          ],
+          "answer_commit": "hmac-sha256:76281725680b2daa49893793e8375e32",
+          "explanation_enc": "aes-256-gcm.v1:79krF893QxxAu2_X:1UHDOxxIrmU3R_nWK_4EJzlJ9OpHgLqtxkYqm4nYWLPjzegsuOjhTJTPV5Hqkg1n54RmKWzyqsNkBSB1HLb282mIcmpeBwdtQL29C1qUIuYa2HQ4Dyk_psB72qTQuEcAJr-4QXM2f9niokYDxuZQUHonVQfZQrSn3ekdj8LiNP37",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.579,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-065",
+          "prompt": "What's a class with `__init__` and `__repr__` used for?",
+          "options": [
+            "Optimizing the class",
+            "Creating objects (constructor) and defining how they print/show in the REPL",
+            "Configuring imports",
+            "Initializing variables only"
+          ],
+          "answer_commit": "hmac-sha256:3632ee908b5851f008515bc9531174a9",
+          "explanation_enc": "aes-256-gcm.v1:6YtkJv81Tx--USJT:bhdn1KcX29YZtqvFm-UD-m1FndfwDLAwDTRgiltvSDFczEMNBBJVF7jico3ecm0SyQn3dYob15sJAP8poiS815NQX6Vg8EH5qCXNtT7hTR4jIa99ZG52XFg-lwRqmdFZ_IfIlx2sTGUBUpNGS7M5q6Odsk4BGAGU5kTW3Ypet2jyAw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.778,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Iterators and generators",
+      "skill_id": "rfv.skill.python-fundamentals.14-iterators-and-generators",
+      "items": [
+        {
+          "id": "py-066",
+          "prompt": "What is an ITERATOR in Python?",
+          "options": [
+            "An object that produces values one at a time when next() is called on it",
+            "An iteration counter",
+            "A type of for loop",
+            "A list"
+          ],
+          "answer_commit": "hmac-sha256:621006b8d17f6f4d487a6ac5c1e1ba0c",
+          "explanation_enc": "aes-256-gcm.v1:e9IyGeYXKg-AaorN:6rzp9gX1XNwkyldJjlMTvjEvZTMEctM6W-RnKcVPZlnKldHHDYeKO9Lzr5ZIlBxmeExzi0-kuYV1EUK4aQ0LpIyu27x-Pm_3-aSqbJwf9PZpCg4rdlh7MQfRmYyWW-USAq5S_feX-zMgsPG02YDp8DoK85wsnPS6N4RFwQ5i-XI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.6,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-067",
+          "prompt": "What is a GENERATOR function?",
+          "options": [
+            "A class generator",
+            "A static function",
+            "A function that uses `yield` to produce values lazily — one at a time, memory-efficient",
+            "A function that generates random numbers"
+          ],
+          "answer_commit": "hmac-sha256:796ce3642c2bd867231690e93ea2a9b9",
+          "explanation_enc": "aes-256-gcm.v1:2Klu-7AgGL091FDM:v8gI2CHnJWRYRS_aNdDkuYMohWC-3VPDku2TPWC8ctpTwTEeKg3kWjgBCBwRPP_Xj8tIACNjzyRvyKnT0BaQUl3IKmWNRy43b_4eUY2dsrHrywb2MUTPjRqFsl_QPt-P_dcf4285LSkPKRBF4HO7a1LIuwhrsKq3R0tHqWFVSZlLEsqXCDFOxkpz",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.175,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-068",
+          "prompt": "What's the difference between `return` and `yield`?",
+          "options": [
+            "yield is for classes only",
+            "They are identical",
+            "return ends the function; yield pauses it and returns a value, resuming on the next next() call",
+            "yield is faster than return"
+          ],
+          "answer_commit": "hmac-sha256:cba978b3e5f69fff72e6f1fd4c716754",
+          "explanation_enc": "aes-256-gcm.v1:f6l2mRO7pZdmShkd:euFx-t8AImcJ8Pt_TI_PHpJdEU-Mag9_oGE-IFV2_0q1oDcbwiaDaYe1DRG8lPN-RH4pn2MTyHtuTPg3dTyGDF3ro5Uv_xl5Yl7NwBkP8wm3ElWIjauePii1_k5HKTMoa6wnOdxtQ5LEwneYa8kHOwsFLJ1LopvoNAgFX3jD9F2SrV7EDQAldA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.519,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-069",
+          "prompt": "What's a GENERATOR EXPRESSION?",
+          "options": [
+            "A debugging tool",
+            "A type of class",
+            "Like a list comprehension but with parentheses: (x*2 for x in nums)  — produces values lazily",
+            "A regex pattern"
+          ],
+          "answer_commit": "hmac-sha256:2bd07470492e61d7caf1a8f060da47d7",
+          "explanation_enc": "aes-256-gcm.v1:zvEubLbEmDNN3qUe:P1IFZdob29lv7vtWCXIjX9vsUGuyUBpKCvVhYuUmhIvK1mtlwiwt3uQnHWl0Z9nc2F40Se9b2dD8iKAd_D8DtW9iGp6Aa91IaJ19yk8jZX9Xk91agvti4c3nWvGFlwvQX8XSVkscL5gofwzvWDPxQT6nnzyC29InMNuuaNOQ1gYmCiY8Mycq3xo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.813,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-070",
+          "prompt": "When should you prefer a GENERATOR over a list?",
+          "options": [
+            "Always — generators are always better",
+            "Never — lists are always better",
+            "When iterating once over potentially large data, or when memory matters",
+            "Only in async code"
+          ],
+          "answer_commit": "hmac-sha256:de02d45a6db517d3b37aeb62f2e445b1",
+          "explanation_enc": "aes-256-gcm.v1:on6PxUqltv-HSOUV:alCAfwOC5GSxZ6vJ3MgmcQxUfBMyi2i8ap4mZcrhf8LDYvUGpAyPmjud4XwgwNNi6xb0wWocWZgoN7y2JXhAcjATVi1upmBr9UXhKA2ObW-0Gp0xFrZe7eVmrVlYXrqC1ag2LXGEwgvbHvYYZz6NsGhIc-a60VGVUE0Xlonr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.919,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Working with the standard library",
+      "skill_id": "rfv.skill.python-fundamentals.15-working-with-the-standard-library",
+      "items": [
+        {
+          "id": "py-071",
+          "prompt": "Which built-in module handles dates and times?",
+          "options": [
+            "datetime",
+            "timestamp",
+            "moment",
+            "time-and-date"
+          ],
+          "answer_commit": "hmac-sha256:937db3d197416f36c79c2c82e70c8166",
+          "explanation_enc": "aes-256-gcm.v1:SJWBdOlxLl2Qr6_b:K1yBW5VV66TM5i7guy1IxFzeR2O1UXhTlOUYE9PtQqOyYE5wkEVeRnDmG62X4UfONBrUhSw8fWVNHuEWpDopIFbfUxdyRoYY731fspciQalPa_dZr47mE_BM8o4WgAzIzyisA-FYl7JgHdhRVTafbLbJ5P-f8Q5vIjrVnPLYJ5b1KdeZvVJ84FgRgQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.615,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-072",
+          "prompt": "Which built-in module handles JSON?",
+          "options": [
+            "json",
+            "json must be installed via pip",
+            "jsonlib",
+            "JSONParser"
+          ],
+          "answer_commit": "hmac-sha256:3d556a4297f2d0192094fcf8c6d688ea",
+          "explanation_enc": "aes-256-gcm.v1:vBFulBFNm2z0_NwT:VPj2EPCYct4VwFKgZMu79BAr0HztfLLZJgYhk2khxfMbsiPUNg4ojW4bgghuZLngsRNv2ucQKePQgL1JBM9NBhlcvL6-0zwG7PF1FVQ2ZHQtW3zpdZDQt01-aSxihJM91zJJ7E_efWRffvF31A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.133,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-073",
+          "prompt": "Which built-in module handles file/directory paths?",
+          "options": [
+            "Python doesn't handle paths natively",
+            "pathlib (modern) or os.path (older)",
+            "diskpath",
+            "fileutil"
+          ],
+          "answer_commit": "hmac-sha256:9ecfeb7d3c41646b20f7435fe81380f7",
+          "explanation_enc": "aes-256-gcm.v1:PeIrZcrK7CgyJkTK:KGcImM4VQeoNMealNJ6pMEGwtvZwMmcW4bfdrx1-kEt9tC_bphMBfkpJGvbh8_55r3k0Zjoy7sd4vtN8Nuwl9UufOYqh-i_Yc_pRs8oPs9XVkkcjZ0erK6G2Ip_5TVtnFQtqgVitKCHAdjqlw1WCDLDUZiwa5k1v4H_ocqyF",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.972,
+          "findings": []
+        },
+        {
+          "id": "py-074",
+          "prompt": "Which module helps with COLLECTIONS like default dicts and counters?",
+          "options": [
+            "collect",
+            "collections (Counter, defaultdict, deque, OrderedDict, namedtuple)",
+            "containers",
+            "data-structures"
+          ],
+          "answer_commit": "hmac-sha256:16e4ec7604cc95a70d49f202e6ea74ba",
+          "explanation_enc": "aes-256-gcm.v1:hA-28sUoSgkSk4aW:tesmaMj0iZiNnLspxQfuZVfWTEoP23_PBQf2o7mSeOokH0YQkC1ezku3tQ3NbivO82hgmuQEYliLN9lNh_3efyTrjsaNETg9DtsX4e-PpvN43FOT7F-A14WQgc8zo0Es1NSZwyArCuDQV1gLr3t2na4eQDHJYQzjnRK8ngzlV5cN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.4,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-075",
+          "prompt": "Which built-in is for COMMAND-LINE arguments?",
+          "options": [
+            "cli-args",
+            "command-line",
+            "sys.argv (basic) or argparse (full-featured)",
+            "argparse"
+          ],
+          "answer_commit": "hmac-sha256:ebf038a056e57029379e183e9a2258f7",
+          "explanation_enc": "aes-256-gcm.v1:sTFBD3TOGdRgH8Fy:voccCGMkZjtj4GOtAllgt4ShfjvsWdYuXthmLYIKAuNRITjowoQ-CNcGFqwsA8-2cviSnXF-6hX7BUumHWens_XsopaLHgi3aUBL1SYp0vyKVD3tV0ZQLZWAeI6keqwyMNDN83GCw7j6ifjCmM6aDRxqMSm2YF93G9zE4HaKrinuhcD2kRAwKFu8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.182,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Virtual environments and pip",
+      "skill_id": "rfv.skill.python-fundamentals.16-virtual-environments-and-pip",
+      "items": [
+        {
+          "id": "py-076",
+          "prompt": "What is a VIRTUAL ENVIRONMENT?",
+          "options": [
+            "A virtual machine for Python",
+            "An isolated Python environment with its own packages, preventing version conflicts between projects",
+            "A type of cloud VM",
+            "A Python IDE"
+          ],
+          "answer_commit": "hmac-sha256:944d0fbaa28d468ff2e8e2599e457ef1",
+          "explanation_enc": "aes-256-gcm.v1:xVlaNcIDxLIRPqYW:hPEdnzxjfigv8KPHrp689iWL0yiAVxHnG4qhkwJViYibyjAuef2d1P2NwCzAFss8pKs6cWGvW-pzo5f3ShizovqOJM-aHKlTKZuJl2esJusWfRoMHqax1WwGFh8qU0cabsXAvO6esWGRAnMbqvCImpuim44cfxRc5qHQuuyUtTh6Kz6aJYMhH7KvvjC8lw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.536,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-077",
+          "prompt": "What is pip?",
+          "options": [
+            "A type of variable",
+            "Python's web server",
+            "A debugging tool",
+            "Python's standard package installer — installs from PyPI (Python Package Index)"
+          ],
+          "answer_commit": "hmac-sha256:5b9984d0bac5128324d84830360744f0",
+          "explanation_enc": "aes-256-gcm.v1:m4KTjQ08H-tmpOT_:NhL2u2YrqQjs19J4n8VI2JqxWT4TcHH5BON7FDxB4O203RqSJL33D-p34uv9e2asr5-MZ_nIKqeq-WYUvYI_JNYflwznCvmvr6SF5LDzgrBCy15Ghj61i0HMm9xIPih0hUJKKUqlewfZKofxf7XgZUinoZfBzCxy-R7Z9oEp3Z-XJxY6Qe_OeB65",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.158,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-078",
+          "prompt": "What's `requirements.txt` for?",
+          "options": [
+            "A list of TODOs",
+            "Test cases",
+            "Lists all packages (with versions) needed to run your project — others install via pip install -r requirements.txt",
+            "Required documentation"
+          ],
+          "answer_commit": "hmac-sha256:f5d9c432960cdfc1ec48b3534a7d51f6",
+          "explanation_enc": "aes-256-gcm.v1:72NRgm6zuttm6sJi:5FGF9hh1l2n3l3_MdBBd4LsjP8CtM0mtPihPi6Z_GfoHqLspoBY1srWhrP4F1ShrtXfBRs_Ehc1t16HNXnlrQCS8xrV1ssAAF0MSwYnwQ5P11HSA6rlc7z-Bd2WlwqRHbSOlaSPNHWaWWPGsRqTh_tvdlAiQSXrj7zmvqHv6UvuWLwgIrdSJILB7g3ETdkY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.182,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-079",
+          "prompt": "What is `uv` (a modern Python tool)?",
+          "options": [
+            "A unit testing framework",
+            "A database driver",
+            "A type of UV light",
+            "A fast, Rust-based package manager and virtualenv tool — a modern alternative to pip + venv"
+          ],
+          "answer_commit": "hmac-sha256:43ef36b6b0015ad773a8ddcb0f5f0b8d",
+          "explanation_enc": "aes-256-gcm.v1:mBbLwIghaIzp7jjr:rHxrSI0gzuRgo4okJZdumirab8iTggjCoBKwTo0tX3E52gbPFMA1tH3LCevQqQWfI0m1sSdQsiQOiQbNdAS2Vl42IKmlqvcD9clPX3inAAWIE0nfch-lvagHRotUGhmq9XNK6UBfDH5cXvvuMX5euqE9j7yk5uBopKdapbmgFFCjvQN1nr3PKZbNup70-yhMS_79",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.792,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-080",
+          "prompt": "Why should you NEVER `pip install` globally on a system?",
+          "options": [
+            "Pip doesn't have a global install option",
+            "It's slower",
+            "It can corrupt system Python, cause version conflicts, and may require sudo (risky)",
+            "It's illegal"
+          ],
+          "answer_commit": "hmac-sha256:9d0533362c74c8910377898b7fee4788",
+          "explanation_enc": "aes-256-gcm.v1:jCeGiPSWozN3nA_O:lDDG3U8jp2vEsoszAjouXqXbGa2GM-wW87zARiSoLidxxv9A4zQzW3p5doUB9dL3dROZFpBBATAeu3Y9zD1kAPHvXl1hSozg9o_A4t-2rRnuRKQ3ebAWXir_i1uaDFGGuWTp1cfeNWgF7MaZN__EXCo2fgvDk_HPR1p2bN8PjF7l3g",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.075,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Common Python libraries",
+      "skill_id": "rfv.skill.python-fundamentals.17-common-python-libraries",
+      "items": [
+        {
+          "id": "py-081",
+          "prompt": "Which library is THE standard for data analysis in Python?",
+          "options": [
+            "pandas",
+            "datalib",
+            "csv-pro",
+            "table-tools"
+          ],
+          "answer_commit": "hmac-sha256:6efc5e1f44c39cb5777cb2b2ad17fc95",
+          "explanation_enc": "aes-256-gcm.v1:_FI2x-uJjkkeIeAK:eTqCdb8vW5gTXp0ro61uMEvQAcjZSUlODTkwf_JAxhz3SnsStSjRDNpAiiR1QBNgg1NBBXRuYk9BD41WjBrCtX2RANhHmz3HGkNXouuvS_W3crk-QMXxtr5acM13R_rPMBsBVFPzoGIQk4_PYiD-pK2dd5uSca0RGehxeArQRci_XsV6kynyljWa",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.545,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-082",
+          "prompt": "What is NumPy used for?",
+          "options": [
+            "Number formatting only",
+            "Fast numerical computing on N-dimensional arrays — the foundation of scientific Python",
+            "Networking",
+            "GUI development"
+          ],
+          "answer_commit": "hmac-sha256:47cee7e62a2752f2e40c37c8617668b6",
+          "explanation_enc": "aes-256-gcm.v1:_oz7PNCC0egUv8Hj:XCVX8g4LqnIEjXDhZzvxx46ugso6YMIVvYWttS-Pj0buqDcdnNm_ZEZgO5e3vhdrp4Hx-wJ01OjC5jq5zlq1V7v5d9z3VRVMeqSyr4NbGDyahyyhVyI4XVLVXGfoYDfmuu3lweKDIAdbKRjoUCRP73D19w2hBbB2nT9Y6GHEtIYVGGyboP80Pt5Z",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.909,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-083",
+          "prompt": "Which library makes HTTP REQUESTS to APIs?",
+          "options": [
+            "requests (or httpx for modern async support)",
+            "url-lib",
+            "fetch",
+            "http"
+          ],
+          "answer_commit": "hmac-sha256:fa4b8013ec33f0ef9d29c40521c067b5",
+          "explanation_enc": "aes-256-gcm.v1:sSGRAXdbpUDSCSNc:F4zJUSRdjIauKWAbh1-MRfWLk9CIbYKYXQLiqnsxbJLaOGI7jjI8sq_I7fb01gr5zo0r_wK4WzeNccpgRMEEcs87FY1gmkO5itMuNTXDW-w_5c2vzari1vI63As2d55Su6uk2fjjKDGtguqDaGmHiYUrgYRS-sP5PY1xTz2DRUBZ_HGYr-Jemk0TQyXU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.286,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-084",
+          "prompt": "Which library is the standard for MACHINE LEARNING in Python?",
+          "options": [
+            "ml-py",
+            "machine-learn",
+            "neural",
+            "scikit-learn for classical ML; PyTorch/TensorFlow for deep learning"
+          ],
+          "answer_commit": "hmac-sha256:0f54eadc57aabda69efea05b6d50f332",
+          "explanation_enc": "aes-256-gcm.v1:eHvDX4Sl0cSWSXvg:MQo05IwhdoiZ8gKItrGZ6Gj2u_jb83Sk378Rx2RxSjFtBJ7frvZLCCVbQ79WyMEj9cB9ZFVKgXuRmh6wYy5LxZrJYK5SNIaxMweQcZfGQ8w2_BdfHiJPq9M4ye_iTIay5bf0K8lq1yxJKEhId9v2I7o4E_qoZB4psbTJSfaAWa789gUP1yKhV_r2vuY1ujjve8KfA0L3JXE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.154,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-085",
+          "prompt": "Which framework is most popular for WEB APIs in Python?",
+          "options": [
+            "python-web",
+            "html-py",
+            "FastAPI (modern, async, typed) or Flask (simple, classic) or Django (full-stack)",
+            "webserver"
+          ],
+          "answer_commit": "hmac-sha256:cf41efc07f44c4ee26e375db9bc29408",
+          "explanation_enc": "aes-256-gcm.v1:sBMtLfpAeb_e_Z00:21lJkGW3wX2jFaKuBk0ArWEpaJiP-1Mq38PKM3mOgXT0iewsx6OhuNxDG54i_ifbvyXDIf1dJOMnuzZIqAX68jybb5gMOJxV08BmBsyj-_iKlCFujAYiJnOImevLv3Aq1FrmY1K5QwHz2nN6_9Z23vW4YIfOKcotIVJ38zPwB0ciW9bADldAHQxp4z2_ePHrnqvqFI5ooEk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Modern Python features",
+      "skill_id": "rfv.skill.python-fundamentals.18-modern-python-features",
+      "items": [
+        {
+          "id": "py-086",
+          "prompt": "What are TYPE HINTS in Python?",
+          "options": [
+            "A different language",
+            "Optional annotations: def add(a: int, b: int) -> int: — checked by tools, not at runtime",
+            "Required type declarations",
+            "Comments only"
+          ],
+          "answer_commit": "hmac-sha256:ad6ef9eb80c279ecf9634b0ee310af61",
+          "explanation_enc": "aes-256-gcm.v1:JBpDeniveF_Sz7ec:nBMx76XUJ127-vb9RqNlwBlSuE3HQ3mg9fcAkbDhCUI4IFizU4mHShh4aWHjY1YYP-aXeIAG8aGab7rs34_3_hJwg6cNkP9TxudsoQ57SMAY3-KFV7SVFSx_hPlLuynyp6wQJCyMC5E6FL_CGh_rl2rXkeBa1ulJb1q-4Vg3ViFDWQG1BrfLgU31pTE-XojkIA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.385,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-087",
+          "prompt": "What does `match` do (Python 3.10+)?",
+          "options": [
+            "Regex matching",
+            "Structural pattern matching — like a smarter switch statement: match x: case 1: ... case _: ...",
+            "String comparison",
+            "Variable assignment"
+          ],
+          "answer_commit": "hmac-sha256:529acfe66b886bec435990f70ed698ec",
+          "explanation_enc": "aes-256-gcm.v1:u30jcgv90ireemHK:WzHerLVGOflZ6fCDayOgoMLJvr6E8f9IJctv3uNdOORqBbWRa_5xyH4ltxuVsCMl8KFZlHUW_Ps5hw9lxNPGC38JVYIkNpBpM0vk54QEt1Ct2dgwqwfCn1X-tjVSXHxWN4zqAC7dspIzTTM3girt9DFRmwCxT9XbD72q5wywonnpwdmpvBw7pQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-088",
+          "prompt": "What does the walrus operator `:=` do (Python 3.8+)?",
+          "options": [
+            "Assigns and returns a value in one expression: if (n := len(x)) > 10: ...",
+            "A type of generator",
+            "Comparison operator",
+            "Mathematical operator"
+          ],
+          "answer_commit": "hmac-sha256:4088f0f36d10e59b54bd1f03b47ca745",
+          "explanation_enc": "aes-256-gcm.v1:XEo2jg6DCXj_glD_:L5xUkExkty5KCdYlJmFvFG28bNh9gqRRbbg6NoWbdCWK7P9vva6lUtNOQyIo2dQlVmruHWZKkoFY6JnlsimHS3prWpeOmeadhLoZ7KfntNh-8GH06f75f7NdY4Y9hTQ5t8DZkvRF_v2JgI3dvJcwUQV5aw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.476,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-089",
+          "prompt": "What are F-STRING formatting specs?",
+          "options": [
+            "f'{value:.2f}' formats to 2 decimals; f'{x:>10}' pads right-aligned; f'{n:,}' adds thousand separators",
+            "Only for debugging",
+            "Required for all strings",
+            "Just for string concatenation"
+          ],
+          "answer_commit": "hmac-sha256:550f24dd0dc005ae8c1469ef2ed58b66",
+          "explanation_enc": "aes-256-gcm.v1:UkpXZb8q17DProeT:U-ts1IQ_QmIEfKZHZqUAqzVQD4HfJg7OpJW9-IJO2TI5KbsGvQNglgVAnWLUoic2m2I_to9tTz9XnfdcaccAEkZ2ODzAEX1fTXY_66v4hj06jNQ3WP4I0Mnk3YZeasDW4d4ydECMNvx0sOoNi68WbwO7vmiAqgXJNze5BQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.517,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-090",
+          "prompt": "What is `async`/`await` for in Python?",
+          "options": [
+            "Multi-threading",
+            "Writing concurrent code that can wait on I/O without blocking — used with asyncio for async programs",
+            "Database queries only",
+            "Faster math operations"
+          ],
+          "answer_commit": "hmac-sha256:b95cab05f46cff294ae83dc6279d5a36",
+          "explanation_enc": "aes-256-gcm.v1:naQSa421dJmr1fN-:ZTIFkJ3sY3Fd50KG1ZGmz04gp5OdAjc-4FaxXTY-xqyOXtyRSz1PgU3giiEeVwEUoEHxqFeT5pRtzgXDQ-av_LzKgn2Sp6DLhXDwb9OYGaNwVt-cxVHuIcs8WTwIzjRCPKngzrd4LHUk5VuwyIZGGzdu0eOigS3Vyl-P",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.545,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Best practices and pitfalls",
+      "skill_id": "rfv.skill.python-fundamentals.19-best-practices-and-pitfalls",
+      "items": [
+        {
+          "id": "py-091",
+          "prompt": "Why is `def f(items=[])` a CLASSIC BUG?",
+          "options": [
+            "It's slower than lists",
+            "It causes a syntax error",
+            "Lists can't be defaults",
+            "Default mutable arguments persist across calls — items keeps growing between calls"
+          ],
+          "answer_commit": "hmac-sha256:a87e2fe590ef471c264b488cf9efc805",
+          "explanation_enc": "aes-256-gcm.v1:3tYTLMgGdCU2Je4-:4GP5HjgNfkGKmE8GGAU3KlqP4KGMWrbR_O-t-4q3Vu_QAVRLuMWSImzTl07EGyXrJ1-DW2V8_HlXe5d3hl8LWRSqJwQTJn_j94DVsCH9lYxa77oIGTtmtEdyRDnkMnSfL7IiMxBSth_ypdD9_jM8MAx838E",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "judgement_required",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.417,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-092",
+          "prompt": "What's a 'truthy' and 'falsy' value in Python?",
+          "options": [
+            "Only None is falsy",
+            "Only True and False",
+            "There are no truthy/falsy values",
+            "Falsy: False, None, 0, '', [], {}, set(). Everything else is truthy."
+          ],
+          "answer_commit": "hmac-sha256:472ffb7336470ea9395d96ea534b2d78",
+          "explanation_enc": "aes-256-gcm.v1:EZUF3Lu9EY-V7D4b:RVrJ6EzgUcNqUGc_GQNYGgmeZUWkWBvSp8-x1e20hAw_cp3P9wlEc6Tp410jYKtRZ-4nNy7f6gRaBclklr5TtODneLAHw4Lljcd621qYArqlCyCIYEl-M24goUJR-Bc7vqEdtsYY5uj3HcTnl6hegrzj2dNhTqBmC-l8hnX1fmmp6qGkXiNscLJ7DQly7Ew",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": []
+        },
+        {
+          "id": "py-093",
+          "prompt": "What's the DIFFERENCE between `==` and `is`?",
+          "options": [
+            "== compares values; `is` checks identity (same object in memory)",
+            "== only works on numbers",
+            "is is for strings only",
+            "They're identical"
+          ],
+          "answer_commit": "hmac-sha256:9d1390f3b7e006e6fc1571f0cd4547bb",
+          "explanation_enc": "aes-256-gcm.v1:b7z0wNcATdv0Y_if:P4EMgFCjq7b_AWbWspukNOQzwWWfdJ839zdfkBnGVMlzkBNH25L0TaXGCBGDS_ru7REiPkO4-XbRvK9sd6l158YWEcU9ZfNyLgZnfUc-C4Xllkj7761Bw2lu1cokViBs8KTeQlEOliCBq73iZ15sLjjcGd9yhZArKqIDc6Ir3jhoFpz0aTN09NfVmF9pfrtg1INw9W40S8V2Olik0JADdeQfWzA5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.667,
+          "findings": []
+        },
+        {
+          "id": "py-094",
+          "prompt": "Why use a LINTER and FORMATTER for Python?",
+          "options": [
+            "Required by Python",
+            "Catch bugs early, enforce consistent style — tools: Ruff (fast linter), Black (formatter), mypy (type checker)",
+            "Only for large teams",
+            "It's deprecated"
+          ],
+          "answer_commit": "hmac-sha256:f49e6fe908c14279ccd7fc1c0a0e2181",
+          "explanation_enc": "aes-256-gcm.v1:jF8r6X07KItWMpCf:GE8mzQ-cOciSg7LRpVLW7t0nsgzULlyAR41XMlUGqAAXdtlQnxK-cX8H-hPt9CzmuKwbFarNf8JftlX9dWhGZLJ_IkNmm3tC8ZEXUykfdcvdvJ9-4Ya0B-ui0NxukSLHkU7i2e91p0H9AT1nVDK5mZnr3CpEobvZD-A9oA9lCPA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-095",
+          "prompt": "What's a HEALTHY rule for Python imports?",
+          "options": [
+            "All imports anywhere",
+            "Only at the bottom of files",
+            "One import per line is forbidden",
+            "Group: stdlib, third-party, local — separated by blank lines (PEP 8)"
+          ],
+          "answer_commit": "hmac-sha256:07dfe0567c0adf971b6b0059d064bc5d",
+          "explanation_enc": "aes-256-gcm.v1:AsI-RlwIHcWkLexq:jA1sRT5rGujHqEeyt-bUeYbRVqoSNgSSp_ypdLwoeZIn0CZlzXlCMwUHRkH1iMOpRm_7OTTeZzceVHijBl-QCUHylb3TiQ2MNzfah4rdwCiks5ZhxGwBgafuo7guYoxmfSo0DxS3N6sIx2p8MrS89-lmulnPrQBTtfvZNQpQU5c-NOppicFCejmasA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Getting better at Python",
+      "skill_id": "rfv.skill.python-fundamentals.20-getting-better-at-python",
+      "items": [
+        {
+          "id": "py-096",
+          "prompt": "What's the BEST way to learn Python deeply?",
+          "options": [
+            "Only watch tutorial videos",
+            "Build real projects, read the official docs, study other people's clean code, contribute to open source",
+            "Memorize syntax tables",
+            "Avoid documentation"
+          ],
+          "answer_commit": "hmac-sha256:5c483da3f7dec8cc545714e6c5119e5b",
+          "explanation_enc": "aes-256-gcm.v1:LcMEGAswyHQquLzq:lCXdPH9xnwWYC2RyjbQz1pmssXmPqdIMBFgdkZKLUHkgVVuINPohw5r98eZ7h7JYWUuMZGBM5dcUgPSewdx9AszJYeDttgkynURO1y9RVHDjTqB1RGt0pfHShB2g5JbRy2cHLDMYb_wYyJVmBlTu_yENUOPA0yZMMh6cHur4GJbFKEGq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.962,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-097",
+          "prompt": "Which type of projects accelerate Python learning?",
+          "options": [
+            "Automate something annoying in your life — file renaming, web scraping, daily reports, API wrappers",
+            "Build only games",
+            "Wait until you know everything before building",
+            "Recreate the Python interpreter"
+          ],
+          "answer_commit": "hmac-sha256:30ad32fcdf5feafdf0ac7b2c92f30950",
+          "explanation_enc": "aes-256-gcm.v1:cptxj29S74NEMfvd:ZMBHXQURFWDyEdP4uCtBxvemE1EwoXSFoSikGBTptoy_psPIgDhM1tfoAQ1Q-zzp7IVYssp4KJqLh-1QPRGmFAgXINUNdqeUyhuYnXtsuhemv0-USszZxe-8zb_IJ9KGGSE5n08l_09iwnRwziMvwgSMP16Dqr0aIn0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.152,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-098",
+          "prompt": "Which Python skill UNLOCKS the most career value?",
+          "options": [
+            "Memorizing all built-ins",
+            "Working with data (pandas + SQL + a visualization library) — data is everywhere",
+            "Avoiding all libraries",
+            "Mastering metaclasses"
+          ],
+          "answer_commit": "hmac-sha256:7c6ac28343423bd66e98c19079a85e22",
+          "explanation_enc": "aes-256-gcm.v1:VUdPSFxd6f-fqjXq:L4lkGshljBl_dWvxw9_z7CxHvyZev_V7_s_a5_3OHzY3VcqXrMT9WMV7iBXkpZH6nRhbV63w5YnmEfrhx6w3blRRYO37Ec7wXQ1-Gr3rKFKmyGvndduDR0JDseoNRxcRTjWBU7jJJv_IEBBr__52KiDgxvF2Bsg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.292,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-099",
+          "prompt": "What's a great community for Python learners?",
+          "options": [
+            "r/learnpython, Real Python, Python Discord, Talk Python To Me podcast, Stack Overflow",
+            "Only academic conferences",
+            "Only commercial training programs",
+            "There is no Python community"
+          ],
+          "answer_commit": "hmac-sha256:60b6fb5736508c8df3fe663921ed9fb1",
+          "explanation_enc": "aes-256-gcm.v1:LH5-NslhQauZytCD:RvlAllI-xCsE8VNHpvxQ4jFN06RjPAVWCaLyf3Gtj_C1PWrG7PQszl2DXW9B0lmZJqEExKlAfPLhJ4X2-eCQuJEuUHAC4Ww71JNw1rnVWbEb4JI9qA42SoUxERmHV60LKR4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.576,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "py-100",
+          "prompt": "What's the MOST important meta-skill for Python long-term?",
+          "options": [
+            "Writing readable, maintainable code that others (and future you) can understand",
+            "Avoiding all libraries",
+            "Memorizing PEP numbers",
+            "Writing one-line solutions to everything"
+          ],
+          "answer_commit": "hmac-sha256:1fd559f80623868bdd4c000c1db37f85",
+          "explanation_enc": "aes-256-gcm.v1:Z8y5R89M0cPgUV5K:Vrnu9-DnwPKCYqkb1v6vdizOLHvz30B0cDVhj5iNjJ9GbgYySOHdEX88yfZvB4lNLcGsJl1htz6krbwJ_OCZnunDwEErg-lWBcVgEiZZ_cX2L_fR2vvQGiE9i1c-1qUYYMvYpQijmvF8A0bdTUzEYnZcS2y8g2HX7AHh9bjGJw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.975,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:bd159572136c8edcc51984c1ac26d45a2da12dd003e6c6d9ca5205b6965e66e6"
+}

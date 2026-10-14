@@ -1,0 +1,3425 @@
+{
+  "schema": "rfv.bank-manifest/2",
+  "bankVersion": "2.0.0",
+  "generatedAt": "2026-10-14T19:59:23.424Z",
+  "keyId": "1626f569",
+  "devSealed": true,
+  "sourceHash": "41c8dd15fe6ce59dadd63c14408603c633206f3235166b8847b6b2e5186dd6cf",
+  "topics": [
+    {
+      "id": "ai-productivity",
+      "title": "AI for Productivity",
+      "description": "Use AI tools to automate workflows, write faster, and ship more.",
+      "category": "AI",
+      "icon": "⚡",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.ai-productivity",
+      "credentialId": {
+        "foundation": "rfv.cred.ai-productivity.foundation",
+        "intermediate": "rfv.cred.ai-productivity.intermediate",
+        "advanced": "rfv.cred.ai-productivity.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 95,
+        "2": 5,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "AI productivity mindset",
+          "skillId": "rfv.skill.ai-productivity.01-ai-productivity-mindset",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Writing and content creation",
+          "skillId": "rfv.skill.ai-productivity.02-writing-and-content-creation",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Email and communication",
+          "skillId": "rfv.skill.ai-productivity.03-email-and-communication",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "AI for coding and development",
+          "skillId": "rfv.skill.ai-productivity.04-ai-for-coding-and-development",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "AI for research and learning",
+          "skillId": "rfv.skill.ai-productivity.05-ai-for-research-and-learning",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "AI for meetings and notes",
+          "skillId": "rfv.skill.ai-productivity.06-ai-for-meetings-and-notes",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "AI for data and spreadsheets",
+          "skillId": "rfv.skill.ai-productivity.07-ai-for-data-and-spreadsheets",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "AI for slides and presentations",
+          "skillId": "rfv.skill.ai-productivity.08-ai-for-slides-and-presentations",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Automation with no-code AI",
+          "skillId": "rfv.skill.ai-productivity.09-automation-with-no-code-ai",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "AI for design and visuals",
+          "skillId": "rfv.skill.ai-productivity.10-ai-for-design-and-visuals",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "AI for project management",
+          "skillId": "rfv.skill.ai-productivity.11-ai-for-project-management",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "AI prompt libraries and templates",
+          "skillId": "rfv.skill.ai-productivity.12-ai-prompt-libraries-and-templates",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Choosing the right AI model",
+          "skillId": "rfv.skill.ai-productivity.13-choosing-the-right-ai-model",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "AI integrations with existing tools",
+          "skillId": "rfv.skill.ai-productivity.14-ai-integrations-with-existing-tools",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Time management with AI",
+          "skillId": "rfv.skill.ai-productivity.15-time-management-with-ai",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Avoiding AI pitfalls",
+          "skillId": "rfv.skill.ai-productivity.16-avoiding-ai-pitfalls",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "AI for team collaboration",
+          "skillId": "rfv.skill.ai-productivity.17-ai-for-team-collaboration",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "AI security and data hygiene",
+          "skillId": "rfv.skill.ai-productivity.18-ai-security-and-data-hygiene",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Long-term AI productivity",
+          "skillId": "rfv.skill.ai-productivity.19-long-term-ai-productivity",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Building your AI workflow",
+          "skillId": "rfv.skill.ai-productivity.20-building-your-ai-workflow",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.ai-productivity.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.ai-productivity.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 5 reviewed item(s) available, 20 required; only 5/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.ai-productivity.advanced.v1",
+          "skillCoverage": {
+            "assessed": 5,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 5,
+        "provisional": 95,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 95,
+          "trivially_short_option": 6,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "cloud-basics",
+      "title": "Cloud Computing Basics",
+      "description": "AWS, Azure, GCP fundamentals. Compute, storage, networking, serverless, containers, deployment.",
+      "category": "Career",
+      "icon": "☁️",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.cloud-basics",
+      "credentialId": {
+        "foundation": "rfv.cred.cloud-basics.foundation",
+        "intermediate": "rfv.cred.cloud-basics.intermediate",
+        "advanced": "rfv.cred.cloud-basics.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 98,
+        "2": 2,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What cloud computing is",
+          "skillId": "rfv.skill.cloud-basics.01-what-cloud-computing-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Cloud service models",
+          "skillId": "rfv.skill.cloud-basics.02-cloud-service-models",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Cloud deployment models",
+          "skillId": "rfv.skill.cloud-basics.03-cloud-deployment-models",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Compute services",
+          "skillId": "rfv.skill.cloud-basics.04-compute-services",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Storage services",
+          "skillId": "rfv.skill.cloud-basics.05-storage-services",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Database services",
+          "skillId": "rfv.skill.cloud-basics.06-database-services",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Networking",
+          "skillId": "rfv.skill.cloud-basics.07-networking",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Identity and access management",
+          "skillId": "rfv.skill.cloud-basics.08-identity-and-access-management",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Containers and orchestration",
+          "skillId": "rfv.skill.cloud-basics.09-containers-and-orchestration",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "DevOps and deployment",
+          "skillId": "rfv.skill.cloud-basics.10-devops-and-deployment",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Monitoring and observability",
+          "skillId": "rfv.skill.cloud-basics.11-monitoring-and-observability",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Security in the cloud",
+          "skillId": "rfv.skill.cloud-basics.12-security-in-the-cloud",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Cost management",
+          "skillId": "rfv.skill.cloud-basics.13-cost-management",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Modern cloud-native patterns",
+          "skillId": "rfv.skill.cloud-basics.14-modern-cloud-native-patterns",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "AI and cloud",
+          "skillId": "rfv.skill.cloud-basics.15-ai-and-cloud",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Disaster recovery and high availability",
+          "skillId": "rfv.skill.cloud-basics.16-disaster-recovery-and-high-availability",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Getting started and careers",
+          "skillId": "rfv.skill.cloud-basics.17-getting-started-and-careers",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Common pitfalls and trade-offs",
+          "skillId": "rfv.skill.cloud-basics.18-common-pitfalls-and-trade-offs",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Future of cloud computing",
+          "skillId": "rfv.skill.cloud-basics.19-future-of-cloud-computing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Putting it all together",
+          "skillId": "rfv.skill.cloud-basics.20-putting-it-all-together",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.cloud-basics.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.cloud-basics.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.cloud-basics.advanced.v1",
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 2
+        }
+      }
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity Essentials",
+      "description": "Threats, defenses, password hygiene, phishing. Protect yourself and your users.",
+      "category": "Security",
+      "icon": "🛡️",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.cybersecurity",
+      "credentialId": {
+        "foundation": "rfv.cred.cybersecurity.foundation",
+        "intermediate": "rfv.cred.cybersecurity.intermediate",
+        "advanced": "rfv.cred.cybersecurity.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 93,
+        "2": 7,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What cybersecurity is",
+          "skillId": "rfv.skill.cybersecurity.01-what-cybersecurity-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Common threats",
+          "skillId": "rfv.skill.cybersecurity.02-common-threats",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Password security",
+          "skillId": "rfv.skill.cybersecurity.03-password-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Phishing and social engineering",
+          "skillId": "rfv.skill.cybersecurity.04-phishing-and-social-engineering",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Network security",
+          "skillId": "rfv.skill.cybersecurity.05-network-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Data protection",
+          "skillId": "rfv.skill.cybersecurity.06-data-protection",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Access control",
+          "skillId": "rfv.skill.cybersecurity.07-access-control",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Web application security",
+          "skillId": "rfv.skill.cybersecurity.08-web-application-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Software supply chain",
+          "skillId": "rfv.skill.cybersecurity.09-software-supply-chain",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Cloud security",
+          "skillId": "rfv.skill.cybersecurity.10-cloud-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Privacy and compliance",
+          "skillId": "rfv.skill.cybersecurity.11-privacy-and-compliance",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Incident response",
+          "skillId": "rfv.skill.cybersecurity.12-incident-response",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Endpoint and device security",
+          "skillId": "rfv.skill.cybersecurity.13-endpoint-and-device-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "AI and security",
+          "skillId": "rfv.skill.cybersecurity.14-ai-and-security",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Personal security hygiene",
+          "skillId": "rfv.skill.cybersecurity.15-personal-security-hygiene",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Security culture and people",
+          "skillId": "rfv.skill.cybersecurity.16-security-culture-and-people",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Security frameworks and standards",
+          "skillId": "rfv.skill.cybersecurity.17-security-frameworks-and-standards",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Career in cybersecurity",
+          "skillId": "rfv.skill.cybersecurity.18-career-in-cybersecurity",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Cybersecurity in business",
+          "skillId": "rfv.skill.cybersecurity.19-cybersecurity-in-business",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Future and emerging threats",
+          "skillId": "rfv.skill.cybersecurity.20-future-and-emerging-threats",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.cybersecurity.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.cybersecurity.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 1 reviewed item(s) available, 20 required; only 1/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.cybersecurity.advanced.v1",
+          "skillCoverage": {
+            "assessed": 1,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 99,
+          "distractor_contained_in_answer": 1,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "data-analysis",
+      "title": "Data Analysis Basics",
+      "description": "Mean, median, distributions, visualizations. Turn raw data into insights.",
+      "category": "Data",
+      "icon": "📊",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.data-analysis",
+      "credentialId": {
+        "foundation": "rfv.cred.data-analysis.foundation",
+        "intermediate": "rfv.cred.data-analysis.intermediate",
+        "advanced": "rfv.cred.data-analysis.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 91,
+        "2": 9,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What data analysis is",
+          "skillId": "rfv.skill.data-analysis.01-what-data-analysis-is",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Types of data",
+          "skillId": "rfv.skill.data-analysis.02-types-of-data",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Data sources and collection",
+          "skillId": "rfv.skill.data-analysis.03-data-sources-and-collection",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Data cleaning",
+          "skillId": "rfv.skill.data-analysis.04-data-cleaning",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Descriptive statistics",
+          "skillId": "rfv.skill.data-analysis.05-descriptive-statistics",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Distributions",
+          "skillId": "rfv.skill.data-analysis.06-distributions",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Correlation and causation",
+          "skillId": "rfv.skill.data-analysis.07-correlation-and-causation",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Comparing groups",
+          "skillId": "rfv.skill.data-analysis.08-comparing-groups",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Excel and spreadsheets",
+          "skillId": "rfv.skill.data-analysis.09-excel-and-spreadsheets",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Pandas (Python)",
+          "skillId": "rfv.skill.data-analysis.10-pandas-python",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Visualization fundamentals",
+          "skillId": "rfv.skill.data-analysis.11-visualization-fundamentals",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Charting best practices",
+          "skillId": "rfv.skill.data-analysis.12-charting-best-practices",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Visualization tools",
+          "skillId": "rfv.skill.data-analysis.13-visualization-tools",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Analytical thinking",
+          "skillId": "rfv.skill.data-analysis.14-analytical-thinking",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Storytelling with data",
+          "skillId": "rfv.skill.data-analysis.15-storytelling-with-data",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Common pitfalls",
+          "skillId": "rfv.skill.data-analysis.16-common-pitfalls",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Tools and ecosystem",
+          "skillId": "rfv.skill.data-analysis.17-tools-and-ecosystem",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Reproducibility and rigor",
+          "skillId": "rfv.skill.data-analysis.18-reproducibility-and-rigor",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Career and growth",
+          "skillId": "rfv.skill.data-analysis.19-career-and-growth",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Putting it all together",
+          "skillId": "rfv.skill.data-analysis.20-putting-it-all-together",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.data-analysis.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.data-analysis.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 7 reviewed item(s) available, 20 required; only 5/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.data-analysis.advanced.v1",
+          "skillCoverage": {
+            "assessed": 5,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 7,
+        "provisional": 93,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 91,
+          "trivially_short_option": 2,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing Fundamentals",
+      "description": "SEO, social, email, ads. The skills every freelancer and founder needs.",
+      "category": "Career",
+      "icon": "📣",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.digital-marketing",
+      "credentialId": {
+        "foundation": "rfv.cred.digital-marketing.foundation",
+        "intermediate": "rfv.cred.digital-marketing.intermediate",
+        "advanced": "rfv.cred.digital-marketing.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 95,
+        "2": 5,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What digital marketing is",
+          "skillId": "rfv.skill.digital-marketing.01-what-digital-marketing-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Marketing funnel",
+          "skillId": "rfv.skill.digital-marketing.02-marketing-funnel",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Search Engine Optimization (SEO)",
+          "skillId": "rfv.skill.digital-marketing.03-search-engine-optimization-seo",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Content marketing",
+          "skillId": "rfv.skill.digital-marketing.04-content-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Social media marketing",
+          "skillId": "rfv.skill.digital-marketing.05-social-media-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Email marketing",
+          "skillId": "rfv.skill.digital-marketing.06-email-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Paid advertising",
+          "skillId": "rfv.skill.digital-marketing.07-paid-advertising",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Conversion optimization",
+          "skillId": "rfv.skill.digital-marketing.08-conversion-optimization",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Analytics and measurement",
+          "skillId": "rfv.skill.digital-marketing.09-analytics-and-measurement",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Branding",
+          "skillId": "rfv.skill.digital-marketing.10-branding",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Copywriting basics",
+          "skillId": "rfv.skill.digital-marketing.11-copywriting-basics",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Influencer and creator marketing",
+          "skillId": "rfv.skill.digital-marketing.12-influencer-and-creator-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Affiliate and partnerships",
+          "skillId": "rfv.skill.digital-marketing.13-affiliate-and-partnerships",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Marketing in Pakistan and emerging markets",
+          "skillId": "rfv.skill.digital-marketing.14-marketing-in-pakistan-and-emerging-marke",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "AI in marketing",
+          "skillId": "rfv.skill.digital-marketing.15-ai-in-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Ethics and privacy",
+          "skillId": "rfv.skill.digital-marketing.16-ethics-and-privacy",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Strategy and planning",
+          "skillId": "rfv.skill.digital-marketing.17-strategy-and-planning",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Career in marketing",
+          "skillId": "rfv.skill.digital-marketing.18-career-in-marketing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Putting it all together",
+          "skillId": "rfv.skill.digital-marketing.19-putting-it-all-together",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Sustainable growth",
+          "skillId": "rfv.skill.digital-marketing.20-sustainable-growth",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.digital-marketing.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.digital-marketing.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.digital-marketing.advanced.v1",
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 4
+        }
+      }
+    },
+    {
+      "id": "generative-ai-basics",
+      "title": "Generative AI Basics",
+      "description": "Understand how LLMs work, what they can do, and where they fall short.",
+      "category": "AI",
+      "icon": "✨",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.generative-ai-basics",
+      "credentialId": {
+        "foundation": "rfv.cred.generative-ai-basics.foundation",
+        "intermediate": "rfv.cred.generative-ai-basics.intermediate",
+        "advanced": "rfv.cred.generative-ai-basics.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 88,
+        "2": 12,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What is Generative AI",
+          "skillId": "rfv.skill.generative-ai-basics.01-what-is-generative-ai",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Large Language Models (LLMs)",
+          "skillId": "rfv.skill.generative-ai-basics.02-large-language-models-llms",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Tokens and tokenization",
+          "skillId": "rfv.skill.generative-ai-basics.03-tokens-and-tokenization",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "How LLMs are trained",
+          "skillId": "rfv.skill.generative-ai-basics.04-how-llms-are-trained",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "The transformer architecture",
+          "skillId": "rfv.skill.generative-ai-basics.05-the-transformer-architecture",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Capabilities of generative AI",
+          "skillId": "rfv.skill.generative-ai-basics.06-capabilities-of-generative-ai",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Limitations of generative AI",
+          "skillId": "rfv.skill.generative-ai-basics.07-limitations-of-generative-ai",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Prompts and instructions",
+          "skillId": "rfv.skill.generative-ai-basics.08-prompts-and-instructions",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Generative AI tools landscape",
+          "skillId": "rfv.skill.generative-ai-basics.09-generative-ai-tools-landscape",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Multimodal AI",
+          "skillId": "rfv.skill.generative-ai-basics.10-multimodal-ai",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "AI agents and automation",
+          "skillId": "rfv.skill.generative-ai-basics.11-ai-agents-and-automation",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Retrieval-Augmented Generation (RAG)",
+          "skillId": "rfv.skill.generative-ai-basics.12-retrieval-augmented-generation-rag",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Safety and ethics",
+          "skillId": "rfv.skill.generative-ai-basics.13-safety-and-ethics",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Privacy and data",
+          "skillId": "rfv.skill.generative-ai-basics.14-privacy-and-data",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "AI for productivity",
+          "skillId": "rfv.skill.generative-ai-basics.15-ai-for-productivity",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Cost and access",
+          "skillId": "rfv.skill.generative-ai-basics.16-cost-and-access",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Working alongside AI",
+          "skillId": "rfv.skill.generative-ai-basics.17-working-alongside-ai",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "AI in business and creative work",
+          "skillId": "rfv.skill.generative-ai-basics.18-ai-in-business-and-creative-work",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "The future of generative AI",
+          "skillId": "rfv.skill.generative-ai-basics.19-the-future-of-generative-ai",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Getting started with AI",
+          "skillId": "rfv.skill.generative-ai-basics.20-getting-started-with-ai",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.generative-ai-basics.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.generative-ai-basics.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 13/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.generative-ai-basics.advanced.v1",
+          "skillCoverage": {
+            "assessed": 13,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 20,
+        "provisional": 80,
+        "rejected": 0,
+        "longestOptionBaseline": 0.96,
+        "servableBaseline": 0.96,
+        "approvedBaseline": 0.85,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 77,
+          "negative_phrasing_stem": 2,
+          "trivially_short_option": 3
+        }
+      }
+    },
+    {
+      "id": "git-github",
+      "title": "Git & GitHub Workflow",
+      "description": "Version control basics every developer must master. Branches, PRs, conflicts.",
+      "category": "Web Dev",
+      "icon": "🐙",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.git-github",
+      "credentialId": {
+        "foundation": "rfv.cred.git-github.foundation",
+        "intermediate": "rfv.cred.git-github.intermediate",
+        "advanced": "rfv.cred.git-github.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 79,
+        "2": 21,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What Git is",
+          "skillId": "rfv.skill.git-github.01-what-git-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Repositories and initialization",
+          "skillId": "rfv.skill.git-github.02-repositories-and-initialization",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Staging and committing",
+          "skillId": "rfv.skill.git-github.03-staging-and-committing",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Viewing changes and history",
+          "skillId": "rfv.skill.git-github.04-viewing-changes-and-history",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Branches",
+          "skillId": "rfv.skill.git-github.05-branches",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Merging",
+          "skillId": "rfv.skill.git-github.06-merging",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Rebasing",
+          "skillId": "rfv.skill.git-github.07-rebasing",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Remotes",
+          "skillId": "rfv.skill.git-github.08-remotes",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Undoing changes",
+          "skillId": "rfv.skill.git-github.09-undoing-changes",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Stashing",
+          "skillId": "rfv.skill.git-github.10-stashing",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "GitHub basics",
+          "skillId": "rfv.skill.git-github.11-github-basics",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Pull request workflow",
+          "skillId": "rfv.skill.git-github.12-pull-request-workflow",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": ".gitignore and configuration",
+          "skillId": "rfv.skill.git-github.13-gitignore-and-configuration",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Authentication and SSH",
+          "skillId": "rfv.skill.git-github.14-authentication-and-ssh",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Tags and releases",
+          "skillId": "rfv.skill.git-github.15-tags-and-releases",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Collaboration workflows",
+          "skillId": "rfv.skill.git-github.16-collaboration-workflows",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "GitHub Actions and CI",
+          "skillId": "rfv.skill.git-github.17-github-actions-and-ci",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Open source contribution",
+          "skillId": "rfv.skill.git-github.18-open-source-contribution",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Best practices and pitfalls",
+          "skillId": "rfv.skill.git-github.19-best-practices-and-pitfalls",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Going further with Git",
+          "skillId": "rfv.skill.git-github.20-going-further-with-git",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.git-github.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.git-github.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.git-github.advanced.v1",
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 31,
+        "provisional": 69,
+        "rejected": 0,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.88,
+        "approvedBaseline": 0.7419,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 64,
+          "trivially_short_option": 7,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "html-css",
+      "title": "HTML & CSS Fundamentals",
+      "description": "The building blocks of every website. Layouts, semantics, responsiveness.",
+      "category": "Web Dev",
+      "icon": "🎨",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.html-css",
+      "credentialId": {
+        "foundation": "rfv.cred.html-css.foundation",
+        "intermediate": "rfv.cred.html-css.intermediate",
+        "advanced": "rfv.cred.html-css.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 89,
+        "2": 11,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What HTML and CSS do",
+          "skillId": "rfv.skill.html-css.01-what-html-and-css-do",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "HTML document structure",
+          "skillId": "rfv.skill.html-css.02-html-document-structure",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Semantic HTML",
+          "skillId": "rfv.skill.html-css.03-semantic-html",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Links and navigation",
+          "skillId": "rfv.skill.html-css.04-links-and-navigation",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Images and media",
+          "skillId": "rfv.skill.html-css.05-images-and-media",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Forms and inputs",
+          "skillId": "rfv.skill.html-css.06-forms-and-inputs",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "CSS selectors",
+          "skillId": "rfv.skill.html-css.07-css-selectors",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 2
+        },
+        {
+          "index": 7,
+          "name": "The box model",
+          "skillId": "rfv.skill.html-css.08-the-box-model",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Colors, units, and typography",
+          "skillId": "rfv.skill.html-css.09-colors-units-and-typography",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Display and positioning",
+          "skillId": "rfv.skill.html-css.10-display-and-positioning",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Flexbox",
+          "skillId": "rfv.skill.html-css.11-flexbox",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "CSS Grid",
+          "skillId": "rfv.skill.html-css.12-css-grid",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Responsive design",
+          "skillId": "rfv.skill.html-css.13-responsive-design",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "CSS variables and theming",
+          "skillId": "rfv.skill.html-css.14-css-variables-and-theming",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 3
+        },
+        {
+          "index": 14,
+          "name": "Pseudo-classes and pseudo-elements",
+          "skillId": "rfv.skill.html-css.15-pseudo-classes-and-pseudo-elements",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Animations and transitions",
+          "skillId": "rfv.skill.html-css.16-animations-and-transitions",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Accessibility basics",
+          "skillId": "rfv.skill.html-css.17-accessibility-basics",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Modern CSS features",
+          "skillId": "rfv.skill.html-css.18-modern-css-features",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Modern CSS workflows",
+          "skillId": "rfv.skill.html-css.19-modern-css-workflows",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Best practices and pitfalls",
+          "skillId": "rfv.skill.html-css.20-best-practices-and-pitfalls",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.html-css.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.html-css.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 14/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.html-css.advanced.v1",
+          "skillCoverage": {
+            "assessed": 14,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 24,
+        "provisional": 71,
+        "rejected": 5,
+        "longestOptionBaseline": 0.92,
+        "servableBaseline": 0.9263,
+        "approvedBaseline": 0.8333,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 63,
+          "trivially_short_option": 11,
+          "duplicate_options": 11,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "javascript-essentials",
+      "title": "JavaScript Essentials",
+      "description": "The language of the web. Variables, functions, async, DOM — the must-knows.",
+      "category": "Web Dev",
+      "icon": "📜",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.javascript-essentials",
+      "credentialId": {
+        "foundation": "rfv.cred.javascript-essentials.foundation",
+        "intermediate": "rfv.cred.javascript-essentials.intermediate",
+        "advanced": "rfv.cred.javascript-essentials.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 75,
+        "2": 23,
+        "3": 2
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "Variables and declarations",
+          "skillId": "rfv.skill.javascript-essentials.01-variables-and-declarations",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Data types",
+          "skillId": "rfv.skill.javascript-essentials.02-data-types",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 4
+        },
+        {
+          "index": 2,
+          "name": "Operators",
+          "skillId": "rfv.skill.javascript-essentials.03-operators",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Functions",
+          "skillId": "rfv.skill.javascript-essentials.04-functions",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Scope and closures",
+          "skillId": "rfv.skill.javascript-essentials.05-scope-and-closures",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Arrays and array methods",
+          "skillId": "rfv.skill.javascript-essentials.06-arrays-and-array-methods",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 4
+        },
+        {
+          "index": 6,
+          "name": "Objects",
+          "skillId": "rfv.skill.javascript-essentials.07-objects",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 4
+        },
+        {
+          "index": 7,
+          "name": "Async fundamentals: Promises",
+          "skillId": "rfv.skill.javascript-essentials.08-async-fundamentals-promises",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Async/await",
+          "skillId": "rfv.skill.javascript-essentials.09-async-await",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "The DOM (Document Object Model)",
+          "skillId": "rfv.skill.javascript-essentials.10-the-dom-document-object-model",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Fetch and HTTP",
+          "skillId": "rfv.skill.javascript-essentials.11-fetch-and-http",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "ES6+ modern features",
+          "skillId": "rfv.skill.javascript-essentials.12-es6-modern-features",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 4
+        },
+        {
+          "index": 12,
+          "name": "Error handling",
+          "skillId": "rfv.skill.javascript-essentials.13-error-handling",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Truthy, falsy, and coercion",
+          "skillId": "rfv.skill.javascript-essentials.14-truthy-falsy-and-coercion",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 2
+        },
+        {
+          "index": 14,
+          "name": "Browser APIs",
+          "skillId": "rfv.skill.javascript-essentials.15-browser-apis",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "JSON and data",
+          "skillId": "rfv.skill.javascript-essentials.16-json-and-data",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 4
+        },
+        {
+          "index": 16,
+          "name": "Iteration",
+          "skillId": "rfv.skill.javascript-essentials.17-iteration",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Best practices and pitfalls",
+          "skillId": "rfv.skill.javascript-essentials.18-best-practices-and-pitfalls",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Tooling and environment",
+          "skillId": "rfv.skill.javascript-essentials.19-tooling-and-environment",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Working in real projects",
+          "skillId": "rfv.skill.javascript-essentials.20-working-in-real-projects",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.javascript-essentials.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.javascript-essentials.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 15/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.javascript-essentials.advanced.v1",
+          "skillCoverage": {
+            "assessed": 15,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 37,
+        "provisional": 55,
+        "rejected": 8,
+        "longestOptionBaseline": 0.81,
+        "servableBaseline": 0.837,
+        "approvedBaseline": 0.8919,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "trivially_short_option": 21,
+          "negative_phrasing_stem": 2,
+          "duplicate_options": 8,
+          "correct_option_length_outlier": 38,
+          "near_duplicate_stem": 3,
+          "duplicate_stem": 2
+        }
+      }
+    },
+    {
+      "id": "no-code-automation",
+      "title": "No-Code & Automation",
+      "description": "Make.com, Zapier, n8n. Build powerful workflows without writing code.",
+      "category": "Career",
+      "icon": "🔧",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.no-code-automation",
+      "credentialId": {
+        "foundation": "rfv.cred.no-code-automation.foundation",
+        "intermediate": "rfv.cred.no-code-automation.intermediate",
+        "advanced": "rfv.cred.no-code-automation.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 99,
+        "2": 1,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What no-code is",
+          "skillId": "rfv.skill.no-code-automation.01-what-no-code-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Automation fundamentals",
+          "skillId": "rfv.skill.no-code-automation.02-automation-fundamentals",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Popular automation platforms",
+          "skillId": "rfv.skill.no-code-automation.03-popular-automation-platforms",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "No-code app builders",
+          "skillId": "rfv.skill.no-code-automation.04-no-code-app-builders",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "No-code databases and data tools",
+          "skillId": "rfv.skill.no-code-automation.05-no-code-databases-and-data-tools",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "AI in no-code workflows",
+          "skillId": "rfv.skill.no-code-automation.06-ai-in-no-code-workflows",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Workflow design patterns",
+          "skillId": "rfv.skill.no-code-automation.07-workflow-design-patterns",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Forms, surveys, and data collection",
+          "skillId": "rfv.skill.no-code-automation.08-forms-surveys-and-data-collection",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Email and communication automation",
+          "skillId": "rfv.skill.no-code-automation.09-email-and-communication-automation",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "CRM and sales automation",
+          "skillId": "rfv.skill.no-code-automation.10-crm-and-sales-automation",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Internal tools and ops automation",
+          "skillId": "rfv.skill.no-code-automation.11-internal-tools-and-ops-automation",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "API basics for no-code",
+          "skillId": "rfv.skill.no-code-automation.12-api-basics-for-no-code",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Cost and scaling",
+          "skillId": "rfv.skill.no-code-automation.13-cost-and-scaling",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Reliability and monitoring",
+          "skillId": "rfv.skill.no-code-automation.14-reliability-and-monitoring",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Security and access control",
+          "skillId": "rfv.skill.no-code-automation.15-security-and-access-control",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Building businesses with no-code",
+          "skillId": "rfv.skill.no-code-automation.16-building-businesses-with-no-code",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Career paths in no-code",
+          "skillId": "rfv.skill.no-code-automation.17-career-paths-in-no-code",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Common pitfalls",
+          "skillId": "rfv.skill.no-code-automation.18-common-pitfalls",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "The future of no-code",
+          "skillId": "rfv.skill.no-code-automation.19-the-future-of-no-code",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Putting it all together",
+          "skillId": "rfv.skill.no-code-automation.20-putting-it-all-together",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.no-code-automation.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.no-code-automation.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.no-code-automation.advanced.v1",
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 1,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "prompt-engineering",
+      "title": "Prompt Engineering Fundamentals",
+      "description": "Master the art of communicating with AI models like ChatGPT, Claude, and Gemini.",
+      "category": "AI",
+      "icon": "🧠",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.prompt-engineering",
+      "credentialId": {
+        "foundation": "rfv.cred.prompt-engineering.foundation",
+        "intermediate": "rfv.cred.prompt-engineering.intermediate",
+        "advanced": "rfv.cred.prompt-engineering.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 83,
+        "2": 16,
+        "3": 1
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What is a prompt",
+          "skillId": "rfv.skill.prompt-engineering.01-what-is-a-prompt",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Zero-shot vs few-shot prompting",
+          "skillId": "rfv.skill.prompt-engineering.02-zero-shot-vs-few-shot-prompting",
+          "items": 5,
+          "approved": 5,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Chain-of-thought reasoning",
+          "skillId": "rfv.skill.prompt-engineering.03-chain-of-thought-reasoning",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Role and system prompts",
+          "skillId": "rfv.skill.prompt-engineering.04-role-and-system-prompts",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Output format control",
+          "skillId": "rfv.skill.prompt-engineering.05-output-format-control",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Iterative prompt refinement",
+          "skillId": "rfv.skill.prompt-engineering.06-iterative-prompt-refinement",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Hallucinations and accuracy",
+          "skillId": "rfv.skill.prompt-engineering.07-hallucinations-and-accuracy",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Context window management",
+          "skillId": "rfv.skill.prompt-engineering.08-context-window-management",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Temperature and sampling",
+          "skillId": "rfv.skill.prompt-engineering.09-temperature-and-sampling",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Prompt templates and variables",
+          "skillId": "rfv.skill.prompt-engineering.10-prompt-templates-and-variables",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Multi-turn conversations",
+          "skillId": "rfv.skill.prompt-engineering.11-multi-turn-conversations",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Tool use and function calling",
+          "skillId": "rfv.skill.prompt-engineering.12-tool-use-and-function-calling",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Image and vision prompting",
+          "skillId": "rfv.skill.prompt-engineering.13-image-and-vision-prompting",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Prompt safety and guardrails",
+          "skillId": "rfv.skill.prompt-engineering.14-prompt-safety-and-guardrails",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Model selection",
+          "skillId": "rfv.skill.prompt-engineering.15-model-selection",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Cost and token optimization",
+          "skillId": "rfv.skill.prompt-engineering.16-cost-and-token-optimization",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Prompt evaluation and testing",
+          "skillId": "rfv.skill.prompt-engineering.17-prompt-evaluation-and-testing",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Prompt patterns and frameworks",
+          "skillId": "rfv.skill.prompt-engineering.18-prompt-patterns-and-frameworks",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Production prompt engineering",
+          "skillId": "rfv.skill.prompt-engineering.19-production-prompt-engineering",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Emerging patterns and future trends",
+          "skillId": "rfv.skill.prompt-engineering.20-emerging-patterns-and-future-trends",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.prompt-engineering.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.prompt-engineering.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.prompt-engineering.advanced.v1",
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 35,
+        "provisional": 65,
+        "rejected": 0,
+        "longestOptionBaseline": 0.95,
+        "servableBaseline": 0.95,
+        "approvedBaseline": 0.8571,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 64,
+          "trivially_short_option": 2,
+          "negative_phrasing_stem": 2
+        }
+      }
+    },
+    {
+      "id": "python-fundamentals",
+      "title": "Python Fundamentals",
+      "description": "The world's most popular language. Syntax, data types, control flow, functions.",
+      "category": "Programming",
+      "icon": "🐍",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.python-fundamentals",
+      "credentialId": {
+        "foundation": "rfv.cred.python-fundamentals.foundation",
+        "intermediate": "rfv.cred.python-fundamentals.intermediate",
+        "advanced": "rfv.cred.python-fundamentals.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 89,
+        "2": 11,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What Python is",
+          "skillId": "rfv.skill.python-fundamentals.01-what-python-is",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Syntax and indentation",
+          "skillId": "rfv.skill.python-fundamentals.02-syntax-and-indentation",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 3
+        },
+        {
+          "index": 2,
+          "name": "Variables and basic types",
+          "skillId": "rfv.skill.python-fundamentals.03-variables-and-basic-types",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Strings",
+          "skillId": "rfv.skill.python-fundamentals.04-strings",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 4
+        },
+        {
+          "index": 4,
+          "name": "Lists",
+          "skillId": "rfv.skill.python-fundamentals.05-lists",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 4
+        },
+        {
+          "index": 5,
+          "name": "Dictionaries",
+          "skillId": "rfv.skill.python-fundamentals.06-dictionaries",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 3
+        },
+        {
+          "index": 6,
+          "name": "Tuples and sets",
+          "skillId": "rfv.skill.python-fundamentals.07-tuples-and-sets",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 4
+        },
+        {
+          "index": 7,
+          "name": "Control flow",
+          "skillId": "rfv.skill.python-fundamentals.08-control-flow",
+          "items": 5,
+          "approved": 5,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Functions",
+          "skillId": "rfv.skill.python-fundamentals.09-functions",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Modules and imports",
+          "skillId": "rfv.skill.python-fundamentals.10-modules-and-imports",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "File I/O",
+          "skillId": "rfv.skill.python-fundamentals.11-file-i-o",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Error handling",
+          "skillId": "rfv.skill.python-fundamentals.12-error-handling",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Object-oriented Python",
+          "skillId": "rfv.skill.python-fundamentals.13-object-oriented-python",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Iterators and generators",
+          "skillId": "rfv.skill.python-fundamentals.14-iterators-and-generators",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Working with the standard library",
+          "skillId": "rfv.skill.python-fundamentals.15-working-with-the-standard-library",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Virtual environments and pip",
+          "skillId": "rfv.skill.python-fundamentals.16-virtual-environments-and-pip",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Common Python libraries",
+          "skillId": "rfv.skill.python-fundamentals.17-common-python-libraries",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Modern Python features",
+          "skillId": "rfv.skill.python-fundamentals.18-modern-python-features",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Best practices and pitfalls",
+          "skillId": "rfv.skill.python-fundamentals.19-best-practices-and-pitfalls",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Getting better at Python",
+          "skillId": "rfv.skill.python-fundamentals.20-getting-better-at-python",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.python-fundamentals.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.python-fundamentals.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 15/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.python-fundamentals.advanced.v1",
+          "skillCoverage": {
+            "assessed": 15,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 35,
+        "provisional": 58,
+        "rejected": 7,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.9032,
+        "approvedBaseline": 0.8571,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 48,
+          "duplicate_options": 11,
+          "trivially_short_option": 13,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "react-basics",
+      "title": "React Basics",
+      "description": "Components, props, state, hooks. Build modern UIs with the most popular library.",
+      "category": "Web Dev",
+      "icon": "⚛️",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.react-basics",
+      "credentialId": {
+        "foundation": "rfv.cred.react-basics.foundation",
+        "intermediate": "rfv.cred.react-basics.intermediate",
+        "advanced": "rfv.cred.react-basics.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 71,
+        "2": 29,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What React is",
+          "skillId": "rfv.skill.react-basics.01-what-react-is",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "JSX",
+          "skillId": "rfv.skill.react-basics.02-jsx",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 4
+        },
+        {
+          "index": 2,
+          "name": "Components",
+          "skillId": "rfv.skill.react-basics.03-components",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Props",
+          "skillId": "rfv.skill.react-basics.04-props",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "State and useState",
+          "skillId": "rfv.skill.react-basics.05-state-and-usestate",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Conditional rendering",
+          "skillId": "rfv.skill.react-basics.06-conditional-rendering",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Lists and keys",
+          "skillId": "rfv.skill.react-basics.07-lists-and-keys",
+          "items": 5,
+          "approved": 3,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Event handling",
+          "skillId": "rfv.skill.react-basics.08-event-handling",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 3
+        },
+        {
+          "index": 8,
+          "name": "useEffect",
+          "skillId": "rfv.skill.react-basics.09-useeffect",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Hooks overview",
+          "skillId": "rfv.skill.react-basics.10-hooks-overview",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "useRef",
+          "skillId": "rfv.skill.react-basics.11-useref",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Context API",
+          "skillId": "rfv.skill.react-basics.12-context-api",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Forms and controlled inputs",
+          "skillId": "rfv.skill.react-basics.13-forms-and-controlled-inputs",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Fetching data",
+          "skillId": "rfv.skill.react-basics.14-fetching-data",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Performance and rendering",
+          "skillId": "rfv.skill.react-basics.15-performance-and-rendering",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Routing",
+          "skillId": "rfv.skill.react-basics.16-routing",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "State management at scale",
+          "skillId": "rfv.skill.react-basics.17-state-management-at-scale",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Common pitfalls",
+          "skillId": "rfv.skill.react-basics.18-common-pitfalls",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "React ecosystem and tooling",
+          "skillId": "rfv.skill.react-basics.19-react-ecosystem-and-tooling",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Modern React (Server Components, RSC)",
+          "skillId": "rfv.skill.react-basics.20-modern-react-server-components-rsc",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.react-basics.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.react-basics.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.react-basics.advanced.v1",
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 27,
+        "provisional": 70,
+        "rejected": 3,
+        "longestOptionBaseline": 0.97,
+        "servableBaseline": 0.9897,
+        "approvedBaseline": 0.963,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 66,
+          "trivially_short_option": 5,
+          "duplicate_options": 3,
+          "negative_phrasing_stem": 1
+        }
+      }
+    },
+    {
+      "id": "sql-databases",
+      "title": "SQL & Databases",
+      "description": "Query, join, filter, aggregate. The universal language of data.",
+      "category": "Data",
+      "icon": "🗄️",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.sql-databases",
+      "credentialId": {
+        "foundation": "rfv.cred.sql-databases.foundation",
+        "intermediate": "rfv.cred.sql-databases.intermediate",
+        "advanced": "rfv.cred.sql-databases.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 89,
+        "2": 11,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What SQL is",
+          "skillId": "rfv.skill.sql-databases.01-what-sql-is",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Tables, rows, columns",
+          "skillId": "rfv.skill.sql-databases.02-tables-rows-columns",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Basic SELECT",
+          "skillId": "rfv.skill.sql-databases.03-basic-select",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 4
+        },
+        {
+          "index": 3,
+          "name": "WHERE clause",
+          "skillId": "rfv.skill.sql-databases.04-where-clause",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Sorting and ordering",
+          "skillId": "rfv.skill.sql-databases.05-sorting-and-ordering",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Aggregation functions",
+          "skillId": "rfv.skill.sql-databases.06-aggregation-functions",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Joins",
+          "skillId": "rfv.skill.sql-databases.07-joins",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "INSERT, UPDATE, DELETE",
+          "skillId": "rfv.skill.sql-databases.08-insert-update-delete",
+          "items": 5,
+          "approved": 4,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Primary keys and indexes",
+          "skillId": "rfv.skill.sql-databases.09-primary-keys-and-indexes",
+          "items": 5,
+          "approved": 2,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Data types and constraints",
+          "skillId": "rfv.skill.sql-databases.10-data-types-and-constraints",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "Subqueries and CTEs",
+          "skillId": "rfv.skill.sql-databases.11-subqueries-and-ctes",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Window functions",
+          "skillId": "rfv.skill.sql-databases.12-window-functions",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Transactions",
+          "skillId": "rfv.skill.sql-databases.13-transactions",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Database design basics",
+          "skillId": "rfv.skill.sql-databases.14-database-design-basics",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Performance and query optimization",
+          "skillId": "rfv.skill.sql-databases.15-performance-and-query-optimization",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "NoSQL and alternatives",
+          "skillId": "rfv.skill.sql-databases.16-nosql-and-alternatives",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Security basics",
+          "skillId": "rfv.skill.sql-databases.17-security-basics",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Modern database trends",
+          "skillId": "rfv.skill.sql-databases.18-modern-database-trends",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Best practices",
+          "skillId": "rfv.skill.sql-databases.19-best-practices",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Getting better at SQL",
+          "skillId": "rfv.skill.sql-databases.20-getting-better-at-sql",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.sql-databases.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.sql-databases.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 13/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.sql-databases.advanced.v1",
+          "skillCoverage": {
+            "assessed": 13,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 28,
+        "provisional": 71,
+        "rejected": 1,
+        "longestOptionBaseline": 0.94,
+        "servableBaseline": 0.9495,
+        "approvedBaseline": 0.8214,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 65,
+          "duplicate_options": 1,
+          "trivially_short_option": 10,
+          "all_or_none_of_the_above": 1,
+          "negative_phrasing_stem": 2,
+          "distractor_contained_in_answer": 1
+        }
+      }
+    },
+    {
+      "id": "uiux-design",
+      "title": "UI/UX Design Principles",
+      "description": "Heuristics, typography, color, hierarchy. Design that users actually love.",
+      "category": "Design",
+      "icon": "🖌️",
+      "estimatedMinutes": 20,
+      "skillId": "rfv.skill.uiux-design",
+      "credentialId": {
+        "foundation": "rfv.cred.uiux-design.foundation",
+        "intermediate": "rfv.cred.uiux-design.intermediate",
+        "advanced": "rfv.cred.uiux-design.advanced"
+      },
+      "questionCount": 100,
+      "tierCounts": {
+        "1": 98,
+        "2": 2,
+        "3": 0
+      },
+      "skills": [
+        {
+          "index": 0,
+          "name": "What UI and UX are",
+          "skillId": "rfv.skill.uiux-design.01-what-ui-and-ux-are",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 1,
+          "name": "Design thinking process",
+          "skillId": "rfv.skill.uiux-design.02-design-thinking-process",
+          "items": 5,
+          "approved": 1,
+          "serviceable": 5
+        },
+        {
+          "index": 2,
+          "name": "Visual hierarchy",
+          "skillId": "rfv.skill.uiux-design.03-visual-hierarchy",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 3,
+          "name": "Color theory",
+          "skillId": "rfv.skill.uiux-design.04-color-theory",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 4,
+          "name": "Typography",
+          "skillId": "rfv.skill.uiux-design.05-typography",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 5,
+          "name": "Layout and spacing",
+          "skillId": "rfv.skill.uiux-design.06-layout-and-spacing",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 6,
+          "name": "Modern UI styles",
+          "skillId": "rfv.skill.uiux-design.07-modern-ui-styles",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 7,
+          "name": "Component design",
+          "skillId": "rfv.skill.uiux-design.08-component-design",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 8,
+          "name": "Interaction and microinteractions",
+          "skillId": "rfv.skill.uiux-design.09-interaction-and-microinteractions",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 9,
+          "name": "Accessibility (a11y)",
+          "skillId": "rfv.skill.uiux-design.10-accessibility-a11y",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 10,
+          "name": "UX heuristics",
+          "skillId": "rfv.skill.uiux-design.11-ux-heuristics",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 11,
+          "name": "Mobile design",
+          "skillId": "rfv.skill.uiux-design.12-mobile-design",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 12,
+          "name": "Information architecture",
+          "skillId": "rfv.skill.uiux-design.13-information-architecture",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 13,
+          "name": "Data visualization in UI",
+          "skillId": "rfv.skill.uiux-design.14-data-visualization-in-ui",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 14,
+          "name": "Landing page patterns",
+          "skillId": "rfv.skill.uiux-design.15-landing-page-patterns",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 15,
+          "name": "Design tools and workflow",
+          "skillId": "rfv.skill.uiux-design.16-design-tools-and-workflow",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 16,
+          "name": "Dark mode and theming",
+          "skillId": "rfv.skill.uiux-design.17-dark-mode-and-theming",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 17,
+          "name": "Working with developers and stakeholders",
+          "skillId": "rfv.skill.uiux-design.18-working-with-developers-and-stakeholders",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 18,
+          "name": "Career in UI/UX",
+          "skillId": "rfv.skill.uiux-design.19-career-in-ui-ux",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        },
+        {
+          "index": 19,
+          "name": "Putting it all together",
+          "skillId": "rfv.skill.uiux-design.20-putting-it-all-together",
+          "items": 5,
+          "approved": 0,
+          "serviceable": 5
+        }
+      ],
+      "levels": {
+        "foundation": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.uiux-design.foundation.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "intermediate": {
+          "available": true,
+          "blueprintId": "rfv.blueprint.uiux-design.intermediate.v1",
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        "advanced": {
+          "available": false,
+          "reason": "only 1 reviewed item(s) available, 20 required; only 1/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "blueprintId": "rfv.blueprint.uiux-design.advanced.v1",
+          "skillCoverage": {
+            "assessed": 1,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      },
+      "quality": {
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review",
+        "findingsByCode": {
+          "correct_option_length_outlier": 99,
+          "trivially_short_option": 1
+        }
+      }
+    }
+  ],
+  "totals": {
+    "topics": 15,
+    "questions": 1500,
+    "approved": 251,
+    "provisional": 1225,
+    "rejected": 24
+  }
+}

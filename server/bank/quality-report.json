@@ -1,0 +1,454 @@
+{
+  "generatedAt": "2026-10-14T19:59:23.424Z",
+  "keyId": "1626f569",
+  "topics": [
+    {
+      "topicId": "ai-productivity",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 95,
+          "2": 5,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "approved": 5,
+        "provisional": 95,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 95,
+          "trivially_short_option": 6,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "cloud-basics",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 98,
+          "2": 2,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 2
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "cybersecurity",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 93,
+          "2": 7,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 99,
+          "distractor_contained_in_answer": 1,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "data-analysis",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 91,
+          "2": 9,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "approved": 7,
+        "provisional": 93,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 91,
+          "trivially_short_option": 2,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "digital-marketing",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 95,
+          "2": 5,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 4
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "generative-ai-basics",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 88,
+          "2": 12,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 96,
+        "longestOptionBaseline": 0.96,
+        "servableBaseline": 0.96,
+        "approvedBaseline": 0.85,
+        "approved": 20,
+        "provisional": 80,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 77,
+          "negative_phrasing_stem": 2,
+          "trivially_short_option": 3
+        }
+      },
+      "longestBaseline": 0.96
+    },
+    {
+      "topicId": "git-github",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 79,
+          "2": 21,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 88,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.88,
+        "approvedBaseline": 0.7419,
+        "approved": 31,
+        "provisional": 69,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 64,
+          "trivially_short_option": 7,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 0.88
+    },
+    {
+      "topicId": "html-css",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 89,
+          "2": 11,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 92,
+        "longestOptionBaseline": 0.92,
+        "servableBaseline": 0.9263,
+        "approvedBaseline": 0.8333,
+        "approved": 24,
+        "provisional": 71,
+        "rejected": 5,
+        "findingsByCode": {
+          "correct_option_length_outlier": 63,
+          "trivially_short_option": 11,
+          "duplicate_options": 11,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 0.92
+    },
+    {
+      "topicId": "javascript-essentials",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 75,
+          "2": 23,
+          "3": 2
+        },
+        "longestOptionIsCorrect": 81,
+        "longestOptionBaseline": 0.81,
+        "servableBaseline": 0.837,
+        "approvedBaseline": 0.8919,
+        "approved": 37,
+        "provisional": 55,
+        "rejected": 8,
+        "findingsByCode": {
+          "trivially_short_option": 21,
+          "negative_phrasing_stem": 2,
+          "duplicate_options": 8,
+          "correct_option_length_outlier": 38,
+          "near_duplicate_stem": 3,
+          "duplicate_stem": 2
+        }
+      },
+      "longestBaseline": 0.81
+    },
+    {
+      "topicId": "no-code-automation",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 99,
+          "2": 1,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 100,
+          "trivially_short_option": 1,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 1
+    },
+    {
+      "topicId": "prompt-engineering",
+      "stats": {
+        "positionDistribution": [
+          99,
+          1,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 83,
+          "2": 16,
+          "3": 1
+        },
+        "longestOptionIsCorrect": 95,
+        "longestOptionBaseline": 0.95,
+        "servableBaseline": 0.95,
+        "approvedBaseline": 0.8571,
+        "approved": 35,
+        "provisional": 65,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 64,
+          "trivially_short_option": 2,
+          "negative_phrasing_stem": 2
+        }
+      },
+      "longestBaseline": 0.95
+    },
+    {
+      "topicId": "python-fundamentals",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 89,
+          "2": 11,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 88,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.9032,
+        "approvedBaseline": 0.8571,
+        "approved": 35,
+        "provisional": 58,
+        "rejected": 7,
+        "findingsByCode": {
+          "correct_option_length_outlier": 48,
+          "duplicate_options": 11,
+          "trivially_short_option": 13,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 0.88
+    },
+    {
+      "topicId": "react-basics",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 71,
+          "2": 29,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 97,
+        "longestOptionBaseline": 0.97,
+        "servableBaseline": 0.9897,
+        "approvedBaseline": 0.963,
+        "approved": 27,
+        "provisional": 70,
+        "rejected": 3,
+        "findingsByCode": {
+          "correct_option_length_outlier": 66,
+          "trivially_short_option": 5,
+          "duplicate_options": 3,
+          "negative_phrasing_stem": 1
+        }
+      },
+      "longestBaseline": 0.97
+    },
+    {
+      "topicId": "sql-databases",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 89,
+          "2": 11,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 94,
+        "longestOptionBaseline": 0.94,
+        "servableBaseline": 0.9495,
+        "approvedBaseline": 0.8214,
+        "approved": 28,
+        "provisional": 71,
+        "rejected": 1,
+        "findingsByCode": {
+          "correct_option_length_outlier": 65,
+          "duplicate_options": 1,
+          "trivially_short_option": 10,
+          "all_or_none_of_the_above": 1,
+          "negative_phrasing_stem": 2,
+          "distractor_contained_in_answer": 1
+        }
+      },
+      "longestBaseline": 0.94
+    },
+    {
+      "topicId": "uiux-design",
+      "stats": {
+        "positionDistribution": [
+          100,
+          0,
+          0,
+          0
+        ],
+        "tierCounts": {
+          "1": 98,
+          "2": 2,
+          "3": 0
+        },
+        "longestOptionIsCorrect": 100,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "findingsByCode": {
+          "correct_option_length_outlier": 99,
+          "trivially_short_option": 1
+        }
+      },
+      "longestBaseline": 1
+    }
+  ],
+  "totals": {
+    "topics": 15,
+    "questions": 1500,
+    "approved": 251,
+    "provisional": 1225,
+    "rejected": 24
+  }
+}

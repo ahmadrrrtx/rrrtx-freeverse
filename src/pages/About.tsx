@@ -3,71 +3,50 @@ import { PageShell } from '../components/layout/PageShell';
 import { Container } from '../components/atoms/Container';
 import { Button } from '../components/atoms/Button';
 import { SectionLabel, SectionHeading } from '../components/landing/SectionPrimitives';
+import { CATALOG_TOTALS, topicsWithLengthHeuristicRisk, topicsUnderQualityReview } from '../data/quizMeta';
+import { CREDENTIAL_DISCLOSURE } from '../../shared/levels';
 
 /**
- * /about — Honest manifesto.
- * Why this exists, who built it, what it is and isn't.
- * Direct, opinionated voice. No corporate-speak.
+ * /about — what this is, how it works, and what it does not prove.
+ *
+ * Every number on this page is read from the generated catalog, the
+ * manifest or the measured quality report — nothing is asserted that the
+ * repository cannot show you.
  */
 export function About() {
+  const underReview = topicsUnderQualityReview().length;
+  const risky = topicsWithLengthHeuristicRisk().length;
+
   return (
     <PageShell>
       <Container size="app">
         <div className="py-12 sm:py-20 space-y-20 sm:space-y-28">
-
           {/* HERO */}
           <section>
             <div className="font-mono text-[11px] uppercase tracking-widest text-fg-4">
               <span className="text-fg-5">// </span>about
             </div>
-            <h1 className="
-              mt-4 font-display font-black text-fg-0
-              text-[2.5rem] leading-[1] tracking-[-0.04em]
-              sm:text-[3.5rem]
-              lg:text-[5rem] lg:leading-[0.95] lg:tracking-[-0.045em]
-              max-w-[22ch]
-            ">
-              A free credential <span className="text-term-glow">that means something.</span>
+            <h1 className="mt-4 font-display font-black text-fg-0 text-[2.5rem] leading-[1] tracking-[-0.04em] sm:text-[3.5rem] lg:text-[5rem] lg:leading-[0.95] lg:tracking-[-0.045em] max-w-[22ch]">
+              A free credential <span className="text-term-glow">you can actually check.</span>
             </h1>
-            <p className="
-              mt-8 font-mono text-fg-2 leading-relaxed
-              text-base sm:text-lg
-              max-w-[40rem]
-            ">
-              Every certification platform on the internet has a catch — a paywall,
-              an upsell, a "premium" tier, a hidden cost at the moment you've already done the work.{' '}
-              <span className="text-term-glow">This one doesn't.</span>
+            <p className="mt-8 font-mono text-fg-2 leading-relaxed text-base sm:text-lg max-w-[42rem]">
+              <span className="text-fg-5">// </span>
+              No paywall, no upsell, no &ldquo;premium tier&rdquo;, no account. What this project does insist on is
+              being honest about its own limits: every credential page states exactly what was measured, how it was
+              measured, and what it therefore does not prove.
             </p>
           </section>
 
-          {/* WHAT THIS IS */}
+          {/* STATS */}
           <section>
-            <SectionLabel>what-this-is</SectionLabel>
-            <SectionHeading>
-              A real test. <span className="text-term-glow">A real cert.</span> No catch.
-            </SectionHeading>
-            <p className="mt-6 font-mono text-sm sm:text-base text-fg-3 leading-relaxed max-w-[44rem]">
-              RRRTX FreeVerse is 15 skill certifications across AI, web development, programming,
-              data, security, design, and modern career skills. Each has a pool of 100 hand-written
-              questions. You take 20 in 20 minutes under Secure Mode (full-screen, anti-cheat,
-              tab-lock). Pass with 80%+ and you get a cryptographically verifiable certificate
-              published to a public GitHub registry — forever.
-            </p>
-            <div className="
-              mt-10 grid grid-cols-1 sm:grid-cols-2
-              gap-px bg-bg-3 border border-bg-3
-            ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-bg-3 border border-bg-3">
               {STATS.map((s) => (
                 <div key={s.label} className="bg-bg-0 p-5 sm:p-6">
                   <div className="font-display font-black text-fg-0 text-3xl sm:text-4xl leading-none tracking-[-0.03em]">
                     {s.value}
                   </div>
-                  <div className="mt-2 font-mono text-[11px] uppercase tracking-widest text-fg-4">
-                    {s.label}
-                  </div>
-                  <p className="mt-3 font-mono text-xs text-fg-3 leading-relaxed">
-                    {s.body}
-                  </p>
+                  <div className="mt-2 font-mono text-[11px] uppercase tracking-widest text-fg-4">{s.label}</div>
+                  <p className="mt-3 font-mono text-xs text-fg-3 leading-relaxed">{s.body}</p>
                 </div>
               ))}
             </div>
@@ -77,49 +56,29 @@ export function About() {
           <section>
             <SectionLabel>why</SectionLabel>
             <SectionHeading>
-              The problem with <span className="text-term-glow">other platforms.</span>
+              Where the catch <span className="text-term-glow">usually is.</span>
             </SectionHeading>
             <ul className="mt-10">
               {PROBLEMS.map((p) => (
-                <li
-                  key={p.platform}
-                  className="
-                    grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7
-                    py-5 sm:py-6
-                    border-t border-bg-3 first:border-t-0
-                  "
-                >
+                <li key={p.title} className="grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-5 sm:py-6 border-t border-bg-3 first:border-t-0">
                   <span
                     aria-hidden="true"
-                    className="
-                      flex h-7 w-7 items-center justify-center mt-0.5
-                      border border-err-500/40 bg-err-500/10
-                      font-mono text-xs text-err-500
-                    "
+                    className="flex h-7 w-7 items-center justify-center mt-0.5 border border-err-500/40 bg-err-500/10 font-mono text-xs text-err-500"
                   >
                     ✗
                   </span>
                   <div>
                     <h3 className="font-display font-bold text-fg-0 text-base sm:text-lg leading-snug tracking-[-0.01em]">
-                      {p.platform}
+                      {p.title}
                     </h3>
-                    <p className="mt-2 font-mono text-sm text-fg-3 leading-relaxed">
-                      {p.problem}
-                    </p>
+                    <p className="mt-2 font-mono text-sm text-fg-3 leading-relaxed">{p.body}</p>
                   </div>
                 </li>
               ))}
-              <li className="
-                grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7
-                py-5 sm:py-6 border-t border-term-glow/30
-              ">
+              <li className="grid grid-cols-[auto_1fr] gap-x-5 sm:gap-x-7 py-5 sm:py-6 border-t border-term-glow/30">
                 <span
                   aria-hidden="true"
-                  className="
-                    flex h-7 w-7 items-center justify-center mt-0.5
-                    border border-term-glow/40 bg-term-soft
-                    font-mono text-xs text-term-glow
-                  "
+                  className="flex h-7 w-7 items-center justify-center mt-0.5 border border-term-glow/40 bg-term-soft font-mono text-xs text-term-glow"
                 >
                   ✓
                 </span>
@@ -128,8 +87,9 @@ export function About() {
                     RRRTX FreeVerse
                   </h3>
                   <p className="mt-2 font-mono text-sm text-fg-2 leading-relaxed">
-                    Take the test. Pass. Get the cert. Done. The only paywall is the 80% pass mark.
-                    Forever free, open source, and cryptographically verifiable.
+                    Free to take, free to retake, no card anywhere in the flow. Pass, and the server issues a signed
+                    credential that any third party can verify — and revoke — against a registry you can read. The
+                    weaknesses are published next to the results.
                   </p>
                 </div>
               </li>
@@ -138,134 +98,142 @@ export function About() {
 
           {/* HOW THIS WORKS */}
           <section>
-            <SectionLabel>how-it-actually-works</SectionLabel>
-            <SectionHeading>The technical guts.</SectionHeading>
-            <div className="
-              mt-10 grid grid-cols-1 md:grid-cols-2
-              gap-px bg-bg-3 border border-bg-3
-            ">
+            <SectionLabel>how-this-works</SectionLabel>
+            <SectionHeading>
+              The lifecycle, <span className="text-term-glow">end to end.</span>
+            </SectionHeading>
+            <ol className="mt-10 space-y-6 font-mono text-sm text-fg-3 leading-relaxed max-w-[46rem]">
+              <li>
+                <span className="text-fg-5">01 · </span>
+                <span className="text-fg-1">The server draws the items.</span> Your browser asks for an attempt; the
+                server picks the questions from a sealed bank by blueprint, shuffles the options for that attempt and
+                signs an attempt token that expires when the timer runs out.
+              </li>
+              <li>
+                <span className="text-fg-5">02 · </span>
+                <span className="text-fg-1">Grading happens on the server.</span> Answer keys and explanations never
+                enter the bundle. Your browser sends the options you chose; the server decides the score, the pass or
+                fail, and how much per-question feedback to disclose.
+              </li>
+              <li>
+                <span className="text-fg-5">03 · </span>
+                <span className="text-fg-1">Issuance requires a passing, server-signed result.</span> The credential id
+                is derived from the attempt itself, so a retry resolves to the same credential instead of creating a
+                second one, and the registry write can only ever create — never overwrite.
+              </li>
+              <li>
+                <span className="text-fg-5">04 · </span>
+                <span className="text-fg-1">Verification re-checks everything it can.</span> The record&rsquo;s Ed25519
+                signature is verified against the published issuer key, the revocation list is read on every lookup, and
+                an unreachable registry is reported as an outage — never as &ldquo;valid&rdquo;.
+              </li>
+            </ol>
+            <div className="mt-10">
+              <Link to="/verify">
+                <Button variant="ghost" size="md" cmd>
+                  try-verification →
+                </Button>
+              </Link>
+            </div>
+          </section>
+
+          {/* STACK */}
+          <section>
+            <SectionLabel>stack</SectionLabel>
+            <SectionHeading>
+              How it is <span className="text-term-glow">built.</span>
+            </SectionHeading>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-px bg-bg-3 border border-bg-3">
               {STACK.map((item) => (
-                <div key={item.title} className="bg-bg-0 p-5 sm:p-6">
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-term-glow mb-2">
+                <div key={item.tag} className="bg-bg-0 p-5 sm:p-6">
+                  <div className="font-mono text-[11px] uppercase tracking-widest text-term-glow">
+                    <span className="text-fg-5">// </span>
                     {item.tag}
                   </div>
-                  <h3 className="font-display font-bold text-fg-0 text-base leading-tight tracking-[-0.01em]">
+                  <h3 className="mt-3 font-display font-bold text-fg-0 text-base leading-snug tracking-[-0.01em]">
                     {item.title}
                   </h3>
-                  <p className="mt-2.5 font-mono text-xs text-fg-3 leading-relaxed">
-                    {item.body}
-                  </p>
+                  <p className="mt-2 font-mono text-xs text-fg-3 leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* HONEST LIMITS */}
+          {/* LIMITS */}
           <section>
-            <SectionLabel>honest-limits</SectionLabel>
+            <SectionLabel>limits</SectionLabel>
             <SectionHeading>
-              What this <span className="text-warn-500">is not.</span>
+              What it is <span className="text-err-500">not.</span>
             </SectionHeading>
-            <p className="mt-6 font-mono text-sm sm:text-base text-fg-3 leading-relaxed max-w-[40rem]">
-              Honesty matters more than marketing. Here's what RRRTX FreeVerse isn't trying to be:
-            </p>
-            <div className="mt-8 space-y-4">
-              {LIMITS.map((l) => (
-                <div
-                  key={l.title}
-                  className="border border-warn-500/20 bg-warn-500/[0.03] p-5"
-                >
-                  <h3 className="font-display font-bold text-fg-0 text-base leading-tight">
-                    {l.title}
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-px bg-bg-3 border border-bg-3">
+              {limits(underReview, risky).map((limit) => (
+                <div key={limit.title} className="bg-bg-0 p-5 sm:p-6">
+                  <h3 className="font-display font-bold text-fg-0 text-base leading-snug tracking-[-0.01em]">
+                    {limit.title}
                   </h3>
-                  <p className="mt-2 font-mono text-xs text-fg-3 leading-relaxed">
-                    {l.body}
-                  </p>
+                  <p className="mt-2 font-mono text-xs text-fg-3 leading-relaxed">{limit.body}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* WHO */}
+          {/* FOUNDER */}
           <section>
             <SectionLabel>who</SectionLabel>
             <SectionHeading>
-              Built by <span className="text-term-glow">Ahmad.</span>
+              Built by <span className="text-term-glow">one person.</span>
             </SectionHeading>
             <p className="mt-6 font-mono text-sm sm:text-base text-fg-3 leading-relaxed max-w-[44rem]">
-              Hi, I'm Muhammad Ahmad — an AI developer and automation engineer from Chiniot, Pakistan.
-              I built this because every "free certification" I found had a catch when it mattered most.
-              I wanted something that just <span className="text-fg-1">worked</span> — for me, for my friends,
-              for anyone learning anywhere.
+              Hi, I&rsquo;m Muhammad Ahmad — an AI developer and automation engineer from Chiniot, Pakistan. I built this
+              because every &ldquo;free certification&rdquo; I found had a catch at the moment it mattered most, and
+              because a certificate you cannot check is decoration.
             </p>
             <p className="mt-4 font-mono text-sm sm:text-base text-fg-3 leading-relaxed max-w-[44rem]">
-              The whole stack is open source — fork it, run your own, build on top of it.
-              The 1,500 questions, the secure mode logic, the cryptographic cert system,
-              the GitHub registry — all of it is public on my GitHub.
+              The whole stack is open source: the grading service, the signing code, the registry client, the item-bank
+              metadata, the quality report and the rewrite queue. The one thing that is not public is the answer key and
+              the sealing material — for obvious reasons.
             </p>
 
-            <div className="
-              mt-10 grid grid-cols-1 sm:grid-cols-2
-              gap-px bg-bg-3 border border-bg-3
-            ">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-px bg-bg-3 border border-bg-3">
               {LINKS.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="
-                    bg-bg-0 hover:bg-bg-1
-                    p-5 sm:p-6 flex items-center justify-between gap-4
-                    transition-colors duration-snap group
-                  "
+                  className="group bg-bg-0 hover:bg-bg-1 p-5 sm:p-6 transition-colors"
                 >
-                  <div className="min-w-0">
-                    <div className="font-mono text-[10px] uppercase tracking-widest text-fg-4 mb-1.5">
-                      {link.tag}
-                    </div>
-                    <div className="font-display font-bold text-fg-0 text-base leading-tight truncate group-hover:text-term-glow transition-colors duration-snap">
-                      {link.label}
-                    </div>
+                  <div className="font-mono text-[11px] uppercase tracking-widest text-fg-4">
+                    <span className="text-fg-5">// </span>
+                    {link.tag}
                   </div>
-                  <span
-                    aria-hidden="true"
-                    className="
-                      text-fg-5 text-lg shrink-0
-                      transition-all duration-fast
-                      group-hover:text-term-glow group-hover:translate-x-1
-                    "
-                  >
-                    →
-                  </span>
+                  <div className="mt-2 font-mono text-sm text-term-glow group-hover:underline break-all">
+                    {link.label}
+                  </div>
                 </a>
               ))}
             </div>
+
+            <p className="mt-8 font-mono text-xs text-fg-4 leading-relaxed max-w-[44rem]">
+              <span className="text-fg-5">// </span>
+              {CREDENTIAL_DISCLOSURE.issuerLegalLine} {CREDENTIAL_DISCLOSURE.accreditation}
+            </p>
           </section>
 
-          {/* CTA */}
-          <section className="border-t border-bg-3 pt-16 sm:pt-20">
-            <h2 className="
-              font-display font-black text-fg-0
-              text-3xl sm:text-4xl lg:text-5xl
-              leading-tight tracking-[-0.035em] max-w-[20ch]
-            ">
-              Earn one. <span className="text-term-glow">It's free.</span>
-            </h2>
-            <p className="mt-5 font-mono text-sm sm:text-base text-fg-3 max-w-md">
-              <span className="text-fg-5">// </span>
-              twenty minutes from now you could have a real, verifiable credential.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <section className="border-t border-bg-3 pt-10">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link to="/">
-                <Button variant="primary" size="lg" cmd>start-a-quiz →</Button>
+                <Button variant="primary" size="lg" cmd>
+                  browse-assessments →
+                </Button>
               </Link>
               <Link to="/verify">
-                <Button variant="ghost" size="lg" cmd>verify-a-cert</Button>
+                <Button variant="ghost" size="lg" cmd>
+                  verify-a-credential
+                </Button>
               </Link>
             </div>
           </section>
-
         </div>
       </Container>
     </PageShell>
@@ -273,118 +241,112 @@ export function About() {
 }
 
 // ─────────────────────────────────────────────────────────
-// Data
+// Data — every value is derived from the generated catalog
 // ─────────────────────────────────────────────────────────
 
 const STATS = [
   {
-    value: '15',
-    label: 'certifications',
-    body: 'AI, web dev, programming, data, design, security, modern career skills.',
+    value: String(CATALOG_TOTALS.topics),
+    label: 'skill assessments',
+    body: 'AI, web development, programming, data, security, design and modern career skills — each with its own published item-quality status.',
   },
   {
-    value: '1,500',
-    label: 'hand-written questions',
-    body: '100 per topic. Each test draws 20 randomly. Every attempt is unique.',
+    value: CATALOG_TOTALS.questions.toLocaleString('en-US'),
+    label: 'questions in the bank',
+    body: `${CATALOG_TOTALS.approvedItems} have passed every automated quality check and ${CATALOG_TOTALS.provisionalItems} are served but queued for a human rewrite. The numbers are published, not estimated.`,
   },
   {
-    value: '80%',
-    label: 'to pass',
-    body: 'Same standard for everyone. No tiers, no easy mode, no skill levels.',
+    value: `${CATALOG_TOTALS.levels} levels`,
+    label: 'per topic',
+    body: 'Foundation and Intermediate are open for every topic; Advanced opens where the reviewed item pool covers its blueprint — and tells you which skill areas are still missing.',
   },
   {
     value: '$0',
-    label: 'forever',
-    body: 'No paywall, no upsell, no premium tier. The cert is the deliverable, not the upsell.',
+    label: 'paywall',
+    body: 'No card, no upsell, no premium tier, no account. The pass mark is the only gate.',
   },
 ];
 
 const PROBLEMS = [
   {
-    platform: 'Coursera',
-    problem: '$49/month — and the "certificate" is paywalled separately. Free audit doesn\'t include the cert.',
+    title: 'The paywall at the finish line.',
+    body: 'The course is free until the moment you want proof of it. Charging for a credential is a legitimate business — doing it after the work is done, without saying so up front, is not.',
   },
   {
-    platform: 'Alison',
-    problem: '€20-€50 per cert. The course is free, but the only proof you completed it costs real money — discovered after you finish the work.',
+    title: 'A certificate nobody can check.',
+    body: 'A PDF is a picture. If there is no way for a third party to look it up and confirm it is still valid — and not revoked — then it is decoration.',
   },
   {
-    platform: 'CodeAlpha',
-    problem: 'Asks for ₹500 after you submit your final task. Branded as a "free internship" until the moment you want the certificate.',
-  },
-  {
-    platform: 'Simplilearn / SkillUp',
-    problem: 'Free certs, but the entire platform is a lead funnel for $1,000+ bootcamps. You\'re the product.',
+    title: 'Claims the project cannot support.',
+    body: '“Accredited”, “employer-recognised”, “expert-level”, “uncheatable”. A twenty-question multiple-choice test taken at home without proctoring cannot support any of those words.',
   },
 ];
 
 const STACK = [
   {
-    tag: 'frontend',
-    title: 'Static site on Vercel',
-    body: 'Vite + React + TypeScript + Tailwind. No backend server. The entire app is static files. 80KB initial bundle.',
+    tag: 'client',
+    title: 'Static Vite + React app',
+    body: 'The browser renders the assessment and collects your choices. It never holds an answer key, never computes a score and never decides whether you passed.',
   },
   {
-    tag: 'questions',
-    title: 'Versioned JSON in the repo',
-    body: '15 quiz files in /src/quizzes. Sub-pool randomization picks 20 of 100 each attempt — virtually unique every time.',
+    tag: 'items',
+    title: 'Sealed item bank on the server',
+    body: 'Items are sealed with a keyed commitment over each answer and an encrypted explanation. The build refuses to ship a topic whose seal does not verify, and the bundle check fails if answer data ever appears in the client output.',
+  },
+  {
+    tag: 'grading',
+    title: 'Server-authoritative grading',
+    body: 'A signed attempt token binds the items, the deadline and the recipient. Grading recomputes the score from the private key, applies the pass mark for the level, and decides what feedback to disclose.',
   },
   {
     tag: 'crypto',
-    title: 'SHA-256 cert IDs',
-    body: 'Cert ID = hash(name + email + quiz + score + date + integrity + secret salt). Tampering with any field breaks the hash. Verifiable from the ID alone.',
+    title: 'Ed25519-signed records',
+    body: 'The credential record is signed over its canonical JSON with an Ed25519 key held server-side; the public key is published so anyone can verify the signature offline.',
   },
   {
     tag: 'registry',
-    title: 'Public GitHub repository',
-    body: 'Every cert is a JSON file at /certs/YYYY/MM/RFV-...json. Anyone can audit. We can\'t silently revoke or edit.',
+    title: 'Public registry with revocation',
+    body: 'Records live in a public GitHub repository, one JSON file per credential, created once and never overwritten. A revocation list is checked on every verification.',
   },
   {
-    tag: 'security',
-    title: 'Browser-level Secure Mode',
-    body: 'Full-screen lock, tab-switch detection, copy/paste block, dev-tools detection. Modeled on HackerRank Secure Mode. Integrity is baked into the cert hash.',
-  },
-  {
-    tag: 'storage',
-    title: 'localStorage + sessionStorage',
-    body: 'Your profile, certs, and quiz history live in your browser. Export/import to sync across devices. Zero user accounts, zero data collection.',
+    tag: 'privacy',
+    title: 'Minimal, pseudonymous storage',
+    body: 'The credential holds your display name and a salted pseudonymous reference — never your email address. Retake history lives in a pseudonymous file capped at 25 entries.',
   },
 ];
 
-const LIMITS = [
-  {
-    title: 'Not an accredited degree.',
-    body: 'This is a skill badge. It demonstrates you passed a real test. It is not equivalent to a university credential or a regulated professional certification.',
-  },
-  {
-    title: 'Not webcam-proctored.',
-    body: 'Secure Mode is browser-level (like HackerRank\'s Secure Mode, not their Proctor Mode). We don\'t record your face or screen. Real cheaters with two devices can defeat any browser-only system — including this one.',
-  },
-  {
-    title: 'Not an alternative to deep learning.',
-    body: 'Passing a 20-question MCQ test proves you know the topic well enough to recognize correct answers. It doesn\'t replace months of building real things. Use the cert as one signal, not the only one.',
-  },
-];
+function limits(underReview: number, risky: number) {
+  return [
+    {
+      title: 'Not an accredited qualification.',
+      body: `${CREDENTIAL_DISCLOSURE.accreditation} It is a record that you passed a specific assessment on a specific date.`,
+    },
+    {
+      title: 'Not proctored.',
+      body: 'Secure Mode records browser signals — fullscreen exits and tab switches — and those are self-reported by the browser. It cannot see a second device, a second monitor or a screenshot. Nobody is accused automatically; a human reviews any flag.',
+    },
+    {
+      title: 'Item quality is still being raised.',
+      body: `${underReview} of ${CATALOG_TOTALS.topics} topic banks are marked under review, and in ${risky} of them a "pick the longest option" strategy alone would still clear the pass mark. That measurement is published on the assessment page with the rewrite queue.`,
+    },
+    {
+      title: 'Identity is self-declared.',
+      body: `${CREDENTIAL_DISCLOSURE.identity} A credential proves that a passing attempt happened; it does not prove who was sitting there.`,
+    },
+    {
+      title: 'Not psychometrically calibrated.',
+      body: 'Items are not normed, equated or calibrated with item-response theory, and levels are item-selection tiers rather than validated competence bands. The score is the share of items you answered correctly — nothing more.',
+    },
+    {
+      title: 'Multiple-choice only.',
+      body: 'Recognising a correct answer is not the same as producing one. Use a credential here as one signal among many, never as the only one.',
+    },
+  ];
+}
 
 const LINKS = [
-  {
-    tag: 'github',
-    label: '@ahmadrrrtx',
-    href: 'https://github.com/ahmadrrrtx',
-  },
-  {
-    tag: 'linkedin',
-    label: 'linkedin.com/in/ahmadrrrtx',
-    href: 'https://www.linkedin.com/in/ahmadrrrtx',
-  },
-  {
-    tag: 'twitter / x',
-    label: '@ahmad_rrrtx',
-    href: 'https://x.com/ahmad_rrrtx',
-  },
-  {
-    tag: 'portfolio',
-    label: 'ahmad-multi-verse.lovable.app',
-    href: 'https://ahmad-multi-verse.lovable.app',
-  },
+  { tag: 'github', label: '@ahmadrrrtx', href: 'https://github.com/ahmadrrrtx' },
+  { tag: 'linkedin', label: 'linkedin.com/in/ahmadrrrtx', href: 'https://www.linkedin.com/in/ahmadrrrtx' },
+  { tag: 'twitter / x', label: '@ahmad_rrrtx', href: 'https://x.com/ahmad_rrrtx' },
+  { tag: 'portfolio', label: 'ahmad-multi-verse.lovable.app', href: 'https://ahmad-multi-verse.lovable.app' },
 ];

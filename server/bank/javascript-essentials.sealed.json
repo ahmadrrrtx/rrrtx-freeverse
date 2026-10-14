@@ -1,0 +1,3398 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "javascript-essentials",
+    "title": "JavaScript Essentials",
+    "description": "The language of the web. Variables, functions, async, DOM — the must-knows.",
+    "category": "Web Dev",
+    "icon": "📜",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "Variables and declarations",
+      "skill_id": "rfv.skill.javascript-essentials.01-variables-and-declarations",
+      "items": [
+        {
+          "id": "js-001",
+          "prompt": "Which keyword creates a variable whose value CAN be reassigned later?",
+          "options": [
+            "class",
+            "const",
+            "function",
+            "let"
+          ],
+          "answer_commit": "hmac-sha256:7aa6eb614e6f8df98ba25bac5158f0c9",
+          "explanation_enc": "aes-256-gcm.v1:4F6eDd9RasEwNJqK:BhGHdeZm33X2IA-zEA7oeYPvPJbZye3Fo53GYyL1UYTEZ4cTLZBeS3sBgYBHJ9i5WjzDeNRy5BOtjHMnRuNHkTRxsG0wnPz2aYPwzBd-DNWxuNlUjTQRPj_L9pyZ5__27jFIqb1JfFFCK2vdoRkYmzT_J_7Md4ckQVXFeAQ8kU_X1pLm7YwhQ4gf",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.375,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-002",
+          "prompt": "What happens if you reassign a const variable?",
+          "options": [
+            "The reassignment silently fails",
+            "A TypeError is thrown at runtime",
+            "The new value is accepted",
+            "JavaScript warns but allows it"
+          ],
+          "answer_commit": "hmac-sha256:ccfe52cd70023a1c0c3347d080abf743",
+          "explanation_enc": "aes-256-gcm.v1:0d0vQxu-v3qmTYPv:0ImiVc1KMZQuHLXOHYPW5509Z0cNvekDoHPVOUlps0yZTZw3ijgQfQAXNDn-5E_vffYQ_G5vaSZHrlGhvywJ-C4ydOIeA1SRcTOoTZuWmawLxLWIIJoKQmBbjxpTEy3AIsiFCOzg1GyZfFkMJnzVHqO6AoRW9zx_-zKJROdtAdOb2jc",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.032,
+          "findings": []
+        },
+        {
+          "id": "js-003",
+          "prompt": "What is the scope of a variable declared with 'let' inside a {} block?",
+          "options": [
+            "Module-scoped only",
+            "Block-scoped — only accessible inside that block",
+            "Function-scoped",
+            "Globally accessible"
+          ],
+          "answer_commit": "hmac-sha256:3a64f68e93911f458799942708751cd0",
+          "explanation_enc": "aes-256-gcm.v1:W-OZwwlvOEAW3O8I:QuQ9VpS7AvwyFpwnO9isbokcDOL9-jptQXxUWuFC5R7tHpP2MBltU7MrQIY2Xe3rQBbG0b5vfpzWqaDt-IbkMHPjCZZwq2iv7E3Dl3E8zCzsR8uFNAeFgNJvo37LyD_vN0ymCNP_azm8XlPrIqZLFlM6VMeBdW_ew1cdKV0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.526,
+          "findings": []
+        },
+        {
+          "id": "js-004",
+          "prompt": "What does this code log? `const arr = [1, 2]; arr.push(3); console.log(arr);`",
+          "options": [
+            "[1, 2]",
+            "TypeError because arr is const",
+            "[1, 2, 3]",
+            "[3]"
+          ],
+          "answer_commit": "hmac-sha256:601772faf0ead8638a58fa3bdb524ad8",
+          "explanation_enc": "aes-256-gcm.v1:5FyJtqTQlCvsLaGA:3TWgj_muGhmhuC1I61B6WexbCb8j_0kCKAVE7kPeGbeGHhXBFihNZ_oRIJuSNdv6Kj7TsQvgVNjsJDFmf78uHbLSMX5AhzcCU2tnIAL5L7QHL59a-ksKan3DwW8Go3twW5VVj6QNoD6Q2SHnFG46WlcEqD01VFX9XrkEX4sHamxwN_mkF6lkG1uJHCGO-g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.3,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-005",
+          "prompt": "Which declaration is HOISTED but throws ReferenceError if accessed before its declaration line?",
+          "options": [
+            "var",
+            "Nothing in JavaScript is hoisted",
+            "function declarations",
+            "let and const (the 'temporal dead zone')"
+          ],
+          "answer_commit": "hmac-sha256:bbc600a39b95e03bd8192aca9e147805",
+          "explanation_enc": "aes-256-gcm.v1:OYvSVH4Aw7gz_CPM:FU4KpYfztExsyHHmzGD_hQwkQfVlDLHmR49OPBjriVHCGAeovRXjraIzQEAwTkV2zPIUyYcPqlP8clhUJrnNbSAPTDhnFv3FGn7OluYEbT1U8Use7ND45pwZPjsFqUxaeIYavXp6seGZbGnbLAxVUckFqa6wBpPif9uo8_X81xqI5w",
+          "difficulty": {
+            "tier": 3,
+            "signals": [
+              "debugging_framing",
+              "code_snippet",
+              "long_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 3
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.25,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Data types",
+      "skill_id": "rfv.skill.javascript-essentials.02-data-types",
+      "items": [
+        {
+          "id": "js-006",
+          "prompt": "Which is NOT a primitive type in JavaScript?",
+          "options": [
+            "Boolean",
+            "Array",
+            "String",
+            "Number"
+          ],
+          "answer_commit": "hmac-sha256:a86e57b87771db7e9bb64ca610fa6283",
+          "explanation_enc": "aes-256-gcm.v1:LPWakf2qAsurgobz:6-bRX3FE12glxo7E418roXaEfwCJWBR3ujbUK4XcfTlBSCGm4g5kkrYgzLdqBIbjaHp-ZXhlBNFPoA8hhnncGx_H-DhiNdqxX1b4ZicE1GUBk5J-oUyIJ5V7XDeR_NVi9bHp5bU3SYE1tQ8Lm1UMDIYtjl2sFR3dTj4FwJq3PBO_ank",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.714,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-007",
+          "prompt": "What does `typeof null` return?",
+          "options": [
+            "'object'",
+            "TypeError",
+            "'undefined'",
+            "'null'"
+          ],
+          "answer_commit": "hmac-sha256:969dd38cfa744e090afb40f7e854b28a",
+          "explanation_enc": "aes-256-gcm.v1:De0ZwkqGNqURBUPn:-MDxBfwwNRLnRVzy6gf_9g_vR1GHuqtv22iVFOKCDFbPx5SZRCWfxBbZnf1Zl5akvCuV3cDfkr5RUZotyDEq5Vd_wUcxSgtdpMVoW9mJ9BY6a-ExY8-XcOoXwgs0vE_vQir6R1T1g8ipDu8SN3wd9ehiGNqu20irccqtgFpf37jrEDI-2ApmCw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.727,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-008",
+          "prompt": "Which value is FALSY in JavaScript?",
+          "options": [
+            "0",
+            "[]",
+            "'0'",
+            "{}"
+          ],
+          "answer_commit": "hmac-sha256:03374b5c6e0c64e1c6b26f768bd93201",
+          "explanation_enc": "aes-256-gcm.v1:0VWLuODjMfBECPvL:E0ZiSZnypr4Y_bcefKxzL-KLo8vkbHxfjEFu58vV1A78nrfsaHXkHrHQYe-yLYCwPKoIG5-7kiMD08rRDgxH2f8uk8cXuXvk-Krjyhw3Y82dAjCFWz5BDUHy27FtHyam1z4Q9hMjjtqoQSFfTMEcMXyNTR6va69HWOlR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.333,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-009",
+          "prompt": "What's the difference between `null` and `undefined`?",
+          "options": [
+            "null is an intentional 'no value'; undefined means a value was never assigned",
+            "null is a number, undefined is an object",
+            "null is for objects, undefined is for arrays",
+            "They are exactly the same"
+          ],
+          "answer_commit": "hmac-sha256:6fd23c3cab7367ce31d55b019b8f7ff2",
+          "explanation_enc": "aes-256-gcm.v1:z0dEL7Xgz3RdjQbL:-ij5OD03VQ6i7OtY6FjXjctUig2pneJHopSyFgncTStyzmkeeHpWBVmRhgBu6UoBmtcXZshTuNEKJKHq019Wi39FxMB2vP0Sw6T9sn8ALqj7egrADcT4BkJO0Rd6lcD1DH4t47vgOevxa0J0oHLFjmK5sLs_Ac3H6H4gTlhr89ujBMlsvBwKM-eFeUj8NYI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-010",
+          "prompt": "What is the result of `0.1 + 0.2 === 0.3`?",
+          "options": [
+            "undefined",
+            "true",
+            "TypeError",
+            "false (floating-point precision issue)"
+          ],
+          "answer_commit": "hmac-sha256:c6b9e951817ed2436730643192130c45",
+          "explanation_enc": "aes-256-gcm.v1:89Nr4T_DOCAX1VX7:GNGNaWsYhP-q_0EDOuBCSnGMifpecCnbJ1GE0wnxLoaSPktKePEABGDSiMaxUJZIHw2IBiXXsxO5sr7pS1BIGKo4R6r5q9Yr8pLeibWdgtUJwZcIsMz_5gyLYWmxYYsLuJBQchbu4XTqgNj3sdKcVLLG2RI4QqMiO6JT-d0RoVRtZA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.222,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Operators",
+      "skill_id": "rfv.skill.javascript-essentials.03-operators",
+      "items": [
+        {
+          "id": "js-011",
+          "prompt": "What's the difference between `==` and `===`?",
+          "options": [
+            "=== is faster but less accurate",
+            "=== checks value AND type without coercion; == coerces types before comparing",
+            "They are identical",
+            "== only works on numbers"
+          ],
+          "answer_commit": "hmac-sha256:176f4a447b70ef028b6e2f84c024ec71",
+          "explanation_enc": "aes-256-gcm.v1:Pj0kjtKj-VxqBKHW:gQ4XcdYLQuj7mV0KNG38BfS9T7JVbJQK29I6wRfjY7s6NLcIiu2PuY5sUw7Gw_Wq-zdwkJk3_w5XKyNxm_ukft9_VjzTRDCa1tnMkbCOqWifDrdv2KNH6rbwuVe7yCf3j4blW4UeruSuTHDRpkqfRVniyQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.484,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-012",
+          "prompt": "What does the `??` operator do?",
+          "options": [
+            "String concatenation",
+            "Nullish coalescing — returns the right side only if the left side is null or undefined",
+            "Bitwise XOR",
+            "Logical OR"
+          ],
+          "answer_commit": "hmac-sha256:ef7e56345218411aacbdbab17d718566",
+          "explanation_enc": "aes-256-gcm.v1:BQE5HZi8RXnz3M2n:uRNSvFENWMPdYYZndhCnt5KRdJ3SQuERDg_2MG6WJOLcY2qYXqEPnH_oQExRRayRrVQYrcq4uDhiwGiO29J0TDfDgrLe10AF2Tn1x085f2xWiqON5rD1mYR_v-Em4fxLd0eF1PIkYDBybTDuhsSZixh5r8OR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-013",
+          "prompt": "What does `user?.address?.city` do?",
+          "options": [
+            "Asks the user if they want to access city",
+            "Throws an error if user is undefined",
+            "Safely accesses nested properties, returning undefined if any link is null/undefined",
+            "Always returns null"
+          ],
+          "answer_commit": "hmac-sha256:31f084e2206521edf56b0bcf8c0cb0bb",
+          "explanation_enc": "aes-256-gcm.v1:2xfsQermTPlaQ4HF:UlGj1Sa8gfTPUGp0kP7qosk2FF33gZGW_emuYHozDju4L4PU4HNoISl6_ulkXWOHmPCS-4UmsHRMtZgUOk1XLoB-NQV6A5a-FmQh22yGQ8KapnGOjK-GyCvzH10CxO968xHRtkInxrJMdhJRkie1TjiNeJc377g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.049,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-014",
+          "prompt": "What does the spread operator `...` do in `[...arr1, ...arr2]`?",
+          "options": [
+            "Deletes the arrays",
+            "Expands arr1 and arr2 into individual elements of a new array",
+            "Comments out the arrays",
+            "Multiplies the arrays"
+          ],
+          "answer_commit": "hmac-sha256:459b3cc9c5f744856054cb72778edc8f",
+          "explanation_enc": "aes-256-gcm.v1:0NgSZBXsDLXfmgG5:cwaQblMhoRaoMCSDuliy_xUp0fIRHjZ65EEj3ybrR7tYhjTdPH16gVawlHr1VTGjVAh8znl4uELXibYDsiGdLe5oD7aCDzMlp1NBsYysGs-AyGsRGICB0-6P7SRwhkSNwgKrtuscNol2dMF3xb1Z5aOANxnRKFE9CxpjsKGCaasHK2MO6sqqEUub46EnXQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.652,
+          "findings": []
+        },
+        {
+          "id": "js-015",
+          "prompt": "What does `2 ** 3` evaluate to?",
+          "options": [
+            "23",
+            "8 (exponentiation: 2 to the power of 3)",
+            "5",
+            "6"
+          ],
+          "answer_commit": "hmac-sha256:f27fb76c09558495682d8787d4606777",
+          "explanation_enc": "aes-256-gcm.v1:3aY1BfN2wkqDad1u:V-YX3sTrKN_tKWJFoMfCo219W1SYBsiZHvsb0n-UmRj81ocy5eS5pT7dmT91vnaLkPXtmmXA4u9AZl5W17o6k7HRQpN8eNle3vlt4moPZbBHFBFp5YisEqs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 19.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "near_duplicate_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "near_duplicate_stem",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Functions",
+      "skill_id": "rfv.skill.javascript-essentials.04-functions",
+      "items": [
+        {
+          "id": "js-016",
+          "prompt": "Which is an arrow function?",
+          "options": [
+            "const add = (a, b) => a + b;",
+            "let add = a + b;",
+            "function add(a, b) { return a + b; }",
+            "const add = function(a, b) { return a + b; }"
+          ],
+          "answer_commit": "hmac-sha256:42a3e9597e577fceeccd4b6d6ba973b3",
+          "explanation_enc": "aes-256-gcm.v1:QPJLAejPCUbxTFAk:RkBK0RhEQJWTSxgJa4YzGSpbiyT4vdFtXpNCdfmIKlYZhJUfsh1rVq6hJgt3pndwvPz0mhapqGQgdA7lZwkkanntjxxLucmBgu9MR6FpjF3qzgaf-JA4ZjQyEtCY91GEavsQIL1I6Rtq8K7-9v1YYVEiBLcY9Kld4yHbeWc3OJsGgg7bMGPqGVeL67pWVH71IBvvIzMD_-YLY4LWdHq3VZlgCA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.636,
+          "findings": []
+        },
+        {
+          "id": "js-017",
+          "prompt": "What does this return? `function greet(name = 'World') { return 'Hello ' + name; }; greet();`",
+          "options": [
+            "TypeError",
+            "'Hello undefined'",
+            "'Hello World'",
+            "''"
+          ],
+          "answer_commit": "hmac-sha256:f41fae8d9290e26ef01391fb463457f6",
+          "explanation_enc": "aes-256-gcm.v1:ZYdxQCU3dBzNeWRr:miyWTJFvXTSK0dNYKcfxAtOHB83kDcgVAXLs27cdXMq6MX4RI5Fj7LJA5UJcSzCwe6X9PzBZDyynxsa6mpKtvHS0qxT2RfOfODQcdjG9THw0DcvRU2lv7PI1baeCwy9NZg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "long_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.765,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-018",
+          "prompt": "What is a 'callback function'?",
+          "options": [
+            "A built-in JavaScript method",
+            "A function that returns to a previous page",
+            "A function that calls itself",
+            "A function passed as an argument to another function, to be invoked later"
+          ],
+          "answer_commit": "hmac-sha256:9bafe36526d8ea74ef1e2b6bb222201b",
+          "explanation_enc": "aes-256-gcm.v1:6iQA9ZV3KykO-63Q:Q-Z4YuJ8_tveTRWisT9U2sFtEZRHCePvD-ntrpe0Rd32vPETuhNIsxRE18laBbUkhNp0oHZNhgOhUkf0t1F73IEmD4q4VxdRKZ368VqjWG5TDlaS3X4U2LmbpBDTYA1L6HjeZ1D0AYVbUaGA6tPDNMJ4knNrS5zee-NDiQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.738,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-019",
+          "prompt": "What is a 'pure function'?",
+          "options": [
+            "A function that always returns the same output for the same input and has no side effects",
+            "A function written in pure JavaScript",
+            "A function declared with the 'pure' keyword",
+            "Any function under 5 lines"
+          ],
+          "answer_commit": "hmac-sha256:59dfee6abd07a8231fe0e15ee8a35bc0",
+          "explanation_enc": "aes-256-gcm.v1:K978xZsRnlbZK_pf:vF-2_AP8REPX5HGyd50CvqapvjFp4KKW5sMaCfdSY1u4ax2DhUWeNHx9JmZhIuX7wqQ4StqWLShz6ravuBfkgYXXDL3EqQmO9P_WpNV88E1mQWeCcNQs7riiRcCfcEx-doVEtIYKzddzmqeAWR_tOkjASF2pe_-W9PKPRQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.07,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-020",
+          "prompt": "What does `arr.map(x => x * 2)` return?",
+          "options": [
+            "The original array, mutated",
+            "undefined",
+            "A NEW array with each element doubled",
+            "A single number"
+          ],
+          "answer_commit": "hmac-sha256:634d21ca6f8f83e5a91eaa5b89db902e",
+          "explanation_enc": "aes-256-gcm.v1:5FZKbyb8hr9M021C:8uSUca5_q2sZ8zZj-xqyj6B4NchhJtyxodWWZXmRhp82VlvtZsVqa6e5Raq-Jp6JGVZxuwpIDcn-BujM8CzA-5A6Qc28XfP5eqBKikPSM9hdvIMUshoI2ZecgOhC9XV7wbChAuGubar3IDMlQLvN9ri3s1woqs1oLZYHCb2z3k1CwtZrqqdSKw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.37,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Scope and closures",
+      "skill_id": "rfv.skill.javascript-essentials.05-scope-and-closures",
+      "items": [
+        {
+          "id": "js-021",
+          "prompt": "What is a 'closure' in JavaScript?",
+          "options": [
+            "A way to close a browser tab",
+            "A keyword to end a function",
+            "A function that 'remembers' variables from the scope where it was defined, even after that scope exits",
+            "A loop that closes itself"
+          ],
+          "answer_commit": "hmac-sha256:b14b1efd2b8a56966eff3ef5480bbf27",
+          "explanation_enc": "aes-256-gcm.v1:TNrgsz8DYyIHMOqG:rjIGowcM2mQcJFQU-1LAGq-TqvAYT_s85ne-nCYCnzsesNBvQnJduvTluqE5bjfxf1eelE-E7hirfug0qCwC8GWu6Xg0St09m40LUwON7x6WG78YWH0fheZCGeWiouSWF8gYlm0Fwcg-gojuoKH4f7xDWDca4ovWNjsyAOd4oj0E9he3Gf5fCQlCEbGzqdyfp3_9sw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-022",
+          "prompt": "What does this counter pattern demonstrate? `function makeCounter() { let n = 0; return () => ++n; }`",
+          "options": [
+            "A syntax error",
+            "A pure function with no state",
+            "A class constructor",
+            "A closure capturing private state n"
+          ],
+          "answer_commit": "hmac-sha256:c023ab0d56384e31741b61be34543b9e",
+          "explanation_enc": "aes-256-gcm.v1:nQUyqtwuuGhAfc6A:8zQKhkkB1gDU-Zx7bx4QsZO3rPFhwVnTgRgNNbcycwrCINy-lpk9EO08pr8IQzO755aPCYXVMoGUnjcqXYgF_kGWwxFF-LMiQr9T9VFViYeVWiRU0OhNiprZIR68ZuBvW2_r51DyCHj8-l8kBitt4eGh1v57wAFcioVJd_mOlVdAnjX0",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "long_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.207,
+          "findings": []
+        },
+        {
+          "id": "js-023",
+          "prompt": "What is 'lexical scope'?",
+          "options": [
+            "Scope is determined by where code is written, not where it's called from",
+            "Scope is random",
+            "Scope only applies to global variables",
+            "Scope is determined by who calls the function"
+          ],
+          "answer_commit": "hmac-sha256:4e4bd1cbe6779ac37e3e68c6dbd1028a",
+          "explanation_enc": "aes-256-gcm.v1:abcCGoBf7ht3P8iZ:e0Wf6_wFRI_rbzC5SUfH2_D5NQEeM2sMKBQEY_LwK1I0xRITx4PqPU-dHXMv1p4fds-s0whzOLnLNizWtr1MA8HWOAKSOKs5-y3E9TrxzyEo8XnGd8x-vjqszauI34W_3cE6jquj8B-xM9nZ_ZU29IA6EtyjHinWOd3M0ydS5OYQxrETFZuS",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-024",
+          "prompt": "What does the `this` keyword refer to inside a regular function called as `obj.method()`?",
+          "options": [
+            "The object before the dot — obj",
+            "The function itself",
+            "The global object always",
+            "undefined always"
+          ],
+          "answer_commit": "hmac-sha256:8fee4bbb63332fa9e017dd02967e2da8",
+          "explanation_enc": "aes-256-gcm.v1:7CtTkN0ea5HQY86P:xlRif2TYimA9OfkKgiQoo1r3zmdtzkcvFSYSTnDZTOvVcCvo0bm1gmRdx32TWVQFigw3r4N88rxLWqmfPI8cszsrVDvWOspq5T-sZ347ZLOXQ3wnelCbBIAUGdd3WWNfogwZry7KEj_xc58x2rLKLsqctDe8za9AtXnd4cU_5IEhDp-R92a3Of5R4u1_tCulGXioS_Q-v2Qiv4DWKjNG",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.292,
+          "findings": []
+        },
+        {
+          "id": "js-025",
+          "prompt": "Why don't arrow functions have their own `this`?",
+          "options": [
+            "It's a parser bug",
+            "They inherit `this` from the enclosing lexical scope, which avoids common bugs in callbacks",
+            "They're slower with this",
+            "They have a hidden this that's hard to access"
+          ],
+          "answer_commit": "hmac-sha256:61b4e27535f993199d428842679517cb",
+          "explanation_enc": "aes-256-gcm.v1:9UngH8Thh954kk99:q5l7FSV6QbltOJIzCiuc_LbliDXPEXnvVkskhJWC1wj8eOilyeMGAkN_FGwxS5cWk91VKirdAdx3Y3YOAsgQal-wKYRj5NmFbN6wCYY292Rd9LiTUhwa5sC8_YpAbQ145rYXXRTJua2nx702Dit9KZtFZSdCo80rsEBgnsyi6j-wmGCGmXZwAtZfA6ACRFFMW1GBhQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.022,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Arrays and array methods",
+      "skill_id": "rfv.skill.javascript-essentials.06-arrays-and-array-methods",
+      "items": [
+        {
+          "id": "js-026",
+          "prompt": "Which method REMOVES the last element from an array and returns it?",
+          "options": [
+            "push()",
+            "shift()",
+            "splice()",
+            "pop()"
+          ],
+          "answer_commit": "hmac-sha256:0916482ac6a67e6bc15078e989dd3fc5",
+          "explanation_enc": "aes-256-gcm.v1:h4KOy5rZlJFipTk3:0RCmfH2jkbAlHtvKeeIuKP22a0I5kZcBSCVFHlKaFvDpxpc1eGnadiAaMplnTn0eaWIrTP9TaXzj8Xf5jotOxa3-eX2zah9cJDP-GyMvUkuKrKxPVsJIOPwydbPKVW_inZDZ0VwZ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.625,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-027",
+          "prompt": "What does `[1,2,3,4].filter(x => x > 2)` return?",
+          "options": [
+            "[1, 2]",
+            "true",
+            "[3, 4]",
+            "2"
+          ],
+          "answer_commit": "hmac-sha256:847b093148646426dfb85d26ac341292",
+          "explanation_enc": "aes-256-gcm.v1:0B6zWs5wo56LNIrZ:2LIDdq9iFXSAK1bG_lAw6XuggbAsPhVTlKxPGKyyz6OsqWwcGKxFCJipRYh9qpqpDsTNUB1_NUOVm_Mi8chhxeRYZnZbaRw5VgzRzCkN0yAD-P1bjzcwQVjjE5b0yGfCcQ4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-028",
+          "prompt": "What does `[1,2,3].reduce((sum, n) => sum + n, 0)` return?",
+          "options": [
+            "[1, 2, 3]",
+            "[6]",
+            "6",
+            "undefined"
+          ],
+          "answer_commit": "hmac-sha256:7e3d36486e87ea89847302d3a9be3e40",
+          "explanation_enc": "aes-256-gcm.v1:MZtnfYT5_sFajv-i:NJJ3yub7TfRWFnM6bmES60bKiNRInihpSBKEP3DxpyU3-_m8otM9UOrbo2-nMJDneAHuAWrZ15gBMm7J0wR-5o3zJTYejc-3XMV7uxzLzQBvVZeZXIGGVTHEoOqeAqgDs7I51J8TnJTElVUrhE0q4ScSITCTXSqsbcWiNH3-4dCuxPagQVBaAdpfYYTXgKrf",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.111,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-029",
+          "prompt": "Which method finds the FIRST element matching a condition?",
+          "options": [
+            "find()",
+            "map()",
+            "filter()",
+            "forEach()"
+          ],
+          "answer_commit": "hmac-sha256:327323814054c7285cadc8e5d0e7cc18",
+          "explanation_enc": "aes-256-gcm.v1:U3C12vNrHENC-5SK:AuievWQBgnjEMCKk02do-XIS_pasVP7aSx3wQcUGY-N7FM_UHG-_SvMPxawsKN6xDTZcoSXJLE-NB7cWZiz3eOXkW8HWjqKQaVrKBjY72KmJN0kkbN3zrtH_1kIIr11a8bzksaX9zLU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.667,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-030",
+          "prompt": "What does the spread operator return when combining arrays? `const c = [...a, ...b];`",
+          "options": [
+            "A new array containing all elements of a followed by all elements of b",
+            "An array of two arrays: [a, b]",
+            "An error",
+            "The shorter of the two arrays"
+          ],
+          "answer_commit": "hmac-sha256:2d018e96da80981f4639fb5dcb302446",
+          "explanation_enc": "aes-256-gcm.v1:E-XD3rf3dEK4ikRa:87zTpx_xt3egTMoVI2P3X8LN3GcRwThmII3dOJXThg1zdxp6LZtmZT2somQjg1LrgD-LARuntEMdjYOegewqprz48GwcKulH8lWlWG2fslAQVUpOzxl0B8o5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Objects",
+      "skill_id": "rfv.skill.javascript-essentials.07-objects",
+      "items": [
+        {
+          "id": "js-031",
+          "prompt": "What does this code log? `const o = {a: 1}; const p = o; p.a = 2; console.log(o.a);`",
+          "options": [
+            "undefined",
+            "2",
+            "TypeError",
+            "1"
+          ],
+          "answer_commit": "hmac-sha256:c21a6aad2e8c575f45acbe2c427b41d8",
+          "explanation_enc": "aes-256-gcm.v1:rfb0TF0Lardkvrx4:H-MQ0anAgAag8Y_M0k6prYr78R7f3XIgoosUqGxfgNCf7uFvQiZ3Mvdau0UDEYmCd2BlpYjGhg83VPN3VNlX6imvoLdpqdzVbFIM95l89iY0DwaVDT7464k_ieZ-ZpewSUt892VuTv7nRdxO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.111,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-032",
+          "prompt": "Which is the CORRECT way to make a shallow copy of an object?",
+          "options": [
+            "{ ...original }",
+            "JSON.stringify(original)",
+            "Object.original()",
+            "= original"
+          ],
+          "answer_commit": "hmac-sha256:0a7c4faa80943e6ddb4490215813f288",
+          "explanation_enc": "aes-256-gcm.v1:ZGxWtv1tSFBzXC_L:nzl0oxXPSGMgodGWIExl_jyECdOSBzWOce6UFWxQTu_KP2q63-f62a8zjef0MZwxUIZA-fYDW8g8PfzpZv78uZBCIyg6PS95MXXEgOdGY_iQCDA2AqjninbXP_bX0RAvU-svFmKuGjjoTxfqsucoutjq1ta-",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.625,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "js-033",
+          "prompt": "What does destructuring do? `const {name, age} = user;`",
+          "options": [
+            "Creates a new user object",
+            "Throws an error",
+            "Extracts named properties from user into individual variables",
+            "Deletes properties from user"
+          ],
+          "answer_commit": "hmac-sha256:4793e69960859142c1403ddb2bb42a9b",
+          "explanation_enc": "aes-256-gcm.v1:_fe3dnlEyFfWTVLp:q7TYK3FaOTrvMRgu8-vRPGdUGkWpN8yXS1DoTYu3b7ihTfWAXGi0X_ljJNGAK5c23YfXNvKyiFiJHcygYs9-tJt5B-Wf-W-O4K3wb3ZdXHKNyazqeFnF3jVh8dXCLHPfn9mXTtfV3RCWjxvrXvbFvSKoYIY1BphpCt3i",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.179,
+          "findings": []
+        },
+        {
+          "id": "js-034",
+          "prompt": "What is shorthand property syntax? `const obj = { name };`",
+          "options": [
+            "Imports the name module",
+            "Equivalent to { name: name } — uses the variable name as both key and value",
+            "Creates an empty object",
+            "A TypeScript-only feature"
+          ],
+          "answer_commit": "hmac-sha256:cf5e99cf314ac8babd450629f551bf3c",
+          "explanation_enc": "aes-256-gcm.v1:ZCIYk9qJG6__T6DO:NjIf08LHWvXI46sXiVVqqXfL1r_NYRtVb-I8qwHCrfmMLZYIVBh8oZIR7bieMbTxPsFKbyvAL0owXclUlOjJwgQ_EBUEqXFxifP8foQJOQ7Dchb2fTsTUTd0EfgjojAzHM7uEVHUJ0x7rAUnoT7iDGiCdlyYgx8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-035",
+          "prompt": "How do you iterate over an object's KEYS?",
+          "options": [
+            "obj.forEach()",
+            "Object.keys(obj).forEach(k => ...)",
+            "Object iterates automatically",
+            "Array.from(obj)"
+          ],
+          "answer_commit": "hmac-sha256:e1dabf2001fb3bba858ea15f7c9ecbe2",
+          "explanation_enc": "aes-256-gcm.v1:MsLzGr0ik_BgEeGm:05akAfK0WLLG7MPmZ1brmM9vCFDv9YsrvawuLHhIqHl5bDud2dqN5B0KeW3zeWfG5mcud-K6bpHmGdHqQnz2CSzF7Qx4I3qZWms5wVapRAus3n5cvCTh9uNx8IGS65TxAyhpaAvYFUCfuxi1Oof-7RQDtyfj6yLJFDFT44rANQY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.172,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Async fundamentals: Promises",
+      "skill_id": "rfv.skill.javascript-essentials.08-async-fundamentals-promises",
+      "items": [
+        {
+          "id": "js-036",
+          "prompt": "What is a Promise in JavaScript?",
+          "options": [
+            "A synchronous data structure",
+            "A guarantee from JavaScript to run code",
+            "An object representing the eventual result (success or failure) of an asynchronous operation",
+            "A type of variable declaration"
+          ],
+          "answer_commit": "hmac-sha256:afca5b49ed7b760dd6795e2dd634281e",
+          "explanation_enc": "aes-256-gcm.v1:hHIM2UwtdkDIOdBF:QB84IJZnFGDchwrsOXv2i8uyE_Vh0J2Bfy3maP5s0f9Gj1CbL2SKCB0FiIZ2v_UjgiRMMountiwag5EiunSujrvdMTTK8z7qjIzwnDR4EHEbKZXSYcu7uZQE_YXc1k7rGt0khCaN01v1vhoEmi4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.359,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-037",
+          "prompt": "What are the three states of a Promise?",
+          "options": [
+            "Pending, fulfilled, rejected",
+            "True, false, null",
+            "Start, middle, end",
+            "Loading, done, error"
+          ],
+          "answer_commit": "hmac-sha256:41a23dd94ee7e6535b8c3f0728819b85",
+          "explanation_enc": "aes-256-gcm.v1:EeCv3c57rDuQ_kWx:MixkId2WJzM7lyaDdCiubpn8H9aryVGg-AbnIuXdabyn7tMZOMMaweQEs_NoHzbh9FnW5fTG4yL_0suKAgu4y-dyY5lHY2hK4PjaeKmnT-am1WJdivYLRHWJE1tBiXhAWHLCeJONvbxPiWd4l9-a6qzuTwEQYO4N-Cw_yKF-3tu25HnQKlqfRMuF5sIuhkfOMqZk130",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.4,
+          "findings": []
+        },
+        {
+          "id": "js-038",
+          "prompt": "What does .then() return?",
+          "options": [
+            "The original Promise",
+            "A new Promise — enabling chaining",
+            "undefined",
+            "The value passed to it"
+          ],
+          "answer_commit": "hmac-sha256:53b2eff8a7890e57eb6e303f5c5cf3ec",
+          "explanation_enc": "aes-256-gcm.v1:4wDc34adTXTvzi9b:WN3Lx2osAbKQpxwfF7iCSel4jmpP3SHW_wBnpar47Vo3YTEnf1wAgVObQLOyl9Mo7Et52DIz6L3HnXmSwNerK3sLqm2f6E3UG01hD1R0xXS6MSVM92LqmDmspCM5qkCFuoeMGQlxEQ3VAq2s-QKD0DnU2pOE4KoLlHs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.5,
+          "findings": []
+        },
+        {
+          "id": "js-039",
+          "prompt": "How do you handle errors in a Promise chain?",
+          "options": [
+            "Add .catch() at the end of the chain",
+            "Errors silently disappear",
+            "Promises don't have errors",
+            "Use try/catch around .then()"
+          ],
+          "answer_commit": "hmac-sha256:0adeb795fd9d6de93169947ec4b3ec4e",
+          "explanation_enc": "aes-256-gcm.v1:e7WB_IyCVQ2bMSP5:Z6m9kwUxDLukZ72ARBk8tGzvMbfOXWOYdWFBSgN_UGRQZuGsafoovw1vE8gH8UZB4kQzKkg0zRskkYjVB6s98sZ51yXIyh1eDBDY02zXoP-4nszILIkoBbuvvuZvnWT9dyzSvoX0d-VAsJehl-QHqtvOO4x6qmAguo4rxooJ7lrsC4psLKBAoSqV43Ri",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.286,
+          "findings": []
+        },
+        {
+          "id": "js-040",
+          "prompt": "What does `Promise.all([p1, p2, p3])` do?",
+          "options": [
+            "Returns only the first result",
+            "Returns a Promise that fulfills when ALL inputs fulfill, or rejects on the FIRST rejection",
+            "Cancels all promises",
+            "Runs the promises one at a time"
+          ],
+          "answer_commit": "hmac-sha256:460bc4f2837f2ff5aa3706a17a43063d",
+          "explanation_enc": "aes-256-gcm.v1:Vv8yILTxuFjL_y-a:4snmDhWJMNcA4l9Y673ZnO5A6AZAxWukr3IffyYrydfZI3KkS4B6AW-w6znVWjBQzl9yZNeUMmT61WrQ0hr6IEaUC6Dz93aKfaYcPh1MIIWh-8CoPaWB0U07sjLRUkJ9WD0FTIyiNsGnSkfyaTwZwR_Kxn8GFAd-ZRA1DZ6XEcgnau9IoXM_uYI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.903,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Async/await",
+      "skill_id": "rfv.skill.javascript-essentials.09-async-await",
+      "items": [
+        {
+          "id": "js-041",
+          "prompt": "What does the `async` keyword do to a function?",
+          "options": [
+            "Makes it return a Promise automatically, and allows `await` inside it",
+            "Marks it as a callback",
+            "Prevents errors",
+            "Makes it run faster"
+          ],
+          "answer_commit": "hmac-sha256:f41479560c2531bb7235066281f1ddd3",
+          "explanation_enc": "aes-256-gcm.v1:5KdX_93y0z4F94qz:UiH2c58psXxBJltRoR6nTiRstZ_M9Xbho7nQ68iPaFAhpF9qVrcUVm_NLWhrVWNbIFD38bi1C97lV3FnD0WgTJAS-QuUBC9TgmyYZqzvx9aaaYt8IH5G6I3sLGhb_kLmWgxUWl4G60pSvGBrPvJmZ0E8kPUJjw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.136,
+          "findings": []
+        },
+        {
+          "id": "js-042",
+          "prompt": "What does `await` do?",
+          "options": [
+            "Pauses the async function until a Promise settles, then resumes with the resolved value",
+            "Makes JavaScript synchronous globally",
+            "Stops the entire program",
+            "Cancels the Promise"
+          ],
+          "answer_commit": "hmac-sha256:827ecbcbb8d055ea2c7edaa89673f4f6",
+          "explanation_enc": "aes-256-gcm.v1:iKbCaKjKbiwqFqRV:h4skjA7b00M30XCqT0mJ6__O4rjkE6vlRuA4TFPicKXpJ_l83R-wxBYLXYlpsgbDKpE-W1c6AeeuEOLacnOsFDbLVNFru0IpPXKoC_hIqTzgOHUEFFU8tuWtuD0SalBVK1cQhrMkMMBhUn-XeT4DwtQMijrzIMUv87jz3GJB-F1bkgJShcR7E8A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.351,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-043",
+          "prompt": "How do you handle errors with async/await?",
+          "options": [
+            "Promise errors don't work with await",
+            "Errors are silently logged",
+            "Wrap the await in a try/catch block",
+            "Use .catch() on the function"
+          ],
+          "answer_commit": "hmac-sha256:69b1a30fa5011a055cb294a61f172769",
+          "explanation_enc": "aes-256-gcm.v1:FWQWfgSBFkR6EOWW:xmJQ05FV00w7MWllMr2JxWPXAYy2ty0XsvZ2MtQjrRA0ZpMdOby0_tLY4ioRmC5vv4f_acocdaozUW60dJ5ac3L-FQgMJ-_EqW2ie7svUrIONygm4jjjyVNbiuRnh9oJlaxeRi_tglbvGGkkWWR2eA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.972,
+          "findings": []
+        },
+        {
+          "id": "js-044",
+          "prompt": "What's the MISTAKE in: `async function fetchAll() { const a = await fetch(u1); const b = await fetch(u2); return [a, b]; }`?",
+          "options": [
+            "async functions can't return arrays",
+            "The fetches run sequentially instead of in parallel — use Promise.all",
+            "fetch needs await twice",
+            "fetch is not a function"
+          ],
+          "answer_commit": "hmac-sha256:27008dba82d25a419d0aad2aeabb695d",
+          "explanation_enc": "aes-256-gcm.v1:uWrOH4B63rQkr9Uu:Qx_o9smHOV7UGrMRgTStZQKClu4DaWexE4Qx_K0VEuTwbg2yiBUPQ6XNtNAQwjiElSvIS06u8uVYt-U6x79SuXJEIKdKcv_DRg5Gt3rn_OowoRFqpWTDwWjVgQrykUJNR7FHmgK7AclqAnE68jsyxbU0aiuLMKIfz6Dn_cgkQpODZ26LtA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet",
+              "long_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.971,
+          "findings": []
+        },
+        {
+          "id": "js-045",
+          "prompt": "Can you use `await` at the top level of a module?",
+          "options": [
+            "Only in browsers, not Node",
+            "Yes, in ES modules — top-level await is supported",
+            "Only inside loops",
+            "No, never"
+          ],
+          "answer_commit": "hmac-sha256:ce83d893df122339ab3ddfcb6df34524",
+          "explanation_enc": "aes-256-gcm.v1:j9G4uonmiwbcp7kq:aVrNJ8qLh2PMa5A1lAm447cAoOj_pw1Ydv2ksEgL9QCKiVxXsUm9mh8w0PwX-OlmFryMmDXuU41XJdLY3mBo8fhsqT_MDdaju9RxewkqQS4WeiG_BUkymhS4f8mP9E9Zd0mLDQmiZMsV_vuPa0JHBA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.885,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "The DOM (Document Object Model)",
+      "skill_id": "rfv.skill.javascript-essentials.10-the-dom-document-object-model",
+      "items": [
+        {
+          "id": "js-046",
+          "prompt": "What is the DOM?",
+          "options": [
+            "A CSS file format",
+            "A tree-like programming interface representing the structure of an HTML document",
+            "A JavaScript framework",
+            "A type of database"
+          ],
+          "answer_commit": "hmac-sha256:f21095e4e8779bda12e86847f140af19",
+          "explanation_enc": "aes-256-gcm.v1:HOUtSKndetN9Ro47:V4tpX14RUNaWpQ_-wGw_3noynEsFFTah6UIDSpAqP782gJi5Pw09pPBLNnPbB7NU1PyPlG6_6DK-gXYzZL6jyzXGebOyJ7bKZIjCqWe_6BN2H2KreEAkV-TCtKJaFSKLlNguWLa2rQJATHR1",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.636,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-047",
+          "prompt": "Which method selects the FIRST element matching a CSS selector?",
+          "options": [
+            "document.querySelector('.btn')",
+            "document.getElementByClass('.btn')",
+            "document.find('.btn')",
+            "document.select('.btn')"
+          ],
+          "answer_commit": "hmac-sha256:6dde087af5ad4f88d27db3ffcfeab76c",
+          "explanation_enc": "aes-256-gcm.v1:A6Ipw_U-weN_KUk6:MxpDKAQzKa32mXWbR1wNOOE_LFMMsqvCQNHOKKl9Hk1e0Y-W-AU6wiT4P4p8NEuCwDfUipcDEB2EA28CIh_DzoD3DqMGAgg9ki2sXh_IR03qjFkghi6FkXMj-01GN_F6gBY8YCWYBMVOUFF2GVPUYkjW3wLg_TSPyo5HIKbeDywGKxod-YvEnMw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.882,
+          "findings": []
+        },
+        {
+          "id": "js-048",
+          "prompt": "How do you change an element's text content?",
+          "options": [
+            "element.value = 'Hello'",
+            "element.textContent = 'Hello'",
+            "element.write('Hello')",
+            "element.text = 'Hello'"
+          ],
+          "answer_commit": "hmac-sha256:f80483437f185a2b71a1deb5ccf25593",
+          "explanation_enc": "aes-256-gcm.v1:8YGKv2VlxzhxLaAH:mJKoDYPJCbsQ95AY1IzwNnDVhlkzH-OJJdCGASYxdj1HMeaAchs8w689kK2PdXqqN4C6qJL6EmIw2RRh-2t7ksnQSQ0_WbaGjwOU23HWdzDX1RpnnMNasnfgAnVs-YerjKZSsiRq5vWytKb4itM5bg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.261,
+          "findings": []
+        },
+        {
+          "id": "js-049",
+          "prompt": "How do you attach a click handler to a button?",
+          "options": [
+            "button.addEventListener('click', handler)",
+            "button.bind('click', handler)",
+            "button.click = handler",
+            "button.onClick(handler)"
+          ],
+          "answer_commit": "hmac-sha256:be30f80b2dc43ac4914aafab808a106c",
+          "explanation_enc": "aes-256-gcm.v1:51vv18fSW6XmcS8q:EZJ9szDnMYJi0S0TOz43f6a5bC0CrsILFl1MqorSoDeTYUw_bjx5BWnm6wl9bE1YOLF_ctc3rx5f6efUXVT93pRTNwJWYb7e8wVapnuWExLHGCTWzTokl1uzwCtI-j6G4gU3fBT8NsuSRuM1xY4ox3By4GaNOc-Pis8-AdcSdleqSc3m",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.414,
+          "findings": []
+        },
+        {
+          "id": "js-050",
+          "prompt": "What is 'event bubbling'?",
+          "options": [
+            "When an event fires on a child, it propagates up through parent elements",
+            "When events are duplicated",
+            "When events appear in a popup bubble",
+            "When events bubble away into nothing"
+          ],
+          "answer_commit": "hmac-sha256:e6f118f8aa4bb9a457df79fd53fd02a0",
+          "explanation_enc": "aes-256-gcm.v1:G-tx_d5Q-f4M8tVw:ccBbJM39ltF-1fTvaubGucm5BK9C-u-3NmdlgKTJ3xFjYtUYGAMl0_4G3Vx3_aZ1VCZ0R-0gzjaNQlzlPLlu7HppHWDvaCY3wj6ksd06pgkwA6Tc1kW3JGQmf4mocwJ94gKZae8EMg8CzYK3cTiDb0gmMchIq4I",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Fetch and HTTP",
+      "skill_id": "rfv.skill.javascript-essentials.11-fetch-and-http",
+      "items": [
+        {
+          "id": "js-051",
+          "prompt": "What does `fetch(url)` return?",
+          "options": [
+            "An array of headers",
+            "A string of the response body",
+            "The status code",
+            "A Promise that resolves to a Response object"
+          ],
+          "answer_commit": "hmac-sha256:a9ffe0d9aa6d24276777173a6aad7e0e",
+          "explanation_enc": "aes-256-gcm.v1:ZBab_mpGYUsF5Yrv:_2U40vFwIdWmVvhQrIjGHnzJ9cphHQISMZJvHSIkn8uGzmSkji-i9UlVSnOCtUaP-ydStGkmOmtnWnL6oYYPwAHHRn2eBqZ7fjqjY2KEN2iAw6R4qFMNeV1rW9qH55C1iZg-buGJ84WqszTxPYK0TMzB",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.517,
+          "findings": []
+        },
+        {
+          "id": "js-052",
+          "prompt": "Does fetch reject on HTTP error status (404, 500)?",
+          "options": [
+            "No — it only rejects on network failures. You must check response.ok manually",
+            "Only in Node.js",
+            "Yes, always",
+            "Only on 500 errors"
+          ],
+          "answer_commit": "hmac-sha256:fb3e43a4f297721c66054245d8876ac0",
+          "explanation_enc": "aes-256-gcm.v1:qDuctDzKOGfet7Xf:fgvqc1Xy3DuKUDNCPZ3qWi-gA5fcHY6erCjOKWzYt7S0kA22AuySFftYJstG8i4ZD-utn6Ppj_jCpL_t-gfvT_ioSVA_I_l3c8iZLz-smGN9ccr0hH3Fd_JABJNtc70ZKQvSEk1JiXj02w",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.278,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-053",
+          "prompt": "How do you send a POST request with JSON body using fetch?",
+          "options": [
+            "fetch(url, 'POST')",
+            "fetch(url, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) })",
+            "fetch.post(url, data)",
+            "fetch(url, data, 'POST')"
+          ],
+          "answer_commit": "hmac-sha256:d486c29a550152ba9259f027ec451cc3",
+          "explanation_enc": "aes-256-gcm.v1:qqx-iLaroponGVji:zhDCLrJrTKFmCBeBRYS86ytwBki-FN82By6YU-KYyEyospRBxd426UIjRR_C9p-vpbPQtHF4Y2LRNu2PgRlCUwoVYqNFerE6xk05Yj5sk9vbSKUKRtGgEdqCEUzWH_3k3_iaQ-Q2efMBbYHewpa_bYK22UV3gGJk5fbSt6M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-054",
+          "prompt": "What is CORS?",
+          "options": [
+            "Cross-Origin Resource Sharing — a browser security model controlling cross-domain HTTP requests",
+            "Cached Origin Response Standard",
+            "Cascading Object Reference Syntax",
+            "Conditional Output Rendering Style"
+          ],
+          "answer_commit": "hmac-sha256:2fe5aa46f7adecdc8e24b4f2289ea5c9",
+          "explanation_enc": "aes-256-gcm.v1:cajAEf96QRLoAiwa:tY7OKpLmmc9JD5JH-q0Tl02MgJKHv4rRgAF2tjfN3mD8oWjcW_VSmsVXJIgpW-EmjdTfmDfINT84-FiIzrTJXcKA2gurNJ4lp6dpH8s3T65T5VTavXEhfHEkwD0HLbVaKY25DQLeF-3UyRP2RY4OOYLR0B5ZVipbbJvndj0Sv3kr4KXpClOIjEEOnuTjHA9QYQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.794,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-055",
+          "prompt": "How do you parse a JSON response from fetch?",
+          "options": [
+            "JSON.parse(response)",
+            "response.parse()",
+            "response.body",
+            "await response.json()"
+          ],
+          "answer_commit": "hmac-sha256:a0cd7e45583892e3c98742f928150c8e",
+          "explanation_enc": "aes-256-gcm.v1:3Qv-ogiCBZJoHy9g:_j_2MLzbqMCVKNq_8QunsgaXAHTGbjLLcDj7JD_9QejUmpcoNjBPxrGn9xh13c9kOXD-IKDCe3WpUZJuwoanbEcm7Ms2AE2h3sL61e_9Id89DX8P9vUqvfrZa86gtZm5tx7HICs6mQiSjEyPEsFl",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.05,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "ES6+ modern features",
+      "skill_id": "rfv.skill.javascript-essentials.12-es6-modern-features",
+      "items": [
+        {
+          "id": "js-056",
+          "prompt": "What does template literal syntax look like?",
+          "options": [
+            "`Hello ${name}, you have ${count} messages`",
+            "\"Hello \" + name + \", you have \" + count + \" messages\"",
+            "'Hello {name}, you have {count} messages'",
+            "'Hello %s, you have %d messages'"
+          ],
+          "answer_commit": "hmac-sha256:06dd4c0924d671fac64e757df9a06f59",
+          "explanation_enc": "aes-256-gcm.v1:eQ4j_HGtJMmAKlle:I_zWI8CxmIfmi-37420VKxrOVDDiXuA_jPokRtuYFKZs1uuKYeoIqDGBSvpokQLGkgzUv0kzL9GaoBJDQSSdlmwQdb81_28n3a6g12Eb0ZHyt09PLzbrsKpPirYUMCsIbeFk_9UBKYFFeQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.811,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "js-057",
+          "prompt": "What does the rest parameter `...args` do in a function signature?",
+          "options": [
+            "Collects all remaining arguments into a real array",
+            "Makes the function async",
+            "Restricts argument count",
+            "Spreads an array into arguments"
+          ],
+          "answer_commit": "hmac-sha256:0d74664983022947b2f762af1b5edaef",
+          "explanation_enc": "aes-256-gcm.v1:k6nIE8PMQNm5Eg56:AO3JttoCBAwTLgwK69o7mckE2d0APB8czMzQqZi1tELbdDecIkyGJ7kEvEjfBqOhTdtOMj2DUviZFZU4H_PI6ajmLPldXcbeOJ_faL-uee5hB5lAjpjk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.613,
+          "findings": []
+        },
+        {
+          "id": "js-058",
+          "prompt": "What is a JavaScript module?",
+          "options": [
+            "A file that uses import/export to share code with other files",
+            "A function with no parameters",
+            "A specific framework feature",
+            "Any .js file"
+          ],
+          "answer_commit": "hmac-sha256:731662ed77d6c4cd46bfd34c4c266262",
+          "explanation_enc": "aes-256-gcm.v1:01wu5kOm3-Dpq1xM:vYqZTSvSKaQTVaHNma6XDkrXLNDlq8OXRwT2nBpUX65nmpb31pE_9KmFU1Gmi4hDXBjb6sDRh98DfMOT_QnfCXSF2vIAyIFj1Wmy9KJy0ZQA10D1BvJPFtmswq2ITilB02WvuG7iOgd_4rJPwm7ruK7kl7o6HuOmqUullpxGUASiRQCpWg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.103,
+          "findings": []
+        },
+        {
+          "id": "js-059",
+          "prompt": "What's the difference between default and named exports?",
+          "options": [
+            "Named exports are deprecated",
+            "There is no difference",
+            "Default exports are slower",
+            "Default: one per module, imported by any name. Named: many per module, imported by exact name"
+          ],
+          "answer_commit": "hmac-sha256:5ca50a21294e6f6767248f5bc67b6db1",
+          "explanation_enc": "aes-256-gcm.v1:ipitrcwbyV27-9r8:ZyiIpWeCEeBBh_Hu3lLmyI_Runoj99pH7NSRnetD483Z347w-meGXTwB5OcidW0i4o7LJvSc5lChXMEjCAQq28J12bwRXXc2BOwc04Uz8CwYAMx3r7tiDOL2kTAPcmeFE9edCjOZnpctzBi7JN6-61_xpgWtH9_IvA5ZlX7bA8prXRcaAXA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.321,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-060",
+          "prompt": "What does `class Foo extends Bar {}` enable?",
+          "options": [
+            "Foo inherits properties and methods from Bar (prototype-based inheritance with class syntax)",
+            "Foo replaces Bar in memory",
+            "Foo runs faster than Bar",
+            "Bar is deleted"
+          ],
+          "answer_commit": "hmac-sha256:8e28fbdc1716ef0a18714ba081ed6d92",
+          "explanation_enc": "aes-256-gcm.v1:erMGWWqppUKlmPOc:KdSCprFLGWo-IO1xyp44XM45c4gaDfwat07tnd5YvwMt55w31pFnumSowbmnc9yl7UcyM5KObwJoEOCNQjkguiaCVS9uixQFzsXu5MoEIVvRyp1bI0Nmln4drUNPq_lDdZCtiIc22BU7sVxfe6V-b2Kivzv1OnFIuIeOjVY2IAjVCKY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.538,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Error handling",
+      "skill_id": "rfv.skill.javascript-essentials.13-error-handling",
+      "items": [
+        {
+          "id": "js-061",
+          "prompt": "How do you catch a synchronous error in JavaScript?",
+          "options": [
+            "if (error) { handle() }",
+            "use Promise.catch()",
+            "errors are automatic",
+            "try { /* code */ } catch (err) { /* handle */ }"
+          ],
+          "answer_commit": "hmac-sha256:6727eab2db2cd24203b191267daacc5a",
+          "explanation_enc": "aes-256-gcm.v1:5AULmZEE7bc6uCK3:-hZt3Ux468wjvpoLs3iGsOm52_UreJDWiaQCS0nJbewOXhsHIS6Ef7mHKoEXipW5CP2oNMMV011gWyK20ghQiqZQq5qrrvtdmi9F-JKlhQZg4mrDzbjioUDDSSZr3KQXQHFYtxYxwkUTIVQIsJjVP58",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.043,
+          "findings": []
+        },
+        {
+          "id": "js-062",
+          "prompt": "What's the BEST way to handle an error that you can't recover from?",
+          "options": [
+            "Catch and ignore",
+            "Log it and let it propagate with `throw` — don't swallow it silently",
+            "Pretend it didn't happen",
+            "console.log() and continue"
+          ],
+          "answer_commit": "hmac-sha256:2fa0610c690fc3a16a5801be4c968ff3",
+          "explanation_enc": "aes-256-gcm.v1:xPF7WGEVwRrIiiVu:kMPaYO9aZNR49252jGT8CBj8VZxSqFOhA3BuNvU9KVp9XVznVtghX5CpYw2R9vsif0XTuGplzGnABM9aha7svrbsL660msbPnchGtEgT9P8kyNQhx3lE6tKwWnaE6UMV4OjTedVQ_dtRgn-AQTCwi7GMh-_OnNRupMRx",
+          "difficulty": {
+            "tier": 3,
+            "signals": [
+              "debugging_framing",
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 3
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.615,
+          "findings": []
+        },
+        {
+          "id": "js-063",
+          "prompt": "What is `throw new Error('message')` doing?",
+          "options": [
+            "Setting an error flag",
+            "Creating a new Error object and throwing it as an exception",
+            "Logging an error to the console",
+            "Crashing the browser"
+          ],
+          "answer_commit": "hmac-sha256:c66cbbdd43abb0e4fae9ee58b6da3d16",
+          "explanation_enc": "aes-256-gcm.v1:tUKeHlyP0QHkgg-L:HwKggrW3iwI69VhYpLTVwbPdIjIHRB1zROL8TM1qo3ZlxTweafoPTP4dHl8zmbN-YXJHD2sXxi3b3fadnNPTnQmUwarjQojgpCjEy8Rs21xAIzCWg-F2w2bb10CBETesHCBc3A8oZB3hYZitTz55vyGe9rAHcRNMwxZ55gXyfuaoHIJm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.903,
+          "findings": []
+        },
+        {
+          "id": "js-064",
+          "prompt": "What's a custom error class useful for?",
+          "options": [
+            "Distinguishing different error types so catch blocks can react differently (ValidationError, NotFoundError, etc.)",
+            "Making errors look prettier in the console",
+            "Speeding up code execution",
+            "There's no reason to use them"
+          ],
+          "answer_commit": "hmac-sha256:24e842c52ad09bdf82300161f7bd8c8e",
+          "explanation_enc": "aes-256-gcm.v1:yg7gcFH8TsEJjGw8:-krruzGmmCliDXSMIZWphR5oTXT_unoUpVBL_g0KIF-z4kNkMw7_V7ihQg15LPTEZXlxi2_yXrIKkzH1szNnxCG8yICNINOhN8cuAmGsrrifRhVoJuRoiyU6vAogL4GvyvDxYI1K40aqtAYLttMCJsZEQN-UBXMFEG-9YkOU544pFlgm_A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.69,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-065",
+          "prompt": "What is an 'unhandled promise rejection'?",
+          "options": [
+            "Normal expected behavior",
+            "A pending Promise",
+            "A rejected Promise with no .catch handler — modern Node and browsers will warn or crash on these",
+            "A successful Promise"
+          ],
+          "answer_commit": "hmac-sha256:113119110af71eefd197c97fc2c3a6ea",
+          "explanation_enc": "aes-256-gcm.v1:pvWueKDQmvebZUTf:x7aG_mRZWVABgrz4Z2zxnQwBkBSVcZohKLHe6uZvZD_ToG4OG0afcN2NO6GPRT7YxPrQRrIhntPVefRnWjh1KkhrEEKu97mXQ1dAI83VG2LLLem0ZCllwGlh2fudkGV6GvkmcpVkZYjOpk_uS3EUIbaMSuKD_sBndCxgelQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Truthy, falsy, and coercion",
+      "skill_id": "rfv.skill.javascript-essentials.14-truthy-falsy-and-coercion",
+      "items": [
+        {
+          "id": "js-066",
+          "prompt": "What does `Boolean('false')` return?",
+          "options": [
+            "null",
+            "true (non-empty strings are truthy)",
+            "TypeError",
+            "false"
+          ],
+          "answer_commit": "hmac-sha256:e364cafbac8d6f73bc0e8763034fb2fa",
+          "explanation_enc": "aes-256-gcm.v1:87WAjGjZ-SrfDWoK:3g6l1qEKBjSQ7-TxllV_KVYkEwSGJVuXYMBfBT5umYTohBTTvO1Mrr7gWVykMly3X_F0ugclaOF5-nx9k3-RceFbVqUmAETdGlWB3AsCThdRipDcqIHR6mtOWWh2azwRTSCnsApjQtnKM1aq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.889,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-067",
+          "prompt": "What does `'5' + 3` evaluate to?",
+          "options": [
+            "'53' (string concatenation)",
+            "NaN",
+            "Error",
+            "8"
+          ],
+          "answer_commit": "hmac-sha256:d2298a7c463cff7414ca38f3a3c84a45",
+          "explanation_enc": "aes-256-gcm.v1:B_XGPhnasJcF92ME:PE61qSOscvlYTHCVP0JsAnl6eMT0V1ADjntHCu9oSm5TLbgeFVxeOKuQqyJIQrWM_w2PutDnTw-7OMa0ZsDLMXoiaLQaqoJDsLyFnkyhjdC0AEoU_OpR9SLF-K4-cpcS95ZdwezbLZGg8Vs09K4DMEQiLohLzaOGqeU2yw6cR-Va7JFRaGs48g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.4,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "duplicate_stem",
+              "severity": "high"
+            },
+            {
+              "code": "near_duplicate_stem",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-068",
+          "prompt": "What does `'5' - 3` evaluate to?",
+          "options": [
+            "Error",
+            "NaN",
+            "2 (subtraction coerces strings to numbers)",
+            "'53'"
+          ],
+          "answer_commit": "hmac-sha256:2d82b4a9a0a56de67d8007bcaff79dc4",
+          "explanation_enc": "aes-256-gcm.v1:ePToz2qmd0XEAV0D:iyWn6WtQUx34iYoMlIK3glg3dm7oObKZv6xc9YdFu8Hnn6AO7tV4hgGj1Q_8uHiqvorkklIEi3zT0oqULX1rR8eWiTuylXwXjWK8Q1FB0aRped8rMSqgB3MDnKr1F7zKVdduYc1gq0-Et8BWLPc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.4,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "duplicate_stem",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "js-069",
+          "prompt": "What does `[] == false` evaluate to?",
+          "options": [
+            "undefined",
+            "TypeError",
+            "false",
+            "true (== coerces both to numbers, both become 0)"
+          ],
+          "answer_commit": "hmac-sha256:1c942c7c37523577970abd8a6d86a9eb",
+          "explanation_enc": "aes-256-gcm.v1:XsHuVKfEN-xHuRtB:mcAxPhBjiIq7YWK2EAT0PVUUOex9kGCWtCDm_as_A4ttsgtZdjnqMES_DsL-3F2iMJf34cPsMiq9tbyEGjrxxtfwfrB739Do4xgJMt1Uc4CkHkK6BPOYvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.333,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-070",
+          "prompt": "What's a SAFE way to check if a variable is null or undefined?",
+          "options": [
+            "if (!value)",
+            "if (value === undefined)",
+            "if (value == null)  — intentionally uses == to match both null and undefined",
+            "if (value !== '')"
+          ],
+          "answer_commit": "hmac-sha256:93d75a0703cf59eb2906b2e9fee1813a",
+          "explanation_enc": "aes-256-gcm.v1:NgyixEDYNUZHLa0m:-FwyFLzlKoBfF2KlYI_-T4GTT9UXLP1gM483KqyvVJ--eTvCpdvb-26vZq0vb-CCH8BPhJeYiI3uXFkwqcdGH-k_Nxs_ZEaI6Vzpo0QjDWwRyeYBu6B06Snnk34lcqmaEfGxL_u9K0Ol2-izcAlyZZowJCJ_vHnije0s63qIpns",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.167,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Browser APIs",
+      "skill_id": "rfv.skill.javascript-essentials.15-browser-apis",
+      "items": [
+        {
+          "id": "js-071",
+          "prompt": "What does `localStorage.setItem('key', 'value')` do?",
+          "options": [
+            "Sends data to the server",
+            "Sets a cookie",
+            "Persists a key/value string in the browser, surviving page reloads",
+            "Stores data in memory only"
+          ],
+          "answer_commit": "hmac-sha256:5736c51e77049fb01df5d84d0e034dfb",
+          "explanation_enc": "aes-256-gcm.v1:E6Uzz8ITDInKzjpx:RVQzwzbKFomESpVeqL66rjUW2Lam3yRUYDbFlsJKUvRzxNDIvcrZqv8OtCYHyyJL2fjoNZf9rITEi55vLo0aoysMpH0KDZDXwi3mA4EhqaYcnAAuhVs5p_L0ZmZ1rikG7vpX5K6dCHSWHY4-T8RuQFPn",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.538,
+          "findings": []
+        },
+        {
+          "id": "js-072",
+          "prompt": "What's the difference between localStorage and sessionStorage?",
+          "options": [
+            "They are identical",
+            "localStorage requires login",
+            "sessionStorage is for sessions only",
+            "localStorage persists until cleared; sessionStorage is wiped when the tab closes"
+          ],
+          "answer_commit": "hmac-sha256:e6860cdbc726dc19ec0af046452ff3ec",
+          "explanation_enc": "aes-256-gcm.v1:U9T59Tl0U9XrgV43:VC-yUXhow8Iad5Mkv8ZP9PFDz1mhCPZTDJ_ws-FQwwzUpSCqesWeMWauB-dt9DHqYYWIOYjAu6wj2PYJFvmXNVtdOvx9kymaEyhS9Bjs89HUVofeG7mi4ZtdW-g7b3YV19QpFHMsiOjH8sus0f1g7Flywcl7IXOPmeHX15jF5-1ScfI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.286,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-073",
+          "prompt": "What does `setTimeout(fn, 1000)` do?",
+          "options": [
+            "Blocks the page for 1000ms",
+            "Schedules fn to run AFTER at least 1000ms (non-blocking)",
+            "Adds 1000ms to the page load time",
+            "Runs fn 1000 times"
+          ],
+          "answer_commit": "hmac-sha256:3d1965efff35ccca2f96914c6f0533cb",
+          "explanation_enc": "aes-256-gcm.v1:Jy3htCk68dZX0LwP:GbOg6m4kn2IOIy8I9KobqMJpsrAPutErt57DwKEu4WRmFE4GvC-uPpCuZPqBKQ5NG7tZu2NkqrIxDDVfYUcZhWLyQOVMejWlneAbTmEZ4hIqLCkfvrUIwWByo0HX79nYY-wEC8FlR35XvCDVIrO1GS2U_tCfsS-Au7zhT7s_tlFmaxqfmjzSRg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.697,
+          "findings": []
+        },
+        {
+          "id": "js-074",
+          "prompt": "What is the Console API mostly used for?",
+          "options": [
+            "Building user interfaces",
+            "Debugging — console.log, console.error, console.table, console.time",
+            "Compiling code",
+            "Sending HTTP requests"
+          ],
+          "answer_commit": "hmac-sha256:b63d30c01a505cf5ae1fd0e7c7c8bd0a",
+          "explanation_enc": "aes-256-gcm.v1:IkOWmgj623pNITZ_:SAXIDORyJk4UXynoB4_m4RNUWUHKhYKp0aYoOW08EIU3ORklSUl-NNkWpP7sN56YL2-ojoqzs0Z2wdSQ6NICGvJzTmKJSl1DaTaWu4LHrTEBy3zteKL1U6fRWLR5SCEKC3irBXnXZ512gKUfVG0uIDkblWWUL6w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.792,
+          "findings": []
+        },
+        {
+          "id": "js-075",
+          "prompt": "What does `window.location.href = 'https://example.com'` do?",
+          "options": [
+            "Navigates the browser to that URL",
+            "Fetches the page in the background",
+            "Renames the current page",
+            "Sends an HTTP request"
+          ],
+          "answer_commit": "hmac-sha256:6f06672f4bdc4cdc5a0ab334c3bd3577",
+          "explanation_enc": "aes-256-gcm.v1:57wlvkZfE0WUU2jj:g-glea3HIEgvyqFywqsa4v95jNSo-bpGsLUyD4ix7vZce8cpzNVntDQAqfWWaBfrZEssitt_dga9ZJyL1jXN8JRygJklQkl1mDhLH5h8i36m13h51x3kQOd1fT3By12QHOCaVHNGr5i2B04Dh_6eIaUJntQ4UoIEUYd3wdGz2Yh_9wSZfPUYjOS0Uutk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.971,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "JSON and data",
+      "skill_id": "rfv.skill.javascript-essentials.16-json-and-data",
+      "items": [
+        {
+          "id": "js-076",
+          "prompt": "What does `JSON.stringify(obj)` do?",
+          "options": [
+            "Pretty-prints to the console",
+            "Parses a JSON string into an object",
+            "Converts a JavaScript object/array to a JSON string",
+            "Validates JSON syntax"
+          ],
+          "answer_commit": "hmac-sha256:c056195d16ef7641ef657b329bbcef0c",
+          "explanation_enc": "aes-256-gcm.v1:wT6iY6OjTAsBIr6C:BqVdNx4Ka5viCejs9H3xn5mQjspdz9N_ZKEimmwq1rPBHYGAmZAOjXN8zfbtA0kS5BpwAhvtl-VltY-zbCXzUiOL1Fa1bu9osX6RheMhpYHtSCI3VtJSniYMgFYcbjojGuc-KN4lft2l21S7hPXjxAtHYPbFAUs37WFD2gfrjAL7N84_mu2r",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.457,
+          "findings": []
+        },
+        {
+          "id": "js-077",
+          "prompt": "What does `JSON.parse(str)` do?",
+          "options": [
+            "Encrypts the string",
+            "Logs the string",
+            "Converts a JSON string into a JavaScript value",
+            "Validates the string"
+          ],
+          "answer_commit": "hmac-sha256:919dd540f4ef948681cb1002c01d7889",
+          "explanation_enc": "aes-256-gcm.v1:AfZGus5alNlf1-H-:Q6yE0cdPPB7bpQfSP4Tg0u6Nq5yvO28Le0wSHmardojTvwl1v9EcwfpArgPByVWqI2MTWJryieeTvKr9Ku8Voo7MQwa-Ng3j5Mpd6HTkNFHanZtMYVQ-XgP-N1DitfixjPvoUnwVQD7ZzK_I5yVJ-O1fuzbOAareGcrP2A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.3,
+          "findings": []
+        },
+        {
+          "id": "js-078",
+          "prompt": "Why might `JSON.stringify({a: undefined, b: 1})` surprise you?",
+          "options": [
+            "The undefined value is omitted from the output: '{\"b\":1}'",
+            "undefined is converted to null",
+            "It includes 'undefined' as a string",
+            "It throws an error"
+          ],
+          "answer_commit": "hmac-sha256:1fb1d636d0e26a375e8cde1e6bdee35b",
+          "explanation_enc": "aes-256-gcm.v1:qmyLyaM3xDbxPfpO:RqP1ppSLiKAbz-M2jnDf-VFg8O1-GGIZLq9qM5aXoLaSqAlgQkbcAd8Hyh4YMmwmlc39zOLfzqYzuIoKBuQl-GRl2zwhc4sWAraOLU9wXygxuIbtCcLlLFy92ogxKyBAXh_OzBsdg6vPCpkYurLiHYmkow",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.629,
+          "findings": []
+        },
+        {
+          "id": "js-079",
+          "prompt": "What's the safe way to deep-clone a JSON-safe object?",
+          "options": [
+            "Object.assign(obj)",
+            "structuredClone(obj)",
+            "obj.clone()",
+            "Array.from(obj)"
+          ],
+          "answer_commit": "hmac-sha256:955cbcb0248d1c23dd4bc89ac83b8c1a",
+          "explanation_enc": "aes-256-gcm.v1:0fyr-2nnRklEQppz:gawL7UZ2YRJzG8Spdn-JB-zM58Op5_Obus3wSs_fbblJTA0AyaRnrN32c_Ex1nCMMJji1oqtqHaDgOzhmJAAP29ck3GH-mQBrTeRrmNKSZuKuAJfFgqYX9VrBJSQIMpAMpGKctdBWDtSpL23sVvQeZO-o87XKoKcAQIH7DZyn3TYZeCjBfzoug",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.111,
+          "findings": []
+        },
+        {
+          "id": "js-080",
+          "prompt": "Can a JSON file contain comments?",
+          "options": [
+            "No — pure JSON does not support comments",
+            "Yes, with // syntax",
+            "Yes, with /* */ syntax",
+            "Yes, in any format"
+          ],
+          "answer_commit": "hmac-sha256:b1c54c7d73f59b425718b5e0ee66df24",
+          "explanation_enc": "aes-256-gcm.v1:mRPn3jjFyi2BSJ15:sxMuUoKkat6ZNdNcKws3OAWwZZJk195pYFp7hJP9r11JMOeiQWyJPig3ICXI3vMfBIQPBCm3PP9AE-WXyvQ0rfPxicZdWceXeo36V1dKSLRKjaTuM_wyC5wFZoBD6jSl1FF-5poyTvENlgQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.818,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Iteration",
+      "skill_id": "rfv.skill.javascript-essentials.17-iteration",
+      "items": [
+        {
+          "id": "js-081",
+          "prompt": "Which loop iterates over the VALUES of an array?",
+          "options": [
+            "for...of",
+            "for...in",
+            "while",
+            "do...while"
+          ],
+          "answer_commit": "hmac-sha256:4dc5a1bc6542d259e4f0098494ba6ba7",
+          "explanation_enc": "aes-256-gcm.v1:GLSMYhdoI0GtPrfI:AGR4j3aVb79Vh-LoqBHBuU6ftEU70M4TFpsT6D3-TYWig82IOpvLlfx14lwCcvjWwrAW6R3wzymgbDWpOnAdBqW-RvHeV7oz9r04IwgtcoHcKqVFqB7hjIzOKhv1OZ9xouN0vV3n2mwqrUiUoJUiHI1zV4QLI4FKLzykqj6aUyg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-082",
+          "prompt": "Why is `for...in` BAD for iterating arrays?",
+          "options": [
+            "It causes crashes",
+            "It iterates keys as strings and includes inherited properties — order is also not guaranteed",
+            "It only works in old browsers",
+            "It's slower"
+          ],
+          "answer_commit": "hmac-sha256:ca5e331eb4f5aaeabf63e667482fe5ad",
+          "explanation_enc": "aes-256-gcm.v1:oIv7karahobs2fd-:thVIu_MGkv52_FYpnEg9qxRdXohVDDdhIHEsmTae6o3lQMgHyOmJJCUwXciRfVkOa1LIf5g5RLv9Ft9Uf3Kn6An0a0BMGy-FOK9G9csEs3EgCUmjWrjGe-J9KzoOqX0f_Gq1ipQQGk8AYeVZKAIFODEv5_rCtzQ1mKk8dw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.172,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-083",
+          "prompt": "What does `.forEach` NOT support that a for loop does?",
+          "options": [
+            "Conditions",
+            "Callbacks",
+            "Variable declarations",
+            "break and continue — forEach can't be exited early"
+          ],
+          "answer_commit": "hmac-sha256:551d7a64ea2f715ae73fd2044473ca0c",
+          "explanation_enc": "aes-256-gcm.v1:4vsZ8BbVT8hxXYfD:iEK9zjAbKjqwu2knlUIkDC1cYb1Z7OwLRmjkvFHyscgOtagInodXWQK8dB2biDHhn3FkhjTXrl2TqklMe1L0sa6ylZ0i9kcFzlSBCp_15nuOZ-xnxp1nieL-hemo5g4t0tuMWtlO3WHUCt9IfAA0NNMkmSFsr_CZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.381,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-084",
+          "prompt": "What does `Array.from({length: 5}, (_, i) => i)` produce?",
+          "options": [
+            "[0, 1, 2, 3, 4]",
+            "Error",
+            "[5]",
+            "[undefined, undefined, ...]"
+          ],
+          "answer_commit": "hmac-sha256:e6ca94d10f8f14f6b9277c0dab584bde",
+          "explanation_enc": "aes-256-gcm.v1:e7IiAsMMlUzV2ezs:A_X5Ceo8sTZU9vu33ptF0SNyNXHhnFXTfhLt53aPO_45O83kvOoFH4wJdYvIVaNqkN6fV_OcbbUteW01yOSikdemAyHa-RV5HmnGRHKlGj94Mch2JlcUq83mqgIpTKuo4weP-3e-B2OZ-ls",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.556,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-085",
+          "prompt": "How do you iterate over an object's [key, value] PAIRS?",
+          "options": [
+            "for (const k in obj) — only gets keys",
+            "Object.iterate(obj)",
+            "obj.forEach()",
+            "for (const [k, v] of Object.entries(obj))"
+          ],
+          "answer_commit": "hmac-sha256:ef688c45f750d516313387f42e2d0c56",
+          "explanation_enc": "aes-256-gcm.v1:-iAa09lvkNZGNyul:hXJBj4o3g9gIGrncPfchJT_5GiT74oQRstuMaSZs1LtcPE41xPQRPvar7R3RKFS6p9PrB4SDa_-7g3VFfdqWFU69qJG8Jg7V-h8VKYv0GhKfIlcBAes0l3lX4880CEARXdesSKxB179qxfNkUJ4",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.108,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Best practices and pitfalls",
+      "skill_id": "rfv.skill.javascript-essentials.18-best-practices-and-pitfalls",
+      "items": [
+        {
+          "id": "js-086",
+          "prompt": "Which keyword should you AVOID in modern JavaScript?",
+          "options": [
+            "var",
+            "function",
+            "let",
+            "const"
+          ],
+          "answer_commit": "hmac-sha256:7560d8b9d2ac2369e57b403d929f8983",
+          "explanation_enc": "aes-256-gcm.v1:Qd7UiE8dyzXYglNI:cqpseB-1oMRDgK83RrYmHcfmiWB68w53rwEmT7HD4g2WlWEppb55ojecPLpmIj7S_89ZrAKwPxyUdW0tIiOrMIb4robJm9KxAXQo_Gu_2-vuv0ybrux4_7YtAOCdDtU_tzBYhlZXKb0QfdTxUg7Mii5YY9o-aVnK-yPzUiaQBA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.375,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-087",
+          "prompt": "What does 'use strict' do at the top of a file?",
+          "options": [
+            "Hides the source from users",
+            "Enables async functions",
+            "Enables stricter parsing and error handling (e.g., assigning to undeclared variables throws)",
+            "Speeds up the code"
+          ],
+          "answer_commit": "hmac-sha256:6f20daa1f6c95754e181c7d663b0fa79",
+          "explanation_enc": "aes-256-gcm.v1:qxE_D46VSgrO4IIk:VmrrmCFxTMeYTSlNUjJAS6MXW2WYyTGNd5wujw7j_nNXnk_htJtSLv8JtpnV4aQ3oEhwo7VotHA5IFvLsW6kIOV_y4tKLBich7gtu7HpzAzOd9KQ6rtkR0YiQiWkGKZ7nHv2Sc0-u2O7ICncFqnXLKPhK4tNUy4z04NrIpU2RViLAIs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.407,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-088",
+          "prompt": "Why is mutating function arguments BAD?",
+          "options": [
+            "It causes memory leaks",
+            "It causes surprising side effects for the caller and breaks the principle of pure functions",
+            "It throws errors",
+            "It is forbidden in strict mode"
+          ],
+          "answer_commit": "hmac-sha256:e4150356187d9b2e3cc21376ce8e271c",
+          "explanation_enc": "aes-256-gcm.v1:GfmvhdqCeZZbLvQw:E8dDovd-vaP4xlcNZFl9BcTcGtuLsP5upaXhHuQDU36ND3ROTNb7bx4qCLhTW1DxPuFTXZ961rJHQL9iLfIRr5DqYUKoMzMToM_UYDL97ocAFZwJUDazyiH6TJzFf_CjFzOHzHvsj2xZXO5gXRG8gk-J",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.033,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-089",
+          "prompt": "What is the 'principle of least surprise' in JS?",
+          "options": [
+            "Always surprise users",
+            "Avoid all comments",
+            "Code should behave the way readers would intuitively expect — favor clarity over cleverness",
+            "Hide as much logic as possible"
+          ],
+          "answer_commit": "hmac-sha256:6dbc55719f9a8800c962c21edd15b294",
+          "explanation_enc": "aes-256-gcm.v1:6eDu0rMkRpqoOkTs:FLRe_3_6G3NrfiH4gG69ab1KqnC6tZtSzdu4XdFq5qHqWvk_u4D2xYa8TVieVh_Rlj5Sk-4ACfaDeMC9nSs7gkK7SLM0gQ9V-Dfq34N0G4uzk4d_yqwm7S3tSJkkArN7toURhD5lSImvpYTvxVDoVagAqUHn_5QckuZ0gBA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.033,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-090",
+          "prompt": "Which is a HEALTHY rule of thumb for modern JS?",
+          "options": [
+            "Avoid all error handling",
+            "Use var and == everywhere",
+            "Mutate everything for speed",
+            "Prefer const, use === over ==, prefer immutability, handle Promise rejections, type your data (TS)"
+          ],
+          "answer_commit": "hmac-sha256:1c74982263f3573a9319c7c8bd4d41ed",
+          "explanation_enc": "aes-256-gcm.v1:2-MnDuLqVJ3Z-Cxw:LdQoPmYU4z2zdwWLLXeY9ENxCSPxtgrXXiglyxuvL0F5xKQNBewJpii339zVqjCEvZ5660ejb5gXN2HERApweiCbLp27Ex623IO1IciT8w6qBzufILx6zg0-cltANogLB2qVIoP7XD5V2bFNc19L8Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.63,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Tooling and environment",
+      "skill_id": "rfv.skill.javascript-essentials.19-tooling-and-environment",
+      "items": [
+        {
+          "id": "js-091",
+          "prompt": "What is npm?",
+          "options": [
+            "A code editor",
+            "A JavaScript runtime",
+            "A browser",
+            "Node Package Manager — installs and manages JavaScript libraries"
+          ],
+          "answer_commit": "hmac-sha256:aeffc5b017287c138e6c9d7b603a541e",
+          "explanation_enc": "aes-256-gcm.v1:uYyhlTVwRxVkRsTk:Zkfm38T84ODiS3mBsAV86snobUN_Vc3Z0-Wc561gMuKF0Pi70ZQ_BKJGhTAChme6id1bUz7njT4lRaXFOCenRP_EVyEn27LbTzJos6CLe9EC2AuUGa724aBHfG-NuaJ4NZ0zzxnsovdm1zAXwxQN8SsvE6HaZkS5gaaT48gm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.2,
+          "findings": []
+        },
+        {
+          "id": "js-092",
+          "prompt": "What's the purpose of `package.json`?",
+          "options": [
+            "Stores user passwords",
+            "Lists a project's dependencies, scripts, metadata, and other config",
+            "A CSS configuration file",
+            "Contains all source code"
+          ],
+          "answer_commit": "hmac-sha256:8c8f51ad301692f187275a07d64af630",
+          "explanation_enc": "aes-256-gcm.v1:KqU8zXs0xe1qcHCF:r23wwKS3czRvFIglvTh1dPtM64ZA1P9pM-2DSB532CbaVxXxZ32hnuybzFfcWZ1oYD1QLvfNpiUy1sOaWIMa6pBjOJaT4SkzVANEgaB75KX2aBc19f_45B6RbWfogSkucGtZyuhGMhSz2wp9Jm7Ruhs0eERCQ0Wf_rQ1jmK61R3Hl4LjhvbWBPYDi64hFaieF8A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.792,
+          "findings": []
+        },
+        {
+          "id": "js-093",
+          "prompt": "What is a 'bundler' like Vite or Webpack?",
+          "options": [
+            "A backup tool",
+            "A database",
+            "A tool that combines, transforms, and optimizes your source files for production",
+            "A type of CSS"
+          ],
+          "answer_commit": "hmac-sha256:dd157f87922b6ddc5aada55542a18072",
+          "explanation_enc": "aes-256-gcm.v1:Cf1HaZNNRCdNQHY6:YfBue0K34BowJnBpy9dem131kBymA1rObFcSOPqVKOSXGVl4hLPL_Y2BoaUuxiCOHPycPQ6ngRYdCdhchX6frwXBUBNkW-c4YnVb3bHsXlz0Zb7SKpcEuJiMnPY0ug31_Vsbj0nWq5yVRO1eDXA4VB8rOgG4hacR5LUVEan2IdbDKC47_GhZazWxLjjZEw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-094",
+          "prompt": "What is TypeScript?",
+          "options": [
+            "A new JavaScript runtime",
+            "A JavaScript framework",
+            "A superset of JavaScript that adds static types, compiled to JavaScript before running",
+            "A CSS preprocessor"
+          ],
+          "answer_commit": "hmac-sha256:f622520b2c5e5b7759c0138c165e83a3",
+          "explanation_enc": "aes-256-gcm.v1:WwIqp34rbZEtp_62:Q0YOmqeaPeX3zhNdkrNMrOlf1DbN-THh4qT1Tke5asVnhnLmK5LiECzwjFxRuMgYFXWD78N7z0lYSCDvew95kAPxsZhvKGNqEfMJV28Sg3woaYjGugZNVq40nZ-FxgpupH_s4OMlTi-egqgEAvjSjKVRrGDp53c1lUialBo8dzIOpc4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.583,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-095",
+          "prompt": "What does ESLint do?",
+          "options": [
+            "Runs the JavaScript code",
+            "Optimizes bundle size",
+            "Statically analyzes JS/TS code to flag stylistic and potential bug issues",
+            "Compiles TypeScript"
+          ],
+          "answer_commit": "hmac-sha256:280d3570d9cfa32f907debc46002b7ef",
+          "explanation_enc": "aes-256-gcm.v1:9gYQpMKZ2Aqx45F1:BGq4a54ptCieIQ0x0JzVNJ7FqbZ6y333qGMFYyl5xHnMKFRJWMWkiCDrRjDN9vk-ND5ewDw4AikNxeuj6JZfTznfVaz5YwZyaEZNrDLXLwFgQZ5aBLXtRAZ2_TlmMmWbPF--dRhJLktM5cyYG0eguK4I7EmvQVfnTEO3Sg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.042,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Working in real projects",
+      "skill_id": "rfv.skill.javascript-essentials.20-working-in-real-projects",
+      "items": [
+        {
+          "id": "js-096",
+          "prompt": "What's the FIRST thing to do in a new JS project?",
+          "options": [
+            "Read every documentation page first",
+            "Run `npm init` (or scaffold via Vite/CRA/Next), commit to git, write a README",
+            "Start coding immediately with no setup",
+            "Ship to production first"
+          ],
+          "answer_commit": "hmac-sha256:3f1df33da3440102b6578adfde070318",
+          "explanation_enc": "aes-256-gcm.v1:o1aLciC3KBD4qoBm:gT7fs0PMmg0r6UJcM7I0DppgrsFGHA8Tt9Cz0z6Frib1XaKcWFJsUephxItrZlOqpU4EXy4XDHVFxZkRwpfGo_9dj2uN-RTus9ltLc2ZheDBQHlAENQHy9qb3b6AKiUQGYxz7w1Acr2XxRJ0dy5B9hD4C5SSuJs228jc7S21",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.026,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-097",
+          "prompt": "Why are AUTOMATED TESTS valuable in JS projects?",
+          "options": [
+            "They replace the need for understanding the code",
+            "They are only for big companies",
+            "They catch regressions when you change code, enable safe refactoring, and document expected behavior",
+            "They slow down development"
+          ],
+          "answer_commit": "hmac-sha256:1f91f37129915339b5baf96ad0b2d728",
+          "explanation_enc": "aes-256-gcm.v1:_Tqc7eUmzfd4Pd9h:y0ALraCYqWGXLCmzLjXSdfSWRxdp1Vo9SX9vF2-drLD_Wlbpq29lQt39BJyt7wmDFX_FVvEk6xvulwGnlnBCB2U67GC7wRfDP2-dzdmgcABmdMTx4CkE_3Z_lu-gcaWJFwEdRicIPPRcQvkr6phtRXy7_4LMtrmE7KRVzkQe",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.083,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-098",
+          "prompt": "What's the value of a `.gitignore` file in a JS project?",
+          "options": [
+            "Excludes node_modules, build artifacts, secrets, and .env files from version control",
+            "Makes commits anonymous",
+            "Speeds up Git operations",
+            "Removes files from disk"
+          ],
+          "answer_commit": "hmac-sha256:8a21e2bee166d7cc58999765f7409a09",
+          "explanation_enc": "aes-256-gcm.v1:odthk3mcVGPqw2rt:wRs-DRYJWeQJRIJ6v2727Rpijmt3rodNf70FKbBLUAzTlz-Qdqf7UsF9q8OgEa7Yp-3Eez6fWVmUjp9a9ml-QiOAqvOkdQpNsK4eUqwROhbS53BQdg3onQ0kisB9krgP8CPHRJT-ET1vM6JITRcg_p2VfD9zGbuDDMpy4A",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-099",
+          "prompt": "When debugging in the browser, which tool is MOST powerful?",
+          "options": [
+            "Only console.log",
+            "Trial and error",
+            "Just reading the code carefully",
+            "DevTools' debugger with breakpoints, watch expressions, and the call stack"
+          ],
+          "answer_commit": "hmac-sha256:dfa5d5f4f6e3cdceb1d773830039bc96",
+          "explanation_enc": "aes-256-gcm.v1:Tp2OD4pB9nzHzxjK:Vwqe7x2_6VEju120CEDkVsfnlpx9UbDV6t78QalIQkGATO9jXTBIwx3KaCJIn3vSzG6tKAnU-1pZi8Rrl2AqPpJ_X53Pp0eon3i9SFLRUjKjRzeMmw_5aptS9bGveI5nJ54iTfxbqRP36JGIa8eQGuEy5LuWCrA66hBdRVpCSwjE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.387,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "js-100",
+          "prompt": "What's the best way to keep IMPROVING at JavaScript?",
+          "options": [
+            "Memorize syntax tables",
+            "Build real projects, read good code, write tests, learn the standard library deeply, follow MDN",
+            "Avoid all new features",
+            "Only watch tutorial videos"
+          ],
+          "answer_commit": "hmac-sha256:a39ce765c38c9dc4f629f1701e6ec094",
+          "explanation_enc": "aes-256-gcm.v1:eaWIYzlIGB1VxFay:WO8iandRjzpwSJok8hbmJUFZYjfjC_EyT0nhHOyH33Njgu5qEtIsRpQbTKREEat7A-IfOk_yiXFq2gGOvZbyVIJ9tuvxhTXgC4R8fEEuMeWkVQuE8g0yQDd56IHMQNR9bJuT88ippZc6ib5oeu1p5Fmy9vCJHSmEt06efLkHcmyQjK5Mtbx7Vw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.654,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:b82bb507d09a3c5c9eb49413e094d59fdf2f3a655a77114deb45cd2693817c87"
+}

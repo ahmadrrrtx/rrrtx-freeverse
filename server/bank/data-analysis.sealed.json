@@ -1,0 +1,3397 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "data-analysis",
+    "title": "Data Analysis Basics",
+    "description": "Mean, median, distributions, visualizations. Turn raw data into insights.",
+    "category": "Data",
+    "icon": "📊",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What data analysis is",
+      "skill_id": "rfv.skill.data-analysis.01-what-data-analysis-is",
+      "items": [
+        {
+          "id": "da-001",
+          "prompt": "What is the PRIMARY goal of data analysis?",
+          "options": [
+            "Generating the largest spreadsheet possible",
+            "Memorizing every number in a dataset",
+            "Turning raw data into insights that inform decisions",
+            "Creating animated charts"
+          ],
+          "answer_commit": "hmac-sha256:2f323e09ab7e28181d0f16b3e1b3ed81",
+          "explanation_enc": "aes-256-gcm.v1:ICAJQtHRFP9GIcvd:rDr-_9QEwlJyt67WM73HkuThi-r-piOTXydU5Kt15bYBYHrEosqXSpKehDHJ_RzaLZeroVpUT4gKfqcq_Y5GRz02DijBACrPcsCYYkj6vJCXMlIeI0b8TisRpuWnpYEFJvbZFeHTVs5JusTrasHcCbfKKhKsM9Ofox9pJbtMbbrWcopLiMGY9uV6kPX3FLiWc-0A6Vbx9Hvrrsflh5YVGv7eSF6hFBf20XvdMv_rApYouPm_DQBOtyDP_PY3Dia5wOniOiU1zi15bW_CifRLBNIU1AP5fsVJwowRkWHyKd8SvRBqMZ5PWWsY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.209,
+          "findings": []
+        },
+        {
+          "id": "da-002",
+          "prompt": "What's the DIFFERENCE between data ANALYSIS and data SCIENCE?",
+          "options": [
+            "They are identical",
+            "Analysis uses Excel, science uses Python only",
+            "Analysis focuses on answering specific business questions from existing data; data science adds predictive modeling, ML, and statistical inference",
+            "Analysis is for small data, science for big data"
+          ],
+          "answer_commit": "hmac-sha256:c0764c50ebfab3f2558c1d69d30e9ddd",
+          "explanation_enc": "aes-256-gcm.v1:oy_AaVZdqnis-CGk:ucHNCcWrmeOSIbj333f3ZKxtJFDVCMw5FVHvauGxeHJtxO7kaMMdmu6m0SrIwM1UTe-2LPXD2StQ5WMbqHuDlHDtMOOEPZzm7sR0PMOJ5M1EdTj43nYPKBY1gwe2CG7fniQRcj_pyWlV6TYYxxDs0FHlkw6f3Qa6H9LehYrK9tetAwCuZdu6bSxFp1YZbChasdqfkw8ToaZJTXq8oY0cfZD8BBra6_HMAJBp-oqGIzMBYLQ57cOPCL-ppWVgeddLT3f-DWoXWTbvE67J_FCBdjOadIA3n40",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.042,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-003",
+          "prompt": "Which is a TRUE statement about data analysis?",
+          "options": [
+            "It's mostly meetings",
+            "It's mostly making charts",
+            "Most analysis time is spent on cleaning and exploring data, not on flashy modeling or visualization",
+            "It's mostly machine learning"
+          ],
+          "answer_commit": "hmac-sha256:72d5d1ac6d9cdfd4fa8072a0fbd1d899",
+          "explanation_enc": "aes-256-gcm.v1:u3KCtWNb2hSJSJbX:U6VVXupemOU8nRCJXuswcmp8V60kLPygyiQapwrauc7Xhgmdc8G0H4igHK6ngh5O4zZCKDtQC5Jtka_7TkJmyfjEGSA1olW9m2xYxK55DjJAVwQ7JQL7GpURYMVHsnM2CiRh5PozXbGVzWoqqLqbtYbu023gYx46d0Mr7325YzD543pdJnMFvSnyU_tPBN94VJHb_6GyGywnx58FzYGfmW53xUbBMDHICrnllUnGeo1qRpCe77r3MnETm9epdTgYieQ7L3JZp_LOxcxbmrVDEh_VEmgth0_JAnb-RLNCIHg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.536,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-004",
+          "prompt": "What's the FIRST question to ask before starting any analysis?",
+          "options": [
+            "'Which Python library is fastest?'",
+            "'What decision will this analysis inform, and who will use the result?'",
+            "'What chart should I use?'",
+            "'How big is the dataset?'"
+          ],
+          "answer_commit": "hmac-sha256:441039570f800171b016c00b31163424",
+          "explanation_enc": "aes-256-gcm.v1:O5nsh5PzXTaYb52C:JE056z8GvXBMZirAdlq0gk1mULetOORPEr3tCstuL1sa66gSu6Gy-Txw_67vYUU-mM1dfqxKQAKyXTWvI2wGrXH1-B9c3D4MHNii2r9dFKeuIpIrGCbzi42uLp1vlJNZFs3oDFP9SkMTt9f6l_bX0H21faV3q47FERPILUAeRbi7O2xHkj04QDEcoIZ1lOE2o6PUkrbdj1eKHUSzSgtKkDIRKwBdIGEolOURJ2FZgGl677SyEKCV8XLO9pZ5m2171On89R5s3FBloPSHt5ZKyVZDvb-QyA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.088,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-005",
+          "prompt": "Which analyst HABIT compounds the most over a career?",
+          "options": [
+            "Documenting your assumptions, data sources, and reasoning so others (and future you) can audit and reuse the work",
+            "Hiding your methodology",
+            "Using the newest tool every week",
+            "Producing as many charts as possible"
+          ],
+          "answer_commit": "hmac-sha256:6c50e0dc63e29116e845770df66017d3",
+          "explanation_enc": "aes-256-gcm.v1:22wVeoQ7cW78Mkd2:2ckYq9XbvIOuRt8-fWk1iMoHpSURIgu6SxM6HZhyAT9Fe4jMnY3uHO4TrV-zW4-PcGZ1m_qAaYTiQPO6Gqi8_jlXGlX_CAtvC8EzFmZYFCyQObF38RPdd-qicf8JmVopWzqDibb8W2KKrYU8e9p1qRuiZEORXOYzBD6O58WyhnylAIWPirLKLck6eUwTk9u03FQft2iZ3UxE7G8HfA5LpvmXKNVVzqBvsxv0B3Cq68PgxlbaXCguJM6_ftHbCbsOry_SZuBd0P6yr-VVOqKIbq4ncJtJi2oMf9SVbdI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.139,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Types of data",
+      "skill_id": "rfv.skill.data-analysis.02-types-of-data",
+      "items": [
+        {
+          "id": "da-006",
+          "prompt": "What's the DIFFERENCE between quantitative and qualitative data?",
+          "options": [
+            "They mean the same thing",
+            "Quantitative is always better",
+            "Qualitative is just opinions",
+            "Quantitative is numeric and measurable; qualitative is categorical or descriptive (text, labels, observations)"
+          ],
+          "answer_commit": "hmac-sha256:b885aa34e6da710aa3d4a8688615ab65",
+          "explanation_enc": "aes-256-gcm.v1:jmGc9OTf0ISg2Imr:wj99xi6d17UQRWJJfgmThM-i82L0kvi2jCQHj1osJIz_2-4vjh6bMuMO4K0ukhhffX-gOkql9OM6oWW7-CEeueaUBJs2u0UiHzAIl8rMw2ow1EnDvhv0o5h9vGCLyswsJ6bf1V-nDT-zdFvLqW9ecpfWjcDNfSS_-90JMQxdb7CT2Ae8Bjm5JDHhIhvq6XSAOLBZXqc1IspJM-8XNj6SY4Q1HQwmyAFUkq_liaZ-9LOn0ZK_oo61rQ7ZYunPeuxtDdRQLZsoraQA-zovNoACivmbHuHkJca8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.793,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-007",
+          "prompt": "What is CATEGORICAL data?",
+          "options": [
+            "Data representing distinct groups or labels — like country, gender, product category, status",
+            "Data in categories of file types",
+            "Sorted data only",
+            "Only numeric data"
+          ],
+          "answer_commit": "hmac-sha256:5d5e9a111e0a11dd9f3efa4eb97d6954",
+          "explanation_enc": "aes-256-gcm.v1:Pt9YkljizTwYBHcA:71x31V55eTQuldLksXQVixIOIFfSSKV296cmHByfn3km6pcyGPFJIp3x40rr2cq87hU6MhaqKAn_7dHWgtMbJyUBaqfD9KKtlPeZtKzWoo1yskiwFyfQPrJWTbPUvS05e1N6apZ2YH7FzSGR72xMTAai0vMrM90vRG8OHAip1NXEzlXzNfH2Ouh5CRVtjYSeB5KzGt6pPqspogIfPsX-6RXtqlOWWpGOhMgQirSbGMANKSLgXGrmlH7wl_8a9dUkHmuIZkG86xJQiHbvJH9ecjo_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-008",
+          "prompt": "What's the difference between ORDINAL and NOMINAL categorical data?",
+          "options": [
+            "Nominal must always be sorted",
+            "Ordinal has a meaningful order (Small/Medium/Large); nominal does not (Red/Blue/Green)",
+            "They are identical",
+            "Ordinal is for numbers only"
+          ],
+          "answer_commit": "hmac-sha256:b5ab517d30b2963878da1b3187758ed6",
+          "explanation_enc": "aes-256-gcm.v1:5npm5Qtya6ji0t-6:b4v---7Vkp55W7D6KlhLk28eYqUNRK19Mn0SI5bvb7GScxC30eqzaBdl40_OhSAk9-fyllyRNzgdcjg5tmWZOpDSZCGm52Pd-e0aE1IOPuSTBY_bnbnHBYwtxJgbbSXrCKE2SePA9qc6PaBrnpDfvNeIo3gaF8ZQj3ea-jrDyWc9eS_faAcpheALpsjB3aad8Ws4AkiMm1f0MvV8l6YMk_LZvRyjGU9poCKmfQgN8kVw6vk-bLeNlFKb1-P1e9ebXesgTvVR6AbaT_zQd0fncZdyo5dMQZth4DL0kdsv3h-g-_bwhGM-G3wDRnKBzhO1urpVFfeHJbfUlbocag",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.966,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-009",
+          "prompt": "What is CONTINUOUS vs DISCRETE quantitative data?",
+          "options": [
+            "Discrete is for integers only",
+            "Continuous is always larger",
+            "They mean the same thing",
+            "Continuous can take any value in a range (height, temperature); discrete takes specific values (number of children, ratings 1-5)"
+          ],
+          "answer_commit": "hmac-sha256:b5bb265edb7017bf61ea9566ba801773",
+          "explanation_enc": "aes-256-gcm.v1:gOZ3B0RO65fugeI6:wnQ08ACHNX8UhkLVeHkRQxGJmo7keE11ecL_H9wJpRXbSEXZnFD34D1pvtEIg4LMb5lITAFX8xNuQ-M_cKuQTWiKRj9AcSGjTNLX2v90brlRSM616lQgV6_7aZgSKgRNqZzKssRZDMdNhhmvv6Acd70F7J8ZaC6Ug-TrFaSzhp99Se4b8oKFHlsxry2YP-iPur21OGeZYfKCSXrTMG5WSQpCh4JAFTpy6JjCMCHGmBdWvvTplf4zJZtIdWA22eWFm9ZGCub6BiyJfy3c7S7PlOwTBICM8x05llJpBPJaNuB7bmO07APu8y3-JiijDFGk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.414,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-010",
+          "prompt": "What is TIME-SERIES data?",
+          "options": [
+            "Only stock prices",
+            "Any data with dates",
+            "Static data",
+            "Data points indexed in time order — like daily sales, hourly traffic, monthly revenue"
+          ],
+          "answer_commit": "hmac-sha256:88acbb1dc55538a6516c0d2196b7b8bb",
+          "explanation_enc": "aes-256-gcm.v1:P8XJiikVieqYlq_E:K-WNMCls8mJ3yb8bWP9kLHW4Ni04pTp9s7lKzFF5cl2dpP715zRpNVCOQD0_r4ClYWS0J_SSHjhU4VhFVWcKwL4grvp9UeD1WSUHBcraaeYvG6USrFLeOujLv8ihilBattqWooMAwx_oidkB0Jef4tV2LwCCDqdcOoowVo4QzeQCnhESlOQiFIQR8eDN59J5hCe1lS9fFTQYaMg-ohoWA-hWeuejIKc9hAgkiPincS_QNHaW1KXg5eQqCKJY_UMvHfcUpxCXMB_Fp5qrO0asILCtuX-69KhESrCR30xrxPm2g9baHDA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.474,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Data sources and collection",
+      "skill_id": "rfv.skill.data-analysis.03-data-sources-and-collection",
+      "items": [
+        {
+          "id": "da-011",
+          "prompt": "Which is a COMMON data source for analysis?",
+          "options": [
+            "Only company-internal data",
+            "Application databases (SQL), event logs, CRM exports, API responses, spreadsheets, public datasets",
+            "Only one source per analysis",
+            "Only data you collect yourself"
+          ],
+          "answer_commit": "hmac-sha256:45ab236f637e693bb4ef424d57b5da31",
+          "explanation_enc": "aes-256-gcm.v1:JDyU3kx_S2rchMlg:3JqTO_lHHnaFh8Mi6Qu43kGMMuk-XaNh_zyWHFbj0xZ_mhuTmbIQbimMaj-m1VMEscVpkae9-TcdYttBblCF11EtSPTwX1KpEEPiIX_BzT2Yxznln-XMuHxTuDnPgnKo8Bd9KuislYQupCbZcQbPKioNPS8WsqfiPW9Uz_BPv3xlrlniqFx2MkENXyRIyJoS49GoRWNjkBGjEr42rLRnpT5WKwdppmh_FS98K3yZ1GrOOLLM7Itoy2JErizkXsxB9sVZX6vb_3Acnq4F",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.267,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-012",
+          "prompt": "What is METADATA?",
+          "options": [
+            "Compressed data",
+            "Encrypted data",
+            "Backup copies of data",
+            "Data ABOUT the data — its source, structure, when it was collected, definitions, units, owner"
+          ],
+          "answer_commit": "hmac-sha256:ce8904a78efed7695e28cb01f8fe189e",
+          "explanation_enc": "aes-256-gcm.v1:xcMcPJUOrL1JFGcH:LwjJItn9M8DSiys6nuUoecrXt_IKcobCQYGTMYc724k1eNh4tl18kGPdfhl3snhp23OhEPOEKSnFPo1jwCrOWGexYMCPBe6aPl1th6eRh3RLCZUuGPxJEEtHQxCLlto13g4f9A2N8nimKG1ntJuE-aLzsd3IhmNKSMpoNSMuyzr478I7cP7yGmeEypTdvtKKurxA50P90Bb5h6m_aKURviEwHNJgNKl2RBr-zN8u_grWmTsnEynkU0UAgZckMj4FuPYBSs8WhkimrW6eVmhle6caJNyP7YfJ-P8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.429,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-013",
+          "prompt": "What's a 'data dictionary'?",
+          "options": [
+            "A list of all data files",
+            "A glossary of statistics terms",
+            "A backup index",
+            "A document describing every table/column: name, type, meaning, units, allowed values, source"
+          ],
+          "answer_commit": "hmac-sha256:f4a615eb4ccce017152abfb3221241ee",
+          "explanation_enc": "aes-256-gcm.v1:MHU8w-pu8n-TOBGq:PZIPkn7hGPB_8EmUPqW2hhMdWlPT604FVrsTLHwDiTCVc6OSaOiz_uFBaRire7ayVnBbADX4VXsG9P_5bO8ia89h59JwQ8EwY6AfOmUxdGFW9ezkEh_vLTFCZFpGfpwtCHkXnYCmz0svWYyk3HLmViD6Lij6zzGtX7ZVafKD_oYpvIp5bnEwkf5jMb8Q7kS2RZq1mPwLeSfJT36XhesuCmAGEdH-lPiiUfyTlQotckDcTo1Ac4oOZMVL6gUG-kXYipGJt1W3PQ3bbkBUEJoyNqvp-yGadTXxqkjT3-0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.067,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-014",
+          "prompt": "Which is a SAFE practice when receiving a new dataset?",
+          "options": [
+            "Average everything together",
+            "Trust it immediately and start analyzing",
+            "Profile it first: row count, column types, null rates, value distributions, date ranges, unique IDs",
+            "Delete suspicious rows without checking"
+          ],
+          "answer_commit": "hmac-sha256:685fa889f1ded4471e23e76d5bf92c72",
+          "explanation_enc": "aes-256-gcm.v1:HyksnnX8X6sxU9Ke:SYtXo2xcrzDR4bwOzjswpRvsZEzz-1XznZrBktKt7zuNgj0gaXV9AEmqoa9GG-o2SvsuR1H8-iKj7PaW5ehEc8IQF13dl7uX2pnYhTu8MvemIr9MowjQntKzVHn9KW0HQpfddVKI8dt0Ltnqx2YWdJaBbKaCzsmKxZc64Jn8wfB3ozQqojEynXijjiIptFVuNW-MhXqetY20cbSOBvv7soJHBByICqMZYeqgrContZSvB9rRRrGX01_AyxWIjwddLi86SjMQPx8vZ8RY2Or5-SnBRaaRq-qIp52OPDlls3CUeQhsSNrUGH4_biVqJ3vgxWgbrkt4rmIpbS50m1Wucg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.475,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-015",
+          "prompt": "What is 'survivorship bias' in data collection?",
+          "options": [
+            "When old data survives longer than new",
+            "When your data only includes 'survivors' (successful cases, current customers) — leading to misleading conclusions",
+            "When data files don't get deleted",
+            "A backup data strategy"
+          ],
+          "answer_commit": "hmac-sha256:720477995516d95a34bccfe0378b108f",
+          "explanation_enc": "aes-256-gcm.v1:2FhUvyhmYgR_a_oA:JuZcOUCEM3BUvtJXlR_uCLupFX7cDKwpJDa9BaguGq171eRkzLfYgqmBivbhKtgd3uAOZfb37v-NgQjk2plA0cuRAh0xiJGzg6vn9tFIBfzENDvckep9bLkCEzuAXpyWnhII7Nx0AL0viU1acNlddtzdaDefsDFleawsal-88yjBim3SNw6JOhuE58WTGT2ZaNySUmLeI3qHpp1-6hhAjdrbYBBe_CNqcMyNQDhj_iYw7AgfMrAqV96wxAjajwDCrS6rOzbYBDV7K6EaSaurndCyLOu9fqMaMiCbZRIlLuCBmJ3HoUO3OxkA7zywhi4TCQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Data cleaning",
+      "skill_id": "rfv.skill.data-analysis.04-data-cleaning",
+      "items": [
+        {
+          "id": "da-016",
+          "prompt": "What is 'data cleaning'?",
+          "options": [
+            "Identifying and fixing errors, inconsistencies, missing values, duplicates, and outliers before analysis",
+            "Deleting all data and restarting",
+            "Compressing the data",
+            "Encrypting the data"
+          ],
+          "answer_commit": "hmac-sha256:c6bb55337a984fc985fb0db9eab77938",
+          "explanation_enc": "aes-256-gcm.v1:sWFHZr5TDDN6fKFL:MtAvEWid8wZu9GCYmlndZ0b_GDyQs0s3ncFnw4IOy-lGRDkXCtE4HZDmaf57FGj2dEpCAZZQ_G02Jj7PLBUafPhlly0PVDsjHdIKdmCOO-TlpLP0Wy2iEhongUDJ2M-FZdfgG3CYXLfXKlC98D78ZNPRgDWmNImvv-O-NDrEakGpdU9K3N3qgRKrlVk0ZCj2KITXwhU3PX4JfKIkoVEq5luFTaKOom8DtB2y5TM5AbOnGKUfWY4ljyQLQbhb4CBW3kdT_XQivc8qPrX5OA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-017",
+          "prompt": "How should you handle MISSING values?",
+          "options": [
+            "Always delete those rows",
+            "Investigate WHY they're missing first — the cause determines the right strategy (drop, impute mean/median, predict, or flag)",
+            "Always replace with 0",
+            "Always replace with the mean"
+          ],
+          "answer_commit": "hmac-sha256:08816843f92d443a6f371e798150f2eb",
+          "explanation_enc": "aes-256-gcm.v1:fWMf3cvwMC8WaWQG:KVLXTRO9USWWMH8ibffe-YZShcuiIP0FjvisMT-3ETyOWo2JKCz8AZ1fJB5m3odA0zYzjICqIZ7BJQhXBNI1vNPgoHs-7W6cFjyQIREm33E5kcqBfEHQAncyvwMg7zElvuyRTFy3raoT51lbnCy700OMS9qc4cvDTsoOKM8jjKbCy_axNv0BAQ48YAKBb7Y8I7Rksfc03uLUIRufPK9usFyF_Nz0pgS-o-FmIrpwLQjce3ZQpZju8QHHmRwx-GUNa0bSXUnApqj9m_ZStj6jf4aZELtLVb7WLy6K_pgUuMFEVO2pRH8Epqmd-XGZ1czULRf6jiQh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.429,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-018",
+          "prompt": "What's a DUPLICATE row, and why is it dangerous?",
+          "options": [
+            "A formatting issue",
+            "Backup copies",
+            "Two rows that should represent one entity but appear twice — they inflate counts, sums, and averages",
+            "Two rows that look similar"
+          ],
+          "answer_commit": "hmac-sha256:94118a61ef00be895f042f6381e1e524",
+          "explanation_enc": "aes-256-gcm.v1:TuCnfuesrsKrGkNb:0a1_NG1LGJrh5oAkMkAFvqAlqN9cFYuMcP2FpyHtrfQdytnTicZZ48BcDNm-NdFsnbU-3mll3wAC9gdqPwnw3VoMuEBe7HvUQldZ5oKsLVES6iDUsKFaMA5vGqKeO9MkVLyC904Y_DGqgOHWUys7Ga1zaK-W984AWHNtaDHLprGZhEvwii9qv8pMUQInvOmoS07C7Ai8vcizKAPpXTl8mEeCm-JRqL6Bq41E4mIC44hf6Vforh1Klg2J4Z4BrhbD0Myof1ludR1Tc240q6vxfMOBQmn8Bw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.846,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-019",
+          "prompt": "What's an OUTLIER?",
+          "options": [
+            "Always wrong data to be deleted",
+            "A value far outside the typical range — could be a data error, a rare real event, or a meaningful signal worth investigating",
+            "Always the most important data",
+            "Statistically irrelevant"
+          ],
+          "answer_commit": "hmac-sha256:8ff9d23f0ead40b5bdec8917ee6362bc",
+          "explanation_enc": "aes-256-gcm.v1:-fxeJRQVPFf_EpG8:Vf6bHaT1gJsAHQPCGv8i0L8ywIG81XA40F9S6fSFNIu9QdyLco2bJ2m-cyh3kAeroYz1eJyHdL4AkpIi3Osy1-26M45N0aFpoO-4AktPTs8x2gAL3HKggRmXYDrG7ZspsQDuPDz0tq2uqCRRoZrMcEYp0vQfaUIZKevQuCXRDdNI6u5WwMrsxE8VvV9-kikfsVmugl3VN9L9IYv2ejI0gZ988cG7z6fbjPXSBS_hyjAFZ76peNlf2VbugBn1Tnpc0T3kiFEgpL809uJoqglkOcNqbVG0gB-nq6NjUvOBU349sn1hFR6p34zIoRPzOh2T",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-020",
+          "prompt": "Which is a COMMON inconsistency in real data?",
+          "options": [
+            "Too many decimals",
+            "Identical perfect values",
+            "Same value written differently: 'USA' vs 'usa' vs 'U.S.A.' vs 'United States' — all should normalize to one",
+            "Sorted values"
+          ],
+          "answer_commit": "hmac-sha256:3a0093c7a49a2132102cfcaf785bff95",
+          "explanation_enc": "aes-256-gcm.v1:L2M5uXMOt6f5PimS:R6nGYn8pZ4QKCIHPyOMMJ4JrG2kf7ET6izx7E4-xC0zVnyLuRM-Jk5MY4LppW3ZvjoK_azBhQY6875ObJEMzuhQrkAyAtn7MCxAXdB8krPYoDg1FyNIN3K2AyA7xatVofMYZuujTToLab4k3Us_q1UjiwgY-sozpJN763QELfpfuwGYGkD59yvoxxb2XBPTjJJcSNImHdLFhaBFuQMqOA7fXUzZODKaaRkE9wdhq33Hs-KJJcojZlwoUoZItkSI63mpFFTA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.458,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Descriptive statistics",
+      "skill_id": "rfv.skill.data-analysis.05-descriptive-statistics",
+      "items": [
+        {
+          "id": "da-021",
+          "prompt": "What is the MEAN?",
+          "options": [
+            "The largest value",
+            "The middle value",
+            "The arithmetic average: sum of values divided by count — sensitive to outliers",
+            "The most common value"
+          ],
+          "answer_commit": "hmac-sha256:c35a407818999984b02619a3a50c213c",
+          "explanation_enc": "aes-256-gcm.v1:ms5_SSbTA27AJA5i:DK0YN_v_kw-tjjNAIv4vhi1TWfkCnhjdnoTsPJqpBwf6IFvm9gPXyxJL5m5NAjVbBMxh6ST5pMYY0nCAsnRSIOEvi2CctiKZ_Z0rureqOLNF9Yg5lWFb32cJPeL0c7YnfnwE4txA9q0LX0jOKGQbT44aIeec3QvHzZPg6Nt7q_FmSyQbziQcSWhG8M0k9pIP4tPvu19y3QcjzlXXXpQNIYFR0x5CmIBiNKZ5a4NwohY8AG0Yx43ABfJ4f8z2ffAripJtArMZEDz1zef-QhUpOKR19Gx7aaWsAi1PrC0t7l_le2Zftck",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-022",
+          "prompt": "What is the MEDIAN?",
+          "options": [
+            "The most frequent value",
+            "The variance",
+            "The middle value when data is sorted — robust to outliers",
+            "The average value"
+          ],
+          "answer_commit": "hmac-sha256:c43bb62bef65cbe3898bdede3a9cccff",
+          "explanation_enc": "aes-256-gcm.v1:E5zqq6UTnL8ZDq6o:MeQ5Oe2Gh2BY4x04EgiRLCMhPR_VuHAE1-zgqk1YfWhGQUzkSRtibpVXK3eMRfwuhFOJDC9AWLSIcRlb9084uP7vgCe3SGiX15KC4fR6F5o7dl_CePIhIw5lKGLO4xJ6I7HT_EJ_YbyCycrhM2PYLQCiY6jVvBM5Em2wdInB1KLsBrIsK3KZEAVnDpTsXz8enJbQYKABRzB83zqsY5MrP1yjStsEslJY-5Egg86W6wa-d5V8Z7KL5UtpC1Vpq337LsPDYtAmFPBqFi8CZM9eIHxqKCUHCZapSEY3u45_7jZhB0L5jgoXqMSL5r5JSA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.478,
+          "findings": []
+        },
+        {
+          "id": "da-023",
+          "prompt": "What is the MODE?",
+          "options": [
+            "The average",
+            "The middle value",
+            "The range",
+            "The most frequently occurring value(s) — the only summary that works on nominal categorical data"
+          ],
+          "answer_commit": "hmac-sha256:14fb46d0c046fc22d04669f6586a4a39",
+          "explanation_enc": "aes-256-gcm.v1:-UMyMBJMNkgP4WXN:V8hdyZPFu-B2HUhbDvBvcOg3HddujddBV9EIU3b1xMgQkQzjWwPwSkQPJ5HWXz8LSPQ2mogSWPDQEOqZGjEuWu6pDN1lBsGg1lq9aay9XO_jTR9X8UobF7H0WM1n7627BnaBQ5Gf18ojBXIzPzt0PjP0kENhYKtJwzQb76LcocNfXEB9F6I8P81x51OsbW_k4RaKYhWCyiiik-Fxh7XPY0IKGXdV6IwlWAInfhBx5mp0xA_NZ8uJ_wLsrjHKk1b7BV-3yvxI5pyAT3UZnVk7K2jqILHpQpwUjTGg__QzIrnn1gS7gvLKHJ-W4S4rUaEKx45jtpvg_7NGnzfPbg3pPbHTPg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-024",
+          "prompt": "What does STANDARD DEVIATION measure?",
+          "options": [
+            "The number of rows",
+            "The average value",
+            "The typical distance of values from the mean — how spread out the data is",
+            "The largest value"
+          ],
+          "answer_commit": "hmac-sha256:43c5dce85df2ead4bf4f1f0d0e0c3267",
+          "explanation_enc": "aes-256-gcm.v1:Y-LnowqjEWvCZlBF:Yf2EOgJj8tx7Oj1vqXXonpxzoAboSQHfSxD54cagV9HpxADy9vsNUeDgQn0CUurwUVNgrKOMzOaSvOjcFOQWFOhBJhDnrb3Wlz92Q5J9Rc2XXOfRWA7Tr6HY7oo9FPIiHrnPHqe4hrAKMRQ1HCb4AeP0g9kUYQoQfGU7lW7Crb9_eFBf92zEhZEpx_7uunWVwWAdNHE-0EmpQPjb0H_rx8XC7_WizhfmJmJM6Arm1HWhqkA4kT9dUtlFC_FJToiWYgN6P3Zqd1c7jRR_ainPO04HbQxQBT0_QX2vfPbqGnM2dV2BbsWk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.056,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-025",
+          "prompt": "What are PERCENTILES?",
+          "options": [
+            "The percentage of missing data",
+            "Values dividing data into 100 equal parts — the 75th percentile is the value below which 75% of data falls",
+            "The error rate",
+            "The data size"
+          ],
+          "answer_commit": "hmac-sha256:3299c7f3c6c38119704260938af824d7",
+          "explanation_enc": "aes-256-gcm.v1:wieu5913G3Sg0Ymg:rirahttezZiVB9JDVCnTPPkA4H3aJ3LIdGaP1IBv2OD0WJaxW9f3Su1Kye5YQp7XKwskg0gMnAnWOd8gd-AWYzYjYor6ubu0wBeY2cwQCl7I0teIDaCB6VN6ltlHSv7lPjEq7OGCajXkT8xFWxuRQJu4uVeL68Otm1bKXQcWYvXS4i8D04yY43tzqK4QzKhN6Ed1TxSpdwDmwHN8CHRfCK-q_LWIVD7_By_VogJoitivtbbIL7MW4cTGkxZYnfczxmc45KC58HSOiHOfgQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.533,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Distributions",
+      "skill_id": "rfv.skill.data-analysis.06-distributions",
+      "items": [
+        {
+          "id": "da-026",
+          "prompt": "What is a DISTRIBUTION?",
+          "options": [
+            "The average",
+            "The total count of values",
+            "How values are spread across the range — visualized with histograms or density plots",
+            "Where data is stored"
+          ],
+          "answer_commit": "hmac-sha256:c00a51ddecc00cb401a14cb4b917196a",
+          "explanation_enc": "aes-256-gcm.v1:Qh8kp-hFJaZM7STF:kngiwJAKIZYkP_ed7OAzmORhCvmb8Z28DFq8zAKA4N45QeTGLAamu9ffQmcNjeLiViQtMbTXiDFsGdjoaVRzyYDmxccFMYDtJefvlwBBEUiKV-J-N12LdqkePUKkHS7Ec8uVkBwGh1iRSnQALntbSj57nEoC5Sx-_G8ta37iNYBQbTIQPMpt3Y3fiVTAUbdokJAonN8khMy342TzYOMxHBhuOp2o1kevSX18FP7uBkB-aYeYp5nRzs3STXnsSCfZrH8XYbhwkgFBVA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.36,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-027",
+          "prompt": "What is a NORMAL DISTRIBUTION?",
+          "options": [
+            "A uniform distribution",
+            "Any common distribution",
+            "Only used in finance",
+            "A symmetric bell-shaped distribution where mean = median = mode — many natural measurements follow it"
+          ],
+          "answer_commit": "hmac-sha256:eec08602bbba0b491c6362eb4623c35f",
+          "explanation_enc": "aes-256-gcm.v1:0L-XfAikAE1Q4tPM:0vQBx1Sg67fhtm5aY-9d96_JSuNf5AKMtjkDQEfZKV3g-J59eEbDmQhWl_Bh2uOhc4prI26Z0VR-276DWOknAQFzqc4ZtFQiIuwHeS_-69A68KA9PLcMKrLDnz1eNd-Oz3uvjSZjkrsxjUwM6gG6M41pnaHIBxbju5rfTxouAsoWUt5zhIMVV7U67KHYno9-dIkbbQEfbVeHq4FwwZtPc96zcbO2ZcOIHuHo6V5Vs0bG8eA6SwRaJw01jzQiwwzsFq8V_76N7KSMlXhKFnES61ZYwQf2gzQj8hNF8IC1yF5Th22ZCz5ueMC5LIUyxFosSQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.391,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-028",
+          "prompt": "What is SKEWNESS?",
+          "options": [
+            "How smooth a curve is",
+            "The number of modes",
+            "A measure of asymmetry — right-skewed (long tail to the right) is common in income, prices, and counts",
+            "The peak height"
+          ],
+          "answer_commit": "hmac-sha256:f6bb2b3d604ff6e9dc46ff50ce6ab0a1",
+          "explanation_enc": "aes-256-gcm.v1:QHOBnkLvT9rn7T0N:E6HVgQ-obpowcY_Wy_e8iWX1KcQqVDiyjSqoFH9r23AZ8vOd4FhuHGLs5JMpv-GJYhd0RxaZBFA-ztD4NtHOef9IO12JRobpZVqmN33WtpXUiNWg1-vDcq6NrhTT6fQomC_w2qvhpLUd6TO24rRFnHe7J3jaA53tJOMyh2MOnNIiFK6U2_LDfCVYkcZizfDzJJMp0D21BWZh9k6-8bc5X7XLmmA8KqDjf11b_SgOzV-otnmRZUS4NBvxNHQj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-029",
+          "prompt": "What is a LONG-TAIL distribution?",
+          "options": [
+            "A normal distribution",
+            "A short, flat distribution",
+            "A distribution where a small number of values are extreme — a few items account for disproportionate impact (the 80/20 rule)",
+            "A distribution with no variance"
+          ],
+          "answer_commit": "hmac-sha256:fbb18774be319b5aaa0fe456963b24e5",
+          "explanation_enc": "aes-256-gcm.v1:cant74pNgHYOhS-0:u-YMMwBvj1Kb0L38fCfGA2VYUUNv6b0_EfLmz7s9g2aUnKkZhgP-nHUHwzKGdzRHWRFkaJQAMLd38XtG1A5_wEE75FTAZAAoj8eF2y7ZL6xNN8kLOtkUur9Fpdj7l6Gu4nhlwPCVke8oswHDYxQG3NPis2H_Uj73PIcR252VHe0awJE8yH1cF6YEfsb2T-Wg5s3gWNtJTHC0eddCCSVVdbqoj5BhF3Jm2AfahCs5t2PIh-E0NOnuj4CwbqZ3xwUhk-QPp9ycpvrqsC0Frj4sv-Dmssl6iv2iDyH6n9fRafA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-030",
+          "prompt": "Why do many statistical methods ASSUME normality?",
+          "options": [
+            "The math is simpler and Central Limit Theorem makes sample means roughly normal even when the underlying data isn't",
+            "Normal data is the only valid data",
+            "All data should be normalized first",
+            "Normal is faster to compute"
+          ],
+          "answer_commit": "hmac-sha256:00489ce743d90d4bae7234e8cce249bf",
+          "explanation_enc": "aes-256-gcm.v1:YWeUW44kmIFte2FD:lRARE-EwI5_cgTSHj8GTqxuulG1ZCwjWoBDKY0SIlsjbdDFX8m4FFEilFsfYXZUhedlezmxtcJTYixG99JVGHDCf5l5SXVDxckwEhS0NzWbdUnUOw43oLYzucWOdylmBR19lWDIZZSp-VQVC9dJQSNHbRMbfyLH_lilU4SMLoMNyJEfkHykQ1YEyNJyfI18FgxlTmS1QEsPuBxVZCyZJoHZ0vxbBlrOyUlf6DvvmfvUCEl0zxyHndMUQQb3Up06vrw-R6ES_1WBaaJ62iUaBq8blFisM0aYHLsnFKvzGWT-Uujy0VZmHwkQKPhQ-aOchAT3cNZSd_BBm_kpxs5qUmQcpdO1vfDXYN6fdlEQWqA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.286,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Correlation and causation",
+      "skill_id": "rfv.skill.data-analysis.07-correlation-and-causation",
+      "items": [
+        {
+          "id": "da-031",
+          "prompt": "What does CORRELATION measure?",
+          "options": [
+            "Whether one variable causes another",
+            "The strength and direction of a linear relationship between two variables, on a -1 to +1 scale",
+            "The variance",
+            "The size of the dataset"
+          ],
+          "answer_commit": "hmac-sha256:0ff55de12a3e0e3270cd12923643c110",
+          "explanation_enc": "aes-256-gcm.v1:8BTbx3BCpmR3ektX:heJdvFXcJFKK_Mk4fGffHQbeVS9ha4oj9eeSA20kV49LkP-H7G8yCekbSO4E03y4-r1Bq5oBAe3dKyayBmmLz1JzaYHpNTpRRUHQ0GURXzI-FDTOIaZ9gq5FBaV1oPXMMsWi8kDRhcE8sPlZkmYpLEFGrNGuF5e4kMsHXRgLGDUZ6qi1n1TBkDJ3ff_Lfl52jbmJ8aiYvuD33k16GqdefWTJMn7w4h4joY6c03-auCLzOYDThWJ4TSULd0TI0jQ5vT09NKyrwcSmrlzm9OKIzlEkg8nm6FOI7xaAnL7dsYWz5iM5BOvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.686,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-032",
+          "prompt": "What's the MOST DANGEROUS phrase in data analysis?",
+          "options": [
+            "'Let me check the data'",
+            "'We need more data'",
+            "'I don't know yet'",
+            "'Correlation implies causation' — it does not, ever"
+          ],
+          "answer_commit": "hmac-sha256:12a92f73add8dee5cf3599386cd7ba0a",
+          "explanation_enc": "aes-256-gcm.v1:5nRj_TbFMoLePPI4:qEUFZR8ccj065DBqESQpoja2MtsQpqeemKwuStmzKt-JuiaubDkLaGLck_gL6i3prsGK21iYq2efQtR5IDbbvXKCCNLNeJqy5FC75fkWo5tgyYXJi1a4QxbdsLUiYZZRglTkyz9DDhVCpOgwaUykwy6ZTEFaGl02KhZSkQHZP7p-rKfraUSVuVgYTwEJso-CjUWY_FCdJeA3AuIRS9T_gxPkl0FxCNCKQIc2JVamn3eMx4MwCynkzkBReYaNEMOR7AL4BSVk37x3dPx-RcjexF87bmgeLUEs7XfAIpHLuL2JDR6zWcC4QE5wp_be1AhxRE7sqs9_jrv4zs3OiwnVxeXgr_JK2d-1iGDcsGVyMWaKTvfBB0HgZwoJyg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.217,
+          "findings": []
+        },
+        {
+          "id": "da-033",
+          "prompt": "What is a CONFOUNDING variable?",
+          "options": [
+            "A confusing data point",
+            "An outlier",
+            "A hidden third variable that affects both observed variables, creating a false sense of causal relationship",
+            "A duplicate column"
+          ],
+          "answer_commit": "hmac-sha256:03b9899dda2e95cf26e1e7be36129ec2",
+          "explanation_enc": "aes-256-gcm.v1:KjLC07nkMCy-7ppd:ak5v8ceXC0rNHrjw37-BH-pQNagydNU2smqeLMXzQijKlrrTV4NPRGairPIHjeuMdXCItXv3db5AKqfRmRrgep7bpgDXX4gE0rKhvn7hU6smhnvfrcCcb24JKR7Kroyf0PeCusiOArPUreIhzzN3og2wfMEBjilQ1GDL7X2ql2R17ua-j2Aj_F6QAY49S1idxG5UvQp6teVHR_IQ5LL12GULcxviSwhJFYTRO9bWuGBe_IjR-DKj16s_4ESsDqvEbTQnaamxLR2dUtGPBj6tJI_zHzj9R6xIXb0VadHoUzHc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.864,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-034",
+          "prompt": "What is the GOLD STANDARD for establishing causation?",
+          "options": [
+            "Large observational dataset",
+            "Many data points",
+            "Strong correlation",
+            "Randomized controlled experiment (A/B test) — random assignment removes confounders"
+          ],
+          "answer_commit": "hmac-sha256:c85d01de35fe5551b67ef9713c02ad65",
+          "explanation_enc": "aes-256-gcm.v1:JVAAs--NKkrBIJA3:t06KZPEkEODsb4-zUWe4mY5NgXnUzgdizcnI2jF_az1PC_XzsfJ08hQjuDMalo1r9C2UbGyFcVlZ8KOPcd2x5i1KWhIw640wliCCM2mRoxjkLR9gmMVvcPt4laPeQyyAAmFv-mEZuZ2_EPb4dfO8czSCzEeP-k6VsmizFdFGJwMFjk2EOyazoBWDNuI1jgECkRXJAbrEcc7e_oDatTz_gDGJNEaBomC1v4AD6Y8okWrQ4NMRreBxwnan97H549lSnSelPl6HKX7dWE0TDM7jw8YHIAUTPQVHuxa17_K_EQh_6phMvuDxgCs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.074,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-035",
+          "prompt": "What is SPURIOUS CORRELATION?",
+          "options": [
+            "A correlation in small data",
+            "A weak correlation",
+            "A negative correlation",
+            "A statistically significant correlation that has no causal connection — often arising from chance or shared trends"
+          ],
+          "answer_commit": "hmac-sha256:b220d38aa2fb3fc273b0499041bec179",
+          "explanation_enc": "aes-256-gcm.v1:qgvSaLhkwamIT_Xr:fiGK-U6eFXMrvH8zTlXSX2gGRMaUXiydfWKnB_jF59HJKAwI-d4OeKaXbikNNmqQpDzeWzKnayJz6kPQoQghkjPZwUGxRDw-6A9XkI1pSPRW_VFUZXIIz_Qzeq1cbXKNPecoiG_QNUnuMXIpMCaBitexrQbaOQvYHjOYUkOfKnPTgpm4rTAIXcYsVsZi28Y4IjC2482b6POFSkB-A7rOLdIhinoo9-qXcvPVUwHylHrE5JC7SdvJXZ9ZUS2fYNKvnwGcBnuLQ1JXvm3pxyC5E2ZH95K8yx_iILixiWT3ZXpzqRhV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.222,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Comparing groups",
+      "skill_id": "rfv.skill.data-analysis.08-comparing-groups",
+      "items": [
+        {
+          "id": "da-036",
+          "prompt": "When comparing two groups, why isn't 'group A's mean is higher' enough?",
+          "options": [
+            "Higher is always better",
+            "Means can never be compared",
+            "The difference might be due to random sampling variation — you need to consider sample size and variability",
+            "Means are always meaningful"
+          ],
+          "answer_commit": "hmac-sha256:eae0551c396d4fbd63a887ce364c30e6",
+          "explanation_enc": "aes-256-gcm.v1:d5DAf57uOLLBS6Bk:vFAnUWPW_opFMpexi1tb9Ypj6QUq9OI2Ttxoz7CU35GP1vfnxKPSpYIsk9NDWavPEenSeVEpd8ZB7Y2p0qhbw3zE8IobFZVNZxraMSdzFMrj9GcOTkEiDqXYlpupWzapp6leXKDBIQzLOopI3UI1NDj6dxRCm380jolKy7xvzgkn72z6AnoWh1uWblRLGmOQ12Z4IsF1VJWjxfWc_T8s4sktcr8EVn-lZeiMJRB0ZCalOoiN5gm_WrUa2_fm4WIrjuphc5e9okm88HgHSdtEmGZeHVUXmCZEiOMl2DvGJiA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.963,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-037",
+          "prompt": "What is a 'STATISTICALLY SIGNIFICANT' difference?",
+          "options": [
+            "A difference in 100% of the data",
+            "A very large difference",
+            "A difference unlikely to be due to random chance alone (typically p < 0.05) — but significant ≠ important",
+            "A difference of any size"
+          ],
+          "answer_commit": "hmac-sha256:356b798fd431156efdc83d549408a1df",
+          "explanation_enc": "aes-256-gcm.v1:tVW_3Py7Fh9e1m7B:xFMdEuczKI3NQ5PX_tYm_bHBBsDBVONLIrDrfbeiz4X2Zidvy_5TQJcPvKSrDhCxP_srOtNgxAbG8kOwH4QCizqWT5RTc3yUNRQ84-Uz0uKR0uDwgU_ylS8WMbW6dY-zUm8zU8DsYGVIL41hb5BYKBhSi3ic6AnyTJO8RcBtft4yfgY1aQ27_QhAK1ncR9vU3MgA1Ps9xQ6PJw1maCgwnp9ESSjcVELHjnTCoghttugnnOxCdpYneybbmSshRaG23So44OzpRxEMuj-OKK8xjWubnCJ2iUZpkMkH4S3ENklYwYveslo3HIgbyJQUUhM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.281,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-038",
+          "prompt": "What is a P-VALUE?",
+          "options": [
+            "Always a percentage",
+            "The size of the effect",
+            "The probability that your hypothesis is correct",
+            "The probability of observing your result (or more extreme) IF the null hypothesis (no real effect) were true"
+          ],
+          "answer_commit": "hmac-sha256:7cf1e9cd8d0e0d3bfa51b7a04c619273",
+          "explanation_enc": "aes-256-gcm.v1:s369AOIQEswOMb3U:EBWhrseRI2g6gvSrbZbXTzuiWo_WRZ2tY2jpkRKS-CeTbwsexAjpRkqv50MXcKrKZ8F4V1qZyKpgwYe_DG_HTiIyd0sB3YzJNOVSnLqpOmjO6BE2JKw8qAkZq_ukHV6MDJUOAkVZ2h92Nqg266dAuTHUaaE0p1CEDN_en_Wrq8ajAcbq3-a1uFKnSWI4vQOZam-e3fxE3C2htT4BHwHKKJYMJmBkrUWldc6O5t4wu4jQ7emuYJrf91aa_yPCQnvqYwIDhimaUle7yFT-cPtTugfGj3MRdsbVG4Jg7kav1-TjCzSBdlJjl-WkmU1P8lhKmwoYXH5vvqImYUO3my5hx2C1hID4mg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.298,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-039",
+          "prompt": "What is the MULTIPLE COMPARISONS problem?",
+          "options": [
+            "Running tests too many times",
+            "Comparing different dataset types",
+            "Testing many hypotheses raises the chance of false positives — 20 random tests at p<0.05 produce ~1 false discovery by chance",
+            "Comparing too many groups"
+          ],
+          "answer_commit": "hmac-sha256:4949ef76caf64d6229b25bb4d1ba3437",
+          "explanation_enc": "aes-256-gcm.v1:IZoWr8A4ajyDUbyw:OR0ubLcBmB_qfSljShocHpbBMuYrzNv6DbrykdriGqA7ijpPPbKKru1mNybjbPGcguvrJg3b1rMY3GF1kqt_n15cDCptmjn9cgR-b-JO_tpldVWRKo0cmLsfZAo9Xe0Wcd8X8ZpuysWnxZ5RkPLAF61cZ_lsWxe-1VbS32AsJ99pFPj6QjgRxFxCCqk8KAHDjNfjq6roZVLZ9QEaWIDH83-xhrehvKYIdJjWgZ0k9qYpliixfodfyLf59bh0YmORTMPMW4RHLuDwzB4Hj0VD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.788,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-040",
+          "prompt": "What's the BEST way to present an A/B test result?",
+          "options": [
+            "Just say 'significant' or 'not significant'",
+            "Show the p-value alone",
+            "Only show the winning version",
+            "Report the effect size, confidence interval, sample size, AND p-value — not just 'significant or not'"
+          ],
+          "answer_commit": "hmac-sha256:a0d89794ac403de00855e6b76b2edadd",
+          "explanation_enc": "aes-256-gcm.v1:Za0PMrz_1A0RoJb4:3INJY-1Nk6L89b66h6eYsV2Glo6u5DGH8VFBmDM6GT1mQlnuSIfvYn9HY5bXO3B9vyciw8kVrEzKe5gk0kGSFpCdTkmyTOeE-Or_BphL2lnmlzdE5l5ub-EhACHVP7HkKl-WYehyuM8oIoYEbrK471oxXsiB91b6dVesL5__tq-Pv-rOCjqHSgElta_1LcUUv5H8L170UhLtdBvRrN7VktSrRiWIpzCYWUwZCJCWp0iAUZ-X3ByrP4yqAB8WKdBCmA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.349,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Excel and spreadsheets",
+      "skill_id": "rfv.skill.data-analysis.09-excel-and-spreadsheets",
+      "items": [
+        {
+          "id": "da-041",
+          "prompt": "Which spreadsheet function COUNTS rows matching a condition?",
+          "options": [
+            "COUNTIF (single condition) or COUNTIFS (multiple conditions)",
+            "ROWS()",
+            "COUNT()",
+            "SUMIF()"
+          ],
+          "answer_commit": "hmac-sha256:95dbe4780ecccb127bfe3895635d2cd3",
+          "explanation_enc": "aes-256-gcm.v1:Dy2_9Ai6AhVNKXf0:tsjI22Gt_LGX1PqDwNVe4W3T4k6cbbpnEo8PmaDORilKpZv82cwuS-3Fp6k08_gxYDogvgqIqvGMGHIT_oV4ZaoK2cwx1v2Zpj09k9xQAaBgnhynxwbf2cISfUo8dI58_OHGXB1wCrQHSdxHyINm85LtlbuRKrgnQLSvc0YbESwbh9Dz1GmOVOyobUW1ClwUY4YUSA4F9L7jZ9AjGyChbm5268ebB-ERWbA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.571,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-042",
+          "prompt": "What is a PIVOT TABLE?",
+          "options": [
+            "A type of chart",
+            "A backup table",
+            "A tool that aggregates and reshapes data — group by one or more dimensions and summarize with sum/count/average",
+            "A locked table"
+          ],
+          "answer_commit": "hmac-sha256:967c884e4bf8a0d84fc21fd859119653",
+          "explanation_enc": "aes-256-gcm.v1:jB1PNVW5_7PyQL0H:8G15fdVpNpliKahi9AOx9spDEVYrxterCzlvDrSo7A3oBMNNj9oWr8xhj2qVQ91E0iDOGgHW9Fn1LY9lcGt415OCdL28b0oMZLHyyVoVxlYJXn_4SYZhHBzstitDjzmlHISU6P0uXCg1bbFOCItJZWCX6nlQiJ1KVqJfhbv_nOMmmefLtPlAar3Z0joyEafj8s53qvg2o8UMF6Et9Syy6wzC4Eo0bpg-hq9AyX0lBgqQ12KorRT7exgdUJHW5FcLQFLkiK1T",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-043",
+          "prompt": "Which Excel function COMBINES data from two ranges by a key?",
+          "options": [
+            "JOIN",
+            "XLOOKUP (modern, recommended) or VLOOKUP/INDEX-MATCH (older)",
+            "LINK",
+            "MERGE"
+          ],
+          "answer_commit": "hmac-sha256:f7f06b8aaa6f60e33f5fbdec0e2f85d9",
+          "explanation_enc": "aes-256-gcm.v1:dTafkhFNCBUGxX1M:GrOm7ohZCP5ZYHwVV97wf6Uygo-5MFPEtciZiRB3DtEl8ngcV_uCNh01boX7UmnKt_P1DK1iEF-HWOZRpvZBcD-g5kPTph4bL6EMdF2nsg-BkArB6ilMUgt87EtfhLVZ9Vg8gdRzqMEYwptgakxGaGuKOAEvL6cQMJzrfL4XcGU_Xp0_U9PuXz8bOZjt9k3mz_XCFzzrsf2EO3TISbsnLDD4jOSbr87SMFu6ibaaOtAAK3BS-kbRRyMfW8DVUFo1g8UuFK-pKqlffLHeZuwtp8k41odZxFu8NuIt2ErXFs_7T_7OZu4tnLY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 12,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-044",
+          "prompt": "What's a SMART pattern for keeping spreadsheets analysis-ready?",
+          "options": [
+            "One table per sheet, headers in row 1, no merged cells, no blank rows mid-data, consistent types per column",
+            "Multiple tables on one sheet",
+            "Lots of merged cells for visual grouping",
+            "Inline formatting as data"
+          ],
+          "answer_commit": "hmac-sha256:3037b8f30aeef873fea17764f9b4fa38",
+          "explanation_enc": "aes-256-gcm.v1:ponCC0rv5c51tBGQ:3JhqXjfClntyaZGM0RKNGsWHHMM3lFWXkLC8PdFe3aMtRHFrLdjS5D8LW5cW56qlEifgubSHApuS8x226SZAwS_W_t2OCcrLcTPsg7gE1CDb_2lLXRVOkWq9olLgCf7ZAfNtpYADln-bEg5iABtfd0SdPFdZM5DnWynGjbdeog12e0cGmUN9LhCh3VvWzSh--dtpmUI3nkuR6B2Fuo8VRNH0hO-EUgqIZ-Gc7nnb6ArLG_ZmdSHpkv6UPiyUd23SNW-EyOTbLtLTs2VgsfABDvWaQZKx",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.675,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-045",
+          "prompt": "What's the LIMITATION of spreadsheets for analysis?",
+          "options": [
+            "Hard to reproduce, version-control, audit, or scale beyond ~1M rows — and silent errors are common",
+            "Spreadsheets only handle numbers",
+            "Spreadsheets have no functions",
+            "Spreadsheets are too fast"
+          ],
+          "answer_commit": "hmac-sha256:2e36362e5369d853fc30ff7240aff9e1",
+          "explanation_enc": "aes-256-gcm.v1:VwstQjUDzkThP_Q6:keZWGxTIae_ELbtTdcJzC6UZDMosBlb4xJVvRVm3EkOWaw88jqNQAgx5GwkKDbwgxkf0EMNsfiG7tg1ebZxHuqF_UixGEDJTla2WSIjiLxzH528fWJxyh9j38s0PCD5xfcasIdE3mNA8LjnSqj-9iAZ_cgZld5jIT6UFOnRhJvQybCMj1IKZRd4CZ1TnBwo5CfPg93t2QYTJi6BsytTjmOfzjJB07aLNNPrFD79PYRdAzJoahbIUWl_9sfhlmO9HOysO6xZhUTg1_sysemr2p7jg2IkBswAxsBKuPUcStIzBA0uwap_dy1N_6aWbmY6vaEsvdRrnMDtuvjWraQ8sFDpLj6iKlhjSxYT2I5usu_d-1X32",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.063,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Pandas (Python)",
+      "skill_id": "rfv.skill.data-analysis.10-pandas-python",
+      "items": [
+        {
+          "id": "da-046",
+          "prompt": "What is pandas?",
+          "options": [
+            "A web framework",
+            "A type of database",
+            "A Python library providing the DataFrame — a 2D labeled table optimized for fast data manipulation",
+            "A visualization library"
+          ],
+          "answer_commit": "hmac-sha256:21ec05600012f834bb4482f8c59b72d4",
+          "explanation_enc": "aes-256-gcm.v1:OIkLdxePwpq3YBDR:-WPnDiGlPlqhVKTBqCyItZjq2UTGVlyrEyrm3aNMz50NjisL5nZnlNdzCM-hkAJsHChEoiv-QAwv5cLhPl708UKgRcCbtYCzAVC_1_vgzLoSVmzHtLGoWTnSTsGmribWT4t3wEwUCLh2clyINvJiL4zKKfvdE3rqA0HH4IvxnydSqVDUtPXfsGQljskQxD0Rv9V1_2nGWJ4QUUWNpTVmLm84nJcTwBuqYS_yfjECkEUUIIw5sDgc3K4pXztl2bBQxyxqCQRp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.261,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-047",
+          "prompt": "How do you load a CSV into pandas?",
+          "options": [
+            "df = pandas('file.csv')",
+            "df = pd.read_csv('file.csv')",
+            "df = load.csv('file.csv')",
+            "df = csv.load('file.csv')"
+          ],
+          "answer_commit": "hmac-sha256:2f3ec8e28af82e002a65cca5aae62a68",
+          "explanation_enc": "aes-256-gcm.v1:HrcJMW8wrf7fYNhI:vtgSpXMb0B4a94qyzdHteggNoVKOYUd_lhqJKleHfbc9J5PkS9WkghGRZnpj4ka3fJ1ydPE1sbiajiAGSt0wbP7tN5OHQ3Gxybp3pUYiiCHKpIfcFVF-dF-2_qtFajwxFiGXwbUst9Y3OspIo3DoYZqqYAVyDfGc35UqAprf6M-PgwmJKCGPwybMCkUg7jvdlwq6dWJ3x46GiEaAHNROg5OV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.12,
+          "findings": []
+        },
+        {
+          "id": "da-048",
+          "prompt": "What does `df.describe()` show?",
+          "options": [
+            "Summary statistics for numeric columns: count, mean, std, min, quartiles, max",
+            "The data types",
+            "The file size",
+            "The first 5 rows"
+          ],
+          "answer_commit": "hmac-sha256:5ed62891d509937b158ca6368d4371d1",
+          "explanation_enc": "aes-256-gcm.v1:P5kSj2GZfPsO6b4h:MsD3zDyCboK6m_SPMQLz4WO1DQVHT9ALG2N-z517YwyKQA4iMrqP80z38bWxdG64XXCddcRC34PJoYhLChPxO0UhEUqKJ4eJgy6r9PXkufKGucMJHeCSCiC81yTCDUhoztHyUN-YW-3z7FpVGoKEzSCP5TxGgkuzoZZEf7hzw5XDVSq6oYZn0EqJXnO6qbsegVhCbe3gPn5AMFXIVYoJvCB9abHtB8jpYaGh26gd3w6LTFvUCw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.813,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-049",
+          "prompt": "How do you filter rows in pandas?",
+          "options": [
+            "df.select('age > 18')",
+            "df[df['age'] > 18]  (boolean indexing)",
+            "df.where(df.age > 18)",
+            "df.filter(age > 18)"
+          ],
+          "answer_commit": "hmac-sha256:d11df33fe8184f7df94922d0e284eba2",
+          "explanation_enc": "aes-256-gcm.v1:wPOOB7n2VHZmMeR_:PbClaroTQKTCj--uB6hEwZCTkiwiLCpz7Xa0qvV05urd2hBCdvj4TwpGCxU-ECOXtPkdpAYiCtHBti3Gji1VYkLJz9LR7BjWdelaZ9f7_gdZ46q2Lk8Q_an205RxyX-gclIrg3eU0BH7xtopSf5h6Kfxh_bOdl7nsucNIYFqQN0E9IH_F5f98pkRzjgjNwo7r0OZfpOskqQtrMXZQSXrxrONHLv7PpMClcsOtBL9dBh3d085-2VCl-7M22lenfdWSTHwNdQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.81,
+          "findings": []
+        },
+        {
+          "id": "da-050",
+          "prompt": "What is `df.groupby('country')['revenue'].sum()` doing?",
+          "options": [
+            "Filtering by country",
+            "Sorting by country",
+            "Counting unique countries",
+            "Grouping rows by country and summing revenue within each group — equivalent to SQL GROUP BY"
+          ],
+          "answer_commit": "hmac-sha256:3b014ed040961478808f514c197e702c",
+          "explanation_enc": "aes-256-gcm.v1:RaVJA6g85J8srzhp:L3AMP0AYt88nhe5g4v9SycAKNhrBeCO4S5PeP8gA_MPSmWXQSqMK5ltD622Gfl-kqJ0E3Qtg5jnMfA0E5bSRAVeqzntpFpQYcgNFUvQ-ZdPGUXiZVYT7PanqHPMgLnOGY37Zns5ndL8-Gn81uLYASJcQCUZ_sDRIYYfUVLe0iJ1J92w9rek44urt7JVdy8dEaV7D9LxVkoOZWrjqbVoUeCgV_Rd7DGnDxlIUVsFqUQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.64,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Visualization fundamentals",
+      "skill_id": "rfv.skill.data-analysis.11-visualization-fundamentals",
+      "items": [
+        {
+          "id": "da-051",
+          "prompt": "Why visualize data at all?",
+          "options": [
+            "Humans understand visual patterns far faster than tables of numbers — charts reveal trends, outliers, and relationships at a glance",
+            "Because executives can't read numbers",
+            "To make reports look pretty",
+            "It's required by regulation"
+          ],
+          "answer_commit": "hmac-sha256:de80398fdf625920c7581e16ca0c5089",
+          "explanation_enc": "aes-256-gcm.v1:bWYpnMmAMFEegfeY:RTrOWeXYXraEsnysR4QfEfI83KT2Xa-R4rnnVESwnYCg-0uLqnjAh0Or5f0heOR4bApjPKFnYP0PGYFr2XCFxf1ecPVLSIwsV8QDgrqLZY0aZvF7xAehq0HVNA15USF7ovdKdkRCNEgqneRJlnsGy3LSw-n6kt0OrqPI_kyaN8vmHDdvRmrNXzcZRREaXxUb2uSSMlz0s_PxvFCfDOsmVSIDclGJEX1B2KqmjvWmaHVUEgt9P4KL-BeRuf412cS5iamWnBk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.541,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-052",
+          "prompt": "Which chart type is BEST for comparing values across categories?",
+          "options": [
+            "Pie chart",
+            "Bar chart — easy to compare bar lengths accurately",
+            "Word cloud",
+            "3D pyramid"
+          ],
+          "answer_commit": "hmac-sha256:42e850fe7b2ef59a368407a64f3fb251",
+          "explanation_enc": "aes-256-gcm.v1:UuyT0cuieVvzBs0T:r75q2rJKM5eZkjrs-TTiGIUmwNNY6NcPFLVFqiq3meFsiK182PK__213zGANeACv0XWkxzZ4a5w6apscgrXOHEoCyP9Sk1VGyrDEDSA-WreoyHN0IBBrHvsiWcIq_hPHPNHOvR9Qtpw8ZqsbChnpOB2uuOipiMPEE-AcyLGkIA2XvYnZRTxWuKk0ZnAoRWXo8EewK2ehS4B0wsMjF-UB3AhcBE2pdSuuDx58HoN0FENhAN0eA3cYFVKxQManG1R-logL",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": []
+        },
+        {
+          "id": "da-053",
+          "prompt": "Which chart is BEST for showing a trend over time?",
+          "options": [
+            "Bar chart",
+            "Scatter plot",
+            "Line chart — the slope reveals direction and rate of change",
+            "Pie chart"
+          ],
+          "answer_commit": "hmac-sha256:67562219a16704b524232ebbb7126d8a",
+          "explanation_enc": "aes-256-gcm.v1:pwCtipEqKTysiqk_:JFtWH7MjFbuDzZqQUVWUnXn7UDzC6V9o0E6-Rjy-JKbkXbQRJK4ZpXUhKxOtdUsIgwPh5UbU9EYq6ExSI_m9YLw3Bt1JpIx5GrSbZlF2Txn6YPOUoXV-zwHmQ5bxbB6Fdfob0W-QFRZ23WRHv0HPEAPcKBQZNb98LIRS-KcUvLrMUINDo8azUKwXFWXGcs6dWsP1VpBIO4yYmMd7DxGZHB-O9uxfMOFgAb2UjO_fBStiIcl2dVYVyJVuCP11",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.917,
+          "findings": []
+        },
+        {
+          "id": "da-054",
+          "prompt": "Which chart shows the RELATIONSHIP between two numeric variables?",
+          "options": [
+            "Histogram",
+            "Bar chart",
+            "Pie chart",
+            "Scatter plot — each dot is one observation, revealing patterns, clusters, and outliers"
+          ],
+          "answer_commit": "hmac-sha256:741f95a8c411768a39dfa4c9a4703796",
+          "explanation_enc": "aes-256-gcm.v1:CqUKTJfCUEjwlnZK:LFFn0Hg5v3xuLy6BLtcWCJYHgvVhlaHEN4kgSZETHTSOk3N0LRuUeowtUspQA6U5P81ScwQEI_1AUHC3u7bimLetr-L2TlGECR79Iju0we4RTJb9NC9iwoFTIZ2Ihf3jU5pKZgGhO5cEEwvlYWUqLYbo7ABHVWFtqYq-Kv-Pgx35iJtLy0HMNmjV_SO0XvH6XzQ_B4JUxGCy94Or2Q8Nqb6yfij4Dnm0QB2zua4mIh64zsLJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.556,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-055",
+          "prompt": "Which chart shows the DISTRIBUTION of a single numeric variable?",
+          "options": [
+            "Histogram (or box plot, density plot) — shows how values are spread across ranges",
+            "Pie chart",
+            "Line chart",
+            "Scatter plot"
+          ],
+          "answer_commit": "hmac-sha256:0cca272a6f8eecd912f55ca5332c915a",
+          "explanation_enc": "aes-256-gcm.v1:_BfBl2rf2QFMMJHw:b6OB7A0DDVXj5kzybvuoldT7NeKzHCvFFJCP9Mqk2Hb5HHUvPBroeh3Yc0JeEjzYpwUXqMf1omHaiqQ9F5VrOvzL3IM7Lz_tfdCVZ8choeI25XWewlKbJHLsqRplQHSZbtvm1fvB6_tZtHYmf6alsWyl3cRkoFO1xlFRVwS7t5Zfs04ovhb7VvZNPllC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Charting best practices",
+      "skill_id": "rfv.skill.data-analysis.12-charting-best-practices",
+      "items": [
+        {
+          "id": "da-056",
+          "prompt": "Why are PIE CHARTS often a poor choice?",
+          "options": [
+            "They're deprecated",
+            "They're too colorful",
+            "They can't be printed",
+            "Humans compare angles poorly; bar charts use length which we read accurately; pies break down with >3-4 slices"
+          ],
+          "answer_commit": "hmac-sha256:328d71bb12bb72695ea8d627fb4ef654",
+          "explanation_enc": "aes-256-gcm.v1:ujDpdwcy8Ydg3-vt:VHf7b0Rf4f6rdvkVIREqp_IC9qslZ5ESXQ3tSrEtq6d9E51nb4HQxlESBwlN7OXA9oH6DGtxnJjS-EtDrPcSvKmNWT8KWXPGzG7HOh6s6bnEBBJXSw1HUaqqRkYzHHGODeYCign6VB4cUa_Cj5I-iRUHSQthww6_ooTfE55j2-OSu03bEWhe8iAokj1-mJxSGcedTOzrGIz3b98vRj6Ku9sm-6M5QeaEC0-MEl7RAPVgvjdi1ulkA33v89foJgzxJA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.238,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-057",
+          "prompt": "What's a 'truncated Y-axis' and why is it usually a problem?",
+          "options": [
+            "Y-axis sorted differently",
+            "When the Y-axis doesn't start at zero, exaggerating small differences — common in misleading charts",
+            "Y-axis too tall",
+            "Y-axis with no values"
+          ],
+          "answer_commit": "hmac-sha256:a22a92ad8101045465d18a3191704959",
+          "explanation_enc": "aes-256-gcm.v1:ZKKkReG_8wK-q7rw:MUl2g2bEcp7SOVCO1NOq8yV0GJkRY5-MveV9Z9ykdIowsOWZSiPyP0fuvb5JLnsjm9kPI3XOp9fD8a_xt8LXMga0tgyQ-GEv2LxUfQAOUjMwZ71r1Ec0paFN6MPRnIZxlFCTOjxv1LQlAsIg4h91CQ6dA9AOLRfx5TEWAtYGJoMzaYkq-w8Da6kKkt19sDxFs-vh6vMODSnwCX9EGky3WHY1v81AJ3hLNEQd9CtOlo8if4I7A6KVzUxOxv3JUDj342Pd63-3uN_jK48817PJu54_3hN_sg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.96,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-058",
+          "prompt": "What's a SMART rule for chart colors?",
+          "options": [
+            "Color doesn't matter",
+            "Use as many colors as possible",
+            "Use color to highlight, not decorate — use the same color for the same thing across charts, and consider colorblind users",
+            "Always use rainbow palettes"
+          ],
+          "answer_commit": "hmac-sha256:2b0c2163d5668f5eb9e492ca43364972",
+          "explanation_enc": "aes-256-gcm.v1:ORVzz1bhU7ZigNK9:HBjWXE8iYSPJpy7Wsm40ufsmnGfYQA0J3IdfZ3OyD8nb6ZfV4yO98tnTGnsoUjKu1XaMBe3-y81yve_m6swm_6_Nmi_GaQTVomHynJ3BTCRowB7AgCC0iUiX_4U0WAHtByMxJWq7nMqndGIGxLpDIBDZHAWTSwfSqj6d16KgRTf8J5ZDofTIcJe2QlsZ6Mba1_PrV4zVqcsLNZONnTxBBYkNLactkUBW8PVAqQE1fyMcE3yekDtvNnhIgfZ48PeGbpMya3j51w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.033,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-059",
+          "prompt": "Which is a SIGN of a bad chart?",
+          "options": [
+            "Simple flat design",
+            "A title that states the insight",
+            "Clear axis labels",
+            "3D effects, gradient fills, drop shadows, decorative icons — anything that doesn't serve comprehension"
+          ],
+          "answer_commit": "hmac-sha256:9c52920159dd0180292d9a75c6a238db",
+          "explanation_enc": "aes-256-gcm.v1:mLOB1Fvkpx6JbrkQ:klfX4dtT-tq2wzgM2OLER5zmGilI2OXPeWOUozfA4O-54sp0i5-6-SBYzspq35TOulTknQWa70gZDuw9prLy7knHPzWN-hvvJP-Te7hh6pmnHQmxbvHoxgYyy-6nORqKlDXNLCRIqCc2e4vWdpHsNlLJM95B5PP4p1MvVPzOogRK-LHSRP_1bkXbds72v6pGoSdGeSWy-zLtQE5DbIOGD3NEDt-yz7r8OvCC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.29,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-060",
+          "prompt": "What should the TITLE of an analytical chart do?",
+          "options": [
+            "State the INSIGHT, not just describe the variables — e.g., 'Mobile traffic now exceeds desktop' instead of 'Traffic by Device'",
+            "Use complex jargon",
+            "Be as short as possible",
+            "Avoid stating opinions"
+          ],
+          "answer_commit": "hmac-sha256:6feb74173275ec48b1382f668916d788",
+          "explanation_enc": "aes-256-gcm.v1:jWG5jAhYU9wItoGa:AXYXgwYCEHtfowrUPeFoCevwRthSWrPBgC2dYoVZH3Mr2uX8oSEp-Yktx2A8cZvpZLLVrEK9mtSiWE-DH-BzLctHuhg4AU4YMfgnKWRCxgIX2Xz-mXtpiO8swGzkDwUc1GuUPDd66w6U4StU7frRSPSAQZMnns2LP5V4faxSFviLcYrty9pA-oSliTAGhYCh7Lpzb9mgERUB0UwCUwaffw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.478,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Visualization tools",
+      "skill_id": "rfv.skill.data-analysis.13-visualization-tools",
+      "items": [
+        {
+          "id": "da-061",
+          "prompt": "Which is a POPULAR Python visualization library?",
+          "options": [
+            "pandas-viz",
+            "py-charts",
+            "matplotlib (foundational), seaborn (statistical), plotly (interactive), altair (grammar of graphics)",
+            "data-paint"
+          ],
+          "answer_commit": "hmac-sha256:b8515eaf1e07198bbdb3d9f1c1490d9a",
+          "explanation_enc": "aes-256-gcm.v1:KY4cDKvZ9HnLhQnV:Z0lXvGeEuvZwaXdMfAh52FpQUPbRKH6xm6a3J-aNdG-VLQOYYQ2Bi8chozlgsxMM-MyAshiuO0SSj2zB7dHsaai1sm6hhEjp1WSF-pYT0JSS15i151KwOnqIxzY5I81KjdZnBybqHmT_N7ijQCuWV1hWNe9h6ksr4aqAobbKChwZuZAaJT3HPWw7k15uFCCbTUd5AdhDcUUsnMM39c0wGm2Sif1cPfX-2iSVDnbaTdNM4VB4XrfPL4X09Ft5mu7CG5L47uX4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 10,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-062",
+          "prompt": "Which TOOL is most associated with business intelligence dashboards?",
+          "options": [
+            "Python notebooks",
+            "Tableau, Power BI, Looker, Metabase — visual tools for non-technical stakeholders",
+            "Excel only",
+            "Static images"
+          ],
+          "answer_commit": "hmac-sha256:e275f78bde7242261370bf2a779f0ff0",
+          "explanation_enc": "aes-256-gcm.v1:VL-fHa9fy68dxt6x:W4hiIEKSBWX802t4DEODvBdL-a_bvmVQAbgFgtZJfciYHYbt4PzWq-k46zvrcD9uZI5cmc98KkjpAi3mU3nDjf9jpJSSO_KTSu5DjTgEDAeenQ7l0Wdui_Xzq97P26K6ohI71kVzc8DD7k9QqHZeEplADmzp0vITdnxK7oGQj7RKV9ebqve7a8WvpKAx1-j6OvqrEU6gIMBnIQBIfwvKa2sLrTzZMFU3mEseJnZnQDdYud5OZ1PLThZyZPwxHiaJyet-j3HuNzqQ9Zn6Q7eullqtFBU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.063,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-063",
+          "prompt": "What's a 'DASHBOARD'?",
+          "options": [
+            "A live visual summary of key metrics, designed for at-a-glance monitoring of an operation",
+            "An interactive game",
+            "A static report",
+            "A type of chart"
+          ],
+          "answer_commit": "hmac-sha256:0acd3972615dcfa64d6edea57742ca52",
+          "explanation_enc": "aes-256-gcm.v1:8L1AJs4Nb-D_3BQu:XGJVUIS95zGM8FNXFhHJwlo2zVNbGGeP64RnsLwyJT3JzyMJOWzDaouJ-KfkZS8UVadg4Atfi4l95Gxwm8YFT1i8QCsMtS7j6d8fngpU6wVBl3-HhwgWc0vsYwm5MjeecSvwkTv78TVKFC6GPu2NAHifTzJ4Oqv_ZB_Tauj4vGwTGuVu7DNaEOSGKqGQmuVQPYPu0WYfwb-Hm3JQf3iyxvmR5Jpvi3fFQmBgXnz3Re5khD86gPKivY73ynASOHFGqgQPboa5ThlZ-Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.684,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-064",
+          "prompt": "What's the DIFFERENCE between a dashboard and a report?",
+          "options": [
+            "Reports are paper, dashboards are digital",
+            "They are identical",
+            "Dashboards are interactive and live (monitoring); reports are static narratives (insight delivery for a moment in time)",
+            "Dashboards are bigger"
+          ],
+          "answer_commit": "hmac-sha256:d9922b8fdd31e5e7caf5c17daceec74c",
+          "explanation_enc": "aes-256-gcm.v1:Tsr8lUBQdqbNS88E:bXx9wKmYOpu4D7tYE_sU3VD-8zm-ArU1dum2n20Je5xQRX8or_aj2k5xm8YpMLTqwxhjksGSdWHFZzxoXqUCH6sT7HYX4IkjQHqM1i8NtLI4lXWh_eyvrhpTEsUSlQcnpMx0amUVJFaXmB2utRp42CzraFR6CJQ5yqoW6JKVMZJuloPmV94UUgCsc2TsZGClVPcaxdpwZqs3KBjtrcVR8q3HXJOmcjmaNX6J9kGIjX6sHk_Zfm-jicA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.902,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-065",
+          "prompt": "What's the FREE go-to tool for sharing interactive charts on the web?",
+          "options": [
+            "Only paid Tableau",
+            "Plotly, Observable, Streamlit, Datawrapper — many free options for sharing live data online",
+            "PowerPoint",
+            "Microsoft Word"
+          ],
+          "answer_commit": "hmac-sha256:47860c7c3a523418288cfe7dc1cb6a83",
+          "explanation_enc": "aes-256-gcm.v1:F7n2c3yIdKZ52mFJ:v1JGwN2nESjApTtXojqfyGoUtZIJXx45dFWB585dR8EJoOV1OvEUKzXN40kjab8ERlFl-Pj4tgiWH3AJci5xKSFOmCDgwza2zvxjZNADfaLSNXKAoLd1_c3WBmi16F0ZeLNmLkVIlxiivsWNcYGAgbdZZxbeNzKbXENevdpDUfYhF1lODkESZ7f61N16MhRcDnPVw_6-CmpYr0lfmDsY0YOOp7HVfgNGz6-mGWywLejXjHJ_HxWxK4ya4unqoqfaVTnQ7KVYZdTto7WKf0i6yls",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.353,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Analytical thinking",
+      "skill_id": "rfv.skill.data-analysis.14-analytical-thinking",
+      "items": [
+        {
+          "id": "da-066",
+          "prompt": "What's the FIRST step of a good analysis?",
+          "options": [
+            "Make a chart",
+            "Open the data and start exploring",
+            "Build a complex model",
+            "Clarify the question — what decision does this inform, what answer would change behavior, what are the constraints?"
+          ],
+          "answer_commit": "hmac-sha256:05f4f1e02e53fccfbf27841255163fec",
+          "explanation_enc": "aes-256-gcm.v1:Hha5xux2XkeF6cFh:833QrOvteR6DI8uSWzFL_hv4_bS7KGKvYEkZphthe-IY18OL_Fdb7ZRi7HgLE9bHh7ezLEWrDnFq1sER6eZcDmx5vaREdCMPYWyCqybhVEAI7mNC0Z5q7uG23fxvq2CD9f5-HvBO4VIIMvVlRwhSw8KXz7P6KcyR12J1LiyWBLfwXfKat5EjXDr3js8c5LY83QqNzECoyeLz_DhH7Wk2G6tN5BxNx-GHwTzuDpGLIV_fX8W3TMgCPON2BKlt2mikYNiolx9dRzpHEtZrYPg6EuU78YM-PbuYjlCt3ELW7g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.485,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-067",
+          "prompt": "What is 'EXPLORATORY DATA ANALYSIS' (EDA)?",
+          "options": [
+            "Building production models",
+            "A formal hypothesis test",
+            "Cleaning data only",
+            "Iteratively investigating data with summary stats and visualizations to understand its structure and surface patterns"
+          ],
+          "answer_commit": "hmac-sha256:2a4b5e31d5d6f9bb2902d5e538b92d2d",
+          "explanation_enc": "aes-256-gcm.v1:xFcjOMoaRRp4O6b9:LpyMNcEch_wDhSsB1AtC4RE6bXSudz_v8YjOVgFs-RbkD_JAzkW1_1lYRSlegj5dOOdp4h0-U0OEthy77rduRxMULvXdYxkMYsj2oHvBA21gA5nY1KwUILH3kOIl3ohnG0QjWUUWuSgKSEKzSJRpQF4LG2eBQphz0Ojx6dEGyz2OSpkcthE1SDHW982CAbaZ6PQtBXQb0Y8SB1cpkvpB2QShZtqOIutYV3VlXF8JUYPUYGH2gysVKkSHXYTodx2NMdJsHk1RkPU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-068",
+          "prompt": "What's the difference between EXPLORATORY and CONFIRMATORY analysis?",
+          "options": [
+            "Confirmatory is for big data only",
+            "They are identical",
+            "Exploratory generates hypotheses from data; confirmatory tests pre-specified hypotheses with new data",
+            "Exploratory uses computers, confirmatory uses pen and paper"
+          ],
+          "answer_commit": "hmac-sha256:41b496ef7ada68eb0189d5e63eecad47",
+          "explanation_enc": "aes-256-gcm.v1:K7BvN3d8aru9NVAA:nlGTngW-Yd-fLaeQu5HyObeJ6AK6kIQjSFQwlTdhFHOHrF4L0-lletxPIKcSPUcjYypAi4waMoc1FHVhr-2v8E0IHSOdRa55gOSwVGN5wJUE21UAJxLXPHTdceK1JnSSp3_TfkxYFlPKgjN1z2yG4Qqa4wl1_G3ovmAH2RN2sfl4VSZOmKyQ61UoVBjxVIAxuT28P1Ao-CiLROQ0aQvWK-59zFQUmfKB5v4xxDm83vUYzQHzFwVwsu33k0XoMkbaAa3R0wGWxRmlAw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.712,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-069",
+          "prompt": "What is 'SAMPLING BIAS'?",
+          "options": [
+            "When samples are too large",
+            "When your data sample doesn't represent the population you want to draw conclusions about",
+            "When samples are too small",
+            "When sampling is too slow"
+          ],
+          "answer_commit": "hmac-sha256:1ec5596625e234690d6457c5c4a0d4c5",
+          "explanation_enc": "aes-256-gcm.v1:SSofl22VziTF-kRV:RZ1j2WfretYi1RLRl7j-991GnXEw6dv4_LWeH9XbsLGwL8dMHGAo55DJMsFN5p8eymIqaOF3ixwZYKQH372-aeihIODcgYnBciUy0VovINu2YCNdVCcp4BFv5nfcWANH-XXEEgVGcco1urDNDQjNvLYMWN5S6Ro8A6GDpkw4kIW4XmzAqdgbbybRqrm6U1MvjxLGzpMEyAiuoPfwYqBubtMZWrbKb70pa_II0td_EZpc6oYUr3wa3jDLsxgYVdwmnV4HUl6jVXglfb9LCze6QBcjVz5Ho6QksYvbWZ0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.423,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-070",
+          "prompt": "What does it mean to 'STEEL-MAN' your own analysis?",
+          "options": [
+            "Convince others your conclusion is right",
+            "Actively look for ways your conclusion could be wrong — alternative explanations, data issues, confounders",
+            "Make your analysis stronger by hiding flaws",
+            "Add steel to your charts"
+          ],
+          "answer_commit": "hmac-sha256:847953543c68dfce39f61b50cf9dceac",
+          "explanation_enc": "aes-256-gcm.v1:rpJLMnPPQgwdLhUa:rLuvw-b7OVmyYDA71hwMfpYkbrxQCGLSjV3BXxHxpa9d7Oq3xABIzx020NJ2IvUXEr-WGRop6uk_pXq4EDa_lI4nMfAjZBYsEVXGkoxd-MPaWHUXjo_AgRaaWhmMNHFWI_GHFSNRaW4HMvJsvFjEffnwhqJCDInAQzfRsNqz-GeJIGmzk7exDk7f5nOW_GLo547-CHYyzV0NrdFe0pY1fyxS7cfPfWWPtwRvdXBKakiGiOegUgeEWIS3w7wErTOIeQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.465,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Storytelling with data",
+      "skill_id": "rfv.skill.data-analysis.15-storytelling-with-data",
+      "items": [
+        {
+          "id": "da-071",
+          "prompt": "What separates great data communication from mediocre?",
+          "options": [
+            "More charts",
+            "Longer presentations",
+            "Leading with the insight ('what'), supporting with evidence, and explicitly stating implications ('so what')",
+            "More precise numbers"
+          ],
+          "answer_commit": "hmac-sha256:cb6375bf8cdced32c414d597b12be485",
+          "explanation_enc": "aes-256-gcm.v1:Ayv1twThop6bFmB6:10yEGQa-jE1Fk-XK0JqyzkXKZ8awr_037auLtp2Btofiy-dpV2m70BOdwDmZSU6QOtefYCHewafEYarveXcG2D-lC4_kccx2e1vQWfAp0LZsYS1UPakYRSSDmZK19-lix2T5SgQVCU6NmVT-H9JDCVgY0uKaOYPAdN8F07IhOuVwMzpcMHlVlSs1ENTqwoFdkzmH3-xRrNEVFox_Mu7t2MXnKHDI0Iq1ffJ2-hXrV2CKLtcYeTvD3zIlMZl8AcdWPEor6277oU7d-2Ih4rGp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-072",
+          "prompt": "What's a SMART way to structure an analysis presentation?",
+          "options": [
+            "Question → Answer (headline) → Supporting evidence → Caveats → Recommended next steps",
+            "Math first, conclusion last",
+            "All charts on one slide",
+            "Chronological order of your work"
+          ],
+          "answer_commit": "hmac-sha256:70af9b014cd9c4ce7898120a4b59a9d5",
+          "explanation_enc": "aes-256-gcm.v1:o9rAJ5TMcRY4D73W:LqaOkyNjsak87kpFzhywa9SAGn5kqrYZ03Ni3gChcWsrAyZivfiuQwd3NsJSeoBhwmgsUYyUGInh6g3YQpi3E5hLKS6RbIFypBmvEETF0Z0SnU-0SQkFpOQBlcG4YPvbgJcDvXgkaIecMIQBQ6FoPORVbV3QdeuRHN-h0YxKq190DVOwO9Bjjlxe0w3KmMjD-Pv-kcVwY4_EEuA9quJUGB_dry54DzgpERHQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.656,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-073",
+          "prompt": "Why include CAVEATS in your analysis?",
+          "options": [
+            "To make the report longer",
+            "To cover yourself if wrong",
+            "Because they're legally required",
+            "To honestly communicate uncertainty, data limitations, and assumptions — credibility comes from intellectual honesty"
+          ],
+          "answer_commit": "hmac-sha256:d9982c4e1b80c971e2a9b0231b99df4a",
+          "explanation_enc": "aes-256-gcm.v1:qEezYir4AJHkcdTW:DdUvMGMBJiPMHZuKOf0oolL9MhPgRfG6JYsomiK2FOrVNJVg0I03UuUApzNHJ3PBzS21qsp34dOFxgQY0kUc-tT_IwiWKvRmt8xYolNyCkO0SI80sJQMBioW-numJgGxu42H9K_D2VI2jsA6tBOJAz49JicD15r6c-9DRZiED1mSume_3CdEOwfu6ccvOXXlYLOJ1admfVDRBkxYvIjF9ig2-oW8SdXkmR0wH1P4i0fH61fFX-wxyNzstqxeu4hnwemT1IESNg40fSskAgggrSUcXjCugis",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.625,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-074",
+          "prompt": "What's a COMMON mistake when presenting data to executives?",
+          "options": [
+            "Too few details",
+            "Not enough math",
+            "Too much detail, no clear recommendation, focus on methodology over insight",
+            "Charts too colorful"
+          ],
+          "answer_commit": "hmac-sha256:76177531ea06ad6aa7eec84174f03507",
+          "explanation_enc": "aes-256-gcm.v1:-QcWNYPN9h8X-4TV:58gX13hscT8tyM_0KJppuoUDvcE9e2FhOHq6XebhU77CcU-hdbR2rRq_XoqWN9uqsXY_tE1KMWSo73mREoPoKZ8wTfGuvW8diOFF9mGIn-kRRdpE9rJxvF-Z4MbbkyXZCj8hmbNXLrbRL6TV6YVqPAyfUajofwucZ9peG5DQUO9rc5genMGjXlGNJmn75my-64TsvuR6ncZBl9P-zq3XS0zdpz9GLarbw4Kc0bWdOjErk808tpOUq4l6ffMlkFddpQm1b3Fp22p6tnBM_S4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.947,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-075",
+          "prompt": "What's a great analytical NARRATIVE structure?",
+          "options": [
+            "Long story chronologically",
+            "Methods → Results → Discussion",
+            "Data dump",
+            "Setup (context, why this matters) → Conflict (what's happening, what's the problem) → Resolution (insight + recommended action)"
+          ],
+          "answer_commit": "hmac-sha256:9fff3a71183a00585989f90b468615de",
+          "explanation_enc": "aes-256-gcm.v1:4r-cL3ao-Y9n5A-7:IVeyBMymh1gnVER2Y4CuNs-JdFUg-oMa_6QX3509cqIaURVDgKho96sQlXz5XyS4Gl9wxBWi4Gh5BQCH7mbwzXpRJgREM9Pkd28D4OjtC68xI0hFWhbTVRiN7-_JnqWDOMovuaCgki0ip-HJgdWA2Cu8ymwNWuYsXywRuX4jX6SfnCrMbSaIxAIl6tosPSSGAPykHbQFan78ZOgOpwCw7qj4Kl8TTNFrgV6A002lk51GI_IrqCZtHO0VK1eqx_XQRXLDCk8jRkKbubed494MKlEzltg1O5sxwA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.233,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Common pitfalls",
+      "skill_id": "rfv.skill.data-analysis.16-common-pitfalls",
+      "items": [
+        {
+          "id": "da-076",
+          "prompt": "What is SIMPSON'S PARADOX?",
+          "options": [
+            "A statistics-themed cartoon",
+            "A trend appearing in groups disappears or reverses when groups are combined — a famous warning about aggregation",
+            "A type of regression",
+            "A sampling method"
+          ],
+          "answer_commit": "hmac-sha256:422c247fa13d64b29f5bcc2ff8c4e1c7",
+          "explanation_enc": "aes-256-gcm.v1:IRAZ9qIpLJni_27m:iT1Ka8S981G78SWSbGrML6zH9AMV1mcxWtv9pDIKwHVaOctdcrqXg2mLit4uS_r5DuwzTfBElErd5dsOq9O8RlWyHcUL1JpbuMh9NwssKM948PxUX2wqqyEjQuI_xmA2w5uTvRCY97gAMuvaifwnkbIvF5iSBDpPUL8cwgkVxJVSOtwW0mTIAypRjMgWPGLruXhiIbltXlMB5Gx2JIhH4BpOI1J9dqhPg_41lUsDBOnP67fsTVdBedz1v2Ik5N-hhc2cZ8j31Lj3s1bmrArTL8ovznhpK-Dxb-sJqXQ4f5f99RbG4LRem23zxpESiD3d3IZHB6W-Lsd8JtoK-RhzLt2Z5BNIGKrMrjGjr9WnARGKSY8AQHkOqJ2UNxadeFoaaIqRvPC21aRz1Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.148,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-077",
+          "prompt": "What is 'P-HACKING'?",
+          "options": [
+            "Trying many tests/cuts of data until you find statistically significant results, then reporting only those",
+            "Optimizing query performance",
+            "A type of A/B test",
+            "Cracking passwords with statistics"
+          ],
+          "answer_commit": "hmac-sha256:0fba1928ad90326744cd0f5f3078754d",
+          "explanation_enc": "aes-256-gcm.v1:SGLs2HVXxVIy4Ugt:1hNWzFx2XS94Mq71otvwFykQB23ts9h2-DKiOVxIRUAYnubJ9_cOfLf_4yG_aDvjqof25ZFi6znwmqI0kcpxzflac5-zpv0byP8l3OGDeX3WJmMMRga0ripgE686bzbAQnBYhECiSciJWIKEZJO_o-2uxgH4QIpfcl2rJJEBfVIRu5ktWPrjtZqdekbv6cqWNigub1cLjRzrQIRBqndlf4qiYM0gWqsVcM_W8Q6NuvieaVNFK2Kje1y4gSpAVr9qCbVhLEoUTrEOkg-ixQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.118,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-078",
+          "prompt": "What does 'GARBAGE IN, GARBAGE OUT' mean?",
+          "options": [
+            "Sophisticated analysis on bad data produces bad conclusions — clean data is more valuable than complex methods",
+            "AI generates garbage",
+            "Garbage trucks have specific routes",
+            "Old data is garbage"
+          ],
+          "answer_commit": "hmac-sha256:021633ad8fa7fcde89dc356b31f477f1",
+          "explanation_enc": "aes-256-gcm.v1:ZWjj2xUGT_eAR-ED:V6p0QGfFHjDoCmfP-Ci9_rYnwpCZknZKJlKq5pvukKNSrFqzji__3iaC4XUWXtDulPnWu4Fishq95EI80fvQmbxiXCaGfANAnNwe3atp-kDcaZ2j7aYiyd8Vn778lxpLkojfL0lk6znY4y7Zwot2vrMTZvA5fYsAqbe7Rj0Ji03ZYKG900f0wo9t075kuzsCKrljYM-2aahU7zlKWJ95aSWvGfNhEsSkkXYkG3eywqbLOVe8VgJ8f1ZUKWyMa0ytVqtHswUGto7gG8FNb4JJo4fPybm7SZRZh82jK9s3mEsqgQU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-079",
+          "prompt": "What's a WARNING sign that your analysis is wrong?",
+          "options": [
+            "The result is too good to be true, or matches your prior beliefs perfectly",
+            "You ran multiple sanity checks",
+            "Your team disagreed at first",
+            "The result is unexpected"
+          ],
+          "answer_commit": "hmac-sha256:939261b34b71a292ebbe5fc640558291",
+          "explanation_enc": "aes-256-gcm.v1:1n-elcphBhitYsmq:uUbmvoIY2ssxDdZDAriLEY9IqTrWXc-z23-WklOv2kGhTkuF9mdTXzcVRNQxbVB2pI5mSdcCvaBkbrglKwYrSRvd53EUJ0pWnmSdLzWtL60dGYhkw97b9mBavnbtvLFfdOmjteBOleeR3JDyqCFchLL69NbPEcYKYI0nlz5IM_Jz3Mq4-Jc-LsEqn00KydZ7rSI4DphHKRfnXEDwRaNMnCFatEwC4JID2I3ZLQZZtpSSyGFhPTdWmzxmsj2vBHhOJ9lPWxuvmGfkCPjnG-uciELGevt6zDqJdfYk5uaJLLCCH_DorUXrqPjSb4Bj632Vu8gamVmN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.467,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-080",
+          "prompt": "What is 'OVERFITTING' in analysis?",
+          "options": [
+            "Finding patterns specific to your particular dataset that don't generalize to new data — false confidence in noise",
+            "Computing too many statistics",
+            "Using too many charts",
+            "Analyzing data too thoroughly"
+          ],
+          "answer_commit": "hmac-sha256:60b0578bea89a57f2e763b3625676534",
+          "explanation_enc": "aes-256-gcm.v1:N77fpEtSNP7pJmv0:RCO0tEK5Q0LO4V7Nf13WpoCbcMP3Q3s1kd_7GGi7X4kK2KnJHkXzcWrdCOnxOnAyrwie9s0CJ51B_D53d6K5LoYtlzoUnAdrV6HBSMMmF9plsDdgE6G2TwoEUf8DwEJ-WFi4Q6AaNpQ2dXlvC90E6qlcabsKJfbJTlf8MGs9hPF_kjKXISSWiQjRe8Gp6eUFy3mv13hU8GIAYE20ZojJ7ieg3fvt8IYZ_0QtEYVTSXt2oBecJ3bZfu0corG9NU_YEGpl3ckXs1XqYGYMLxOmll9Tg_70UWTXBizciZRgWttngTcqmowQzAeQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.931,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Tools and ecosystem",
+      "skill_id": "rfv.skill.data-analysis.17-tools-and-ecosystem",
+      "items": [
+        {
+          "id": "da-081",
+          "prompt": "What's a JUPYTER NOTEBOOK?",
+          "options": [
+            "A paper notebook for Python",
+            "An interactive document combining code, output, charts, and prose — the standard tool for exploratory data work",
+            "A type of database",
+            "A backup file"
+          ],
+          "answer_commit": "hmac-sha256:be7efd61a13fbfa4a0dfc970edbdca36",
+          "explanation_enc": "aes-256-gcm.v1:jvWvTKlSqOae9nq2:i1h0RLd5WNFLKb4Z0kgYS68x4gIVc5k3W2e-VMJutUyMEmgL4Ryliz5eS_A4thLhiwnr1ogz_IQmodr0ndCzo4tnJJLqzCZ2ItjE1NwKLozwLz-_dNtSOfw6scAwZmEYq2rVAjj95XCmW5EEgWg77BBgtebuGZmemwmMLAf3qefC3a-Yc2fCkVTKgCzrOR1-S_gghvzCd2hyTQ9Q3QSQHF_-8egSU8vAuj8wsl94Fo-HjcW3kmejCJSia-wwFcNX7i88B_-XoDIzbXJLkBJJliHTnzVWOwcIK_ce4tR6J5LyOHukN-BxXv6VjJKvt16ZzV9dt-1b0iJJ2tKR6g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-082",
+          "prompt": "Which is THE essential Python data stack?",
+          "options": [
+            "Only TensorFlow",
+            "pandas (manipulation), NumPy (math), matplotlib/seaborn (viz), scikit-learn (ML), Jupyter (interactive)",
+            "Only pandas",
+            "Only Excel"
+          ],
+          "answer_commit": "hmac-sha256:1f97671b501061a608df8fa3ecd91f60",
+          "explanation_enc": "aes-256-gcm.v1:99c4LE7IhbfaRZMd:OzEwS2MELkZYe6mJfdKOvJWqEFTBwaMng0THVTskZCjL-63DCCT3enMwW8BGKz-d6PQpCzURH8Q0CANdnLV8nrl8_pkzE8I-Y1YS79pP7aVJkpmeN5uGZkefA_T31cagiMq74uEGF6zdl7fB3YsyI9taw_6V1DU4P4ltDzyvZE7NVDe4U-m0Z7LfopXEggrx92Qu0Q0l77_O5GPyJwk178Bp-nz8JedBuX-7WQN2UlAzzMP3zHKqFa3dr7sX3eKunw45m14D3UAg6_tEL8e7m5Br5uTV3u1wYAWJ-8FYhPUHNwNG9naTf7gpw6Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.867,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-083",
+          "prompt": "What is SQL's role in data analysis (vs Python)?",
+          "options": [
+            "SQL is for storage only",
+            "They do the same thing",
+            "SQL is deprecated",
+            "SQL queries the database (where most data lives); Python adds transformation, modeling, and visualization on top"
+          ],
+          "answer_commit": "hmac-sha256:e238080af2755ecae9666a03a03d183a",
+          "explanation_enc": "aes-256-gcm.v1:i6nM_HJcxl8QaRcC:ZXINQw3NeA_K7t52gWqh1Fg_h9eMOeTVarxeWxVo_jYJcy32w6foS6-1OjJEJGjCM8st15pYYxhhSyIL9FVS1aZVDdGmOFICJ9tJJ6tadmZDcNjMDRDIZooUY-aRoB3Oc4XCSHWPK2a_il2L5inwHpE4hl7sqUu4dcDLdTjPf_6e-OA4djiTXqMF6szT4oG0ZFa1u73Vp27Vgq8uTmNE8BTedTrDfxdsNTf2NhX1DKq4NC9AMnk2qYqYLtl9JLrPh5ezigT6w2F1K4Rf0HIb1CfSoAyG",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.87,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-084",
+          "prompt": "What is the modern alternative to pandas called POLARS?",
+          "options": [
+            "A geographic database",
+            "A Rust-based DataFrame library — much faster and more memory-efficient than pandas, with a similar but cleaner API",
+            "A backup tool",
+            "A polar opposite of pandas"
+          ],
+          "answer_commit": "hmac-sha256:3436c98a3b84991281fd0b10a26c9412",
+          "explanation_enc": "aes-256-gcm.v1:PuhfRCMRQHx4FggF:iNO0rATDUpINK_c0LX2_llOQ2KkcfPCXbQJlFC79QkG0LNXh-rnkOBupaUoETG1CUlL_4RBnWUwb1JzeLfiJCH0UjXSudcm8cCiyACZ7wXX8CISw4RszRvUK91Etpif5ZDjVSdB7suH6Ba1RG6Stn-RD5C6tbK_ivwyoTfWF59tEKptSxKrzaOi0AjdDKyOyO2cuMDweY12_uLY0Jlig364qgNI9McDjtB5cD-x93kVxnze3jyT4f6bEq13j1sK9Q5lbV7j2wC7PsA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.385,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-085",
+          "prompt": "What is DUCKDB?",
+          "options": [
+            "A duck-themed game",
+            "A NoSQL database",
+            "An in-process analytical SQL database — like SQLite for analytics, blazing fast on parquet/CSV files",
+            "A backup tool"
+          ],
+          "answer_commit": "hmac-sha256:ae405d0d98a33b18fb28ad6d4a1f4a54",
+          "explanation_enc": "aes-256-gcm.v1:ywI0wHDohMsB9hFQ:NQExfgLmtLQ1BjuPdf5NoLUUwyXoXWavZIan7vLJPZ5QABewkkH6McSpC32FuZw-pr5XofqIea9cgiF0winZBbcUTLERnEEXdQgQKdfK3tdetHeJ9SvhKLbkobff7a3QNnnwn0dkjBN_pdkuJseOSiqU02mFVcQwP8sv10il5n8U4Rfa-9hTNIeOt3_gsxdxnGgIVD-euDOEYKpZA8s9AsJDyrGtHci77yJmFy4-CBj8ZocSlob2mMOaPrzzH7XcpvG-FqC89XM3Bh00",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.556,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Reproducibility and rigor",
+      "skill_id": "rfv.skill.data-analysis.18-reproducibility-and-rigor",
+      "items": [
+        {
+          "id": "da-086",
+          "prompt": "Why is REPRODUCIBILITY important in analysis?",
+          "options": [
+            "Others (and future you) should be able to re-run your analysis and get the same answer — essential for trust and learning",
+            "It's only important in academia",
+            "Reproducibility slows things down",
+            "Reproducibility is just version control"
+          ],
+          "answer_commit": "hmac-sha256:d78771cdf19a15035fb7dd0bc207a136",
+          "explanation_enc": "aes-256-gcm.v1:J4qizp3LCTxWctOU:qNA5WJPWoCz-jHne-rc84Ms71YuiWQPCPqouaJsuUYbQAW1IGjRjTyouY1W10cM4_5JDAoR1g_hRg8nDBYuqfYNGAu9wbVBz7J86QouPQ5m4ezMjvLGhVVg7DKssZ78EB1OUHF5Xq3a5fbz6L3oV8fdOOx8Lob7mgX-j4nS6wzJCxbhojQTvRrlHfMWvexbm1qcsgKg53WfiXghRMl4_1oAQZolaHwDm0nBXmxOG5kl0myuY9jpRGeRPk7vSf7GyMl2VUYgqsc0JaDi5HsZgO-Ku7ptol31-eMkH0-Zi6KQZe-e_FU0tJlMfHA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.103,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-087",
+          "prompt": "What enables a REPRODUCIBLE analysis?",
+          "options": [
+            "Version-controlled code, fixed data snapshots, pinned dependency versions, documented assumptions, parameterized inputs",
+            "Working alone",
+            "A really good memory",
+            "Daily backups"
+          ],
+          "answer_commit": "hmac-sha256:c7820835180ee75c7ddc290f0da2232e",
+          "explanation_enc": "aes-256-gcm.v1:JvCnR51pCQElPeJ8:tgmkQv3wmS8mAdK4rVXRSS0RHu4pwph7P57p31MuTyBDqHiS7ENuWwrrFoz9uNTKgFKFKAkrvvRtsp3WXIC_Arf6QGGT5vAq4BcyyU9hxoXe_PsOLAUQJODtBknnE3eo2SqWl-ww61IbRJadhcL2NNHPfqHUhKUvSblX8b9qdKpNEVBqsh9b91bxFm-3ynZ_sHE7hown0aabMGnBiQyAP3h_7N0-bnNbF8Yfqx4r-ibfrI333vY3TeC5adRcDULdqDn_8W_FuGz5pGeAvcYzGqcIMIL23-50YwNx43_0DluN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.95,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-088",
+          "prompt": "What's the RISK of doing analysis in 'finalReport_v4_FINAL_actualfinal.xlsx'?",
+          "options": [
+            "No version history, no change attribution, no ability to roll back — and impossible to know what's the 'real' version",
+            "Inefficient file name",
+            "It uses too much disk space",
+            "Slow performance"
+          ],
+          "answer_commit": "hmac-sha256:1048efbeba3eaea063fc929e55dd8213",
+          "explanation_enc": "aes-256-gcm.v1:WuFmTImoIJNlUEbW:l24Qko9yYHdmIUgBHNvuVrjqManG79YwiRunlvxJ464FFkynKc2gysJzpGqy89L6vQd5nz0MM6Z9c14ttGgegzhQbhlVUcFfYvt-y7jYNwdp0AmFxUQuy2_NWHCy25FlwQyzZJxF0rlriTTap9Ylkja-YrCMFnNf6zuR-Y18BpCe6dCaEpyc2Vh09mcP3eso13VjUblBhqcRcnScu-3rsLEtTaH3kqBp2VwaOiJ_AvbsYNBWxd2nmj35OO3T",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-089",
+          "prompt": "What's a 'data lineage'?",
+          "options": [
+            "Data backup chain",
+            "Data inheritance hierarchy",
+            "A trace of where data came from, how it was transformed, and how it became the final number — essential for auditability",
+            "Data family tree app"
+          ],
+          "answer_commit": "hmac-sha256:fae77f3d0dfa90f394d5a83f4c8efb15",
+          "explanation_enc": "aes-256-gcm.v1:SZEgPto4k9Jchzv9:Q1sbBy9Yf_a8ueBt_iFGwTOF7GxkoqMjVc28iDLKLUCHZc628BvMe3PYksHuRnlh2eFBRuVQBZsDyGciz5QtVvMftAh86WfIi1-Fa8Dzs4aNQybWpod0JwyEFMocDo0NgvLK9ks9kG9drrfSgyZ1cBlVwT9pz7uYeJfBzAzkhGISuoUoIE3xd566Z7AJJmK6t8EIDyR6_kqoonfJUvhNANJJj8LGR95Y0D1L5ngpADca2dZeIXY05YWyjq5qMt08LXwpRkv-iyfH818U44u6q3wGmzWfGvuSBWPEkVX6Pz8WBGCa",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.615,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-090",
+          "prompt": "What is 'PEER REVIEW' in data analysis?",
+          "options": [
+            "A type of statistical test",
+            "A meeting format",
+            "An academic-only practice",
+            "Having a colleague check your methods, assumptions, and conclusions before publishing — catches bugs and biases"
+          ],
+          "answer_commit": "hmac-sha256:6a912ada0f6506513f57b4118d6061f6",
+          "explanation_enc": "aes-256-gcm.v1:tb3jSaWKVoq3FxB3:JBnCj9HumI9OPtwhJ4jDYZDO_Cgye9-GCet0ALhgqQ-OQwhaXzxMPxMFhk5L2WvE51YkhIpwV_1HvKIliQLJHywacagtyoc_vmWX8KesMEj0HSJ1HeDATQRzobNtc7gQc3ZiT15dlTGIJ_ah1i4veHC0rcY6t6jrMohZFbfQpXJHeSGF3JWp6qaChAM5QEdAFYNFmjMTXGGpYxeoKmXUjy0ka7dDcIQrQegud7n6bIp8lfHW1N0UO8L0grnS1vCOxM9b54tvdcS9TAidA4gR2w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.269,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Career and growth",
+      "skill_id": "rfv.skill.data-analysis.19-career-and-growth",
+      "items": [
+        {
+          "id": "da-091",
+          "prompt": "What skills DIFFERENTIATE great analysts?",
+          "options": [
+            "Business understanding + clear communication + technical skill + skepticism — the technical skill alone is the smallest part",
+            "Memorizing statistics formulas",
+            "Avoiding stakeholders",
+            "Knowing every Excel function"
+          ],
+          "answer_commit": "hmac-sha256:ac16b3ae437cf7354a26e6cc4d891afa",
+          "explanation_enc": "aes-256-gcm.v1:YSeLY0NtrEbF6YDY:tpSVwoAmGF3or503b7Dy7LZh2kgTXDnNy7XH1hyHnw8CD7zegweRwMRvxg1UkiGb2k1qZDHeOqvn9MnHNhFdLMLkPa4FbXGBE92T3cGA7cI0XkZN0gaKP2yqsfgKgjmm3jnjacjmrLr5c7smR1pTShiczeg2hCTiK2qc8l42U-QAAh-0MZFNNAKFfne12qmuRXC3hZq5EQmoYKlDoqmhycgH8qeCh4RlASl99hFamTawjvo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.133,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-092",
+          "prompt": "What's a STRONG portfolio project for an aspiring analyst?",
+          "options": [
+            "Memorize SQL syntax",
+            "Only do tutorials",
+            "Build a clone of Excel",
+            "Find a public dataset relevant to a domain you care about, ask interesting questions, document the analysis end-to-end"
+          ],
+          "answer_commit": "hmac-sha256:9314e746fa80bf17ba66baec738882a8",
+          "explanation_enc": "aes-256-gcm.v1:QeaBH-8UCtepmHQo:bKOdAX88u4MuXQAkxL2zjWJAlgyXTkv4dGsnWixwTAXPV9Sq3zS84plEE-fi9l8o4Azj4Q7dWYvZ2a9YtcrFwz-FkT67XEBE9sbN-GtOkaq0Z_kjNPWrTyhRLSEjVlPQmgs_Bzk_e_lhq2SEhnMFmBqZiSISO25TJ6g_BgWzXMxPO3XufcTwekfixyx5mdC_A8YjARtQF2aoLO_Isgc6qfWitY1P0boUarr4zVXaAUpDTxEG8sReQr_QN3HJJiHg24bcPjX4UoSNcYji21phxAk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.364,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-093",
+          "prompt": "Which COMMUNITY skill matters most for data analysts?",
+          "options": [
+            "Avoiding meetings",
+            "Coding alone",
+            "Translating business questions into data questions — and translating findings back into business language",
+            "Speaking multiple human languages"
+          ],
+          "answer_commit": "hmac-sha256:6a9752cc56b6faf9924d8c21297dc044",
+          "explanation_enc": "aes-256-gcm.v1:_jFSCC5eh7-CUHrT:JTjIF9TIOtqMmM5L7I9e2pmT2bVye6tl-7BvzWTUJ8x0661S4OD_8Nc9G63h_fHnI9kMtBSLFVfbW3thCalQ8SnB_8zncKX2G2hoRNPso9WiBaXUV8mDeC8Xfm_8KMh8t-8W_3CbnZplRGU1pRP2GPV3diTuzwvhiajSUc-n8C4Drvj-YMHkM3M03EX2LXu7H16En2hajefRGALDX-IseB4hCLm9UjdtC9t1MZQxeF2TSn514Cy7YaKJJvtJnfgk1VBTDushvCZjBAo7XsTIwEeYZeprNjT_jlXRq9RmFxF8fb2XMEg70E9-RjQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.182,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-094",
+          "prompt": "How can AI help an analyst — and where should it NOT take over?",
+          "options": [
+            "AI should do nothing",
+            "AI is only for engineers",
+            "Help: writing queries, explaining code, generating chart options. Don't replace: judgment about which question to ask and whether the answer matters",
+            "AI should do everything"
+          ],
+          "answer_commit": "hmac-sha256:2213b65f44550a17873ae988ff7b0d31",
+          "explanation_enc": "aes-256-gcm.v1:A_JlOp3ROwq2RtWU:lASSoL_XJwgohpmaETM8FAIDnHMkzvkcgJ_7gsfdiUXq17E3YeemFRz6Rqx04ECqjY2bdeVSgPJLI45_PQfNbdYWs1KAAekW3lTQdNoe1BN3Q_DSBb6qfeZ4aOz-dfqb45x98UQPFEMot0l33ZLVBGpL2L2JFtkxlIcQuRqBsWy502qMYQCXTfnxiR7XGIKTGdLlI6fOod1E_rQ9T2Hta3dSXZOLxSGW6avGwK4GtlNSDU4dkBZbrA2V4eAtuVW6UoPf8MZPCbl3D5TOOAs4L0BNtNSAuu8gu8n1hNjau2m_TTEUQg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.167,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-095",
+          "prompt": "What's the META-SKILL for analysts in 2026 and beyond?",
+          "options": [
+            "Continuous learning — tools change every year, but curiosity, rigor, and clear thinking compound for a lifetime",
+            "Avoiding new tools",
+            "Memorizing one tool forever",
+            "Memorizing every chart type"
+          ],
+          "answer_commit": "hmac-sha256:2695ee8c8e4e629d6818d4c10c075f9a",
+          "explanation_enc": "aes-256-gcm.v1:OwEv3MdCIYcfbd6i:abHkfb2wFwrLE0htw2P7jvRJR9vJd0kMmgJoBrtq7wtIiKh7bHa6cgLeLib2WlV2MwwfiRw3w64ari3N9TUIE8E_3i7WJld8cyukPEh1qdiZVMBrhKvkbdsLqr05a120UQ-Q2hyYaeFlX1eGhOe6fY4jX2luYNwxt_em84zcZIYu8K3h2EBERSXDiY71SzsegT-sF2Oku0WZ8O8vn7dy8t3_4vOKDjcHKOuC9MRExWvUiao_Hou62eyoEcajy8E21T6z35WfFwYrwf6tlnx0XZIckZ2yPmgjbuhjKqr0UNNeYU8M0VQP_A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Putting it all together",
+      "skill_id": "rfv.skill.data-analysis.20-putting-it-all-together",
+      "items": [
+        {
+          "id": "da-096",
+          "prompt": "What's the OVERALL workflow of a typical analysis?",
+          "options": [
+            "Define question → Gather data → Clean → Explore → Analyze → Validate → Communicate → Act",
+            "Skip cleaning if data looks fine",
+            "Just open data and chart it",
+            "Build model first, then collect data"
+          ],
+          "answer_commit": "hmac-sha256:fb493e2c96f3ae649300ea3e87af771e",
+          "explanation_enc": "aes-256-gcm.v1:SEZJqspMFJm9Qz13:NWmoSkunzVbkjcsqJt62d6q8p_gi8sRgQBXs0pAtmJUK9bWYXXKKjZE-YX3QsP0eOi5KmsnXi4wfEV81xAL-dvyv14Epi0HzC70jwD3OPl_juHX6hIcjOvh6peSw9FXbAJgSva_SaVOYQXT5YSomc2uAsmWAH0EgqLi9ywxszBhE4dV9sl7dONBY6y3wBLl-hZqfpROAnF-OrrhxmEcG5NAAt2Q-IA-AWP-fRB5H7KPoTjIafO8xy-HvoOCMweLR5vK3y_EKwDpZSQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.444,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-097",
+          "prompt": "What's the value of CHECKING your numbers before publishing?",
+          "options": [
+            "Numbers are always right",
+            "Stakeholders don't notice errors",
+            "It slows you down unnecessarily",
+            "Numbers presented to stakeholders create downstream decisions — errors propagate quickly and damage trust"
+          ],
+          "answer_commit": "hmac-sha256:a2c8d4ccdbc42383d9a82bd66248bbac",
+          "explanation_enc": "aes-256-gcm.v1:S3F077CdBvgfVChd:Wi6Y1Y595YWzL4sHLibE0DO6nlamXlRMw7t9PaL4_CY6pO4ugq38UN3SVo30BNA7_NeljudQsrsBj9US9WCtVBvZXOfbLshS4foZPFxU-FKoU0LlEqOrxTd4A_pv3oDxPzsIkI3Iw3lDXCKSSmbrh8JgJKVfNP3jFnwfzb1xaWyNA-8sX-TDza0dp9yciOf6WtkKZQwJrC2_X-rldMc55U2ZKzf6rSu9NZLQVanc_d40RdjpKwOMxTqTTcg6f2s9aCInSNDDLZ65EA9PIxO28SX9FTRzxlzVVOtkuxiaqRzmW2ibrvdW9RB6uhlpfBKajNH-fRlL2dlWDiVN3tofy22z7LMVW1QPIUzvfjhA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.281,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-098",
+          "prompt": "What's a SIMPLE rule for choosing the right analytical complexity?",
+          "options": [
+            "Always use linear regression",
+            "Use the simplest method that adequately answers the question — complexity should be earned, not defaulted to",
+            "Always use the most complex method",
+            "Always use deep learning"
+          ],
+          "answer_commit": "hmac-sha256:e0b8a896e3fe5fdb35fc4cbaf8430495",
+          "explanation_enc": "aes-256-gcm.v1:GCxLyongqn7H0Kov:-VCX9dPUtDu5iF4beOPb5mNVRjL9U9pTCpZNe50IUnP3shrOqiQCo5Dj6fe0L0NvXmZuXsQe0CQykxbyg3e4X854_TxAHSXgixR-SM6JlSkpwJv8ErRwOt7kp-cmAWPJN7TNwLbOvIUtNCSA2Va_EsyH_Y-_5LuS-9tGojw8hLAiyjTiudO_Hji49rocLPtTo40TBXl3zEqPsrb1fjRBmi6simqGuZMGeZ696__CCnv_USNAricOxANcc8iG47jwxMteGkJmTC45rfg3ms5THD63QSweQ8eag49dnk43HI_NmoyRMivtAU0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.176,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-099",
+          "prompt": "Which is a SIGN that an analysis is genuinely valuable?",
+          "options": [
+            "It took a long time",
+            "It produced beautiful charts",
+            "It used the newest tool",
+            "It changes what someone decides or does — the same decision after the analysis means it didn't matter"
+          ],
+          "answer_commit": "hmac-sha256:1b60f074d4eb51c922cf7fd84d59e5c5",
+          "explanation_enc": "aes-256-gcm.v1:Q66vhJ6k4TjCurAQ:C3lQr082wWs5bNeDKVRoiGFIEeBtxWzrkWTCL6uQ39l1aLx5R0DlcsOTRU5CCKqRFKSgAj7qMuE_2g0-CkWGw6tVqoL4w6X00oSv_lL20YcqJv_tnh5L6_9Pd4siUyhUrY77h3TADRabVBYWHwV5TyWIYLFXSJOx8Y1pZr5zQz5GDnxjXiHVXHEey-zpahujaBMlO8v24eUFgy-3bhvOKEr4BvBXrJVfh1oA0wM69xfYatUtulL68nLcoDl6FEbXuAAhEpJhQ4UV3VTXiyW6n95qcr-LwJ30YzWaW_reuNyOwik",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.607,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "da-100",
+          "prompt": "What's the MOST important habit for long-term growth as an analyst?",
+          "options": [
+            "Curiosity about both data and the world it describes — combined with rigorous skepticism about your own conclusions",
+            "Avoiding new tools",
+            "Working in isolation",
+            "Memorizing techniques"
+          ],
+          "answer_commit": "hmac-sha256:a0d0318225c9ba86154d277198ccad87",
+          "explanation_enc": "aes-256-gcm.v1:JqybDI1rBk_BMsrt:3rWO2oAe46qiOOPsVrle234t_GTOVwAO-O7_fDpwN411n5poucZjH_Q9w-vZQV0Ldvhwl1uGX-s1r8f3Q4BSoLU9toXSe640e4gwYx2DWNlEhIbOHF-5c4jv1b0xSoClALjLZ2x_F1MaXKu3eXrHUBy0-VIXKxJTD90eN5gygti_3mp_WhQT0-zAnzI-vZloWHo9smC_mgcKD84axBIpPt4GVQ-zxTzJOgXXCjwbe8eFVkCi86aDJVAD015_fdH1Ja_LA7O5EJLnmKi4E22VepTTyS5wRg983r31ynMZAw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.476,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:7bda7539c3eda15f088f45e7a949d374dc171aa847052a03e106629581e04be7"
+}

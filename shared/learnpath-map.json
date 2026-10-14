@@ -1,0 +1,743 @@
+{
+ "schema": "rfv.learnpath-map/1",
+ "generatedAt": "2026-10-14T20:25:00Z",
+ "note": "Topic-level mapping between RRRTX FreeVerse topics and LearnPath roadmaps, plus curated sub-skill deep links where the two taxonomies name the same thing. Every LearnPath slug is validated against the taxonomy snapshot (learnpath.skills / learnpath.roadmaps) and must be a node of the topic's primary roadmap; scripts/check-learnpath-map.mjs re-validates against the live repository. FreeVerse stays authoritative for assessments, scoring and credentials — this file only says where a learner can learn next, and is never an equivalence claim.",
+ "learnpath": {
+  "repo": "RRRTX-Labs/LearnPath",
+  "ref": "9111b43ad47fc19e0b65d3d4d29567d769d6ae2d",
+  "site": "https://learn-path-theta.vercel.app",
+  "verifiedAt": "2026-10-14T20:25:00Z",
+  "method": "gh api repos/RRRTX-Labs/LearnPath/contents/src/lib/content/ (roadmaps.ts, skills.ts, skills.imported.ts) at the ref above",
+  "roadmapPathTemplate": "/roadmaps/{roadmap}",
+  "skillPathTemplate": "/learn/{roadmap}/{skill}",
+  "roadmapCount": 6,
+  "skillCount": 58,
+  "skills": [
+   {
+    "id": "accessibility",
+    "title": "Web accessibility"
+   },
+   {
+    "id": "agent-architecture",
+    "title": "Agent architecture"
+   },
+   {
+    "id": "agent-frameworks",
+    "title": "Agent frameworks in practice"
+   },
+   {
+    "id": "agent-safety",
+    "title": "Agent safety"
+   },
+   {
+    "id": "ai-ethics",
+    "title": "AI ethics & responsibility"
+   },
+   {
+    "id": "cloud-cicd",
+    "title": "CI/CD & cloud basics"
+   },
+   {
+    "id": "containers-orchestration",
+    "title": "Containers & orchestration"
+   },
+   {
+    "id": "cryptography-basics",
+    "title": "Cryptography basics"
+   },
+   {
+    "id": "data-wrangling",
+    "title": "Data wrangling"
+   },
+   {
+    "id": "databases-orm",
+    "title": "Databases & ORMs"
+   },
+   {
+    "id": "deploy-basics",
+    "title": "Deploy & ship"
+   },
+   {
+    "id": "dsa-fundamentals",
+    "title": "Data structures & algorithms"
+   },
+   {
+    "id": "embeddings-rag",
+    "title": "Embeddings & RAG"
+   },
+   {
+    "id": "ethics-law",
+    "title": "Ethics, law & scope"
+   },
+   {
+    "id": "fine-tuning-basics",
+    "title": "Fine-tuning basics"
+   },
+   {
+    "id": "genai-eval-safety",
+    "title": "GenAI evaluation & safety"
+   },
+   {
+    "id": "git-basics",
+    "title": "Git & GitHub"
+   },
+   {
+    "id": "html-css",
+    "title": "HTML & CSS"
+   },
+   {
+    "id": "incident-response",
+    "title": "Incident response basics"
+   },
+   {
+    "id": "javascript-fundamentals",
+    "title": "JavaScript fundamentals"
+   },
+   {
+    "id": "linear-algebra-intuition",
+    "title": "Linear algebra intuition"
+   },
+   {
+    "id": "linux-cli",
+    "title": "Linux command line"
+   },
+   {
+    "id": "linux-hardening",
+    "title": "Linux hardening"
+   },
+   {
+    "id": "mcp-servers",
+    "title": "MCP & tool servers"
+   },
+   {
+    "id": "memory-planning",
+    "title": "Memory & planning"
+   },
+   {
+    "id": "ml-fundamentals",
+    "title": "Machine learning fundamentals"
+   },
+   {
+    "id": "mlops-basics",
+    "title": "MLOps basics"
+   },
+   {
+    "id": "model-evaluation",
+    "title": "Evaluation & metrics"
+   },
+   {
+    "id": "multi-agent",
+    "title": "Multi-agent patterns"
+   },
+   {
+    "id": "networking-basics",
+    "title": "Networking basics"
+   },
+   {
+    "id": "neural-networks",
+    "title": "Neural networks"
+   },
+   {
+    "id": "nextjs-fundamentals",
+    "title": "Next.js & full-stack React"
+   },
+   {
+    "id": "node-express",
+    "title": "Node.js & HTTP APIs"
+   },
+   {
+    "id": "owasp-web",
+    "title": "Web vulnerabilities (OWASP)"
+   },
+   {
+    "id": "probability-stats",
+    "title": "Probability & statistics"
+   },
+   {
+    "id": "programming-fundamentals",
+    "title": "Programming fundamentals"
+   },
+   {
+    "id": "prompt-engineering",
+    "title": "Prompting & specification"
+   },
+   {
+    "id": "python-data-structures",
+    "title": "Lists, dicts, sets"
+   },
+   {
+    "id": "python-errors",
+    "title": "Errors & debugging"
+   },
+   {
+    "id": "python-files",
+    "title": "Files & text"
+   },
+   {
+    "id": "python-functions",
+    "title": "Functions & scope"
+   },
+   {
+    "id": "python-oop",
+    "title": "Objects & classes"
+   },
+   {
+    "id": "python-setup",
+    "title": "Python setup & tooling"
+   },
+   {
+    "id": "python-syntax",
+    "title": "Python syntax & types"
+   },
+   {
+    "id": "python-testing",
+    "title": "Testing with pytest"
+   },
+   {
+    "id": "python-web-apis",
+    "title": "Python web APIs"
+   },
+   {
+    "id": "pytorch-intro",
+    "title": "PyTorch basics"
+   },
+   {
+    "id": "react-fundamentals",
+    "title": "React fundamentals"
+   },
+   {
+    "id": "recon-osint",
+    "title": "Recon & OSINT (ethical)"
+   },
+   {
+    "id": "security-fundamentals",
+    "title": "Security fundamentals"
+   },
+   {
+    "id": "sql-fundamentals",
+    "title": "SQL fundamentals"
+   },
+   {
+    "id": "system-design",
+    "title": "System design"
+   },
+   {
+    "id": "tool-use-apis",
+    "title": "Tools & function calling"
+   },
+   {
+    "id": "transformers-llms",
+    "title": "Transformers & LLMs"
+   },
+   {
+    "id": "typescript-fundamentals",
+    "title": "TypeScript fundamentals"
+   },
+   {
+    "id": "vuln-assessment",
+    "title": "Vulnerability assessment"
+   },
+   {
+    "id": "web-auth",
+    "title": "Authentication for the web"
+   },
+   {
+    "id": "web-testing",
+    "title": "Testing web apps"
+   }
+  ],
+  "roadmaps": [
+   {
+    "id": "python-developer",
+    "title": "Python Developer",
+    "skills": [
+     "dsa-fundamentals",
+     "git-basics",
+     "programming-fundamentals",
+     "python-data-structures",
+     "python-errors",
+     "python-files",
+     "python-functions",
+     "python-oop",
+     "python-setup",
+     "python-syntax",
+     "python-testing",
+     "python-web-apis",
+     "sql-fundamentals"
+    ]
+   },
+   {
+    "id": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "skills": [
+     "accessibility",
+     "cloud-cicd",
+     "containers-orchestration",
+     "databases-orm",
+     "deploy-basics",
+     "dsa-fundamentals",
+     "git-basics",
+     "html-css",
+     "javascript-fundamentals",
+     "nextjs-fundamentals",
+     "node-express",
+     "programming-fundamentals",
+     "react-fundamentals",
+     "sql-fundamentals",
+     "system-design",
+     "typescript-fundamentals",
+     "web-auth",
+     "web-testing"
+    ]
+   },
+   {
+    "id": "ai-engineer",
+    "title": "AI Engineer",
+    "skills": [
+     "ai-ethics",
+     "containers-orchestration",
+     "data-wrangling",
+     "linear-algebra-intuition",
+     "ml-fundamentals",
+     "mlops-basics",
+     "model-evaluation",
+     "neural-networks",
+     "probability-stats",
+     "python-data-structures",
+     "python-syntax",
+     "pytorch-intro",
+     "sql-fundamentals"
+    ]
+   },
+   {
+    "id": "generative-ai-engineer",
+    "title": "Generative AI Engineer",
+    "skills": [
+     "ai-ethics",
+     "embeddings-rag",
+     "fine-tuning-basics",
+     "genai-eval-safety",
+     "neural-networks",
+     "prompt-engineering",
+     "python-syntax",
+     "transformers-llms"
+    ]
+   },
+   {
+    "id": "agentic-ai-engineer",
+    "title": "Agentic AI Engineer",
+    "skills": [
+     "agent-architecture",
+     "agent-frameworks",
+     "agent-safety",
+     "ai-ethics",
+     "mcp-servers",
+     "memory-planning",
+     "multi-agent",
+     "prompt-engineering",
+     "python-functions",
+     "tool-use-apis"
+    ]
+   },
+   {
+    "id": "junior-cybersecurity",
+    "title": "Junior Cybersecurity Professional",
+    "skills": [
+     "cryptography-basics",
+     "ethics-law",
+     "git-basics",
+     "incident-response",
+     "linux-cli",
+     "linux-hardening",
+     "networking-basics",
+     "owasp-web",
+     "python-syntax",
+     "recon-osint",
+     "security-fundamentals",
+     "vuln-assessment"
+    ]
+   }
+  ]
+ },
+ "mappings": [
+  {
+   "topicId": "python-fundamentals",
+   "primaryRoadmap": "python-developer",
+   "entries": [
+    {
+     "roadmap": "python-developer",
+     "confidence": "high",
+     "skills": [
+      "python-setup",
+      "python-syntax",
+      "python-functions",
+      "python-data-structures",
+      "python-errors",
+      "python-oop",
+      "python-files",
+      "python-testing"
+     ],
+     "note": "Topic-level overlap only: this credential is one 20-question attempt on Python fundamentals, not the roadmap's projects, practice or depth."
+    }
+   ]
+  },
+  {
+   "topicId": "html-css",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "high",
+     "skills": [
+      "html-css",
+      "accessibility"
+     ],
+     "note": "Topic-level overlap. Markup, styling and web accessibility vocabulary, not the full roadmap."
+    }
+   ]
+  },
+  {
+   "topicId": "javascript-essentials",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "high",
+     "skills": [
+      "javascript-fundamentals"
+     ],
+     "note": "Topic-level overlap with the language fundamentals stage."
+    }
+   ]
+  },
+  {
+   "topicId": "react-basics",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "high",
+     "skills": [
+      "react-fundamentals"
+     ],
+     "note": "Topic-level overlap. Components, props and state vocabulary, not building and shipping the roadmap's app."
+    }
+   ]
+  },
+  {
+   "topicId": "sql-databases",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "high",
+     "skills": [
+      "sql-fundamentals",
+      "databases-orm"
+     ],
+     "note": "Topic-level overlap: SQL querying is shared; ORM specifics appear in LearnPath only."
+    }
+   ]
+  },
+  {
+   "topicId": "git-github",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "high",
+     "skills": [
+      "git-basics"
+     ],
+     "note": "Topic-level overlap with version control basics."
+    }
+   ]
+  },
+  {
+   "topicId": "cybersecurity",
+   "primaryRoadmap": "junior-cybersecurity",
+   "entries": [
+    {
+     "roadmap": "junior-cybersecurity",
+     "confidence": "high",
+     "skills": [
+      "security-fundamentals",
+      "networking-basics",
+      "linux-cli",
+      "cryptography-basics",
+      "owasp-web",
+      "vuln-assessment",
+      "ethics-law",
+      "linux-hardening",
+      "incident-response",
+      "recon-osint"
+     ],
+     "note": "Topic-level overlap: the credential samples 20 items across the topic; it does not cover the roadmap's labs or tooling practice."
+    }
+   ]
+  },
+  {
+   "topicId": "generative-ai-basics",
+   "primaryRoadmap": "generative-ai-engineer",
+   "entries": [
+    {
+     "roadmap": "generative-ai-engineer",
+     "confidence": "medium",
+     "skills": [
+      "transformers-llms",
+      "neural-networks",
+      "embeddings-rag",
+      "ai-ethics"
+     ],
+     "note": "Vocabulary-level overlap (LLM concepts, embeddings/RAG, AI ethics). The roadmap builds and evaluates systems; this credential does not."
+    }
+   ]
+  },
+  {
+   "topicId": "prompt-engineering",
+   "primaryRoadmap": "generative-ai-engineer",
+   "entries": [
+    {
+     "roadmap": "generative-ai-engineer",
+     "confidence": "high",
+     "skills": [
+      "prompt-engineering"
+     ],
+     "note": "Direct skill-name overlap with the prompting stage of the roadmap."
+    },
+    {
+     "roadmap": "agentic-ai-engineer",
+     "confidence": "medium",
+     "skills": [
+      "prompt-engineering"
+     ],
+     "note": "Prompting is also a prerequisite node of the agentic roadmap."
+    }
+   ]
+  },
+  {
+   "topicId": "data-analysis",
+   "primaryRoadmap": "ai-engineer",
+   "entries": [
+    {
+     "roadmap": "ai-engineer",
+     "confidence": "medium",
+     "skills": [
+      "data-wrangling",
+      "probability-stats",
+      "model-evaluation"
+     ],
+     "note": "Partial overlap: descriptive analysis shares vocabulary with data wrangling and metrics, but the roadmap is model-building oriented."
+    }
+   ]
+  },
+  {
+   "topicId": "cloud-basics",
+   "primaryRoadmap": "full-stack-developer",
+   "entries": [
+    {
+     "roadmap": "full-stack-developer",
+     "confidence": "medium",
+     "skills": [
+      "deploy-basics",
+      "cloud-cicd",
+      "containers-orchestration"
+     ],
+     "note": "Partial overlap: deployment and hosting concepts, at a much lower depth than the roadmap's pipeline and container stages."
+    }
+   ]
+  }
+ ],
+ "unmapped": [
+  {
+   "topicId": "ai-productivity",
+   "reason": "LearnPath has no roadmap for general AI-tooling productivity; the closest roadmap, generative-ai-engineer, is about building with models rather than using assistants at work. No link is published so nothing can 404."
+  },
+  {
+   "topicId": "digital-marketing",
+   "reason": "LearnPath publishes no marketing roadmap, so this credential stands alone with no companion learning path."
+  },
+  {
+   "topicId": "no-code-automation",
+   "reason": "LearnPath publishes no no-code/automation roadmap; its agentic roadmap assumes programming skills and is not a substitute."
+  },
+  {
+   "topicId": "uiux-design",
+   "reason": "LearnPath publishes no design roadmap. Web accessibility is a different subject, so it is deliberately not offered as an overlap."
+  }
+ ],
+ "deepLinks": {
+  "python-fundamentals": {
+   "roadmap": "python-developer",
+   "skills": {
+    "rfv.skill.python-fundamentals.02-syntax-and-indentation": "python-syntax",
+    "rfv.skill.python-fundamentals.03-variables-and-basic-types": "python-syntax",
+    "rfv.skill.python-fundamentals.04-strings": "python-syntax",
+    "rfv.skill.python-fundamentals.05-lists": "python-data-structures",
+    "rfv.skill.python-fundamentals.06-dictionaries": "python-data-structures",
+    "rfv.skill.python-fundamentals.07-tuples-and-sets": "python-data-structures",
+    "rfv.skill.python-fundamentals.09-functions": "python-functions",
+    "rfv.skill.python-fundamentals.11-file-i-o": "python-files",
+    "rfv.skill.python-fundamentals.12-error-handling": "python-errors",
+    "rfv.skill.python-fundamentals.13-object-oriented-python": "python-oop",
+    "rfv.skill.python-fundamentals.16-virtual-environments-and-pip": "python-setup"
+   }
+  },
+  "html-css": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.html-css.02-html-document-structure": "html-css",
+    "rfv.skill.html-css.03-semantic-html": "html-css",
+    "rfv.skill.html-css.04-links-and-navigation": "html-css",
+    "rfv.skill.html-css.06-forms-and-inputs": "html-css",
+    "rfv.skill.html-css.07-css-selectors": "html-css",
+    "rfv.skill.html-css.08-the-box-model": "html-css",
+    "rfv.skill.html-css.09-colors-units-and-typography": "html-css",
+    "rfv.skill.html-css.10-display-and-positioning": "html-css",
+    "rfv.skill.html-css.11-flexbox": "html-css",
+    "rfv.skill.html-css.12-css-grid": "html-css",
+    "rfv.skill.html-css.13-responsive-design": "html-css",
+    "rfv.skill.html-css.14-css-variables-and-theming": "html-css",
+    "rfv.skill.html-css.17-accessibility-basics": "accessibility"
+   }
+  },
+  "javascript-essentials": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.javascript-essentials.01-variables-and-declarations": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.02-data-types": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.03-operators": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.04-functions": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.05-scope-and-closures": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.06-arrays-and-array-methods": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.07-objects": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.10-the-dom-document-object-model": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.12-es6-modern-features": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.14-truthy-falsy-and-coercion": "javascript-fundamentals",
+    "rfv.skill.javascript-essentials.17-iteration": "javascript-fundamentals"
+   }
+  },
+  "sql-databases": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.sql-databases.01-what-sql-is": "sql-fundamentals",
+    "rfv.skill.sql-databases.02-tables-rows-columns": "sql-fundamentals",
+    "rfv.skill.sql-databases.03-basic-select": "sql-fundamentals",
+    "rfv.skill.sql-databases.04-where-clause": "sql-fundamentals",
+    "rfv.skill.sql-databases.05-sorting-and-ordering": "sql-fundamentals",
+    "rfv.skill.sql-databases.06-aggregation-functions": "sql-fundamentals",
+    "rfv.skill.sql-databases.07-joins": "sql-fundamentals",
+    "rfv.skill.sql-databases.08-insert-update-delete": "sql-fundamentals",
+    "rfv.skill.sql-databases.09-primary-keys-and-indexes": "sql-fundamentals",
+    "rfv.skill.sql-databases.10-data-types-and-constraints": "sql-fundamentals",
+    "rfv.skill.sql-databases.11-subqueries-and-ctes": "sql-fundamentals",
+    "rfv.skill.sql-databases.14-database-design-basics": "databases-orm"
+   }
+  },
+  "git-github": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.git-github.01-what-git-is": "git-basics",
+    "rfv.skill.git-github.02-repositories-and-initialization": "git-basics",
+    "rfv.skill.git-github.03-staging-and-committing": "git-basics",
+    "rfv.skill.git-github.04-viewing-changes-and-history": "git-basics",
+    "rfv.skill.git-github.05-branches": "git-basics",
+    "rfv.skill.git-github.06-merging": "git-basics",
+    "rfv.skill.git-github.07-rebasing": "git-basics",
+    "rfv.skill.git-github.08-remotes": "git-basics",
+    "rfv.skill.git-github.09-undoing-changes": "git-basics",
+    "rfv.skill.git-github.10-stashing": "git-basics",
+    "rfv.skill.git-github.11-github-basics": "git-basics",
+    "rfv.skill.git-github.12-pull-request-workflow": "git-basics",
+    "rfv.skill.git-github.13-gitignore-and-configuration": "git-basics",
+    "rfv.skill.git-github.14-authentication-and-ssh": "git-basics"
+   }
+  },
+  "cybersecurity": {
+   "roadmap": "junior-cybersecurity",
+   "skills": {
+    "rfv.skill.cybersecurity.01-what-cybersecurity-is": "security-fundamentals",
+    "rfv.skill.cybersecurity.02-common-threats": "security-fundamentals",
+    "rfv.skill.cybersecurity.03-password-security": "security-fundamentals",
+    "rfv.skill.cybersecurity.04-phishing-and-social-engineering": "security-fundamentals",
+    "rfv.skill.cybersecurity.05-network-security": "networking-basics",
+    "rfv.skill.cybersecurity.07-access-control": "security-fundamentals",
+    "rfv.skill.cybersecurity.08-web-application-security": "owasp-web",
+    "rfv.skill.cybersecurity.12-incident-response": "incident-response",
+    "rfv.skill.cybersecurity.15-personal-security-hygiene": "security-fundamentals"
+   }
+  },
+  "prompt-engineering": {
+   "roadmap": "generative-ai-engineer",
+   "skills": {
+    "rfv.skill.prompt-engineering.01-what-is-a-prompt": "prompt-engineering",
+    "rfv.skill.prompt-engineering.02-zero-shot-vs-few-shot-prompting": "prompt-engineering",
+    "rfv.skill.prompt-engineering.03-chain-of-thought-reasoning": "prompt-engineering",
+    "rfv.skill.prompt-engineering.04-role-and-system-prompts": "prompt-engineering",
+    "rfv.skill.prompt-engineering.05-output-format-control": "prompt-engineering",
+    "rfv.skill.prompt-engineering.06-iterative-prompt-refinement": "prompt-engineering",
+    "rfv.skill.prompt-engineering.07-hallucinations-and-accuracy": "genai-eval-safety",
+    "rfv.skill.prompt-engineering.08-context-window-management": "prompt-engineering",
+    "rfv.skill.prompt-engineering.10-prompt-templates-and-variables": "prompt-engineering",
+    "rfv.skill.prompt-engineering.11-multi-turn-conversations": "prompt-engineering",
+    "rfv.skill.prompt-engineering.14-prompt-safety-and-guardrails": "ai-ethics",
+    "rfv.skill.prompt-engineering.17-prompt-evaluation-and-testing": "genai-eval-safety",
+    "rfv.skill.prompt-engineering.18-prompt-patterns-and-frameworks": "prompt-engineering"
+   }
+  },
+  "generative-ai-basics": {
+   "roadmap": "generative-ai-engineer",
+   "skills": {
+    "rfv.skill.generative-ai-basics.01-what-is-generative-ai": "transformers-llms",
+    "rfv.skill.generative-ai-basics.02-large-language-models-llms": "transformers-llms",
+    "rfv.skill.generative-ai-basics.04-how-llms-are-trained": "transformers-llms",
+    "rfv.skill.generative-ai-basics.05-the-transformer-architecture": "transformers-llms",
+    "rfv.skill.generative-ai-basics.07-limitations-of-generative-ai": "genai-eval-safety",
+    "rfv.skill.generative-ai-basics.12-retrieval-augmented-generation-rag": "embeddings-rag",
+    "rfv.skill.generative-ai-basics.13-safety-and-ethics": "ai-ethics",
+    "rfv.skill.generative-ai-basics.14-privacy-and-data": "ai-ethics"
+   }
+  },
+  "react-basics": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.react-basics.01-what-react-is": "react-fundamentals",
+    "rfv.skill.react-basics.02-jsx": "react-fundamentals",
+    "rfv.skill.react-basics.03-components": "react-fundamentals",
+    "rfv.skill.react-basics.04-props": "react-fundamentals",
+    "rfv.skill.react-basics.05-state-and-usestate": "react-fundamentals",
+    "rfv.skill.react-basics.06-conditional-rendering": "react-fundamentals",
+    "rfv.skill.react-basics.07-lists-and-keys": "react-fundamentals",
+    "rfv.skill.react-basics.08-event-handling": "react-fundamentals",
+    "rfv.skill.react-basics.09-useeffect": "react-fundamentals",
+    "rfv.skill.react-basics.10-hooks-overview": "react-fundamentals"
+   }
+  },
+  "data-analysis": {
+   "roadmap": "ai-engineer",
+   "skills": {
+    "rfv.skill.data-analysis.02-types-of-data": "data-wrangling",
+    "rfv.skill.data-analysis.03-data-sources-and-collection": "data-wrangling",
+    "rfv.skill.data-analysis.04-data-cleaning": "data-wrangling",
+    "rfv.skill.data-analysis.05-descriptive-statistics": "probability-stats",
+    "rfv.skill.data-analysis.06-distributions": "probability-stats",
+    "rfv.skill.data-analysis.07-correlation-and-causation": "probability-stats",
+    "rfv.skill.data-analysis.08-comparing-groups": "probability-stats",
+    "rfv.skill.data-analysis.10-pandas-python": "data-wrangling",
+    "rfv.skill.data-analysis.11-visualization-fundamentals": "data-wrangling"
+   }
+  },
+  "cloud-basics": {
+   "roadmap": "full-stack-developer",
+   "skills": {
+    "rfv.skill.cloud-basics.01-what-cloud-computing-is": "deploy-basics",
+    "rfv.skill.cloud-basics.02-cloud-service-models": "deploy-basics",
+    "rfv.skill.cloud-basics.03-cloud-deployment-models": "deploy-basics",
+    "rfv.skill.cloud-basics.04-compute-services": "deploy-basics",
+    "rfv.skill.cloud-basics.09-containers-and-orchestration": "containers-orchestration",
+    "rfv.skill.cloud-basics.10-devops-and-deployment": "cloud-cicd",
+    "rfv.skill.cloud-basics.14-modern-cloud-native-patterns": "containers-orchestration"
+   }
+  }
+ }
+}

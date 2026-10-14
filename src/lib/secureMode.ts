@@ -80,15 +80,31 @@ export interface SecureModeController {
  * Returns true if successful, false if browser blocked it.
  * Must be called from a user-gesture handler (button click), or it will fail.
  */
+/**
+ * Vendor-prefixed (legacy Safari / old Edge) fullscreen entry points. They are
+ * not in lib.dom, so they are declared here instead of casting to `any`.
+ */
+interface PrefixedFullscreenTarget {
+  webkitRequestFullscreen?: () => Promise<void> | void;
+  msRequestFullscreen?: () => Promise<void> | void;
+}
+
+interface PrefixedFullscreenDocument {
+  webkitExitFullscreen?: () => Promise<void> | void;
+  msExitFullscreen?: () => Promise<void> | void;
+  webkitFullscreenElement?: Element | null;
+  msFullscreenElement?: Element | null;
+}
+
 export async function requestFullscreen(el?: HTMLElement): Promise<boolean> {
   const target = el ?? document.documentElement;
   try {
     if (target.requestFullscreen) {
       await target.requestFullscreen({ navigationUI: 'hide' });
-    } else if ((target as any).webkitRequestFullscreen) {
-      await (target as any).webkitRequestFullscreen();
-    } else if ((target as any).msRequestFullscreen) {
-      await (target as any).msRequestFullscreen();
+    } else if ((target as unknown as PrefixedFullscreenTarget).webkitRequestFullscreen) {
+      await (target as unknown as PrefixedFullscreenTarget).webkitRequestFullscreen?.();
+    } else if ((target as unknown as PrefixedFullscreenTarget).msRequestFullscreen) {
+      await (target as unknown as PrefixedFullscreenTarget).msRequestFullscreen?.();
     } else {
       return false;
     }
@@ -100,18 +116,16 @@ export async function requestFullscreen(el?: HTMLElement): Promise<boolean> {
 }
 
 export function exitFullscreen(): Promise<void> {
+  const doc = document as unknown as PrefixedFullscreenDocument;
   if (document.exitFullscreen) return document.exitFullscreen();
-  if ((document as any).webkitExitFullscreen) return (document as any).webkitExitFullscreen();
-  if ((document as any).msExitFullscreen) return (document as any).msExitFullscreen();
+  if (doc.webkitExitFullscreen) return Promise.resolve(doc.webkitExitFullscreen());
+  if (doc.msExitFullscreen) return Promise.resolve(doc.msExitFullscreen());
   return Promise.resolve();
 }
 
 export function isFullscreenActive(): boolean {
-  return !!(
-    document.fullscreenElement ||
-    (document as any).webkitFullscreenElement ||
-    (document as any).msFullscreenElement
-  );
+  const doc = document as unknown as PrefixedFullscreenDocument;
+  return !!(document.fullscreenElement || doc.webkitFullscreenElement || doc.msFullscreenElement);
 }
 
 /**

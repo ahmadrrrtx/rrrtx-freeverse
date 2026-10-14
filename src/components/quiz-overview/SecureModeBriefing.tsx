@@ -3,20 +3,20 @@ import { SectionLabel } from '../landing/SectionPrimitives';
 
 const RULES = [
   {
-    title: 'Stay in fullscreen mode',
-    desc:  'The test launches in fullscreen. Exiting counts as a violation.',
+    title: 'Stay in fullscreen',
+    desc: 'The attempt opens in fullscreen. Leaving it raises a signal and is recorded.',
   },
   {
-    title: 'No tab or window switching',
-    desc:  'The browser detects tab changes. Switching away counts as a violation.',
+    title: 'Keep this tab focused',
+    desc: 'Switching tabs or windows raises a signal and is recorded.',
   },
   {
-    title: 'No copy or paste',
-    desc:  'Clipboard operations are blocked. Attempts are logged.',
+    title: 'Copy and paste are blocked',
+    desc: 'Clipboard events on the attempt page are blocked and counted while you are in the player.',
   },
   {
-    title: 'No external help',
-    desc:  'AI tools, search, second devices — all defeat the purpose. Honor system + tech detection.',
+    title: 'Three signals end the attempt',
+    desc: 'On the third signal the attempt is submitted as-is and graded without the pass mark being awarded.',
   },
 ];
 
@@ -36,15 +36,18 @@ export function SecureModeBriefing() {
           sm:text-[2.25rem] sm:leading-[1.05]
           max-w-[40rem]
         ">
-          This quiz uses <span className="text-term-glow">Secure Mode.</span>
+          The attempt opens in <span className="text-term-glow">Secure Mode.</span>
         </h2>
         <p className="
           mt-4 font-mono text-sm sm:text-base text-fg-3 leading-relaxed
           max-w-[40rem]
         ">
           <span className="text-fg-5">// </span>
-          By starting, you agree to take this quiz under the following conditions.
-          Browser-based anti-cheat is active throughout.
+          Secure Mode is a set of browser signals, not proctoring. It cannot see a second device, a second monitor, a
+          screenshot tool or a browser extension. What it can do is record when the attempt page loses focus or the
+          learner leaves fullscreen, and count those signals — so the honest path is the only comfortable one. The
+          signals are marked as self-reported on the record, and nobody is accused automatically: a human reviews any
+          flag before it means anything. Here is what is actually monitored:
         </p>
 
         {/* Rules list — tiled hairline borders */}

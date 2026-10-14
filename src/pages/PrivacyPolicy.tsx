@@ -71,7 +71,7 @@ export function PrivacyPolicy() {
             <ul className="mt-4 space-y-2.5 font-mono text-sm text-fg-2">
               <ListItem>RRRTX FreeVerse runs entirely in your browser. There is no user account, no login, no server-side database storing your data.</ListItem>
               <ListItem>Your name, email, certificates, and quiz history live in <strong className="text-fg-0">your browser's localStorage</strong> — on your device only.</ListItem>
-              <ListItem>If you pass a quiz and a certificate is issued, the cert is published to a <strong className="text-fg-0">public GitHub registry</strong>. It contains your name, the quiz title, your score, the date, and a <strong className="text-fg-0">one-way hash</strong> of your email — never your raw email address.</ListItem>
+              <ListItem>If you pass an assessment, a credential record is published to a <strong className="text-fg-0">public GitHub registry</strong>. It contains your display name, the topic, the level, the score, the date, the skill areas assessed, and a <strong className="text-fg-0">pseudonymous learner reference</strong> derived from your email with a server-side secret. Your email address itself is never written to the registry and never shown on the verification page.</ListItem>
               <ListItem>We do not use tracking cookies. We do not use third-party analytics. We do not run ads. We do not sell or share your data.</ListItem>
               <ListItem>You can wipe everything we have on you (locally) with one button on the <Link to="/me" className="text-term-glow hover:underline underline-offset-4">/me</Link> page.</ListItem>
             </ul>
@@ -99,7 +99,7 @@ export function PrivacyPolicy() {
               </P>
               <ul className="mt-3 space-y-2 font-mono text-sm text-fg-2">
                 <ListItem><strong className="text-fg-0">Your name</strong> — appears on your certificate as the recipient.</ListItem>
-                <ListItem><strong className="text-fg-0">Your email address</strong> — used to generate a unique, deterministic certificate ID. The raw email is <em>never stored on our servers, never transmitted to third parties as plaintext, and never displayed publicly</em>. A one-way SHA-256 hash of the email is stored alongside the cert (so the same email can re-verify a cert later without exposing the address).</ListItem>
+                <ListItem><strong className="text-fg-0">Your email address</strong> — used for two things: to bind an attempt to one recipient (so a passing result cannot be handed to somebody else at issuance), and to look up retake rules. It is converted into a <em>pseudonymous learner reference</em> with a keyed HMAC using a server-side secret, and only that reference is stored in the registry (in a <code>learners/</code> file capped at the last 25 attempts). The raw email is never written to the registry, never returned by the API, and never displayed publicly.</ListItem>
               </ul>
               <P>
                 Both values are stored in <strong className="text-fg-0">your browser's localStorage</strong> — physically on your device — under the key <code className="text-term-glow">rfv:user</code>.
@@ -130,7 +130,7 @@ export function PrivacyPolicy() {
               </P>
               <ul className="mt-3 space-y-2 font-mono text-sm text-fg-2">
                 <ListItem><strong className="text-fg-0">Locally</strong>, in your browser's localStorage under the key <code className="text-term-glow">rfv:certificates</code>.</ListItem>
-                <ListItem><strong className="text-fg-0">Publicly</strong>, as a JSON file committed to the open GitHub repository <code className="text-term-glow break-all">github.com/ahmadrrrtx/rrrtx-freeverse-certs</code>. This is the registry that makes certificates verifiable forever.</ListItem>
+                <ListItem><strong className="text-fg-0">Publicly</strong>, as a JSON file committed to the open GitHub repository <code className="text-term-glow break-all">github.com/ahmadrrrtx/rrrtx-freeverse-certs</code>. This is the registry that makes credentials verifiable — and revocable: a <code>revocations.json</code> file in the same repository is read on every verification.</ListItem>
               </ul>
               <P>
                 The public registry record contains:
@@ -138,7 +138,7 @@ export function PrivacyPolicy() {
               <ul className="mt-3 space-y-2 font-mono text-sm text-fg-2">
                 <ListItem>Certificate ID (format <code className="text-term-glow">RFV-YYYY-XXXXXXXX</code>)</ListItem>
                 <ListItem>Your name (as it appears on the cert)</ListItem>
-                <ListItem>One-way SHA-256 hash of your email (never the raw email)</ListItem>
+                <ListItem>A pseudonymous learner reference derived from your email with a server-side secret (never the email itself)</ListItem>
                 <ListItem>Quiz title and ID</ListItem>
                 <ListItem>Your score</ListItem>
                 <ListItem>Issuance timestamp</ListItem>
@@ -146,13 +146,13 @@ export function PrivacyPolicy() {
               </ul>
               <P className="text-warn-500">
                 <span className="text-warn-500/70">// note: </span>
-                Once a record is published to the public registry, it is part of GitHub's commit history and we cannot guarantee its complete removal. See the "Your rights" section below for details.
+                Once a record is published to the public registry, it is part of GitHub's commit history and we cannot guarantee its complete removal. Revoking a credential is a separate, supported action: a revocation entry makes every verification report the credential as revoked. See the "Your rights" section below for details.
               </P>
             </SubSection>
 
             <SubSection title="d) Server logs (Vercel hosting)">
               <P>
-                Our hosting provider, Vercel, receives standard HTTP request logs when you visit the site. These include your IP address, user agent (browser), URL accessed, and timestamp. Vercel uses this for traffic routing, abuse prevention, and performance monitoring under their own terms.
+                Our hosting provider, Vercel, receives standard HTTP request logs when you visit the site. These include your IP address, user agent (browser), URL accessed, and timestamp. Vercel uses this for traffic routing, abuse prevention, and performance monitoring under their own terms. Inside the application, your IP address is used transiently to rate-limit abuse (how many attempts or verifications can be started from one address per hour); those counters live in function memory, expire with the hour window, and are not written to storage.
               </P>
               <P>
                 <strong className="text-fg-0">We do not access, retain, or analyze these logs.</strong> They are governed by{' '}
@@ -217,7 +217,7 @@ export function PrivacyPolicy() {
               <ListItem><strong className="text-fg-0">Local data</strong> (profile, quiz history, certificates) stays in your browser <em>indefinitely</em>, until you delete it via the "Reset everything" button on <Link to="/me" className="text-term-glow hover:underline underline-offset-4">/me</Link>, clear your browser data, or uninstall your browser.</ListItem>
               <ListItem><strong className="text-fg-0">Session data</strong> (in-progress attempts) is automatically deleted when the quiz ends or the browser tab closes.</ListItem>
               <ListItem><strong className="text-fg-0">Public registry records</strong> are <em>permanent by design</em>. The whole point of a verifiable credential is that anyone can re-verify it years later. Deletion is possible (see "Your rights") but it leaves an audit trail in the Git commit history.</ListItem>
-              <ListItem><strong className="text-fg-0">Server logs</strong> are retained by Vercel per their policy, typically 30 days for security/abuse prevention.</ListItem>
+              <ListItem><strong className="text-fg-0">Server logs</strong> are retained by Vercel per their policy, typically 30 days for security/abuse prevention. Our own application logs record event names and topic/level identifiers — not IP addresses, names or email addresses.</ListItem>
             </ul>
           </Section>
 
@@ -279,9 +279,9 @@ export function PrivacyPolicy() {
           <Section title="07 · How we protect your data">
             <ul className="mt-3 space-y-2 font-mono text-sm text-fg-2">
               <ListItem>The entire site is served over <strong className="text-fg-0">HTTPS</strong> (TLS 1.2+).</ListItem>
-              <ListItem>Email addresses are <strong className="text-fg-0">hashed with SHA-256</strong> before being included in any certificate record. We don't store the raw email on any server.</ListItem>
+              <ListItem>Email addresses are converted into a <strong className="text-fg-0">keyed, pseudonymous reference</strong> before anything derived from them is stored. The raw email is not written to the registry, and this deployment keeps no server-side store of email addresses.</ListItem>
               <ListItem>The cert-issuing Edge Function authenticates to GitHub using a scoped Personal Access Token stored in <strong className="text-fg-0">Vercel's encrypted environment variables</strong>. The token is never exposed to client code.</ListItem>
-              <ListItem>Certificate IDs are deterministic hashes that include a secret salt + integrity record, so tampering with any field of the cert breaks the hash.</ListItem>
+              <ListItem>Credential IDs are derived from the attempt itself with a server-side secret (HMAC-SHA-256), so they cannot be guessed or forged, and re-submitting the same attempt resolves to the same credential instead of creating a duplicate.</ListItem>
               <ListItem>The full source code, including the security model, is{' '}
                 <a href="https://github.com/ahmadrrrtx" target="_blank" rel="noreferrer noopener" className="text-term-glow hover:underline underline-offset-4">
                   open source and auditable

@@ -1,0 +1,35 @@
+# ─── Dependencies ────────────────────────────────────────────
+node_modules/
+
+# ─── Build output ────────────────────────────────────────────
+dist/
+*.tsbuildinfo
+.vercel/
+
+# ─── Emitted JS guard ────────────────────────────────────────
+# `tsc -b` used to emit transpiled .js next to the sources, which polluted
+# the repo and could shadow the real modules. Type-checking is now noEmit.
+src/**/*.js
+api/**/*.js
+server/**/*.js
+shared/**/*.js
+
+# ─── Secrets — never commit ──────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+!server/bank/**/*.sealed.json
+
+# ─── Local authoring scratch ─────────────────────────────────
+# Plaintext question authoring lives here (gitignored). Sealed output is
+# committed to server/bank/; plaintext answer keys must never be committed.
+bank-master/
+
+# ─── OS / editor ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+coverage/

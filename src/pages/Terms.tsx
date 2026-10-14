@@ -47,7 +47,7 @@ export function Terms() {
           <Section title="The 30-second version">
             <ul className="space-y-2.5 font-mono text-sm text-fg-2">
               <ListItem>The service is free. We don't charge you anything, ever.</ListItem>
-              <ListItem>You get a skill badge (a certificate of achievement). It is <strong className="text-fg-0">not</strong> an accredited degree or a regulated professional certification.</ListItem>
+              <ListItem>You get a skill badge (a credential of achievement). It is <strong className="text-fg-0">not</strong> an accredited degree or a regulated professional certification, and it is not endorsed by any employer, university or professional body.</ListItem>
               <ListItem>Don't cheat. Don't impersonate others. Don't abuse the service.</ListItem>
               <ListItem>The service is provided "as is" with no warranties. Use it at your own risk.</ListItem>
               <ListItem>The source code is open-source under the MIT license — fork it, study it, build on it.</ListItem>
@@ -57,7 +57,7 @@ export function Terms() {
           {/* THE SERVICE */}
           <Section title="01 · What the service is">
             <P>
-              RRRTX FreeVerse ("the service") is a free online certification platform. You take a 20-question multiple-choice quiz under a browser-based "Secure Mode" environment. If you score 80% or higher, the service generates a verifiable digital certificate, stores it locally in your browser, and publishes a record to a public GitHub registry.
+              RRRTX FreeVerse ("the service") is a free online assessment platform. The server draws 20 multiple-choice items for your attempt and grades your answers against a private key. Each topic offers up to three levels — Foundation, Intermediate and Advanced — with pass marks of 80%, 80% and 85% respectively; higher levels require the level below and only open when the reviewed item pool supports them. If you pass, the service issues an Ed25519-signed credential, caches it in your browser and publishes the record to a public GitHub registry, where it can also be revoked.
             </P>
             <P>
               The service is operated by Muhammad Ahmad as an independent project. There is no company, no investor, no monetization model behind it.
@@ -83,7 +83,7 @@ export function Terms() {
           {/* WHAT THE CERT IS — IMPORTANT */}
           <Section title="03 · What a certificate is (and isn't)">
             <P>
-              A RRRTX FreeVerse certificate is a <strong className="text-fg-0">skill badge of achievement</strong>. It demonstrates that you passed a 20-question test on a specific topic with a score of at least 80%, under browser-based anti-cheat conditions.
+              A RRRTX FreeVerse credential is a <strong className="text-fg-0">skill badge of achievement</strong>. It records that a server-signed attempt for a specific topic and level was graded on the server and reached that level's pass mark, with browser-level anti-tampering signals recorded as self-reported.
             </P>
             <P className="text-warn-500">
               <span className="text-warn-500/70">// important: </span>
@@ -112,7 +112,7 @@ export function Terms() {
               <ListItem>Attempt to attack, overload, or disrupt the service (including the certificate-issuing API, the public registry, or the hosting infrastructure).</ListItem>
               <ListItem>Use the service to harass, defame, or impersonate others.</ListItem>
               <ListItem>Misrepresent a RRRTX FreeVerse certificate as an accredited credential.</ListItem>
-              <ListItem>Reverse-engineer the certificate ID hashing system to forge certificates.</ListItem>
+              <ListItem>Attempt to forge a credential, forge an attempt or result token, or present a credential issued to somebody else as your own.</ListItem>
             </ul>
             <P>
               We reserve the right to revoke certificates obtained in violation of these terms by removing them from the public registry.
@@ -133,7 +133,7 @@ export function Terms() {
             </SubSection>
             <SubSection title="Your certificate">
               <P>
-                The certificate issued to you is yours. Download it, share it, frame it, post it on LinkedIn, embed it in your portfolio. The cert ID and registry record are publicly verifiable forever.
+                The credential issued to you is yours. Download it, share it, post it on LinkedIn, embed it in your portfolio. Anyone can verify it against the registry — and can see whether it has since been revoked, so keep the verification link alongside any copy you share.
               </P>
             </SubSection>
             <SubSection title="The RRRTX brand">

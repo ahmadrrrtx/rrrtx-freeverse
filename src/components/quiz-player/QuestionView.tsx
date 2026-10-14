@@ -1,9 +1,8 @@
 import { cn } from '../../lib/cn';
-import type { ShuffledQuestion } from '../../types';
 
 interface QuestionViewProps {
-  /** The shuffled question */
-  question: ShuffledQuestion;
+  /** The question as delivered by the server (prompt + display-order options). */
+  question: { prompt: string; options: string[] };
   /** Display number (1-based) */
   number: number;
   total: number;
@@ -49,7 +48,7 @@ export function QuestionView({
           max-w-[40rem]
         "
       >
-        {question.q}
+        {question.prompt}
       </h2>
 
       {/* Options */}
