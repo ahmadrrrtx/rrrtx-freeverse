@@ -1,5 +1,6 @@
 import { StatusDot } from '../atoms/StatusDot';
 import { Container } from '../atoms/Container';
+import { CATALOG_TOTALS } from '../../data/quizMeta';
 
 interface StatusBarItemProps {
   label: string;
@@ -26,9 +27,9 @@ export function StatusBar() {
             <span className="text-fg-2">status:</span>
             <span className="text-term-glow">online</span>
           </span>
-          <StatusBarItem label="version" value="v1.0.0" />
-          <StatusBarItem label="quizzes" value="15" />
-          <StatusBarItem label="questions" value="1,500" />
+          <StatusBarItem label="version" value={CATALOG_TOTALS.bankVersion} />
+          <StatusBarItem label="assessments" value={String(CATALOG_TOTALS.topics)} />
+          <StatusBarItem label="questions" value={CATALOG_TOTALS.questions.toLocaleString('en-US')} />
           <StatusBarItem label="cost" value="$0" />
         </div>
       </Container>

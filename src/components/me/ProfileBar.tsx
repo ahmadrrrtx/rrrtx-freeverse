@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { Button } from '../atoms/Button';
-import { exportAll, importAll } from '../../lib/storage';
+import { exportAll, importAll } from '../../lib/attemptSession';
 import type { UserProfile } from '../../types';
 
 interface ProfileBarProps {
@@ -12,8 +12,11 @@ interface ProfileBarProps {
  * ProfileBar — top of /me page.
  * Shows user identity + Export/Import controls.
  *
- * Export: downloads a JSON file with everything (user + certs + results)
- * Import: file picker → validates → updates localStorage → calls onImportSuccess
+ * Export: downloads a JSON file with your local profile, credential cache and
+ *         attempt history.
+ * Import: restores that file into localStorage. Imported credentials are only
+ *         a display cache — nothing here is treated as proof of validity, and
+ *         every credential is re-checked against the registry on this page.
  */
 export function ProfileBar({ user, onImportSuccess }: ProfileBarProps) {
   const fileInputRef = useRef<HTMLInputElement | null>(null);

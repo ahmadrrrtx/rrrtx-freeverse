@@ -22,9 +22,10 @@ export function FinalCTA() {
           </h2>
 
           <p className="mt-8 font-mono text-sm sm:text-base text-fg-3 leading-relaxed max-w-md">
-            One quiz. Twenty minutes. A real certificate at the end.
+            One topic. Twenty questions. A credential if you pass — drawn, graded and signed
+            by the server, not by your browser.
             <br />
-            <span className="text-fg-5">// no signup required to start.</span>
+            <span className="text-fg-5">// no account needed · the pass mark and the bank's review status are shown before you start.</span>
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
@@ -39,7 +40,7 @@ export function FinalCTA() {
               start-quiz →
             </Button>
             <a
-              href="https://github.com/ahmadrrrtx"
+              href="https://github.com/ahmadrrrtx/rrrtx-freeverse"
               target="_blank"
               rel="noreferrer noopener"
               className="

@@ -1,0 +1,3372 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "react-basics",
+    "title": "React Basics",
+    "description": "Components, props, state, hooks. Build modern UIs with the most popular library.",
+    "category": "Web Dev",
+    "icon": "⚛️",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What React is",
+      "skill_id": "rfv.skill.react-basics.01-what-react-is",
+      "items": [
+        {
+          "id": "rc-001",
+          "prompt": "What is React?",
+          "options": [
+            "A JavaScript library for building user interfaces using a component-based architecture",
+            "A CSS preprocessor",
+            "A backend runtime like Node.js",
+            "A full-stack framework with built-in database"
+          ],
+          "answer_commit": "hmac-sha256:ee827d90ac93df56b0ca50fe5eb11b48",
+          "explanation_enc": "aes-256-gcm.v1:f-J_FP3mnWYRx2Cv:-IYIkIOb-gU7TKgBAfku8-D0nBTy4hmiUKyJlbcCjk2LPxYQlqOH1v90iozalu5uxsnuapbWKuUKrE5nXRXEeOdRCpAoAd5WeMctORAdDI2MnGKUgS_sqXfJMZfsgid7JQf50aRO2LwzVNeKvqarheVzRIdXK3ywKCmTH11W_iQVvCvN0CcvTbg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.911,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-002",
+          "prompt": "Who originally created React?",
+          "options": [
+            "Google",
+            "Microsoft",
+            "Twitter",
+            "Facebook (now Meta) — first released in 2013"
+          ],
+          "answer_commit": "hmac-sha256:51eedbf7d91a8888a3dc6a60c4fe1bc9",
+          "explanation_enc": "aes-256-gcm.v1:GDGg2Rld6yJJnPcm:nVoVx1RusthOQiLEA0zvBILvaM7LbscLyscBCYjYpW7CCzxWPzw1VHj7EQcLrzSRjEzB0eU8sRSzatFktLxQ614WHfkssz2iUw19n8cgAa6s-L02PPg2PTH24U-L1nAPBni4Eb9a103NHVrXwfoXbtNsEzkpfbLnDutqdsrGF9BHv1s",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.889,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-003",
+          "prompt": "What problem does React PRIMARILY solve?",
+          "options": [
+            "Efficiently keeping the UI in sync with changing application state through a component model",
+            "Hosting websites",
+            "Compressing image files",
+            "Replacing all backend code"
+          ],
+          "answer_commit": "hmac-sha256:6cadef9b7467598bc788f9810af12719",
+          "explanation_enc": "aes-256-gcm.v1:hcCTltRINPn0etvc:xYxetwd-FzOrT56zZk_UiVOHnOgbzz9auBy9rjJDBFlMqhaS1ejqDpxSHYTiZpVtxJ_YPzKTdOurlUqDVaVhny4bsebfbewm9d0c9ajYv7qIsusKKxM0itskZ-4mbHyBrIg0fOEuR1nN2-yHtng3WeAiHWSLRFGC4A5yZVAhlc3lGu7tx5ItMGYe4DDZLUWUb8Eyf_a2",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.538,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-004",
+          "prompt": "What is the 'Virtual DOM' in React?",
+          "options": [
+            "An in-memory representation of the UI that React diffs against the previous version to update the real DOM efficiently",
+            "A virtual reality interface",
+            "A backup copy of HTML files",
+            "A database for storing components"
+          ],
+          "answer_commit": "hmac-sha256:00da40ddc602d5b049c53dfd5730fac2",
+          "explanation_enc": "aes-256-gcm.v1:jKRCDM8rui6Zpkj7:8UwK6eaSr1RgNzPiAELRoe0g1vRKlvcZMUmuBc0TM-GLwGZx2Ku_dLLDw4l_7rWgE23T6r3tsfjukxMYFqsr1X58oCGnm6HauDvjjz7NIlECosfQWKKj3Eou1mZtSfzvnlshUl895MK9RWfWW3wRSPhP8DfgpiHINgDVzd0b67VmxzjicFs4Nymen5iobs-y5qZCpBBKJw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.576,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-005",
+          "prompt": "Which is TRUE about React?",
+          "options": [
+            "It only works in Chrome",
+            "It requires a database connection",
+            "It is declarative — you describe what the UI should look like for a given state, not how to update it",
+            "It is imperative — you manually update DOM elements"
+          ],
+          "answer_commit": "hmac-sha256:4ca43c28db51eee73bbc2a96bbd9e157",
+          "explanation_enc": "aes-256-gcm.v1:X9xSQCSBcyG4Ve9M:SXcd_ZCbgKZW4YBWlVRlgvu8zQaRO1IC1tCSxjyb06WWswZqv_ZvLOh2cHreiMI77PxNGCMkBiAcQSnNUJN8L8Mr_X1ePXxWF19WD44DOdPMPPR8cPkGQ2tqV2iShNVVPm6JkYr7xrQIZ4rZ0Sds5LnlWg53BkliU5Ti452s9ijdfWM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.98,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "JSX",
+      "skill_id": "rfv.skill.react-basics.02-jsx",
+      "items": [
+        {
+          "id": "rc-006",
+          "prompt": "What is JSX?",
+          "options": [
+            "A type of CSS",
+            "A new programming language",
+            "A syntax extension that lets you write HTML-like markup directly inside JavaScript",
+            "A bundler for React"
+          ],
+          "answer_commit": "hmac-sha256:90566f2a409311c6c7e6f16a2523bbff",
+          "explanation_enc": "aes-256-gcm.v1:215fR9l3dvfJCzaj:LUM4cFMHM2ZQ-N2pBszw75ZABmaxmV1nsqx_86nH2uAFsjxLQ2J4Uvudvg5lcmBwp7ofXi3FcYUa7nYz3zUZllXpHF_Tsef7A3V6Rla1LjxCSrabxyU7VwmoRkkfq9oAn_pGQRMraVmRMN8C9emNf6h6akRlVsx41tXq3-5J2R0qmg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-007",
+          "prompt": "Why is `className` used instead of `class` in JSX?",
+          "options": [
+            "className is shorter to type",
+            "It's just a Facebook preference",
+            "React doesn't support class attribute",
+            "`class` is a reserved word in JavaScript, so JSX uses `className` to avoid conflict"
+          ],
+          "answer_commit": "hmac-sha256:805d1c34e35ec95e5e6459e49786f17d",
+          "explanation_enc": "aes-256-gcm.v1:PjxQp53v9npYkxY4:H4ZZKfPk7YmVyArMyRSWeg7ERrEdmP3Fbr4NdYe0iJCO-LrmqQaAW8BJpe8Edw2KEea-TLCqH0GsUbHMKSFgkd3bTGCnB21tW4BYjBhow7Ykk9JTMcG4CWEqjRxYFXpPqUi_FjhUK3r4zPBkc4oLG72ohq5PJZid9_rV3imh0NNzCG5FhEMtTwY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.243,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-008",
+          "prompt": "How do you embed a JavaScript expression in JSX?",
+          "options": [
+            "Use the @ symbol: <p>@user.name</p>",
+            "Wrap it in {{ double braces }}",
+            "Use string concatenation only",
+            "Wrap it in curly braces: <p>{user.name}</p>"
+          ],
+          "answer_commit": "hmac-sha256:91e09524e95b7388480f892b84d14285",
+          "explanation_enc": "aes-256-gcm.v1:vcAEkDTwfjswLvu5:qE0Q2RCrVuUzRYNDSe0xqSsvJvVa-HN4lfXtM3_M8Vlj22enQqmHxKI4-f7dHwcmbcWQZm4yJa4PJK-7SwfS0WyImuo_QO8gLiaKUMYgcLtR3xuJSkZRZOyC-7yxnxqLu3Z4JY_RiNvh0BcmhmPTq0PirbbT4eNw1hdLvxzUa3Eu3S5LwGuSef0bxsBhwcWUGFD5DSo",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.229,
+          "findings": []
+        },
+        {
+          "id": "rc-009",
+          "prompt": "What does this JSX render? `<div>{2 + 3}</div>`",
+          "options": [
+            "<div>5</div>",
+            "<div>2 + 3</div>",
+            "<div>{5}</div>",
+            "An error"
+          ],
+          "answer_commit": "hmac-sha256:80621ad4a33bdcd7d1e49d341ab6e0d3",
+          "explanation_enc": "aes-256-gcm.v1:N9cLNfacq56ba867:aCy3FAwPeHIVC1wCk918vwbn8xKqhV4VOQOD4lNpyP7xUMXA2eMqd3RRg_78wKiXrTMhTj6JqhFzW48mKpbGAvyR2muDbt410G1WOtVarD_6sSqfSsQnSZsSnGR-96DGLGrDuodn-jjgDGCjzcxL8Vhi0PLEeGL-deWU5Y88yxTPfb13ztbrxaX8BJZba6TX",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.75,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "rc-010",
+          "prompt": "Why must a JSX component return ONE root element (or a Fragment)?",
+          "options": [
+            "A function can only return one value — multiple sibling elements need a wrapper or <> </> Fragment",
+            "Multiple elements use more memory",
+            "It's a CSS limitation",
+            "Multiple roots crash React"
+          ],
+          "answer_commit": "hmac-sha256:8b833f88b52f98a04e0bc9b4a081a4a3",
+          "explanation_enc": "aes-256-gcm.v1:JMCvFeXmjtc7EH4U:gP2T4djbXQImQW4Xl5-9NJpuzNHQP_Cj-UJTGTLSxvGr0HpYXayHJyhL1O1eqtg6-8IhrvWDyQjuuXPs6LtZCWfXNagMa5wU6PRbRpeqzSNxYFiZtfR9r_cVP0_Z_keGR3lMPXxV-EDZF8Od1Y3TeeDWQFeex1g",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.97,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Components",
+      "skill_id": "rfv.skill.react-basics.03-components",
+      "items": [
+        {
+          "id": "rc-011",
+          "prompt": "What is a React component?",
+          "options": [
+            "A database table",
+            "A CSS class",
+            "A reusable function that returns JSX describing a piece of UI",
+            "A backend route"
+          ],
+          "answer_commit": "hmac-sha256:35bd9d5fbbb0ef5e0d3a0949c0963e50",
+          "explanation_enc": "aes-256-gcm.v1:L66myAtVg7EKRr1N:eps6nlFfCwVpeWC7Gke6Uqjj8UEb_R5E48y8JQH8QdhUyZMbLGzI1h3zB-N1WpMG4QkcZ8mURCr0daaGipmRcN_NboQHXaou2i1pw2ITZziQLst2ZybDmjuotONNiSzVuH7XwcpaH7CZV84_OU5wXyUY2LWZ8eVTsw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.813,
+          "findings": []
+        },
+        {
+          "id": "rc-012",
+          "prompt": "Which is a VALID React functional component?",
+          "options": [
+            "Welcome = h1('Hi')",
+            "component Welcome() { <h1>Hi</h1> }",
+            "<Welcome>Hi</Welcome>",
+            "function Welcome() { return <h1>Hi</h1>; }"
+          ],
+          "answer_commit": "hmac-sha256:9d63323c6e287a7733763e0b12409129",
+          "explanation_enc": "aes-256-gcm.v1:dbWP_hfixmnKpopO:8zEyNYlHgwbmWxYnBIWLIi9ucUV7C3bqF-gH_RjOz5GNLh0VLNsPNeszeTgomwiQqhEueKeB_jpSMwscwwsxNndO9rrE9Tm3p9SnRfe1180BsoCaBAMd9VjPk_9z6ieYnmkqh6IK95l7aoMOCKtEPMiRNm0nfIzd6Hashh_wvbSB",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.2,
+          "findings": []
+        },
+        {
+          "id": "rc-013",
+          "prompt": "Why must React component names start with a CAPITAL letter?",
+          "options": [
+            "It's a CSS convention",
+            "Lowercase names cause runtime errors",
+            "JSX uses capitalization to distinguish custom components from native HTML tags",
+            "It's a style preference only"
+          ],
+          "answer_commit": "hmac-sha256:764395786f38b1242797e4faba84b65e",
+          "explanation_enc": "aes-256-gcm.v1:lSGJ1350sCNb4aUl:doWmk5XYC_wtDNG_z0B_tCCenj22LiKo9LfHFuUrnA05OLx7FE7m1s2WK8zqLbna_kWpuYP1-rujX-znJn8kAzhy4ZoILvvRZz43cf6zhPBgk8wEbO855uIeMNnbVyyD67EsoUuIHKf6QHzU505qMJ_pIDkHcWQMUTyZNjOl1DhU8rIaMJ5XcVJTRvNJLg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-014",
+          "prompt": "Which is the DIFFERENCE between class and functional components today?",
+          "options": [
+            "Functional components with Hooks are the modern standard; class components are legacy",
+            "Class components are required for state",
+            "They are identical",
+            "Class components only work in mobile"
+          ],
+          "answer_commit": "hmac-sha256:921a663dee17e829df3006cb09f4f7bb",
+          "explanation_enc": "aes-256-gcm.v1:h4wTanHLVBZf-tGV:IRueTMu5MGZXVBjURG-Y1-522v0ccgd0hAW3Rk2kZrtTDGmSi3leAIl0hzVcrvrN_H9uf6FuHaxDK0f-11p4CQXPJC4BQHtt1lhhQdR7dAmGHHoEEVZgc2X8cvXCe29KhiVZRuYQlE2-Cfi0BauDWYe0tcfWwiYlqTUexO_DvTtoPC-ciNROkUYS7GThEsvWitu8lfzSdj-N760VFQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.179,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-015",
+          "prompt": "What is component COMPOSITION?",
+          "options": [
+            "Building complex UIs by combining smaller components — the React way to reuse code",
+            "Compressing component files",
+            "A database technique",
+            "Writing music for components"
+          ],
+          "answer_commit": "hmac-sha256:6bda6e4cc4f2cf3f9c08c59042029a7c",
+          "explanation_enc": "aes-256-gcm.v1:EjRFIEWSB2bccOVf:6prIW_wAIxxcD5t4EyAHA-yHXXFdY1pIFlCErRkfl4q8nExdyUwZ6a8MCuQubw-R4bOAuP-4dFX6ioQNENdJskFbea4zI3A7gRSqgfGSz_0Wbl_V7oNhSGQJ6cWJ6-qp0Lad9KguKl0NsWrTxF7gHtv1M2Dg8RTeXK05hp0hZheDDff0fwwzqJRXpbo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.929,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Props",
+      "skill_id": "rfv.skill.react-basics.04-props",
+      "items": [
+        {
+          "id": "rc-016",
+          "prompt": "What are 'props' in React?",
+          "options": [
+            "Read-only inputs passed from a parent component to a child component",
+            "Properties of the user",
+            "Database properties",
+            "A type of CSS rule"
+          ],
+          "answer_commit": "hmac-sha256:c88176475cda54ab02514b65b2c7704e",
+          "explanation_enc": "aes-256-gcm.v1:c8jV0kcBcEYTzvgs:d8XlVjWQf32c0Kh_xmywfub8wrSNIPBHqQ_JZms1awlJ7JBZInfHEKzIiHWb1h37AUkHf8vc1r6HHNNdkStzUVBw_coo6yO3cBEcPgcjBbk8mhZwrj9hUary2rNec_9bTj47lhhdaE3T3f3McXzdHUxO4At7dGOGfRYBaXUGFAgl4sW0wiKMUAc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.091,
+          "findings": []
+        },
+        {
+          "id": "rc-017",
+          "prompt": "How do you pass a prop to a component?",
+          "options": [
+            "<Greeting name='Ahmad' />",
+            "Greeting.props.name = 'Ahmad'",
+            "<Greeting set='name=Ahmad'>",
+            "<Greeting>name = 'Ahmad'</Greeting>"
+          ],
+          "answer_commit": "hmac-sha256:7065f2c22a1a17c5e1603c04718e5f1e",
+          "explanation_enc": "aes-256-gcm.v1:gGVxoPT9Q-GVPAC4:DwDSr9cKPoRxATdmzBgBaNJUb0rX9cTMw0rh0tPoMXBp5jcn-gY0I6b6yDaAB8bmdZjAgf5cTnQwZtaU0TIIe3w72wwqgZheukFSaSPNzIiY4s11fbjYXYg53sJvRgYrTD9nU41mKtaO3WdW8vdlw_Oh6SnQJzygIyq3YOD_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.714,
+          "findings": []
+        },
+        {
+          "id": "rc-018",
+          "prompt": "How does the receiving component access its props?",
+          "options": [
+            "Props are inaccessible",
+            "As a parameter: function Greeting({ name }) { return <p>Hi {name}</p>; }",
+            "Through a global props variable",
+            "Via window.props"
+          ],
+          "answer_commit": "hmac-sha256:9fad037681d3dd63adb8139e4bcb67a7",
+          "explanation_enc": "aes-256-gcm.v1:mrxX_CW7ui_-tO9Z:uHcU0K0aE0fcVdoPx8Mzb5RT2Jmx7PfOwze7TL9lYS3kEw6HxkGW0xCmlX_mVZFokZpriGJtHsL1r1Pmg_rQBB8Fm3CnWnvaVcVPtiWsXqiA7Ki7rBLN2-QLvjs6ipksiX8M11xlKh3vECeBgyJpY2hVy8zu4Ls6w0db5FTtf97pv3IJ3IlorJuzx_w",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.323,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-019",
+          "prompt": "Why are props READ-ONLY?",
+          "options": [
+            "JavaScript doesn't allow it",
+            "Props are stored in a database",
+            "Modifying props would break React's data flow assumptions and cause unpredictable bugs",
+            "It's a performance optimization"
+          ],
+          "answer_commit": "hmac-sha256:fd1e0c2357f54381ef144a3acaeb1399",
+          "explanation_enc": "aes-256-gcm.v1:gsE6WnPB57vi8uTR:Qj7jHsx4gfoUl_XR2DNgK3pTj6DxQl8zBcjIB43LAKvKkjO0G4Ee1Y0MMDMvZD0Lgdlxy4EXYA5BNe3iiAHcpyUbLuFRaAp4uQ_CBLmVYRBTrnLyKNIXsNXesKKm3r6YDC1eRiv22Ipbnl0zBlMNzYG3rQHJxGbOSoSsS8VAh42buP1nFA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.774,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-020",
+          "prompt": "What does this prop spread do? `<Button {...props} />`",
+          "options": [
+            "Passes all properties of the props object as individual props to Button",
+            "Concatenates props as a string",
+            "Deletes the props",
+            "Spreads props across multiple components"
+          ],
+          "answer_commit": "hmac-sha256:0a14fee08efdc2920b4197f97ead9db8",
+          "explanation_enc": "aes-256-gcm.v1:Cya7ezzccipcscQR:f8NXuR7-IVd7hrVtJtfM5M6iZ3nzfapYAFOztDsZcaO-HbNTdfL0EFztOXBwSfVWQG4gowphAI_Ll9EHrn50m82jkkWenWZFNgefT3j5-byE_22gPWNctuEsgeMo4YUhJhpqfaoqbsWzxLnAsSs0cxPkxB0sKsmFGqxbvPq7Vqxo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.775,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "State and useState",
+      "skill_id": "rfv.skill.react-basics.05-state-and-usestate",
+      "items": [
+        {
+          "id": "rc-021",
+          "prompt": "What is 'state' in React?",
+          "options": [
+            "Data that can change over time within a component and triggers a re-render when updated",
+            "The state of the server",
+            "A type of prop",
+            "An immutable constant"
+          ],
+          "answer_commit": "hmac-sha256:e27ca8f785c1b9a506a07b62b7a71bf1",
+          "explanation_enc": "aes-256-gcm.v1:zdys7odlHdjxQGRp:iQxtMpV6fHg2iCzWLexRsesjjuwaeWeWGmqtLJ24zTT29AjfTL3zNGRZWacpkRs-AG77Umk9w70qBX-5b-N-OicFme07n0qlgUVeyyt5Qowo20j0GbhtYGk3FumXTjb4jF0oonyF_jBFH6j3XdodGLRzhhFTxbJ6XVSNeesQDLFEDQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.783,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-022",
+          "prompt": "How do you declare state in a functional component?",
+          "options": [
+            "let state = { count: 0 };",
+            "const [count, setCount] = useState(0);",
+            "this.state = { count: 0 };",
+            "var count = state(0);"
+          ],
+          "answer_commit": "hmac-sha256:7f8f1178859336a301250d1081b9678d",
+          "explanation_enc": "aes-256-gcm.v1:rMlK9aCNnreu2id1:HvSyaPeyqy2bGe0qvjbKvLFkqkh-YDsigfT10A-2GyMzOIHCBA-gPpBFKZ-O7k4JAfz_KWn7iyPppefcaA3RawXPyNfTznIpY84iHjnZmQFPKMzxdtZCuPtRmLVj4_K41re3KNilxcNgsN7_RjSWvw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.462,
+          "findings": []
+        },
+        {
+          "id": "rc-023",
+          "prompt": "Why must you use the setter function (setCount) instead of `count = 5` to update state?",
+          "options": [
+            "Direct mutation is faster",
+            "It's a syntax preference",
+            "JavaScript doesn't allow it",
+            "Direct mutation doesn't trigger a re-render — React needs the setter to know state changed"
+          ],
+          "answer_commit": "hmac-sha256:9c0cd77018dbc692c91fc30f76ff1461",
+          "explanation_enc": "aes-256-gcm.v1:jmRdnsEVsrmSAwS3:wYjkYsNsayUFyW-VyJxdttWdobcHp5Qtg1SvQ02lc2j7dp-hLl0IeotvlLPVweJA_biE_kLfoF8cgdByYqbtRfNqwxr3v01bdRzoLal2ezRQJN08_WVD1L1d8ZENPSBhmux9ci2hUg6hkBT4BuUaU5uULGoCtQboFSYTQmhPntpqCg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-024",
+          "prompt": "What's the SAFE way to update state based on the previous value?",
+          "options": [
+            "setCount(++count)",
+            "count = count + 1",
+            "setCount(prev => prev + 1) — use the function form",
+            "setCount(count + 1)"
+          ],
+          "answer_commit": "hmac-sha256:3b5e7956e5af98e32021ed5ca9b7b008",
+          "explanation_enc": "aes-256-gcm.v1:fN2NfAuLXP7MVRRP:0j2kO3gWQBeht5qRhrLI_B6nkQsLUuTaRXD0xeYCaLMJm_crW7pkpMeGeMuWI_GM4-ZeTozyAp9BrxdsBtcqHYIhj1o1wKui0xSiXs5-z6qsOWbPffMc1RqEjmsxBg6e778BJWJ_bRRJzKy2CiHCCh4KWq-eRPfGTJdb-OU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.632,
+          "findings": []
+        },
+        {
+          "id": "rc-025",
+          "prompt": "What happens when state changes in a React component?",
+          "options": [
+            "Nothing visible changes",
+            "React schedules a re-render of that component (and its children)",
+            "The browser refreshes",
+            "The page reloads"
+          ],
+          "answer_commit": "hmac-sha256:150d177dd7253e6dccce554a98f523f8",
+          "explanation_enc": "aes-256-gcm.v1:d6YYDTt37ZRuOZsk:jGy-IeciIgQaaFcDWG9OXeZGPCifQLS-AwWAl8pMIOfgBhINkfCtQV_xO2Imtqjr5aHaCUNzTMCiA7zq2sV6-Q0xAm7amRUIva4m3IPwxckM8wKsJSHxGVh5HtF8Y0kRiE_fXPXeTYfepibgc36YZ8UEA8DK7nUQjIqJUn-2jCr1AH7C1GQTKb5GQ5gJkQU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.783,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Conditional rendering",
+      "skill_id": "rfv.skill.react-basics.06-conditional-rendering",
+      "items": [
+        {
+          "id": "rc-026",
+          "prompt": "How do you conditionally render content in JSX?",
+          "options": [
+            "render(isLoggedIn, <Dashboard />)",
+            "switch (state) { case true: <Dashboard /> }",
+            "{isLoggedIn && <Dashboard />}  OR  {isLoggedIn ? <Dashboard /> : <Login />}",
+            "if (isLoggedIn) { <Dashboard /> }"
+          ],
+          "answer_commit": "hmac-sha256:3bf6f1d502f9a1912ee38b1aa64c2cb2",
+          "explanation_enc": "aes-256-gcm.v1:RrgrmPhzOq_p7LYn:aQtl9PTCwJj1rmZb28hubtqhqJEkRbc4eO7xlylLpmSJD8OVe2d8iH1ry4v0xYaOpDDWkCm6iL7_G4SN-DefMU3WMmMIPjhHhXvLsQ23P81LGtkSBaVD_HZIY1rF0EPafQdKKdcFV_BmoBSdcCyywsja0-c07PwKLZ_k_SQ0DXSSath9PcPGitVRDO6jqQU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.744,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-027",
+          "prompt": "What's the BUG in this code? `{count && <p>Count: {count}</p>}`",
+          "options": [
+            "It causes infinite re-renders",
+            "It crashes the browser",
+            "When count is 0, React renders '0' instead of nothing (0 is falsy but renderable)",
+            "It is perfectly safe"
+          ],
+          "answer_commit": "hmac-sha256:42bdbca88974f985e8336f73fbbbea02",
+          "explanation_enc": "aes-256-gcm.v1:Ud0rlSp4-7k2Wgtg:-OGrZXStoTXBPfGmpPVRb_pIRHkT1waDOMr_iwJnUF7IRUVwXyQEp7Cg9Mbii5pbKh9Nt0IrU1ajyrVDueWPnrhGTxuKVPmN8qeSD6aip2bN9wiGNvF-W-TYhGFfxXvpYkqro1L6SUBTZOyeL1loiD0_gfFn1L_7AQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.793,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-028",
+          "prompt": "Which is a CLEAN way to render different UIs based on a status?",
+          "options": [
+            "if statements outside JSX with no return",
+            "A switch statement OR an object map: const views = { loading: <Spin/>, error: <Err/> }; return views[status];",
+            "Nested ternaries 5 levels deep",
+            "Multiple useState calls"
+          ],
+          "answer_commit": "hmac-sha256:887b057bc5490547f43c4e0b70fcd5b1",
+          "explanation_enc": "aes-256-gcm.v1:KiBdAqi2wwngCDKW:JmOzfe7e2dWBOKwoD5w25H5qfXZGOimR3iMgIMuRwYkvS8z3cI2nWHjDIveoUmBKxAHtnL1z3Y5wHP-ZlPVUhZ-eRk0Y5nvzjHSVUxEHkrc-6sMQ4w12O_atvItNbpojIB9Y41lx1K4",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.725,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-029",
+          "prompt": "How do you EARLY RETURN to skip rendering?",
+          "options": [
+            "Return undefined inside JSX",
+            "Throw an error",
+            "if (!user) return null;  before the main return statement",
+            "Use a break statement"
+          ],
+          "answer_commit": "hmac-sha256:8f3665e0fb22414cf35cc106ef899bde",
+          "explanation_enc": "aes-256-gcm.v1:ZBTD46gTT3MirT0I:g3BS77rT4XqJmBfvoUpeHZyOHnqn808RZi06H1wqlHqh0VRocKQ3R7Wy3tBgH1C-KacVL_k-_O2OSYzebfhgI1_dxXw7t_GhyN8M8tK8xFRIsnORoaaFrOkCiStDUu3yP5WiXe2QNOZX7tkYpW3Gt6y10TCZHT6ygy90hppozGsYpy3N",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.111,
+          "findings": []
+        },
+        {
+          "id": "rc-030",
+          "prompt": "Which approach AVOIDS deeply nested conditional JSX?",
+          "options": [
+            "Use class components",
+            "Use multiple useState",
+            "Add more nesting",
+            "Extract conditional logic into separate components or helper functions"
+          ],
+          "answer_commit": "hmac-sha256:5a926032b50ebfb5f376ede883200d27",
+          "explanation_enc": "aes-256-gcm.v1:8_Hpj5lUNNz1tpPb:_XYphRYmh9f6mLd1JcZKKlEJXuB8TmI4CkmdiNbyI3m4aafJwjNgYXP2j7u7eZiWYiC4fxuoSeOqX40vkv04gAGvLjtEA7W4hCIiS9o4BnltWjhKIuour8IPoDcNGSlsAH-oXBj7CpP_GhfhK8kciQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Lists and keys",
+      "skill_id": "rfv.skill.react-basics.07-lists-and-keys",
+      "items": [
+        {
+          "id": "rc-031",
+          "prompt": "How do you render a list of items in JSX?",
+          "options": [
+            "<for each={items}>...</for>",
+            "Use a for loop inside JSX",
+            "{items.map(item => <li key={item.id}>{item.name}</li>)}",
+            "<list>{items}</list>"
+          ],
+          "answer_commit": "hmac-sha256:d9b1924f91f7af57773c15c5f03b25f9",
+          "explanation_enc": "aes-256-gcm.v1:zetN_CEl6BfdIoFu:Q3oE2VqvNq5jO_Un5bPbbtSv7h8HQAo7rj7e_cIDmUxGS-knF4d4SsQLYImGHcztfJRoR2tFIAWPnCjw6yUewCae7ddJniDEAKlHfQUMc2mvCxeQpfdAYEiurlLB4cPqTMCO5w77alc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.037,
+          "findings": []
+        },
+        {
+          "id": "rc-032",
+          "prompt": "Why does React require a `key` prop on list items?",
+          "options": [
+            "Keys are required by HTML",
+            "Keys make the list look nicer",
+            "Keys add encryption",
+            "Keys help React efficiently identify which items changed, were added, or removed between renders"
+          ],
+          "answer_commit": "hmac-sha256:cfad3414915e6e7f666db1d9e2b0c0fb",
+          "explanation_enc": "aes-256-gcm.v1:ZDrzOC-qtHK63YXT:XO97JJp-qnDhXaYMTl-mx0QuS9p7K0XkUm1j9h76WqXXdOGKKtjNV5dLtUCYqMyvGdM6xHWYG37csk8LWpALRSq5hWpHFknsgd1T13Hadzmm1XMQkIgUtTFFhQRHnBWaBcjXrV0G1S2pwjlvfOA4VMcc_nOjVCVgJ5l1Ng",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.31,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-033",
+          "prompt": "What's a BAD key for list items?",
+          "options": [
+            "A unique server-generated key",
+            "A unique database ID",
+            "A unique slug or UUID",
+            "The array index — when items can be reordered, added, or removed"
+          ],
+          "answer_commit": "hmac-sha256:3b6073a13cd48994281f4416258198d4",
+          "explanation_enc": "aes-256-gcm.v1:4lshZKg5Ek3zxbFF:02TcT1hyBPo_MJfnCYuqLM9Ljd9uMtYc7M5N5ZuCdNCps6vdb4edqk5jlgV9GlNBP-Rm1njOwIjp0dTIUa2Cvuc7EXnqP6I7WFzv9EP-wFoKuguwN2RHXvEiHns7rowhdwj9YaaReo2ITuAkhwaj0c43Ln0CqVs2zaxt4aavXwqMtVLyap9VozE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.207,
+          "findings": []
+        },
+        {
+          "id": "rc-034",
+          "prompt": "Where does the `key` prop go on a list item?",
+          "options": [
+            "Nowhere — keys aren't needed",
+            "On the outermost element returned in each iteration",
+            "Inside the children",
+            "On the <ul> wrapping the items"
+          ],
+          "answer_commit": "hmac-sha256:baf021a3ed96db431154ba5b353c77f5",
+          "explanation_enc": "aes-256-gcm.v1:4HiZ9HAMwPSHXSUv:8NzEejRDZMgAzR0NTJV6RyiBsuWjDuYtSA-koPsZjZ7fhBMhOamkMmgMkgZuIhYaQTAM-whsbXljdzFHz6uV-sFAy5JCHMfwiM0EqT7K0-h7uATv-rhkPaeyjk2s-jY0Xtp_CqLD-2PLak3GWmuRnnh8KpF0Mmlh3z5Q9N1Sd8xkawlSQMONFA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.7,
+          "findings": []
+        },
+        {
+          "id": "rc-035",
+          "prompt": "What happens if you forget to add keys to a list?",
+          "options": [
+            "React adds random keys automatically",
+            "The browser crashes",
+            "React warns in the console; bugs may appear when items are reordered or removed",
+            "The list won't render at all"
+          ],
+          "answer_commit": "hmac-sha256:dcc9b9fd0e970f6fe2c9fdd69aa1a7f3",
+          "explanation_enc": "aes-256-gcm.v1:eIocQlvIYKH_WZow:BpTyJynQ9sggsOVrG_KNLXC7kP0rXoixhDfJw5hLcH0oe4ASyBWNVFm8DZn7WbvYJloR5CLJIOZ358dJqAC2s0zVlajAD4LvlnfN2mXFf4Vz9xDhYJlsfWi-VUgWvGJNNnejcGvBsYjH41BVVA-dy3vN9A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.194,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Event handling",
+      "skill_id": "rfv.skill.react-basics.08-event-handling",
+      "items": [
+        {
+          "id": "rc-036",
+          "prompt": "How do you attach a click handler in JSX?",
+          "options": [
+            "<button onclick='handleClick()'>Click</button>",
+            "<button onClick={handleClick}>Click</button>",
+            "<button on:click={handleClick}>Click</button>",
+            "<button click={handleClick}>Click</button>"
+          ],
+          "answer_commit": "hmac-sha256:97b8ef66c3017750863d5e3b59fcfda3",
+          "explanation_enc": "aes-256-gcm.v1:HDMBnSwzKuqzMjfb:dDt4UtxOYgK-OFJ2XQdL5bgIsB2Q7NutD8yPoU4rWxYiFL8OzTibVMFKAmxzt9OS1s4NnFwETDJn66BQf3BOQZbt74VsKVckYYv_P38EhOoLDR7079b6nHWz-K89zzGOzY6p7QIIPPp9m5C5UDkLgJWVMh25ZuWhTdS-NMwe4FkmhA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.957,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "rc-037",
+          "prompt": "What's the BUG in `<button onClick={handleClick()}>Click</button>`?",
+          "options": [
+            "The function is CALLED immediately on render instead of on click — should be onClick={handleClick}",
+            "The button needs an id",
+            "onClick is misspelled",
+            "It's fine"
+          ],
+          "answer_commit": "hmac-sha256:2b5b5dba2d616cf876102ffcbf60ac9e",
+          "explanation_enc": "aes-256-gcm.v1:rqyuoyku7roUFavX:uRWJ6nJl2I4GHv7kw8UMPTrGZIeAOEnMzaUxITebpKjLEmXKIe8KQy01x-8mgtOMnQYfKCjZBykUdITe2cBS2bw_w_Rl8PWl0QMWotd_fR9WGODsdYRI_czeNN6Qi-oNRB4Fk8CdIkkiBJyX_4htkRzTOu_QfW78woCwjOR2zY344rCIFrypK1THWOEx1hjWeiCdQ9sB7G8dT5AJ2jNrY5bwO0qrgGEi",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.455,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-038",
+          "prompt": "How do you pass an ARGUMENT to an event handler?",
+          "options": [
+            "Arguments aren't supported",
+            "Wrap it in an arrow: onClick={() => handleClick(id)}",
+            "onClick={handleClick(id)}",
+            "onClick='handleClick(id)'"
+          ],
+          "answer_commit": "hmac-sha256:3a8fbdf7f3895e3d46211610103e5096",
+          "explanation_enc": "aes-256-gcm.v1:StzUTVw4hWeTzkU1:rrqtcyMoX3ptkOV1uD02doAUzDJp3A-mZVqJpzn0MGkhwnbGAcEA5HdihFxxv2z8ubu4A7x-CFSq3zfdNGP-P5IU6a0SY9DuZmZ_2Kciuy-vbMUoVVhbWg31StivQI93X7nJ4eJGB_fwBGH4KC6imPEOsc3ZKK_yrZ--je3TCrwSLBbZaAF7",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "rc-039",
+          "prompt": "What is the React 'synthetic event'?",
+          "options": [
+            "An event that didn't really happen",
+            "A wrapper around the browser's native event that normalizes behavior across browsers",
+            "A backup event",
+            "A custom event you create"
+          ],
+          "answer_commit": "hmac-sha256:56f94c5fde99b2514450047e2d61a645",
+          "explanation_enc": "aes-256-gcm.v1:HYURVQLug3YONbIs:u3MbCmQKa-tcifWdSkZFJxpjG5VKGpYXNdHaOfYus_lwnmO4hZUVckmTrdBi7uzDWmpN8WcSLQnyjEW7zhr5hKrBq8-OuuPFV-njEkFGZp2PAmFYCOGehwjpUdQ3ABexjAIIDdYKBExANFC-1-oTSqiwKGfLHoNQWCxrKnMpLAaDp53-KCdm2cY7fTwK2npCxA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-040",
+          "prompt": "How do you handle FORM input changes?",
+          "options": [
+            "onChange={(e) => setName(e.target.value)} on the <input>",
+            "Listen for the change globally",
+            "Read the input value after submit",
+            "React doesn't handle inputs"
+          ],
+          "answer_commit": "hmac-sha256:8fabf6149bfb910ea5776682713d09b5",
+          "explanation_enc": "aes-256-gcm.v1:cePr0eXIvgUZeCMH:_qksJVNdXHQCiaqdX05UhRqTSafBFq7DU6Jel_bCAkhD7I_N9ZtGl9oZuy8T2GKIYmnuHRTUP-OHPBE5HH1KvoD43pV2ZLthLV0oocIqV-RCgfb0of7iqKTpFDoEmIaS4BWBUMT54-oDAKDWF-aYHIm6pgQYZtPnpDk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.697,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "useEffect",
+      "skill_id": "rfv.skill.react-basics.09-useeffect",
+      "items": [
+        {
+          "id": "rc-041",
+          "prompt": "What is useEffect for?",
+          "options": [
+            "Running side effects (data fetching, subscriptions, manual DOM ops) after the component renders",
+            "Routing between pages",
+            "Replacing useState",
+            "Validating forms"
+          ],
+          "answer_commit": "hmac-sha256:1bb809b58f5d354b7b8cc0a24b0ffe3e",
+          "explanation_enc": "aes-256-gcm.v1:UWnZLJtLAfKAXkl7:dMfaubytPJbDAAJDcrYumuyhnOuiUWnoTKMDeLbAHS8_NzRGbjuCFokQ9MLBK6RB7pV34DM1_9fbzqwf2bXkBJTdPdIK1Fwp3fNTHVdJI54rh931kl1VQv8Y9jbPYbsx2L-Hpv0xe6DX4XD5GbSyUKQzB4IBGUXRLEm5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.524,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-042",
+          "prompt": "What does the dependency array do? `useEffect(fn, [count])`",
+          "options": [
+            "Passes count as an argument to fn",
+            "Disables the effect",
+            "Re-runs the effect only when items in the array change between renders",
+            "Forces the effect to run forever"
+          ],
+          "answer_commit": "hmac-sha256:0a5c1ad18fe21d1069e885fd9f2ec2ea",
+          "explanation_enc": "aes-256-gcm.v1:Rkop9qrlP0XHHUOT:125qCZzV3Y02rvnvVbZcrP10AyomQkjzFfY4AYAmh8xGdKqXPZjX0r2eZNNNKHUsTOSYDEPBm7upjerzRX3Lie7mY8_2rE16kf78-UCiJzCglaV2V3-r-7kVDGE6EuoIt94bDN3_YnXldWzXYgWHJ6dD0I6n8I_2tkFCIAWi9xGG2A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.121,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-043",
+          "prompt": "What does an EMPTY dependency array `[]` mean?",
+          "options": [
+            "The effect runs once after the initial mount (like componentDidMount)",
+            "The effect never runs",
+            "The effect runs on every render",
+            "The effect is disabled"
+          ],
+          "answer_commit": "hmac-sha256:80ba3deb1fb3fc93d59a77902a00ab21",
+          "explanation_enc": "aes-256-gcm.v1:FeuXAmzd2-Y92bzH:pnfqF8ea8zoCNx-Q5rvfcvdyIBI7lHP9lLssGPBilY9_NBVa5xtAkGkKMIvIRCisgiG16epMlI6P3oXky0KVpeQNjnz5u_bAATu2pzUvDgbzB41CUs4RAdvPg7nUeirD1UGLkSK4OFKSABO8sDcuNsKB3Vjy10bE407JB2xRENIdV8_ZIa2z3qs6lOLDnvY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.226,
+          "findings": []
+        },
+        {
+          "id": "rc-044",
+          "prompt": "How do you CLEAN UP inside useEffect (e.g., remove an event listener)?",
+          "options": [
+            "Cleanup is automatic",
+            "Throw a cleanup error",
+            "Use a separate useCleanup hook",
+            "Return a cleanup function from the effect: useEffect(() => { ...; return () => cleanup(); })"
+          ],
+          "answer_commit": "hmac-sha256:9eefae7870912991501806f9771300fe",
+          "explanation_enc": "aes-256-gcm.v1:qmugs3ov7eqmFBef:12WKrZavEZHgK51AsRL3qRNem-l1GLsEHJgveHCJCad8RTfI5McPW08jyTL1VC8Enyz1dkjpJ7wUNA2W5tj0kUBCJ0a4lUuS4WQ3ttSnPkADMadLbYBNNQzDLkwHC0tM3otjy6I-9y6qFBk7U4N5VOOu9-Yg9Yq2ZHMv_QAUuLk6S07zgjqHHutD52Ya",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.067,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-045",
+          "prompt": "What's a COMMON useEffect mistake?",
+          "options": [
+            "Returning JSX from useEffect",
+            "Calling useEffect once",
+            "Using too many hooks",
+            "Forgetting a dependency, causing stale state/props inside the effect"
+          ],
+          "answer_commit": "hmac-sha256:72251d96477a3ac65f779fba3349d601",
+          "explanation_enc": "aes-256-gcm.v1:2rT5Zz9RmMqUJbIg:SZg2XPCCjRdHcoiW3MurSxcPKHL8o95P3b8gbVmubQN7RYv3qbpJZAXF8OQxN_OieNy5Se9Hv8TirlVTK9u8ivAjvVWyk-WktMVgTujwa3KDP5aE9k6p7nnsv8AF3lJ1p6R4U5kY67Khw-IDNuIpZc4zxLUaWC0pnEdSI6Qjbsk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.429,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Hooks overview",
+      "skill_id": "rfv.skill.react-basics.10-hooks-overview",
+      "items": [
+        {
+          "id": "rc-046",
+          "prompt": "What are React Hooks?",
+          "options": [
+            "Functions starting with 'use' that let you tap into React features (state, effects, context) from functional components",
+            "A type of prop",
+            "Class methods",
+            "Special HTML elements"
+          ],
+          "answer_commit": "hmac-sha256:6e1d99d9d4d96b24216b49046c84d208",
+          "explanation_enc": "aes-256-gcm.v1:lr3wnd_Tr8k-dOvh:uLEc5tRqiBudWTgc1CCppxF7d1Dg_qBaF7iDiTrmO1fuzQCuVd1KZC1uSfspw90HsmY7bJLdMErc52aHj4q5YEm_de_LcrZRLThpBbi9s-YChbEOs-IPAkUK1ZCMhAHeN4Rv1JFV_ylKOeSgQvPE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-047",
+          "prompt": "What are the RULES of Hooks?",
+          "options": [
+            "Call them inside event handlers only",
+            "Call them anywhere",
+            "Only call them at the top level (no loops/conditions) and only from React functions",
+            "Hooks have no rules"
+          ],
+          "answer_commit": "hmac-sha256:d68733350efa0f03b936222a1c418fe1",
+          "explanation_enc": "aes-256-gcm.v1:gL3PXmolmtzo8eOX:8SJLa92d08HZ5x5DaETcL-f3fbrr-eEI65ncxLztimfU07cy_HaMMzRPy2TJhBbSHLDi6VwaNnhrJI7v5bBgfFgls9wqfpQUOgztCHaDdQs-fze7SeGbJ168-H7DYJ27X8obkkXxqZIkKuhoY2--pOJw7zrVeGUkPwsh_M1k-BXfbQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.306,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-048",
+          "prompt": "Which is NOT a built-in React hook?",
+          "options": [
+            "useContext",
+            "useDatabase",
+            "useState",
+            "useEffect"
+          ],
+          "answer_commit": "hmac-sha256:ba9f8f3fa44e4bd8fb7826e9bffd6c76",
+          "explanation_enc": "aes-256-gcm.v1:fJ0gUE7m2WuzsG8T:1yD40jiKVIrg8IEwVbJLsskzR1ecwC2JfolLtiEk7g3B5NpkC9YLI3uPWyGAhSXgc0EJ6b5I6YALdCxrfThUBIueAjYPuEWyQfpwCWwMGHwsIhG-_lhRFkmVB0fWE4KlmFaP8uEuRfpgFuv9yX3ulCowmbPJwJJeXb15ey6xQGrFnUzmKiUWYpZe0y4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.1,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-049",
+          "prompt": "What is a 'custom hook'?",
+          "options": [
+            "A CSS rule",
+            "A function starting with 'use' that combines built-in hooks to package reusable stateful logic",
+            "A class method",
+            "A JSX element"
+          ],
+          "answer_commit": "hmac-sha256:b3964a03bc1b67da81512114c67be3b1",
+          "explanation_enc": "aes-256-gcm.v1:GL7ctm-eqhpEQHRe:DJzeCmytk1Q3VRUnAIeX9Cmt4UuemcYUTzSmVekZ-cD6O7dfhyczdhyOxASKRY_B5RleVjG8DN1oTj7xPl0RI0_lFvMqAJ0DF0xemqt9Zii2GKAW1o2R5m4uk6H8vD1MIv6upE9ldwAegQLyEOETNaUDxz2kdnaAjSoIyrfTLwE-3NTjSFQ2b-by1SFbIAU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-050",
+          "prompt": "Why must custom hook names start with 'use'?",
+          "options": [
+            "Naming is purely cosmetic",
+            "It's a JavaScript requirement",
+            "React's linter relies on the prefix to enforce the Rules of Hooks",
+            "Compilation fails otherwise"
+          ],
+          "answer_commit": "hmac-sha256:c58f2c2346b910606f671600d8efe0d2",
+          "explanation_enc": "aes-256-gcm.v1:VlTP5jLWiYwRv1ry:brxfaIp55js7cSP0Rq74b41wfpdAp1EtqCE4_K4p7tmJqStIWe_RPHLczkGbgqT8rTZw8BXS7Llk7YK-v7GCHVw1URdEiJ_EPn_pauCTw7-G7BX-N1-izu1kuP2yJMed3SVb3aEh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.241,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "useRef",
+      "skill_id": "rfv.skill.react-basics.11-useref",
+      "items": [
+        {
+          "id": "rc-051",
+          "prompt": "What is useRef PRIMARILY for?",
+          "options": [
+            "Routing between pages",
+            "Holding a mutable value that doesn't trigger re-renders, or referencing a DOM element",
+            "Replacing useState",
+            "Form validation"
+          ],
+          "answer_commit": "hmac-sha256:31884954b8846c8803fb2ef598470295",
+          "explanation_enc": "aes-256-gcm.v1:fE71rDHaV_-fo8do:2S4gr9QcQU2f3fi7IPz979vBP9xbalBTrnNjES8I1fyFtzZH6AUVK6-NsCE6hZBfbY8mnTh3ysu_ue85qnuo7ukBcCsaPGPAXcdbDzx9zNaylSRKCE3HI-Yg1z5_HV4xXcOmv0Ub8RmU_PXC43yuChygN4MOduQ8Y0HRHm2GPB7Tc38wJ4UAh7Eccjs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.048,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-052",
+          "prompt": "How do you reference a DOM element with useRef?",
+          "options": [
+            "const inputRef = useRef(null); <input ref={inputRef} />; then inputRef.current.focus()",
+            "useRef passes DOM directly",
+            "Use document.querySelector inside JSX",
+            "Refs aren't allowed on DOM"
+          ],
+          "answer_commit": "hmac-sha256:5d80e186e329235d42bd5371b043be78",
+          "explanation_enc": "aes-256-gcm.v1:tesjPWaWdSB38Bj2:b5T1L0F58n-R41D_iKTCnlNs5H1jEPvftWVddAn-oHDT8cWBq1HD0vKDv7GSLJNVv--2jeSJdPmOVAkCmWFzoH3OFSm6qbuyfXadwWo-eE3yD8Ichs6B_DuvvL13BG1GSvJovgdb-SaZvXR7-BcMKk5xU3izd903",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.324,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-053",
+          "prompt": "Does changing `ref.current` trigger a re-render?",
+          "options": [
+            "Only in development mode",
+            "Yes, always",
+            "Only on first change",
+            "No — that's a key difference from useState"
+          ],
+          "answer_commit": "hmac-sha256:ab67c881bb208ab4e5cb98963b9b218f",
+          "explanation_enc": "aes-256-gcm.v1:ifjpiIG2Y8SKv00f:SIU7qL_ugn80f_aRav7CDdAa5jWMwr5bRFQJ_sNU8e3m8yWGdLYRCYkEnapCL4hZ4I6Ok01oVlStuJxg2o7c7GvCAvZxJs7PdUeB2l_sewRp2izf3SuLiXXoX6Ao7j_Uk28MLPng3xhWTDkbDz9QIw1587ThnYDR6RmyP2BDqOcEmmQKjMQYoukRvx9-yCSU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.75,
+          "findings": []
+        },
+        {
+          "id": "rc-054",
+          "prompt": "What's a COMMON misuse of useRef?",
+          "options": [
+            "Using it for timer IDs",
+            "Using it inside hooks",
+            "Using it for DOM access",
+            "Using it for data that SHOULD trigger UI updates — that data belongs in state"
+          ],
+          "answer_commit": "hmac-sha256:659739b14ad94ece2bd0266008c392ab",
+          "explanation_enc": "aes-256-gcm.v1:Fkkl6UqW_J7y22d3:mMXhKa4ZVTOaLaFFxC9M5wzp60tw2JNIl6zBPJ7sbxtF5vomTqdfPA_qHjzUX_c-PuW5WI8AK7qfwiCuidG5RWsUhFnp_y4EUpYvZ-vLiyYeExc6aFrKMAjxNzaJSSE-yZXlnnHBgnYd4a3_mlGqBc5OoGG-C_XpCqQj93Iak13fD99sJ6NaTSBiZezh6FEZErW_Sl_9SvM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.348,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-055",
+          "prompt": "When does React assign the ref to a DOM element?",
+          "options": [
+            "Only after manually calling assignRef()",
+            "Before render",
+            "Never",
+            "After the DOM is committed — meaning inside useEffect or event handlers, not during render"
+          ],
+          "answer_commit": "hmac-sha256:b80eec55aed48f70734e40b034b0707e",
+          "explanation_enc": "aes-256-gcm.v1:43CdmgZ1CE6ZVKgk:q934o3aUOek6pM2BlIqEAwNBilnsPjOX1gQu4_R0JEcnbKxbpNzlSqS1Sb9pt7bBPPwwyGlUQvevf3DvkjcCENmizv_tJT-_0WJ5uX5YxiZuswIoLdeVlSHAJX7KYRXhRIBl0QxgqthhZc5WpmVHX4vDqB4qSRcVx6lBK9i8tr4",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.308,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Context API",
+      "skill_id": "rfv.skill.react-basics.12-context-api",
+      "items": [
+        {
+          "id": "rc-056",
+          "prompt": "What does the Context API solve?",
+          "options": [
+            "Performance issues",
+            "Form validation",
+            "Routing",
+            "Passing data through many levels of components without prop-drilling"
+          ],
+          "answer_commit": "hmac-sha256:66cb3065d8410de15b52526ef82b894c",
+          "explanation_enc": "aes-256-gcm.v1:vYrs4UjJhSKy8lHQ:85DwA_P_S6nqUOn7LjxgDc5Jpy1Wg1b7NMncfXpG0ZcwGjbuH48Y0oJfG1jpyuy1iUbUYTZEH3FAGfkFA7FK1_ZRwGxo3ji7Ot0UN_5Z7IgRfVLrwdD2pplhnhcBBMYW6sLaj05r59_Y1_kRhB3IfIzIUvDmcxhYkpwpU4csVY3HZcCBGCd7fZhxM7k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.778,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-057",
+          "prompt": "How do you create a context?",
+          "options": [
+            "context.create('light')",
+            "const theme = useContext('light');",
+            "<Context theme='light' />",
+            "const ThemeContext = createContext('light');"
+          ],
+          "answer_commit": "hmac-sha256:05f596a0f6ae48007d6c595587478b86",
+          "explanation_enc": "aes-256-gcm.v1:rJrkS-QF6_RSIS14:4-txMB5KXaA3fTRRGBFyvJPU8_tJCAy1o5D6sFBW0SylBW9xdfEb-MoSozea77LN3oBL6bPt7MXAhbi_VSdlmrWHUAioeL2NA1hpxFf2xmk4_jl-SB56VY7D3kSjHqi7qknsOvCe5d2eF9xN1e5jNQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.294,
+          "findings": []
+        },
+        {
+          "id": "rc-058",
+          "prompt": "How do you PROVIDE a context value?",
+          "options": [
+            "<ThemeContext value={theme} />",
+            "Context.set(theme)",
+            "<ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>",
+            "<Provider context='theme'>{children}</Provider>"
+          ],
+          "answer_commit": "hmac-sha256:85cd8f3f9623f4a5d9edf5e129e2adb2",
+          "explanation_enc": "aes-256-gcm.v1:ajh9Pu1ZXw3djHam:Huh1pMJlax2c14aB5Bxig95v215Y2Z_-oOuPAGT-P9WWTuEJhOX7JajvB-vzYGgIYGpFvNnN6j4tijEviJDyESmGhwVlQEn1_LxQ6krPTUFcqAtq_1NTk1JCezk3Ih8vYszBKWLw4wfbUCRVkVL9lXaRdGkyTM3nTiPY9DFN6GcXcHIj-tJ-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.511,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-059",
+          "prompt": "How does a component CONSUME a context value?",
+          "options": [
+            "const theme = useContext(ThemeContext);",
+            "context.get('theme')",
+            "const theme = ThemeContext.value;",
+            "const theme = props.theme;"
+          ],
+          "answer_commit": "hmac-sha256:d59a40047d77e56e1d11ad6515e6fec0",
+          "explanation_enc": "aes-256-gcm.v1:9XTMUjyxKR-UCEQ9:TBFjofk2npCImRgPsSNjZAFAKF7lHyDePhLWs-QZdb26yqEA2AUtAnFVlJCN_x7wTTEcLHrN3KnURoZ2n1mCcXb12-iUz8EQ62z2K_Y4b31jVPizXpW8D79PJ2AsU82y7-DP5ijFfwwtjEjk_6KYst7rh_Z9h-LrMPTn",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.182,
+          "findings": []
+        },
+        {
+          "id": "rc-060",
+          "prompt": "What's a DOWNSIDE of overusing Context?",
+          "options": [
+            "It's slow to set up",
+            "Any change re-renders ALL consumers — splitting contexts or using state libraries (Zustand, Redux) may be better",
+            "It doesn't work in production",
+            "It's deprecated"
+          ],
+          "answer_commit": "hmac-sha256:c4dca9c4a0dbb6ae4c9fcffc40fa358f",
+          "explanation_enc": "aes-256-gcm.v1:tYPlXmp8DKQ8SS3R:nJPa-z0BFlwGaus_vwNn5QaeOQPXjNFFVkBwnA3CPOugltrtRbEZuXjTH7e1ymKz3RVPVnxqcgzXtY1NQme-aI77tQzbS1xSpOlwxNmVGPJmW5bmtnfxaKxb5sU3Xa40vmQWSsp7XDvXeoRFXETaCr1vTWIeL7dkJNZ5XxjB2Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.862,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Forms and controlled inputs",
+      "skill_id": "rfv.skill.react-basics.13-forms-and-controlled-inputs",
+      "items": [
+        {
+          "id": "rc-061",
+          "prompt": "What is a CONTROLLED input in React?",
+          "options": [
+            "An input wrapped in a try/catch",
+            "A read-only input",
+            "An input whose value is driven by React state (value + onChange)",
+            "A disabled input"
+          ],
+          "answer_commit": "hmac-sha256:4f1edb575d0792a4bf09b788105095dd",
+          "explanation_enc": "aes-256-gcm.v1:7mcH4g9buZE_4R7s:aI39hSExSu9S5uWWKyN31indXEKfuSQN34lwOnrW9xh3R4Z3SV-RX_MIIeyAeGxKUGvTGOiSdHl9IYIzhQOrj2rSz3JjrL6Clp80oWIXRzv_DcgAPBUyA5FP_o1yvh8bZbh5oYS7yzoVWYfOjFysuE5qmZWZlw7bPKPl2xlu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.065,
+          "findings": []
+        },
+        {
+          "id": "rc-062",
+          "prompt": "What's the difference between controlled and UNCONTROLLED inputs?",
+          "options": [
+            "They're identical",
+            "Controlled inputs are deprecated",
+            "Uncontrolled inputs don't work",
+            "Uncontrolled inputs manage their own state internally; you read the value via a ref when needed"
+          ],
+          "answer_commit": "hmac-sha256:21c652192d2df2b94426b099c7d581d7",
+          "explanation_enc": "aes-256-gcm.v1:FVJl3XJuCnX9rY8I:1iG2IcBNxNsNrnCfdOQcdjF5Yx5tL73xVY9Lt0_OjRf12KLHVSw04_J9hFrnajnasCkDYUwRwjcW9mkHzPPVmQ21trmqy-m6SCk04zMSwEDWlyRDazuOX9DE1ye57x2l85r0pfB73Vx0QsiQgR_YbFBahid6pJpfVIzVxmSSiZLOd6WRHOKoMg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.969,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-063",
+          "prompt": "How do you HANDLE a form submission in React?",
+          "options": [
+            "Submit via a global handler",
+            "React forms can't be submitted",
+            "<form onSubmit={(e) => { e.preventDefault(); ...do stuff }}>",
+            "Use a regular HTML form submission"
+          ],
+          "answer_commit": "hmac-sha256:65029ab1b01cc9d817640300d4ed5a70",
+          "explanation_enc": "aes-256-gcm.v1:qpxY3Kl4djxQvGGF:5THOiudPq_1ERbGqlEBkxbTn_8-qhOsQI_z6DcsokPsIiXXcCYEI7ynQ_-yM_LnAF6UMNeELhl6vP8_-aSmpKYhlApDH1ABaHXcE8QFTOVzy3u2xYONxwGNwqd7OoGKm8T5fK-1xjzx42u7C2idqo2xkyw9_fpoH2sw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.765,
+          "findings": []
+        },
+        {
+          "id": "rc-064",
+          "prompt": "Why use a form library like react-hook-form for complex forms?",
+          "options": [
+            "It speeds up the browser",
+            "It replaces JSX",
+            "Validation, error handling, performance, and less boilerplate for multi-field forms",
+            "It's required by React"
+          ],
+          "answer_commit": "hmac-sha256:f7c38a9e96d0a51bed5223d253ccf600",
+          "explanation_enc": "aes-256-gcm.v1:CvIQNINFeHW_sfSh:v-Hd2B3lCuAAf6WVpWH3pBYkCQoACs4bgTlvwEX56H74oJ1WrB0eEojmVt22inpP6I4qPYH85d92xQ3PLAl5i0enN-loow5EXlANJ3KzSXAVXBMLLTapEzEikNuBGycsDfNz79cHui8MRehAatL5XvFgjJmzNDI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.458,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-065",
+          "prompt": "What's the BEST way to handle form state for many fields?",
+          "options": [
+            "Store fields in refs",
+            "Don't use state at all",
+            "One useState per field is always best",
+            "A single state object: const [form, setForm] = useState({ name: '', email: '' });"
+          ],
+          "answer_commit": "hmac-sha256:e8e69c1d385e50b486ebc77f9c83b53b",
+          "explanation_enc": "aes-256-gcm.v1:1jaGzf8z89BwaZBR:kCxNV1AXfFXzTt3gQvoccqFYug9_tuEbAH6pFlf3QfMCcFVhtGpdbgMsPRzTuf8j7H91wu649ncy07BRxkgNlpTTz0BL47pg3eQO7vACz4xH42yJxue1FOi_zoWlB4_fAYxiTEhZV7A0q8k2Ft_2bdpZ6risc7ji-4b7iV8o5gpme7IqRgs",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.189,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Fetching data",
+      "skill_id": "rfv.skill.react-basics.14-fetching-data",
+      "items": [
+        {
+          "id": "rc-066",
+          "prompt": "What's the SIMPLE way to fetch data on component mount?",
+          "options": [
+            "Fetch inside the return statement",
+            "Fetch in the constructor",
+            "useEffect(() => { fetch(url).then(r => r.json()).then(setData); }, []);",
+            "Use a useState callback"
+          ],
+          "answer_commit": "hmac-sha256:7bb0a686702f9a9a6efeb3e2ec411f55",
+          "explanation_enc": "aes-256-gcm.v1:Ohz0LII5wsVr2d7-:tDZhY7dEqXyKyr88QNTM9TIwYzLSiRJQfO9fx_i2Tdn_u36RNHBSkXMxyeSYACCVNcPC27yI1ESzS0a-VG__I2mT1cjRah2gEUbdcIc8GCX_B0IlyPfPzkmGBFNhvADD1E16LSZ_i8g09X7Pz8ziUqxU4NhhDbkkJw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.152,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-067",
+          "prompt": "What states does a typical data-fetching component track?",
+          "options": [
+            "Only loading",
+            "data and error",
+            "Only data",
+            "loading, error, data — the three states of any async operation"
+          ],
+          "answer_commit": "hmac-sha256:ef27c580810292efa942ee14bb6c1349",
+          "explanation_enc": "aes-256-gcm.v1:eYyQvzRd8BODQBrJ:JHJogofFMbmKWvhU8TEpEgzH7QtY6upLb75XiajjIDtkW28_yY-9ZG-sfbLOeCBWOxrLn9UMYtSVtZioVcCXk1O5Q-IDcypxdJiTvlR2uvz4T5gn3jPseO0egATEcRCBmGpMdYj1iI6JBZPc8gQmEaHCcXqQehhDf_Ijk60",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.429,
+          "findings": []
+        },
+        {
+          "id": "rc-068",
+          "prompt": "Why is React Query (TanStack Query) popular for data fetching?",
+          "options": [
+            "It handles caching, refetching, deduplication, and loading/error states with minimal boilerplate",
+            "It replaces React entirely",
+            "It's the only way to fetch data",
+            "It's required by React"
+          ],
+          "answer_commit": "hmac-sha256:da0c547827adef60cef62fd5f25d2490",
+          "explanation_enc": "aes-256-gcm.v1:SnLMAVqtBfrtJkVk:W0I1esp6Iskm13Ukem3FM7iq9KORdBQOGTkMxLdpWtfKLF09dl9FzXUf1_U2JBPS9A4m3KfoLZQhkDcmcbr7ceTbz-fMNiBszfAZ3YhTlzzSyzKGVZQTGKqsnExNTt6Iq9ae2dH8vOV56cRvlzUYsbx2NH4j670ZlPHEX-Tu",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.097,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-069",
+          "prompt": "What's a COMMON useEffect fetching bug?",
+          "options": [
+            "Fetching too much data",
+            "Using fetch instead of axios",
+            "Not handling the case where the component unmounts before the fetch resolves (potential memory leak)",
+            "Calling JSON.parse twice"
+          ],
+          "answer_commit": "hmac-sha256:c672726bffd3da70d987619c3332b3be",
+          "explanation_enc": "aes-256-gcm.v1:uJDYtmnfOR_kSOk0:oz6TSfaHKdqbAppVBGeYrNNDQEmG568a81igKNzPWUVZ8h7Cso0GI0hE9SmOWf6tkoEwWqDRKEMqTUympL1TLMrDjI9zGhQiKpHB_KbLwTAy7uwb7cJm9YdXn46V-JkWPklIXM1-JzdN0xBcPAD0Z1rqumJR9gB8JcF3NkC9zg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.571,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-070",
+          "prompt": "What is 'race condition' in React fetching?",
+          "options": [
+            "A new fetch's response arriving AFTER an older fetch's response, causing stale data to overwrite fresh data",
+            "A CSS animation bug",
+            "Two components racing",
+            "Slow internet"
+          ],
+          "answer_commit": "hmac-sha256:69a874686753d1873e1ddbc1491b2188",
+          "explanation_enc": "aes-256-gcm.v1:ViqNZxd8UG3oCpam:5q7kc0XdoTzYQT-knREG4DCPUFuAWoHJJ9UifLF4l-7IQ_BZHghhn_NyNOo9ZSe82-3JZsiSVY3bYN0j5ylG6CUGv3D_pNAd-LMLKpLwSNY6gP1Zwn-gVamgQZsZGJCuOUrjfhfW2uaxbff8OTwWUHPRoKJ6BcnKaMiqwlzxY-LhrD5mCXAmIErykzZgAPrlldw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.095,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Performance and rendering",
+      "skill_id": "rfv.skill.react-basics.15-performance-and-rendering",
+      "items": [
+        {
+          "id": "rc-071",
+          "prompt": "When does a React component RE-RENDER?",
+          "options": [
+            "Only on page reload",
+            "Only on user click",
+            "Every second automatically",
+            "When its state changes, its props change, or its parent re-renders"
+          ],
+          "answer_commit": "hmac-sha256:9a0a96d4829bbb19589c1b388d52fc87",
+          "explanation_enc": "aes-256-gcm.v1:cynhF-WDdQ5n9fDX:h9njnIZ-U9KJXREYIAXxLCEm6Q98lfuHduMhIBM7L-kIN2p-uBkRc0fjLw6JMKj0TU-x_8iJ-HRQAI2wBmqHcdqgUXIjlV3d8lmPWptNTc4rVbR7qtSjVETFyut4-_fOEoavJ74oo26Xl1-YUQ70ksmsQE6YAH7B-HuTh51J_7DKbZ4MYFYK7A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.538,
+          "findings": []
+        },
+        {
+          "id": "rc-072",
+          "prompt": "What does React.memo do?",
+          "options": [
+            "Memorizes user inputs",
+            "Wraps a component to skip re-renders when its props haven't changed (shallow comparison)",
+            "Stores component history",
+            "Speeds up CSS rendering"
+          ],
+          "answer_commit": "hmac-sha256:03b8904dba24f002bb1f05c372292316",
+          "explanation_enc": "aes-256-gcm.v1:EvnM2NFVRFJweAZq:UphsAX_-Ux3uSdjCk3mPAmErI1sTUSfUPQF7_mGstZiaDXZahGM_TmBjC2hhabLt3Ol16my2gtEZjDUL4UuD6IuseRbKtKk9PAXkTvDxnQWHQBq6QbrmU9udSlVzjPz3xW-e1e8R4J5eq47w8KKbHbQGbExClFQSXO48gXA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-073",
+          "prompt": "What is useMemo for?",
+          "options": [
+            "Storing components",
+            "Caching the result of an expensive calculation between renders",
+            "Replacing useState",
+            "Memorizing event handlers"
+          ],
+          "answer_commit": "hmac-sha256:4f158d9f70b4595f8929e06382a50a25",
+          "explanation_enc": "aes-256-gcm.v1:uRgnIEM5giE9FNcx:OsCHRN9VeUtyDehNCsX35f_oTiGIE8KdPSJec1Uyh_ajaOCFrbkiGcBHLS2_hmnDdlFK0pbymCOxx8HKbqHlOAN136127ZbIvlgGfOvrAqwBkpVEVtjtVvR4E9Mn93HSVkGJSK1fxKC0gYTbcBALHYEkKTHEsWzCPsCVyAk0g2pKzYGQ5Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.48,
+          "findings": []
+        },
+        {
+          "id": "rc-074",
+          "prompt": "What is useCallback for?",
+          "options": [
+            "Replacing useEffect",
+            "Validating inputs",
+            "Calling APIs",
+            "Memoizing a function reference so child components don't re-render when the parent re-renders"
+          ],
+          "answer_commit": "hmac-sha256:74e900a1e1ff795aaf43f030ce772230",
+          "explanation_enc": "aes-256-gcm.v1:YhDm3Dxm43_vb1zF:C7ncPPYgfPEKM7RuFRmKGMaxZhhOVYerujzsDJWdP3uAq5xMH_jWAO-K9SMdeK0eB2S2kZsgbd63LGjuoa-mqwMFJfSvs7UiwjRmmmXsirLLpd9nstPIlw11gmwRzyqWbBrLlR3F5-ntTLQRWX00K_RR73fsrQlmxDgJAZtl9VayLhlSYJSv1xN7pblzQmwp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.895,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-075",
+          "prompt": "What is the React Compiler (introduced in 2024)?",
+          "options": [
+            "A replacement for Webpack",
+            "A new bundler",
+            "A CSS preprocessor",
+            "An optimizing compiler that auto-memoizes components, reducing the need for manual React.memo/useMemo/useCallback"
+          ],
+          "answer_commit": "hmac-sha256:f46997779de69d55d475d7a87cfdcae3",
+          "explanation_enc": "aes-256-gcm.v1:Jm9MidNNH3LTF0Da:kCIu0BnfF_TTCWupn_A1oeRjdV1OFZtejQ9ZGDCZ1LglpC5AvQJsrsP9Qq-1za82wZJjfwKa15QNwiF4GS6DprQZ5cLgjrjLGoCO9roEhXzcKx4qooC-RdWBz1SPY5NxewXHxCTnG9gx6ziqXxKM6H0QwcMKi4WWLCUKmQ8gDwaG6E5X",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.52,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Routing",
+      "skill_id": "rfv.skill.react-basics.16-routing",
+      "items": [
+        {
+          "id": "rc-076",
+          "prompt": "Why doesn't React include routing out of the box?",
+          "options": [
+            "Browsers handle it",
+            "Routing isn't important",
+            "It's coming soon",
+            "React is a UI library, not a framework — routing is a separate concern handled by libraries or frameworks"
+          ],
+          "answer_commit": "hmac-sha256:763eee908d00f47f56e4b6612220600c",
+          "explanation_enc": "aes-256-gcm.v1:fzPEnFPV5qnJXANW:UY4e7CDIvh2wQZmoYTPS2W5RfmaYAoMBMPr_HPCxsNkyeaBG9SIWZ4PKeY9AmPvfh47E-sSbbQeSlR7Bqt37F1ITwFS6p5kubjnmCRROhf00WQVdEYTOObOGjmpStqEOf8UdwF0SzS6vj28u",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.565,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-077",
+          "prompt": "What is React Router?",
+          "options": [
+            "The most popular client-side routing library for React SPAs",
+            "Part of React core",
+            "A CSS framework",
+            "A backend framework"
+          ],
+          "answer_commit": "hmac-sha256:feca146a982bb9ea98b1ea05cd2856af",
+          "explanation_enc": "aes-256-gcm.v1:DPD2ja3nZOtBeXbr:MwiSrf5Gh4wRzieFI-n3Xq5SBedku-YGLE3aPgwKL0ea5pD43VkbrvfFAJaz-Zlj1ZS66yEF79w1WVmdAlwpeSmgXm5otZRdXqsh42Rwikqej2g6b7PFB_vVLpZkCKbkqbO2Lem3qDxGV8lDqxo_9SVyfQbth7bK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.105,
+          "findings": []
+        },
+        {
+          "id": "rc-078",
+          "prompt": "What is a 'Single Page Application' (SPA)?",
+          "options": [
+            "A web app that loads one HTML page and uses JS to dynamically update content without full page reloads",
+            "A page with a single feature",
+            "An app that's only on one server",
+            "An app with exactly one page"
+          ],
+          "answer_commit": "hmac-sha256:0d41ec9e949048b135ab83bbe700b154",
+          "explanation_enc": "aes-256-gcm.v1:fpp4bltzaCbJoqHZ:HrD3zYsUJxNoKLnrWLPLD6i_R5ZEkT_32_k0gJXNv6Q1tFroHfwN3Vher3hGNKQnbh_swljXbkDLlmQHsVkHydWFz_cnNXhgX92Pb37Q0wc5wfTssu_SP_wJMv2RA4LlSdD-GGEDnzRJ_fKv-ajUP8Gx",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.188,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-079",
+          "prompt": "What is the difference between React Router and Next.js routing?",
+          "options": [
+            "They are identical",
+            "React Router is client-side; Next.js routing is filesystem-based with SSR/SSG built in",
+            "React Router is deprecated",
+            "Next.js doesn't have routing"
+          ],
+          "answer_commit": "hmac-sha256:292a46b4e52ebc89150ab407bbbeb94e",
+          "explanation_enc": "aes-256-gcm.v1:qBtDlithXUc_hna4:kXC3zGl1UpGNYngxCnk8CBSSgudLd2fuaVCVWrbqx0ihcYmNCViIu5OiDL_d1ylA6rXlItUDBat7ekhaVG4xCct7pY11ZVo90eQiie_Zfal5PT-vmjcQy1R4_HVGvpr99EDiY_z_vmK34jOOWEABgudc_F3VzBpMX2cq7rl1nWgkVC6D",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.071,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-080",
+          "prompt": "How do you navigate programmatically in React Router?",
+          "options": [
+            "<navigate to='/about' />",
+            "const navigate = useNavigate(); navigate('/about');",
+            "React.go('/about')",
+            "window.location = '/about'"
+          ],
+          "answer_commit": "hmac-sha256:efccc31b6b31ade3444a107a60fe8fe4",
+          "explanation_enc": "aes-256-gcm.v1:28Rp_RA503_UGTLe:iBHjpFWhwRmA0zsDIJOjyHhWp_qrTUdaWTj8-Wge6H6luxtKyTCFnYIzSDMAafNRKaWJqFm-f4UA7P9OxLH9RLkqLavq7waiDcGEd49sQdChQ0VWbnMCt9g--7Fm5Mr1234CVbVAbY9lGOxoDCWslIJir3xcNzwHjtuPCOG9z4wyNwtlI6NU2x72",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.962,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "State management at scale",
+      "skill_id": "rfv.skill.react-basics.17-state-management-at-scale",
+      "items": [
+        {
+          "id": "rc-081",
+          "prompt": "When do you NEED a state management library beyond useState?",
+          "options": [
+            "Only for class components",
+            "Never — useState is enough for any app",
+            "When many distant components need to share and update the same data",
+            "Always — useState is for beginners"
+          ],
+          "answer_commit": "hmac-sha256:3a0c5039aef377618b23b3fababba892",
+          "explanation_enc": "aes-256-gcm.v1:DwTnyratu4aifz6F:39aUws8cmO6xBf3UgExlvTIQiGhyKTIbgsyyqCJjjQ2o4MEGM_Z96BXDEP24zYJX44nXyLKtD3nm_bjqAbCEGlA5wjhm3FO_ARY4UwJEw0zndoqeC2RHPeZgOOghPCyGaMl1rNlBYiVvthlKQKfYna7IxW8ZFoDzBdWOaZsnRsLQaw_d1e0-kxU",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "scenario_framing"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.763,
+          "findings": []
+        },
+        {
+          "id": "rc-082",
+          "prompt": "What is Zustand?",
+          "options": [
+            "A type of useState hook",
+            "A CSS framework",
+            "A backend ORM",
+            "A small, fast state management library with a minimal API — no boilerplate, no providers"
+          ],
+          "answer_commit": "hmac-sha256:5271ab3f8bfd08305cebf7abc164980c",
+          "explanation_enc": "aes-256-gcm.v1:CpxpVBTaa3jtPnxx:iiJqeybEBnCx7t-WQpx6Um5cNCyVsgp_G_rFoQGWk-KJD6ZUSTwkSxVr8_ZH5O5leQYtV6OPN1qozuv8T_vuh39ccsrE1AvnDtXjmdSIcvp1mXRh8wq_FDgZvCDhOXuL19hKh0o6pRALqZRu-SYowR_6i8iRK0wuFumWq12OekRoTfOPoWA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.826,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-083",
+          "prompt": "What problem does Redux historically solve?",
+          "options": [
+            "Predictable centralized state management with strict patterns (actions, reducers, store)",
+            "Routing",
+            "DOM manipulation",
+            "Styling"
+          ],
+          "answer_commit": "hmac-sha256:b049ac0d6991c8b7a047f4ea8fd07a95",
+          "explanation_enc": "aes-256-gcm.v1:IezEuJ-fDJcvPb3V:cqDTZoLACLWF9hVevytE6FH-2Rk0V2u4jWfk_dDd8nYb64fu1hmxzDMAuMaq5Moj1D3ohjlj4VOATx1yPW2_rhJXi_bt2UkD_3NVGefrF7NQBCPtBv699ANN-7lzivpYpN46yD6jCJxgN2sV9f1wGeS5sy8llaBaVgZHO9aqDjZfU0x0LVcb0fw531BbbVpl279A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-084",
+          "prompt": "What is TanStack Query for?",
+          "options": [
+            "Form validation",
+            "Routing",
+            "Server state — caching, syncing, and updating data fetched from APIs",
+            "Local UI state"
+          ],
+          "answer_commit": "hmac-sha256:8778de87307d60353e2e49f377636601",
+          "explanation_enc": "aes-256-gcm.v1:tqIHoSwyKWcTqfTV:n7nlA6uGVWPpdsSqOXh7Yf9XKye7CjwDfgitD5cFFZZw7EEvzMPyFJU848hvR_C11_MweqDc3E7HK4o9smLJE4mHyUQazQUAKk9yhJyYcgKFCHYhYHvbqmfAAGxOhs5yihm_h3C6EX-Ohj42Htrd0HMTyM43VbS4xDAP3DOhj4Ng-LF727DgsEJSuqjWchT3Ivs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.533,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-085",
+          "prompt": "Which is a HEALTHY state management strategy?",
+          "options": [
+            "useState for everything",
+            "useState for local, Context for theme/auth, TanStack Query for server data, Zustand for complex global UI state",
+            "Don't manage state at all",
+            "Redux for everything"
+          ],
+          "answer_commit": "hmac-sha256:73a5e43aebbbbc9937403750eb7b0a64",
+          "explanation_enc": "aes-256-gcm.v1:Wl2le2X3OPdDoFDA:0OOaDzXRl5fTi8aZWT97DiyTw8nAt78lltQeRRUmgCNP1BbToEr6-fpMQdNOhOFDaqUo2osFonld95omO0OSsA9mOKKPRTqrZNMO_WYi4ICmpFAM3QMygfXzCo6RCkIOLr20MTs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Common pitfalls",
+      "skill_id": "rfv.skill.react-basics.18-common-pitfalls",
+      "items": [
+        {
+          "id": "rc-086",
+          "prompt": "What happens if you call a hook inside an `if` statement?",
+          "options": [
+            "Performance improves",
+            "Hooks become optional",
+            "React throws an error or warns — hooks must be called in the same order every render",
+            "Nothing — it works fine"
+          ],
+          "answer_commit": "hmac-sha256:05052e8b0f94904ba2677be7d90b4283",
+          "explanation_enc": "aes-256-gcm.v1:9-D3MZtEjPEX9Fef:eXZvgsxVaddPbCCouc8S6N-Qh3CvEq4OYYQsIhsF_Epe6R34_jVik-oc18pxOwi1SM2TsJVVQ1yto2vm6v8dSUfujcyNZ-kH8CTWvtIdylLRxMNfTiTgBJWlxHm0Gg2wewDM7VmqCpiqhoTkj04lwD1ak5yOv7pHUVXf6YWrfvUTCg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.652,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-087",
+          "prompt": "Why is mutating state directly (state.push(item)) a BUG?",
+          "options": [
+            "It crashes the page",
+            "It's a JavaScript syntax error",
+            "React compares references — mutating doesn't create a new reference, so React doesn't detect the change",
+            "It's a CSS issue"
+          ],
+          "answer_commit": "hmac-sha256:1b075f85bf331e86eee55126da547fa6",
+          "explanation_enc": "aes-256-gcm.v1:sXlqo3T3YjDrNVCR:UQAlloaLFQi7RPOzGG1dQU7g6kUG8ZtVdhi08vIvE8U8jCxCSrjMfrMwLTKybqaoE1du400wbTG2mpmjmAnPitTdciRE5PdJqCv4FLg8qsFbegLp6gYN90oAjyVkLUv5KvfyXaqIX21S8vyvE973LJ48vH6jbZM",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "debugging_framing",
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.433,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-088",
+          "prompt": "What's the FIX for an infinite re-render loop with useEffect?",
+          "options": [
+            "Disable strict mode",
+            "Refresh the page",
+            "Use more useEffect calls",
+            "Check the dependency array — a non-stable reference (object/array/function) is recreated every render"
+          ],
+          "answer_commit": "hmac-sha256:1508c4fc51ce85518061a940f2579e14",
+          "explanation_enc": "aes-256-gcm.v1:Hdpgx8QZR4p59isY:BMkzgVSrrsbeVjdNZ_oz-NypgzundFk8CM2oTO9g4_dW4WHLKx_7PuU-vy-Ar89jK2L8ZXo4SUwWyoCELnNSlvAmRl3K9N35QCYly9lkB_2a90LBjzJbKlqrV6Hy52ZQ_fnftDXRPQi4Bp4_iS9PTAFb-BcGYIrgF7cV-0f0k4M1rMKMZnQVsA2NZI_saYg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.208,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-089",
+          "prompt": "What does React's Strict Mode do in development?",
+          "options": [
+            "Required for production",
+            "Speeds up the app",
+            "Intentionally double-invokes effects and renders to surface bugs from impure code or missing cleanup",
+            "Disables all React features"
+          ],
+          "answer_commit": "hmac-sha256:7610375ab639fdd56aab34e0ae8d879b",
+          "explanation_enc": "aes-256-gcm.v1:hgrxqqn-nBsbLEMM:3WtT5wlhi6hWqgmEwN2Alhiky-_3GOGTUVt4fYdBgEVU6Tldz47X4Exb3jjHl9ToXCFr9YJJOzxTw5joUsUKH2o_6w340IjeoABwXzP6C66f1lrdndd7vPOTHOUyLHlGseD5vUf4r8RxVYXchWp3nvsITw4tIMyUmEUFhfqn0vrwscdZTe_yetPv5OIbGlc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.704,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-090",
+          "prompt": "Why should event handlers be defined OUTSIDE the JSX return?",
+          "options": [
+            "Inline handlers cause errors",
+            "It's required",
+            "For readability and to easily wrap in useCallback if needed — but inline arrows are fine for simple cases",
+            "Inline handlers don't work"
+          ],
+          "answer_commit": "hmac-sha256:db53f85e196eddaeeeb855ae8c23533c",
+          "explanation_enc": "aes-256-gcm.v1:VHPgBWqZuy1S95MF:sKeFzG7bPMMezY6RBqIlCr2XMRbxWfv3kR9UIDzjsBXHIeECQDMTSHOZnkyGhZqIcmMwXrMPefHS5lzaNrBCyJQ0E_HsQ_bnMX9gjc_-JgOJM6d0Z-_knOMn1ZJHiWn-RUFCWw0oVGk9ioH4gxguTXVjgw6HsWHz3n_zX9sCyYw5Hq25AgsCZUCttqNO-UQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "React ecosystem and tooling",
+      "skill_id": "rfv.skill.react-basics.19-react-ecosystem-and-tooling",
+      "items": [
+        {
+          "id": "rc-091",
+          "prompt": "What is Vite?",
+          "options": [
+            "A state management tool",
+            "A type of database",
+            "A React component library",
+            "A fast modern build tool and dev server used to scaffold React (and other) projects"
+          ],
+          "answer_commit": "hmac-sha256:35f0ec12402efb7cf59ebab278149c78",
+          "explanation_enc": "aes-256-gcm.v1:GDne8pxB9CIgMf1m:MbX2-hA5VlmjwfbCLbx3iRomiUpg_XZtAJjp2GcdRAzqwQR7qQZMyHnuen_HAjN9TTYomfTHy3dENBjFghQuBn8BkHZaD5s1GNFOwO9JTO1YskkceKBSUUNgjyZmDT6HfPNU5nkeJVPd5ky2rfuLKoC1vGp-40k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.32,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-092",
+          "prompt": "What is Next.js?",
+          "options": [
+            "A CSS framework",
+            "A database",
+            "A React framework with file-system routing, SSR, SSG, API routes, and image optimization",
+            "A React replacement"
+          ],
+          "answer_commit": "hmac-sha256:ef97900aad51befaa619140f3ad8b64a",
+          "explanation_enc": "aes-256-gcm.v1:YsAyP9jrCZml8XNf:YEf774Bl0AecdVkaKEubD1CQS_GDrA5fTUDAxWdUkPtw-wmgBf_kHhmOazzyKvuRoccs2S9CDDeG22Z2hlf48eRImJumlXFx61Wal3NGXobzmxygtKIXW1PNAGqll2T0jiyS0P79meAmIKtbs8jzmTebeeH-x-BANG0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.632,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-093",
+          "prompt": "What is Tailwind CSS?",
+          "options": [
+            "A type of hook",
+            "A React state library",
+            "A bundler",
+            "A utility-first CSS framework commonly used with React (className-based styling)"
+          ],
+          "answer_commit": "hmac-sha256:3bfa5df9878ce80efa0af0666f619014",
+          "explanation_enc": "aes-256-gcm.v1:D1eeP93O5VlywKUd:r7HeYy42ii7icwtcVLDd8aAfCcCfIow1vVb70LV8-cgmNms11bxKccFogwvYm4G4kqLtw0HoKrc8jvN7Xl1pRzfaT_9Knp8eOqM3NvjhQoH-8h9JpSlYzlYok9eFeRoqWOITCOEWrEvU7WTLnQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.81,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-094",
+          "prompt": "What is shadcn/ui?",
+          "options": [
+            "A backend framework",
+            "An icon library",
+            "A set of beautifully designed React components you COPY into your project (not an npm install)",
+            "A React replacement"
+          ],
+          "answer_commit": "hmac-sha256:fa85f1a36d763aceb7b56cf7e138d18b",
+          "explanation_enc": "aes-256-gcm.v1:sKDZcM7NCPqQy6_o:w9TgXinhoCgJWjp7mLTX8Szm4C9JKsf8uACq5sQtaVAZsfu6OYqulPHqPT32OKCq5dSXH2G-c5dtSqiRV6k2ZXD47ma1DPevsLYsVzGlb99KjlYXASiXpAhi3eYDisfSyakyO3QENfeBpVrNg1HIBHRjcFTxCH1eA1EkC24EHoJFDX4d_W0gTac",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.947,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-095",
+          "prompt": "What is TypeScript's role in modern React?",
+          "options": [
+            "Replaces React",
+            "Required for React to work",
+            "A styling library",
+            "Adds static typing to props, state, and APIs — catches bugs at compile time before they reach production"
+          ],
+          "answer_commit": "hmac-sha256:7046a63942812aa475b8f86d04da453a",
+          "explanation_enc": "aes-256-gcm.v1:qqKv5kc0ax1_Bk06:uJJUTGG08LIPaVLeMoH2lFAJLGgt7mqK8N-UBKUUIna1bIFG8GqhnR_j-U29QpdINSLsJkAeXvM-GWcRUxNhdgLUv-2RqckHxiHqM7RM9rbW8ikL72dP5vBAHhbayzMSFABIBzgbj6l1TzT7Bg_RFdH4EHtTcAseCZoJ_8Lv7ZMgMaW9jeZSEDUk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Modern React (Server Components, RSC)",
+      "skill_id": "rfv.skill.react-basics.20-modern-react-server-components-rsc",
+      "items": [
+        {
+          "id": "rc-096",
+          "prompt": "What are React Server Components (RSC)?",
+          "options": [
+            "Components hosted on a remote server",
+            "Components that render on the server, never ship to the client, and can directly access databases/APIs",
+            "Components that only work offline",
+            "A new type of class component"
+          ],
+          "answer_commit": "hmac-sha256:5112cb8a200ca87fe0a860e4d36b3f3f",
+          "explanation_enc": "aes-256-gcm.v1:7VV1xDmLUpgG-C9r:vNftkHniUY9VVPoHq9FrIqVSqeOg7khnlw0kHkee9MT_q7YtaLrAtOCRtFZhOXq15EOu30s-Kg4ArXOD0khQmtznhXrwaZH9dUrP2AXeBRxfffKamU8m_p3V7t3yKsM7Pj9tnfk_kSI2PUJ3iYvGrhRvKU_l6OTFkqN4FJWXzsQMuzt0jTaquaRs1lJ0nVs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.833,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-097",
+          "prompt": "What's the DIFFERENCE between Server Components and Client Components?",
+          "options": [
+            "Server Components run only on the server; Client Components are interactive and run in the browser (marked with 'use client')",
+            "There is no difference",
+            "Client components are deprecated",
+            "Server components are faster but identical"
+          ],
+          "answer_commit": "hmac-sha256:73c444fc1d98c8691c3da7e3c9c68a6e",
+          "explanation_enc": "aes-256-gcm.v1:kG8orYI5Kn4poPYL:xi19G5P4Sz6M18SkBnpMTymLWBVcn7KyTvnrfVAzDgVmG8fSQQiIdyCCvJgR8h8HAAfkb_PdWg5G_QQFPpWKNOeq7HyB6SsIAP2IHOf_TDr8pl8EBfRk0xWWU8VJnWF-QPJIGrVS33GRCEq6RhrtmSt0w2eIsZRO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.976,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-098",
+          "prompt": "What does the 'use client' directive do?",
+          "options": [
+            "Disables hooks",
+            "Adds CSS class 'client'",
+            "Forces server rendering",
+            "Marks a file/component as client-side — it runs in the browser and can use state, effects, event handlers"
+          ],
+          "answer_commit": "hmac-sha256:f8ecfb99091040ff3ca422342f8dcd41",
+          "explanation_enc": "aes-256-gcm.v1:WA6r5-vo80Gjn72D:YZfhtRTpW8cUjMiQwg916LQwk7KmAmF4JzhHKszMl1C_2We2ciex6Cx3A1_ge4wwI6x0y3zcdBqJEBV3jA3audWKn8wZ3dYuqireo8vJDQZqueBucaEiWh1To8J8gBVLvWGRIdKnrRkwRb9t1r7ldTTOVOrJRy7BuEPLsJS2NqQ5RvE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.565,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-099",
+          "prompt": "What are React Server Actions?",
+          "options": [
+            "Cron jobs",
+            "Reusable server scripts",
+            "Functions marked 'use server' that run on the server and can be called from client components — used for mutations",
+            "Server-side hooks"
+          ],
+          "answer_commit": "hmac-sha256:3ab0a1b8532713b75e01607d1a7e96bd",
+          "explanation_enc": "aes-256-gcm.v1:Odx1JO6d2X7TAqPn:71vU97-k7SGvMmMPpgwEF045f9O33_YKxIytmKTod3IYRtdiSgL_UUlUy_08VYP6R8IqUAf9m6b9bFYCjG-K47pk3aGc_tJGUETKT2dpV3C2PC_4p9h-Q7lNGjMEgVshApG88RevKrHUwTDlYwWV_UellOn2FsYQE5td4C2DRGnABnpavA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.957,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "rc-100",
+          "prompt": "What's the BEST way to keep up with React in 2026 and beyond?",
+          "options": [
+            "Memorize React 16 patterns forever",
+            "Follow the official React blog, build projects, read React Docs (react.dev), follow core team on X/Twitter",
+            "Avoid all updates",
+            "Only use legacy class components"
+          ],
+          "answer_commit": "hmac-sha256:c8a3de087db5166bc88bb6fa08c41c52",
+          "explanation_enc": "aes-256-gcm.v1:xJgZ3nwd6bYRFeP5:1o_whiX8BIiaeMoFOV8GXVV6WAgUuxSwgs5DHlU49kTpG4TvczLvD6FVUuYY4lAfxT3VvaSyUN909t87o2iaf7J1_2T2GejGUUOFGQoGlugKIQjQ5PZbJsHswcyc1SisUjElrD5yQtn-orXMdcYlVA5s0w",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.118,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:a37dcafcd370570594c582c5cb2a19609d0045b4b8107f7ed508f0ba8de1bfcc"
+}

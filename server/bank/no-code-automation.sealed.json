@@ -1,0 +1,3428 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "no-code-automation",
+    "title": "No-Code & Automation",
+    "description": "Make.com, Zapier, n8n. Build powerful workflows without writing code.",
+    "category": "Career",
+    "icon": "🔧",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What no-code is",
+      "skill_id": "rfv.skill.no-code-automation.01-what-no-code-is",
+      "items": [
+        {
+          "id": "nc-001",
+          "prompt": "What is NO-CODE?",
+          "options": [
+            "Code written in plain English only",
+            "Building software and automations through visual interfaces and pre-built components, without writing traditional code",
+            "Code that is invisible",
+            "A type of database"
+          ],
+          "answer_commit": "hmac-sha256:2b174b46eddf045abb8f189d3e638ed0",
+          "explanation_enc": "aes-256-gcm.v1:fqozQFOL5BjUjK9_:MGlZ8BAvUbj3JltnAPcb_Qd2KSd5ckm_mQIuXqTbm1sfoVLfauzBUPq_bglYIhCCEKVZBmLAuA8cmsMX9gXhJtI937339ohGlEVyqFHP90vs-g92UCWbwUXZ_yLK0Hh4XtFe0-ksGsOOktuMNVue6XhsJrPOdzEngioKdz_xDX-hZgYgvAPSznKLATO6iOGM741ukIOCh8LoaOh1IIdX7diUKObMcYyNJoJCXUTPGsycGSPCVFY-4OkmpY77gtJB-MlHetyJEsfxdSfN64upGBu8GD9EpZ838tFJVg7xOoODcjPT166eC-04IxZNTllQarIZbAP1hxVarRKRtIJDor2aagAmEft_zvd0h4Tg8-tUgxXqk54KeLSS24gTlrBbufv5Vr0brcqkJdE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-002",
+          "prompt": "What's the DIFFERENCE between no-code and low-code?",
+          "options": [
+            "No-code: zero coding required. Low-code: mostly visual with the option to drop into code for advanced needs",
+            "Low-code uses fewer lines of code",
+            "No-code is for beginners only",
+            "They're identical"
+          ],
+          "answer_commit": "hmac-sha256:34b6ad11a6e88b62aa42769cad2bee93",
+          "explanation_enc": "aes-256-gcm.v1:Sav7vY_Ll_Xgmaeq:bdavqQt7IV-dv4KaiUuau5LkOun7AZc435dhk3V-cIAcCOGl5Emsx79dEL4Rg9xh9wYYCt9C2eqchb-XgVrZtJZFWxEWs_dPj8wR4f2jk8Si3pTEdEkqKMxjvCoNEjwG4dM1-MgiDJD-Sohv_vpwWhTSVwiBJDEyt9VmV40KC_9h8zIKOUoOMmdWzxHQbxshfdNwDE9E2qfeZekZ0TA_26Gp5XbJbma4YQPOSOTBYSZwv8eutit7wdfAwEefu_rjijfchC6eAlBCeYnrs7eHod0bNkzGCQkErXd4q-xnvex1_FJgoEacpkbq29VC_Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.242,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-003",
+          "prompt": "Who BENEFITS from no-code tools?",
+          "options": [
+            "Only beginners",
+            "Only large enterprises",
+            "Founders, operators, marketers, freelancers, internal teams, AND developers who want to ship faster",
+            "Only non-technical people"
+          ],
+          "answer_commit": "hmac-sha256:5b610111a70f7ea1e119579239866829",
+          "explanation_enc": "aes-256-gcm.v1:8Ei3cZfmqPeZ0orJ:VbweOZzNEbLVCt4VIgaghAGD3oOWXKshyd9qH9RDd9BfLMr7unaBCUto6pLmh64736aJOsQC2me6pxmf0xTJvrvFG3cmgiCaURJH4hjqQMsi3imWfB1q59_lnPubfcNZ-DeGXuUBrBi8QA42alO2M2qjbSq3RbrIvI7fHyaTI6Ucsz8SEcZFVI6fA1HU-FU_wShoFHk1C7yR_z32Jnp_ps4CKkiELPS3IL-_EWA3oJw5zlWKtEu6uSKOXUzMWXZF5DJLWRQTyEm9L-qWLxl94r9m6Sq1PrrSTkLu5xyLqHx61re8Vodh8HJS36Vzxg2T2yxdsG4c6G6B-9ofE1Fz0g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.96,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-004",
+          "prompt": "What's a REALISTIC view of no-code?",
+          "options": [
+            "Powerful for many use cases, but with trade-offs: vendor lock-in, scaling limits, customization ceilings — choose tools intentionally",
+            "Useless for anything serious",
+            "Free forever for any use case",
+            "Replaces all coding forever"
+          ],
+          "answer_commit": "hmac-sha256:d6c36d3a37a6f6a78cff52de941d543c",
+          "explanation_enc": "aes-256-gcm.v1:d3knT4m0vxeXRfG5:0iBl2WP0AbHQnq_WDqrk8t4SPU171hJM7QikesSalSny1aTo1ptIzfUXcjNSHk2UemOnNvX-uMwUja8mo1MHSV-HamyNzbLSco4mCLVKyyxwpExT01LZb-w-9uERJdBqhxGn8jcz7ii1ORxcHumyoN2p9ek5aSZ8XwRIWqx-XaVpJFLLSrkDLCsZ-iHW0K8pneK9Ty3k0_z3T5--DJDcK0CsjDo-PvIfc3LFbo9D7-ZgqBzACcHhnH-aAFrD3z58c__q1JWdb3ytbufT4sFIk5pBURR0b0DKC_ZJHHhWksGIWEmd5jg5FKVFPKIvFwI-Ffut",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.586,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-005",
+          "prompt": "What's the BIGGEST misconception about no-code?",
+          "options": [
+            "That it requires no thinking — you still need clear logic, data structure, error handling, and systems thinking",
+            "It's always slow",
+            "It's only for prototypes",
+            "It can't reach real users"
+          ],
+          "answer_commit": "hmac-sha256:3556d8e52b7f3706e06276712503870f",
+          "explanation_enc": "aes-256-gcm.v1:A4tbukuJ6bz8vlL_:uvL5_ruzxW5KkNUL9QTzBnS7oB-Ik3d4DlCVYpX3l_mBKioitvacOSCnmtSlj8Y8jMSPWxGpHVldUAksOnc8lc2w0azUtpOf0ZwrIvubEo7cbZAOI67bZ_H6QC9rLpKJ7zXw_SzK_1CpTTCJTNMOcCyA08eDHjAEVUF3Y3y4Wts3Kv7XWEA82X0EdutRiQDHHFkuFmV8KPBMjstKWX8Ut10_NtBbC9maQFVQFB5Fs73d-S3gR9I8viZRcnQqrXqW1xI_YKjcAUSJy45ho8FLFxSvlU_o7JDkzSqjHSSJdrhMgmwmy5Mt2GFXIj2QG9OwQGFlLVHc0PuOrUoZmyE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Automation fundamentals",
+      "skill_id": "rfv.skill.no-code-automation.02-automation-fundamentals",
+      "items": [
+        {
+          "id": "nc-006",
+          "prompt": "What is AUTOMATION in the no-code context?",
+          "options": [
+            "Auto-generated code",
+            "Connecting apps so events in one trigger actions in another — eliminating manual repetitive work",
+            "Robotic process automation in factories",
+            "Self-driving cars"
+          ],
+          "answer_commit": "hmac-sha256:34ae9150126e0d4170cc2ad59cbe16a4",
+          "explanation_enc": "aes-256-gcm.v1:wfFqE_nXS5e5r9c8:zgyYIeTig_fQZdCYMH1SiwK1Vtb-XQmhl0GGb56aYBtIP-9oP84SRbdACYNFcO9jxfK5JzLkHe4LMUbgYzyEok3gTzOSSnSWZ0ZlnOFYUmkd4UbRpn2EUZ8FMoMAuzF98NXyHAvVSHbyk_IkVXfsY-5Tjosgr_dBh251maYYbG602sYNWuLJq8ldphhxCJRI-6sv47GNXTe-X3RQ7wXdVrWNtYtMGHMiR-YrorluYokiqz8OUJNaqUU5VLu5cov9fFeTU93LmE5_z8OJb9JXWv2315mKdFkXp6YRdEaddTjhCw3f3yliiVmC3cKtezhzOz7D",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-007",
+          "prompt": "What's a TRIGGER in an automation?",
+          "options": [
+            "A user clicking a button only",
+            "The event that starts the workflow — like 'new form submission' or 'new email received' or 'every 5 minutes'",
+            "A type of password",
+            "An emergency stop"
+          ],
+          "answer_commit": "hmac-sha256:14523e20dcc0298d2ca6186f2ee1a028",
+          "explanation_enc": "aes-256-gcm.v1:9if3zS4_mZVRBjwU:WUTMRmJ-EghiDLzqoE2O6qdh104K6onk7WW_ZwRVyMf11BR05LfH-pj3zTu0lSmju4SSvZfbjQ4d8CQ9bqzMhwbaOXvc0rYr5TTrRE772NvnB6xTORXzV7iOh7fnTgWPZ-Po05MnObT8Od5rR7u2J-1ubwCLaejB3lcr_DjaOWTmHRO7LnRR-cM7r4vCAAktRfAkQLeZ4_HC6QlEbpYT2Ra9nZxm1gd2Nt8qewomNK06Lf_xVp7KJ63KKhfvqpVuTChgex8m5xDL1PlF7GTaIG8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.724,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-008",
+          "prompt": "What's an ACTION in an automation?",
+          "options": [
+            "A type of error",
+            "An emergency action",
+            "A login attempt",
+            "A step that the workflow performs — like 'send email', 'create row in spreadsheet', 'call an API'"
+          ],
+          "answer_commit": "hmac-sha256:5f3c4991a736219aca5b3555a6a14348",
+          "explanation_enc": "aes-256-gcm.v1:aQf1nNREvBmYkK_1:1hH_hBDjJFRKZQWyQlGyvUM7rnLETMMBBCxQghAvKLvdyj-UtZMcttxOko7hn7pbSwBRfj1dZNyM6w-GYYjflM0gYP5gZm8gJzQY8Wdrcb6OfIuJ7U70LPXKVJVwTO4R-mDs9yCt8RlS5htRYNpwzGyLZK0V1jhRAFf44eXhC2uYgdXY8Ap-9sd6UIQrE-2lc-LosWK4emq5aGmsUOSDqMAo2LPQHOCGmtVCznlx26fwE2cxNOcXuw2Q1yJ-5H1pd1LuTtZQZNNzI97TLjxWjUTD2mp05Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.105,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-009",
+          "prompt": "What is a WEBHOOK?",
+          "options": [
+            "A backup tool",
+            "A type of fishing hook",
+            "A meeting",
+            "A URL that listens for incoming HTTP requests — apps push data to it instantly when events occur, instead of you polling for changes"
+          ],
+          "answer_commit": "hmac-sha256:46aa6b01472254de5eb73fa06262a399",
+          "explanation_enc": "aes-256-gcm.v1:iBirv3-sQuWc-9Dm:P8INfYN6YS34ELKPZ5H6twH4g253ebcIEcWwo9m7DkAkcQG4cyVi0yRhrGwsJRvy3NUOYNm1OgIZ5xqFK7yF5eDkaj3e_W1q-RQhvX3y5IISdnhb_EcHA1C8YUmJswF0_nCNAjc_Iip8v8qY3XG0c2NlBBYbtmjxjqK6wkMgmfMwg3TzmiCPV7i0HLHyHqVUQo8LccZVg0DbKidWlsgng1Wd0GN1ARtDyXt8wV9UxZD0tflJPUjuVtLq2uOBs4WOwUWQwu4jGrx1nVtqo3PQj50GZhFfQoW474gSrMqjJRoNlPrLp4cjGqS4OhdSQ8PwmTmX_1QUlzGJnVXTMX61miTs5XiFiqTqro_i",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-010",
+          "prompt": "What's the HIGHEST-LEVERAGE automation to build first?",
+          "options": [
+            "Whichever task you personally do most often manually — you'll catch bugs immediately and feel the value directly",
+            "The most complex one",
+            "Anything random",
+            "The most popular tutorial"
+          ],
+          "answer_commit": "hmac-sha256:03dc58b7e3f8cb59e5edc8f8f265de82",
+          "explanation_enc": "aes-256-gcm.v1:WwemmZmiZeetKOA9:zasK1VZbMcb8aJJsRO7Oo2NNQYuNP2RNceO0iXL5IuNL28Wv5dqAvZCIParqAiAvv-44xpFAb-ukqszQ0MaIRSG7KtCt0qg4C9OFXb1194OIrVu15NExpcHnAp7EGiZFlFMWfutlCvwDJJ6lTMmDW1sX4uUAWrAukBF8lkXLi6TULCAWoWEWcn4w7DqOK_b8fNA8zeQUa6Goqe0bbRZBsTrE4QGIagJHooxXWJO54rUr2O0oxtAH-E15bzMzVcvnWGcN20gakEI2r3E1gPDOKF8QNg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.48,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Popular automation platforms",
+      "skill_id": "rfv.skill.no-code-automation.03-popular-automation-platforms",
+      "items": [
+        {
+          "id": "nc-011",
+          "prompt": "What is ZAPIER?",
+          "options": [
+            "A pioneer no-code automation platform connecting 6000+ apps via simple trigger → action workflows ('Zaps')",
+            "A design tool",
+            "A coding language",
+            "A database"
+          ],
+          "answer_commit": "hmac-sha256:3df15abaf86ac0fd9b0ebb7f1cd63816",
+          "explanation_enc": "aes-256-gcm.v1:wzNW6Z6zHFEh66go:-phqbBMpJrrJuTaZ2hAkCIDu9t1qzjrYNCgwJhJAHPx6dVc0D-CMFE97P09XCS-nQ6LzFnkwYJhSBB0vHQiJLZ-LlNpZYr-_o--ZeKDG0IueSFZ7Pe3edblw7Zv2R92fZy7FIp9CV53Ld4l7Wm8ZsTKDYjB7WqwhNt8ZnHxOCGKJOlKCQcbnbyJMH6P4kWxctsfBdgh6I--gbCTiEzAbiDCZgZ1ptw4mcXRxw18wtchMkvc18bcvUSF6S8EG4H0P9S00La1W3I9Y2fC7qrB5K5LKOK_VJvVqmUfsy5Q5YVhFbXns6aVgdUm54A-iDD0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.235,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-012",
+          "prompt": "What is MAKE.COM (formerly Integromat)?",
+          "options": [
+            "A type of database",
+            "A visual automation platform with more powerful logic, loops, and data manipulation than Zapier — at typically lower cost",
+            "A social network",
+            "A search engine"
+          ],
+          "answer_commit": "hmac-sha256:1dc8576917166f17e91494d559899c2a",
+          "explanation_enc": "aes-256-gcm.v1:SD8AtO8Mi3iRS7x_:2COsq5NspdS5hsd9VqmywYXvPEnFUtL8KvlyZ9FqvmbBXUVBP9y2VuLzrUt2ZtzWUmFJwqI7pNoO5CKQBjdQ-gqv5EA60SZd5o8HtSmC4CKSEjpUxiY5C5bK8gGalkosnR9KBrrN7z0BIhkWNWW-Erp93Er_2VX05No0fnd03E7NaGfWEHDNzrEnqkx7lkF-fOFyr-_1tmLSLC3zFj89belWXALm4mSInK16xEVdB4LzkQ3_Z1DCVl3JKxVGeIMwFKP7ytQSFemBkfe5aMTHfmo0NjOFJuKv2sUp7t8y7jPjUf8g_sfqd1hSSWgLRYfMPtt3s9iDdQs77jXNy5GRQtr6RA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.722,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-013",
+          "prompt": "What is N8N?",
+          "options": [
+            "A type of password",
+            "A messaging app",
+            "A database",
+            "A fair-code (open-source) automation platform — self-hostable, full data control, free if you host it yourself"
+          ],
+          "answer_commit": "hmac-sha256:a7cf3bd80ec52b1d8797be6c0b524e8f",
+          "explanation_enc": "aes-256-gcm.v1:If1TAGOjLLDYaAEF:32Was9qFZ_LWOQi4VSWr9CZ9ory8yms6TrcQ50oo3caIz1oC1KDRRkZ6ynzMExv2hm08gFkE8hbTSlO9iLq6nsVmnU4PaNVmdy1tSP5lQV7TC6IQLAOlHUqKR9uV-tnVD78XV2Vih7nUiM1979fmP6_r4FmEIVJsNhebaSzellnBvsrBS3NAeX3aYHVwjQw0KOi6cgrA3j9vGdnzRYQN9kPXNSt19Gm4gVRHKzwcC0qBSkmniUVTTdqK95CgiHYbZnH0nGhOTmPhd2KSc5NFCAJ4BhnK8-JYnGy05gMrItHOE6XFDOtM-Dido3OriSNMCCs0lEybWFyXBs5t",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-014",
+          "prompt": "How do you CHOOSE between Zapier, Make, and n8n?",
+          "options": [
+            "Always pick the cheapest",
+            "Zapier: easiest start, biggest app library, premium price. Make: best value for complex flows. n8n: self-host for data control and zero per-task cost",
+            "They're identical",
+            "Always pick Zapier"
+          ],
+          "answer_commit": "hmac-sha256:093125e42a36c04ed34fab045e6f71c0",
+          "explanation_enc": "aes-256-gcm.v1:URfEa5qlXA8gsY1y:9U6PjBNX4wq2xtFRO3S4zYFT-b13PhRcNstOZ_1zw6zi0NiclzbUUU5EDKel9qj_kFulXpgLvtV2Ko7herVyigc-yW3EWxsd8ybOZ98nfgx3c5GlvI7UAg-li5L2_jotJDSo5TFkAvvgp2uhJ9B_EShnRaRF-wIwtqakADjMtBTRvZBGupJdLDn45rB7eTt2n07U6XIr_pn9vJXyQWjSN9EaAD3DWIfmbCKK-NYgAEwj_phI56VJL04wuE_eN_MVIuSPSs6K028Dhj7GDfSe08Hl1qw8fg9GjJhjbiHlzswjPawUTyA_0MTZhpJ8EVvOsq5BAQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.208,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-015",
+          "prompt": "What does IFTTT (If This Then That) do?",
+          "options": [
+            "A database",
+            "A coding framework",
+            "A backup tool",
+            "A simple consumer-focused automation platform for smart home and personal workflows (lights, calendars, social)"
+          ],
+          "answer_commit": "hmac-sha256:c0fa6973503d5fface92c05c744039a7",
+          "explanation_enc": "aes-256-gcm.v1:5lEqMLK3GPK6nsI4:slldmP6_MQweqxUN9b_Iv6jiJG8t5-CLUcJvkwL8G5liGitUiwoBzFzBBf2NSbH_-5MdgdWKbqzMpUOZt24U8ON8HAFoiqp41oOsCanGXErGLJr32nvYmwwdvHERsq6geJ5P4bqpLPYp3hZzVja6eyYqUXbKzBcZ8Cw9EtcQHwllgaMQkpnF810WOIY2p9dBOkn--46_cIwiXEJA_lfBWIJhiNPVYKOP8mLr8wyxCMd03T6aptexrEmzEZLp3lhLJuUjXjCdKKnYjUvxVcesxjTL-cMXJbBP9mwt4nAfwMW4UQkdZi3unJ3qWTMsXDZha6xhAvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "No-code app builders",
+      "skill_id": "rfv.skill.no-code-automation.04-no-code-app-builders",
+      "items": [
+        {
+          "id": "nc-016",
+          "prompt": "What is BUBBLE?",
+          "options": [
+            "A no-code platform for building full web apps with custom databases, user authentication, and complex logic",
+            "A messaging app",
+            "A social network",
+            "A bubble chart tool"
+          ],
+          "answer_commit": "hmac-sha256:4aa5aa31ee7c6af6b9a8bd3f0fd5507c",
+          "explanation_enc": "aes-256-gcm.v1:b3JpSIPfERWDVS0B:SVu6XcfpmiZ3CN6186Oq6H0elqxN55VC4KsHyE0v0JJg7EPtW6dQP6wHwxdLeiKFOTJpKCWPL3Y0Rj7tY5qwGuXsudNq3DarVjabpCifrBF2aYtu2SuLqpiDcoImB5YoSMiDRCuuR6uqbV1zwhJWT4PyXK8b5nHYDt5WoMvMOr8chKRi_Z4s8H7vbt9-xq1J3rVdnC8CizOSxvIpUllsvMjnhnZn_NUJEFQ3demWVn_tHWDpdVmYMErZ4W2VN-z3a9h70R7UE2U_OmIeXyF-kyF9-hy-brQQyan9nmUinO2smijcLVHFNi7B9bRFTGm_OwDxFGPU_FkM9kZM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.632,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-017",
+          "prompt": "What is LOVABLE?",
+          "options": [
+            "A no-code CRM",
+            "A dating app",
+            "A spreadsheet tool",
+            "An AI-powered platform that generates full apps from natural-language prompts — built on modern React stack"
+          ],
+          "answer_commit": "hmac-sha256:81ee3a350b7c6ec15ac6b741369dc151",
+          "explanation_enc": "aes-256-gcm.v1:06UYX-o8ZZuIfOG7:fvaUuEGjqhtElkkIu05gDLnXzw7ivp5awG0OOI8NTD1DvJyKp8YSUhfMGAxAdVQcMkhn8MxFPxSawtJpXrw_AGxVN_BPNDRORt1BXFvgVHHwtgJFxQIgRR8Ge-m2Hw1ABebFTnCp8qeb-Pwqn00Xd61t7lZ_vX7DV4rWI-dopVUObsj7XYsBAmurP9ndOrA3ms0xw6qtEiWyw7v67PiFvZMiSv85W0WMAMzI5Qx5QXvknwiOKhUyco3dqyCxqywrpiulN_w_Q1IGSbhAPa7HHAAOajmBKPhVFASS8Oq9Dh-JMELgvNR_PvVYfFQA18wZRiJT0yeylQo4JwOt2CdXVYweWOnN8zw7Vav9zkA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.944,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-018",
+          "prompt": "What is GLIDE?",
+          "options": [
+            "A presentation tool",
+            "A skateboarding app",
+            "A messaging app",
+            "A no-code platform that turns Google Sheets into mobile and web apps — fast for internal tools and simple apps"
+          ],
+          "answer_commit": "hmac-sha256:cace56baad622dd7647f7bb51c31bd2c",
+          "explanation_enc": "aes-256-gcm.v1:RhHiAcbGHRcxdZX7:f7pZB7Jo9A5kb62s-gthN8dQxLIP6C-cuElzip7vCuQokPFBb452VGoI1SC226oL1BCiMewSjjX8hczdziZvNDjDuEoQHtjIj_zevu4v2O8k5bUEuvxAhcjo1rXsW4JjIYDAWXqI63rxkYcUCEy_wcZP9HSL7AE_4zZJc_Rk4Ym6uqt-Ajaxa9iBCcWtoXNpJKZTLLK00dteS-2y6cdWfJn0RsgT12ged3zWT3w0XkMmE4PDhUVc7Tu9RwnjjQd0crDfNDMcWWQ073wNfIay3yMvYIs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.789,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-019",
+          "prompt": "What is WEBFLOW?",
+          "options": [
+            "A web browser",
+            "A type of WiFi",
+            "An animation tool",
+            "A visual web design + CMS platform producing high-quality production websites — favored by designers and agencies globally"
+          ],
+          "answer_commit": "hmac-sha256:76f8a4dc2656db24e48f55a67af2d2f4",
+          "explanation_enc": "aes-256-gcm.v1:6DIu5-r6Y79kt-fh:TTqNZ04CgvxqmmN1wPsziWF2TJXNegAuzqnIhsPhaeQgXKtHc1yd0qu1i9gjAnvFNdXUs1Xg0EvaODQql-e1O65hmWQOvvQ93kTz0z-yxWXnaqJCaYac4gsPaRTsNU4i3tuY6QY-lvhBt4LiTEB63Dq9ctZ5QnYlMraJ9Q1Y0MZUdRgsAAV-bBJiLf8H24Tk8_VzOY2QNwumJaXCUP_1Nx8eECMJjoGYr88KLMin_D9anzukYiqBE960lGuEeRx-IgV2wT8KilT6R-HFHeS_bjGktxx4I5ghCIuG3HI7j_h0Zc8Q-cn4JrhObSb9",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.176,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-020",
+          "prompt": "What is FRAMER?",
+          "options": [
+            "A design + publishing tool with React component capabilities — popular for landing pages and design-forward sites",
+            "A type of CMS",
+            "A photo editor",
+            "A frame for pictures"
+          ],
+          "answer_commit": "hmac-sha256:98ec02747c1901bb4c753e832e641b17",
+          "explanation_enc": "aes-256-gcm.v1:sdm8WG8mxeYAVx12:QRqEH8V4YM_A8O5fx47pLVNmFshuekzeitBx70jxGfpmY1Fmok6e7u6gElLqCXVeueraOTBpia7ezcsCl1A4bIUOKihVxhZQOz2Ff1B609xX8NdtuxsM3i-ZfDNLhEacC_M160EXqUcyB7SZlIbO0p9Q_0Vb2DInwI0uTX2UWTqL_J1q1Tm_fg34W_IPc7aGnwsOv6Q_lHY0deNWetGwXiH1Hs1xqeZME-CEIpICO2Ns4o1_AQgQr-PgvC-lrGEpFMVtn-Px_0gHGtirXOfZwnHm8-wcM53wiE8aHH9_OOBC3lfRDLhbH-QfMQ3U_Oit1w6DmKKVpo7L-MxUYte6oNN9rfB54MYc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.65,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "No-code databases and data tools",
+      "skill_id": "rfv.skill.no-code-automation.05-no-code-databases-and-data-tools",
+      "items": [
+        {
+          "id": "nc-021",
+          "prompt": "What is AIRTABLE?",
+          "options": [
+            "A type of CRM",
+            "A spreadsheet competitor only",
+            "A spreadsheet-database hybrid with rich field types, views, automations, and integrations — popular for ops, content, project management",
+            "An air travel app"
+          ],
+          "answer_commit": "hmac-sha256:2b07b977e3791d8d9a0df2c2f0131045",
+          "explanation_enc": "aes-256-gcm.v1:WmNYpukV-IbDb92w:uTKJAqazLPmfPLb7LikAwRLZ09X8iIZ0ASVSrnWkfhY-xpOdUg8Q88jiUt36q63ckCduAVl7pupquTqVNCWnIQhrCduXp-xLHBVOC923XjyOZbYplWtF9x84AfSLnOAo0kYvP6r2snh1TYm3Ft2JddWc69_t52PCcgm6SM6hjv8FbxNJ46UHPKyIXBvPtuHm9CVsqd17kyjgj5FiWD9Z1aKVFyrv2qH66W7IKSp0xlzE6nEjm3pMaRk8W9cpaIhxV9VALYQ4Vsq1ci3ourQGK-93lDULW3TfixyYKUIVZ-eG_Y8EfeSy_dc1HrCH47V4JRUqK0qZmbvGrgs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.69,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-022",
+          "prompt": "What is NOTION?",
+          "options": [
+            "Just a note app",
+            "An all-in-one workspace for notes, docs, wikis, databases, and project management — heavily customizable",
+            "A messaging app",
+            "A coding tool"
+          ],
+          "answer_commit": "hmac-sha256:6396d3813a02849787bad4f70accbed1",
+          "explanation_enc": "aes-256-gcm.v1:amkH02BxsBjP_I3K:GR0v4CCgyxgWoiBlliMXw10C-xt9epCnU2lZyQ4cIGDoKfHoALIWeE9pZb1w9dDPTIZU-l6wectSMtWVNHmfYSMCbbCuqBg31hJ9hUpLXja5-CToKqgvt0PPQ6euuqlIVcn6Oyp_mldd6-IxMz-XWUfytg4IJsz4LAq7xPQXOOM4eJ0Q7UL7d2HrRKoQP86eL5UCTJwBgP9rDusujz8Zt_8byJe0TZMbEN4zPFpt8j95R-QhS5Q5U0cbMBk36SG4fadWLo5VA_TVNQbu_wSFgdOJehFyxCr9GyESmwlRwZCLyobEVWdAJulnpCMNqxomLE4T7FWJwVLliIZYtxPI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.933,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-023",
+          "prompt": "What is GOOGLE SHEETS used for in no-code?",
+          "options": [
+            "A simple, free, accessible database for small projects — easily connects to most automation and no-code tools",
+            "Only Google employees",
+            "Only spreadsheet math",
+            "Only personal finance"
+          ],
+          "answer_commit": "hmac-sha256:5e549fa3c1c5c4aa0eece178ef50dbb1",
+          "explanation_enc": "aes-256-gcm.v1:0lgk9FvKxzDjAiaB:fMpgimnBp8POcleLSYyr6l_kXKu9yV69YjKjxzngOXdbku6J_bA8_8hGPqgrS0Bp-F7Sqp_q3lVA1oMsgkpFNztpSWVNKc6vpF-nUjB64Ys76CWOCNjCGIP55bPpT3snuWQEYvmjed-kqQlBnALnc-qfxOJ2_YHo2DZUS1GGxlGkwjK137iXTZ3LBwXP26M8iZ6pHrVugBRG_RmADm7ceXY4cg2lCDBjaNhcF1kpGUpc3XgXeTcM9IU38c48dqxHHRIz-NssuMfpVM_tYjv4wWbov0Hvvug55C8idLmKgBJDi0gOhYEkP3z4-ZipEWIfPz2wZggpsF43",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.19,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-024",
+          "prompt": "What is SUPABASE?",
+          "options": [
+            "A type of fish",
+            "An open-source backend-as-a-service offering PostgreSQL, auth, storage, real-time, edge functions — popular with no-code/low-code projects",
+            "A drawing app",
+            "A submarine"
+          ],
+          "answer_commit": "hmac-sha256:c6eb2b4159d239b77eb0f0540e04ceed",
+          "explanation_enc": "aes-256-gcm.v1:sJGnQoMX1BDcf8re:KJef0v56IJCxTqbaNQcCZA3zpsfZooL53PtfJ9_dzVv3Di_1uIioYViVIqeJ0yBzasAQ1leXItvR86FHhE99YKlZzqpGyqgw6llEe1o5M60xkGAJjog3V6vE2R712UA5hB1gUytXPgGRHNjZ40PKeNeHAflNYz2sMPWt4b4Q3qwHw1491Ktky3LiSnrtpvbdAJA3J4U3ApxzVg4Lu4pZQhY4LJ3HePeZkdk4pahZ2FJV3iJGjS88VOG5FCqzLPKoIniG3XMu7Kq5uWXwm0MRpHf7rxWWg_vJmnXOy5t0E8yhWSr-qLo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-025",
+          "prompt": "When should you CHOOSE a real database over a spreadsheet?",
+          "options": [
+            "When you have many concurrent users, complex relationships, high volume, or need fast complex queries",
+            "Always",
+            "Never — spreadsheets handle everything",
+            "Only for enterprises"
+          ],
+          "answer_commit": "hmac-sha256:e051e89a984cfe09911b1451c914c0a9",
+          "explanation_enc": "aes-256-gcm.v1:SS2bZpUP2heFfI16:e3WRk2vT3jb0LGkCeuVO4N52KYnx0V9wW96IoXPb2AlINIOQrLYBAvpw6QqlalKYhekwwI8JZPdbLTthgXwx6ORGakc7RDks09uI1s67y5Rgu6kjXvd4uerIQDvVT__NQ1Cr8R_Mguq2kFEzL_Oe92eFF9qdKNz3V0cTqxcG9yarW62vSmKqmQq7sCFEmLxNvUJTWSS7eKff1l5yO6utrsh3ppGTacRWoe6flOOQnbGnRQ4kezpk0ZaV_vANPE1HnUdQVdkpxHNHjwTcaCkDnxh_sN9-150Pjlnhp6AcxC3NLXoLFVFRJFqWeTE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.658,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "AI in no-code workflows",
+      "skill_id": "rfv.skill.no-code-automation.06-ai-in-no-code-workflows",
+      "items": [
+        {
+          "id": "nc-026",
+          "prompt": "How has AI changed no-code AUTOMATION?",
+          "options": [
+            "AI hasn't affected no-code",
+            "AI steps now process text, classify, summarize, generate content, extract data — turning automations into intelligent workflows",
+            "AI replaced no-code entirely",
+            "Only paid AI works in no-code"
+          ],
+          "answer_commit": "hmac-sha256:1e950433c6650e287d20d60b84c97b26",
+          "explanation_enc": "aes-256-gcm.v1:4HLSVGJboN8p7HA6:6c1UKGD2vHXljUgwyVvq9ewa0Z6LpSaysgIaVuAHLdo9RRGGdGFhNr3ie7QSkFl7d4RjNsYq6z3sDmPIbTJCejEyUoPwaTfQpJqHekKH1BeQqBw_YmeSGhBiOfwN2SndYjWJHO0qnqP-QYnmBoq7ybqF3eYOhXFCdLVrXbSEpNsdkBb0FRgllWFnfg-Sjq69LvrdtP3M1ayomglBIzDgRBajDadXf4a7TAheI3m5x_zfX3PF1S9XD471HPaKJn9zhEdnx2NcFW8yHIIdM-ueq6RTBxyi6uAOH0gUyI3zlUXatdB0bP8ZVQSd5K_KbqtQnfRg5mphGyUSpf-B",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.379,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-027",
+          "prompt": "What's a CLASSIC AI-enhanced automation pattern?",
+          "options": [
+            "Form submission → AI analyzes and personalizes → custom response sent automatically (proposal, reply, summary)",
+            "Random AI responses",
+            "AI doing all work alone",
+            "Manual review of everything"
+          ],
+          "answer_commit": "hmac-sha256:a3ad4e28b60d5d2ed4bd5a1912c6145b",
+          "explanation_enc": "aes-256-gcm.v1:y34Fk5Wz26uihNKa:2ftcqnYW5B63TQK_ZNYbYKKII7y7ZKNgGpKLnWwK7aO5t1seO9JxBMa5Dhu393T79Jua2Z3rkAOi8QTCeSe3w1pkxkAGvTT7q7gYx7xncPiTH8s7HL0RMGV5LTmgU6HxgHOk5N1w5d5_ZD9GCcff-PBGQ2xvAaX7shXgRXS9cqOgJBWkYxolmYeMTQ-Id0n19py3xfrxzwV0S6WsHTSSAvFCfFOimWhCfg5OApqlefOr7QZp06TcYdKJ94LAg_py-UPxXzr2ySfQsDFLN25_BtlsWVzMh1aIY5Z3CMUfXqP7jO9XRXECwxoS4g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.074,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-028",
+          "prompt": "What is an AI AGENT in the no-code context?",
+          "options": [
+            "A chatbot only",
+            "A human salesperson",
+            "An AI virus",
+            "A multi-step workflow where AI plans, decides between actions, uses tools, and adapts — beyond simple linear automation"
+          ],
+          "answer_commit": "hmac-sha256:9cbbfbe042bdcedd9910795ccf1e75cd",
+          "explanation_enc": "aes-256-gcm.v1:NYE69B2we5t4yJtK:ygL7ATuS4rwbw55uinkaCUBVp7LsohN2r73wPsbJ5A8OK62jSsAl22l_1Tb03Qf2ccbAB0PqVF0orlRHzuV9KMve2MJ7i0Oe8zfo1OrF8dUvGHe9co4DwRyzhUMZzxD05jIyxJwvyeUc50WQF4E_OLu5iPXNDNvXrlkJtg847OZ4rSgrec4pWY4t-8VGBl-R32bD9XrmFo7E1EfXQRsoXwt_Wc9tUOAJCkvXp0g7ho8Y3SCa0CvxuDbLAXkwSbncVfGB9tOPGVCWARLb9su0T6rrLlp7LBUuK74d6PwIvX0tSM17HEm0hIffLj3mbr4AjM8rhFREBzI7v9k58eWlepea52jgjw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.263,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-029",
+          "prompt": "What's MCP (Model Context Protocol) and why does it matter for no-code?",
+          "options": [
+            "A type of MIDI cable",
+            "A backup format",
+            "A new TCP version",
+            "A standard for connecting AI models to tools — letting agents discover and use external capabilities universally"
+          ],
+          "answer_commit": "hmac-sha256:0ce5b4b08b04914a6cc63c4e0537fa4b",
+          "explanation_enc": "aes-256-gcm.v1:kYMtyH0oPBLoiLyT:rs17wsQSGMiHAT8Iodbe1QF1jia_yEGzEyUUHzpSyow1iS4Asheg7qQUBZifgZDJmZVp1uY_89ZhzfBV7_yeodJ1oBkmEXfXrnhoTK3hbkQgJc1ZvD-S6O0Vbf03XVXcHzZx4GYPzpIKiepI9Uf-Az7MgFQH7HYzeEjJehik7qOufrnMYHwhAEIZw2LV-mKTSxXJcxHCnmvYAU2yxjGRVE95xlZUyUGTXPAC_yx52dg4rkAaMP9L5ADMTTyKSnTv00KEKK4jshLWCpZdTBOXJC885oA_4-RtwMTdQBBW5Cw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-030",
+          "prompt": "What's a SMART way to use AI in workflows COST-EFFECTIVELY?",
+          "options": [
+            "Avoid AI to save money",
+            "Use cheap fast models (Gemini Flash, GPT-mini, Groq-hosted Llama) for simple tasks; reserve premium models for complex reasoning",
+            "Always use the most expensive model",
+            "Use AI for every step"
+          ],
+          "answer_commit": "hmac-sha256:9c8c0ef58ed21c0cb364bf1d9c55f99e",
+          "explanation_enc": "aes-256-gcm.v1:DMxCCtsGMpqQSIFC:XRhYi-kSDxIQybwB_HX2xLw6lqfy5uqZykgsatVsn1c67aV8o0fI89CoRnhCbuQ3PV_oG2_KEa0z9-p-Qiyl5ccas7AbllhO-vafcY1WCb80hmHRKt1vcjxSonaciT_h45yd5VAAa9eMURbI-OpAtWHSOonEjzX_AOZVFKynNgnW6ETRGRVz98KrRJeecu0ry3JV6uhVllWFmhYTcGo2Lc1xQOq_xGOeju8ffCo0bdCenG7i-e8T2E9tV6MYPHNQpdgT_7OHddNyg-EqabWeb93dn708Ri-4a6vTg-KWIrci3uF6esWHDT1eOntM7MH5dNg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.657,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Workflow design patterns",
+      "skill_id": "rfv.skill.no-code-automation.07-workflow-design-patterns",
+      "items": [
+        {
+          "id": "nc-031",
+          "prompt": "What is a LINEAR workflow?",
+          "options": [
+            "A type of math equation",
+            "An impossible workflow",
+            "A simple sequence: Step 1 → Step 2 → Step 3 — easiest to build and debug, fine for many use cases",
+            "Only for AI"
+          ],
+          "answer_commit": "hmac-sha256:5e8e761097b0c1cfed9f3bba1743b6b2",
+          "explanation_enc": "aes-256-gcm.v1:rRtx7M_xQru35ZfQ:wNkMPEmg3S7gQ7uOjj_5tbUPiEvsj99hRcBAq3j_2VVIPuzKI1nZROSExlkIUz7v_wojnna4tJ232ZKWaz7BhGR1TJA0wM58AvWRqiIpSYG6obbE-JMviJeAq2f769gDrRngYXzyBT9wKGUGxELu1P-m9dmfcOXtn32elKYUiVDlSugb4X_aW929bCYEhXsZ20IS8pBqYp80638lVx5azUoWHQZpoDLjUv2eEY-DEUXzfyyKb8GNo6uAs3QdFZRkylL8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.217,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-032",
+          "prompt": "What is a BRANCH (conditional logic) in workflows?",
+          "options": [
+            "Routing based on conditions: if priority = high, send to manager; else add to queue",
+            "A geographic location",
+            "A type of error",
+            "A tree branch"
+          ],
+          "answer_commit": "hmac-sha256:9df04442ac83adc922b6f446fb4507b2",
+          "explanation_enc": "aes-256-gcm.v1:Vp0oMwvYqtyneRZd:LmDvXqvwZhqwoyT9lcCXPWb1r5jNnef-xuI8-uYSJIzpk1cqW-gksSevrFPmdMPV0iCWAKQ3nu1nY1cDPIGaJPI0m6qvxFMy7RDo6M_2T4h63QHP-KLKERHAl9fFtyOIlaTkIZ8PVJMYZQLlmc76w-vVcGpA4HfKOKYDK6Z5HNbHN2o6dcUbPsRjW_RBAW2lt38UlDNVhqhSsWCHcdqZ45A5G8cJ-JEYlIyySClviHBMSY7wHdpDZAVxkX0roIXU9pXcHokoETrq0ayBlk7KqeT83RGRqLeFK9DPgmRBXKx42rd0410",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.952,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-033",
+          "prompt": "What is a LOOP (iterator) in workflow design?",
+          "options": [
+            "Music repetition",
+            "Repeating a sub-workflow for each item in a list — like processing every row in a spreadsheet or each new lead",
+            "A type of trigger",
+            "An infinite error"
+          ],
+          "answer_commit": "hmac-sha256:7d2dfd7bda7239072a63dbff03ae6fe8",
+          "explanation_enc": "aes-256-gcm.v1:Kbb9CCv2AjsRSqw5:HZSB3Gu0XowkQeyjIl_ZCWWpcBfwI7WyPI-7WMeKzn8XcHccZSMDu--a4q8bwKP5boHVicb_VNxAPI62ulFOsh4Onx-H7bn00QBLB6g7qpc1ShmiMwTWHnRe0JGHAmbfhoRddITEqQtAjiKM7UhIH85w61CiKwIgYyPsLfN_P3TCreA06wxO3HG59nM-WQoujUP2ss2PSpx7u8HH_69_RX9sAmRoZ6peskS0wXW2BIPOuMpOiRwnrUdl5WPeDMZmZ-YD50rpUrBUT7K1EAE3bUOdtzCjkbjQM1USK8b6N1gUPbvTL4g-GKr2gX5KUA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-034",
+          "prompt": "What is ERROR HANDLING in workflows?",
+          "options": [
+            "Anticipating what can go wrong (API down, data missing, rate limit hit) and gracefully recovering — retry, fallback, alert",
+            "Crashing on any error",
+            "Only for paid plans",
+            "Ignoring all errors"
+          ],
+          "answer_commit": "hmac-sha256:02d57968b15fab5cc3a1462a2563fee8",
+          "explanation_enc": "aes-256-gcm.v1:jc4-p_3hCgOPDZ3Q:Ht2qCR9aES2lCSoj6d6_9roOLKi-ejyUNDtEW_GmnFAwQca2mBccwUYsEgTDE2mRQmRowjbenvuosoFBxsYlH0vNBiPAXEnsGG5QRagLiT6bm21SP24bL1UwUINEJuE1yEZJDY91ry5sd5VzF8v7_JvG2EZ1XDOslsZy1keShPCBu_FJ9plnj9k3B_lsOYtC6iQ08_2wuyMK4QdAKEa2GCX2MJB4r-SFPL3TSFe4tt0aL8ORvKqoLNF4oWkiy1LZR-xwZaKYWwn9_qJeA-xBH_ZGz97aYw8rmGaDh04zlFbrNGPTyJi1zgpL-Xcjva1g4Lj6",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.81,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-035",
+          "prompt": "What's the difference between SYNCHRONOUS and ASYNCHRONOUS workflows?",
+          "options": [
+            "Sync is faster always",
+            "Sync: each step waits for the previous; async: steps can happen independently, with results combined later",
+            "Async is for old workflows",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:f58f9fd235b3c872838cebe7f4c73247",
+          "explanation_enc": "aes-256-gcm.v1:DnCycM1IvNiy_BeE:-dOMn3HsolM8Fh2mFwRAA63bQWx_Tj1qV_5_0FANtQguGHQrN5t8QazubmMbxEDvDntNIBP7hHKqcdOT6kqeqtg41pDH9Z070CZsTW9ocJqsbwkeOHeck85QEruboSrEQDN5BsrAab01SWmgqKeIZXjJvGwHmmoucIMdqZEFDYeJiDL5C7qywY1VSiisWP7374k8_n_3BjHG1E3D230h1pAiGwiaQ-BIdimLEo5Czx8iXLyw0JWLgUAV07p_PUXHfh_xgQqB2ROJZV7qN1zCswZE_stgp2a9Zu2bkZ9xFS2VoqMdLqOrAIQU-SXZVbjMmQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.077,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Forms, surveys, and data collection",
+      "skill_id": "rfv.skill.no-code-automation.08-forms-surveys-and-data-collection",
+      "items": [
+        {
+          "id": "nc-036",
+          "prompt": "What's a POPULAR no-code form builder?",
+          "options": [
+            "Only paid options",
+            "Forms are obsolete",
+            "Only HTML forms work",
+            "Typeform, Tally, Google Forms, Jotform, Fillout — each with different strengths in UX, pricing, and integrations"
+          ],
+          "answer_commit": "hmac-sha256:4e793383c88df72a1163276bfce98d59",
+          "explanation_enc": "aes-256-gcm.v1:fnALddsLxFzZFICb:7Z0QWb6gfdCMnWxpag5piKO1_ZZY_qNcC27TEzB_Qt9YXroghiSIz2oBZMrOazyUQXdhaP1_c3nWgaweI13u_b6IPkGCtxrZZLdbWG3fIfj7XKLpOeGiCuSNXRrtlFHMrB9aB7z-KSK99xwUkDRf4qjni4puwbXXqqrriQgCzoIaUb5LmDbHOIPNnsEyei62iVSpR5SQVzJW2QwV6HR2E0eUISva0HJbJ605ukk2rV4_INS9BHKAgydiyWdgZ8nPwzJb-fCK7qckE1W-i_-PxtuLmc1ufE3zBVK4REffFP7kImrSxp3i_i-jC_4SnW2-vK5duSqSX3ZbH7I",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-037",
+          "prompt": "What MAKES a high-converting form?",
+          "options": [
+            "Forced account creation",
+            "Few fields, clear purpose, progress indication, mobile-friendly, no friction (no required login to start)",
+            "Many required fields",
+            "Hidden submit button"
+          ],
+          "answer_commit": "hmac-sha256:322498e880b71396d552da6c738d4f44",
+          "explanation_enc": "aes-256-gcm.v1:1QzkITIL8BQGWOao:8tZCD8Kxx4xFIcw5OSKpc6BM7Tpw8O_N-1JkQ6h5BJZO0hNiaT9m0-_8waT4fZoavBwAQEraMZGggAA6UA2NntS8ieqBtlm1LXFJQb1ppnObsO5zDHZbuzDOKEpOKY-nle8TmM8qtcSyq08oXoi9_B-PM1NOLoq7J0khtScK-oGOAcoyLAf_TMQN5tzX1l72uY128r-o_R14--MVewxccKHrsBG0EwikwsptD5zDiT0rYaWvIU5mUnOkagH2nmOZ-fU5CoeH3uKBEBcSrP5jjtTr7hWTaS4nj7SIYQgb8qzUvEyxl3E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.565,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-038",
+          "prompt": "What's a HEALTHY pattern for form submissions?",
+          "options": [
+            "Only store in spreadsheet",
+            "No automated response",
+            "Just collect data",
+            "Form submit → store data → trigger automation → respond to user → notify team — clearly separated concerns"
+          ],
+          "answer_commit": "hmac-sha256:cd0c95f074be2e970c082bf557941469",
+          "explanation_enc": "aes-256-gcm.v1:ZaBMhuxMV5yu0liB:45R-FcPn-njojZ8eFbUrqCc-W8JlN0rYClEryvX5UtoH-y_VxaDB_vh9CGnlK9Z_F2k9TGiDxFntcHrharQznRKOQyd_ikH-2JenseuxFUmHN7lxcYU7JMUwMi0bATKXdO_hHllMjv68kblZKhqcW0FFv0vmiXbUxOIoRm8keQkETvwIx5UgZo103kZhVGBXUV24a8BruuelhRYLCtgZp2e3N9Ib8Wx0WNeqhdTI_MHmo8iyPphiFf2_fsxjv42ybuGvmgQPgZUXg4OL4UOrlaGXXIcWgDM6LtTJyg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.24,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-039",
+          "prompt": "What's a SECURITY concern with public forms?",
+          "options": [
+            "Spam submissions and bots — use CAPTCHA, honeypots, rate limiting, or validation rules to filter",
+            "No concerns",
+            "Forms can't be secured",
+            "Only paid plans are secure"
+          ],
+          "answer_commit": "hmac-sha256:1aed7502591752e559ae4689f9ba7df8",
+          "explanation_enc": "aes-256-gcm.v1:pzIAyeY2H8tAuWRX:z5ThJ3StqFRZ956dRl5A3PnyiQDtlZlmG-ilg7VNSWyD-IVPAFD4WcXrLI2zDd5aR06_M1nCTTqZF9iUuQIT5Lhf96IXVa3VIOwH6OloUGvNGUYzvGqCvYD_9qfHUewItKeAMtEWETX6_C_nQnecCFeocasdSm90rf4ZtuvO9KQMzKTQaCE3v5aL4qKG8W-aN8unx3OUzFdzFykViaEs2HjV-0IseWgsL70jt4vOd3CSEciLuFNs01-DWxSgSCKvXHtBVndguNAhXCjZcdRcD1n8f9BJ1-tDKcH2banrX6o",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.692,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-040",
+          "prompt": "What's a SMART way to handle FORM DATA in workflows?",
+          "options": [
+            "Validate format, clean input (trim spaces, lowercase emails), handle missing fields gracefully",
+            "Ignore validation",
+            "Reject any imperfect data",
+            "Trust all input blindly"
+          ],
+          "answer_commit": "hmac-sha256:dff40f15e02c50b910afd1d9dee67ea0",
+          "explanation_enc": "aes-256-gcm.v1:fRNPEu7ZFXZqi1ev:NQXT4EZgGVhRC8p98jLks9fv8qxq4PYmhMZJq1wb0rm1Zy5zyXlUENNZ3Cq1sYEXCDItQcqJTgbUkM_duBEwiKDGZ-DYXs8qLNlcrq_M_ntqGvj1a5fndouEQefscHicXIJVcB-SIONqOqVMRYyFzPFefDYutRE7sLKIjYutsq1lQJM7p-6Hrf3yzq3wMRaQCVMGiMDXXrRNFmP6tu9hTuAbIobYbBuJxQskIw2689AvQsk61BdJukVy2Wz4PE6VGhAszFvOLReKCck",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.76,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Email and communication automation",
+      "skill_id": "rfv.skill.no-code-automation.09-email-and-communication-automation",
+      "items": [
+        {
+          "id": "nc-041",
+          "prompt": "What's a CLASSIC email automation use case?",
+          "options": [
+            "Welcome sequences, abandoned cart reminders, drip campaigns, onboarding sequences, milestone celebrations",
+            "Manual sending only",
+            "Spam mass emails",
+            "Never automate email"
+          ],
+          "answer_commit": "hmac-sha256:33d314bb37a5b7e5b49f54feab82ea38",
+          "explanation_enc": "aes-256-gcm.v1:mm07xyBb4VokyRfL:1NyEk7V8ItK0RJD4cs1LW2SmI7dU8ZJ0LSREQAUZD8RRyLrAekkQqeCaAPAiERWq1dJmJ_-ts52nGMa8rzD9ew3fi4RJbz84msKfBS43MjNiZHsl_hKSpxE9RJ-_BGFlObCpUE59V_1OC33-McFYt0usMzoQ1pRcOPYB63aRX-3OqifC81Ssc5-HRHiE-i-VuFVF72X1zfJiWqC9SIm4-PnXaTT6y7wvvT5S7UsEY37w9sVwLutKvMHsKlbxUHe2BxDDZB0Yw1NvnbHNjvCrIipPIv66HCsX5W8CemTtw734YLmGOy0T",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-042",
+          "prompt": "What are POPULAR email automation platforms?",
+          "options": [
+            "Mailchimp, ConvertKit, MailerLite, Customer.io, Resend, Loops, Beehiiv — different strengths for creators vs SaaS vs newsletters",
+            "No good options exist",
+            "Only Outlook",
+            "Only Gmail manually"
+          ],
+          "answer_commit": "hmac-sha256:945f6719645f9ada363ece394f8d6ab2",
+          "explanation_enc": "aes-256-gcm.v1:8zxwy3MY4FPFzOdu:JL3kw19AkhmUIxrPUWk3uk6oJEeqc22ESoMR_2SmC6hAkHYeOL4yHol_0Mklv_6gTiDKtROQv06-kXsTYOUI-Gp8uzUK1vxjr-oVCkD-aSvNoZaEZEQk9IrhZCH0p4o-bdS4odg-XbG3EQkHulUsVC9_uRsHirIwzwIUOi-D5sZZ5nz1x-FtEYXte5vu2ewE7zv7ifri_YJE--5anuXn56V2tIt_AUQ7cR8Oq0Ho982u5mDigGj9aIvPF0haqDxMBEMxF6HTBm1QElVE7xHxQkDAssSqyc_5r76m-OYFl7yqQ0a1eVJlYPNMwahvhn1Z",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.095,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-043",
+          "prompt": "How can WHATSAPP and SMS factor into automation?",
+          "options": [
+            "Higher open rates than email but more regulated — Twilio, WATI, Bird connect to no-code platforms for messaging automation",
+            "WhatsApp is for Asia only",
+            "Can't be automated",
+            "Only email matters"
+          ],
+          "answer_commit": "hmac-sha256:56d74462a00439a610743c7bc6a60478",
+          "explanation_enc": "aes-256-gcm.v1:lNXuxiaqybh-oY1a:KvydwXe8Tz4Rbj6fa7Lu6LdKSSpMhByLDTbrl9YzA1kcw2aEN8aicSZ9IbH7i55tQhpAOqwNlgPihtRyQsLVfTOZwSfZSyMHSb2p9vPuBTRW915ymeUFxuxQQfL6LDC0zN0WqhM_GMP6J6DLnVSwFxXXLCFbdvbxc8RkzaFE1HU2RFymELR3PG2LdVkBvUbbgyQdZM9qY3DDBJcg6eR22mSc_jHgXCsOfrKUvR6JKcAFu8mZN7_HRf9OnlnI8qIW5BSLutp6LHNAQyGbH4sSjL110FEpKaHq4MHxtjr7V9ydACO8aqo7WxNG3zCAgsgJpgBA810ZnA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-044",
+          "prompt": "What's a SMART approach to TRANSACTIONAL email?",
+          "options": [
+            "Use dedicated transactional services (Resend, Postmark, SendGrid) separate from marketing — reliability and deliverability are critical",
+            "Send from your personal Gmail",
+            "Mix all email types",
+            "Use marketing platforms for everything"
+          ],
+          "answer_commit": "hmac-sha256:d36f3199a568b252c06ce8760e26ccb8",
+          "explanation_enc": "aes-256-gcm.v1:D99fGCwlxY0hgus9:DZYhA55uOr8a3dwWfv-wQ-X3TR9bZN20ARc3OmAX1rAurfB-3DjHMJ-FVa67m-lYhOmA2Lougu_fmbap5ToSUtLMXIR6GSukbLef7b5ppHna8EG-BN7j7sXGqSgMsXNOCQvfuQCtmoGrDmFch9oIBus_3Xw3yy_plM8PTwhCTgDc60qJ50tkx97RPkxKDvoOkFfgeaUUJQrt5S2VR1Idt3zY5HvaQ_4ItF8KSFQTRkvCF4PE1w8oir6PfLEVb0-GUWk21mTlAgflysRc9g0cG8iN0RnWwt2pAhfsTD-yICO8bV5xLXQVpxY3SR8YgVO34JySRxGk-qLi0-wGYxwLxJ2b7dOR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.553,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-045",
+          "prompt": "What's PERSONALIZATION in automated communication?",
+          "options": [
+            "Only first name",
+            "Generic blast messages",
+            "Using user-specific data (name, behavior, preferences) to make automated messages feel relevant — done well, feels human",
+            "Manual personalization always"
+          ],
+          "answer_commit": "hmac-sha256:a428885084ee54e97da73817f57ecde8",
+          "explanation_enc": "aes-256-gcm.v1:IyawE_fbruSb4N8u:DNZ-9zHAMT1_E675X59TMHdRSWFI09My_wFMRKfa02Ain5j5XqRuJMP9GUJqpHd_4Ph4e5m9oObUtDJmdXeIUE8xljh3OJKGN8OdF27iaMc9kuplB2zxVwqC8-JipdMkysSXQIJ4IWesIk1b38ZY2qYhzQ-F1S-N6QeqHkVFGp76zHcr4PlHfvLHSxknBKoOQv96Zzm2u05Xx8CwVFERy0pHdF_oe3WD55U656zBV6IVSC8Vsglrd2bHCNlx5MLMhm23lLM47jGYotNWs5PijF36OUqFOFeGhbB8APzJ_DxrFKLBYB_B_3kzKRE9z0bLLqNHRR92oX7LSnp8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.138,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "CRM and sales automation",
+      "skill_id": "rfv.skill.no-code-automation.10-crm-and-sales-automation",
+      "items": [
+        {
+          "id": "nc-046",
+          "prompt": "What is a CRM?",
+          "options": [
+            "Critical Response Module",
+            "Computer Resource Manager",
+            "Customer Relationship Management system — tracks contacts, deals, conversations, and interactions across a customer's lifecycle",
+            "Cloud Resource Monitor"
+          ],
+          "answer_commit": "hmac-sha256:32ce0e1d586d685c8a78f630e6f9959d",
+          "explanation_enc": "aes-256-gcm.v1:7fknv4nPlxPPLrqX:tHB-9KpSM1HxAw0BceInxgAXyhuQPayNlFCqwqJ5UMYfaQYxIOSMin6x2yJhAJCuypxd_mZ32BrsoobkhRVIVqj4wMSjxpJv91568ZRYxH4lCr4CHg44qz6A1p9RG6zFru0CRyyY6ucQyQrCKnRptVRhzKoreDOvWErekx4BqP4GSqZ8RdbRAogr2lHAFHgsYA-Ki3u1u2pb3n9st-phAB1jjRE9retS7AOYD6rUdpGWd0pNuBFnYpr11E3NOG316cnYJ4DZ9SGeMJDZAB0BtJoUXrMx-vraukmKfLX0wswKDSQiQwqKJ7T1u2G1DM8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.08,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-047",
+          "prompt": "What's a CLASSIC sales automation?",
+          "options": [
+            "Calling every lead manually",
+            "Random lead assignment",
+            "New lead → enrich with company data → score by criteria → assign to rep → schedule follow-up sequence",
+            "Ignoring leads"
+          ],
+          "answer_commit": "hmac-sha256:4faa66dc78095a983952f1a593ebb889",
+          "explanation_enc": "aes-256-gcm.v1:DFk8SWYr_x1b8jTi:JIsXbUAnZyz4DiKTZr0yxkada6b74MTUvsgWf6iFR3kkYiKAns6-Gqe7E4XuG7iFCj6EhIosuInfVp6AKeaiuEueyMCoXGaBm_52VNCNrqM7CubQZg9SY9WTcMdQcwO6_SaAqOeYbGprr2r-7kqSKDDdFEaaM52iacC-ByiW7EMm70h-Cfj16uI3U46IMK64I7tMl6F__XYal90QbdgOWbjcohgflnoIhJKNEZlfpkOKNid6SVsELMV2lD7jqP-9ysogStHBVV77VcEbg5TRz6Z-ZC050IOB2Q8aJV1qc5ks4Rs2ZCv0yA9ELZAy8PpyWCwL-3io",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.741,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-048",
+          "prompt": "What is LEAD SCORING?",
+          "options": [
+            "Rating customer satisfaction",
+            "Assigning numerical values based on lead attributes and behavior — focusing sales attention on highest-potential leads",
+            "Naming leads with scores",
+            "A type of pricing"
+          ],
+          "answer_commit": "hmac-sha256:b985864181e048da217c22c7f2c4aed4",
+          "explanation_enc": "aes-256-gcm.v1:6hPcBsWDbnw-0Ojd:JoRVApNQXKECZpwi1mDRWdFfEBqW0wG43QfrzkrsR8wuL5lP6faeic2ug_OhxiUuYVdxA-HX2Ak-ZltN7ddM9h1jtuSnA7099cbcMiaU17iE04j4adyHBEB-oLQ0pzXoTBVCqEyD8w4rcwwH3cSgmtgHfWDF8067gSRlmWhg8nBSjuYw5ltDTqMkcDlryYkuO9zXI1XJXBoZwGSwHqFvQchDNRzQjZhE1WQf9JaeXQQqe8QQRevwovNLDeHu5PF0bzK-vfBW2bhM83IuKxt1tSaZjoz7WN4lknPQRz48dgzZ1cqGmiyQCj88vIQ6pFfNCu-jdp9Zd4jpiTg7G5Hjjdua",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.214,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-049",
+          "prompt": "What's the BIGGEST mistake with CRM automation?",
+          "options": [
+            "Avoiding automation",
+            "Manual everything",
+            "Over-automating relationships — sometimes a real human reply outperforms a clever automated one, especially for high-value deals",
+            "Using any automation"
+          ],
+          "answer_commit": "hmac-sha256:f564cc64462fa5107327be4fcb962c89",
+          "explanation_enc": "aes-256-gcm.v1:qGeOanRM137D9AaF:y4pv9UCX-zC-bJxXoOptwfYMo-qPz2rmVWTHpfFt9UOYlVLAHDXRxYzhEja_QuA_eixHjzAds-ZSSAAhDWLFkvqPWh9ES_jpULl1nC8EIf760SPqV6wo4i395wYMiRsoS44MuIL09G6xT8MkbVciV27MJbNrQ6dftD5Tp__OkB753Wf-jH6VXdxd98nM6jr-pvNmmY4C0bh1NePjN5RbfRMQvScrQZG2MB0bb82xVv30B9ObfFVD9mHWodVztnCS63sVylEWQU0Gn7VXb8z2ycWh1MgsrOqFtK5pr9n6KZ1bgxP6VKV_Zn0v6zZdx5GfBJcq2GLaLwvHMHvtjcIW_W9ZPoOV_3MPZykWh4AvWfJ59FhLCaZqQIcVJA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-050",
+          "prompt": "How should DATA flow between sales tools?",
+          "options": [
+            "Email as the database",
+            "Personal notes only",
+            "Single source of truth (usually CRM) — other tools sync TO and FROM it; avoid data living separately in spreadsheets",
+            "Many disconnected spreadsheets"
+          ],
+          "answer_commit": "hmac-sha256:6462e7ed7d864940ab35b9860c4b3ff1",
+          "explanation_enc": "aes-256-gcm.v1:xzRiuDbINhHgInrg:0jHGw_HDUYK9eC1mv-AtfCQobhp7v7bXXg2k_QqUezeMO758vzCJZh8esIYA1Z3KFnevgrGpqoh1l0yrDEDGRVUf6zC7iY-7m1OQxB1fHLO9DzxCgG5EsTeePK4H2wR2qsQdVrUb8rZq1RrIFY9gKrAWoP3CGMnlxEzcOD8WNf9I_tytVhNVfsW27l-c2EFniYaKS3TGfKohMcx-DylLlCPLqCji0ZdMsMViO50xPGDihSpBUfic7VO3-cUIfxpIgtGPn0qrCFdT88B8OT0UNLczv2nONiUgjhQoPXUfJ8JkAKBfjhlTpnH-4ag0TQBNl2yJnib8n_-B8A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.867,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Internal tools and ops automation",
+      "skill_id": "rfv.skill.no-code-automation.11-internal-tools-and-ops-automation",
+      "items": [
+        {
+          "id": "nc-051",
+          "prompt": "What is an INTERNAL TOOL?",
+          "options": [
+            "Only customer apps",
+            "A type of game",
+            "External marketing site",
+            "Software built for an internal team (not customers) — admin panels, dashboards, data entry forms, reporting tools"
+          ],
+          "answer_commit": "hmac-sha256:916a78f366b5b99000881b3578976a88",
+          "explanation_enc": "aes-256-gcm.v1:4JJdWQCbNdd2V0bi:673-4aeT0aTfrUbTYEDf3TwDp8GbFqE8IcHaJsGLzyJsdIvrpBzRpQc4IAXnzaVUHheOoZunGC5O_SbdvHdaYvdVTUbavHitMScqdTsoTYg0Vt9sltGjMjSPyf_NvEMmmQOAR3G_84RmS_u2UEkDHfKXnofZsZOr0jSQ__otR4E7V78Od_E4GOiXmXIzbcZHXoMVg1zQT_nkioojImpfjX0Tn61TEaaW9N8LfvuJoEEMsVn8Q_1ElXrYWP_9bo0kjxt-sgnsv2hhjkR_lu_GzQyQ0m5zN8MBfRVLf5inHEXb6pOdJBB8fY84Pco",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.913,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-052",
+          "prompt": "What is RETOOL?",
+          "options": [
+            "A type of email client",
+            "A backup tool",
+            "A graphics tool",
+            "A platform for building custom internal tools with pre-built components, backed by your databases and APIs"
+          ],
+          "answer_commit": "hmac-sha256:466223d9772c3a183df649ff8aaa0410",
+          "explanation_enc": "aes-256-gcm.v1:lS7vfGC7924cKccu:T4BcyKy2l-rmVFI8aaK-jx3Usu50DHdv8kZvVXYmSGKqRU_aq0Q1bMizQsTnr2MNOdnWNvor-2VQsJox_I8GrCzCjlaOG7puN1sFYznfZSaP5bMZZImfdQRT40WVJLtQj7SVG_zd-Gk_KoCTFMrAmwsD8fiW3bkoDbV6exU80a_8xgL9OycbIFwa9lcJAdig5YHgXGNj9vFH4fyzldDvpk-FMqFF7SDSEE30bEnLVX-s346vqVrjUAIwqxl8i7_iBczXz6ACgNsjfnxpIgiuSVGo39mg_OhxjAmK-jn4fFz1ZbJU14yye-GSLfWT3X5xzXGlPDjZWnDqvt4YdN2G",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-053",
+          "prompt": "What's a HIGH-LEVERAGE ops automation?",
+          "options": [
+            "Manual everything",
+            "Onboarding new employees: trigger account creation, send welcome packet, schedule first-week meetings, add to systems",
+            "Email-only onboarding",
+            "Spreadsheet-only tracking"
+          ],
+          "answer_commit": "hmac-sha256:261709d74dffd0a3e9773196cf5b8d2d",
+          "explanation_enc": "aes-256-gcm.v1:e3P8B3VHxomOnpe5:azYI8K2mNhPpmiXB6h0bIsGP1nDnUGjvy_szjjS8zpTF3rMel-axC3l_BwQbsjSHtTDYliv9FGC1zEDFy37MZbPUtmo-09AAFPa5OpNJnx6v1K0AYiqjwQhoUGuOk-9HUEaeGAkJj7pbZfFbEcOnU2S5P9u6TIZB37kYsCKTOtnNj2nCTM6Rkwdzldzm5V7RGEpljdeuToIx7VYCqf52w4MXNmPvhfIINBliIYoqhTqYDiRvFWXFSkXEtM9HjuyUM6kQCXObTqe-1JqDVMf3f3nIEAo0ZAhZC0DVYmAjH9YkzDn8uYQko9_XnXRaiw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.68,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-054",
+          "prompt": "How can NO-CODE help with FINANCIAL OPS?",
+          "options": [
+            "Finance can't be automated",
+            "Only big enterprises automate finance",
+            "Automation creates errors",
+            "Automate invoicing, payment reminders, expense categorization, monthly reporting, cashflow alerts"
+          ],
+          "answer_commit": "hmac-sha256:3d3a589101e5d89520194ba9c7b0059d",
+          "explanation_enc": "aes-256-gcm.v1:71EJMxBXGid9oNbo:GFjF9ppHkHcySy8OO3aQCOZodx6UdoR_68xY1x4kCSVlr6ZiB0FXWUfH_UBkDdGRNYUesEOrEqMyKzBR45Ya4WQ6dylytVoRyWWxZ7wvydM3K0o4P3VMebfhr0zEgyOU-9mBIFAO2LjkmcegoMW-QcG2o3Z4D-m-vwT0YnEZzUN7eaColUVWX8uR8TXU3R-EjS-4ZtuUnLTT8T4tWFUxjZgh5M30COWPp_wZsraXnavZgTsOSfCkhrDNJIZjyn3wlFwOdRal9IhM_02xxY__IAq2lqLMi80Lf0HGabwPgz14_tlApKt3WcljEtUQesFG_OtDq4NKDQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.622,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-055",
+          "prompt": "What's a SAFE practice with ops automation that touches sensitive data?",
+          "options": [
+            "No security needed for internal tools",
+            "Audit access, use principle of least privilege, encrypt secrets, log access, review who can modify automations",
+            "Share API keys publicly",
+            "Give everyone admin access"
+          ],
+          "answer_commit": "hmac-sha256:9f29aa34482f608914a7945d4b1da61e",
+          "explanation_enc": "aes-256-gcm.v1:hPv8d_Fqvsp2pZaf:wXZ43SgsKVkeCEXhegJkiZpEKYPJFOoGzc53xWucQEDp2fYSv83-D43YzYcIGhgnWhiSg5g6FgestlgTUq3o8tsD9oe1adaHuWm5BBYcCoKgsNMTgxcip5LrdC_QW1rNFzmyubzqnZc-82p06g-oeWS3yeAKH_lh70p_nYMRYoQ6FA2_h60TNgoW-JfjAK65hH2poo7cVM-cmogrU8ujvre_6_Hz12JdRtMLeVl59n1KIZfvMYt52BNPIMQFqQnTyDkWLZEfLpXJcqeuDhGZogHXK3VmfZjgPiRkyTSi9itQG7gMhsjvwU9V7aas2VC1zBTUp76xxQX4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.973,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "API basics for no-code",
+      "skill_id": "rfv.skill.no-code-automation.12-api-basics-for-no-code",
+      "items": [
+        {
+          "id": "nc-056",
+          "prompt": "What is an API?",
+          "options": [
+            "A type of database",
+            "An app store",
+            "A programming language",
+            "Application Programming Interface — how software talks to other software, exchanging data and triggering actions"
+          ],
+          "answer_commit": "hmac-sha256:e359656556039a10bdad8e47483909e4",
+          "explanation_enc": "aes-256-gcm.v1:80F3AeebVEotoZde:d1tgtbGO-9v9hR2pFqIb5TmBviMCZSYq2jyZPt58eq_t74IeDblchAhOtJr_nfVB-wqh0rsKJ6LUPnxr60UMk78llnHjYdTpfxj3Nh4U5lxtT92n4yErFihyvQ5oB9RSJS7N-QGd93chssdKwMlXsOgr3D3iAEuNtgcKL5vyuU5Petm8c10eDd5YmrkfY_5jrqvJ8MLR1pHX6_5p6g2M0t0wmfoQNezOmn2fKnXHwKaR6a8ox_hjH8VJh0Wn-J_0PGLZffaChtAlNL3XF6U3cnUz91_K8pcRxgRT2DCgM8hui513WAiUzw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.091,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-057",
+          "prompt": "What is REST?",
+          "options": [
+            "A type of database",
+            "A backup format",
+            "A common API style using HTTP methods (GET, POST, PUT, DELETE) and JSON for data exchange",
+            "A break from work"
+          ],
+          "answer_commit": "hmac-sha256:6cbb91e4fedef0ea47228115afa04814",
+          "explanation_enc": "aes-256-gcm.v1:7QnQS-Ws1WtPhpx2:XVofbnfXVzQAKj4x1hZpNqWtbXhFpQaY94Y5RjMCBIMZHOQqr55gy53Y7TiitJbZvnZuhsdOozPIn6ozyN-1oxvThAAmLl29J0Nu0IwYMAnBMEC81KLLzk3S2shDusYuVz8uGAZEodQKyyIvqE0bHbRMmABZJtfGdb_x8t3m3PLFuYc4of9bVxaoOYY3_ebqQJkJI6I8Cx6ZqjkdpMQjysphBR7scnRf48ooffc2AUZ_Ijf39Pp2AH0t92AkPkgUZ_qAuXg_RJxnp_ScqXbqHDyGuxsf8HciHCq5UwT-CyTrifvhtFqZeIxn-A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.944,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-058",
+          "prompt": "What is JSON?",
+          "options": [
+            "A programming language",
+            "A backup format",
+            "A type of script",
+            "A lightweight data format used by most APIs: {key: value} pairs that are human-readable and machine-parseable"
+          ],
+          "answer_commit": "hmac-sha256:ba1f0c5257b6d0c9cabb321d433d94d0",
+          "explanation_enc": "aes-256-gcm.v1:sVPJkGt11udEsb2y:9WOh8Ec2nUBg_i0DYWN1w1UrXjnQ291SHyf1Hc1nZCOF7jcGC0-Wf4-J44le-2cKFRydgTpzf008RdurdAOD9QNtnsm7H8g8kCHUks4GFi-KL2L_kZqOuinCtccbGgimh_K_u_wS24nfrkuxiNuRAyLJSHHpCulNkOkFMZ1F9rdOTtUaaqKOCWwZ3axy_OZUu4wgzbQ5TfiXKfJtUEYKNdoI4LhABP_6iJ1inrHjK69D4iKS-btcfIDFwAlCU7euejzFv7ceEGObjIumZm5bTbI6Uultl2_8j597",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.955,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-059",
+          "prompt": "What is API AUTHENTICATION?",
+          "options": [
+            "A backup method",
+            "Proving identity to access an API — typically via API keys, OAuth tokens, or JWT",
+            "A type of encryption",
+            "Passwords for users"
+          ],
+          "answer_commit": "hmac-sha256:0472e66945190b9f2c85ab5dcdc18986",
+          "explanation_enc": "aes-256-gcm.v1:KyEJgPdIjHeCOYhd:9Rppg4xbCIhe90tV6pQfUWdOj2IdUfGft5EJM8fWKwX8vgyxOVmfP1nDmk4_kC6sSgEUWhgx1mPqhnWtlWLTWThll9Akfg2FERDPTV9GexF1dkuo6Fv0RChpD0o2iPiClSC8PnA9FL6gram42gHUZkt4pZnFqj_Xom_1U78E7l5y1H5kr31FpimDxzXjQom-PXAoJeYI9ZcfvEJ97y-Rf83h8kPEXSWhQrssGx0vbQTVW0gLuy7ftWRt47x4YZH-sHPnv5i44cSGmnO35BqvipI50cI_IhIO7vQD-jxng4-DAh4Bbz5HA0_FhKfgyAOHPwAS3acaP-bzWg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-060",
+          "prompt": "What is a RATE LIMIT?",
+          "options": [
+            "A pricing tier",
+            "Caps on how many API calls per time period — exceed it and requests fail temporarily",
+            "A type of error",
+            "Speed of internet"
+          ],
+          "answer_commit": "hmac-sha256:8e1dd3d592ecbddbd90103c9d9120da8",
+          "explanation_enc": "aes-256-gcm.v1:Wl5yTKlRXJ1nbMR3:ZIGKH1lOG41Z1Bs6tYos0l5XDQUwiUEJiuOY8DoxnqiyBo22yS_Rsnlhp3MAXREwgjuDwHEDCyMjTb0yIsL-zpg90LZNgciSEkVgMqO6I-VbksETv5oVeZxxtPmFd4RZIAfC-NvISmlzhFPU6ZJC_VGNcHmkGcpki7t63n5-UBvH2rwRkwe4YHatflbbb98IAiST3XOcKmTnQR5Q57ZRtp1kBqaKVFO7cIZhewny9LsBJGzuh8HdDEc4al3QbUFU-4XHi1d_lLU1_8RNTU6bC49ptlR20rNIhwdbaR5L6GAqeejImukzkQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.941,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Cost and scaling",
+      "skill_id": "rfv.skill.no-code-automation.13-cost-and-scaling",
+      "items": [
+        {
+          "id": "nc-061",
+          "prompt": "How do MOST automation platforms charge?",
+          "options": [
+            "Flat monthly fee always",
+            "Free for all uses",
+            "Per user only",
+            "Per task/operation/run — costs scale with how many times your automations execute"
+          ],
+          "answer_commit": "hmac-sha256:66745067cb085191aadcb8ee92876182",
+          "explanation_enc": "aes-256-gcm.v1:4cfe2cZV4-0Ffwp4:sUZvNozvgbM4aptNi04pvEv6OSGGapqM9QmTt-oJmRNh1GzkkY_6o8I79HB8LMyHggtxx6hjkqx54mpc32xO49Xa5tRMkjdA4UnNmms5PIGbGH_9AnzydhzfzsTzyvsU-fsY9tQ7k8igCiPCJt_HM4wuBYcP9-KBqhWEolbjsukPrCjZ005xRH8o-QDNkboKmoq_gup4NR0Nvb_QBf-sH6TDO0t0xv62XTwnVB7GwzRgtzXqrQ-Dk3ZQTyfqg4cEM3lnjO_Tc-JqvqxCnBzZ4MrXsD69juQZ8HgehKRA5xQwDHMziIPsZpQUUL3UX7T4GJMddw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.522,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-062",
+          "prompt": "What's a COMMON way to REDUCE automation costs?",
+          "options": [
+            "Always use the most expensive tier",
+            "Combine multiple steps into single operations, use filters early to skip unneeded runs, batch operations, deduplicate",
+            "Add more steps",
+            "Pay for unused capacity"
+          ],
+          "answer_commit": "hmac-sha256:228bb9d4244ec26cf1d524847b954a09",
+          "explanation_enc": "aes-256-gcm.v1:_KVXBIjioRllFgKn:8Y5mk0EHRmehQKWfStlg-CGIgTdPo4YOdeVrky4fm3GXjCjLIUSPnbVcRVvgCQlqGi82x5QlS2yJCiB30g3o3ZUeCU8NoWO-E1CozPzjVc0A6bBRSrOnylU6Qil1CfqlufnacPFdh7i65xtODfiYiknfxPU-cdznCKx5KwttIZ7GWYMW0V2SxNnMoy-0RBocRMkZ-3QImF84-IpvDGIbjlnWsmOmKxZwa61FEKm2VFR9orc__Qej4bx2z8TL3XMR05QKkSLhVOUwRiR-sDaEFdH_bs-bX_g_BpyQ1dpmgzodBQBD52QV9_JPTTrbeQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.441,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-063",
+          "prompt": "When does SELF-HOSTING (like n8n) make sense?",
+          "options": [
+            "Only for hobby projects",
+            "Always for everyone",
+            "Never for anyone",
+            "High volume making per-task pricing expensive, OR compliance/privacy requirements, OR specific technical control needs"
+          ],
+          "answer_commit": "hmac-sha256:10ed1ed2a0f7a9d84199ee9ccb514128",
+          "explanation_enc": "aes-256-gcm.v1:-PK2rcisdxxCxY7-:RXJG9AjHNyKmezG815v3_TGBlmXYwWnlF2bRbYvywbMufGfNoJ9aZKEa57xAfFddrxVv9Rg_YYr5orjiVgnY6vDjINV0ua82DL5hLFVGfiKfMSu9UTj71Z41MT8m2bkHRlBBhwMrzbxZrmPr-8ESjSCPNX_VtnCxh7Wn0T8l5CZoX8AOR7jw1Vcho6AFb3c2TgF0WSd0TldQFCJFiVug23uIMgM1sTfV3UcbK9KTvuPjKdVr4W0luPLVbHtEXCTeh4wL98PJrjBYJd8Sv-fZip-Cnp_OWgOWEFo8mh3ArY2cSfPQhZVMtd7PyMvNDlndq5a7vCBM3cLb6J1tpy87sCDA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.13,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-064",
+          "prompt": "What's a SIGN you've outgrown a no-code platform?",
+          "options": [
+            "Just hearing about new tools",
+            "Any complexity at all",
+            "Friends recommending alternatives",
+            "Hitting performance/limit walls, paying more than custom code would cost, needing functionality the platform can't support"
+          ],
+          "answer_commit": "hmac-sha256:04dbc5a3ef8272d0d189f15ea2c3dff3",
+          "explanation_enc": "aes-256-gcm.v1:4ZxmEjr4rNu6_thu:_CYgo0tfs8gP3aTjB30uKbhOt6X_VpCCiJvcemri5iT5lALsVt8qPOdOjawphh-1udesYRUf1VMSqa2jrN5eEXI8q1m-W8jxJTdLo-_2CDPHFY9sx5SRTdCr0VmPnikStYA1_c41i1o27IVuBeIGxVTYcajKHujMZjSkfYYSO5UOUZX5ZE_MN6A78LNb-tndaDIPbDqAPawgbVW8R2gP4aGorPZIJhIdgrtP_lKStXwAMBjzUYZh5PhBPOJMAAeJlkUx_9LHAj63DeUSjzc_rs7Oj5Ul1VpwjvaQuLk6fo1pJ6Fg843iRMLC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.697,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-065",
+          "prompt": "What's the RIGHT mindset about no-code's limits?",
+          "options": [
+            "Always defend no-code",
+            "Always prefer code",
+            "Avoid all tools",
+            "Use it where it shines, swap to code where it doesn't — no-code is a tool, not a religion"
+          ],
+          "answer_commit": "hmac-sha256:47623cdd96cb29a0a6ac25392a77181c",
+          "explanation_enc": "aes-256-gcm.v1:kZoIAVEua-Aq4Xlf:O8wPckrI7SGCd9_GgDMDwtUaml20PWr0ELK8oJQvkYy0AdtBpS0PVoXgyGLy6-aYZ4dvTWJMgcpLiiSG6KXaRmqNMY2YUrmA5KMgQM9csFrKTrITDG42mm4nGpV_rvTzR2T-QWA9j5PDo5rsnmBe8axPdv3VN_Msr3NCgidpwtWjGFVG-YdHEln4PARzaBTF7K_2d7QId9fh2TW45lYPIOR5F6oVcDLZNUdZmV6FAN9CFBqGJVj0ybsAmnVS2F-BEhueOvYmKbG1dvfsgPT1_YGpARllw_WRODOfOhwAexh1",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.238,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Reliability and monitoring",
+      "skill_id": "rfv.skill.no-code-automation.14-reliability-and-monitoring",
+      "items": [
+        {
+          "id": "nc-066",
+          "prompt": "Why MONITOR automations?",
+          "options": [
+            "Platforms catch all errors",
+            "Monitoring is unnecessary",
+            "Only paid plans need monitoring",
+            "Silent failures happen — workflows can fail without you knowing until customers complain or data is missing"
+          ],
+          "answer_commit": "hmac-sha256:ad819389e39053c8b959fb8d947a9719",
+          "explanation_enc": "aes-256-gcm.v1:QaKEHGFwfw9bGVCD:66ho_i5FVW563Sn8HOLEEY-L4rv_dHaQmzc5eFRYCEvLvP08Vt3bsS3y_MNqeNx1j4YonZm-NQM3MTmHWbk-FQoR0WPVNJ4o_t-iEb8cVbGm93unb6TTLbieJ_hvoszk1Aj7hDn9ERx30LX-152FTcPS9tV1F66gXPqeureYlpe4cb0498weDnkvlPpdkLCFHgUG2K7GwG5UUgXeja_TUsYzIGcWFRZrWTNtN1GSAijlriIbOqAN_jFldVSoAiJVbv9SY1g-IZo-W86d3sDGtXkDMjdIc1WWc7T21QhPklXCEjf8ky8gTDrj9aTrgbev",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.452,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-067",
+          "prompt": "What should you DOCUMENT about your automations?",
+          "options": [
+            "Purpose, inputs, outputs, dependencies, schedule/triggers, owners — for handoff, debugging, and audit",
+            "Nothing — automations are self-documenting",
+            "Only after they fail",
+            "Just the name"
+          ],
+          "answer_commit": "hmac-sha256:4892a0793da570d29488b6eb921ac8ae",
+          "explanation_enc": "aes-256-gcm.v1:_e3_mQt1dpBa-gje:k6nU--KwSVLxUaIMaqhQ58stMrolFM411PMlRi8Uy3HA8o-3LcEP4imxBlioEzrXlqaVkOGaGeUT9W2ANge0mY0bntySCD2mpltOdtdaUxxoPydDxoWyPH6ix_VI-tY5QVFDKCrWsf_elKQKRG1lO5UiS04kvjh-KktCL6tqtD1lxSM0mtKX608tPhheTQ6R9sN7bTTWYZfIjN5sFEUyfPMwgQV4IF69NhD22CkkQO-7rAAbYtmvAbMT91zvXa0d3M30m3VDUZmJnhlh56YiwnvOC_8X2lWQeGk2s6ps5bnsBbKy8xoiXwt0ZUeW3bw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.405,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-068",
+          "prompt": "What's a HEALTHY testing approach for new workflows?",
+          "options": [
+            "Test with sample data first, then run-once on real data, then enable for everything — gradual rollout catches issues early",
+            "Skip testing for speed",
+            "Test only in production",
+            "Deploy to production immediately"
+          ],
+          "answer_commit": "hmac-sha256:479200c5e99d0ed17087bf0c1adb5d12",
+          "explanation_enc": "aes-256-gcm.v1:m4L65M-Ix2Git17z:2AoOvxR_N93j8b9MbCTchCZsVYtqHEISqVDl6LQ-JjVK5T9hXS2rNz3X3kmEz-6NuwnCubw_nJWXpLhQRFCboPCAPiZUpJxeg52DHbY_jY8SkRE02IovqovoyB3nQ1uiK7j9pCWx8lePW4_Zz5mDi8lLli3cOs-CjEopvWZi-td9xMEBTMuC0oJoft2wSzt4BMG94teMVqm6ZJvrMHoH33J0raLWrgGrKZNkwWbOmec-OEJx3c17bcqyKCW3uC_zJyOdXthLNqfDZJhpG4qb7Yb4G_acYp4r-VFSBxObIgrHzzkG-eJpyQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.813,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-069",
+          "prompt": "What's IDEMPOTENCY in automations?",
+          "options": [
+            "A pricing model",
+            "Running the same operation multiple times produces the same result — prevents duplicates from retries",
+            "A type of error",
+            "Running once only"
+          ],
+          "answer_commit": "hmac-sha256:2173933ef978b8eabd1df45b71bb497a",
+          "explanation_enc": "aes-256-gcm.v1:lUn60Rx1wub_ovJf:v_pAAbPrqKGVEXwIn9vY-O_OIUuUjtmHByiPqinOeXh1KNg-0pPKDF8ZHjKbJV7iTs7TsRp_QYTtOJN4D8JnkUnYSL5GetLOCu3siIm87xwEGHuUhAGO40dxtXfCQBbv4X0le3iWsv2oGJ9Js2y5K-J0WedxdQGT8m9wHCf2yZnLTlo_jIKnNJqhyZIpP1weTCtPeAxMln2s2HUCdZEplabz_HV11N0o4vNqgx6eAeL2yT4I22do1qhR_mMTX3gqOCnkJyDJ_zDRKJbPDLpJXZ0GYY8V2xs7NlPetiv3WcnhuCOJzL-z0ODZbT4JWXSywmM0x5nmp5N3TUB9Es4kjCfMRw_RJQyBqvnE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.941,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-070",
+          "prompt": "How should you handle CRITICAL automation failures?",
+          "options": [
+            "Wait for users to complain",
+            "Silently retry forever",
+            "Alert humans immediately (Slack, email, SMS), have a fallback path, log details, post-mortem to prevent recurrence",
+            "Ignore them"
+          ],
+          "answer_commit": "hmac-sha256:ffc1cfb06d356e0248d92ab9d526fcd1",
+          "explanation_enc": "aes-256-gcm.v1:6NXwRNl3e8of49Js:NMWPy-YDL76sb8ryo3IBjFlXix_BIdtu3qhZpiE8VKj0LDR1zp-YYAzzTHL71n4Twt-6JnhTySOnz5YdIlvXoiCdPiDhlej2MHcz89Na_uU1wlJWj4AUyBC1axyamHxA0qGLfj0RdDHQmXjdB03Nfz9VFIVcRxeFL9YAX8PWZEs46oW3UQs8Y6kdpNom7sraEOvBJUK1OK8oOqwmU6GsLx0r0UsSynhVkLF10nsT0ucl_5u788U4i2wxxdJscP4EHFsX62DR_BQWbrYItiRgNzUa5Zo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.385,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Security and access control",
+      "skill_id": "rfv.skill.no-code-automation.15-security-and-access-control",
+      "items": [
+        {
+          "id": "nc-071",
+          "prompt": "What's a MAJOR security risk in no-code platforms?",
+          "options": [
+            "Shared API keys, weak access controls, secrets in logs — treat no-code with the same security rigor as code",
+            "Only public no-code apps risk security",
+            "No-code is automatically secure",
+            "Security doesn't apply"
+          ],
+          "answer_commit": "hmac-sha256:4209afe780cce0f28b2e2d0b20373ae7",
+          "explanation_enc": "aes-256-gcm.v1:zmlhWokZno6woXxX:FlYIVQ19kEv1QbzdV6wiGtypNH2IXzoV8OUtdyFfUnQawpy8zNkZWcosc2Ou3FUS5toyAEj7tkRQuws4Pu81ff_H4wgAPEqFSstCdcCtzCacMfNZGqpL0B7HLIZ_gkuPtzPy_BrL5f7_MLGmSer-fLAs2eMGilawWCSw1cJQQuziap-Xs6Jp_3ueugXTZveHAn77bxnGttbCV1LQrJLT_k60Iq5BjNklOaaLeykdlow-UBlvONHkGroQdQb5yex42-z6KIbrBcPZZFXUSIypHr8zjYQFrXY_YRfOJZk-Emi4CnbazA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.816,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-072",
+          "prompt": "How should API KEYS be managed in no-code?",
+          "options": [
+            "Hardcode in URLs",
+            "Email them to teammates",
+            "Paste them in field names",
+            "Store in platform secret managers, never in plain text, rotate periodically, scope minimally to what's needed"
+          ],
+          "answer_commit": "hmac-sha256:4bee44c4557fda1310fa8c04cac547f1",
+          "explanation_enc": "aes-256-gcm.v1:Fu4UadtZA_22khx6:TJoAS7wA-XQ1dRVj4aorjTfsLaKUq8POWLp0_--2S1bfp7q9COhO4UfeUZslptyis1d86xR2ovWLtHuKJlF3E2fWn06e1wnGmMicl7_ia5whdrpOmfxszNdQ5zArHhDnRCPk2gCtf0WWodosKSFaGr72CzQF6HNaTvNMd-JyS9ypeMq701Ju90sXjPCFqgSzDoZjPKHXvjkoG3yl6sWu0TBISnbdY1DloWUfxkAs1fvMhmmJdQNNclaZJb3sRkV36W3IqgMA8Dtb-Nz7GFwls2fMcOpDfkqMG-s",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.36,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-073",
+          "prompt": "What about USER DATA in no-code workflows?",
+          "options": [
+            "Comply with GDPR/CCPA/local laws, minimize data collected, get consent, support deletion, log access",
+            "Collect everything possible",
+            "Data laws don't apply to no-code",
+            "Privacy is the platform's job"
+          ],
+          "answer_commit": "hmac-sha256:b62cdf35fdd33c65ff3adb1a76b42729",
+          "explanation_enc": "aes-256-gcm.v1:lIE9X0c203ijpuD8:bpIc0ZQd1BMT0gj4NxtJPyoRAop1z-er64lXe3OF-kKPSV42b9juaPPEoPzoD2eVA0bWL8gpdSjrE1nBkLZjAMQ8HLKLKU2AfmmNwLjcTtzHoe9oRyczFzZKFqMXwg4sH3wUSoJe3pPQfkVveHghEPKUL4xqP2pskMttuiu0AbDki_bK6omz3uesJiYwZKs9R8cexLRneN9svY1GYhutWdu0iVMGkZtPpvquuffYvqDKs2fpMqLsB_JmgIBCXhYtlSRMh97lSgiL39x3Ucnltt1NpmH0Ew",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.125,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-074",
+          "prompt": "What's a SAFE practice for shared no-code workspaces?",
+          "options": [
+            "Share one login",
+            "No access control needed",
+            "Everyone gets admin access",
+            "Use roles (admin, editor, viewer), require 2FA, audit member list periodically, remove ex-employees immediately"
+          ],
+          "answer_commit": "hmac-sha256:d104cf0f4294e973bfa6cf0e04304097",
+          "explanation_enc": "aes-256-gcm.v1:Nt7B5ZJtS3QZPCC3:2uGttnXiTkA9ROhmrdNTUMPSDBknwFhOcHBCwdWVpZjahNuskvMfGDvVQ0Gf7cZAqnlYXW-j3zbFW8F2joH7yPsHQ7PnAnjy5OAEUh7ZKGIR3DrOOm9rfV7fEtpPuAMqbSC2R7h471od6DuabMOD0OL8Gd3VqK0cMKme9Dy9SHxOzMKzwgaZW5Sq2JYrotN5LwDLO12RvBRCABOindS659ikOoMEi7ZyDMD3KDOSQQbDq3b2c2TewFPW27ME0MCDwEUkxy1vNXD26bK9bOmQt_Y",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.269,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-075",
+          "prompt": "What about VENDOR LOCK-IN risk?",
+          "options": [
+            "Lock-in doesn't matter",
+            "Just don't worry",
+            "Lock-in is unavoidable",
+            "Mitigate by exporting data periodically, documenting workflows, choosing platforms with good export/migration support"
+          ],
+          "answer_commit": "hmac-sha256:371e7f2227fd14256fc1729766d05a8c",
+          "explanation_enc": "aes-256-gcm.v1:zhWD82tNPNb9g2ay:X68WKdyO5aK5LCxZCX-sc6vcjtAf_hKzx2thkMPu2RwOGCLrf3agvQ3FRroWL8OEvNamMQt02y_F7rPQvHMQ62KK_6ygn0l8PJZHycEd-5CG75eM5BRjpvTnfo8mmtwh6vn1ByGjArS8KKH_QBBamAiBPj8-kkjBru4Nxk-lTxf-DCu5Ys48kqrFz8kWNTEMEOQyhhaXIWeLKYepIRciHram_qrTtfMSb6qo5gfbWdcqsCAy4nsZsZEzeHOAWdMLEelKOQOo4IFCvrTtXm1_4uMXV4cPyiMSaUiz-TKmwzAyY7vj_fC4VA1kVjptQ7h6mIgV11_U-xe_NLMZ7hpro0qG1sHBeFaRKA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.318,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Building businesses with no-code",
+      "skill_id": "rfv.skill.no-code-automation.16-building-businesses-with-no-code",
+      "items": [
+        {
+          "id": "nc-076",
+          "prompt": "Can REAL BUSINESSES be built entirely with no-code?",
+          "options": [
+            "Yes — many businesses generate substantial revenue with no-code stacks; for ambitious scale, pure no-code may eventually constrain",
+            "Only side projects",
+            "No real business uses no-code",
+            "Only failing businesses"
+          ],
+          "answer_commit": "hmac-sha256:af34c3c747f84479d9bbe5f44e3b24b4",
+          "explanation_enc": "aes-256-gcm.v1:x2Bt9L34hOLdIpVH:-1McD9m2AFY32o7NcRkOi8yw1wt_fZFE_UpWV7FkTlh_3WZqWHiBxNrhCCrBv9r2jDpqqRjUfYMOipY1pjZ5Cq2KGCrE-yU9-VrFB-WES9hJHTQZed8ihJ1PTeHL1AsGmF0h2RxOII1SeoKg_zfIujY9KhuqI4iQ-_wT3iGRKzKAGU7wTZrM4lAvp0gVRdhej9J5xzuXc5jdbuD8AvpED9xXMOKHtiT87r4eUylIR8vxWeazM9F6AcJAfxbXkEnN1XqmjAfXyho6WV53c4UcpvzMP_KCaeVeXCglJAOX7evTnL7wVUGrlUBgoN7_qXuf3xYU6orEI0hO82sjGa4y1FxB7SAYSd6dLMl8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.483,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-077",
+          "prompt": "What's a SMART tech stack for a small business?",
+          "options": [
+            "Use only one tool",
+            "Custom-build everything",
+            "Avoid all tools",
+            "Webflow/Framer (site) + Stripe (payments) + Airtable/Notion (data) + Resend/ConvertKit (email) + Make/Zapier (glue)"
+          ],
+          "answer_commit": "hmac-sha256:3954bb858699a97735ffe18a8dec33d9",
+          "explanation_enc": "aes-256-gcm.v1:NF-89yf27IEFeC_s:RXNG-_5x7q0q0GgRaL72L0LuP_ltF_CowqovHPk3OUjSCZDeW72viWNvll1i5onahJHlLWt5vvjWaqBDXIQpM7RHBZT1nf6YLG82Smbo3otGKwdnFF1w5F1fzl0LVpHBCVpc9O1Bdy6noNGgCOXIrQTWHi7qH_zC_u0pVvh0xIOrecsHLmIkj376ca0rrJbcAR4_8frieFE2RacVi6mPIt0Ye_Kv-a-vE_3zztVg2IJ1XSBTOkGXtA38If51tYM66qBLVsg24uq3GLaDMloAu9CM754FuF8V0lXpq524pSRPDIeiG8tG",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-078",
+          "prompt": "What about MVP testing with no-code?",
+          "options": [
+            "Skip MVPs entirely",
+            "MVPs don't need tools",
+            "Always start with custom code",
+            "No-code is ideal for MVPs — ship fast, validate the idea, then rebuild with code only if real product-market fit demands it"
+          ],
+          "answer_commit": "hmac-sha256:9f0dac133706a8134ee44b60a53d1057",
+          "explanation_enc": "aes-256-gcm.v1:H9Xj2QXM0Q12DXRU:H6LbEW2WAwJWg1ZKY_5yF-3MTBPSxIjnzjuVfxDUGknWe4Exuzces7jEvJFz0EquekNotodrRcPjOYrjIVdTU5xAP2ZbnEj80BPvcsK_9kwE_tD6H8J8naASKBw-ncpeFfWtTa6n4_0UT2P-ZVRW7mI3XIDt1qzSAdm7cXAB3ouPJyyFJnMyiH-zO5cG53CR1SJy7hdcXhvTJ3O18SfLCqkspR5XHtwKIzldwdnok-pH3MDjtGPDAXpMopQpeGhivX3fMTNUpZpqUH7pqiA1WdlT9gT2sfG2nwO8KbkLyb6_sraEhI2FLVnus-9wvq77Z4uuv74YkA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.241,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-079",
+          "prompt": "What's a SMART pattern for AGENCY/freelance work?",
+          "options": [
+            "Custom-build every client project",
+            "Avoid templates",
+            "Build repeatable no-code solutions for common problems, productize them, scale by reusing templates and workflows",
+            "Manual delivery only"
+          ],
+          "answer_commit": "hmac-sha256:fa806dce0fea5be59e25cd28601fac40",
+          "explanation_enc": "aes-256-gcm.v1:PlNMOIQ48FGw4yFX:3wkhxVyy-PS2L-SP8eASTK9R5XyCvKT7LOhSk6aZw5oLXgJvLgvK-XD6ka2ywyYJyFdUyVDPIVIlOx_LESn9x4C4koqob3sKOpXM4q6F9ollHcydi2qBygWugn9spGPRYeB-g87sw2V5YDoHN9k_7pOv0rPXDmI03y5SuW9-NDzT6YrTAytxRuZq3mnI0HOt--QiebFjVopdY9K6oC2mNqYAaOHMG5e4S2r4nhYYRnkRL_WXcdTVCZJznUF51yB3CmxwNl0kcQUudgykOX5X59GtZQWZdkvFcfxuDD9fSNYIukGaLFKleWSVE924",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.424,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-080",
+          "prompt": "What MAKES a no-code project succeed?",
+          "options": [
+            "Clear understanding of the problem, simple architecture, careful testing, good documentation, willingness to iterate",
+            "Using the newest tools",
+            "Avoiding documentation",
+            "Maximum complexity"
+          ],
+          "answer_commit": "hmac-sha256:1e96547465fd5e175aa8524b752c0940",
+          "explanation_enc": "aes-256-gcm.v1:ZPtSn7DqqAHAr63G:Of-FnftZg_CWkhq8W7hwVlIsz0X_jlzrsKBGfCMWKohTA33JKtDzvpUlLblDXBE6AU2NkI737i9Z8UecZblDRYotHrZX0bhYcteH5lVMn1eRPYx6BoULd0oZVfJ2WYl6ObQ-IBU1eVvfqRYzMUoiQNCcNT9Rr2_hj3tN4OhXPdvo6gqPcXXQVFHjHJ1JIe_sqejuObmzoAQrNi9qWIFxStqayOeqCG15o1oTVT6MgLAl4WJ_kDFlcqWo7wObO_tsHbRIff3A8DLUs9imMfDaKM4m-bWAKZQ82dYJE0uq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.273,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Career paths in no-code",
+      "skill_id": "rfv.skill.no-code-automation.17-career-paths-in-no-code",
+      "items": [
+        {
+          "id": "nc-081",
+          "prompt": "Is NO-CODE a viable career path?",
+          "options": [
+            "Coding is always better",
+            "Yes — automation consultants, no-code developers, ops engineers, agency builders earn solid incomes globally",
+            "Only for hobbyists",
+            "No real demand exists"
+          ],
+          "answer_commit": "hmac-sha256:6df38c6c060d4f18bd60a7c87a0afdf5",
+          "explanation_enc": "aes-256-gcm.v1:NgJa6ljLAW_KKtOB:39GJCc-qnsDn61FEKO-iHgbqqvuZvET2007EhQRvtbLnsYga_hyhNKbQNwo6JWu337sfOkPrM0LYVEsadmWt95GwcG40piP4fmMm5tOjUzOl3Xn4MB5vkCRDnlMLqyjeHGZgpQVkK6gKjlGoCB5ZrFa3LCaIs2K1W5zlrGTVGM1MM_AFhzTCZ_4SRI5hLBs7zYBH6RNkHRmqI8j6rKkDIX_c5MFO0q3Ku9G06nyob1g52joWvEQ5IPcpEuQZ2GuHtfoYx2YfAHt1sz6HCRQpPuq7UWMuE3JIeMTjzddXac7_zpLT9soggFZoj40JnJaDGmTIp0wPncjhVr-0qIK_iConQQmQQ6mynZG2VJI37g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.696,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-082",
+          "prompt": "What SKILLS make a strong no-code professional?",
+          "options": [
+            "Only Zapier expertise",
+            "Tool fluency + systems thinking + understanding APIs + communication + documentation + ability to learn new tools quickly",
+            "Only visual design",
+            "Just knowing one tool"
+          ],
+          "answer_commit": "hmac-sha256:329abe1d76fb2a0ce76664b54a5ec920",
+          "explanation_enc": "aes-256-gcm.v1:XDBCmWVDrkdSgb2S:MidI2xQTGsaRxSu6HkKph9PjWocOU-s-6zAg2zAuuTa0dVeT_RXQM1SHHvK8bs3QVPMlUxQ80kmt27OwZlTTRfHAUKsAAoOXyRcOXMZZ2GPq6mnE9zQuklKx3ieV4H7-TwiqNb-9i0pJs4nPiwBI427s6UsmhBZRdI49wiwvFcbBB-_UdMGS_xKSolC_yvJVaCuE4HXBnNQlS-QAVDax16maKLnQo3HGfYl5qqF2gVCDqYdKKJnVg10arjr-IP9-MIgUnNPLZExUlJGgHFKLYZIhn4hcBPhasBDq5YdSqH2gOfWCM72XoV7UMUWjZz4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.762,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-083",
+          "prompt": "How can someone START a no-code career?",
+          "options": [
+            "Wait for a degree",
+            "Automate something in your own life or work, share it publicly, take on small client projects, build a portfolio",
+            "Only formal training",
+            "Memorize all tools first"
+          ],
+          "answer_commit": "hmac-sha256:1de9f21091ebd648fbf9e082560580e5",
+          "explanation_enc": "aes-256-gcm.v1:W302qnj4g8OkhAnC:93T0w7QtA_fBgKdqTTvBDot_Cge8ft4d0NSpoCWfK3Y5nKXoPSK1LrakRdoRXNtPiJ-Vkzn7t_Soy_2fO19WA1H_XU_cswddqdxN5qMnWBt53EUvK_lTvBTy5T2g3Z6AM2T2nKZkxhXRUiKQIfFUVSHvF_ZalsoK2vwmek17GqprJ6TwphYAt6YY3CKPKGvbLP0x8AzKIjbTaEYQN0VzgENUR0YBnNwovijMdLsboR1P7cRqfrMWeSM_MvPgMs3rOtiRYqmlJ-uWR7U0Q15o8EWzV4EpxhQt_ssTL_5ENcKSXWBE3jmqZFHD0TQllCQxCQuN5DtgNt3aE14JumQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-084",
+          "prompt": "What's a HIGH-DEMAND no-code specialty?",
+          "options": [
+            "Only the cheapest tools",
+            "Generic 'no-code consultant'",
+            "Anything outdated",
+            "AI integration into automations, complex Make/n8n scenarios, internal tool building with Retool, Webflow development"
+          ],
+          "answer_commit": "hmac-sha256:a7ea2b3732cc8b14d03430568cfda54d",
+          "explanation_enc": "aes-256-gcm.v1:ZAT6DU4t4bM-ijbK:o-XXdBZnbidCopwnvZoNQ5NiS9gwpZZqEJZZSc70xGK1EVaWFW4c-Izytg5D14VL5KgB2uW1HXniV1NbuEmGStfjO9IgE8lUXwg6vy3--I8wfY6jCVJsh3_VEXgbdHn41o1QIKZF0uV4_79HxV_jfFqGHqjqIPUiDy1cBq3-z9qi5Z8gudt_Y6rqSdNRRpOsKtTsXFHV7-Zyvkqqjh734CJvw4P2pKxHtP1iT4QKsYlzUhwR6PXRBgYealy72CxyPKn_GlGYQvS3NJB3PrH9TUy0aTQ1cva5fWAxaDdGqZgeMWjvZzpLFXSeQs9J9aUH7JjPOE1Jg_lh-qlSJa0PKGaxWt0TzOHc9TExUA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-085",
+          "prompt": "What's the META-SKILL for long-term no-code success?",
+          "options": [
+            "Mastering one tool forever",
+            "Continuous learning — the field evolves rapidly with new platforms, AI features, and integration patterns",
+            "Sticking to what's comfortable",
+            "Avoiding new tools"
+          ],
+          "answer_commit": "hmac-sha256:20ab77131aca820bd65cf8be2d3582e0",
+          "explanation_enc": "aes-256-gcm.v1:xxdoOPJ-KuYNLc-G:oxPKf1pQQsBjoNpL805nXnbahYFFHxpfTl3BmLCTv5dyWg1Mid4OYS77SfEoisdtDZpNkEDMcwyyJJej4s-Mhjh8QQdqqGKpfSo_d262MfZOLcdlMt8rnYhVPhXlOs_41NbQNOwpbZj6PTtKrIQNQSQSMGsJnA4d9RTgO585KCpyMJ9ey8Ax-27UxUfn0CuclUC4qsCxhRUfiM0_DSLyhJ_vHvJ07vaTpA3kH2m8sU0yfNWCsoPhkvX9N56bPQ6Yy3OdHxv5pcOSmGJq7qUfTwqu0xhXO_3XL7fH7xA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Common pitfalls",
+      "skill_id": "rfv.skill.no-code-automation.18-common-pitfalls",
+      "items": [
+        {
+          "id": "nc-086",
+          "prompt": "What's a COMMON no-code mistake?",
+          "options": [
+            "Avoiding complexity",
+            "Building before understanding the problem — automation amplifies; if the underlying process is broken, automation makes it broken faster",
+            "Building anything at all",
+            "Using no-code"
+          ],
+          "answer_commit": "hmac-sha256:5c4fac7abe9dd0f7392842fda56ae36b",
+          "explanation_enc": "aes-256-gcm.v1:Pti6jOr7fibHbNCz:LR9eG1vhKRXqUWPdjALI8FscEg4BFG3VUqMHvwx0Bq592IJs2mC5NvGS7Ci4OHlxzDWEvFXr2RF-TWNN0IzMKxl9RKMunUbdbS8eEvXPHqnj0Tb92r4HG4ZVeDESHq6gGni7vXUVh_0eK4h88DMbvFzbHDfM9xDjFWDRNerDD-EabhmxC3cNZZMmOLtrOWmW_kw_Yp_7bJXoP9WRkHy-loidfzUvBBsooo93eRV6j5IfNW5IIw804e8Kbm9fSbJjGE1ZlnzRRL3hQUvGbQlYL1USMAyKYmYBheVm-CJF4aw5-O1vVvsVZ7GOXp8BVvl12mb2k_M_GLg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-087",
+          "prompt": "What's a WARNING SIGN of automation gone wrong?",
+          "options": [
+            "Workflows with documentation",
+            "Workflows with monitoring",
+            "Workflows so complex nobody understands them; failures that cascade silently; data integrity issues across systems",
+            "Workflows that work reliably"
+          ],
+          "answer_commit": "hmac-sha256:8a5a1250412c42b0a29f2bc22f7df233",
+          "explanation_enc": "aes-256-gcm.v1:OEO_4QgtFCw3rI7Y:hnXaKBw4T3zrMP-MSujPvtT79kmXwNVwOtMzkk2hIzyfPpgDxqgVq-u7ARJEwnm62qwFataOg9VUNHZn-Of8_oBc51J0poiSmmqAByOFgc6EpJhGuzTpVSPTej_3CpzD5NfXsWJFr0amb-XkX_JsLpMUp2MKvVRs8KMVYgE_wzIvkIHX-dddIpxLPtIjM1lrYdx2N0jNV6zlsEljmlD0eNohXzWEKcgSHGYLjHbg8GifGTt9RafMLlqeHP_NIiv7ph6lnY5X1AFaTUGwI2CJ_nAdPmFpa6V3EcTgY-QRaAWwY3nBM4YNHFDenasZr2W_-ch18o_3La0GQg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.071,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-088",
+          "prompt": "What's the TRAP of 'tool collecting'?",
+          "options": [
+            "Subscribing to many tools, mastering none — better to go deep on 3-5 essential tools than shallow on 20",
+            "Variety prevents mistakes",
+            "Each tool is unique",
+            "More tools always help"
+          ],
+          "answer_commit": "hmac-sha256:510f930ffa0b896e67a11a5e0a6cdd8b",
+          "explanation_enc": "aes-256-gcm.v1:huZr1lNarbK2zsCK:yNh-h9UIG7bC0YmzUiNUgAJdWcl8C31Bq2CECqWaITdmTCw39rRiQNpXY4pBEYoeLekQobq92NBu79q9nJCICe3zN4tOtQhfaU7GZbYgX70TIcnpj8n_F88mCejR256yRL7QhzAWgnpGbIZx6qZt-KO6MtDhuml6ySokvQJmHXMgjfl_vnbePFOabESCkYclm-az_zB71oC1jOfD8DiccxWtpIqCuHpwGeZTu6Mk2g0mc8jdV0JS9g6pzRztHnwB3iXxVS25komhOGl37x_gMQ2tTx0j4m9mRBbsF6mnb0_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.12,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-089",
+          "prompt": "What's a BIG mistake when teaching teams to use no-code?",
+          "options": [
+            "Going slow",
+            "Including too much theory",
+            "Practicing too much",
+            "Skipping the systems-thinking foundation — diving into tools without understanding how to design good workflows"
+          ],
+          "answer_commit": "hmac-sha256:83097432a84b671d06df67587ba2ca7e",
+          "explanation_enc": "aes-256-gcm.v1:cmUs_CLOYnPrs6jQ:Z92DLd5g_1hCuGWOg_L3c0INa8NYSVMHBFLUSLFrMMiPJa5wSpY-vTu3ym64zhCyR7OVFGdLkMEjlIEskg_qZstmGV_8rHZX0Jvut365Dq8nm2QDFiXogOXjDxVLdzMREizuxS8pR-6tIOwsZXHqoPPvfx1K4L-fg_c_80FWtX5yOSFUGCa_HXuaE8ioRmeuCeKmksCHdqngS7EJd4XMh8P2qY-tsw5KNBpauL8mYN_rFp_47ME7k_aVOhF3Cu74Xk-mAQv4kktTi5A3As-rSTvEEtOMErLM75BDjBB6_0HCvLJaujJM2a-EKzYxzNnfyrxXGo36DZKPyN3v",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-090",
+          "prompt": "When should you NOT automate something?",
+          "options": [
+            "Always automate everything",
+            "Automate only fun tasks",
+            "Never automate",
+            "When manual takes minutes per month, automation would take days to build and maintain — automation isn't always the answer"
+          ],
+          "answer_commit": "hmac-sha256:971698c66c86b99accb508f04b89282c",
+          "explanation_enc": "aes-256-gcm.v1:IkGiHEDXIAxRolmx:iF_YPVe1gQ4ak9x5D_XVB6QG9ovvqhlgZ-f58kcj4yiWwR3Oq8JIk6B81mGdnT2K1BnwEjwgwiiYFVV8blpzw-UWqmnNHsut9gbu4spbPXT5n3Agjs6x6ACW94ENTpgI-nbyMzOTk2kf4k1B7kj4-SK3uQStZqAt43IV3Iwr9eeJ9x-yOHTCfiXajvl1Bi1yCOMwZtYMum6zUYEHNOYIjUu2wmhsCcfCc1qERPEA3sNTLwCyDVEFE_WruUOgbr3O6d04d7efolYc4roLLSHxe0xjBdzpeVeAFS98slHX1DZ24mVPBrJ9sw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.692,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "The future of no-code",
+      "skill_id": "rfv.skill.no-code-automation.19-the-future-of-no-code",
+      "items": [
+        {
+          "id": "nc-091",
+          "prompt": "How is AI changing NO-CODE?",
+          "options": [
+            "Natural language prompts generating full apps and workflows; AI agents executing complex multi-step tasks; integration of LLMs as workflow steps",
+            "AI is replacing no-code",
+            "AI hasn't affected no-code",
+            "No-code is replacing AI"
+          ],
+          "answer_commit": "hmac-sha256:7a2126ffea69cf205f9d0933173ab59a",
+          "explanation_enc": "aes-256-gcm.v1:myikK73vPHKjaYkI:9JyTGaS2EzrqDFwlEgxJ2S9GFHVEHDzeO3EX9bJo64zZ-yL2K5NUeFd5dJjVBoBSieLnjZ-mEE6P_aDbeihH72xGxGtW_9MOD0kYIg9T855wgL7CDLZ6cQSnk28QLwIXa-NgcIT_7Z0SAEUCmjcAc_8jeMquMh1wQMtePCH4b-SDO2GNHZuuc_H4vkwj4yiYVfswM3yarM5Mxm6Fc5WGjF-o4VNAyBJvzqk29lZhvK3JALuNtXEPStelUfFJameauUuULLX6LsrOSD-gfNlvwo-AwaDmiEQlxHqoHs9S63O2vo1A-Y8wbzo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.538,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-092",
+          "prompt": "What is GENERATIVE UI?",
+          "options": [
+            "Generic UI",
+            "AI that generates only icons",
+            "A type of CSS",
+            "AI-generated interfaces created on-demand from user prompts — frontiers like v0, Bolt, Lovable explore this"
+          ],
+          "answer_commit": "hmac-sha256:0658850606b53e689bebd2905014ff1c",
+          "explanation_enc": "aes-256-gcm.v1:iD1tRxqoXEH0qlHB:ugucURIlK08HWr_zs2C6eFyF-MOkigDBHT96QdBbVGVjIu7WlE2VzewhGihAurZNegKTgsZ83TFgv9VpOomGcr3G7G1MUmc8IDsKfEeGhslwg4MoFs-F_WbzEJ0by40eEgyHyUZGhLre_MPLqPEkvy5mH6w3WOHGtoYLe70DiLfCXDgGvtBHBja22_5D7e6aBLzU_jMCbDY6-p2ywrGQOIpy3GtNYHjMrrenLi5gRlpxl3JQNKp0LcLa89LZBpYQn1ojdEPi5MKrPihBtyXI8PBBlGyyNb1UceLOuAYNue2VoLIkhMLgl74EmU_xXd9aAWaxgM58",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.821,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-093",
+          "prompt": "What's the FUTURE of integration?",
+          "options": [
+            "More custom integrations",
+            "No integration",
+            "Standards like MCP enabling any AI agent to use any tool universally — reducing per-integration friction dramatically",
+            "Manual data transfer"
+          ],
+          "answer_commit": "hmac-sha256:b987f7913f833a31a26f1ec2bb8a19c2",
+          "explanation_enc": "aes-256-gcm.v1:Aym2iMFYY1Ie8U0g:CKzfHTXJ7UXNA4cnclxi0xMF_QeRnmZKOUBx76z3ApWkAwbZuesRputFuSxAhyq064R6pVO6DRX0YZ8a9fArs7wJg1eRun6bitjtVtApXCX44_vPGdnVuUAHwD6AJGfZ73EAf8K-aRVbZmPAYje7PnZMtocD7P5FzAcOZRb7AyDLLKlrL-stqcgyL5J4I-zidTHOyuyM_AOPxoYxjAh8L6TGR_rm3YKTyClNn8gBqcItObgAMyr_gpt9uDSP8q5KooP3w4wSKrrb86bK5MB5wbjlp_Lbebe0Tze7Qh9sr3mUBMIX_1rfJHrH2yhjAVUjY-655oaNOMR5npQ0ZQ1O",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-094",
+          "prompt": "Will no-code REPLACE developers?",
+          "options": [
+            "Developers are obsolete",
+            "No — it democratizes building, expands who creates software, AND increases demand for developers handling complex/custom work",
+            "No-code is dying",
+            "Yes, completely"
+          ],
+          "answer_commit": "hmac-sha256:4568f55e706e2a60f196e3896a0e579a",
+          "explanation_enc": "aes-256-gcm.v1:VVTnjVnmgFGlk_4O:urUjjiPLZUOlhM0G48H8Zsjb4QPomRxnP0iPXo_9A_eP_Tvh4sByXSaeQg1tdqp2vwSJQw0FW5ooXaL4FqvVB4D8C2ZndGmkTMB_Kvx-Ld5oKA1UTyw4dn2krlBbpYqNd9O1YaAj6jez6QFa7zaHJu2QgQvacowJbFrurZO4Ss4g5xZ9DCWgPLBwwAkTjQVD1sBH-IXKXVQMPT6AApT5UaLliJJZi4a9CpJthk1FiGLWUgl0365jxHy-eTzbzoBunV0SnTQ9aIjnCOClUcXyOkNDx3E6g4X4o5F1HeFamlRyxBKgbq-7W9TyQQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.435,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-095",
+          "prompt": "What's the LONG-TERM trend in no-code?",
+          "options": [
+            "Stagnation",
+            "More AI integration, lower barriers, more powerful tools, more 'one-person-billion-dollar-business' stories possible",
+            "Decline and disappearance",
+            "Return to manual processes"
+          ],
+          "answer_commit": "hmac-sha256:301919dcbf80242a75a7f7fa6377b9c8",
+          "explanation_enc": "aes-256-gcm.v1:QjBU8YbFGoeX39gr:fQ8Vhaoc7Ot3gj_SOnLl9tYzJZ-h4k4UxU2mlBYiNRY44WyUGuPGkOwk1ssYt9iUt5ZhSP6bQlqu83fMyk6ljPmqkMOgCzaPBjdO9djCqfVnzjqZaNTNPyPVOOB5KtAIvhV1P8mqgIhn_J7A_Z1TXuuX1uMH_TrtK6y9SvTI6FtAVXglbWbdQd2PCK9ZearadwsE1J-EOMi10pXw_wBV9XRRJhRj3sCaoFx_5TplZ2zz9c1a8SJiBTQDaJryJh4684XJRHJ_9GIFFVYdh0QPcFQZXQZRAMFeGeDU9_BOdJzzmegHI9z-L1whvPhw89nLiLua_Pw0oJEHP3svAJ6RDc2IINYEHHOqkkv7JA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Putting it all together",
+      "skill_id": "rfv.skill.no-code-automation.20-putting-it-all-together",
+      "items": [
+        {
+          "id": "nc-096",
+          "prompt": "What's a HEALTHY workflow for adopting no-code?",
+          "options": [
+            "Start with one painful manual task → automate it well → measure results → tackle the next painful task → repeat",
+            "Automate randomly",
+            "Adopt every tool at once",
+            "Wait until everything is mastered"
+          ],
+          "answer_commit": "hmac-sha256:ee64f2cbf197e4dff24993730f369058",
+          "explanation_enc": "aes-256-gcm.v1:mnqh-Cftxlqb7JV6:3-tz920QMXb1W5gqmJoR0hPR60tN_PJLgkq8g3b1B-HLVarcje4UsnUz6jp6YuptTBuaathtQbFLqC44RGSMXvY7LovL-QXslLhdfJR8snHcc20u2v9D20GhXPfSgktTJIEck82TlUW7JKkmkEbfY_Jk2K8cr8bVimaYgwANNjVNFH8Ld2-xzU8Qc-L4L642zH4w8yHToHiZVr57U2gedrUKX5DN2usp259gRUYwe-_3ICQeySKCxkTkwYMNS3re5qL6dfjDN8eLgv51hAl-GfJwscrnPDEF0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.364,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-097",
+          "prompt": "How should you DECIDE between no-code and code for a new project?",
+          "options": [
+            "No-code if the use case fits existing platforms, speed matters, requirements are simple. Code for unique logic, scale, or differentiation",
+            "Always code",
+            "Always both",
+            "Always no-code"
+          ],
+          "answer_commit": "hmac-sha256:e16342ba636482d181c89c9378ba5388",
+          "explanation_enc": "aes-256-gcm.v1:rBePjq51IK1sfrA3:pJV_MHBcmoBgP7P6Is2lQOeqXt5WuHsyCcrL6YYrrLAcEU0ca_Dy8X8xVKLBR5ekvKkgUj5q6Ii1eFxLMvOOBy21V6ptYHlRucXjyA1exq5ulE-_2sNN8jsitMT-wibJZ9MU5du2g4SWenSf4ytSSI60MNWcIV-2cMhp8ueJSt2bLnI_yZXuzhIpPbWQcFYMEApmuLKGMjnLJcaLrPSTbh9Pwgb2FlPrs2ZfkA-rQX1Eifale2w0don9dwbMuRkOesR5UwMNB_25_XsHW-XBCL7GRi-fSLX8X8LOe4FyQCMDqqQ-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.786,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-098",
+          "prompt": "What's a SIGN your no-code practice is mature?",
+          "options": [
+            "You avoid documentation",
+            "You think in workflows naturally, have personal templates, mentor others, mix tools confidently, know when NOT to automate",
+            "You use all tools",
+            "You build alone always"
+          ],
+          "answer_commit": "hmac-sha256:4b183e820e7303df73789a1fbd9561fb",
+          "explanation_enc": "aes-256-gcm.v1:dQb-xcQXbpqQc6nW:9Hz4p8lRe4jO521UxxZdZ-WJgKx09eC6kmcukL-LcUDAcVg8hdqf35fHLzhX853kfzhGROLonnA41lerl_971gGYj87bGCU346OpQw0IKC770M1WnJxb3Ua1AGofQlOEE4SezEDGPEVsCWlyBo7JJKTWkaZNh4SbMFjB8nkHgtblU_DkAvzDdGRfYvll1xjCZZW2vM_oi0unk3c_5YUqft8rXtO04g4m8DoYBbrQFByYhSs81pNHxM9d8F1j9DzJj6Ok36c6vYT3lcO2Yyj1eEAw3hUXspQ1337apmstyaTjWvZls-hoIhwqrxERsLmuKkOOPi26MLyplzmvfLpU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.304,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-099",
+          "prompt": "What's the BIGGEST opportunity in no-code right now?",
+          "options": [
+            "Only basic Zapier",
+            "Avoiding AI",
+            "AI-enhanced workflows — combining LLMs, agents, and traditional automation creates capabilities impossible just years ago",
+            "Refusing to learn"
+          ],
+          "answer_commit": "hmac-sha256:a36ff579b4483b2978928ddd1450e679",
+          "explanation_enc": "aes-256-gcm.v1:bBKEVmNWGJyVfldd:R273zgux0FJUMA5dAzW40J1Z_rfF2nYLKFUQu-_7WI6RFelMsoqx6nUlD_jojHmVoC8IrN4DNcRFC1oOiQpeMN0GK90xES6i6UMR87yPu5AE9hPw1SmnkWzpO339vdHXxLbQo8r7xwi_HOgjQjcT5irsJwq-UeTIRLmZ3nWXky6rH4QUzHf86uhNXlGiJPA6Zt7Ip4UXKZTb1myWcTRztDXy7ocWiRGwWAc2Yw10Vx8XfDXcZlMju0ncCHoAI7KbJj9fJTMSYqOxKMS3MeDteTNCOzQzNkh5Uiz1A8K4SDSZOKyR_2SQzb2tLZDsOTbwwsqhl42929rOXeV1RU3Sh1A3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.118,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "nc-100",
+          "prompt": "What's the META-MINDSET for long-term success with no-code?",
+          "options": [
+            "Stick to one tool forever",
+            "Wait for everything to mature",
+            "Build only for yourself",
+            "Embrace continuous change, focus on principles over tools, build for users not yourself, ship before perfect — speed + quality"
+          ],
+          "answer_commit": "hmac-sha256:bacdf3040f179c18a21108081806f4b3",
+          "explanation_enc": "aes-256-gcm.v1:AB3M4mAonCnhSapP:SqHavfog7jk2F-VIJ_XBHq_VQsAa-dMDl-NTuaYuDEHbHHnY8Ys8VyyNNvHE144PKlqCPmqlVNGK1YA4irQ9B4QyxKl35mjwDmS-dITPmQq9qmgWPlEW3-KzPVyBhfwH8Ep-VCkQcfeFP6Mpy9Ai7Ymfel3YF0230sA48_JUj_dkJUbwvPrgQX9gnMTi1JirjLKvlXT06-fTyImgHf2c94y6t7EgeOb1SQXywnglhEfz8OFRcL8QH1h7K3TQp1Dxr4VC34n1_uuU2sBX8syhNVH9zvct7N_gw2fJrwqOLnrdRzrNo4uLIoMm0GdhHI96nRz5f5JO_dPuo6uSzA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.345,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:c728671371b9c8f53586a5cfa6597bc3a5511fa8aed1cf34c6cc84e4705404fd"
+}

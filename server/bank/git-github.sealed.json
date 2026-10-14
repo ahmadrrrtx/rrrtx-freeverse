@@ -1,0 +1,3357 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "git-github",
+    "title": "Git & GitHub Workflow",
+    "description": "Version control basics every developer must master. Branches, PRs, conflicts.",
+    "category": "Web Dev",
+    "icon": "🐙",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What Git is",
+      "skill_id": "rfv.skill.git-github.01-what-git-is",
+      "items": [
+        {
+          "id": "gg-001",
+          "prompt": "What is Git?",
+          "options": [
+            "A programming language",
+            "A code editor",
+            "A cloud hosting service",
+            "A distributed version control system for tracking changes in code over time"
+          ],
+          "answer_commit": "hmac-sha256:a762cbb4e83ba2bef0a858cf8a8fbc53",
+          "explanation_enc": "aes-256-gcm.v1:q-Ogq6Tb_MVT42-J:H9HhMsNJbQAxNIrBS1vSE9UO0sXtBy-ZpRtccROI0Dn1Y9-BHOt763PQh2N5x_AqVZ_tryGLamqsRVDKa-za3ibqUmLwnQ73ZcxHj1h0SuM01YbzWTXus5dODfI_H3SzUSHOsjHAlZiZ_18yZ0fiKqHz67ssNhmeyy1LKvEy50j5FOKC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.261,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-002",
+          "prompt": "What's the DIFFERENCE between Git and GitHub?",
+          "options": [
+            "They are identical",
+            "Git only works with GitHub",
+            "GitHub created Git",
+            "Git is the version control tool that runs locally; GitHub is a cloud service that hosts Git repositories"
+          ],
+          "answer_commit": "hmac-sha256:bbe503aee1dad0a3ec8acc9d46782465",
+          "explanation_enc": "aes-256-gcm.v1:AKSiFZRjcTfe2Bz1:oqTB0W6uCP8PcTrBw3UCnMk272lGWWs_vmVMoK2qfsbpD1kGQYJssHDQcghJyflEfF4hkPt0Wu8-Z5yjaagm1B92E44Efo8wKqhsdSgh-jH_KGgDGJi5aZzBzuH6F2aSdid6MTxA3e0_6vR0fMxWLC2l1ZgrvANjMzbaNMk1FcxsBw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-003",
+          "prompt": "Why is Git called 'distributed'?",
+          "options": [
+            "Every developer has a full copy of the entire repository history, not just the current files",
+            "Multiple people edit the same file simultaneously",
+            "It works on distributed cloud servers",
+            "It distributes code automatically to users"
+          ],
+          "answer_commit": "hmac-sha256:d35b5b9fc5bffa8d4c71042ca4bac5fc",
+          "explanation_enc": "aes-256-gcm.v1:z0_FWQgQYDD3WRaV:vYO-31OA7LGC2K27-puSMSUDjXm8sZgtJpvI9AHNjq2-iZOp-Q-PtK45uop_9IyiMzIHaZkjaWtnJUduvBdSjwFOGBWx5bMX1DZEtOA7fCkKArhAsauS686K7syh7INABVzun58MIisC2F-wgaT2mGcX03EszsrvVgmyfbfRxlZDcA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.878,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-004",
+          "prompt": "Who created Git, and why?",
+          "options": [
+            "Linus Torvalds in 2005 to manage Linux kernel development after a licensing dispute with the previous tool",
+            "Google created it for Android",
+            "GitHub built it in 2008",
+            "Microsoft as a paid product"
+          ],
+          "answer_commit": "hmac-sha256:f81de68fb84ce9d4d4dee4f788f67f7c",
+          "explanation_enc": "aes-256-gcm.v1:x6TSwfUSJAH0cLhh:2Vs3Gn0zHPSo-2uppWAWlR91UutpSTNzsz-oHpEytMp-Yy7nIwlPafz4cPzlk8CqftvZRndhluIU9oGKBa5Gf3WY-JtKKDbj3vbhAbut8-CbvsKHZNUcrwibqaEYGuAas_fn_WHhx7LxBrKuQjnctmbYLHXMus6At57jBJsu8jg8gQovmsIUHR8P2r0fnNoM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.655,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-005",
+          "prompt": "What's the BIGGEST reason every developer needs to know Git?",
+          "options": [
+            "It's required by browsers",
+            "It's the universal standard for collaborating on code in essentially every modern company and open-source project",
+            "It compresses files",
+            "It's a fun puzzle"
+          ],
+          "answer_commit": "hmac-sha256:60a6d119902c4fb149753ba6efe1ccce",
+          "explanation_enc": "aes-256-gcm.v1:vaCfEf_bO9CV6Z-D:hBsJYrK0jqHaH2LCbbTfVVmLcYWWhbzZt13aU-Ji_dG4C_GEq_c62CclIB9t8z6UkKz2_NAmbxHRwDRaVWmmBCjXCafFyS99GEa4tsKBDKLKsS0iAD710pkUWP3G0wKn2aIb0hkK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.52,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Repositories and initialization",
+      "skill_id": "rfv.skill.git-github.02-repositories-and-initialization",
+      "items": [
+        {
+          "id": "gg-006",
+          "prompt": "What is a 'repository' (repo) in Git?",
+          "options": [
+            "A type of file",
+            "A GitHub account",
+            "A folder containing your project + a hidden .git folder that stores its complete version history",
+            "A remote server"
+          ],
+          "answer_commit": "hmac-sha256:fa7d76baeeca4df5bf4fac6b5f29cc9f",
+          "explanation_enc": "aes-256-gcm.v1:vMN7lK3Wp54iHfDf:NMRD85uHhgDc99HlXLm_d1Zo2KUcPxe3JBaZpu2vOYdlEPlWNrHWuDl7WXHNswyYn5KIRCupYITcoETCn6AjZR_TvMASXdM7Bqct1kpugykmUSso-dLNrK1O3M12CM3jd2CZAReGkAMW7f09cRrWC-E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-007",
+          "prompt": "Which command initializes Git tracking in a folder?",
+          "options": [
+            "git start",
+            "git new",
+            "git create",
+            "git init"
+          ],
+          "answer_commit": "hmac-sha256:30d7dfdb6ce4741cfa4c46eebac4a483",
+          "explanation_enc": "aes-256-gcm.v1:aKwaD4M3YV1jw3pc:7cm-nzF0lPOSAB-MxfdN6EFqGv6ThCOWdFtwGyG0KmKXm7okrVXxcg9darXdfDqGAl53bZ2kISIVIbyGybJ_8UnLNa6jcJQxdxz9ew3bNEeQ8P350AA8lkqg4-6WvsIA3F7SoQrkNJ1ijCQKqoolw9FP6XvGGBgJ_A7h5tTcJMiyjlbrzL2bEAQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-008",
+          "prompt": "Which command downloads an existing remote repository to your computer?",
+          "options": [
+            "git clone <url>",
+            "git get <url>",
+            "git fetch <url>",
+            "git download <url>"
+          ],
+          "answer_commit": "hmac-sha256:c0cc7fa0b26fb9626a1d1c2a7d296ba8",
+          "explanation_enc": "aes-256-gcm.v1:5_I6PWC9Wv4-cyfM:FOZwE72l2oCGaaDoOqaznKb4x2xBZd8aDwct9luj0HyFHCjIkEyBEQSKDdkYZwBqCjiFvFiAperlf3zIvLlBmV8az9yM2aKodCk4uva5-fy6OZ4N-_jwDElhQHrOaX6ySVrW8spt_61wA2xF2doSnnZ7UxUz3mupVWdyhVHhjOo",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.833,
+          "findings": []
+        },
+        {
+          "id": "gg-009",
+          "prompt": "What's inside the .git folder?",
+          "options": [
+            "Just configuration",
+            "Backup copies of your files",
+            "Nothing important",
+            "All commits, branches, refs, configs — the complete history of the repository"
+          ],
+          "answer_commit": "hmac-sha256:608dcc84daa8bfa814473000c2521396",
+          "explanation_enc": "aes-256-gcm.v1:l3sdTLHsL7lOB-S9:4qZpPvDX6_AcfQVGlI-r_Ts82X91cyLPjs4p1bJxBf2Fznu5RBIix6_84VyWgq10aIgERZYO-Nc3g5Un7u4ZUtJ4570Ygd8iJw6Ztqbgy5cE58QrTw-Jz9qSEPk8sBhpnfc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.852,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-010",
+          "prompt": "How do you check if a folder is a Git repo?",
+          "options": [
+            "Run git init",
+            "Try git pull",
+            "Run `git status` — it errors if not a repo, or shows status if it is",
+            "Look for .git folder manually"
+          ],
+          "answer_commit": "hmac-sha256:74ce0cd067c84d50a0fba09b7cfbfec9",
+          "explanation_enc": "aes-256-gcm.v1:_wPp2CbkC1Snin02:F6zDkMjNOCbBub9g-qgDrm2RlQ9Rl4qE8Q4-y1HvnPHLXL4V0AIAz2DfgIdfT5hqu7w7KCMK66XRfAm8dEEUHo_ESYlSN3fDLEoTvXzUibc1skhO2hU0Pj2bY-dBHAPypQf_pdgTl26NyuaA71f93wiYfXWp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.345,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Staging and committing",
+      "skill_id": "rfv.skill.git-github.03-staging-and-committing",
+      "items": [
+        {
+          "id": "gg-011",
+          "prompt": "What is the 'staging area' (index) in Git?",
+          "options": [
+            "A holding zone where you assemble exactly which changes go into your next commit",
+            "A type of branch",
+            "A temporary backup",
+            "A cloud storage area"
+          ],
+          "answer_commit": "hmac-sha256:5af1a5c616ec0279d86e2178faa7006c",
+          "explanation_enc": "aes-256-gcm.v1:5hDUT_T1oRUMDazx:HuBHsM_5Tk2ClaUml1avwpsNA6FzHmnJ-BHaRUDzXE5NFCkYh_K8aMNTFVmPERjXj78GbgpIOcuyMo_IC38l_ly_GsgK9-MzHBXf7DUoPjYmF9prBgWegineBGglMFIJH9X_ofkUZlAnZE1Bp5dCXpaE9lbmV_1Y9Vw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-012",
+          "prompt": "Which command stages a file for the next commit?",
+          "options": [
+            "git add file.txt",
+            "git save file.txt",
+            "git stage file.txt",
+            "git commit file.txt"
+          ],
+          "answer_commit": "hmac-sha256:08c2fcd4bcbf7adb9a3f1e836fd72b55",
+          "explanation_enc": "aes-256-gcm.v1:rDzkSa8g-W5BPG7D:iuhGyn_wpCsmoszuQEmCDFf-H4P2FOdeC5dIIO6AAdLD-Cs2HLAvvn-jkZe4Jv8ppU_dn4Rm6Q-inqUfhVnNnSQhnEfEZk-liRP5ojBimJunb-7KjJ50dMwUd9z7XYyKFK4r1IaRBfqJdWQA_tO7ZZuFSd_tVg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.842,
+          "findings": []
+        },
+        {
+          "id": "gg-013",
+          "prompt": "Which command creates a commit from staged changes?",
+          "options": [
+            "git commit -m 'message'",
+            "git save 'message'",
+            "git create 'message'",
+            "git push 'message'"
+          ],
+          "answer_commit": "hmac-sha256:df7a445f5a9cc8532c0f37bc28b42ccd",
+          "explanation_enc": "aes-256-gcm.v1:KC50KZZxUXOMPrvH:TNu2b3HVYpzEBv67Ei-RuN8HvQx1xWO-wsk4f2fasjHL1DJykGw2Piq330ySKPmxlaiY8M1SBzymT0WnGkFGHpaQAQH-zJ1iMLZYgVR44zfZ-iZy1ehoAGJudI6usLgbjb9oHqNy9Q",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.15,
+          "findings": []
+        },
+        {
+          "id": "gg-014",
+          "prompt": "What's a GOOD commit message?",
+          "options": [
+            "An empty message",
+            "Just 'fix' or 'update'",
+            "Concise present-tense summary of what changed and why: 'Add user login form' or 'Fix off-by-one in pagination'",
+            "The entire diff pasted in"
+          ],
+          "answer_commit": "hmac-sha256:f6bb9e72c2c1f43ba46e669006a1ecac",
+          "explanation_enc": "aes-256-gcm.v1:ZqBEg5JLaMFwnDKL:B1vaCORWjGvDibJ3qyfvWA4LbGC2Q4-VxQLtNKAd1J-bsAEW9sALc_XDQts-jA7k_1VyzE3hsDlJ4WdGhNgjr6mPKB-vlEFqo7CRfs54MdhnnWrQ8lEoJ3LDkW7REWevlmfcj-ftns-X2vFoxcHKMPlawV6ARBPoyS9opH3bpS68Bg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-015",
+          "prompt": "What does `git commit -am 'msg'` do?",
+          "options": [
+            "Forces a commit even if nothing changed",
+            "Commits with an automatic message",
+            "Stages all TRACKED modified files AND commits them in one step (skips git add for tracked files)",
+            "Adds all untracked files"
+          ],
+          "answer_commit": "hmac-sha256:2dd4edcc958cf4d2f541025c924237a3",
+          "explanation_enc": "aes-256-gcm.v1:-qciil-b5H_xGv0-:rD-eCZTUwYi7JAS563VmjG4NP1DZL66V96KFrYCQtWDkdhHoeXfSjJ44V5ShIzjIf47GXu9V1aD-NzZfTWUqxjBk4A0s7-FvctHjGhL6_kwuiqZNAWR5ZObrlVgsU-v7UZtpkjd914G2hmQJQ_jVW2-DyI2D83yAXW7PmUK_lSE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Viewing changes and history",
+      "skill_id": "rfv.skill.git-github.04-viewing-changes-and-history",
+      "items": [
+        {
+          "id": "gg-016",
+          "prompt": "Which command shows the COMMIT HISTORY?",
+          "options": [
+            "git history",
+            "git commits",
+            "git log",
+            "git past"
+          ],
+          "answer_commit": "hmac-sha256:5d7191d9be78cf84ffbed0a2ea4bdab4",
+          "explanation_enc": "aes-256-gcm.v1:Twi5hF8XPI-17K3v:dJnktoUlSPiqemiQLSWWcndcW32P6z9mRwxNwQQLDbH54Di6SU3KgX-_WFIExfdtPRZ9tYepTogbG43kJdu7FRKFo0jtAuO8PMvupl8nhBpq_14klETx-FFJAgzFj1yFPz1oT_GTmtMa6DwAxw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.636,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-017",
+          "prompt": "Which command shows UNSTAGED changes (what you've edited but not git added)?",
+          "options": [
+            "git compare",
+            "git status -d",
+            "git diff",
+            "git changes"
+          ],
+          "answer_commit": "hmac-sha256:6c9289ce106ceaac6c1d7b65a5a0f4f7",
+          "explanation_enc": "aes-256-gcm.v1:CZDmeYw6w3hDxFez:suFy99QTOTxonnpRNtXIPdnC-_7UxvqciEB3pEQTgLAF_UmBk29CbrVsjJTIAUhH1lS8HrxDFud5hqGTap3oTyl78YJ44vtiysASoV75mVurTkXcAc3X6MxvuQ7QRX--RDGwqXfq2reKZyGY63HxTzU5-H4WGI1UkejlhHsLUPY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.615,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-018",
+          "prompt": "Which command shows what files have been modified, staged, or untracked?",
+          "options": [
+            "git list",
+            "git current",
+            "git status",
+            "git show"
+          ],
+          "answer_commit": "hmac-sha256:627fccd9645c0decc3bdeba6c1bd5466",
+          "explanation_enc": "aes-256-gcm.v1:oAITtL2EypZtNyXs:McpHrsddxZaa3ZWbkgDgEhvyjA8tKDLnknQCzbju3cnyG4UjdQ6LRkoBVx_7CjhSm1tTduy6rvw0o-BJoo2PpF5iUbwspFVKzwAYtvfrl2T3HpoYYkAkB7fGxT5NjCWxuX4wV5c8euC7mI0it5zsFCeLpg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.909,
+          "findings": []
+        },
+        {
+          "id": "gg-019",
+          "prompt": "How do you see what changed in a SPECIFIC commit?",
+          "options": [
+            "git view <commit-hash>",
+            "git diff <commit-hash>",
+            "git show <commit-hash>",
+            "git log <commit-hash>"
+          ],
+          "answer_commit": "hmac-sha256:a8a8c62bb82f9647e30e42e6f12f9842",
+          "explanation_enc": "aes-256-gcm.v1:t5xgZSAMyN7iYGeU:gGoBi587_TEJlvbZGSyGYmtm8cAqmwd5aC5BP8mDJ6BGk1YyBubRMuEJYq15AFLR96YjzkRBup4BpTTo41rTKbNurmhoNa9Lf35gXPBo2yej34kEce6SxwVkrnFOKsuP4i7hXY7gnU0KOYdzlhT5",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "gg-020",
+          "prompt": "What is a 'commit hash' (SHA)?",
+          "options": [
+            "A user ID",
+            "A password",
+            "A unique fingerprint (40-char hex) identifying each commit — derived from the commit's content",
+            "A file name"
+          ],
+          "answer_commit": "hmac-sha256:938375bca9eb32ee595d289fa946d754",
+          "explanation_enc": "aes-256-gcm.v1:_OjUpFzFChRtSrEe:VuLPhhnN1Eii4goDUul47yVt_QK-NUE2i4U_3HJEEbVaKxDY61SKKZRYrR9Y_bysniT0GFcnXuSpEB7edRO7-xALrya8pCGaGHchQxEbohOfb6v2QO4RCTv8CQ9AvXaE33VQ4pUsFcDWJUnNMw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.545,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Branches",
+      "skill_id": "rfv.skill.git-github.05-branches",
+      "items": [
+        {
+          "id": "gg-021",
+          "prompt": "What is a Git BRANCH?",
+          "options": [
+            "A separate folder",
+            "A backup of the repo",
+            "A type of file",
+            "A movable pointer to a commit, allowing parallel lines of development"
+          ],
+          "answer_commit": "hmac-sha256:353d54368d42bce2a3688217fbbd8ba2",
+          "explanation_enc": "aes-256-gcm.v1:STpr4RsdpaWXqdMe:foL7zltJkFI2_IRLIa16qAaFCNTeab1-ESY-NpypLOufxDm9UG5LglfdUcPz9BUtBXPA0KgtNTzmdeZLXYBnK0H0V8idhJMxWw6s1B5qKmNOrGqrZTn49S4uD4Vb5Yj6BkehThc4QMDW8J61cLcf82PD8O7gQpVh0Cz52E_2bx30eZGfeI--8Fec",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.45,
+          "findings": []
+        },
+        {
+          "id": "gg-022",
+          "prompt": "What's the default branch name in most modern repos?",
+          "options": [
+            "trunk",
+            "default",
+            "develop",
+            "main (older repos use 'master')"
+          ],
+          "answer_commit": "hmac-sha256:1cdf45180323abe3c70ee4b75932f3aa",
+          "explanation_enc": "aes-256-gcm.v1:ffEc13sqiauq-msy:HsKep6GICAkFHw4L4BSTBDEQGFZJsnxac9vDZZ2FYJsIITRlrFMzMHCgn8wllBL9ON1JL77Fs1q3xRJp5Q5e6xgU5WGiaJy8nbwH21NBl2mNYS9xM8HzVkD6sTcjPehK0k82Fw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.429,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-023",
+          "prompt": "Which command creates AND switches to a new branch?",
+          "options": [
+            "git branch new feature-x",
+            "git checkout -b feature-x  (or modern: git switch -c feature-x)",
+            "git new-branch feature-x",
+            "git create feature-x"
+          ],
+          "answer_commit": "hmac-sha256:8b31b3a80fa162924f024866b6046bcb",
+          "explanation_enc": "aes-256-gcm.v1:Ep1emjn0s6BWDa2k:2cq6z9DRooO8kiXv_InKHtAVvnBK2668oN_vzkIdXTuTCYEwVs1nlFblue3F7Ty7qUFnCJ_yGbKhn2zaGHiueut8Cm9oC4zVHDcEL7RPRF8_YvJamAYpNvNAWqqwP9OwPFW28M2Judj6Q-BHCkUrEv_cCwOM15vsOAyHng",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.625,
+          "findings": []
+        },
+        {
+          "id": "gg-024",
+          "prompt": "Which command switches to an EXISTING branch?",
+          "options": [
+            "git open branch-name",
+            "git change branch-name",
+            "git use branch-name",
+            "git checkout branch-name  (or modern: git switch branch-name)"
+          ],
+          "answer_commit": "hmac-sha256:b84a17a4b45a465a5718380678bf13a9",
+          "explanation_enc": "aes-256-gcm.v1:beF1cM8iIgEJQ0ol:MkP4lADzKG328j2HAcBkk9eCShuU5DAkh4lZ3qeMufgVFAxBrb6ByD5YYUJdYGJJj5fUMTd0SWikOSII-eK6_ahzxifVc94T1Du_tfZstedvPoJ1ZehyLx9WlQQRHbtRELFDA8D-UUjiF_6-PtuOCxfCGBtBrNWgzogHhcVvSHVr8g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.773,
+          "findings": []
+        },
+        {
+          "id": "gg-025",
+          "prompt": "Which command lists all branches?",
+          "options": [
+            "git branch  (add -a for remote branches too)",
+            "git show-branches",
+            "git branches",
+            "git list"
+          ],
+          "answer_commit": "hmac-sha256:60595bfb5682c1de7100013fc8f9b3d7",
+          "explanation_enc": "aes-256-gcm.v1:-E_i3G4nPc4cHx8u:G11mPxnSmI_5-_AmMCUrTi7DkaqK6_nU7SPgBVpy7b0-XMFF3-zCqYm-ZgFHz9vjYr6gxd1_JG9S1I5WjN5FYH6LAa0rs5O50jZ2Ni_-rXCgRk34vjw71udN1uchbjyN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.588,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Merging",
+      "skill_id": "rfv.skill.git-github.06-merging",
+      "items": [
+        {
+          "id": "gg-026",
+          "prompt": "What does merging do in Git?",
+          "options": [
+            "Renames branches",
+            "Deletes both branches",
+            "Copies files to a new folder",
+            "Combines changes from one branch into another, creating a merge commit (or fast-forwarding)"
+          ],
+          "answer_commit": "hmac-sha256:c7874f14c94d2a51615f31615446dd89",
+          "explanation_enc": "aes-256-gcm.v1:oidLVdMXVOw_zD0C:KN9yvrxUSoMcCuvUCKQXjVu9FOayg18OwHgkCOIVTIy8o_xLOC_MAqCd7oMZXQ8Rr1_yGEzel01Nf5a17IdvZ4OezdrJKpoEdlRgA-8W2IMTlgYZUHJ2yeEcLbqWDIQt6jIBtFTaFSsyl3KtzA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-027",
+          "prompt": "Which command merges another branch INTO your current branch?",
+          "options": [
+            "git pull other-branch",
+            "git merge other-branch",
+            "git import other-branch",
+            "git combine other-branch"
+          ],
+          "answer_commit": "hmac-sha256:2cff836433c8a5d9248231912ef63b1f",
+          "explanation_enc": "aes-256-gcm.v1:pCHWkylbb8oTDsqL:UcnKhjsTFFptPRM1a7ToTzo0ectf2vBizvHiF1ZDwp5i_p14Gj6TYTcpBNBbEamG9dQ_TfbvoCRx39GAOo-hLUQO6XuWbuDc7RIwQC0cLS0-D0arkQiAqmJcQKl256lhKlhXCeVXxvY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.917,
+          "findings": []
+        },
+        {
+          "id": "gg-028",
+          "prompt": "What is a 'fast-forward' merge?",
+          "options": [
+            "A merge that runs faster than normal",
+            "When the target branch hasn't diverged, Git just moves the pointer forward — no merge commit needed",
+            "A merge that skips reviews",
+            "A type of force push"
+          ],
+          "answer_commit": "hmac-sha256:e750b24e49c2b58b6b08bd05d46ec667",
+          "explanation_enc": "aes-256-gcm.v1:rRY41emCLAcStY5-:l9mh_jhvSTbup-MgduxPDDoD3FlOZcTpyWOstdAt-6E4U_nXGvxv4bDS3cceBquxxVfiFF1ELiYfTZrPCElkLBtz7YWfosES7cfDhTxSO_aipP5u_VLozR_L2_zgFyD7xI_9Pb8MMhg8dOtx_NB63uKrGY0Va8w3MDL3Qg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-029",
+          "prompt": "What is a 'merge conflict'?",
+          "options": [
+            "When commits are lost",
+            "When the same lines have different changes on each branch — Git can't auto-decide which to keep",
+            "When a branch refuses to merge",
+            "When the server is down"
+          ],
+          "answer_commit": "hmac-sha256:0ba74325fc04f7bff29bbb79b72333a0",
+          "explanation_enc": "aes-256-gcm.v1:Hrve7Y09XY7USXcF:KJaGl8bC_x1IqSkTIzvnNqa9b1g1ozr6NnU3k0MG3NokXWRuM50nwrcGNe_NPNStGcp5f0TqG_df2buqZ53RpxcmIXPurC1PGzus7fVu3uqfg3LELGDH8izbSsjHjdpfuOhfONEJ4ZSBKVWMPvjfkZ5oH28XDiVSa-hogINC8m5TiTdS5VZWoUAUZtV6QJ8f3Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-030",
+          "prompt": "How do you RESOLVE a merge conflict?",
+          "options": [
+            "Delete the file",
+            "Wait for it to resolve itself",
+            "Run git merge --auto",
+            "Edit the file to keep the desired changes, remove conflict markers, git add the file, then git commit"
+          ],
+          "answer_commit": "hmac-sha256:72c5b2d32332b1864ceaed6a27744102",
+          "explanation_enc": "aes-256-gcm.v1:gzG_8NTukSbYKkqL:aV-7M1Mm6VjeQtADn_Pfe2-iBuCoN5ArWwdR-ROvqn-yzD7ScVnm2P6rTiGfk87vWMGpHNLdJPc_DZJgK5AQ3uAxBh8hGAE8Lc5zP9FS332Nr10t5UhAB89hxFydFnFlV9OqWQ9m4uDNXVj-5y5QcLgWGGs1obE_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.483,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Rebasing",
+      "skill_id": "rfv.skill.git-github.07-rebasing",
+      "items": [
+        {
+          "id": "gg-031",
+          "prompt": "What does `git rebase main` do on a feature branch?",
+          "options": [
+            "Replays your feature branch's commits on top of the latest main, creating a linear history",
+            "Renames the branch",
+            "Merges main into feature",
+            "Deletes main"
+          ],
+          "answer_commit": "hmac-sha256:4ec81784a2bd32744ae27adab4680e29",
+          "explanation_enc": "aes-256-gcm.v1:WKYdx-SVI7XDMCM1:ymCGxJxBYlzOP6py9gCnYSXmS8yI4j7AseqGQGxGhD3Z9Df7ThUO7wLnyYXudmy0r9tDU8fqO5N40-PP1lQoCX5PUn82AkbI3eU43W4bRB2yBfqWlFIyxyjr15V_D76cAdzuaiY4vZ14LzBS5LZb28x7NS7UkVzrq9aN7WVyKt488-Hjr4F5fCPx33VezTCS33pl9MA5yBY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-032",
+          "prompt": "What's the GOLDEN RULE of rebasing?",
+          "options": [
+            "Never rebase branches that other people are working on — it rewrites history and breaks their copies",
+            "Always rebase everything",
+            "Rebase before every commit",
+            "Rebase only on weekends"
+          ],
+          "answer_commit": "hmac-sha256:f520b41868bd7f9c7964133f63e8587a",
+          "explanation_enc": "aes-256-gcm.v1:MY62IknAssqgSRAr:uvRQzejCB4IF_VXzuoOO6aqjZiKRgLBfcCRBZ6hgKW_QaYsHdC2O6hZyVmu72AGe0-qtZKi7MRRcaDZW9YJZKSsytRSQRK9b1U1IE8IFK6fWSzqF7JtJ1eO2eF_KUZHroaHVryw5O5YkgI_6fbW_a2KSUi7jzxu6ke00XHrEw-ld",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.846,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-033",
+          "prompt": "What is INTERACTIVE rebase used for?",
+          "options": [
+            "Reviewing pull requests",
+            "Solving merge conflicts",
+            "Creating new branches",
+            "Squashing, reordering, editing, or dropping commits before pushing to clean up your history"
+          ],
+          "answer_commit": "hmac-sha256:6046c8782d1c3d59dab0397a4146c15f",
+          "explanation_enc": "aes-256-gcm.v1:-oI8TS00lqWzobKi:4aCkYpOWRlcns2dzBrVBS05W-Hcbphi0wnZVZfnhsCc_8kbI8I8HvqgRxfnpwyvNYBMHTgL6L3HUwmjgoDM4FvheyQ0UOIU2uP_a_QSskWshvS9FrpZ9pnYDphgaIVYHckcl8uZHg2nJ6SblgQQOPEH5OpdVU6WvB7IqRVzVNrHmNbXTaD8ylDur",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.957,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-034",
+          "prompt": "What's the DIFFERENCE between merge and rebase?",
+          "options": [
+            "Merge is for solo work, rebase for teams",
+            "Merge is older, rebase is newer",
+            "Merge preserves true history with merge commits; rebase rewrites for a linear history",
+            "They're identical"
+          ],
+          "answer_commit": "hmac-sha256:ef070807a95d8c9f7eacf31044ae7b65",
+          "explanation_enc": "aes-256-gcm.v1:xLNd-1c3HtM3pVc6:B_5uzeBZEwO8buzzGwLUytPaE6tcVnjeZ15xW9S8g9ImchuRINZrW-dDubA2fzu4UfA6rc_VYIxBLdryoSlOAiG_8TDe8IILzKJZVI7FbcmmGlt7rhq8VMgfCz_sQcuZWOaBWhnxM1GhOm2accD_lKYwG3B4-6AM0VKEGbpB3fyAfGQzyB9yjvabs6h33yZf8w4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-035",
+          "prompt": "If a rebase goes wrong, how do you ABORT it?",
+          "options": [
+            "Press Ctrl+C",
+            "git reset",
+            "git rebase --cancel",
+            "git rebase --abort"
+          ],
+          "answer_commit": "hmac-sha256:20adbfc454063e6366b8b9ef9dd7ebf0",
+          "explanation_enc": "aes-256-gcm.v1:V59LH5eWMgp_qwkQ:xF6u_tHVHUc0FDdyWZXo-0J9a67BVE5Xg6vw8TGl91LteiuECCGv8CUC6a902aKf6l9ELrBzf5gOmERTkih1k0FOF0EPZOs6GSLDuGei-WQ7n1fpPXonP3-Y9h253AgT_1YOXTHaA9eXNBTQNEH5G9CyEVMC-bawFNdlMK8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.947,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Remotes",
+      "skill_id": "rfv.skill.git-github.08-remotes",
+      "items": [
+        {
+          "id": "gg-036",
+          "prompt": "What is a Git 'remote'?",
+          "options": [
+            "A backup branch",
+            "A named reference to a copy of the repository hosted elsewhere (commonly named 'origin')",
+            "A remote-control device",
+            "A type of commit"
+          ],
+          "answer_commit": "hmac-sha256:dd18800f620b5512ec696da82120bb71",
+          "explanation_enc": "aes-256-gcm.v1:vx3RXjWMzS3mG-6T:AJMygrPJYUOYq8Gu1oAk5N9-pN4FsqY9zlNlcT5blSzTmQIVzqRxxvoO_M96mQeN9Iy7FDDrTFMvy-OngfB44VNGI6XXsiMiBpvkZumWO2DvCb7GzXr_Zu7a-zgF9ij55EGryfJN99RDcutaSpGZSvA8VN_sFtkFq-KR6xXqnQHGHA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.826,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-037",
+          "prompt": "Which command shows all configured remotes?",
+          "options": [
+            "git list-remote",
+            "git remote -v",
+            "git show remote",
+            "git remotes"
+          ],
+          "answer_commit": "hmac-sha256:3b70e5c31fcc4ccabdda2709d4245e96",
+          "explanation_enc": "aes-256-gcm.v1:MeRSehGwNov7WWir:gRUSfz1YPt7zC5Ux0rcYQbMZzScSQS09jcYxnkRqxbp9fcGZJ7l0I43hvSvyf70x7pPEO1kc9Ouh41c8WH8vEwYkWnJ82McbuQPpHYVXexYaIr5jRpWvqDrYaW0cZhuj1oyD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.867,
+          "findings": []
+        },
+        {
+          "id": "gg-038",
+          "prompt": "Which command uploads your local commits to the remote?",
+          "options": [
+            "git send",
+            "git push",
+            "git upload",
+            "git sync"
+          ],
+          "answer_commit": "hmac-sha256:1da37d164c3db5c7dedf5e6586906077",
+          "explanation_enc": "aes-256-gcm.v1:zriyQCh3sYl5ZaCY:wrDCy7HaRZ4Aolh_vhuU7kIvYRuwm_ANCF0xKVmMAxcoce6P9J2Dk45kEfxCl7mZz69uNFcDCZNfm5hj5aNIczPMQ_H2IupU8wK3QcvEyJSrlBqbauYAn-AVzlv8c_Ubq5lkmJzgtS6nyfqgKAKsVkKhlSOnqaEY15i7A7ZKQXmTmtxk_qqrGXA3Gpc",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.8,
+          "findings": []
+        },
+        {
+          "id": "gg-039",
+          "prompt": "Which command downloads new commits from the remote (but doesn't merge them)?",
+          "options": [
+            "git get",
+            "git fetch",
+            "git pull",
+            "git download"
+          ],
+          "answer_commit": "hmac-sha256:51f0251bb92a7b706000a9dbc054dd21",
+          "explanation_enc": "aes-256-gcm.v1:aWbBGDdjdGs86E3r:5paGKiJ1eoTbfsRyMHZTYRX4cZ0arfplBeg-OBhr8jscGluZmPBFxGB-OTYRVCe1lEMXIk8p0dByV6-aKYQReCRPZ_DRf9f5SJj4MaZ5bJIhBnn_dkeSjJxb-fs7rEpvRbDUk7ViSEU4ap1wR4p0YmFdcO3Z8Zw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.75,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-040",
+          "prompt": "What does `git pull` do?",
+          "options": [
+            "Pulls a branch out of existence",
+            "git fetch + git merge — downloads remote changes and merges them into the current branch",
+            "Pulls a file from the server",
+            "Pulls all commits to a new folder"
+          ],
+          "answer_commit": "hmac-sha256:363b43d87d70aaa5b3098ea7ee826f56",
+          "explanation_enc": "aes-256-gcm.v1:vi3y5n_9R3N_x7Py:QdZ1wENXdpMCXbBkNRvqg8V21erQ8BiUODLFSgsEskxRCSBpn4r13Zooo834NOdwG1-200Y7Ve20Ek5cn-Z8-dSIU-HlcLbg8pnSHfM7y-I-n4aXCx3gMUx7uGbe40W7NdgSqHUXnNjrvfVgkQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Undoing changes",
+      "skill_id": "rfv.skill.git-github.09-undoing-changes",
+      "items": [
+        {
+          "id": "gg-041",
+          "prompt": "How do you UNSTAGE a file you've already git added?",
+          "options": [
+            "git cancel file.txt",
+            "git remove file.txt",
+            "git restore --staged file.txt  (or older: git reset HEAD file.txt)",
+            "git unadd file.txt"
+          ],
+          "answer_commit": "hmac-sha256:23b6ae14fc81fcf49b0db83a43fa5c85",
+          "explanation_enc": "aes-256-gcm.v1:ph-zBMfpvlo6R3sz:DIQ-ewunfhghD7YvnjJpfZ8KWR1TNyq0vSBePLaT0D5QFjX0knAABCQ2DO2M1LCuGwED98N8P0T6D0WPLQAnhjupXTzQ2VFg7sBhX9fQJ1sK-Oj1wh0lC-KN0RwU3Opeg4aLXWNiyAtjDw4EuPyjTJOtYHm1wq2qDaNyyg86",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.474,
+          "findings": []
+        },
+        {
+          "id": "gg-042",
+          "prompt": "How do you DISCARD unstaged changes to a file?",
+          "options": [
+            "git uncommit file.txt",
+            "Delete the file",
+            "git remove file.txt",
+            "git restore file.txt  (older: git checkout -- file.txt)"
+          ],
+          "answer_commit": "hmac-sha256:9ea9c7d3d1b8d5c3f92ed9da350f57c3",
+          "explanation_enc": "aes-256-gcm.v1:TuwywGfw_ouHjkt8:AnZIY0kj8P4mz0Yc3czsi9uigeRNxMb0xslys4y2FpZ8uKYSn1_CwfeKymZjmA3QP9e1Pinq-Ouj21E0B-ncLiwRMFBGCPdGQujDZcIjWhQZp4jcm8edJ4wOJuCvGXVIbdQ6Y_Q",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.619,
+          "findings": []
+        },
+        {
+          "id": "gg-043",
+          "prompt": "How do you AMEND the last commit (change message or add forgotten changes)?",
+          "options": [
+            "git commit-edit",
+            "git redo",
+            "git commit --amend",
+            "git fix-commit"
+          ],
+          "answer_commit": "hmac-sha256:5e26f77c3d76926955b0e0995bb56711",
+          "explanation_enc": "aes-256-gcm.v1:NxxoD1ZbnlLV-Od-:7kQBtrp1jBsRC9Md7Z_jKZtsG2BE1TMONa8TOESc0lDWKfL8DJZ7xi85hh0Qw5dlfm00piMGQ_q_E2D9lugDcRrshlF5DDGxO4lKR7wCovEEHHl7QKPfY9hBlQnm2UAR6eNz6ZQDU5X1cJoLrHLcwYI2v-ZsPD99fBlsS21EUsfuPSnE4VtXfntkJQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.2,
+          "findings": []
+        },
+        {
+          "id": "gg-044",
+          "prompt": "What's the DIFFERENCE between `git revert` and `git reset`?",
+          "options": [
+            "They are identical",
+            "Revert is faster",
+            "Revert creates a NEW commit that undoes a previous one (safe for shared); reset moves the branch pointer (rewrites history)",
+            "Reset is deprecated"
+          ],
+          "answer_commit": "hmac-sha256:91cc28ee8939f5f717d50096ec64dfad",
+          "explanation_enc": "aes-256-gcm.v1:JSZr8hNkSETQvlrt:V4p772JMw1iOQcqjugpXpTfpeaLOkllQ4nTDIglNSio_UIs_0zEIVy2FDgJP3jbN2JPjGD6TejwavqFy3D8oBZDQs-zLCwA-ygCN6KjPqIbE-fZ5cxOsH6KIytsZsOc5hLmIGjlRTZEEjajloU5FyMKaTtM7UR_EbpfWGg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.474,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-045",
+          "prompt": "How do you UNDO the last commit but keep changes staged?",
+          "options": [
+            "git delete-commit",
+            "git uncommit",
+            "git undo",
+            "git reset --soft HEAD~1"
+          ],
+          "answer_commit": "hmac-sha256:2d3adf710c68123c2e37c40434a4c40c",
+          "explanation_enc": "aes-256-gcm.v1:56O2uLL588jtSzFH:pulBLLqUFKCNroANABZlPI_3dzvsB_bTLaaHeH1pRCT7GNpDPvxr2Gd8akMSR3DvsSm5-rktfRIvd1RcuYyAGmrjY8xx3f-uChwhRkIDJOnoDWSrWvza5QYsgnaKu_d85KluEihszlPhrqd54ijUnkToXNqosdrfIM2W0GRYoVqCVDs",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.353,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Stashing",
+      "skill_id": "rfv.skill.git-github.10-stashing",
+      "items": [
+        {
+          "id": "gg-046",
+          "prompt": "What does `git stash` do?",
+          "options": [
+            "Deletes your changes",
+            "Temporarily saves your uncommitted changes and reverts the working directory to clean",
+            "Commits your changes",
+            "Pushes your changes"
+          ],
+          "answer_commit": "hmac-sha256:19cb97bd3a42aa301836f2964147165e",
+          "explanation_enc": "aes-256-gcm.v1:hQoHOvSgJ1HJMZbZ:o6hgOs9FrKvTMUW7gWWtegaqh2fHJWJfXJUBQjUvc8lHOOOZV5uXh4tey_ZKWbyaX8rHy3Sre9_emZ4kauygmXgVLhXhQsFnk25w5YJSNX4JQpNHhADJ83h1lM3_kb9phK0-Nyn7pxn5s5TZKhfGa4VLYWO9COqXo0quh4-7qjbldd6s4QxDvNjh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-047",
+          "prompt": "How do you RESTORE stashed changes?",
+          "options": [
+            "git unstash",
+            "git stash --back",
+            "git stash pop  (or git stash apply to keep the stash)",
+            "git restore-stash"
+          ],
+          "answer_commit": "hmac-sha256:d272f9d1c36c3466049313f9f03f4d53",
+          "explanation_enc": "aes-256-gcm.v1:5-mqU5DRCMa5-22b:R-OGnYh_l1TALkJuSrFhftPvm0ddkQMexbxsaE544m9roJjRrXlks16_EexHPcwC1a750K8fcfad7xNtoX5PxNCHWJktrfUyld0dt5nuNZNO1-uptrFadn0qyrz6_dm3_UiAdTtA1b4xXLZv_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.118,
+          "findings": []
+        },
+        {
+          "id": "gg-048",
+          "prompt": "How do you LIST all your stashes?",
+          "options": [
+            "git stash list",
+            "git show-stash",
+            "git stashes",
+            "git stash --all"
+          ],
+          "answer_commit": "hmac-sha256:85f49d264f96ddcc3778db8760c97318",
+          "explanation_enc": "aes-256-gcm.v1:iu7W1CPmdTMIfsBE:7Sgqb8wx-KwQGm5LiwfxdI8Cxgz2KNJ4Cf9e3ESqhVhfwpZAORllvDYBjBQ-Q9U1AR9YdpKP02jGYqSYFN1xQXxeHbng1EP9bcHWJtWyOh80Y-O329D9KfjJ4kfFuJk5-fumet5AIYZ2P9j5_8QvvbznTxBKZLg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.933,
+          "findings": []
+        },
+        {
+          "id": "gg-049",
+          "prompt": "What's a GOOD use case for stash?",
+          "options": [
+            "Final delivery of work",
+            "Long-term feature storage",
+            "Mid-work, you need to quickly switch branches to fix something urgent",
+            "Permanent backups"
+          ],
+          "answer_commit": "hmac-sha256:fc8c717c2d5c07e47fcce8b9a2e10479",
+          "explanation_enc": "aes-256-gcm.v1:Ld1xTFpH30Asfnmd:l9OD9R48dP-l5uzJ8VKnJ-m5mubLzcT-gAmMkOBRzgf1gGGdgHFHVjSxBJLTSGvR1G7iuiJd8o7jhrreQuvYTljPn3QrKfVqHWBS3lzoFG5alAQkoW5qixQ_jDdeJ2giSRaPqbSLxmU0GVszwfWPp0O5BlW6ug",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.76,
+          "findings": []
+        },
+        {
+          "id": "gg-050",
+          "prompt": "What happens to stashes when you delete the .git folder?",
+          "options": [
+            "They sync to GitHub",
+            "They become commits",
+            "They are lost permanently — stashes are stored locally only",
+            "They are emailed to you"
+          ],
+          "answer_commit": "hmac-sha256:4977814fb30e7d7cae8f16e40e9716f5",
+          "explanation_enc": "aes-256-gcm.v1:SjSr9JcWA4iS_lLj:AyD8JusHNVOMK8CBpNH08E95DlyXPZPB0UPbWmNGZWFjv_pAsJ4ClcHKy4wJilbYdkrCUwhW3tf2poqWr8FFKOPJqN2GRo0GK-qvT07jrhMpqYQB7uft0gvNoRmP7MI9tjKsMBZX70qMUS5oyQuWZdtzbw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.565,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "GitHub basics",
+      "skill_id": "rfv.skill.git-github.11-github-basics",
+      "items": [
+        {
+          "id": "gg-051",
+          "prompt": "What is GitHub?",
+          "options": [
+            "An IDE",
+            "A code editor",
+            "A type of branch",
+            "A cloud platform that hosts Git repositories with collaboration tools (PRs, issues, actions, wikis)"
+          ],
+          "answer_commit": "hmac-sha256:8b2537270df64ebf26eda5000ab04692",
+          "explanation_enc": "aes-256-gcm.v1:Y-K22p9X4-wkDzBd:s7jp8eYkMmG0q1jpctjtRgPE9ti1oKd2jTKBjCY4PcQOzBEwT2vTQN7IUImsALnUz5iUdRMsZ3dBByFUGauABrbC2hnxqGReZ2zNaz9WGtt3QSL-nOWJ4rwMSeRys-tHKUbF15XGRZSQKwk7WDSvSfIXeA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.188,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-052",
+          "prompt": "What's a 'fork' on GitHub?",
+          "options": [
+            "A deleted repo",
+            "A bug",
+            "A type of branch",
+            "Your own copy of someone else's repository, used to contribute or experiment without affecting the original"
+          ],
+          "answer_commit": "hmac-sha256:50577c4f797c9a9483c2cc03f741c4c6",
+          "explanation_enc": "aes-256-gcm.v1:Ips-LPEwptYMa1Gq:P4uHcfCyFSQkhtcmZi-HeYLBTwFRO6rRsPhtC3dOMPncfswyp07dsYJU5QfDd65itz_ZzZqxTl2rlyhk2lbm4EdAT1FvnWZG8bkMPw18_pt8S6QsOiFmbxZgqKcYT4OcFCBA2KeNKyjhUB6aEnE6kvSEGyW2AQwSaalhkBD-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.688,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-053",
+          "prompt": "What's a 'pull request' (PR)?",
+          "options": [
+            "A type of stash",
+            "A proposal to merge changes from one branch (often a fork) into another, with review and discussion",
+            "A request to pull files locally",
+            "A backup branch"
+          ],
+          "answer_commit": "hmac-sha256:387607ceb75a06db1a04a927e9a76bea",
+          "explanation_enc": "aes-256-gcm.v1:UJfFP5DdmmGWB9Xi:9yuN5dcIwBsFJPTA983CQR7MmJ7SH_5nnfJtd3kKmqnm9IKinJUO7kYm92pnc3bZOuq3wZPjkFrwsVx5582PIb5NPn-c-UrBPCk9N3dtokB_tvXyWLoZ6O6Se6E-KDv7l0tkar3lJJ8JFoWlcxoS3axkMESHLoUErQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.194,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-054",
+          "prompt": "What's an 'issue' on GitHub?",
+          "options": [
+            "A merge conflict",
+            "A type of commit",
+            "A trackable record of a bug, feature request, task, or discussion topic",
+            "A code error"
+          ],
+          "answer_commit": "hmac-sha256:dc45dc5e34b6b79d5327702fbc3bc4f8",
+          "explanation_enc": "aes-256-gcm.v1:pu07jOVYm-EpQVOj:CTVnlaczUVtMIqvUQeS-W7zXjja-JogqDvFKny6ovEe6sDZCCIxp8PNRJA-XGG0tdoTfgnuhCCnl8GmxDJb0OA9qhQt6Jk3qeS3V8PHVFP7bG9sqNyzatKDc0z29Uqz_CX-wocvg57SdMbNemC_gieNVa-RTbczEmvrn_htuVKh5pYHOvfm4Qdbl28gm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.438,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-055",
+          "prompt": "What is a README.md file?",
+          "options": [
+            "A file containing only code",
+            "The primary documentation file shown on the repo's home page — describes the project, install steps, usage",
+            "A list of recent commits",
+            "A backup of all other files"
+          ],
+          "answer_commit": "hmac-sha256:072f3302fcff292e0439c92d426ce796",
+          "explanation_enc": "aes-256-gcm.v1:Wf7sBx8gSspO3jmQ:IyZbasiAW8BzOTIoELp6yLuvCEUkvt6bKck8h_vfNs5dOiEYSDTk89LhAYQk04dgB-HhjyOBOJG4gS54X_-05egWPIr08_YDJBUbGj7z79doCCrPWWfVJYJMwJmoxt_sQ3t3EzM4gYVhD8W_Os0qn79_BDe956IT62hKZQ5_6F3S40tfk_Hw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.926,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Pull request workflow",
+      "skill_id": "rfv.skill.git-github.12-pull-request-workflow",
+      "items": [
+        {
+          "id": "gg-056",
+          "prompt": "What's a TYPICAL PR workflow?",
+          "options": [
+            "Push directly to main",
+            "Email code to teammates",
+            "Edit files on the GitHub web",
+            "Branch → commit → push → open PR → review → address feedback → merge"
+          ],
+          "answer_commit": "hmac-sha256:01c68f87517aa62159334a2eb3080fec",
+          "explanation_enc": "aes-256-gcm.v1:2pwoCjhueML8Qyt0:vSHd9JCCZb8rX94fz8GO131zbqVmKrlocSyQQ_H611iHk9_7SY6NUmWvBy32if3LvQWrsUei9wdMoK_3D1aNNBWzebAOVCXreeqBzIfCmtH-7iir83gqU5GWJGaaRcqzqnoB8x-AxKeJv5aUZ20If4HQqUOqk5igIAul",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.429,
+          "findings": []
+        },
+        {
+          "id": "gg-057",
+          "prompt": "Why do teams REVIEW pull requests?",
+          "options": [
+            "To slow down development",
+            "Reviews are optional and rarely done",
+            "It's a legal requirement",
+            "Catch bugs, share knowledge, maintain quality, and discuss design decisions before code merges"
+          ],
+          "answer_commit": "hmac-sha256:8652d142ec4b196ed9fc95c27c9d2eb7",
+          "explanation_enc": "aes-256-gcm.v1:6L3VhK_1HqcwPifI:F9qDo191J5YS-vu9usfupmX6-QEiI8WwvY-unGj912fGP9oAyBXiiG2CX6XO_sCCoGHDcJU9alAnReOh-sJJFP1TyIZF3JobqdZAXsWMYT-REfXIMJFek7C8yoA2vR-3Ihnl9VapLxSog7QZ7OmlfNWHpVxcVhJZaaN3YRzQ3D7WLhDFxYbTmulo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.611,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-058",
+          "prompt": "What's a SMALL PR?",
+          "options": [
+            "A focused change of <300 lines that's easy to review thoroughly",
+            "A PR with one commit",
+            "A PR by a junior developer",
+            "A PR for a small feature"
+          ],
+          "answer_commit": "hmac-sha256:829634af89f83741f1aebb28dafe075b",
+          "explanation_enc": "aes-256-gcm.v1:x0Rxx-uK1D9tekFm:1yDxk7vkQLJTFcdcxHyjQw1J3tSZG64oZp1oCnqwFNYEntxsrtJXVjIFT3pFg8q826_NuliaNjL-0zMnaEnY1pGobnnZJmLtjti8hrVpnMw3tAkJA_sPAEVlYPqSbWr4kYQiSlywPByrpTtYIvSvjB8hDY3QvRgPF7S6s6SIfb0BAMZY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.423,
+          "findings": []
+        },
+        {
+          "id": "gg-059",
+          "prompt": "What is a 'draft PR'?",
+          "options": [
+            "A PR with no commits",
+            "A deleted PR",
+            "An auto-generated PR",
+            "A PR marked as work-in-progress — visible for early feedback but not ready to merge"
+          ],
+          "answer_commit": "hmac-sha256:70f600aaf5f37346d198350f638deb79",
+          "explanation_enc": "aes-256-gcm.v1:vzIzurTPVBFKnuq5:zlx827Vqp80xH0BArmAdtDVNCjpViypzNnXNU9DILGtwqURB5CbPJLBZCe1rbqUsIwoTZOF0uag4Ewzab5iW4KyrLXCXLTbc9sIZOOo_WWw0PjtDBTzqgXcnqTn5JK3-lXDuyMELwNAIXIcioq22gIUEhHt5Vzw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.15,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-060",
+          "prompt": "What does 'squash and merge' do on GitHub?",
+          "options": [
+            "Force-pushes the PR",
+            "Merges without any commit",
+            "Deletes the PR",
+            "Combines all the PR's commits into one commit when merging to main, keeping history clean"
+          ],
+          "answer_commit": "hmac-sha256:d2e3d83d981aa0cbdf501fbb9ff5240e",
+          "explanation_enc": "aes-256-gcm.v1:bMAsDJP7mzdEAlDM:xZYWQViOfMZ6hsKS3hRB6d3Nc8WbrpffOfzklwCG9c3C4lpX_xhpO2nh4nVCR6WQzOfB2kt-jUavUDYvS1PZkqORVUHDofDsANuIUFb3YG5zXw8GVizaLE-CR_TO25Mbn5yHzBoOKrCxPKUtYapwfJql9WYl_-pyd-rGShYYjV8FXbgEJeoly0DCwCwj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.56,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": ".gitignore and configuration",
+      "skill_id": "rfv.skill.git-github.13-gitignore-and-configuration",
+      "items": [
+        {
+          "id": "gg-061",
+          "prompt": "What is .gitignore?",
+          "options": [
+            "A type of commit",
+            "A file listing patterns of files Git should NOT track (node_modules, .env, build outputs)",
+            "A list of users",
+            "A file of forbidden words"
+          ],
+          "answer_commit": "hmac-sha256:02daff2ee325dac753db1792cb14a86e",
+          "explanation_enc": "aes-256-gcm.v1:zEOkcuAzQbPaN2Vz:ioigU7T-A8IVQWkk6fccPP526MQm03dPGYhEhDsdoUv0cfiTclh6S-ZpFJ11hA679D3jvO15-rmw_3Ga0CBLSm5RKMUYyFfabX3Zv0WEaNHjm5X7TDdBGGo1gntccPGZ1-qepFSvzlKJPu6nJotyT_Lri2xm9LJhMkENg6Vwt-3r8XgAVdenAK-vmIMwj9i3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.56,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-062",
+          "prompt": "What should ALWAYS be in .gitignore?",
+          "options": [
+            "Your source code",
+            "Documentation",
+            "README files",
+            "Secrets/.env, node_modules/, build/dist folders, OS files (.DS_Store), editor files"
+          ],
+          "answer_commit": "hmac-sha256:8bf0b5c972211a386c2733a5d32d11cb",
+          "explanation_enc": "aes-256-gcm.v1:aceGci7I_tAGiIuI:wyzwVAW0IhakpQ914O6srUVINdL94G6FeezY1NbzDqHnR-_dDaJUJWzRd8X26qcViBmYnuQt8fv3gtLmCakBkvVA6q4-TrTi7wfTY1xF0xHM4--Jic8qiEf-TtwrEpvMnxOqi6TQoSf1JIcAwOFF7klf5OXRUP46MBPxI9ao",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.188,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-063",
+          "prompt": "What happens if you commit a secret API key by accident?",
+          "options": [
+            "Git auto-encrypts secrets",
+            "Nobody will see it",
+            "It's in your repo HISTORY forever (even if you delete it) — rotate the key immediately",
+            "Just delete it in the next commit"
+          ],
+          "answer_commit": "hmac-sha256:ec5776f9f3cd64d741d3fb7e41eb1f2d",
+          "explanation_enc": "aes-256-gcm.v1:mOovZbRt0fNWgRSM:cvl1dcsjnli6AkRAbp0RPFuozMrB430f7myS9O_obi-9J744o2USVrtkuFo-fmn5IYKbcRo3kOGY8EZNwtVZ257jA53PvYM1p8MDA6aUBI2SSeLzzETgzmoNJTkAlbYEOrIfi21GFkuRWc0JCFfdziAsbizZSMhsMc_2KN-jTbuePOaDlkb7zuNL3PdkoaRxd35Yj4XpTA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.606,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-064",
+          "prompt": "How do you UNTRACK a file that's already committed?",
+          "options": [
+            "git rm --cached file.txt — removes from Git's tracking but keeps the file locally",
+            "git delete file.txt",
+            "Add to .gitignore alone is enough",
+            "git remove file.txt"
+          ],
+          "answer_commit": "hmac-sha256:9cb13225dc59c90a8e8513cabcee3121",
+          "explanation_enc": "aes-256-gcm.v1:RrUGoxzG3B5LOi6R:sJBuq9cX0alNw-FOwQGTrJ___LCjpBIyeW8LAL4ovZCcuHUKQUP3ayUDQqIe9c9ecL9VbOfJq2JJt61kl5dQZ9HHJrmVbHwE_Hyiax715zOzyQp4syypDzc_EXEDZAWBUkIRJWxKw8xUmQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.455,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-065",
+          "prompt": "Which command sets your global Git username?",
+          "options": [
+            "git config --global user.name 'Your Name'",
+            "git username 'Your Name'",
+            "Edit ~/.gitignore",
+            "git set-name 'Your Name'"
+          ],
+          "answer_commit": "hmac-sha256:ed2ad3457960d45d9d0b22eabd5fc191",
+          "explanation_enc": "aes-256-gcm.v1:Um69s3ZhhGhNCuGJ:DnfSU9eLYWIEljgUNfeVpYWAmSN0e6OpVNYs0AQpQxd1Zk6QRIuZyzmmX8Fg62f4oojTvFdWha9cfNF9Z8HYB87UAJNn2kpMCTaU_C1NqnwygyaERWpJ8a9zH8h12FTHDGW88ABOivDzR3b71vvj-q45bpJlqw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.708,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Authentication and SSH",
+      "skill_id": "rfv.skill.git-github.14-authentication-and-ssh",
+      "items": [
+        {
+          "id": "gg-066",
+          "prompt": "What's the RECOMMENDED way to authenticate to GitHub from Git CLI?",
+          "options": [
+            "OAuth in browser only",
+            "No authentication needed",
+            "SSH keys, or HTTPS with a Personal Access Token (passwords are no longer accepted)",
+            "Your GitHub password directly"
+          ],
+          "answer_commit": "hmac-sha256:375ff7f28d89fdde376243c49211163e",
+          "explanation_enc": "aes-256-gcm.v1:J24ePAPcHNOCGO0m:4w9tboRhkiSAIkwjPrvLLjoyZJ76INMWSlDBUGIdvAVlagPAqROD3QaUMLohlMGz7skTchybOO1GI7L_KM2cv8Tb6pc7hoRiQXZTe0v2-JXFzjCgrQIPZhZFCLOoSV3yUnuBxS0TWylL2u72EPklAuCPHcxU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.828,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-067",
+          "prompt": "What is a Personal Access Token (PAT)?",
+          "options": [
+            "A revocable token that replaces your password for Git/API authentication",
+            "An OAuth token",
+            "Your GitHub password",
+            "A type of SSH key"
+          ],
+          "answer_commit": "hmac-sha256:4db2b67e5cfe07909bb52841d274951f",
+          "explanation_enc": "aes-256-gcm.v1:1lw5nSl0naaAKxIH:u75NYNsSshbiikmcBGx2XxKiw3Xv9PXS-aDZ0xvG0B88taUkcAmm8bDpKI0d9FoT50TDnDZC5pTO7IUpTDgwNrlBwtHj9FdBvH139lO6ltS2MJSU4Oe18xjuOdgNFYh04qxjZsVfAGmNUnBRjT96w_pNY687CmsUmUVVDMySP4Yd__4vdtZuYVQM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-068",
+          "prompt": "How do you set up SSH authentication for GitHub?",
+          "options": [
+            "Email your password to GitHub",
+            "Generate an SSH key (ssh-keygen), upload the .pub to GitHub settings, then clone with git@github.com URLs",
+            "Pay for SSH access",
+            "Use a browser plugin"
+          ],
+          "answer_commit": "hmac-sha256:5adb950446f8407f905b3b7f636d7b74",
+          "explanation_enc": "aes-256-gcm.v1:yaBKmo-cH1OpILet:YOepw5JdkeDL1lKdjOgoo-G1GxKr8jgKMKA6B6qkXgVVURh38tjiT9YrLt1KCfnPQ15d3pAY6Ak1hUurA3oIJNMRqO9s4Zs-sdSNgtbHFp5XL0vaehFKYw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.621,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-069",
+          "prompt": "What's GitHub CLI (gh)?",
+          "options": [
+            "An official command-line tool for GitHub-specific operations like creating PRs, managing issues, viewing actions",
+            "A browser extension",
+            "A code editor",
+            "A replacement for Git"
+          ],
+          "answer_commit": "hmac-sha256:a6d5c9b7332f5580ea2706d684b4e5d9",
+          "explanation_enc": "aes-256-gcm.v1:SWjkNQ7IcoByV2gC:3ltEZU4mJfIDyqtx7KnDlE64gzo4_yhOoBAjydVQ6HyD3YcXMq-Od-TvetTRhWCYs9J5O2dNenSIcObY30qA6pMOb7PGj1xuvSjgueZaQDqUeyusQeYJCoo6oCjC3iYlstk-j9bzjNQh0z_V5KGaKNc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-070",
+          "prompt": "What is two-factor authentication (2FA) on GitHub?",
+          "options": [
+            "Optional security feature",
+            "Only for paid plans",
+            "An old feature now removed",
+            "A required security layer using a second device/app (TOTP, passkey) in addition to password"
+          ],
+          "answer_commit": "hmac-sha256:6de970086edd806353f36264b2d73e58",
+          "explanation_enc": "aes-256-gcm.v1:lElPIAtn1EQj4lw_:SGvSrz6LWF8FmJem7BNpxiHQBd719u33UbHp1ZevzVkbYh0g9UeaPujsB3lGORytYkHAwonaT3NGPnBh3dJgoylguQGSeWcBMPfMAA7i9CHwrdg2eWdqNMSVoaKXoFKZ7ypLenqHB8I7dIZLhDz0zs1bsCKxBHH-fBOUgIsz4FEaJGQd74fI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Tags and releases",
+      "skill_id": "rfv.skill.git-github.15-tags-and-releases",
+      "items": [
+        {
+          "id": "gg-071",
+          "prompt": "What is a Git TAG?",
+          "options": [
+            "A permanent named pointer to a specific commit, usually used to mark releases (v1.0, v2.3.1)",
+            "A label on an issue",
+            "A pull request marker",
+            "A type of branch"
+          ],
+          "answer_commit": "hmac-sha256:082d030408ef06960c0eac55be3ee405",
+          "explanation_enc": "aes-256-gcm.v1:ppEsT1U_QMBpdMLA:9m0XDazeRABXx2VNpf3mnVWMbkbef34QLkHsSIwuh9Ihhts8tXj8W2lwQYe3sZlaWgELJbyAwPRBodrGWgUzomGs3na2y2CBwPutk6U8BsK9XbOlsRVJUFJbwEmO3YIiiQeWPQID7-y9o0A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.381,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-072",
+          "prompt": "How do you create an annotated tag?",
+          "options": [
+            "git release v1.0",
+            "git tag -a v1.0 -m 'First release'",
+            "git mark v1.0",
+            "git tag v1.0"
+          ],
+          "answer_commit": "hmac-sha256:22d09b8e7580bd64cafd91699c994459",
+          "explanation_enc": "aes-256-gcm.v1:vi4OVZRLvc-_7YdX:rZO0v8xNdqLNWAocCyuxIKC7MW9DispPEZ0V74kgXFwm9RA3tPUevGOTLJX665ZwI5iDw_vR2SWwXj85yuv4WHdl2ZRe_j8BLPTnfnXFAIAtSWpC-eLfJFPe-zVkK6uUDyZmtCVvUyX2pSZAa1kO1bvDGrDBwK75iQWl6fudyt8XRv6AnLrgdg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": []
+        },
+        {
+          "id": "gg-073",
+          "prompt": "How do you push tags to the remote?",
+          "options": [
+            "git push origin v1.0  (or git push --tags for all)",
+            "git tag --push",
+            "Tags can't be pushed",
+            "Tags push automatically"
+          ],
+          "answer_commit": "hmac-sha256:801ae63e8d9efa888e299d259323eed2",
+          "explanation_enc": "aes-256-gcm.v1:JztiGWBTA4xSpMAv:g5Av_QGYTWLPxF0yxRQ_PS6GV5kL9673vQN9jh3gKXov3ioLGpSrVBLzKefxodUSFuWSiEHUEl0mVkDRbWhU1szR9AEDQP-Aud4SimRaOayq6KoF1swVFn5CbKgIjkQb",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.174,
+          "findings": []
+        },
+        {
+          "id": "gg-074",
+          "prompt": "What is a GitHub RELEASE?",
+          "options": [
+            "A pull request",
+            "A formal package created from a tag, with release notes, downloadable assets, and a dedicated page",
+            "Just a tag",
+            "A type of branch"
+          ],
+          "answer_commit": "hmac-sha256:339f5cc4494d63d2779731f51552f5be",
+          "explanation_enc": "aes-256-gcm.v1:8iV9b_mCkCUrxZpm:jLKoODEIlXgYne-JOXSn5o7I21BBW_4407nenG3A5hjO4yKDHIzI-2mW7mPNVtTmndpvgyjQkasiqZ_B63L5qPWGVQHm5JarkFnRBAx-jrp00PprtC_mui_5FSljCV-e9JdAVkdSPj02H92R3pbn9524H-GObCeDM9FE7OqxioNY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.125,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-075",
+          "prompt": "What is Semantic Versioning (SemVer)?",
+          "options": [
+            "Random version numbers",
+            "Date-based versioning",
+            "A versioning convention: MAJOR.MINOR.PATCH where each part has specific meaning about breaking changes, features, fixes",
+            "Sequential version numbers (1, 2, 3)"
+          ],
+          "answer_commit": "hmac-sha256:e0ba4836e9d28ac447a0e3572b245c67",
+          "explanation_enc": "aes-256-gcm.v1:oyKLeHW6iU7VDnED:T40YR79vVjgsK_84Z30NQvt6nIu4DCciKWcSZUMklPYr56BwSS9YrOW0T4f44lFIhnBrjQoH9gsoCA88EeifeTVn46DOCu1KNHjL5MFEfvuF-k3a01qVgvhpUKLosUlZJOekze9-RvupuMVB26d6vmgUZguw67ko9NI5PMgkJGt0He0GQXQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.306,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Collaboration workflows",
+      "skill_id": "rfv.skill.git-github.16-collaboration-workflows",
+      "items": [
+        {
+          "id": "gg-076",
+          "prompt": "What is 'GitHub Flow'?",
+          "options": [
+            "A type of code linting",
+            "A diagram of commits",
+            "A permission system",
+            "A simple workflow: branch from main → commit → open PR → review → merge to main → deploy"
+          ],
+          "answer_commit": "hmac-sha256:f2595a265cde1e895adcd59f84eb6740",
+          "explanation_enc": "aes-256-gcm.v1:KVpMjdS5ErxoggbN:fdpy17sDm9NrS_vC2GJi0lz3S8VLqx-_O_yfjXJtefwozhki8PUAMJkbCnz93NnK5Y05Xjthuc4TuqiKwRWErw3d_XxbSDyqP1C250dIaxHIxSBXmdJYrZysRtNEF7FfzWRyl_aXeA1O_5mXvX8Q9lXT",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-077",
+          "prompt": "What is 'Git Flow' (the older alternative)?",
+          "options": [
+            "The same as GitHub Flow",
+            "A type of branch",
+            "An automated tool",
+            "A more structured workflow with develop, release, and hotfix branches alongside main"
+          ],
+          "answer_commit": "hmac-sha256:4450dd34bb984121e1819edc03d24d06",
+          "explanation_enc": "aes-256-gcm.v1:NAAJ0v06mWa9OKjI:GWG1TFDQMeUHeWskuPIzwdNI99yxxBVXoKyDwlIF64Mk6CfjIj2kxQEVq53RceCNWzijS_TSgbo5DucHmg-ezJBlE5Aco-hnY-RquZVqEeFAWAzp6V8epuYR06XOBGOnSg0c2w7JEWYeDbnPR1HhuW_PGdGarSdIxzpx5YUcJ_W9GYaTQ-AoNkkR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.652,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-078",
+          "prompt": "Why use BRANCH PROTECTION on main?",
+          "options": [
+            "Prevents direct pushes, requires PR review, enforces CI checks — protects production code from mistakes",
+            "It slows down development",
+            "It's required by Git",
+            "It's only for paid plans"
+          ],
+          "answer_commit": "hmac-sha256:97ffbed73221bee95ffe82d1076f7689",
+          "explanation_enc": "aes-256-gcm.v1:BioP_nivZP-2EpZi:IjGcBKmNXs1sRdbHSBSQ_u8AXkfZKoVvKqB8xGvPBBJHEV4Cf4JlUGKfYiJTmdrZ2U_o6taRS5grW0Jcq4yD4Gl1CtOXf1qj6LqmyWTjd4ZmE4uPOsHj4C6puOpdyGnXXKHFFwLEwEAwQe6-wgQWN5PBTtYqm2g42EOW-lis8ARXrjdJuCA2qRA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.12,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-079",
+          "prompt": "What is a CODEOWNERS file?",
+          "options": [
+            "A list of all contributors",
+            "A backup of permissions",
+            "A license file",
+            "A file mapping paths to GitHub users/teams who must review changes in those paths"
+          ],
+          "answer_commit": "hmac-sha256:8baa2e39267e5e40d82b3f96ca4c1874",
+          "explanation_enc": "aes-256-gcm.v1:BxVJNVisLlTOJ1Jv:Byd_jnJG0PrxL0DNlew_qeWEphhJxSoi1P1ATXGCu9_GYziyxoFeBJUaos4v0V-hB9KvGRRB2ZZqywL18_0XhRnMn9-7z6rZkbS8jmR0Wb1WhT_BC5e3G8k01tSUZaHYvUgq4UEXP5HA_S1uE2g0gBBk__SHH59FNioufvGL2OaGqzdB7XnjX7BQRw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.115,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-080",
+          "prompt": "What's the BEST way to handle a botched force push that overwrote teammates' work?",
+          "options": [
+            "Delete the repo",
+            "Pretend it didn't happen",
+            "Push more force pushes to fix it",
+            "Use the reflog (git reflog) to find the lost commit, then reset/force-push to restore it — talk to your team"
+          ],
+          "answer_commit": "hmac-sha256:5fd5deb08220945c02196a572d124d7e",
+          "explanation_enc": "aes-256-gcm.v1:PF17vQep-Qex4zGw:uhYOYTPGc2XpcvCoUUI26rwQZHaOF4bSTJ9t2hdJeM6datw6snEdPPbvVziRGRi2kf3Y5OeRylZaIrnmnX-PHKxaOh8c9qF3XMkQ7omiKOtJgZAg-MIdLwxro3hXl2tfSOCSh3utnzo0EBjyel-0cVZtesvCobCUr4u-y8UbjhXNZsBRuvM",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "GitHub Actions and CI",
+      "skill_id": "rfv.skill.git-github.17-github-actions-and-ci",
+      "items": [
+        {
+          "id": "gg-081",
+          "prompt": "What is GitHub Actions?",
+          "options": [
+            "A type of GitHub button",
+            "A code linting service",
+            "A built-in CI/CD platform for running automated workflows (tests, builds, deployments) on Git events",
+            "An issue tracker"
+          ],
+          "answer_commit": "hmac-sha256:76cf4ecf2551e76a010865eeb4778188",
+          "explanation_enc": "aes-256-gcm.v1:-DrSEgA65Cy69HJm:eXvZYsYvzGNcAvIlBBCaFddiQUT6FcR4eiZzdgyIUzoNa6tHO7yxsA47xx0ibU5H0K_zsQt44qe_0ImC3TgA4N-j6enoxm-9ROu1pkfx5O4nxmFRm7jvgWbTnVdDPCTMWdG9arDme7ItcPomKUFIfYJNgt4MyzUjgqKFULgH",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.348,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-082",
+          "prompt": "Where do GitHub Actions workflows live?",
+          "options": [
+            ".github/workflows/*.yml files in the repo",
+            "README.md",
+            "package.json",
+            "GitHub website settings only"
+          ],
+          "answer_commit": "hmac-sha256:f10d7e65d685873fbed3d817cc5fd153",
+          "explanation_enc": "aes-256-gcm.v1:8aXUzZCUWLoIhyJk:PSyr1Dot45Uwie3F_DT8AaibzGp-T6bNPcv6pTLNftqdER79z7DaqbxwSFGR9oJaXnBGUzq7jKbn9v2b7_jWb8N_ChAvqgoovjn64CTh5ZMHKaq6VJW40_M2h-u_TRK3_ebd56KVMRv9t8wKmcOcaCgF06YiCUfQMhxD3PKKN3J1TeAou-vm3RGh0g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.464,
+          "findings": []
+        },
+        {
+          "id": "gg-083",
+          "prompt": "What's a TYPICAL CI workflow on every PR?",
+          "options": [
+            "Nothing",
+            "Just deploy to production",
+            "Install dependencies → run linter → run tests → build → report status on the PR",
+            "Send an email"
+          ],
+          "answer_commit": "hmac-sha256:9f92abd63ad57d067f1380d2bb0684d7",
+          "explanation_enc": "aes-256-gcm.v1:j8b9PDJNZxZYb1MD:DZP-g-WhFrkZ_uz1gHhxYAzXU-tQ2dmNc2T4COaomHB84fR0YHrkI5uzPEFNZ4sF7VZ03Vn_GEJoYpGf5by9-CiLKMiCW5RzYyaI8RYWSoXnyzOaAiHd1F6p06RDzeuKCVUdNYcMy2qcEP-2ARhmtdor_Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.16,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-084",
+          "prompt": "What are GitHub Secrets used for?",
+          "options": [
+            "Hiding code from teammates",
+            "Anonymizing users",
+            "Encrypting commits",
+            "Storing sensitive values (API keys, tokens) that Actions can access without committing them to the repo"
+          ],
+          "answer_commit": "hmac-sha256:1a8dfb80b028f7522c7899d10be9e04b",
+          "explanation_enc": "aes-256-gcm.v1:cpvWqTnp1eTH2rgg:FMgRCl4v6gbLBpmBwNpBsWCZSEsDvA4eKHnVL-ScUCaRhqQTyLn00cvVCvqOESqPt_9yYUZYycCkNOGPJcmzynWidgCXI1lwUBHWRrcw4-Z_maLlMs47ehoeP-s7Q9FNtnor4B1lem3xTiXOxHkWzRkxEMmyVCRJnN7OEp0FbJ-uD7cLdw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.962,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-085",
+          "prompt": "What's an Action 'marketplace' action?",
+          "options": [
+            "A reusable workflow step published by the community — use with `uses: actions/checkout@v4`",
+            "A new GitHub product",
+            "A type of issue",
+            "A paid Action"
+          ],
+          "answer_commit": "hmac-sha256:bb039147f6b4a80d475f4a87ef27a9a4",
+          "explanation_enc": "aes-256-gcm.v1:aGz5Z981dMCwypPo:1nPchatwF8dLha-1MrpoUOB7Zb7VEQYalHhNlxEeUMUw0p8P-R8ukC3GUNd6s5VzM5YOUseuQ8uxePKxKeO3j0kJHv5zvqoa0BGajFyGqfn3S69Suc3DshoJ-ldrWf568xEFXMMG6MyjLWy7NweF_refYeWuiynVRgz2DkXpasXr_3QsUoc1Pb4ud15ZoDCqPy73UQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Open source contribution",
+      "skill_id": "rfv.skill.git-github.18-open-source-contribution",
+      "items": [
+        {
+          "id": "gg-086",
+          "prompt": "How do you contribute to an open-source project on GitHub?",
+          "options": [
+            "Email the maintainer",
+            "Wait to be invited",
+            "Edit on the GitHub web interface only",
+            "Fork → clone → branch → commit → push → open PR to the original repo"
+          ],
+          "answer_commit": "hmac-sha256:12b458fd4acb7d0490dc2ffb33fd0a9b",
+          "explanation_enc": "aes-256-gcm.v1:9jKI4CKIVRj4kSph:8e2adLjg1MFGJnlZ5cuuSN8bqmlyShfzF8PePRGue3XCZRaU3upO1gM1ko6ISpSNZCkpBVgQAYeAkLMtY0YocrQj7U458XZfnCp5VQi7elVJKKbxj7SwY0gWIxFgM0LL4cvwj1ub_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.838,
+          "findings": []
+        },
+        {
+          "id": "gg-087",
+          "prompt": "What should you check BEFORE opening a PR to an open-source project?",
+          "options": [
+            "Nothing — just open the PR",
+            "Add your name as maintainer",
+            "CONTRIBUTING.md, existing issues, project style guide, and ideally open an issue first to discuss",
+            "Demand they merge it"
+          ],
+          "answer_commit": "hmac-sha256:3864727ba8bec8de34f22019028fb738",
+          "explanation_enc": "aes-256-gcm.v1:6MPkBdKyiwAUkFFU:N_R3Efk6wTsSzDTnEzmEMHRJCZSS2efK54KEn4mODwP7mtEa4FRtOjgmj-OqrevYTDg1pOO6YAiYdv-wAwjpoeLLy5uqMf609fjxxx0_ZXBqgmiVUxahB7GHIWQ3YqteaQ8I7MuRDl7-4ioRwt5DS2GloGG7txfdBTAuixPJ-jbVlh031vthlfMDyEEvY59dQwOBdg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.593,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-088",
+          "prompt": "What's a 'good first issue' label?",
+          "options": [
+            "An issue from a senior dev",
+            "The very first issue ever filed",
+            "Issues maintainers have flagged as beginner-friendly, with enough context for newcomers to tackle",
+            "An issue rated 5 stars"
+          ],
+          "answer_commit": "hmac-sha256:bd9f93aaf85eb851fc8c546612cffe54",
+          "explanation_enc": "aes-256-gcm.v1:07lorplyUrkkYFMr:0oSSzSqkibT0w6pwcV0Ir427L3wdIPxt9sd8GJOIVEbTX5_c8JEKn8RbA_4fmROcX6hIbA1XSdiYkZRy6bwFCZOsg171f_E1h3f8fviEu_wan0TDzpJTsb2FdEwM9pPccklbI-i2qIcAktQvvAl1chwTPXOgNGKYwbC7PxC0UQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.129,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-089",
+          "prompt": "What's a LICENSE file?",
+          "options": [
+            "An optional marketing file",
+            "A list of contributors",
+            "A file declaring the legal terms under which others can use, modify, and distribute your code",
+            "A backup file"
+          ],
+          "answer_commit": "hmac-sha256:9a2ff0d1e396f5621dbbbf37ded24cda",
+          "explanation_enc": "aes-256-gcm.v1:HBhUEMXWPVBXAvTe:HETHTsKm2TanJPEB_NcgVRBtVorg1ZO_8c1uE7Sx4ZxCDiDLp8yuos_ktYsj9H8N4W2EEuTm8siWfOBdK41_gBKr57P9v3SooEV3xK2ufqTlfEKLSvcyXDVQUE836yKSTPe4sxbLm7tbH3XIFPDn7SiXagNbUbqyQT51t9ZAvf_x8exOSeA32QY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.577,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-090",
+          "prompt": "What is a Code of Conduct?",
+          "options": [
+            "A coding style guide",
+            "A list of forbidden contributors",
+            "A document setting community behavior expectations and reporting procedures for a project",
+            "A legal contract"
+          ],
+          "answer_commit": "hmac-sha256:31859b379452c87d60216cd8bd82bb67",
+          "explanation_enc": "aes-256-gcm.v1:nGFz6OiGTUD_xq-H:WBAR-xm2X4yr_9zJhkz9VS3DYGX38y3yefNhq_Btf8b_3IG9oLltOCIMEZG2lPablVaY7gxNkS-PI5DVDUxutYOlEXUEhS4v0nQFBiSCvBQmYef85VhEAXSxBMBQWIAsztGmbrYnmbLJdttXBGptNlH-VJRCA9qlbMQIzsT7S95qO56eUVd_fxobZA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.781,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Best practices and pitfalls",
+      "skill_id": "rfv.skill.git-github.19-best-practices-and-pitfalls",
+      "items": [
+        {
+          "id": "gg-091",
+          "prompt": "Why is COMMITTING OFTEN better than rare giant commits?",
+          "options": [
+            "Git runs faster with many commits",
+            "It looks more productive",
+            "It's required by Git",
+            "Small commits are easier to review, debug (git bisect), revert, and explain in messages"
+          ],
+          "answer_commit": "hmac-sha256:01c4f47b145165448e33bf1a1c04c4fa",
+          "explanation_enc": "aes-256-gcm.v1:lgu81c4J1--z73Kz:7K5y7a-TAzGom_GNikAXQFjbzdYj4Ptc9J0uGgiwsFIU2QNodDiH3jSMa3gcjcJxbem-AM1TsOXcd-ytFyNQoZFCL5RWZ4q1I18L7ANS3EKNsLgiBPCUz98ELO4OWSHDi7CxbYoo4QQQdUQibhoin14AI32VSHNptgCKfz-xdQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.636,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-092",
+          "prompt": "What's an ANTI-PATTERN with Git?",
+          "options": [
+            "Writing detailed commit messages",
+            "Force-pushing to shared branches without telling collaborators",
+            "Branching often",
+            "Using .gitignore"
+          ],
+          "answer_commit": "hmac-sha256:11634c68e7bde0b5b1640f3897ba47f0",
+          "explanation_enc": "aes-256-gcm.v1:6ugfPorEzWaESC1-:3wsO2AujkZNHO0wNwVtve8JdLkK6so8tk1Csss6bnbOsFRunNVyNdgDPxPgHzfPTUwl7Oa547oV5C8JtQgZXcgl30mufRx0sz_IpgY-c83x3GV_ITAcrAKBk9OHgQZfqVc0TugSjuNl-m9LXezs3Qgpugy9xS6YeKrMzXOYhCw-OAe1SXuvjq6k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.938,
+          "findings": []
+        },
+        {
+          "id": "gg-093",
+          "prompt": "When should you NEVER commit something?",
+          "options": [
+            "When tests pass",
+            "When it's important code",
+            "When it's untested",
+            "When it contains secrets, credentials, large binary files, or sensitive personal data"
+          ],
+          "answer_commit": "hmac-sha256:b0bde86374f9be59eee7eb6e8f8e6459",
+          "explanation_enc": "aes-256-gcm.v1:EnRN7z2mCia07D3U:vA2R42FNHJDrWuAOYuoDqxvVY2UDXhNIDNzUjR_6sEY9BJiSimEwZ7lwvnn0VccffrdIVvwGDTWNSfK5mGqd9JIK6d5taEnNztEYbMZByL4WHjyNxpACdFlRZutFf_Gd_SElOUfMCNztKyT1zu88lCjHY-Z4Hqp8Z5I5dWLn",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.542,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-094",
+          "prompt": "What's a HEALTHY commit message pattern?",
+          "options": [
+            "Random characters",
+            "Always 'fix'",
+            "One huge sentence",
+            "First line: short summary (<72 chars). Blank line. Then optional body explaining WHY (not WHAT — diff shows what)"
+          ],
+          "answer_commit": "hmac-sha256:90b7c4b7163eb49a344e8f9bc3c09b9c",
+          "explanation_enc": "aes-256-gcm.v1:7-Wrxs6HPHRjB_6d:3-JSD-K8zXvVIbUJeR3KZam7rBLRYws769WBdHFAWcyngkfM1wFNye946GuleWMoGP_kqtfGkJMb6oACTKZPKp_x84cBdsa_2BdL3O8awwoS-2W_msipjZMC0Cs_7l0WMRVG6QEOO81Q-gzAo9Zj-rBvF07qACHRv7jszsVpXUXJpb9kvRYegCf6kA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.647,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-095",
+          "prompt": "What's the BEST way to recover lost work in Git?",
+          "options": [
+            "Email IT",
+            "Re-clone the repo",
+            "git reflog — shows every change to HEAD, even from operations you thought destroyed the commit",
+            "Restart the computer"
+          ],
+          "answer_commit": "hmac-sha256:0e47a3bf47372f68026a498556cef455",
+          "explanation_enc": "aes-256-gcm.v1:1DFWHn-T-HwgOX8z:gqUqsnMcWDZUtIFy9RdNDJwRwF6MZXXsA0X2vQZf3qVLbha60E8_cvmDSCSEDuFPpHR7aHyw7frkEsUZBOICupHbvQ-APK0BEM1otJbt97Wm6V4CtmDJ8ofe6QIG_pEGEoqXZjZUm1mgSsQKMwcZcu1nNahds-HDjky9XZC6bSDJGVTxZHJ_QQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.7,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Going further with Git",
+      "skill_id": "rfv.skill.git-github.20-going-further-with-git",
+      "items": [
+        {
+          "id": "gg-096",
+          "prompt": "What is `git bisect`?",
+          "options": [
+            "A binary search through commit history to find which commit introduced a bug",
+            "A merge tool",
+            "A backup utility",
+            "A way to delete commits"
+          ],
+          "answer_commit": "hmac-sha256:261f9e0287510bb6dfd6d49e3e8abef3",
+          "explanation_enc": "aes-256-gcm.v1:4_ZU3JmJ2xnmHWBM:CTO8Rdc8o1KQYVB5dONQV53Ue0CqZzuoESch-COl-jJW95OmcDigto94hzwrcYMrh1fEBUeir81SqwibYd8BV6YFKz2Lp7img-JI6zV6rHngo6nQVB15hpzNTGXi5mAs9CbOknup9sL6_-RUDcR7HNTx2nQgJ1tv-EPhwJFxzREBXmBjnGln8YI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.304,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-097",
+          "prompt": "What is `git cherry-pick`?",
+          "options": [
+            "Applies a specific commit from another branch onto the current branch",
+            "Picks random commits",
+            "Selects best commits to keep",
+            "Auto-merges commits"
+          ],
+          "answer_commit": "hmac-sha256:aab0eb679fbcad0092b76713428ddac2",
+          "explanation_enc": "aes-256-gcm.v1:V7hKPQtygbfUXTrA:zENk_X8gYcQ8uAeLQVKp128yL6IvG3ufn3_q26bz-sJMOgd1AiMT1T3COoqf5PFN9yfDHWNCO1bd4JRPUz17Zs1CP4nbB5OimfvhEDeDqZRBpfBjAr69kv0Mld_-Rp0r8W3xWjFLRnIo5Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.464,
+          "findings": []
+        },
+        {
+          "id": "gg-098",
+          "prompt": "What is a Git 'hook'?",
+          "options": [
+            "A merge strategy",
+            "A type of branch",
+            "A script that runs automatically on Git events (pre-commit, post-merge, pre-push) to enforce rules or run tasks",
+            "A GitHub feature"
+          ],
+          "answer_commit": "hmac-sha256:06abfa3d67744be2059e999ebcd6165e",
+          "explanation_enc": "aes-256-gcm.v1:b0CuL7g8yTx_E1wI:kiXOAYUVmN8xnuryOT9BH3wWFdQcLvfXohLIDEFV4KdFoBNE_u4Vu8D-Yal5KmdtCtMQIIi5SzMbTQc5Pywic16Oco-NZ9zVjPbYWZf4HghFef7ToIDjtAuCmcd80Q3vivkKHKiv9xnYDsIa01b3QQ4t-LSqXHjw5rnHJhIsU3nqkwIo3XbzsTOLOL3f",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.938,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-099",
+          "prompt": "Which is a GOOD habit to develop with Git?",
+          "options": [
+            "Push directly to main",
+            "Never write commit messages",
+            "Pull before you start work, commit often, push regularly, write meaningful messages",
+            "Commit only once a week"
+          ],
+          "answer_commit": "hmac-sha256:fe3f384d4db8dc0e1c3debd5c4e6cc0a",
+          "explanation_enc": "aes-256-gcm.v1:v0PZKoiAmTg70SdB:VvZmBRM16yRIV0F0NcBIj7_2tuk6aawNJM37lyeN_Zj2_WLZfaUxaMO0BLd0C1-axvKnNTg9hAeXuRppHoI435cIDdFvYJNEaYBPp1Wf4jVV-F8LKqY9uY-6s_FtwM7siufG7RrB3Q7a7mv5_IxjebFpojzmM7dMLdc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.074,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "gg-100",
+          "prompt": "What's the BEST way to keep learning Git?",
+          "options": [
+            "Use it daily on real projects, read the Pro Git book (free), and don't fear breaking things — Git is hard to truly break",
+            "Only use Git in tutorials",
+            "Memorize every command",
+            "Avoid advanced features"
+          ],
+          "answer_commit": "hmac-sha256:a37b19335f24f63388f2387adb715114",
+          "explanation_enc": "aes-256-gcm.v1:9jQ5_ZYSPf2LYFfu:XvjiB7N8zKAveTfXy_x933OooNI6Bxxu4Z64onp_RomdGF7nxYF_eWpN0NB_xDi1cLLYXVrrooa6smNKbKoRx7NyN7YjNvZubpJVVegFKq4itQnCj0sUtCw9GWy_Na1i-gH9UqHx2u5M0rJzUhATz5Ofb8MyvS8vcqxPmIhNkEK_cV7nOwRHbmGTnQqnnw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:b6f618b0d3b26aad5d1d255bf1f2b7e0c9db0b585fd60f14356bc2ea13de5f93"
+}

@@ -5,14 +5,17 @@ import type { QuizMeta as QuizMetaType } from '../../types';
 
 interface QuizMetaProps {
   quiz: QuizMetaType;
-  index: number; // 1-based position in catalog (for [01/15] display)
+  /** 1-based position in the catalog, for the [01/15] style marker. */
+  index: number;
+  /** Total topics in the catalog. */
+  total: number;
 }
 
 /**
  * Top of the Quiz Overview page.
  * Breadcrumb back to listing → category meta → big title → description.
  */
-export function QuizMeta({ quiz, index }: QuizMetaProps) {
+export function QuizMeta({ quiz, index, total }: QuizMetaProps) {
   return (
     <section className="pt-10 sm:pt-14 lg:pt-20 pb-12 sm:pb-16">
       <Container size="app">
@@ -33,7 +36,7 @@ export function QuizMeta({ quiz, index }: QuizMetaProps) {
         <div className="mt-10 sm:mt-14 flex items-center gap-3 flex-wrap">
           <Pill tone="term">{quiz.category}</Pill>
           <Pill tone="fg" bracket>
-            {String(index).padStart(2, '0')}/15
+            {String(index).padStart(2, '0')}/{String(total).padStart(2, '0')}
           </Pill>
         </div>
 

@@ -1,0 +1,3243 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "prompt-engineering",
+    "title": "Prompt Engineering Fundamentals",
+    "description": "Master the art of communicating with AI models like ChatGPT, Claude, and Gemini.",
+    "category": "AI",
+    "icon": "🧠",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What is a prompt",
+      "skill_id": "rfv.skill.prompt-engineering.01-what-is-a-prompt",
+      "items": [
+        {
+          "id": "pe-001",
+          "prompt": "In the context of large language models, what is a 'prompt'?",
+          "options": [
+            "The license fee paid to use the model",
+            "The input text or instruction given to an AI model that produces a response",
+            "The CPU cycle time used to generate a response",
+            "The internal weights of the neural network"
+          ],
+          "answer_commit": "hmac-sha256:b4f15d56c3e4eef58f246344c8d93b88",
+          "explanation_enc": "aes-256-gcm.v1:HpScvX5jOAAUFvUw:2iwZRzUvonFRGoWgXLeqphKnoO5nBnACdUl8p_v4qdZNnttgoZ5QBpbKZqNlUPCp8mqTlrPAtMJNegvzHrvw3-g2qUJFEDCA6pGYP13SxwON89IyB5o_r4z7h3Oct0XKSEoXFUhv5Jun98X0RFnPEEkkh2Mz1keHzKOsyN3e8KF_eqauv9ikWWvPZBGE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.63,
+          "findings": []
+        },
+        {
+          "id": "pe-002",
+          "prompt": "Which of these BEST describes a high-quality prompt?",
+          "options": [
+            "Specific, contextual, and includes the desired output format",
+            "Always written in the form of a single question",
+            "As short as possible to save tokens",
+            "Written entirely in uppercase to emphasize importance"
+          ],
+          "answer_commit": "hmac-sha256:f3207400a4688296e2ff833bfd432fab",
+          "explanation_enc": "aes-256-gcm.v1:vpFLuwzaQKOSauIo:Dvkt0L4ntjSx56Zo93iYyF7C05FW9EJdUhO761fDRTQkHUCqO8SLfJFnmhUJOz92Pi13J-MI9sJKnm8o4QwGZ_6EeVHsIBU3ATI44cLYdm3ad1pYQMIXG0GXEcuI2u97VXbSQA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.132,
+          "findings": []
+        },
+        {
+          "id": "pe-003",
+          "prompt": "What does 'prompting' mean as a verb?",
+          "options": [
+            "Fine-tuning the model's weights on a custom dataset",
+            "Compiling the source code of an AI model",
+            "The act of crafting and refining inputs to guide an AI model toward a desired output",
+            "Hosting the model on a cloud server"
+          ],
+          "answer_commit": "hmac-sha256:1a01abfe55b96dcc658082f9c38fe2fa",
+          "explanation_enc": "aes-256-gcm.v1:Icg_2lPQMYEJlT1t:yP_imh7J7Yndt7ZfMOF59Z8Ul89VySOqmRN3xntkMKzqbbiaoAREn_Ek5taN8b38znsBD02MflOH8rMENXs40po0DMOJHAlxZmfLV3puBM_Xcy1aa8VyPPU6a5N0OgQmyG-b6kaaammqs2tyXh5hrsfLONM8c62twR-Uew",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.647,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-004",
+          "prompt": "Why does the SAME prompt sometimes produce DIFFERENT outputs?",
+          "options": [
+            "The internet connection adds noise to the response",
+            "LLMs sample from probability distributions, so a 'temperature' setting introduces controlled randomness",
+            "The model rewrites itself between calls",
+            "The model only memorizes one answer per prompt"
+          ],
+          "answer_commit": "hmac-sha256:cdcade13cc9a4eec85c41845cb8e6c5d",
+          "explanation_enc": "aes-256-gcm.v1:-uFAmmAv3DAV4WL9:X0LMgIoLfUPcVqWClvh8JTz2DMKe_dpPntkjdjQ1kW6mEjsLiOAUlRCivr5HJVG76kQLR01s_F8njmvnhD5NSaDjxUOvlSdKmavjuXy7OTWG8dKsG16rVNqomiqhM8TFhmpiz4_g6yBJUHdDc9rskg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.06,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-005",
+          "prompt": "Which factor has the LARGEST impact on an LLM's response quality?",
+          "options": [
+            "The clarity and specificity of the prompt itself",
+            "The font you typed the prompt in",
+            "The color of your terminal",
+            "The time of day you sent the prompt"
+          ],
+          "answer_commit": "hmac-sha256:39626cf3b289f510173f00786fc4e7ec",
+          "explanation_enc": "aes-256-gcm.v1:qU2p352ZNl44AFuM:tfnQzBtBJNtEuU7mOqEhTWGVMQkuDER9eSazj3Hg5DTuMA84nx5y_b2rBUhPqxkWzTV6bXaGDRhYfJ0Wl35WGwePZIb_iP6-sZVjI85LZtzsytOrmDS-M6vSfCYrOykE2LM47yjf1ZyF3BhqB6ZnUvCDWtpuOyYr5z2_MbBNZGDjJqo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.371,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Zero-shot vs few-shot prompting",
+      "skill_id": "rfv.skill.prompt-engineering.02-zero-shot-vs-few-shot-prompting",
+      "items": [
+        {
+          "id": "pe-006",
+          "prompt": "Which of these is an example of a ZERO-SHOT prompt?",
+          "options": [
+            "You are an expert. Here's one example: ... Now translate: ...",
+            "Example: 'cat'→'بلی'. Now translate: 'dog'→?",
+            "Translate 'hello' to Urdu.",
+            "Here are 5 examples of translations, now do this one: ..."
+          ],
+          "answer_commit": "hmac-sha256:a9ce5594da7edb5d49b1893d8e543fb1",
+          "explanation_enc": "aes-256-gcm.v1:AcnEXo4D0soMisbM:QuoI2f3hR0CUu0vm0mNeSgE1ChfTIXt3Y5ZlqH7-h8NuWPHEdYVobWwXcWKNdYvx3XhlsCkkKf3ujcMShIEDRvDOOn_k3z-8xdor1q7R11jJ1vjv5SP3qworkcGuAA8uJzVQX0uKoPnunkyNZ53k",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.426,
+          "findings": []
+        },
+        {
+          "id": "pe-007",
+          "prompt": "What is FEW-SHOT prompting?",
+          "options": [
+            "Restricting the model to use only a few vocabulary words",
+            "Sending the same prompt multiple times and averaging the results",
+            "Providing a small number of input-output examples in the prompt to guide the model",
+            "Asking the model to respond in 100 tokens or fewer"
+          ],
+          "answer_commit": "hmac-sha256:9b90989814ac4fe98b83135cf13f7600",
+          "explanation_enc": "aes-256-gcm.v1:qLIRLjULz2uWieAD:JbAqQAAkYKlBcvFK7L8v2_NpSe-Qg_PYQ6DsrOfOHoxRrnyA1ZRL7n5T2pw5LdaA5BrkyqzkWTRZEXfZwGzvG6czU1L5f0Ui3Xg5ccLF1U6GB72-3PqL0L7WdWBqqYZRcFd42q674t7HQffVkvjopy4ltDE7NUCwQjnvSA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.61,
+          "findings": []
+        },
+        {
+          "id": "pe-008",
+          "prompt": "When is few-shot prompting MOST useful compared to zero-shot?",
+          "options": [
+            "When the task has a specific format or style the model needs to mimic",
+            "When you only have one example to share",
+            "When you want to save on API costs",
+            "When you want the model to respond faster"
+          ],
+          "answer_commit": "hmac-sha256:5f446f1d1645519eba0ca2aa4dd519dd",
+          "explanation_enc": "aes-256-gcm.v1:K5lKyRJq3pHcmVnY:oaPAG3TnCN1VqIah2k8s1BmrpJfMtU76hfcAsGdAaK1qkxeRGSktpl73Ov6d5n6Y8PD6u0F-ejF5aDyBPuiYoqKfSQYTrlbRkYDWqHt6-UpJ5gvb_bMqwlm7vtz9r7We4Oi33J6jeu7lfLG-6P-Kz0m_DNrdB0qI3IY0rg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.683,
+          "findings": []
+        },
+        {
+          "id": "pe-009",
+          "prompt": "What is the term for providing exactly ONE example in a prompt?",
+          "options": [
+            "Solo-shot prompting",
+            "Single-fire prompting",
+            "One-shot prompting",
+            "Mono-prompting"
+          ],
+          "answer_commit": "hmac-sha256:6d5f8402ac9bcd562421ad9c813da27d",
+          "explanation_enc": "aes-256-gcm.v1:Ys9g046uglWYnHBJ:k1b_WEkpvnBbVAcXrCE1cVUmiODwpmAKPO0ah8jDpioTl3R6WeZs0DwoS8ro895NUVq1_a3eA2jPrGUMx9TZSqioUb0nc6AbemkQH61cg9pdYkxGgk4iE2UTFT1K0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.857,
+          "findings": []
+        },
+        {
+          "id": "pe-010",
+          "prompt": "Which is a DOWNSIDE of few-shot prompting?",
+          "options": [
+            "It always produces worse results than zero-shot",
+            "It requires fine-tuning the model first",
+            "Examples consume input tokens, leaving less room for the actual task",
+            "It is not supported by any modern LLM"
+          ],
+          "answer_commit": "hmac-sha256:81075335045d4aae1f4f00503abaa36f",
+          "explanation_enc": "aes-256-gcm.v1:tWdzxvjN2BmsQm_V:BynYOy8O_eXbimAChPOETxEs0hhUsEPHl5FEDin-Bze4OCBy7vceWoDVBvODLHbe0DAXuqlejrgrJnCwVKFI3At3iYAVnx0H67ionVd1-xy81eMJXz2uyUv8IPUzcbYl9TtD3TBk62WfDkJ761HHPkx-Arw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.447,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Chain-of-thought reasoning",
+      "skill_id": "rfv.skill.prompt-engineering.03-chain-of-thought-reasoning",
+      "items": [
+        {
+          "id": "pe-011",
+          "prompt": "What is 'Chain-of-Thought' (CoT) prompting?",
+          "options": [
+            "Asking the model to show its step-by-step reasoning before giving a final answer",
+            "Connecting multiple AI models in a sequence",
+            "A method of compressing prompts into shorter chains",
+            "Encrypting prompts using a hashing chain"
+          ],
+          "answer_commit": "hmac-sha256:9096511229e0b7f094bac85ebd6625e5",
+          "explanation_enc": "aes-256-gcm.v1:CNf84xqh_XkmDWpx:yudeRsWMVmzKDn-pJKC_GwPtZAnK6K82VltH7EVVs1YUSiZRsnDHDyBSiT6oSjsHVFq-at3_oFcWsqL6UJZCDUT_EBl9FL_PTtX78aKZqxXdiDBepnXk7VUB5e-ZlL48Y_pPHTsiZ5zQaDvjk5_UVBg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.569,
+          "findings": []
+        },
+        {
+          "id": "pe-012",
+          "prompt": "Which phrase is famously used to trigger Chain-of-Thought reasoning?",
+          "options": [
+            "Skip the explanation.",
+            "Let's think step by step.",
+            "Use minimal tokens.",
+            "Answer fast and short."
+          ],
+          "answer_commit": "hmac-sha256:b02181a9ca286cbe484ef801834890bf",
+          "explanation_enc": "aes-256-gcm.v1:gU7UnVWXSryeQK8H:TTsMYAF0gpOAQGE_0R0Hn9yGU_HQlJs1q3jzZ1V1Ll9aq5yaVb1aYGgN8DgzZhOg6_0jxywLtOqTu1Gxt0HgXSCxAJ_Ea57lbKrgak0S1XZSJ9fvLAeE4x-srzZgxe_cuh3paQqcO-W19em3g1rcY8ttCU7N12c3IqL9fQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.136,
+          "findings": []
+        },
+        {
+          "id": "pe-013",
+          "prompt": "On which type of task does Chain-of-Thought prompting provide the BIGGEST benefit?",
+          "options": [
+            "Spelling check",
+            "Trivial yes/no factual recall",
+            "Generating a single word",
+            "Multi-step reasoning tasks like math word problems and logical puzzles"
+          ],
+          "answer_commit": "hmac-sha256:696c1eabd117aa9101427eb8c3b099d4",
+          "explanation_enc": "aes-256-gcm.v1:2vyAlgUFfAEJxCx8:QFf1nOfFOU04PcTKHqmjJOriRvRY9t6oXr8zb3QLTL6FAlvtEmw5JwSTBArwN4UyVS2AQyCUREq4Ccsnsh3rGiAgYoNiVA82evtJ5YtHGtN6Wy-WtRyYcp2--wCA6ZLslcLzm6bsEg--OQcs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.414,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-014",
+          "prompt": "What is the main DOWNSIDE of Chain-of-Thought prompting?",
+          "options": [
+            "It requires a paid subscription to use",
+            "It permanently changes the model's weights",
+            "It generates many more tokens, increasing latency and cost",
+            "It only works on Tuesdays"
+          ],
+          "answer_commit": "hmac-sha256:f9ab9d40b1bceb11521a141979194537",
+          "explanation_enc": "aes-256-gcm.v1:4qfZP-fEM3zBRjFb:OgfTJHPaK2ynqPcX6n4M8D9k62ydziCDqSY9TGaz0ms61pSkVmfxUNuy7xjNJ3GdB4JTx5Ct5rlNSAbZQvRkdIgotyXhnF-nnAbRUUp4gwDsi1FBZdzgMhy4xWXXgMg1u_U0T4A11eilYlKkVcdUeeP2kVNekXL1JJdcFQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.381,
+          "findings": []
+        },
+        {
+          "id": "pe-015",
+          "prompt": "What is 'Self-Consistency' as an extension of Chain-of-Thought?",
+          "options": [
+            "Asking the model to evaluate its own confidence",
+            "Verifying the answer against a database",
+            "Running the same CoT prompt multiple times and taking the majority answer",
+            "Forcing the model to use the same reasoning path every time"
+          ],
+          "answer_commit": "hmac-sha256:9bb1bc47848bfedc80a6aad9a49efe74",
+          "explanation_enc": "aes-256-gcm.v1:gaPQI6R0PhLtVw5L:xdRpDmi72cbLehCZcNtywcwKuVAJyIzm__dPKuohJtO3ywc8MebdFuZP3qeBX29b4jna5qhd1nJKPvAOPItA1D7nPRlAC3JZUMATpKpIxZKOdDcBL8ahqyrb3mf--rjTh4ImAF2NbhrcR7ZCMFJI2-tVzNFzY-r7KuJKhyFLn4I",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.237,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Role and system prompts",
+      "skill_id": "rfv.skill.prompt-engineering.04-role-and-system-prompts",
+      "items": [
+        {
+          "id": "pe-016",
+          "prompt": "What does 'You are an expert Python developer.' at the start of a prompt do?",
+          "options": [
+            "Assigns the model a role/persona that biases its responses toward that domain and tone",
+            "Triggers the model to load Python-specific weights",
+            "Verifies the user is a Python expert before responding",
+            "Has no effect — LLMs ignore the opening sentence"
+          ],
+          "answer_commit": "hmac-sha256:5f4d9510f9e09678e09c4ff238151350",
+          "explanation_enc": "aes-256-gcm.v1:4H_INFsvbWwKj_Lk:R5DpCWzRolNEgfOhFea9csueFNMiiOW6FxGsypsvVKJ5IYiRwFM-sizS7k8cxN3tH1iOT12e-9qS69KjbDfmQkArfQsUm-5lRzG7XnX4KTTHuL3frJ8qpgPESinzfn6kEkOEN9cVdK9nMHCQjv-ekVrNEN630PuSNwI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "scenario_framing",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.593,
+          "findings": []
+        },
+        {
+          "id": "pe-017",
+          "prompt": "What is a 'system prompt' in chat-based LLMs?",
+          "options": [
+            "An error message returned by the operating system",
+            "A hidden system update sent by the model provider",
+            "The user's first message in the chat",
+            "A persistent instruction that defines the assistant's role and rules across the entire conversation"
+          ],
+          "answer_commit": "hmac-sha256:34571971d640c558c308346dec7f463e",
+          "explanation_enc": "aes-256-gcm.v1:5zvCysYWlDCq-4sL:7XwvdscyHyxKuZNlttyYlakCcrX3BDPvOF-sTWTW0MC6wTGRDt0NuTDoGrhUwWVlRZHnNMKlV8_SKPLuVuKe9M-VaI8URB4jaaZ4W0KlNTwMy25ok7NnDPGrmW620lbM4RuHZ3hWWAGDmnwDq5_uy_Fk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.02,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-018",
+          "prompt": "Which is the BEST use of a system prompt for a customer support bot?",
+          "options": [
+            "Repeat the user's exact question",
+            "Include the company's source code",
+            "List every product the company has ever sold",
+            "Define the bot's tone, scope, escalation rules, and forbidden topics"
+          ],
+          "answer_commit": "hmac-sha256:8d0de1820e5118359c4dcadfb33ef473",
+          "explanation_enc": "aes-256-gcm.v1:yOolPHjNgY749Bz3:wrzkV2PiQ94gbB1L4hLGbbkNxLJaMJgjuyIRPRCsOMRR5pfP71NwPXN4u83Vtx9C6nZC2dTmvvb8FVmgyGa0jAYGSxQ4IU29TrLBAfTmrZt1tLmw3RZs9NlhQqy-bYWiPd70W_JN_2_whZoGUX2U",
+          "difficulty": {
+            "tier": 3,
+            "signals": [
+              "scenario_framing",
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 3
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.545,
+          "findings": []
+        },
+        {
+          "id": "pe-019",
+          "prompt": "Where does the system prompt usually appear in an API request?",
+          "options": [
+            "As a message with role 'system' at the start of the messages array",
+            "In the HTTP response headers",
+            "In the URL query string",
+            "Embedded in the model's weights"
+          ],
+          "answer_commit": "hmac-sha256:6a4e56111e1f0b6749083589decba6a9",
+          "explanation_enc": "aes-256-gcm.v1:9fff6kV6z3HVkta7:3jkmILkq_-F4yJAqsOqn0LyeEgXX9Ir6SWN5drPjNBm9gLQGhyTrY4jJ7a9ZZD-AZl9aJvG1WlaTWQHuVIcDxDWCJ8W_Jq4LlHJ_jTkdGi2Ozxgc2b9EAKQidE8sbXl8jUkRrK3ZS81Blx9mTrnqhg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.129,
+          "findings": []
+        },
+        {
+          "id": "pe-020",
+          "prompt": "What is the term for a user message that tries to override the system prompt?",
+          "options": [
+            "Token overflow",
+            "Prompt injection",
+            "Context bleed",
+            "Hash collision"
+          ],
+          "answer_commit": "hmac-sha256:06dcaf380e9ead841f74d0b6d86e7cad",
+          "explanation_enc": "aes-256-gcm.v1:BBG3x0QVXcMAya3S:AxTVL-cOwRO2VccCuh-ZJttTeXWtOT1cd8yBvNygi5GVhcHVufiHHMxTgH5QoiKVeAa2xclAcRWAyus2dtTz34q72KVcpu-lJYpECWPFIDpP1nxXAMvNWzN3gEkqfNFloU1mrIZEhQYjbeWzrUkAzhtR-DV6OVmJu4YRZOrSNpA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "scenario_framing",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.143,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Output format control",
+      "skill_id": "rfv.skill.prompt-engineering.05-output-format-control",
+      "items": [
+        {
+          "id": "pe-021",
+          "prompt": "What is the MOST reliable way to get JSON output from an LLM?",
+          "options": [
+            "Capitalize the word 'JSON' in the prompt",
+            "Send the prompt in JSON format yourself",
+            "Ask politely in the prompt: 'please return JSON, thanks'",
+            "Use the model's native JSON/structured-output mode if available, plus a schema in the prompt"
+          ],
+          "answer_commit": "hmac-sha256:d085830949ed331a132d0f76f80d91a1",
+          "explanation_enc": "aes-256-gcm.v1:DENpnC-x3rqVu6kA:XVsQogvBxaODj-oQA08dXDKXBa7ABMo_C4ZAF-bVjwHcbhZS2JzNnGHMbZLe2zy5qQx9tIR9qDIEbZDH1k7BmcqduMc9MecfKSbFWDOqPVNi1Usg4PCHh4lHQF-_QzFLTF1CAolmI3sYNqyEpQVd2x26nVVsVA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-022",
+          "prompt": "Which is a GOOD way to specify the output format in a prompt?",
+          "options": [
+            "Provide an explicit example of the exact output you want",
+            "Use cryptic abbreviations to save tokens",
+            "Leave the format vague and hope the model guesses",
+            "Write the format spec in a language the model doesn't know"
+          ],
+          "answer_commit": "hmac-sha256:a6b703fe2588858f745e486d439a2e8b",
+          "explanation_enc": "aes-256-gcm.v1:EYRMNK0deGe0M2aJ:NGl-rJs9nib9PwtqVHZ6W0K-sKsq8uj4mbrabml8hRpUypxN8tcf8p1DYSh_F6mFXVzNR73Ikb3BEJBfOuvzNMdOjfe9Ak1sCGncyyIeOwkmKJ3GpAIKHWnEwEM68WPLr_uIFWaG3f5IcZO1WpioJrsI7MU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.966,
+          "findings": []
+        },
+        {
+          "id": "pe-023",
+          "prompt": "When asking for a markdown table, what improves reliability?",
+          "options": [
+            "Ask for HTML instead and convert manually",
+            "Use only single-word column headers",
+            "Request the answer as an image",
+            "Show a small example table and say 'Use the same format'"
+          ],
+          "answer_commit": "hmac-sha256:03b4f314a85de98608be54c9e1a903e3",
+          "explanation_enc": "aes-256-gcm.v1:ogpEaiHoU7WKwsXV:7ualwBNJmRVuKeSmMVJE6f6efUA9XHhKz0cmc5G3y0Qkv2UUl-rhzU-xNuGT8OjoOzaNC_AA9cpgcl3pZVna2Lh4mDftArh5t2bVyqbG9d304lcYEfLcAXnjPXI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.366,
+          "findings": []
+        },
+        {
+          "id": "pe-024",
+          "prompt": "What is 'delimiters' usage in prompts?",
+          "options": [
+            "Adding commas between every word",
+            "Wrapping user content in markers like ''' or <tag> to clearly separate it from instructions",
+            "Sending each word as a separate API request",
+            "Using different fonts for different sections"
+          ],
+          "answer_commit": "hmac-sha256:fb9b49602bc2e765d6f56bf8884b685e",
+          "explanation_enc": "aes-256-gcm.v1:tpq1CgWq5x4yTzPE:uyuYjyxR_D8dQWcHTMoCsYR3bsEvBeuTvvrBucHpFFw4NJ9nyQG6CEurORLW_vIZgALv9PDvLmQtc6qLaFTTwI1zuk7s4VFwbSLeg5e7dMv2CdFZcD7MC0aAmoyse_yxwVZldfcaLqpIoec",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.068,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-025",
+          "prompt": "Which is the BEST technique to enforce a word/character limit?",
+          "options": [
+            "Send a tiny max_tokens value and cut off mid-sentence",
+            "Repeat the limit 20 times in the prompt",
+            "Hope the model intuits the right length",
+            "State the limit explicitly AND give a constrained example of the right length"
+          ],
+          "answer_commit": "hmac-sha256:f33394b64445c9eab02fef754bcafa3d",
+          "explanation_enc": "aes-256-gcm.v1:pi2d5vsCQED2X-Y-:n-MeXo2yD9pLAOwkt7y7o7fnS7jqJXYdkEJvadWiLT--15BRdb0ohHn9cN_xSyIWVRgW8Kow2NwT449ynAkW6f75py_u5dunR-MJeXvp_JJ5vKrddkKS27fD0-FhcbaOK3bo0irzCrVmnkNJzXk0H2M5Iqb0EQ20FFGNIQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.453,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Iterative prompt refinement",
+      "skill_id": "rfv.skill.prompt-engineering.06-iterative-prompt-refinement",
+      "items": [
+        {
+          "id": "pe-026",
+          "prompt": "What is iterative prompt refinement?",
+          "options": [
+            "Translating the prompt to a different language each time",
+            "Running a prompt, examining the output, and incrementally improving the prompt based on what failed",
+            "Rewriting the model's weights between calls",
+            "Sending the same prompt 100 times in a row"
+          ],
+          "answer_commit": "hmac-sha256:9c70f45edf5844fb49e31d83cc384f66",
+          "explanation_enc": "aes-256-gcm.v1:X7Dg-Q-N91_BSfLS:pSVa0bTm0ILmKTOfJ8Du2Bv07kqLW73xPRq4XyYc1KrC_2KQOevJPIVrvjy8lF9WIpdcatt54b_-SkJxzbRJ2_rhYP7mbJl8BVEPgc2G3ex0dCe4ZJUSARcxuJNKc7InhCraWdng0cwhGJhWEUZ1S0H2iBl-sKIRIJ-v",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.768,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-027",
+          "prompt": "If an LLM keeps adding unwanted preambles like 'Sure! Here is...', what's the BEST fix?",
+          "options": [
+            "Wait a few minutes and retry",
+            "Increase the temperature to 1.5",
+            "Switch to a different programming language",
+            "Add an explicit instruction: 'Start your response directly with the answer. Do NOT include any preamble.'"
+          ],
+          "answer_commit": "hmac-sha256:2692111afdd503bc7cec479eeb975bb2",
+          "explanation_enc": "aes-256-gcm.v1:qIS-C-IFJYdcM_oh:fpH35ra_qDIoCK1wWYz01HqPxopZw3UPkTp7Is_a-is5graeorWh9zdrDQYDxzuH6R9NjxitENJ33QzaXy__opcG3O-lGRoJCRp0MvpffPaLaXP82n-a1KHa9VrANcVYX3H8tMsfeelWNzzA5uY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-028",
+          "prompt": "When the output is too long, what's a reliable fix?",
+          "options": [
+            "Add 'Respond in N sentences or fewer' AND show a short example",
+            "Set the model's RAM lower",
+            "Ask the model to translate to a shorter language",
+            "Use a smaller font"
+          ],
+          "answer_commit": "hmac-sha256:2c7de72ba8b3153b3ec801105997e14b",
+          "explanation_enc": "aes-256-gcm.v1:-xmRznSqVzNEnkQ3:Umn6P8YBTRGktRZ7HX0FOwpvQ3bVRWSdjJte5n_MCxKEY3_wKuohu3LGcKoAWh7P9yCQr2tMJlMobQty6FNMw2W1TYpQkTTjVcdmLw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.292,
+          "findings": []
+        },
+        {
+          "id": "pe-029",
+          "prompt": "What's a good FIRST step when debugging a bad LLM output?",
+          "options": [
+            "Restart your computer",
+            "Fine-tune the model on 10,000 examples",
+            "Blame the model and switch providers immediately",
+            "Re-read your own prompt — most failures come from ambiguous wording"
+          ],
+          "answer_commit": "hmac-sha256:ff6deb6abf26749b3070222eb1fab0e1",
+          "explanation_enc": "aes-256-gcm.v1:cr0s6Enx4YGned-T:0ll3itPGwpMWRdgy_Zz5x2TXtDtG6jDLfoTs7AgYbB7nkJ6hb3yoWxcOu3r3QTyGiGTxGNMWUduvv0AC0OUv4e-zXwXWox9fei59kQBGEULDiiN-FgDNmv3VJkqqJRMBZ0DIDpC9vLScoHVjekxoFBovCI7ghD2S",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.396,
+          "findings": []
+        },
+        {
+          "id": "pe-030",
+          "prompt": "Which is the MOST efficient prompt iteration workflow?",
+          "options": [
+            "Never change anything once it's written",
+            "Rewrite the entire prompt from scratch every time",
+            "Change ONE variable at a time so you can isolate what caused the improvement",
+            "Add 50 new instructions in a single revision"
+          ],
+          "answer_commit": "hmac-sha256:8784b5167f19500d16a9b0e080651173",
+          "explanation_enc": "aes-256-gcm.v1:xo4J1BcATZ_4UWWW:0pvl3Z8M16NSfIVewgu_YBxglMp9Vhrh7gTO97qaJw3g7BYlpJDqikoPZh7VI5CSngPVkP1obH7fBuei-koavnyrokiAABXY-x7joRMHLv-8lqhKnr-_XHzFvw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.551,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Hallucinations and accuracy",
+      "skill_id": "rfv.skill.prompt-engineering.07-hallucinations-and-accuracy",
+      "items": [
+        {
+          "id": "pe-031",
+          "prompt": "What is an LLM 'hallucination'?",
+          "options": [
+            "When the model returns an empty response",
+            "When the model generates plausible-sounding but factually incorrect or fabricated information",
+            "When the model crashes due to overheating",
+            "When the model translates without being asked"
+          ],
+          "answer_commit": "hmac-sha256:7da87ab622ddb380ebc31f070d3fdb72",
+          "explanation_enc": "aes-256-gcm.v1:VhIw5zd0lx_yk3BV:0UA_6wLIJEL3FZPHrP87q92foA-nzqJtp-Pir2SOPxw1JLHBA9EtPg6As0riBnzvbHKpOZACWDGJmKJ-BcK6nw-VRfw4J3Wmx7mY50Lnr4NF9PPVqHF9uG1td-vQwGCTgBQdG_2ctrcBPfwU_Ae0KZAt",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.067,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-032",
+          "prompt": "Which prompt technique helps REDUCE hallucinations?",
+          "options": [
+            "Instruct the model: 'If you don't know, say I don't know. Do not invent.'",
+            "Use a longer prompt with no instructions",
+            "Always ask very obscure trivia questions",
+            "Add more emojis to the prompt"
+          ],
+          "answer_commit": "hmac-sha256:3ed603b15aef53fdc2f21bc9c8eefed0",
+          "explanation_enc": "aes-256-gcm.v1:43h4_cgd_4sojRE6:1Bts_9jXtZsc4cPSU5Jf6QhslCThiP05guwcV9EoqKYUGbE3fQICbV5vP7BVr-0vaW4uU1AEna3wXSX6iokvYpB_doQT5HFmVm8d4-rsxSSQD-6zCqUp_BRkFEoC-X8K7hcHKI-gmRkrNyh9vkk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.825,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-033",
+          "prompt": "Why are LLMs especially prone to hallucinate about RECENT events?",
+          "options": [
+            "They prefer fiction over fact",
+            "Their training data has a knowledge cutoff date and doesn't include anything after it",
+            "They run out of memory for recent dates",
+            "Recent events use a different language"
+          ],
+          "answer_commit": "hmac-sha256:22ed0d94543888f6ce0abfe071acafe1",
+          "explanation_enc": "aes-256-gcm.v1:k3RhLBUhh7D076Wh:wYzD2rqsxCLiukWtqTztMn2WMTcZzbDWrfn-nST4g2QHR-kjzQ4dSmBYXD25qKaal4z7cbjKU8cZV9sAnqjN47YMCkXPCqptC4310gPwrfiQRCKyN2xUD3wuebb0bcRWb2H0Eaoqp9bIAT-0dkGaHTANEFEaRnbtr88YK4ZND-Y",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.179,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-034",
+          "prompt": "What is RAG (Retrieval-Augmented Generation) and how does it help?",
+          "options": [
+            "It injects relevant documents into the prompt at query time, grounding the model in real data",
+            "It runs the model twice in a row",
+            "It changes the model's color scheme",
+            "It compresses the model to half size"
+          ],
+          "answer_commit": "hmac-sha256:1262649b28ff5ceaeb19183af5dbdca1",
+          "explanation_enc": "aes-256-gcm.v1:63y0EM87rvkwMr46:OBbl9wgn6seSY1yI5qgwCNqL735kX3NOqk_GA-NS0VnXgRmQh5y_V7-kCWJSCdD7-Q8FEiY1VDSHmdDy2Jf6pKiluBC52KLcYDEapR9MsmyJpzViP6lV-xA3BB1SHZerPkBOxPlx2K8YE4gRNnwqiUPy3RQ8xKEsgb-SOwG1DPKkvw99ErQKyG1U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.583,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-035",
+          "prompt": "For factual questions, what should you ALWAYS do with LLM output before publishing it?",
+          "options": [
+            "Verify against authoritative sources",
+            "Trust it blindly and ship it",
+            "Translate it to another language to make it more accurate",
+            "Run it through a thesaurus"
+          ],
+          "answer_commit": "hmac-sha256:1021bedfe0e41430aae27cb8af072020",
+          "explanation_enc": "aes-256-gcm.v1:6vLVmqDUe6EgY0Qg:3cWuzkrZSNI4NclkVyOrhAFZdqb1LlxhNpgmcvDfJmoTrnul-aJZ8a7ype6SsRJvmlOk9BpJxk9yin-pM01X_hxLOeSo-uxEVVJRbT5TdoleLTBL_69u09KfpDgx3wb2iMA1UA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.632,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Context window management",
+      "skill_id": "rfv.skill.prompt-engineering.08-context-window-management",
+      "items": [
+        {
+          "id": "pe-036",
+          "prompt": "What is an LLM's 'context window'?",
+          "options": [
+            "The amount of RAM on your laptop",
+            "The model's training duration",
+            "The maximum amount of text (measured in tokens) the model can read and generate in a single request",
+            "The size of the browser window the chat is in"
+          ],
+          "answer_commit": "hmac-sha256:36e3dc580c5d8591dacb6b7af6d51484",
+          "explanation_enc": "aes-256-gcm.v1:ZqIqoRV99v3jS7xr:cBTzyz2VRM3sdCW7zaPRX1OIH675YwbwQrcsnxfYOdMNH4MmvoY6jQ_xCFUHZpeS7klRCiXk-ExnU0HKOLZJyeL0b7ft03W7bUHX9KywZpTOsL2nPQtVzJVdg_tT3PWgn5aAHpMAVXs11PLua3H70xgm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-037",
+          "prompt": "Roughly how many tokens does one English word use on average?",
+          "options": [
+            "About 10 tokens per word",
+            "About 100 tokens per word",
+            "About 1.3 tokens per word",
+            "Exactly 1 token per word"
+          ],
+          "answer_commit": "hmac-sha256:85f068c75b415daebe8fadc8074a6719",
+          "explanation_enc": "aes-256-gcm.v1:ZmPJ1XKkhzkNMxpM:PjpNWr8WJnOz41fSbP8Gt0Dcn13v_Fp530b5WW9t9olyMuVELTg8G7TX5HYx8ydi_Q6ICOkO3sY2JbWEoNiRneZi4plUSoLBymVInXRbTBJ-EESxDOolJLpcB1Qnz58YtPQJlDbZ2_kM8k4QbECP6nCga_8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "pe-038",
+          "prompt": "What happens when your input EXCEEDS the model's context window?",
+          "options": [
+            "The output is returned in a different language",
+            "The model doubles in size automatically",
+            "The API returns an error, or older content gets truncated",
+            "The model crashes the cloud provider"
+          ],
+          "answer_commit": "hmac-sha256:58b5bdd129d120640a681d2cc70dffd1",
+          "explanation_enc": "aes-256-gcm.v1:b0zq0c7RHjrTtXzM:58zvZk0-FtcZxkEM3ONeVjn87Mcdx82o3KTEHcf-ODNEmFDOfK1cQRw1L-DG5i2xCKeQlnYBEbU6ER3qw6UpdtOI0qKMqG0bWj39WjWEDN8RnhIy-Qzh13UuoJRt1PUJm_DtOXKJhLUXZFVidzXU41XsPA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.239,
+          "findings": []
+        },
+        {
+          "id": "pe-039",
+          "prompt": "Which is a SMART strategy when working with very long documents?",
+          "options": [
+            "Convert the document to an image",
+            "Summarize or chunk the document, and only include the most relevant parts in the prompt",
+            "Encrypt the document before sending",
+            "Send the entire document and hope it fits"
+          ],
+          "answer_commit": "hmac-sha256:a44a7fe2bc9eff904cff3e2f9bded07e",
+          "explanation_enc": "aes-256-gcm.v1:VSMzNiVXqBZ33f5J:DTy4oLcStDmsq_FulWHC6jpQt2I6b1OuzC9JfO7FDvv1LYS__GTOQFoJCZO3UFLmt3qV6dHmcfji6TZQLvguQKVeXleKM7MC39bs52BhFhfhbhZodbDdTbYrQoJk4UKLhghtF7PlhgnGPu38bpmYhOU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.122,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-040",
+          "prompt": "What is the 'lost in the middle' problem in long-context prompts?",
+          "options": [
+            "The model forgets all middle words",
+            "The middle of the prompt gets lost in transmission",
+            "The middle is encrypted by default",
+            "LLMs pay most attention to the start and end of long contexts, often missing details in the middle"
+          ],
+          "answer_commit": "hmac-sha256:e1ef257f834157dbe520a27ba60c7dbd",
+          "explanation_enc": "aes-256-gcm.v1:HGbSlxOpmzG0PLF1:yIxkzK7ph86ESssm5Kk1noBJm86qXts1-HMElQgR9FiHhZ0UDeOIOmGWXJmDLYLnKXm9hQwzmg7dTe3Fgp4AnLWkZ_TREFFYANOKp_mOsymX80koAPggK2RG4tflnAPSvDbHEPQIv2gDoQrfT3Bsa6Es7hjwxprGKagu3jJic71L5TLzZg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.96,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Temperature and sampling",
+      "skill_id": "rfv.skill.prompt-engineering.09-temperature-and-sampling",
+      "items": [
+        {
+          "id": "pe-041",
+          "prompt": "What does the 'temperature' parameter control in an LLM?",
+          "options": [
+            "The cost per request",
+            "The physical heat of the GPU",
+            "The speed at which words are generated",
+            "The randomness of the output — lower = more deterministic, higher = more creative"
+          ],
+          "answer_commit": "hmac-sha256:2d0fbeeee7479207fb123141b37ab96b",
+          "explanation_enc": "aes-256-gcm.v1:X_Jve7DeP8lREIsI:T7MGNkIVIpt16iOf1rukqKjckLVOuwcP1_ihsqL5LUAw0Rrrh2Wz2KrwjwkRqw31pE7n1fGd_nf1hm_hBA5Zkajl1hZl6rmET7BjhYug6ymfjO-ZfoFsamxOGnqERhEhDeLEEvgWR3JkZ49VoYJxCiQscYfKV9g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.132,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-042",
+          "prompt": "For a factual Q&A bot, what temperature is usually BEST?",
+          "options": [
+            "It doesn't matter at all",
+            "Random different value each time",
+            "Low (0 to 0.3) for consistency and accuracy",
+            "Very high (1.5+) for creativity"
+          ],
+          "answer_commit": "hmac-sha256:e0001ac6c284704897e75895455c9a2d",
+          "explanation_enc": "aes-256-gcm.v1:JMGc-BzgDcK0-cHr:dkXuGTST5dC_5TsMTD4Qw6aILX0Cr4H1yvvGglOk0-k4f2YRCvitA-OezxIk37Ffy0gXtwNWa2ArWTHTKe6Kf_80JlTwFr1fTrGEjrbqEISPrBXSuHRbxWAzp_VK2CLED1B4K84A-qQl-Q",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.344,
+          "findings": []
+        },
+        {
+          "id": "pe-043",
+          "prompt": "For a creative writing assistant, what temperature is usually BEST?",
+          "options": [
+            "Always 0 for boring results",
+            "Negative temperature",
+            "Temperature doesn't apply to creative tasks",
+            "Higher (0.7-1.0) for variety and originality"
+          ],
+          "answer_commit": "hmac-sha256:15c501029fdae858d7bec29b5c107293",
+          "explanation_enc": "aes-256-gcm.v1:p2S5ksDT94vVa9jF:7Hl1oMnhXMkXhrow3tCJiVMq7nmdECAyxBDo9G_FcUiRqXULlI8OEgun-VrsEtWQ21N432t3QXnQFlqcjP9kc33dH_uHUC9MLi-MBvExlwz3k91zblD2Gu18DEHxenM44BWA1gQGrmFTiNQL6NQd",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.023,
+          "findings": []
+        },
+        {
+          "id": "pe-044",
+          "prompt": "What does the 'top_p' (nucleus sampling) parameter do?",
+          "options": [
+            "Sets the top speed of the response",
+            "Picks the top P questions from a quiz",
+            "Restricts the model to sample from only the top tokens whose cumulative probability is p",
+            "Changes the font size of the output"
+          ],
+          "answer_commit": "hmac-sha256:02b9a4db9978fb15805235c45736809d",
+          "explanation_enc": "aes-256-gcm.v1:ZOAv0PRyGlx9hPXW:Bg-WEsMsvsuPNEQ9-7l2eOGEIJhBTnHJHSkzcpBfZT3mBvsHWFrKA9USAvLVzIxC4UBQf8soYa55tC0d2ziXi8gc5LR0LxtxLsYxeWCg94-mAAdI1_9sw7qzneJKufBBms0I3wxdE7M5gkacuLTvy0YbhAF6ca56G-0LvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.378,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-045",
+          "prompt": "Should you usually adjust temperature AND top_p together?",
+          "options": [
+            "Yes — always set both to the same value",
+            "No — adjust one OR the other, not both at the same time",
+            "Doesn't matter, they're identical",
+            "Yes — they cancel each other out"
+          ],
+          "answer_commit": "hmac-sha256:a19fae36b1cc1e13c5b70fb8935aa11d",
+          "explanation_enc": "aes-256-gcm.v1:TePnkRccpND23Y_X:PGJOUugJNIklfvXsabfnjLx2tMqahCAcBDVzJ5piQPT4ZrC8j2ouvQr5l1b0659bd4H2WhB5cQDylV1Nelj-yzHL4eZk12s5aJpyYItxmRp6a2SiAZF3lrAKHwjtFTeiAxWqcuFrgB1lHfyqlAK5Fxah",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.41,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Prompt templates and variables",
+      "skill_id": "rfv.skill.prompt-engineering.10-prompt-templates-and-variables",
+      "items": [
+        {
+          "id": "pe-046",
+          "prompt": "What is a 'prompt template'?",
+          "options": [
+            "A document required by Microsoft Word",
+            "A graphic design template for AI chat UIs",
+            "A wireframe for the model's training process",
+            "A reusable prompt structure with placeholders that get filled in with specific values per request"
+          ],
+          "answer_commit": "hmac-sha256:9b500924d21c1b8eb8a02d390056fd8f",
+          "explanation_enc": "aes-256-gcm.v1:Ct0OivfrrHVWYVEe:dSDbHUGRuJMKwAQcBOQoR-O9XDXNIj1AeBiDemC7XM_jlyg0BA-d36LaI8O8FVq0xN4axxwIopFsu0bSTdKBPMSTaMYtLdfU-2YnvdYrKLH_57XGmtQLMc1xAYGOnhA-u9oHK6IaRwy2SuyqNDPeFyqhgDgfHw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.205,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-047",
+          "prompt": "Which is a GOOD prompt template pattern?",
+          "options": [
+            "'do thing'",
+            "'{everything}'",
+            "'Summarize this article in {N} sentences:\\n\\n{article_text}'",
+            "'summarize'"
+          ],
+          "answer_commit": "hmac-sha256:63e5f218b5c65242261f109e916c35a2",
+          "explanation_enc": "aes-256-gcm.v1:2hugYZPsuqVKvXh4:HNSXYT9lJFzJJ2b6jRw27Cv07RJ5m9iUF7OeQh1wqrTOg05F_kkQusdSZrcoqcXpPUYA83cxM-ZktoIAcrjKkLc__LLzBXvB5ndzs420eAuah4l5SSo5yU3gwaQAFstbOvVfdoJD7gUV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.286,
+          "findings": []
+        },
+        {
+          "id": "pe-048",
+          "prompt": "What is the MAIN benefit of using templates over freeform prompts in production?",
+          "options": [
+            "Templates require no testing",
+            "Templates use fewer GPUs",
+            "Consistency — every user gets the same quality of instruction structure",
+            "Templates make the model run faster"
+          ],
+          "answer_commit": "hmac-sha256:50c9ff602fa078aa23aa94c681001836",
+          "explanation_enc": "aes-256-gcm.v1:CF82XPNLPDofGPys:hXJQMOM1HHbMw1xDdqffJ3MuziZDSPmmyl1Uc32CXyfk9KKTtYvCP2U0sPUTmjK9FzTBATjZsEH9MoH9tXOUkfRhgFWV80j8snu9EGUwc_YOYRYmwCGxXWj-wREl6zQGHN8XcdvpC5gO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.029,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-049",
+          "prompt": "What's a popular Python library for managing prompt templates?",
+          "options": [
+            "LangChain (also Jinja2 for simple templating)",
+            "Pillow",
+            "NumPy",
+            "PyGame"
+          ],
+          "answer_commit": "hmac-sha256:db59bdd6ec1b22aeb0909e5dbcc33b34",
+          "explanation_enc": "aes-256-gcm.v1:S2a-YGSSombSK0ja:3scXA3hT7JqFVxsC4b4YLOnlAtYYxQj3pAXBuNyvg8_NMBeSUiFsm4EN2XW3Uv04UlkfDkm2tqnEY5xNkP-VCAy0uRNosNVyjy5gAWCnPP7VPj86MrdPtOZXbr_f73MuEbzYZ6zBlw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-050",
+          "prompt": "When sanitizing variable inputs in a template, what should you watch out for?",
+          "options": [
+            "Prompt injection — user input may contain instructions that try to override your template",
+            "Font compatibility",
+            "Variable name length",
+            "Spelling mistakes only"
+          ],
+          "answer_commit": "hmac-sha256:e6871a539ee818eb6f611fe388f6c602",
+          "explanation_enc": "aes-256-gcm.v1:Lup7i2zD4KJpkadJ:NqC6C_WM0pDQ-DsnfnCyWr3RwMyjrWKaWkwM8ZQnoBp_7PC1MHA1oZmJZLvpZ9OhtVWPwf4KMa6NCNHe2U_WOXGw4JOkC8iVwlCOsAS9WF5Op8HVA4x3M73pcDAN8no5YYo5ZkcWhQ9Pp5l1DF2_vt6ZGQ3gCIfQr-M-waZCVxmKkkgo9nn6LJZ5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.045,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Multi-turn conversations",
+      "skill_id": "rfv.skill.prompt-engineering.11-multi-turn-conversations",
+      "items": [
+        {
+          "id": "pe-051",
+          "prompt": "What is 'conversation history' in chat-based LLMs?",
+          "options": [
+            "The user's Wikipedia browsing history",
+            "The accumulated list of user and assistant messages sent with each new request to maintain context",
+            "The browser's autocomplete history",
+            "A backup file stored on the server"
+          ],
+          "answer_commit": "hmac-sha256:f040e173b774ff3e1e7988e8ff788b44",
+          "explanation_enc": "aes-256-gcm.v1:9ERoyy8KT1mbhJBV:P2pCQUnmvdVVUQTob2EtEJSBLEmLOAwsJ2mKtSjfMUbaLVvn55UooA5PGkrbE2NhjMU2raiCeEy35eDqoqYG682LRZlUqVQqLx3zvdhUbduOxhtGStPWFB7zZmEpuy1_MpaajL-HfIpOfsoXJhhRgpJVUndr1T8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.649,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-052",
+          "prompt": "What happens if you DON'T send conversation history with each request?",
+          "options": [
+            "The model auto-fetches history from the cloud",
+            "The model has no memory of previous turns and treats each message as a fresh conversation",
+            "The model crashes",
+            "The model uses its long-term memory automatically"
+          ],
+          "answer_commit": "hmac-sha256:e85e569d5b01f9332fa2e17568f85add",
+          "explanation_enc": "aes-256-gcm.v1:9zi-L9Rx1VzBYyZG:1VEGyNDjh8cplY9gpDjAMWUghi8O4fDX0uacZgw64h2BZotgxw7EBHhQYFn2pnnRYJRYnCU3nwB69XPMLOZIXbC-IIXwL4l-XrKs-aNFGvSyQQ2AkYYOyX97nm6Wfs4_WRS7NHtWEAUurqFMuw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.816,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-053",
+          "prompt": "What's a common strategy when conversation history grows beyond the context window?",
+          "options": [
+            "Send each message in a separate request",
+            "Summarize older turns and replace them with the summary, keeping recent turns verbatim",
+            "Translate older messages to a different language",
+            "Throw an error and restart the chat"
+          ],
+          "answer_commit": "hmac-sha256:e360108e6e0ac0f24eeda847b548c62f",
+          "explanation_enc": "aes-256-gcm.v1:es70kDrqw3kDqCw3:537TBiduU2D7qG5EtdrG2blxMfPw6R0etIuqmEQu8M8xqWEUUhCAS1Ap8DLG8a9fSC2MNfJXVdn1_D5GMsY374x5X1LQd10zi2LFtRwWpRxVmJXMPPDXb3ewjyhDBoFF2tw87JsHlNVR6gQl67Cq1VDM1bsA2rxv0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.792,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-054",
+          "prompt": "In a long support conversation, what should you do with the original system prompt?",
+          "options": [
+            "Move it to the end of the messages array",
+            "Remove it after the first turn to save tokens",
+            "Send it as an emoji",
+            "Always keep it at the very start of the messages array, every turn"
+          ],
+          "answer_commit": "hmac-sha256:aa99f10f4d3586180fb87a123a7e998a",
+          "explanation_enc": "aes-256-gcm.v1:xUMT9N-UmDG4Ojop:_bsw327d04UaBED1rOK1EUUdlxysr8uxeRu0J6iBDgES6g3e0QmLk91TUY99-8OLk8c-7jL4JBrA8mN86MMUrNwpC6RwlqKt3JAPVHfFr2Mxq8mEWaUG9ZhmHZhtursIsu7cD7G9IpHZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.467,
+          "findings": []
+        },
+        {
+          "id": "pe-055",
+          "prompt": "Why might an LLM 'forget' an instruction given 20 turns ago?",
+          "options": [
+            "It's deliberately ignoring you",
+            "Token-based attention favors recent turns; older instructions become weaker signals",
+            "Tokens have an expiration date",
+            "Older instructions get archived to a different model"
+          ],
+          "answer_commit": "hmac-sha256:d60428694db0f52bf9b234d6a4d819d4",
+          "explanation_enc": "aes-256-gcm.v1:u3IS6PxF1iL0YA0m:VstWzhhSQymnv1iDH1i2hbDCmj6Uq0nfakcZhe5jSmTKZ8q0N5S-bWCsF43xJIChOXsusTTXBgV10o2hhqm15Ggg9PqcYMmQFEM_-hR1xWh31xoQpbVM--VRlP0avEnzPCBdDdEBfG_nUXJF6czUciadpkcIkC0w6aiXJ4Q8QJpUTd8",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.596,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Tool use and function calling",
+      "skill_id": "rfv.skill.prompt-engineering.12-tool-use-and-function-calling",
+      "items": [
+        {
+          "id": "pe-056",
+          "prompt": "What is 'function calling' (a.k.a. tool use) in modern LLMs?",
+          "options": [
+            "The model emails the function to you",
+            "The model returns a structured request indicating which external function to invoke and with what arguments",
+            "The model translates functions into Urdu",
+            "The model directly executes Python code on its own"
+          ],
+          "answer_commit": "hmac-sha256:eab79b4729f2d9f9dcf3f55f9ec5d5d7",
+          "explanation_enc": "aes-256-gcm.v1:QGnMlqMCLLnBMZkU:1vFGRkTtKWnhHpUvkm3AXgeqRFoh_4MkU8qhqY_xAaRfnHIJ3_n6HmRl7L8tTtDaTL_fTr1thvC5OWh063HH4R2AERu96CaMqvd5RQpMtihXp5P5WQp3aL2iPrOtBBl3OvRUZU6Zk-5X5IbotChJzt1V1iEnEArBwFkRtjc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.14,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-057",
+          "prompt": "What does function calling enable that pure text generation does NOT?",
+          "options": [
+            "Smaller model size",
+            "Better grammar",
+            "Faster typing speed",
+            "Integration with live data sources, APIs, databases, and the real world"
+          ],
+          "answer_commit": "hmac-sha256:d256e0c50a90839c4f260988aa9f0f5b",
+          "explanation_enc": "aes-256-gcm.v1:CATwfFTX4rQGr9_H:wX1oLanCIfnOfawqlUp90ZtQ6FDohwq8gmVsjAcmcKbWxzQVCfiaC2vWTsxlkruX8TCMXgEiHDrgAwxXjczR5soAAxeU6sD_kUUVrobEj2f9vCfNEskoBoL5OPWk8ax0q_5XmxkJMCFopMm015mMy3hnM6zwuI3MEYscDKgTHCTEPfbtakvr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.737,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-058",
+          "prompt": "When defining a function/tool for the model, what's MOST important?",
+          "options": [
+            "Removing all type information",
+            "A clear name, description, and well-typed parameters so the model knows when and how to call it",
+            "Hiding the function from the model entirely",
+            "Naming the function with random characters"
+          ],
+          "answer_commit": "hmac-sha256:7c0a8ee9ca56cf7057ae21d0b9a2ad0f",
+          "explanation_enc": "aes-256-gcm.v1:KZ4r5tXM_kwnVh03:QHSkLcLwEx7cTXPUsr9G-sdzAIg55a-HdpujAr-PcKk0adFhN7mEpiSVTKtK_tC7L60PZ81Mzd4BScY9dg6McqvvfH41aEHWPM37X_LdBXbOeAnEqmihqhZ-ZPTasauVpF3M0DSFCXlnMDBOyLeTlYolw76BodGT",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.209,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-059",
+          "prompt": "What's a typical workflow for an LLM-powered agent using tools?",
+          "options": [
+            "Model thinks → decides to call a tool → tool runs → result fed back → model continues, possibly looping",
+            "Model only talks; tools never run",
+            "Tools run before the model thinks",
+            "Each tool call requires a model retraining"
+          ],
+          "answer_commit": "hmac-sha256:b8d543aef3c0dd281049e579382ad875",
+          "explanation_enc": "aes-256-gcm.v1:fmuVDwojoaM3G8HR:T4EIZSxbGdnVsiNPCp1J4zhn2c5W897miHQgcEmy14JwjzTyabhc1MAht9OFCMPRoF-KIm-Qd6gsTZ8JNIck6qQgG3bIjpJ7bb7iB_4wxZLb-850vS8b3WYTHo6V-a8XRzdJR329k_lMzX1PAi6w3kULlg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.452,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-060",
+          "prompt": "What is MCP (Model Context Protocol)?",
+          "options": [
+            "A movie compression format",
+            "A new TCP/IP variant",
+            "A standard developed by Anthropic for connecting AI models to external tools and data sources",
+            "A Microsoft Office plugin"
+          ],
+          "answer_commit": "hmac-sha256:7c0e2b06b6a77787feb9de98a6567295",
+          "explanation_enc": "aes-256-gcm.v1:35nekdzPphR0v4eR:ZOVSiV2H7dKsO79kMKYnHRP265k-hijbS1L9BYhGUYazWf8jXQCpROtggOQktBLSd12sKXTAPfdOgXpGHiquotPsnpwcQy9y9AUd6IbBo2jFX4pA6s9U88jwpl2qiyOmWf54cL_KGYj9",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.577,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Image and vision prompting",
+      "skill_id": "rfv.skill.prompt-engineering.13-image-and-vision-prompting",
+      "items": [
+        {
+          "id": "pe-061",
+          "prompt": "What is a 'multimodal' LLM?",
+          "options": [
+            "A model that supports multiple languages",
+            "A model that accepts multiple types of input (e.g., text + images + audio) in the same prompt",
+            "A model with multiple personalities",
+            "A model that runs on multiple computers"
+          ],
+          "answer_commit": "hmac-sha256:86bcaad4d5bb124b2993760e06306c4f",
+          "explanation_enc": "aes-256-gcm.v1:mtgnDQPfNFIjX5Xd:v6GtIV_lGSgBimGMgZm23ZdPQlbh3KyEObLjClSi5dXF2lfgGlhKEUiXyTJmtb8Mz_2Er0oTW-7_7R5BmbJRJqSwIO-F83ogc07ZmuLVWkbqFgYl-hEnzZWwZotCdK-DJc9q986r7IAA0oU3dglJoWE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.325,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-062",
+          "prompt": "When prompting an LLM with an image, what should you ALWAYS include?",
+          "options": [
+            "Only the image, no text",
+            "The image's file size in bytes",
+            "A clear text instruction about what you want the model to do with the image",
+            "The image's MD5 hash"
+          ],
+          "answer_commit": "hmac-sha256:a8db48e14f1084fa28a0dad71b92927e",
+          "explanation_enc": "aes-256-gcm.v1:WnS1_4XJAAszsl-W:G6Xxk8JvAIDWQx30GjrF34PVinzWfHNAHUUq8phWMM1XvunzHR5kjV6aYC5vyfWR2W0POEWmJ3-meYohpr-0UPpMqFTgxzO-aV4KMo-mjp-iaKLvVfW-p-W2wxSoj_-ZUbANOoeZq6PZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-063",
+          "prompt": "Which is a GOOD multimodal prompt?",
+          "options": [
+            "'image'",
+            "'do thing with picture'",
+            "'Extract all visible text from this receipt and return it as JSON with fields: vendor, date, total.'",
+            "'analyze'"
+          ],
+          "answer_commit": "hmac-sha256:9548c0b0e1994fc73b2e5d63b599fb5e",
+          "explanation_enc": "aes-256-gcm.v1:JIjLQB8q65ErX50q:hq1ecOwJnHKbzRXRRDmqWkiOj3na5uo8c0Cn6NpR3MQjyV2NYX8elCiDf7EXoqCH2-1GttDj0MglaGGeoqCMBqVaEizKLURV7scdgxl7qT2J",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.348,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-064",
+          "prompt": "What's a key limitation of vision-capable LLMs?",
+          "options": [
+            "They can only see in black and white",
+            "They require a webcam to be on",
+            "They can struggle with very fine details, small text, or precise spatial measurements",
+            "They cannot process JPG files"
+          ],
+          "answer_commit": "hmac-sha256:9e585d9c0e2f0f8be4538b887e049e31",
+          "explanation_enc": "aes-256-gcm.v1:h9VdORS2-_iTwygn:wsDNnDEiRLR2rJIDif7ZFmjfoZj_Zz2C6Pt9Dlvqujuu4nlXF0L84L_CMyGxTeh6_1nvrY1R5G5h-jtm-fnBX0S7DgFENne4wpLqmZmZsxvVUloNLwwlpTDX_d5_xNUjXU4AimxvtcpLbmT6verPzws",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.361,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-065",
+          "prompt": "For generating images (DALL-E, Midjourney, Imagen), what makes a GOOD prompt?",
+          "options": [
+            "Random punctuation",
+            "The exact pixel coordinates of every element",
+            "Specific subject + style + lighting + composition + camera/medium details",
+            "A single vague word like 'art'"
+          ],
+          "answer_commit": "hmac-sha256:cc6d2e701119a873fe5cefcbdd22532f",
+          "explanation_enc": "aes-256-gcm.v1:IBMPAsRpr7HbQmhz:LeyDqe9KIH0Q2vZNixJvZjDTqZ9_fjj56rjzv8Ksm0N9IhoB2SvehkTK5Ck6ZuHG4AHLYZYl71twmjnEXKnCzMXbpCIEico1eE4XF2WQu-Ks8FCrHoiYFeMN9BE_8CxWzmKgQ8YH-w7GfPhqpdrb4FoH9c4lxbMoRzlcig7zsimLqT89EtCwBTNRHaDTbJsQ9UYlh764",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.659,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Prompt safety and guardrails",
+      "skill_id": "rfv.skill.prompt-engineering.14-prompt-safety-and-guardrails",
+      "items": [
+        {
+          "id": "pe-066",
+          "prompt": "What is a 'prompt injection' attack?",
+          "options": [
+            "A SQL injection wrapped in JSON",
+            "A bug in the model's training data",
+            "An IV drip given to AI servers",
+            "A malicious user input crafted to override the system's instructions and make the model misbehave"
+          ],
+          "answer_commit": "hmac-sha256:08fb5ac035acdc6351684d875af5f7bb",
+          "explanation_enc": "aes-256-gcm.v1:uB2qtMe_f7eB2_nD:OUyeIQUo50oGk89WqUlrp23pG42_8HlQLIOQgBciSR6CKtKuWes0vkUN2vZfeUq0M1XY3S9TWG56b6_kHy8o8nySgoHiXpQYSQdsEim0uAEIomSe_IeufvqL-B4l7nNC297wK_OjG0fUDLW_AGkVh24wc5xf1_2AYGRDW7pL5sWe5EanSJoLKQUGkh8qM4IfLPI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.853,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-067",
+          "prompt": "Which is a GOOD defense against prompt injection?",
+          "options": [
+            "Use a different model for each user",
+            "Treat all user input as untrusted, use clear delimiters, and never blindly execute LLM-suggested actions",
+            "Make the system prompt very short",
+            "Hope users behave nicely"
+          ],
+          "answer_commit": "hmac-sha256:5c05a7a6d99e31b1c7514dc10e56d164",
+          "explanation_enc": "aes-256-gcm.v1:yczL-PMqYWYU1Vas:BSupkn0y5jczhmzZHM_rt9-VTo6FsdCH21QP0hJ_XmTuLbSspB5G8lW3MICpgMAj9Uz-vkr7EGxcjY3vLY-KyL25K416HJ-gKZD1cdUU9hyA41GHwtb5i2atfF9vkustBfWx28HsycJzr9W44-Qy3S7hqA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.971,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-068",
+          "prompt": "What is 'jailbreaking' an LLM?",
+          "options": [
+            "Removing the LLM from cloud servers",
+            "Using crafted prompts to bypass the model's safety guidelines and produce restricted content",
+            "Translating the LLM to a new language",
+            "Running the LLM on a jailbroken phone"
+          ],
+          "answer_commit": "hmac-sha256:f5963ab9ed651a2db04c9e3f9f5668ec",
+          "explanation_enc": "aes-256-gcm.v1:SCnDjvVV-NOEz-da:ygm_pZ8arzUqzKD2UZGTMYZDQ9UHI056a_g4patJr8FEMwuuzJ8YdnJDUGF-cdYYlB_MOI3AdDu2rMUO9Sd9IIPQaGVnM11WNRp7TdN87SOKqiOIg9xdmVcLB0o3dLXS4ns09pBA5DwJpwyQPYQijdsyzFRge5u4xwpN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.486,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-069",
+          "prompt": "Which is a RESPONSIBLE practice when deploying LLM apps to the public?",
+          "options": [
+            "Disable all safety filters for better creativity",
+            "Hide the fact that AI is being used",
+            "Include content moderation, rate limits, logging, and clear usage policies",
+            "Allow unlimited free queries with no logging"
+          ],
+          "answer_commit": "hmac-sha256:1ebf8390269963282351bcc43433fe09",
+          "explanation_enc": "aes-256-gcm.v1:jBZDORbTJsUsBZMJ:Z4c8hrTMoEmIn_NL9dCAT4w9Zl0ZPS8a8a8yF41a6yTrLa_UfP6EOw2EOvdi4E4NhrNAGJb_y_tAtI5Lu0WziH-Apqa9ScQmf_xiAyxl6Z2qUda6PBDbs3pkG-pJt1SLZj4J4zJRufs167G0ztze",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.542,
+          "findings": []
+        },
+        {
+          "id": "pe-070",
+          "prompt": "What should you NEVER include in a prompt sent to a third-party LLM API?",
+          "options": [
+            "Sensitive secrets like API keys, passwords, or unredacted personal data",
+            "Punctuation marks",
+            "Polite words like 'please'",
+            "Capital letters"
+          ],
+          "answer_commit": "hmac-sha256:3404d5fe185ebe767cadabb0fd08b478",
+          "explanation_enc": "aes-256-gcm.v1:SjIyFXQp06aq-KIw:xCaWYvwWPm_ky656xVM9gGQ9DAYNHWc4xW_ff-v_KqpWna8eUfPesxBCcEfpgsVhK67Ka_5ht012pDUtAKT8cq3kNKm1A0bUhHF2BYnRmGKAxh77Z9VqRlN1HE1Mm1lABHKLOUbOPhOAiN35w2RBXnNj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.731,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Model selection",
+      "skill_id": "rfv.skill.prompt-engineering.15-model-selection",
+      "items": [
+        {
+          "id": "pe-071",
+          "prompt": "When should you choose a SMALLER, faster model over a larger frontier model?",
+          "options": [
+            "Never — always use the biggest model",
+            "For high-volume, simple, well-defined tasks where speed and cost matter more than nuance",
+            "Always — bigger models are useless",
+            "Only on weekends"
+          ],
+          "answer_commit": "hmac-sha256:f6e66a751547295ecc33e9305777b043",
+          "explanation_enc": "aes-256-gcm.v1:_0mTvplI_Zwrea75:UBHFioOm2WVQsnJp7Z1prVgqO6AiK6dIo3Kx_rcvI8oKWBOJOpa3BJm1utASCcd3i7CUJ5AUdMYXPJGXpUUAK360YPjOHPiEbFBzQm_lGcVWsWzNsuxUYw-0P4aE_YTZa2i-dBUzrMALADnE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.444,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-072",
+          "prompt": "Which factor is MOST important when picking a model for a real-time chat app?",
+          "options": [
+            "The country where the model was trained",
+            "The model's training data size in petabytes",
+            "Latency (response speed) and cost per token, balanced against quality",
+            "The model's name"
+          ],
+          "answer_commit": "hmac-sha256:3f97b8e88fabaf1742f0abdd0dfcc8f0",
+          "explanation_enc": "aes-256-gcm.v1:os_BHlkKklo7qX1L:UPzLx1MiYqYb5Cg_TU_03B7c-kXkzoXmyHn7I6yyTLjUCnbLwiyEPGpSPO9hBbHqLT1A2hEy7BNkHyRKkoia_f58-MQVabfkYCUCHiIMed4mGLRd8ezqkybdkQ11uOjWkH8JeBIcQbBep7hbLJU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.605,
+          "findings": []
+        },
+        {
+          "id": "pe-073",
+          "prompt": "For a coding assistant, what model attribute matters MOST?",
+          "options": [
+            "Strong code generation benchmarks and a large context window for repo-level context",
+            "Funny model name",
+            "Bright color UI",
+            "Number of marketing emails sent"
+          ],
+          "answer_commit": "hmac-sha256:d89d1208015648a3667a55ce19b5b4bb",
+          "explanation_enc": "aes-256-gcm.v1:lhi24o-irRWzRYUb:4u51imWHun5I6JMeZ_XJ5XLi2YVR7ke4y9WNQveO4QAwdZRj-6S0XHuUod-KXNuZckGLuFqc2DHIIMdzg3cCXJyHO5RCwdjrtWNJ_eBbDpxeWMD0jQi7TawThHpgBMbLCmFYPmME",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.677,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-074",
+          "prompt": "What is 'model routing' in production LLM apps?",
+          "options": [
+            "Choosing the model's IP address",
+            "Automatically picking different models for different requests based on complexity, cost, or speed needs",
+            "Selecting which GPU runs the model",
+            "Buying multiple model licenses"
+          ],
+          "answer_commit": "hmac-sha256:718ca63b755836b3c016d250a7b5e7e9",
+          "explanation_enc": "aes-256-gcm.v1:LF9PM4HpX6G45LQ_:C18ihp0DNPv_GYUqyZ8qikUpGoBX7tqhChQFF6LLPbjkHcuQEigMRMHCfWWwuTPB3rBjpApp7SdlgVrXiP8iM2skSymBbji6Kmyqq19lJHoi0I1SowPIClq0qWGf8D3UU14xzaCd76k5Q8e2CVTrP2qVDtIwPq1I_YNskUD9SQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.029,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-075",
+          "prompt": "Which is a TRUE statement about open-source models (Llama, Mistral, Qwen)?",
+          "options": [
+            "They can be self-hosted, often have no per-token cost, but require infrastructure to run",
+            "They are always better than closed models",
+            "They are illegal to use commercially",
+            "They cannot be customized"
+          ],
+          "answer_commit": "hmac-sha256:69e2f7abae26007f646ad51e0f9542eb",
+          "explanation_enc": "aes-256-gcm.v1:DOY91qaqLHRcu2P4:Kxo3WKN8458DTXSldnvXVHeDIz2Lnlztsz81QYLhf5bCg-Med_Mp-Tq-sdRQyAcp6mBXcWvvOWDoCvs25LW8kiIdJW0uS94Ljqo7Mq8W2uim0yhxYlUOPyF84qyfU9hxmue_yuYQ0i6oP4GC_RKoaT0y91bi",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.146,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Cost and token optimization",
+      "skill_id": "rfv.skill.prompt-engineering.16-cost-and-token-optimization",
+      "items": [
+        {
+          "id": "pe-076",
+          "prompt": "What is a 'token' for billing purposes?",
+          "options": [
+            "A login authentication token",
+            "A physical coin you buy",
+            "A type of cryptocurrency",
+            "A unit of text (roughly 4 characters or 0.75 words) that the model is charged for, both input and output"
+          ],
+          "answer_commit": "hmac-sha256:759610dbf5e41336cdf07d024ce2344c",
+          "explanation_enc": "aes-256-gcm.v1:T6YEuLTiB4iTSmG1:G_a8sCeN84pcWOvLwqbBzujqGlIFWXiAqsB47W3jDf8PtBZB2kww5sDzkPPCORdtW48MI_b1XOuQhf54xyjgQrkNpKgdCVXqC4piy4fGpfhJ9YhTsI_Y-k54cMeyId_7cjJbV1T2z5D7PL54mBedOCQl1Jz4F8m2aG77p46hx0o",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-077",
+          "prompt": "Which is the EASIEST way to reduce LLM API costs?",
+          "options": [
+            "Cache responses for identical or similar prompts so you don't re-pay for the same answer",
+            "Pay the API provider more",
+            "Send each character as a separate request",
+            "Disable the model's output"
+          ],
+          "answer_commit": "hmac-sha256:5459260318b66b0e571f73017eaf14b0",
+          "explanation_enc": "aes-256-gcm.v1:N967z6RrVnIAMsbj:jMvytCiFU4CxKXgg2FMlhAPsiZYwiVBEEVg-_I1ZncazZd6y4tlJ0OR3fc_uYjQgcehrr0UwW2uVIh59Pc_iSRXq9biV283BVN4r3BMf8KZdh_Xm2e4l0637qaQSCQL96zLrXjqmHA3v8ngdZfh7gQAhYeMDvCS2HiW-UOkf0g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.146,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-078",
+          "prompt": "Which prompt change usually saves the MOST tokens?",
+          "options": [
+            "Doubling the system prompt",
+            "Removing redundant examples, verbose preambles, and repeated instructions",
+            "Adding more emojis",
+            "Translating to a longer language"
+          ],
+          "answer_commit": "hmac-sha256:d7ec1811a5e76ae15e32f1aff92e5d02",
+          "explanation_enc": "aes-256-gcm.v1:728iYpScZKY20IR8:6Eg7weVDQe_kBqzuTD-BvFqjAkd0gU7D0jhON8wLI5hOrY5XkhbHIjIzHjQA256nMjurwWP8fEgnmWbupTttlAa3DiDR8pbjMFvli0scQRRD4PxkW9FFyULUiCJ5AmjV-g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.281,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-079",
+          "prompt": "What is 'prompt compression'?",
+          "options": [
+            "Replacing English with Chinese",
+            "Techniques that shrink prompt size while preserving its meaning, often using a smaller model or specialized library",
+            "Encrypting the prompt with AES",
+            "Zipping the prompt with WinRAR"
+          ],
+          "answer_commit": "hmac-sha256:1ee2c0525a4d4f17c57753c9010441e1",
+          "explanation_enc": "aes-256-gcm.v1:2GYCAkvOWzu9z1o7:oKUa3fRTya8n2oaab9zelJVUqFOH0Jq1xd9Nt-PCrTicaTQVZ4x8cZWiozjZoMDHdut92NcYvW85DcJq2cCqablL5LzPLmS7di8vFhBj7ptQAdTdzJo1M4hmqTZtceRIvYZF6Hc4Zg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.833,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-080",
+          "prompt": "When using long system prompts repeatedly, what feature can dramatically cut cost?",
+          "options": [
+            "Encrypting the prompt",
+            "Loading the prompt onto a USB stick",
+            "Sending the prompt only on weekends",
+            "Prompt caching (offered by Anthropic, OpenAI, Gemini) which charges less for repeated prompt prefixes"
+          ],
+          "answer_commit": "hmac-sha256:b62c178c324dab29efbe5d3365cb81f4",
+          "explanation_enc": "aes-256-gcm.v1:EH1CqPny8Ft7MDqd:JkbnQcQ_5dhJkJd7_SayJEC-1qYfYQX7-xa9cJzujV4KHzC5_NlXqRKOrYZPiouTcay90QYnxBjpAlPAEiP86FK6tDuW56DifveFzPbMXKMrWjsWY62qjU0EetaZzKqLnYR1XAcYMXvd4xSW9LDIw6leChL4bP_0bq567CQgqK7t3QrIVnpPvGMBT9lEfvDJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.886,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Prompt evaluation and testing",
+      "skill_id": "rfv.skill.prompt-engineering.17-prompt-evaluation-and-testing",
+      "items": [
+        {
+          "id": "pe-081",
+          "prompt": "Why is evaluating prompts harder than evaluating traditional code?",
+          "options": [
+            "Prompts have no inputs",
+            "Prompts run too fast to test",
+            "Tests cost millions of dollars",
+            "LLM outputs are non-deterministic and quality is often subjective, making pass/fail tests harder to write"
+          ],
+          "answer_commit": "hmac-sha256:48b6166cc5eb719cc80c3353846140a7",
+          "explanation_enc": "aes-256-gcm.v1:b7Jou8J2ReTOCh5U:JWNTlp6jSy2BqA173SrGaYAODAbvU8CPXd_OnttRFMJpgaHAqae-KMds1GO_8dEUoMUgypiJBK1Lz19zg0nxsRongPnLhaiJed_6B7lqXQEela8QWLvEzHMGx4XqR1-ubnxVk08f6TlpinkzwEuSqUiCD_udZzrF5sQ34g",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-082",
+          "prompt": "What is an 'eval set' for prompt testing?",
+          "options": [
+            "A set of evaluations done by humans only",
+            "A new type of test framework",
+            "A backup of your prompt history",
+            "A curated collection of inputs with expected outputs (or scoring criteria) used to grade prompt versions"
+          ],
+          "answer_commit": "hmac-sha256:7c1c41680b506f55bbe520a6df3c05c9",
+          "explanation_enc": "aes-256-gcm.v1:iZ0t_W_kGPd1u0mu:IjKl7uQsDDHaqzJ6-BRAcooKWJw1be0bl5HLTEiqA16iMmA83m8r-PJ31pi9a0DxHDYZU7eNglvleKM5ieRKCFqKwRurS3-5aCyDKCf3r-cnarnHCvrP5rSnqoKizvAK68mtYOH9zbzNIINRaWEO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-083",
+          "prompt": "What is 'LLM-as-judge' evaluation?",
+          "options": [
+            "A robot replacing a real judge",
+            "A court case involving AI",
+            "Using one LLM to grade another LLM's outputs against criteria you specify",
+            "Letting LLMs vote on laws"
+          ],
+          "answer_commit": "hmac-sha256:4688cbe509b0f166842bd817752a3664",
+          "explanation_enc": "aes-256-gcm.v1:TAxMhYzcRnhJz3MN:3qLk-zU5RxmyTK1k1pxLfnJnO2El0lXVBTJTBmGkcLMWwZUj8p7MpIGbAO6TRX_T8eQ220HBQasMx9K00Jx-2BydXaLVa-uCHCBrh9fmIQp6s05PoIXb-gJ_II3LDu4Mbl7PaUybz2de2Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.433,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-084",
+          "prompt": "Which metric is most useful for an LLM extraction task?",
+          "options": [
+            "Prompt character length",
+            "Response time only",
+            "Field-level accuracy (does the extracted JSON match expected values?)",
+            "Number of emoji used"
+          ],
+          "answer_commit": "hmac-sha256:7593bdf6295b0a17fb97aa013c5e209a",
+          "explanation_enc": "aes-256-gcm.v1:nqW-QAWsYUFgMkmR:38_0wQn6V10GvXApWmv4XjikgpYWSHhk2UR-Te_wB70E-kF-m0Chy5sKDM3vkrBpyF3gVGtYt9ZrhAulYDnEMd6qc1GdSZ6pHZ16bvBKOi9wik6WdQ7nlIUzsO0rxtKkR1QVQDIC02irDws0H4OzLc03pPZJhC0jaXb5pO3jdsmKxay_oZZq_i64U4wbKfVrSIId",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": []
+        },
+        {
+          "id": "pe-085",
+          "prompt": "Why should you keep a CHANGELOG of your prompts in production?",
+          "options": [
+            "To make the file bigger",
+            "To impress recruiters",
+            "To debug regressions, A/B test versions, and roll back if a 'small improvement' actually broke things",
+            "Because Git requires it"
+          ],
+          "answer_commit": "hmac-sha256:277ed170c2c99ccd6d5af5a83c0d8fb4",
+          "explanation_enc": "aes-256-gcm.v1:aWWjJGFDoCSL4FD1:xb0WKW4_zaA0zDuYyxERf0bb9T9lFL9FvsO1P807No0oDTQ1h-M4YIiq1hVvQ-96adJZP3soTOuMBdUnTMUM_1tHa6HUJk_NJBctuUvRF68",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.391,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Prompt patterns and frameworks",
+      "skill_id": "rfv.skill.prompt-engineering.18-prompt-patterns-and-frameworks",
+      "items": [
+        {
+          "id": "pe-086",
+          "prompt": "What is the 'CRISPE' prompt framework?",
+          "options": [
+            "Capacity/role, Insight, Statement, Personality, Experiment — a checklist for structuring rich prompts",
+            "An audio compression codec",
+            "A new programming language",
+            "A type of cookie"
+          ],
+          "answer_commit": "hmac-sha256:a7b686dc8d37f2f1060d250a3afb598a",
+          "explanation_enc": "aes-256-gcm.v1:o4ohbLOLryvRXCxZ:CL_ylCMPGKLh5RCNcyqWizuGXV94rIZcW-dqsPq9QZRtIfn2wDAdFGub5l9qxl5W2FR0ccjnCPoZ79pK23kgkAHFVmaQDqhlf-EpbkGzOJe_yNn5ij0I0F-fJM2Cxbi0-eLZaij3GNY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.885,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-087",
+          "prompt": "What is the 'ReAct' prompting pattern?",
+          "options": [
+            "Reasoning + Acting — the model alternates between thinking aloud and taking tool actions",
+            "Reactionary AI behavior",
+            "Reading + acting on emails",
+            "A React.js framework feature"
+          ],
+          "answer_commit": "hmac-sha256:3ace8645273ada533d9ec35b37d5892a",
+          "explanation_enc": "aes-256-gcm.v1:3O3knaRraxEJH7SH:pyZwiRne56GqgFBJ30WbDh65sjUSn0y2N1oLYEsNFmrW-wxmdysRyp_J1mM2WG95HRr_froChjb_t4aE0ME71sH4hH-6b1Km5D7gscdyfWP2-XOG7VzN84qjAaMB-MyN_WOERtr5bXEeYQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-088",
+          "prompt": "What does the 'Tree of Thoughts' (ToT) pattern do?",
+          "options": [
+            "Trains on tree datasets",
+            "Generates an actual binary tree image",
+            "Replaces all model output with tree diagrams",
+            "Explores multiple reasoning paths in parallel and picks the best, rather than following one chain"
+          ],
+          "answer_commit": "hmac-sha256:9ad7f996198ccdbe788f3cb518f7b0bb",
+          "explanation_enc": "aes-256-gcm.v1:TlxAiKr4Wol1Lbfu:T13Ytjw3322-TUgMpInO6jCRfRe5ur3UX-uW79PKFxlYOI4gmooVgVAYsHaAdslJ91dWG9WIA7Nm0V5A8b-jxAITwyqolChQ3F7VHx98_1FI4pA6W1bl-7aWKKq8GP6XMVso1t_xOUWqP9uX__8nDi4NZENYxzdZAA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.205,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-089",
+          "prompt": "What is the 'rephrase and respond' (RaR) prompt pattern?",
+          "options": [
+            "Send the same question twice and average",
+            "Translate the question into another language first",
+            "Have the user repeat the question aloud",
+            "Ask the model to first rephrase the question in its own words, then answer it"
+          ],
+          "answer_commit": "hmac-sha256:edcec6b153775d1f19995f19f50f841b",
+          "explanation_enc": "aes-256-gcm.v1:S6My1-iDHWBob10A:R3EFqrsyxG3yMjAO_iO3WgaWYvs21qK9yExD2YRctOfxpurTiSBwObuqO3PRJzCKgrwrQp7X6gJd6RNmscFE7fTXXSgX5As1U4sg6kUbuUybitNf9iYLt3TJu5NfCWALyA6cmIo0S2w0WhVrIl2Jao40wXiPmrIC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.54,
+          "findings": []
+        },
+        {
+          "id": "pe-090",
+          "prompt": "What is the BEST way to learn prompt patterns deeply?",
+          "options": [
+            "Only read tweets about them",
+            "Memorize them without testing",
+            "Read the original research papers, then test the patterns on your own tasks and measure results",
+            "Avoid them entirely"
+          ],
+          "answer_commit": "hmac-sha256:c8cb53d14b644222d2816e2327d20b26",
+          "explanation_enc": "aes-256-gcm.v1:gxQA8kOT0F5m6khN:81fXHAiipXW552_SwUeV3KNSFr7mVJ0v9h1Q45EhYA-TxUBat1gSGxPxL3bGexeXzNWpNCrZW_INQDIDQ6HniMYMSCHJNZyeWFA4DnqsJXXEHowk-8uFa3IO4QGQos0h6u6nQnXUGw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.276,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Production prompt engineering",
+      "skill_id": "rfv.skill.prompt-engineering.19-production-prompt-engineering",
+      "items": [
+        {
+          "id": "pe-091",
+          "prompt": "In production, where should your prompts LIVE?",
+          "options": [
+            "In a Google Doc that anyone can edit",
+            "Only in your head",
+            "Hardcoded as string literals scattered through the codebase",
+            "In version-controlled files (or a prompt management service), separate from but tracked with your code"
+          ],
+          "answer_commit": "hmac-sha256:be9b5ac5d924b1a0c195a1811a8fa67a",
+          "explanation_enc": "aes-256-gcm.v1:I1A_KeD-i1dPfbXq:2Vlw_gx6qsbdDntxsvSTeprJMPNjDI_D5IO5w1aO-RcLQkDaYNf6ofndZuFs-h6oUfeC93msDJBWERR6BJqFT2mRl3-A3p8v7fRaq8AgCVSbJ0ds1Y5dKN3cCgMEFE7nv5eO8QY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.729,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-092",
+          "prompt": "What does 'prompt drift' refer to?",
+          "options": [
+            "When an LLM provider silently updates the underlying model, causing your previously-working prompts to behave differently",
+            "When users change their prompts",
+            "When prompts physically move on disk",
+            "When prompts change language by themselves"
+          ],
+          "answer_commit": "hmac-sha256:d604b8ff11a914b173e56b0d63a5bd86",
+          "explanation_enc": "aes-256-gcm.v1:nNQFGUWPm3hT5LUc:BE_I-lqN7GyvhMETcFKHx-l-Eg_gaPiNRDkaxk2wPadnmxd_tkhvFI0twXb9-4KBWz5C54TCsR3sjX6P8Um2T3DftNe2H2Ql6UshFkQuIt7fotFmK-73GQgo5wRmNjxODLk126slczLGEZl14gYLE0OiwUGqWC0v",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.881,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-093",
+          "prompt": "Which is a SMART production practice for handling LLM errors?",
+          "options": [
+            "Show the raw stack trace to the user",
+            "Retry with exponential backoff, fallback to a cheaper model, and gracefully degrade if all retries fail",
+            "Crash the whole application",
+            "Silently swallow the error and return nothing"
+          ],
+          "answer_commit": "hmac-sha256:32e6501a8ee9cec58a09493c5d399be5",
+          "explanation_enc": "aes-256-gcm.v1:tyzIdGPc1miv6Zy_:8_om_J3s8MThcgYaSXmjX0SZri4-A0qWXeljbvz6vJAtXYoEHMvcS-OTC0QkYkVYmSnGB7d6k6H4YDkx56DUqCnsw5fEOW6pZmaHeYu9Oc9iZnZBk5q6q5W2WDtoYiE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.289,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-094",
+          "prompt": "When should you ALWAYS have a human-in-the-loop with LLM output?",
+          "options": [
+            "Never — LLMs are always reliable",
+            "Only on weekdays",
+            "For every single API call without exception",
+            "When the output drives high-stakes actions: legal, medical, financial, irreversible operations"
+          ],
+          "answer_commit": "hmac-sha256:9e05b7962ff1e93aeebe2a4d9b3ab735",
+          "explanation_enc": "aes-256-gcm.v1:iDP8qsVGXS38Nd76:HMgcVIYoxmF81RyMqjjpbBcdchLGSSpHoNwFNVhmRPKejNM9ygwosmmeiJ3C3aXSZyV-IPOZOGdM_Q4qGZWDEskKsMdp78GcandRtMzq6qaODScqLyUrM0ts",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.186,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-095",
+          "prompt": "What's the value of LOGGING all prompts and responses in production?",
+          "options": [
+            "Making the app slower",
+            "Showing off log size to investors",
+            "Debugging failures, building eval sets from real traffic, detecting abuse, and measuring quality over time",
+            "Filling up the database for fun"
+          ],
+          "answer_commit": "hmac-sha256:5b1f6672389b7e93e6e48b87e67996da",
+          "explanation_enc": "aes-256-gcm.v1:tr8jNnn_389_iyzT:umLxlxh5VVAnVa10Lz0e9cyNqaufZYDukafgmNt9GE_QJ-OxJCQrZLdTWjI6JIU5Ge2GQbVTzT04vqKby2HaTKbFejtCm-yZDpcBrVSXfp3Ixi_N9P7W4XZZTcxqn33rRtojrwjISa22RzY14g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.212,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Emerging patterns and future trends",
+      "skill_id": "rfv.skill.prompt-engineering.20-emerging-patterns-and-future-trends",
+      "items": [
+        {
+          "id": "pe-096",
+          "prompt": "What are 'AI agents' (agentic AI)?",
+          "options": [
+            "AI versions of CIA operatives",
+            "Systems where LLMs autonomously plan, use tools, and take multi-step actions to achieve a goal",
+            "Email clients for AI",
+            "Human salespeople for AI products"
+          ],
+          "answer_commit": "hmac-sha256:64f42043ef9aa39e050f9afc02d86bc3",
+          "explanation_enc": "aes-256-gcm.v1:w7qgNg6PQbIiwz8t:zbzsPOrgTjIRspOJKlTm8qt_b6SEjpLA6jGbyLy5e5DgJlvEVGX8osyyIrhTmR-2Ij3Kf5F2Zo1oaRvkYonrga9AvhqOVCUW8fytmFALyvCQ00UYl2fZb7gBNz1F0Fs4P_J9imbbOZvLVmisrq_4m52NtFJ2ug",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.848,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-097",
+          "prompt": "What is 'meta-prompting'?",
+          "options": [
+            "Posting prompts on Meta (Facebook)",
+            "Prompts about prompts in philosophy",
+            "Using an LLM to generate or improve prompts for itself or another LLM",
+            "Encrypting prompts with meta-keys"
+          ],
+          "answer_commit": "hmac-sha256:3a9d75538da9ab6e4dcfe2c99e925091",
+          "explanation_enc": "aes-256-gcm.v1:iydmmQmvlGmZjaIm:WvyEdfCrpbX1gW1nHMgtrmDmatG--v5IMU5m1BoCbNqBANt2vgRP4M3FkxxlL8YaV6aKKuQnS3hVqki2a2yPKGd5flBkv1UFqGA6-QAuNsdFgypVz9gBmwWMjKSAAWDsHtBBYQR3ZJm4OG7Lcvg0qA0WElKnN8cP",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.971,
+          "findings": []
+        },
+        {
+          "id": "pe-098",
+          "prompt": "What is 'fine-tuning' and how does it differ from prompting?",
+          "options": [
+            "Fine-tuning is exactly the same as prompting",
+            "Fine-tuning permanently adjusts model weights on custom data; prompting just changes the input",
+            "Fine-tuning makes the model smaller",
+            "Fine-tuning is illegal"
+          ],
+          "answer_commit": "hmac-sha256:96be9c3e9d564add45b72b7c346c6988",
+          "explanation_enc": "aes-256-gcm.v1:R7QbGnYboG6rjr4-:9Vfy0sEEDAZRdlQItwRBA0gz_nS91_la8TXUfOFUvouMzIF0PhX-S6JyrRL7N52k12v5TBjQUTvW3M6IMfXyYPV0WaOPsOi4B3iUWciFR37f0_2jFg7utMxlbqgjGHkC8Z3NA_eWJBjTrIzzrr5VXRHx34fVtTw_gz7TzULT4Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.136,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-099",
+          "prompt": "Why is prompt engineering NOT going away even as models get smarter?",
+          "options": [
+            "Models will never improve",
+            "Humans cannot type",
+            "Better models still need clear instructions, structured inputs, and well-defined tasks to perform optimally",
+            "Prompts will be banned by law"
+          ],
+          "answer_commit": "hmac-sha256:20e444d2812ea64bde3db8fa6769f442",
+          "explanation_enc": "aes-256-gcm.v1:56xUS19D17ORgy_C:Ynp1kgD670AMQ5qcWbr_8YznqdlfGrsgKnsxxHnmS3njv1I2WDRgbvxSFn7fabGkrTRF3M64bVzeoUvtksMlLddTILTOvC2qTDFlcGjImh7Jow40b1rfYTk7MJ0ct1P0_zGuKQu9HQlqCrImhOGwvAe8YH07OHl6roI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.69,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "pe-100",
+          "prompt": "What's the BEST mindset for a long-term prompt engineering career?",
+          "options": [
+            "Avoid all new tools and patterns",
+            "Treat it like both an engineering discipline (test, measure, version) and a communication skill (clarity, precision, empathy)",
+            "Memorize one perfect prompt and use it forever",
+            "Refuse to evaluate outputs"
+          ],
+          "answer_commit": "hmac-sha256:96c3489adaa607bde1e0064304e3e375",
+          "explanation_enc": "aes-256-gcm.v1:4GRpp253POI3iimc:5USLkIFOr_k5xBX34aEd1ztePz_AVGcdXoiHoxePeYj7DfH5jmIRDzH7JY8ADm_lR8RqIbygO4eIC0WkFExFFMrADASlx9hRjsjP_eGvQzr7qjcEZcqMc5CBo5liKnSh9dnciU_pvjDhnoPyMwaDlninx4LeAg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.717,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:36cdf05747d5346ae75c32c819f5c007a58413dbb44526c5a03210583b6e133f"
+}

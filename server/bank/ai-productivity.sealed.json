@@ -1,0 +1,3383 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "ai-productivity",
+    "title": "AI for Productivity",
+    "description": "Use AI tools to automate workflows, write faster, and ship more.",
+    "category": "AI",
+    "icon": "⚡",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "AI productivity mindset",
+      "skill_id": "rfv.skill.ai-productivity.01-ai-productivity-mindset",
+      "items": [
+        {
+          "id": "ap-001",
+          "prompt": "What is the BEST way to think about AI in your workflow?",
+          "options": [
+            "A magic oracle that's always right",
+            "A threat to be ignored",
+            "A toy with no real business value",
+            "A multiplier on the skills you already have, not a replacement for thinking"
+          ],
+          "answer_commit": "hmac-sha256:8d8edd90bc5717eeb375c37cb3dded5b",
+          "explanation_enc": "aes-256-gcm.v1:QD177YW288dzd9Le:w2lyV73CjKQ5okNubFGoUmSpdYXeoxlsh8Vpae2mrKlKeOiHjC-mHDqPsxkgfw0DtaZ_BsaD4qJt1LEeJJa1Hd46dR8Sdjapn5zGz52UjLkH0KMIQeLnqjsu3g-LFQXJ6speyBnIXcKX3xIjx6_4IUAQ9xH7YsY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.206,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-002",
+          "prompt": "Which workflow benefits the MOST from AI assistance?",
+          "options": [
+            "Tasks with a blank-page problem — emails, outlines, first drafts, brainstorming",
+            "Tasks where you already know the exact answer",
+            "Tasks requiring emotional intelligence with people",
+            "Tasks that require physical presence"
+          ],
+          "answer_commit": "hmac-sha256:512b7b32b4756216d258728fae868de8",
+          "explanation_enc": "aes-256-gcm.v1:mBFKVP6jVJ5sWkMx:PyTd1XNIVlvKD6LfM3OomPYot7sh1-4kU2eYMQb0rY36KJwV7mzsPD3M5Em3nOdivjRzK05wCytacpTxBkhG6D0VCffJN2fkTWCGkCCU9SA8m7a14urF6VrYNi6yOsFHLUetyhW7z1qTuuEQ6kgNNQiczSS0pnk0MA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.58,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-003",
+          "prompt": "What is the 'AI-first' workflow approach?",
+          "options": [
+            "Replace all human collaboration with AI",
+            "Use AI for every single decision in your life",
+            "Default to asking AI before doing routine knowledge work manually, then refine the output",
+            "Never use AI for any work"
+          ],
+          "answer_commit": "hmac-sha256:e41cd3c22bba8864025736f2c1387bc4",
+          "explanation_enc": "aes-256-gcm.v1:jhhu8MV5ftY5ML__:3uYP5nSyPq1BOUjZ_2j-XIpzthbyPCjv8f_wbY1OM3ru1rUAFvBNxToo2YzTmDIpD3s_tECICRE3sK57i2eO7aXWe4JJdwHzElmMqw-MoqXNBWy6NByAOU20zgs1RU4umnf25m2_QEoIGvDSEs8zKoPOhmXYT2dyLRIhkcJTtA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.978,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-004",
+          "prompt": "Which mindset SLOWS down AI productivity gains?",
+          "options": [
+            "Testing multiple prompt variations",
+            "Sharing context generously with the AI",
+            "Treating AI output as a draft to refine",
+            "Demanding the first output be perfect instead of iterating quickly"
+          ],
+          "answer_commit": "hmac-sha256:ce3cecd85440b176122e465923285899",
+          "explanation_enc": "aes-256-gcm.v1:ZtRHQY-9H76rUHCq:ACmsHrt3GCAm8oxNPU_uER2wHBNmFyi8sc02wwbuAb7tm4xczT0mmHFS6wCrZFBVmGmm-OwimKVOXPSmRL8pO0OyfFVzkR-qzFQPHJj4nXdgAR7RR8scD9iLZbbA09DL9ifsRjtyfPtW5mc9W2q4M4kn3El3O2T-MzX56kGZUch7PvOjI3A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.692,
+          "findings": []
+        },
+        {
+          "id": "ap-005",
+          "prompt": "What's a TRUE statement about AI's impact on productivity?",
+          "options": [
+            "Gains are highly task-dependent — some tasks see 5x speedup, others see no improvement",
+            "It always makes things slower",
+            "It speeds up every task uniformly",
+            "It only helps with coding tasks"
+          ],
+          "answer_commit": "hmac-sha256:306a36c273df8951e74297fd48d6645e",
+          "explanation_enc": "aes-256-gcm.v1:GGn6rEpngt5s-tBq:AAFk48wdQmgej1wb49D3tUgnezUc2Y-I8Yw7YsKbDpSKIkEB3mB57mx_03afFEnBoDb3ArpGoKP3WKpj51EhBZSIMGnlDjeWlmahRPqkBdSGych9T5Jn0H2YiGfKEZytU7FqI2HbszGUvIbnHcUtm7vMmjhAu8tQSvziFHmcoLoJFcQ2VTIyjzhMlFppz_p_1LpuSnCF0iC5qCauffl-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.606,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Writing and content creation",
+      "skill_id": "rfv.skill.ai-productivity.02-writing-and-content-creation",
+      "items": [
+        {
+          "id": "ap-006",
+          "prompt": "What's the MOST effective way to use AI for writing?",
+          "options": [
+            "Have AI write the final version with no edits",
+            "Type 'write something good' and ship the output",
+            "Provide context, audience, tone, and length — then edit the AI's draft heavily",
+            "Copy AI output without reading it"
+          ],
+          "answer_commit": "hmac-sha256:90e1b6cbdef9c5a76dabc2d97e68f421",
+          "explanation_enc": "aes-256-gcm.v1:__PLvqstRUg9QdIy:FjQrwm9D-OqLdD8DOEO8c7W-jfmxmCcsLQJsvfIlz6g9eq9cxghHPv9q6ejtAIBY9jo8h-EC_ga-AhnfhphDyi1f5FYpWsCf0HD7O6WfkA0GaHXVLQzGG3VsJxNJSS1e4PHTOkkSGndM8fXyTKuxFhuQS8TPEv42H_XG1sjGvipZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.66,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-007",
+          "prompt": "Which task is AI ESPECIALLY good at for writers?",
+          "options": [
+            "Predicting which post will go viral",
+            "Verifying obscure historical facts without sources",
+            "Generating headline variations, outlines, and rewrites in different tones",
+            "Capturing your unique authentic voice without examples"
+          ],
+          "answer_commit": "hmac-sha256:a470955d7d6f855341c2917ede613bcb",
+          "explanation_enc": "aes-256-gcm.v1:zAiH9teX0J2rm4T8:KRalLoEZkagGka170ud_zhZVXuOwqKbhNYHDefqS8GtDWdqW7LmfGKGS6F_t4gxpcUiK-mbvV698tPjj5XX-WQjgwtdWSmdkAafF7BFj7QzyyXKhOImEUc2kpTKxos58qeO-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.352,
+          "findings": []
+        },
+        {
+          "id": "ap-008",
+          "prompt": "How can you make AI sound MORE like YOU?",
+          "options": [
+            "Always set temperature to 0",
+            "Use only generic prompts",
+            "Show it 2-3 examples of your past writing and say 'match this tone and style'",
+            "Trust that AI knows your voice automatically"
+          ],
+          "answer_commit": "hmac-sha256:69b69630bb0a53ab9f6d2b212b5eea58",
+          "explanation_enc": "aes-256-gcm.v1:vT9ExVcgWOrJcuFT:CgN6rq4TdZqJnZfDe2yMvLgKUE_Ue-T2T0dVvY6y0mmT4Wj055-lgIJZr_0uWzL5RI0tdCR_7UY35AqfhUi3_Qou2qHapy9thgoQghD7ANFn6DfM_8xgaQ3TCTDJD1K_NgGNuZ_QlEyyT3DjtPDHQ9U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-009",
+          "prompt": "What's a PITFALL of AI-written marketing copy?",
+          "options": [
+            "It uses too many emojis automatically",
+            "It often sounds generic and full of clichés if not heavily prompted and edited",
+            "It refuses to write any copy",
+            "It's too creative"
+          ],
+          "answer_commit": "hmac-sha256:653d06c9e7fcc8066f0c7dd471979a95",
+          "explanation_enc": "aes-256-gcm.v1:cc9WMI-e_tOdF6Hz:ZzqCajNzhnk-5Tn7b4WQuiqASMtrMvo4t9fNkBkHs49RoM5QyYv5ZZ1t9lktDNgQyBuAW1-iI2dVg14hoFParMubr5_jNI4n6GkYDmvu4xxHPNbelAU5whrbF_2xMPb6Rsiv0f9zRZAqCNYqyYDU_xL9n53zpBlgq179U-AwD22_eOPFB5EOyIA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.108,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-010",
+          "prompt": "Which is a SMART use of AI for long-form content?",
+          "options": [
+            "Generate an outline first, then expand each section, then unify the voice in a final pass",
+            "Write the whole thing yourself then ask AI to summarize",
+            "Never use AI for long content",
+            "Generate the entire 5000-word article in one prompt and publish"
+          ],
+          "answer_commit": "hmac-sha256:506dadd74485442620f61225adc66de2",
+          "explanation_enc": "aes-256-gcm.v1:oeDyy2tZDukWnTuH:ZhFgVSQB-eVnXXADmo_p_Ku0EeD-iVhrkYupfPEBdtr7RUKEaRbMUrheZdcKnmCoqAG-1niGW5cjMfyaJO96wZqmSql5CiYcR2xp13FkKmCsANKKTO4mgD33jlGFMyFdkTgsQZZz-rYAJBffVWdYKvYfJYFBxlPk8ENG6hDP6ybIXW43L5dvAptXwzpRoSy5FLaJRw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.413,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Email and communication",
+      "skill_id": "rfv.skill.ai-productivity.03-email-and-communication",
+      "items": [
+        {
+          "id": "ap-011",
+          "prompt": "What's a high-leverage use of AI for email?",
+          "options": [
+            "Drafting replies to common requests, summarizing long threads, and suggesting tone adjustments",
+            "Sending mass spam emails",
+            "Auto-firing employees via email",
+            "Replying without reading the incoming email"
+          ],
+          "answer_commit": "hmac-sha256:94dd0b8f4e4fa853ee903afa90344750",
+          "explanation_enc": "aes-256-gcm.v1:bv1BJ5vAWJu3IOPP:DWYyDYb85h5FJ-DeJ5wD3CGg5kxKVCSOAxQOwNP8RVQx_tR5RaGHDG2_W1nJBNejwYDuiy1C6QsGEt63UvgPclzik8pZqJqzhe0KAXUtheDE2EcCiwf0Xbf2ZN21qHMz9Kcbf1LTkxQ5FNRxPYwM5Bs7Y8i56dr82UW5BSvLZq9bxhZQDl31yZevZabb9eg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.186,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-012",
+          "prompt": "Before sending an AI-drafted email, what should you ALWAYS do?",
+          "options": [
+            "Have another AI rewrite it",
+            "Send immediately without reading",
+            "Trust the AI completely",
+            "Read it carefully — AI may add details, names, or commitments that aren't accurate"
+          ],
+          "answer_commit": "hmac-sha256:9d4752541e50d583be60018780fe09ea",
+          "explanation_enc": "aes-256-gcm.v1:vSj8COdRYA5mEnWK:GKrT1UKXXh870Lkx09lCa-w8HjAosHPBA5KTix0-7imDTnzy8Gh0fc6naxH1KPj867S1786K5qbjj2seVUiimnAFClC5y0Xn9J20ZDPMOBXJPsna875fNOQzJw23ebISIWhzPQJhJnmjI15FsKbqxaCqV-NUftv3rMQBxzetA4Q_9Gmj2fI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.563,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-013",
+          "prompt": "Which AI feature helps make emails sound MORE professional?",
+          "options": [
+            "Adding more exclamation marks",
+            "Capitalizing the whole email",
+            "Using only emoji",
+            "Tone adjustment prompts like 'rewrite this in a more formal, polite, concise tone'"
+          ],
+          "answer_commit": "hmac-sha256:c752b0f8348b344525f4be21e2319f7f",
+          "explanation_enc": "aes-256-gcm.v1:lDTvPUph2udvJfBW:6PKsPuUqsSULOm9OPXuh5Q47rjMyGBLLsEw9Sg6GSfX_NVPAi7XIObNO6bESoJK-kB5NYSLnKSBdVrif0foDvzWX8eszaaj7NT-xrWgBDBopZbeaZ69GRA8jFVsKzcLhyUrQApDpcom02A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.828,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-014",
+          "prompt": "What's a GREAT prompt structure for an AI email assistant?",
+          "options": [
+            "'reply'",
+            "'help with email'",
+            "'email please'",
+            "'Reply to this email. Tone: friendly but professional. Length: 3 sentences. Goal: politely decline and suggest next week.'"
+          ],
+          "answer_commit": "hmac-sha256:018444607d8d4b120a6f49d705768837",
+          "explanation_enc": "aes-256-gcm.v1:lgVRQdQastUUoAxg:X3q057JnevrnkuECSre0vgzHkf4dy_FaaPN6E5cmCuo_o-zsWMKbyoTXO-D0344PL9sYdUwMNxeCWPrcQ0x-9lwrQk-7TNyc0SG7SQZ7WUwIcnuIgRJECHdxLTr9-i6QqCHfbisLiLboHg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.176,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-015",
+          "prompt": "When should you AVOID using AI for email?",
+          "options": [
+            "Routine confirmations",
+            "Highly personal, condolence, or sensitive interpersonal messages where authenticity matters",
+            "Standard meeting requests",
+            "Newsletter drafts"
+          ],
+          "answer_commit": "hmac-sha256:fdaa2a750fdcf725910aad6930a04bd3",
+          "explanation_enc": "aes-256-gcm.v1:JBYh9YpfMcAOLbXo:ed2dOxwr8pzJqwmy0_2vXaGxRzN5XChsegvvPsnq-yL5yMavGxD27oN3t88W0V4i0XHR95GfoxNGl1bM_PEW_MKAJ3fSA4wRKVZ0A2kS0ujm3yHLU_aL_gqoSVojAQMqkahaXNBeTnC0CQHsuz6j9T-K4qnoxto-C_lYwfVdRcw2dA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.64,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "AI for coding and development",
+      "skill_id": "rfv.skill.ai-productivity.04-ai-for-coding-and-development",
+      "items": [
+        {
+          "id": "ap-016",
+          "prompt": "What's the BEST way to use AI coding assistants?",
+          "options": [
+            "Only use AI for boilerplate, never for logic",
+            "Generate code and ship to production without review",
+            "Refuse to use any AI for coding",
+            "Pair-programming style — generate code, review it carefully, test it, never blindly accept"
+          ],
+          "answer_commit": "hmac-sha256:4ea3c26630a2d3d4bd36f5acdb8dbb69",
+          "explanation_enc": "aes-256-gcm.v1:l8ZtWdG648aH4ZgP:nzw97B8KEylPd37JD6Umup4HjDA06W5TI0XSMzlwqCYosmUGlVRnu2FLg0qUADo_JijCW_TL8mYSG9QYSiggQF354EhXOsAyQMDJWS7ayOaz-MiA9PFZ_4HnwJ51Hq15zDLv7ZQCIXzb54Faf3plFSZtSbzN9gHm46XHLix68CMhoyOeNu1n",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.765,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-017",
+          "prompt": "Which coding task does AI handle EXCEPTIONALLY well?",
+          "options": [
+            "Architecting a 10-year system roadmap",
+            "Novel algorithm design with no precedent",
+            "Debugging production race conditions blindly",
+            "Boilerplate, format conversions, simple refactors, repetitive transformations"
+          ],
+          "answer_commit": "hmac-sha256:f6d802a751c7acbe5259ea061ecd1f60",
+          "explanation_enc": "aes-256-gcm.v1:MtN1PuoGckK1vLkg:zdg4ssRSKl3_r98IZ568P2uzSeQrONibPf23ThA3Lmtzv1Qmxn556wdQ2DfE29isWWddb6mP6yW-dmzYSoKubBcmO5iTP_AJ1CSdDCF52GYFKefrFWAt3P8sVs2a37FN__Nf9QnZYMB_3fk-9Fd8xkh8TuTuMJpIvKZLz0DddKjabAU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-018",
+          "prompt": "What's a SECURITY risk of AI-generated code?",
+          "options": [
+            "AI code always crashes",
+            "AI code is too slow",
+            "AI may suggest deprecated, insecure, or vulnerable patterns it learned from old training data",
+            "AI code has too many comments"
+          ],
+          "answer_commit": "hmac-sha256:7f14620fb8b32e218f272c9556806dbd",
+          "explanation_enc": "aes-256-gcm.v1:W9mTYqvCFgPf2SVP:F6_Hh7OqqTA3W4EpqyOxBhqVMQBRPz0bYz7YZ7jHEXQUsudyzmxWfMZkmG52Ab7V8SgymNWzL5seru9_u7A0jG6wKa9OOzKJgeQdBrL5DGMKc8d2Wyw2ltro5CszD-5OrnnX9enlwziUnlVmUhdm-u6OkC6lJf7aB8U1mA8CKm-uMm0ICA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.207,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-019",
+          "prompt": "Which is a HEALTHY workflow with AI coding tools?",
+          "options": [
+            "Disable code review for AI commits",
+            "Use AI to draft, understand every line, test thoroughly, then commit with attribution if required",
+            "Never write tests for AI code",
+            "Copy-paste blindly into production"
+          ],
+          "answer_commit": "hmac-sha256:c91ee5c7d4aea1ce1eceb57e7b75f3a1",
+          "explanation_enc": "aes-256-gcm.v1:6R_hAUzhftEkpkDJ:3M1dYRhsRaNCZx-6lWR6c2CoRlFX7xFaaOOYarnXRfi2QZMkjktgrMM6xj1SJiB8GpfBZ5tQdQ0iphmZI2CfgkbrnzKJy8QjM_yPds63LTk4YLKkcZq1mxAUS9AYtH5GeJiX5Y-rSA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.853,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-020",
+          "prompt": "What is 'vibe coding'?",
+          "options": [
+            "A type of code review",
+            "A code formatting tool",
+            "A coding language designed in 2026",
+            "A casual style where you describe the goal in natural language and iterate with AI on the result"
+          ],
+          "answer_commit": "hmac-sha256:870e0bb763c13c8b8d4f28b568cbc24b",
+          "explanation_enc": "aes-256-gcm.v1:jU8bv_5laGJnBHd5:Ra0Acmf02yLB10vDXegnsqVpx80DPJqLVHqdlA5r4baTyoUOd3CatisJhz2U6mDpQAxadmIPgM1og0n7OowzGQW6Aeg3-1BV4sFI-cS9yQnSHgXDO9DU6zjlvy1DstDcJH-geHcIn-CWRUUW3212-u-_EOurSR3Sa6ZL5nTwvJbnIAhBo2v_amIjW9TYjlrxcTEd-37dgPL6LJRab3pcEgPe6XQtDw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.824,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "AI for research and learning",
+      "skill_id": "rfv.skill.ai-productivity.05-ai-for-research-and-learning",
+      "items": [
+        {
+          "id": "ap-021",
+          "prompt": "What's a SMART way to use AI to learn a new topic?",
+          "options": [
+            "Have AI take exams for you",
+            "Ask AI to explain concepts in multiple ways, then verify key facts against authoritative sources",
+            "Trust AI's first explanation completely",
+            "Avoid AI for learning anything"
+          ],
+          "answer_commit": "hmac-sha256:6199beb360c19005beeaa4187f71e214",
+          "explanation_enc": "aes-256-gcm.v1:jP_y3jNCUccLTjjU:82CM1hsjurMU_OA5NuE9CYcqj8dSHIFuUp16bztnkPqStfueCiZYX19O_sFbunfQYPZLbvEq9ORMkmd1fg3USY-snMkZ97zYXj0c8upIqqLgNMsFbCm7TgsskhyZr1OoGvyVjP0DrwUbdC8WnwH7zPpgK2rnArKeIF1NsR75WD5ktO0LpzCg5reFDBZ0Q3te",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-022",
+          "prompt": "How can AI help you DEEPLY understand a complex topic?",
+          "options": [
+            "Memorize AI responses without questioning",
+            "Only ask yes/no questions",
+            "Ask it to use analogies, give simpler explanations, then explain why those analogies break down",
+            "Ask one question and stop there"
+          ],
+          "answer_commit": "hmac-sha256:adb083aba7d34d35b83121f9be400e3b",
+          "explanation_enc": "aes-256-gcm.v1:RZALceQuGW9Jl_zu:IKQPgUAsdLL0JKOk13qzlaF9Gun5eq8jvgocT87it9g26ewZbsLnVoUbHsdIcJNW_F8NLpFkosS6_YXP81q8TJrbeUelSgrCRoVMtZ1YQdE2z_292A4FaecjCSFkctvbxsMI0p3K_4hDwGU8gPoSKigbBabQn60gCDx3Zn1DhRLdeaHVVqfWG8gglw1FNTY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.317,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-023",
+          "prompt": "What is the 'Feynman technique' enhanced by AI?",
+          "options": [
+            "Explain a concept aloud in your own words, then have AI critique your explanation for gaps",
+            "Memorize AI explanations word-for-word",
+            "Watch AI lecture videos passively",
+            "Have AI explain everything to you with no participation"
+          ],
+          "answer_commit": "hmac-sha256:25d00af273b62a38fa691bc1e6b3b227",
+          "explanation_enc": "aes-256-gcm.v1:9KydwYNog1C7S_eh:kj5jGMD7_0IjQ4gLXfw3m9Ssmr0CLiYg_-obsgZPTeIRmBM2H28R_c2m_Q7JuTPsWQq8lZ2rkpJVH79gFXY9dEaabukjIBHHY77H9nmotBjQalgxpG7FJtP6GS69X64fqGyzVi7LM7GpAyZhW5TodopqeirFInCNuWtkeQ8ZnLXNvRhJdvaH-N2A6jQNWQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.636,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-024",
+          "prompt": "What's a GOOD AI prompt for research?",
+          "options": [
+            "'research X for me'",
+            "'tell me about X'",
+            "'X'",
+            "'Summarize the main arguments for and against X, then list the strongest counterpoints to each.'"
+          ],
+          "answer_commit": "hmac-sha256:73c6a3985621f40c85c4e63da2a8ff87",
+          "explanation_enc": "aes-256-gcm.v1:9QUpq__9_UPDUGKu:aCwAaLzIIrGkFbZVO4NAgXW-Vhq3RkwD9z-veJa0Ro072d0dotlNRzzytrNeK9IfW366mrgzITTKujC8Lyn1fN8uHvtOgw359GLnXkf-oiUgVwib7eVN501cC8YRJhsY0t99WGbtM0tECoizFGKkPrVE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.053,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-025",
+          "prompt": "What should you NEVER do with AI for academic work?",
+          "options": [
+            "Use AI to brainstorm topic ideas",
+            "Use AI to explain a confusing concept",
+            "Use AI to check grammar in your draft",
+            "Submit AI-generated content as your own original work in violation of academic integrity policies"
+          ],
+          "answer_commit": "hmac-sha256:cf2d06d13898cae6834e010e41c0342c",
+          "explanation_enc": "aes-256-gcm.v1:hNtC8lJGXG7TVb9j:tWiTPA10s4Wk4EkhkYKAbyoxuPJo80ZuXUgCM_gtW_62k1lAcHmEJEYy5zL85dxiT9bcEX1iE2JWyjXMZ7eB_FBf63how-JcbpwF_okCuMhWjxLB8DamnMoDH5mNhZK4Fu01m8uXM0euGrbIIqJW9cjqrz3rksshp7AKfZd3dwXOe2aPLNQ8huFO_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.622,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "AI for meetings and notes",
+      "skill_id": "rfv.skill.ai-productivity.06-ai-for-meetings-and-notes",
+      "items": [
+        {
+          "id": "ap-026",
+          "prompt": "What can AI meeting note-takers do?",
+          "options": [
+            "Schedule the meetings on your calendar",
+            "Hire and fire participants",
+            "Transcribe audio, produce summaries, extract action items and decisions, identify speakers",
+            "Replace meetings entirely"
+          ],
+          "answer_commit": "hmac-sha256:0b15d8e3a48bbfdaa89a94bbe281749c",
+          "explanation_enc": "aes-256-gcm.v1:CjZdL1d5pmt6J1cT:NfuG5twaSZi4t062noVAPnVS3PUuViFfEWT9WV1KZq4MUQCoVUzFaYHWYXMeHU5urYS5ivCOjwM3pxy-PGn8pgA5CSI5kyrYU2F8UeyOFQX73ndeG4FoJQY41qnULrMdz2ToTCtQqPHcRlqNu-m5bhYg8ErV7gOxi99ZF_2mq9a7aJhR0PU-pQoRZmd59g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.368,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-027",
+          "prompt": "What's a PRIVACY consideration with AI meeting tools?",
+          "options": [
+            "All participants should know recording is happening — disclosure is legally required in many regions",
+            "Disclosure is never needed",
+            "Privacy doesn't apply to virtual meetings",
+            "Only the host needs to consent"
+          ],
+          "answer_commit": "hmac-sha256:b4aeed88b5b144fd971139ab8ca7799b",
+          "explanation_enc": "aes-256-gcm.v1:FD3EyeiDuOgI1Jk8:D-KUQgYQqB54O7kSSG-OK2mho2ja6T-GZAvko698UX4TGaqJJ2tUE2vwJ8JFC6r8zo9aQn8rTeGjupIH7JKsEDm14RB4kdVymulekudgPRnnGbhJfGY_hWqMUDRD4iOcd6n8rScwcYjLY_hsTEUa39MQqmx-NCSr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.439,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-028",
+          "prompt": "Which is a HIGH-VALUE post-meeting AI workflow?",
+          "options": [
+            "Delete all meeting notes immediately",
+            "Replay the entire recording for everyone",
+            "Never share meeting outcomes",
+            "Generate summary → extract action items → assign owners → auto-draft follow-up email"
+          ],
+          "answer_commit": "hmac-sha256:423e470fe8ef8bc280111e0399ad03c3",
+          "explanation_enc": "aes-256-gcm.v1:HTTL8xel-jBEVOCs:IaXfntwpL6tG1xvbvBUFrMRgidR8hvnTlnRVHUoXxfs1_ivKEznA23SG3nRx8g_rY3keY0RfrLkfeJ7_IJhRqbWViQ__8-dvdr8VL4dTVzSJJfIelwyCbFDssxzsJoSiZ6SEz2kGzAjOqTneH55kz6JTQ0LdMu5puJ1tg4cwbebZAEgHIaLDgA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.1,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-029",
+          "prompt": "How can AI help you PREPARE for a meeting?",
+          "options": [
+            "Summarize prior meeting notes, draft an agenda, prep talking points based on attendees and goals",
+            "Skip preparation entirely",
+            "Send threatening pre-meeting emails",
+            "Cancel the meeting automatically"
+          ],
+          "answer_commit": "hmac-sha256:5dcab0d77574cd24b74a99e6395a6c4e",
+          "explanation_enc": "aes-256-gcm.v1:M0BTpHkIvsDUG2hW:FU2JPOoGNayozwL8z-Zvw0mnNj-pKMPTFvmmjLP7pg4b_c1VOrh4WTfJNKc9CnSfhHwWP_Rl85UNMIoQQWf3aP1_ePJqt-9cbc5F622pcX-eOf8mBnHdfaFRIZF3FMw3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.743,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-030",
+          "prompt": "What's a TRAP of relying on AI meeting summaries?",
+          "options": [
+            "AI may misattribute statements, miss nuance, or hallucinate details — review summaries before acting on them",
+            "Summaries replace the original meeting",
+            "Summaries auto-correct themselves",
+            "Summaries are always 100% accurate"
+          ],
+          "answer_commit": "hmac-sha256:60a1387a1cff19e040ec4eab263fee05",
+          "explanation_enc": "aes-256-gcm.v1:1W6ML2t3QrA8FkEa:hgBkG5vyesEfvUqkCle2w2tKziAEGO2tiCrQQvNu495ypVSMZhALJbd05rXoBxvsy19LDUxd81Fpi13hy_iCxqn2W_OM9Dne8jV_UfNVDAO1VhEt6tf6kXO-UJ8IuRBk37939tLP_wjAPPrFNOk1mT0Hbk3MDVWpdxQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.842,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "AI for data and spreadsheets",
+      "skill_id": "rfv.skill.ai-productivity.07-ai-for-data-and-spreadsheets",
+      "items": [
+        {
+          "id": "ap-031",
+          "prompt": "How can AI help with spreadsheet work?",
+          "options": [
+            "Replace the spreadsheet entirely",
+            "Print spreadsheets automatically",
+            "Delete data you no longer need",
+            "Generate formulas from natural language, clean data, explain unfamiliar formulas, suggest pivot tables"
+          ],
+          "answer_commit": "hmac-sha256:2c2e54add377316e552ed37857473fb5",
+          "explanation_enc": "aes-256-gcm.v1:BH4IlV-hpLsfecJF:x32O_rNcGsnuUWdw7mgu0K7U59WVqHp5Tq23aPhIWiKFeJRdTofjTi3g-5YDfJQgjtNA5rWpHQESsMIwYm1nT-rttCtU4s0e8cyynCCrv3NFWlvwCxAiYyT3QcciNAuRsfLWypa-KVxll7FiRHy4lTKZRWcO9N3UNYN5ekA-h0LaQH0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.188,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-032",
+          "prompt": "What's a GOOD prompt for AI spreadsheet help?",
+          "options": [
+            "'Write an Excel formula that returns the average of column B where column A equals \"Lahore\".'",
+            "'do math'",
+            "'fix my sheet'",
+            "'help with excel'"
+          ],
+          "answer_commit": "hmac-sha256:df51fcf97458a1dd1f38a02de65e6128",
+          "explanation_enc": "aes-256-gcm.v1:KqgaoEeotHosREDS:jvptNSilrSUYiXRBxPUKP6K0_c3yNDEB2Wl6IrYbjFCZ8761TpX21lLpQFFRk5czP-n4ZEdT-unFGfywg0-GJhms7QV0U_4pTYc9erF8foN5ICkoRk5tEQSRJ9sTFR9fo1VnyVXDE2ee7tAVD2azpWXTpkQsd_IvqVrAcA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-033",
+          "prompt": "How can AI help CLEAN messy data?",
+          "options": [
+            "Encrypt the data so nobody can read it",
+            "Convert all data to images",
+            "Delete all the data without asking",
+            "Standardize formats, detect duplicates, fill missing values intelligently, normalize text"
+          ],
+          "answer_commit": "hmac-sha256:de7f54d81e6ca14a4cd91492eef61d5d",
+          "explanation_enc": "aes-256-gcm.v1:Jq-mxhob6aM_DgEA:TWRCzYStaGipnaK0t1J-9PnBIn2sGe39zYOUv9vhpXAbZX7gxnD7nJZf1vlUnG8JUuNF3t60OnYP2gJyhaGUKXK-bD5_21txtH4XgG-T3oCNwuIBhwGLBjCpMk3KDUovPRh7vvnLN7wMw6gJTKGGWM4W4bRIKKNDmiMY2LUk4khldDugkIKe",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.342,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-034",
+          "prompt": "Which is a SAFE practice with AI and sensitive spreadsheets?",
+          "options": [
+            "Never use spreadsheets again",
+            "Email the spreadsheet to strangers",
+            "Redact or anonymize sensitive columns before uploading to a third-party AI",
+            "Upload all customer data to any free AI tool"
+          ],
+          "answer_commit": "hmac-sha256:66261812b71decf864e9e3c07532e3df",
+          "explanation_enc": "aes-256-gcm.v1:EphmeAeg4EMMkFLU:sYMBaPgAxZNDY1vSLpexiHExBKIAlUw3P-kxHuQK7pXqe4gwk_SA3A9wT6BRwyuIbBdNr47g7OQjGRlMvxMQAAZlL5IZRH-JSYpJ6dcEkbRaqXbX2czUZ43QFcvekjZ0FOKf0TySjHgSDgOp-3pFGBCRNw4cs2UGeHY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.682,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-035",
+          "prompt": "What CAN'T AI do reliably with numeric data?",
+          "options": [
+            "Precise calculations on large numbers without a calculator tool — it predicts digits, not computes them",
+            "Explain what a column means",
+            "Suggest formulas",
+            "Spot obvious patterns"
+          ],
+          "answer_commit": "hmac-sha256:64eb54e947fbbad32b8f5280b9081a42",
+          "explanation_enc": "aes-256-gcm.v1:osuiruZ0JSRDXfYn:-UScrLfxdL9GgOM1oA-FVdXaZk9lNBFkdyPaUv05C63Jbhjd-KnVwVM9EbXTdIDEOdkbBprySggK3VKc4Osl2gUf02LTbIdzXwTBfzdM9aKFqLkXbF2XVwosejpmVqkXDML-ZVHPazPJ2bRHA5Ea5CPDxgSLAeEAMW-8XxRFPzQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.815,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "AI for slides and presentations",
+      "skill_id": "rfv.skill.ai-productivity.08-ai-for-slides-and-presentations",
+      "items": [
+        {
+          "id": "ap-036",
+          "prompt": "What can AI presentation tools (Gamma, Beautiful.ai) do?",
+          "options": [
+            "Deliver the presentation for you",
+            "Physically print slides",
+            "Memorize the content for you",
+            "Generate full slide decks from a topic or outline, with layouts, content, and images"
+          ],
+          "answer_commit": "hmac-sha256:49f78998693505172c435c32e2fc584d",
+          "explanation_enc": "aes-256-gcm.v1:am4v7H6mAaC3_L-y:yVMm-2CUCtEIVL8k75EcJWOoYp3FKk0DOBCs96_p0c29_dwd6Jyzz6Seg0VRhxHthWtUb1hO-vhdpZeGuU1Aem93oyPMTm7nUz52I5GZ8jDUVIXMvNX9_YyKLyZHEzZXlWig1eoBqFrKXVEr1wmN27m17Z5WWCTBkCODNlfR4VwIlmCvT-ivGkl3MAj7O8c",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.625,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-037",
+          "prompt": "What's a GOOD prompt for an AI slide generator?",
+          "options": [
+            "'make slides'",
+            "'10-slide pitch deck for a Pakistani Edtech startup targeting university students. Include problem, solution, market, traction.'",
+            "'pitch'",
+            "'deck'"
+          ],
+          "answer_commit": "hmac-sha256:0e2779aa04699dc20c5598f7562e8133",
+          "explanation_enc": "aes-256-gcm.v1:yPLA1i-BshvoHprQ:V4B30LwqakW2d51H2hkdwdMIRQXbLZYFLTl1CmoG_UITycekAmYJkpGVuAhHfM83vRaLJeN3fU8uMLF-jR9hnqAE2mjDEpSRycPeGyQmDQt0Cc-yiGJ2bCom5Lxqf4y7Bey1OL6_ucS3_t8ZvFH1w8_Jqhoi8nfl",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.846,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-038",
+          "prompt": "What's a CONTENT trap with AI-generated slides?",
+          "options": [
+            "Too colorful by default",
+            "Too few slides",
+            "Too much text per slide — AI defaults to verbose; great presentations are visual",
+            "Wrong file format"
+          ],
+          "answer_commit": "hmac-sha256:173736d69225eb29b917ef1958ef968b",
+          "explanation_enc": "aes-256-gcm.v1:igeZ_W37k7LgBsj5:aTEXYtx454s-ZPlUlt7o_d2MehSTfzsOJic9p9DK3ZcvB4PSWzcMLhksKOypUE_ac73EPkaC2CqaGOTszdyOK-sZwPZqKfHlo0__3V8lsyainM4Gi1-eAd5OnaLt6yKwG4xi2Sozd9OnVSq6tX8uzCQad2XrahZv",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.478,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-039",
+          "prompt": "How can AI help with REHEARSING a talk?",
+          "options": [
+            "Eliminate the need to rehearse",
+            "Memorize the talk for you",
+            "Generate likely audience questions, suggest counterarguments, simulate Q&A scenarios",
+            "Speak in your voice live"
+          ],
+          "answer_commit": "hmac-sha256:2bde2f251ddef9bd4937848597668e13",
+          "explanation_enc": "aes-256-gcm.v1:Nz4E1rqAZ362Q9bW:BZQ0Ul5-F-qOAbRo45jSei4SKboge8bmedY13SrWCJZ_HktxLygGTmE-pveVh34s1PvTztIaqa5HYdbEz392THrPhcfneJMl1WibxyqkXl0n6utpEZAoeCLUefS7fi-WWqiEPlf1LG2_let6yoHeyjA3eOfh7joq_o1VBA25ckW66Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-040",
+          "prompt": "What's the BEST division of labor for an AI-assisted talk?",
+          "options": [
+            "You do everything alone",
+            "AI generates first draft and visuals; you bring stories, insights, voice, and live delivery",
+            "AI does everything including delivery",
+            "AI delivers, you watch"
+          ],
+          "answer_commit": "hmac-sha256:a5fdc84c342b775ec4d4eedd01364e25",
+          "explanation_enc": "aes-256-gcm.v1:uqAOdBCGvCFm5kg_:FAblMIx-vE7TOV-EjsC80AgFj69Co940mhdKPaBfeRK4nT3NLcDd72hZ1-TjacoN0c3nq4m-sWGICkVpB2rY1X_FOF34I5Y_zxePCt_80yEYNE4PPm9D--vt_ZDHd_j_Xykqkr8",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.459,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Automation with no-code AI",
+      "skill_id": "rfv.skill.ai-productivity.09-automation-with-no-code-ai",
+      "items": [
+        {
+          "id": "ap-041",
+          "prompt": "What is a 'no-code AI workflow' platform?",
+          "options": [
+            "A type of CMS",
+            "A code-free smartphone",
+            "Tools like Make.com, Zapier, n8n that let you connect apps and AI models without writing code",
+            "A platform that disables all code"
+          ],
+          "answer_commit": "hmac-sha256:0ab39e78607f6f86411eccf967655c5f",
+          "explanation_enc": "aes-256-gcm.v1:e3-9bB7K9CV7Xe8q:4830qC1NwD_2GPAkDEvOOCl85hMCniGmjwirixGReH4-nM1MD9f1hA5_WqzeCx1tDCev7Miu5GRnvd2F1FNGsv91t-N4iHBnQHVjq2x-W3jlsEk5acTTHuB6Uas70EtZWzL6PKL7U1GMpntmMUyJXreBtgmO-IWvPqp0N6jqsoo5ciePkA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-042",
+          "prompt": "Which is a CLASSIC no-code AI automation?",
+          "options": [
+            "Manually typing each email",
+            "New form submission → AI analyzes → custom email reply sent automatically",
+            "Calling each customer by phone",
+            "Printing forms and faxing"
+          ],
+          "answer_commit": "hmac-sha256:8e2143bf9ef4a3406d9f9659770576dc",
+          "explanation_enc": "aes-256-gcm.v1:e4rxXbIIC3_Es1iq:Tzu0bVT2TAPZ-kjdb7HucR7ZPwi4h_6mAfgne9gtOpj1tHC1_cAVUuH68Hh46cDcllhz8pOhygf-XU9c9wBKYNoLEFG0eIp6ylx_iT1Y8MPTvpWke9rTV7s6ta1YAVzKY645G2mQwRQin1n6xeoq_TSfW-O5A3NFKA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.433,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-043",
+          "prompt": "What's a SMART first AI automation to build?",
+          "options": [
+            "Something that solves YOUR own repetitive task — you'll catch bugs faster and feel the value",
+            "Something with 50 steps right away",
+            "Something for a client without testing",
+            "Something you don't need but looks impressive"
+          ],
+          "answer_commit": "hmac-sha256:b24a47e5113feec39ab63272be457622",
+          "explanation_enc": "aes-256-gcm.v1:o5x-dgJqjwYDDwY1:I24jmYxXc6G1YztrSswMUrDoyX9UhCvvI74XsXw3N3fHU6pHml7i3kICYd5UJzNRJBDZVLuyn2fux6DJFeGyNcPvjWlE3OJIUd8ssU4mq-fCle-y60XHJkJeUxJOsoeHP1DohBU9btj33sLfdRkZE5CZbiN8mLkj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.044,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-044",
+          "prompt": "What's a COMMON failure mode in no-code AI automations?",
+          "options": [
+            "Too many notifications",
+            "Running too cheap",
+            "Working too fast",
+            "Silent failures — when an AI step returns weird output and the rest of the workflow blindly continues"
+          ],
+          "answer_commit": "hmac-sha256:b0e07049fe45e68462901890e1c14bc9",
+          "explanation_enc": "aes-256-gcm.v1:8ySZ479Q6VnEOFOF:3tC9CZ-GAitdnvZ5qLAa9ChPIuYcWYyLnA1bHaP6MJZPynTEcXgTDCgY_Is3nwHShkI_AAqOhAMVB2oGFmlG11gxX3NGvk6GGKAtbUiIer7Zx8lU1EnCPdfAedeQoR20cyb-idX2Q89VoQfAiFtj1mOyAiVgH1-nCezZZR1pMj9LJ6BL8RXTa-qpmQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.591,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-045",
+          "prompt": "How can you DEBUG a complex no-code workflow?",
+          "options": [
+            "Delete and rebuild from scratch every time",
+            "Use the platform's run history, log every step's input/output, test with sample data before going live",
+            "Avoid debugging",
+            "Hope it works"
+          ],
+          "answer_commit": "hmac-sha256:f943d7e9cc29e6ed09679cb3f28197d6",
+          "explanation_enc": "aes-256-gcm.v1:tMU58IhLHWusIx_w:k9b9x5fj5iE80Ufl_JyhQ3RE_KadkPPQNnxAG9BIcFVHwF_CCByT3oHacJ0_NnEMlW4fybiB-DOnIwFbEU190DgrBrPuttDfeeMP_g-n02Q_b7VhuVhNtgF0r52koEGQ_wc8mcohtcKCJF2nzCZJKe2xc9_5fqT4sIRi_GVBsMdegCHxLhKxG8FPrwC9tjw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.429,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "AI for design and visuals",
+      "skill_id": "rfv.skill.ai-productivity.10-ai-for-design-and-visuals",
+      "items": [
+        {
+          "id": "ap-046",
+          "prompt": "What can AI image generators (DALL-E, Midjourney, Imagen) do?",
+          "options": [
+            "Replace all human designers",
+            "Create custom illustrations, mockups, product shots, and visual concepts from text descriptions",
+            "Edit existing photos perfectly",
+            "Print physical posters"
+          ],
+          "answer_commit": "hmac-sha256:3b44b1e5984dc03cd584e58aee1d5580",
+          "explanation_enc": "aes-256-gcm.v1:nJW3P6Zw9Cx-h9oX:Tab_R_uHCIDUHnshY7GJZgqXwct_aA1oFeCwBzMewNQY19VMFWjRVay2IJsvYGDaP6YqvrAgMpOCe1r9mq_TTbs8OEcWvVCHBw3vh0AcfncY0fw4Zd9_hkjAN8fq0AL9FoTy3fVRtOt_hjcOCWtJPfvwPsZOvjG1D5U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-047",
+          "prompt": "What's a STRONG image prompt structure?",
+          "options": [
+            "Just one vague word",
+            "Only color hex codes",
+            "Subject + style + lighting + composition + medium + mood",
+            "Pixel-by-pixel specifications"
+          ],
+          "answer_commit": "hmac-sha256:3c7810fa8c61c7893947a9107ac92355",
+          "explanation_enc": "aes-256-gcm.v1:38kSavjVwarmaWEY:HqfZ6lKv3vhMu4eiNQm_K7TbXPIs1DBoqht9940GHc5T4Zo6d5rJ1pqDPpm5cqXBMrDTlMG2_rtiGfQIcxdkOpdGHjv8JX1oQZb0omeIQZyT_X8S1__K48sxC4nv--q1fHcwsNhDC-f0oDK9AHb8uEsJ47JuZpQovhqXhGiZ6KKAbqCfe1s7_dfk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.931,
+          "findings": []
+        },
+        {
+          "id": "ap-048",
+          "prompt": "What's a LIMITATION of current AI image gen?",
+          "options": [
+            "Generates only landscapes",
+            "Can't generate any images",
+            "Struggles with consistent characters across multiple images, complex hands, and precise text rendering",
+            "Only works in black and white"
+          ],
+          "answer_commit": "hmac-sha256:b81749096fc345120ecb51460948b07b",
+          "explanation_enc": "aes-256-gcm.v1:BEsMe_b2npr69W7h:HkJIb1-3w9G4CvjK52oIIHepbL-gP19bYU8GycsOxGLJteNZQX9wVzEa47nDQ5LFIZNRT55IkXaAJzR3xwfGEcpNmhdT8kMhJqSbVJjOAWXyj_HMkmtiAVEKf71d8kH_lsOY9q5rVEA9iT5wyVBUGz2nU4C09xXIhUTCPMI4JaDs86kE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.517,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-049",
+          "prompt": "How can AI help with brand design?",
+          "options": [
+            "Replace a brand identity overnight",
+            "Generate color palette options, logo concepts, font pairings, and mood boards quickly",
+            "Auto-trademark your brand",
+            "Skip all brand strategy"
+          ],
+          "answer_commit": "hmac-sha256:181152e28f5da85230d6c967940e1da1",
+          "explanation_enc": "aes-256-gcm.v1:n7qMkyXBtprnR5yd:4AtcllUcUaM4rpSZxQLEdLiNHqtuy8aBo1Vj10kpbB44rdTCEy6ysQ7S35Uj-UZVP6bYdn30GjSAMd3XqV8W61_EOS2wGhk6qxkboJnyokqQpF7SdldYjmj9xwubc75bmt2oAQLyiYPHTK0vaoEylkKyIetsvPtPstBaVe4ZLEQIgVAXAdOeNhg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-050",
+          "prompt": "What's an ETHICAL concern with AI-generated images?",
+          "options": [
+            "Images are too high quality",
+            "Images load too slowly",
+            "Images are too cheap to generate",
+            "Training data copyright issues and impact on working artists' livelihoods"
+          ],
+          "answer_commit": "hmac-sha256:d14ed011ef7011dba1b9100ac1e82fa4",
+          "explanation_enc": "aes-256-gcm.v1:OMEGEjhjoEVAnRCN:UVBm-NGmV-z7L1Wieu7LIZCE-3LJslX4zlTBRY5GDrnE4KhvhBZfecC7UG-CQ_raTSadymL-Y5UhoKmAodY32qnb4uPZAWWsnDKT-KFNdRNeMpncl1oL36Az-MGbuVy07XYjEiSnDqud8JW9kDC9-63zoiBdv7dcXeibwO4quZccHA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.281,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "AI for project management",
+      "skill_id": "rfv.skill.ai-productivity.11-ai-for-project-management",
+      "items": [
+        {
+          "id": "ap-051",
+          "prompt": "What's a HIGH-VALUE PM use of AI?",
+          "options": [
+            "Making decisions without input",
+            "Auto-firing team members",
+            "Generating task breakdowns, estimating effort, identifying risks, and writing status updates",
+            "Replacing the PM entirely"
+          ],
+          "answer_commit": "hmac-sha256:501a914cc2126d903feded73e94d78de",
+          "explanation_enc": "aes-256-gcm.v1:s5FgUKVZsSQM1Kb4:0ho93SPwfNtjL6NIwT6-9gZayWwBAbEXIPvrFc_lOOS3wRWPBu1MR-4hyO3hAlQKf1c98ocFJtWQgf9WMlniaL-8E6vwaeIUmjmGQ4VjojSGvAsxi0cQjnttNabKuNW7C9CALmF4ULxMuCXWRjH2aXLaHtkcPfT_1Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.067,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-052",
+          "prompt": "Which AI workflow helps with sprint planning?",
+          "options": [
+            "AI cancels all sprints",
+            "AI assigns tasks to team members without their input",
+            "AI breaks down a feature into user stories with acceptance criteria, then estimates relative complexity",
+            "AI works in isolation from the team"
+          ],
+          "answer_commit": "hmac-sha256:09dfcf12bfa5d0f280f31d64a9090332",
+          "explanation_enc": "aes-256-gcm.v1:a_149dzlGr2Ub5jF:jqgPuGas64Q6CuRigZBbJYJEMn1qHgEKXXonuRd7f9J2XfFqXOI4gJOv6WsPMw5ahh31XvQL4bPtBPRWCvvkYQCpkezfvTmkXfrPsaBpWAquRP5tC32SiEb5u78Kz86f7uTVj-YOfOHWOPDmJv8ER9ZHJTGbOKOU-gYwIaByYFMxlmgj5Yvu0N4O_a9_NKc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.981,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-053",
+          "prompt": "How can AI help write better STATUS UPDATES?",
+          "options": [
+            "Convert raw notes into structured updates with progress, blockers, next steps in audience-appropriate tone",
+            "Hide all problems",
+            "Remove the need for status updates",
+            "Inflate accomplishments artificially"
+          ],
+          "answer_commit": "hmac-sha256:6300e098bef3dc2c21cdf51e6241c1ea",
+          "explanation_enc": "aes-256-gcm.v1:WB1osTa4u0aEm7xx:E-sAEdk3dkZQRTePO5D7j6mkjgMZSchNyr5aoh2S-l4T6UvlM3HG1pfy5LOQtILK0eQAKEc0KkWltMEwpXu9-raWLpJjm93CI97I7i7vHjK470GBjsq26Mk-OIPPKjwD8X6HkVM7xDMT2sT7zkyLHkkrndHoiE4ApUIZ7JmdTVZojfECdEWQ4TV4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.944,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-054",
+          "prompt": "What's a SMART use of AI for risk management?",
+          "options": [
+            "Ask AI to list potential risks and edge cases for your project plan as a brainstorming partner",
+            "Trust AI to predict the future",
+            "Skip risk planning entirely",
+            "Hide risks from stakeholders"
+          ],
+          "answer_commit": "hmac-sha256:19f63a8b34e77cd918f05035cc7436f4",
+          "explanation_enc": "aes-256-gcm.v1:OV12Q5HGdDYYMs4W:xsj85m41BVIULq0F1J4eo6mp3mo7qnItgWIOWidxHp8KqhmiILNWgc-oc19xt5jYK9ePluS7o7T6JagG07KT0BUGWMuzApdWLSmcDe4fE8Nx9FNGE0dk5uze4-9gn4AfyGbea8eZDwO2GKz6_Jl-7dURA2UMpdy6eVyJwbZJfiNMGxDP",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.133,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-055",
+          "prompt": "Which PM task should AI NOT do alone?",
+          "options": [
+            "Drafting documentation",
+            "High-stakes decisions about scope, deadlines, or team changes that affect people's careers and lives",
+            "Generating retrospective questions",
+            "Summarizing standups"
+          ],
+          "answer_commit": "hmac-sha256:3cd9cce52881fab1abea9f303c519a9f",
+          "explanation_enc": "aes-256-gcm.v1:UPr1NH3hxgJj9ayb:zc1DarbQ6L44VCag0qNV9A_4a2SOc7TWwDghWcjQ5jvBbx0poJvydc6xQMoe7_ntEaWVs3h-HAXmQDaiGOFPYL5kP_WD4y28tK7306jrb4WDY5Ws-rCE0N42PpZjWvKZX2oN5L9by4Ks7PFltXe7T115sRu7wmU4zg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.941,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "AI prompt libraries and templates",
+      "skill_id": "rfv.skill.ai-productivity.12-ai-prompt-libraries-and-templates",
+      "items": [
+        {
+          "id": "ap-056",
+          "prompt": "What is a 'prompt library'?",
+          "options": [
+            "A book about prompts",
+            "A type of AI model",
+            "A personal or team collection of reusable, tested prompts for recurring tasks",
+            "A library that lends books about AI"
+          ],
+          "answer_commit": "hmac-sha256:842141f43e7c5a8c1e20028cd21e44a3",
+          "explanation_enc": "aes-256-gcm.v1:wOnL4mwr0g-zkwg0:nFUAA29bYuo7WiEdzGpJgQ3TkGfJmxrK8OfrQRG8YNI1St0QQzavC6Pjb6YAMmCc31qRzonOgev5JPcA-K8OvYQ7_PcEm_vO1xZgeRFoShAr7ex9y9mN3a9qSZgTKYi8ELqu1pK5vvOQ8nCg7E-9_4KqVlHl7vqp577gj1F4QBXllEY25wimfQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-057",
+          "prompt": "What's a GOOD format for storing reusable prompts?",
+          "options": [
+            "Random sticky notes",
+            "Email yourself each prompt",
+            "Memorize them all",
+            "Versioned text files in a folder or Notion database, with notes on context and example outputs"
+          ],
+          "answer_commit": "hmac-sha256:9ba9e7cc84eec9ee1ded341cdd98731d",
+          "explanation_enc": "aes-256-gcm.v1:IuCT9o9UjCz-LpWi:f1ZmBd9rT_6rA2wEXOTY6kAXuymFtVdbYWDcxl_ch-4Ex4V3ouP3fSHG2WdJqsxLB3mz9_PNbGuIbwT-LxTc2K-4e7FOR44wAayZvEJ-gAuCthmzoD9yXCPFTVt5IpIfI7tY36NDYc5DsCuXsJo56XbgKsclcllxfMCVC9GX",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.615,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-058",
+          "prompt": "What is 'prompt chaining'?",
+          "options": [
+            "Using only one prompt forever",
+            "Using the output of one AI call as input to the next, building multi-step workflows",
+            "Repeating the same prompt 10 times",
+            "Chaining prompts to a physical keyboard"
+          ],
+          "answer_commit": "hmac-sha256:30e7e2cd9709e0b4133d9e210fa9bbc9",
+          "explanation_enc": "aes-256-gcm.v1:Ce_LlUvtai10vtSt:QzBcOBJdbnbOLTPkdl_spSZyYAZfCc4G3DbbFAjwUnkIyhdHNYNlCcRtB3G5kRzZFelCXWt634Cm85jfbMScwVjpsZVfCXr5qXtWaCDz86zr9kVoGr8rd7rxlawG-blSGoAe-ur52vDVmBbmmqv5pbhJdzeOenk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.128,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-059",
+          "prompt": "Which is a CLASSIC reusable prompt template?",
+          "options": [
+            "'do thing'",
+            "'You are a [role]. Given [input], produce [output] in [format]. Constraints: [list].'",
+            "'help'",
+            "'output'"
+          ],
+          "answer_commit": "hmac-sha256:51c775c66a5aafec5863fb8c33c10a7b",
+          "explanation_enc": "aes-256-gcm.v1:NUYR3RwLWJ3aKYdU:qv5wtGCF6bsVCQFx9X8-b_zeoWDUuKcQwV8twushY0VdQwzM2HT5gofC4mbg8VYVNNQMqYAdUZymQJT3XBSGdXtxPdr3nJJBhYQtVlK2mAchC1CL2zDbFv4NFRs3dIpWxi5j6lSPvGY4Wy5yUO8JAWlW1-Co",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-060",
+          "prompt": "How do you IMPROVE a prompt over time?",
+          "options": [
+            "Rewrite it from scratch every time",
+            "Add 100 random instructions",
+            "Track when it fails, identify the failure mode, refine, and version the new prompt",
+            "Never change it once written"
+          ],
+          "answer_commit": "hmac-sha256:e57f9ecee348969ae085ac483d433ba4",
+          "explanation_enc": "aes-256-gcm.v1:PqJwaBEkV81_aC0x:kPQbGjHHIht0k6o3F66pqtsJjNC0MWG4B8RW1X4iYTcfysAxvcKKvyWa7lk054ljtt-GQEJWsJd8fmrmK7ldG0OEL32ouKbYM37_kpqW2TzcZz7cGbrTlRgWQeDhRhGRBwSvLfW0snDsYSDnNYcjYqHekzv--rXdG1XJ9AKlWhpUScnR1RzLqldy",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.412,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Choosing the right AI model",
+      "skill_id": "rfv.skill.ai-productivity.13-choosing-the-right-ai-model",
+      "items": [
+        {
+          "id": "ap-061",
+          "prompt": "When should you use a FRONTIER model (GPT-5, Claude Opus, Gemini Ultra)?",
+          "options": [
+            "Simple text classification",
+            "Complex reasoning, nuanced writing, multi-step tasks where quality outweighs cost",
+            "Tasks needing instant response",
+            "High-volume cheap tasks"
+          ],
+          "answer_commit": "hmac-sha256:00c66be4a22aa62e866c7ad750ef05d4",
+          "explanation_enc": "aes-256-gcm.v1:jNSLAI_d2BKKAIAS:Dej2YLwlp1f-j0BhScPUwnb45wSUXAB7VIWBDR5v8wHINRH5A49sQzy_WBPE25Fpc0D4OJfWqbPEmjxWTq5ElES2nmuiJPXhQ38vM1-INugMyqwDYl6_DBFi56TQ5t2FXP9IlCGPY2XJXRbb_QRIiGDpTQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.7,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-062",
+          "prompt": "When is a SMALL/FAST model the right choice?",
+          "options": [
+            "All complex tasks",
+            "Bulk processing, simple classification, real-time chat, on-device use",
+            "Tasks needing deep reasoning",
+            "Creative writing with nuance"
+          ],
+          "answer_commit": "hmac-sha256:2da75df12b12827986863718f2d67a38",
+          "explanation_enc": "aes-256-gcm.v1:IVbpZ1L5X9rCyx-8:ATf6fr_PcLHNL6pWJqcwQa8y2xGSCfOlfG8bmw-pLvPCaGVh4Dt_uiVJ9YWMdHHonCxNN6lHSLKiQcNQb8PiQ6bu4zCGtAvPhMcIlKKMxYl3STPQ94yVyhstUTETtpchxfoAlrhcqAev0R2MOJ77pAAqZSsXhI4j_lI7W8zZqxj6cKq0ffp3ho2KMq5QT_C8Zw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.464,
+          "findings": []
+        },
+        {
+          "id": "ap-063",
+          "prompt": "What's the value of trying MULTIPLE AI models for the same task?",
+          "options": [
+            "Different models have different strengths — comparing reveals which is best for YOUR use case",
+            "It's a waste of time",
+            "It violates terms of service",
+            "All models are identical"
+          ],
+          "answer_commit": "hmac-sha256:8c6189a3096a686c1d1dad613932d31e",
+          "explanation_enc": "aes-256-gcm.v1:9zx8krq5flQ71U1o:Ry9yi99lUDYjoLLBpST71LmKN_k63agTc2ggYBBBDTxGIrON7tSYJSQ_oJ3wXRV4Sl8ZMmq-2XmdwoBhx9fHc8NdmPwV8Btn0heodkzGfeGUgIvW_uNcLTdNzQtKzd6EHovmFbPS4lljkG9b51Y3VLJI1ioD7CnDCA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.321,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-064",
+          "prompt": "What is 'model routing' in productivity workflows?",
+          "options": [
+            "Choosing the model's IP address",
+            "Picking GPU hardware",
+            "Routing emails to AI",
+            "Automatically picking different models for different requests based on complexity, cost, and speed needs"
+          ],
+          "answer_commit": "hmac-sha256:79c27c887730358a16c8f3d17769a667",
+          "explanation_enc": "aes-256-gcm.v1:G7cVPeEWlKrwR4hC:KXSvZsvnfApOoruy3H0Vck9NaE4UXHlCe3U2moiITm3MFDHr8E50pWFJTcUkao-cKMc1QIovSHPhMYaCqbT2kCkMRCwBQpNomRAS7peQBq8g7o1j2YrueIGp3lsSV1CjgDKJi6I5bc_k2kzloAURbtlBnc5sjj4kd_Qr8fD5FRwZ69Eh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.355,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-065",
+          "prompt": "Why use an OPEN-SOURCE model (Llama, Mistral, Qwen) instead of paid APIs?",
+          "options": [
+            "Self-hosting for privacy, no per-call cost, and full customization control",
+            "They're always smarter",
+            "They're easier for non-developers",
+            "They have no limitations"
+          ],
+          "answer_commit": "hmac-sha256:96a585e1cf05808e8b3a12aca08e65a1",
+          "explanation_enc": "aes-256-gcm.v1:51BGfuH-JhpThmwA:exXPKlfYfkXagLarbR2uw8ZL4RxqYn-JdQm_LycXw6tHXgXAUSWbvNvM88g-1QwFZ0OJANGC75VjXcZNoGM_jmIsl-xYXbHB0NJG8dSnX8jcp89c045DvZCREtiF0DUxPdEC_IGbLxQykhI0DCjeFklXpL9gPWVtDhMiSIyobbf3RTt6RLA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.242,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "AI integrations with existing tools",
+      "skill_id": "rfv.skill.ai-productivity.14-ai-integrations-with-existing-tools",
+      "items": [
+        {
+          "id": "ap-066",
+          "prompt": "Which apps now have NATIVE AI features built in?",
+          "options": [
+            "Notion, Google Workspace, Microsoft 365, Slack, Figma, GitHub — almost every major productivity app",
+            "Only paid enterprise tools",
+            "Only apps in 2030",
+            "Only standalone AI apps"
+          ],
+          "answer_commit": "hmac-sha256:871a9bc6f617b93965d16ff1fc55af4d",
+          "explanation_enc": "aes-256-gcm.v1:8rRiHDcz5WKpq-ub:gI8iaPT1qgML5K_6dE1cDsrWAjGvOLSCBQACjELNRgOpifPeBU8vy0vtUf144H59LFuf7x9d6HK_D7JkbdBAdZCGjJYXMgNa7yq1BemkCKP9DtkfFmS2y_ocAsa-9CvmF4bqBVqirAiX6lF4zCIMf3xVOeSGsOHQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.808,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-067",
+          "prompt": "What is a 'browser AI extension'?",
+          "options": [
+            "A password manager",
+            "A browser made entirely by AI",
+            "A browser plugin (like Sider, Monica, Merlin) that lets you use AI on ANY webpage",
+            "An ad blocker"
+          ],
+          "answer_commit": "hmac-sha256:cdf6a21a5e7350ca50881c6ca8b1a0b2",
+          "explanation_enc": "aes-256-gcm.v1:3wdNVxvi1nVr0phw:xqyA2UMd4f_e1p9FlTg21qeUWIUrnXp_teK9fm-mKhibFDE7tY_bIc9P8SOdjkWI6kxYm8MYxRV6IuAIQFbLRMLPcjDP36ADXRsvtm_ewhI4eMTiIlZat0uZrym1BLC9s_qK0X9w0AABJ6BXENJO5GkVu6HaArtULsjfYm8e1sRD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.793,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-068",
+          "prompt": "What can AI in your CODE EDITOR do that ChatGPT can't easily?",
+          "options": [
+            "Run on a phone better",
+            "Cost less than ChatGPT",
+            "See your entire codebase context and suggest changes inline as you type",
+            "Train its own model"
+          ],
+          "answer_commit": "hmac-sha256:c7cddbdbb0b3d346a93f4ad5524e25d6",
+          "explanation_enc": "aes-256-gcm.v1:CF7ZpSPNk5--nKJL:Zo2vCOb2KM7nyggsAJ9LOcryfJ4aXCGPFz2Q4GoNUMRWxTlNqGLTbmZz3bWal9BJqgDAEtWrHMeEaz7b9qcWSDSJfPWS_1Uunqd3OyFJ5w_I45UUoAbXI_1C_ctRf1EBP_-QAKhCxRo4MbR818SSCs8fhpJggGfY0s_ck9JSOCkU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.227,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-069",
+          "prompt": "What's a key INTEGRATION question for AI tools?",
+          "options": [
+            "Does it have the best logo?",
+            "Is it the newest tool released?",
+            "Does it have the most features?",
+            "Does this tool access my data securely, and what does it do with that data afterward?"
+          ],
+          "answer_commit": "hmac-sha256:c606c2874a2f2ac55e76642f7f1a9ca4",
+          "explanation_enc": "aes-256-gcm.v1:otEXulf6IXEkkXeJ:f5seiWG5E87_gjVJQy4QpiWcd4pwp8GmHw93ilVsU6uM666v_B6FIKUAZbtLuhniz6AD7S0J4ZRujIBEC1lszjYjCJJV7YcGdIvpFS4KOLPDG3EtOOgjwfl_9J6hAg4eRuPH_QYSdcDHZkVazcCJdyq041SRbCf0aO6yS_CU5p6H",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.742,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-070",
+          "prompt": "What is MCP (Model Context Protocol)?",
+          "options": [
+            "A type of memory card",
+            "A music compression format",
+            "A new TCP/IP variant",
+            "A standard protocol for connecting AI models to tools and data sources (introduced by Anthropic)"
+          ],
+          "answer_commit": "hmac-sha256:13be99c1078f757daf404b6954408273",
+          "explanation_enc": "aes-256-gcm.v1:3gnX75rw8HCZF_zq:AZ8aV0zdWrrPlWrGcR3_2rOlz-S5wfxfr26buPCnbX8fttjUH0z8NIta1F_XDAPg6AcupgDbh-zvIZ_aczz6oDybJ2SHal-K-ULoCG8IWQJXsi-4K93CjbIrrEjn8M9boF8aGF94X9yiuxQbqA1YtJKFtZvoANOOaiy-M90r78874ts",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.692,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Time management with AI",
+      "skill_id": "rfv.skill.ai-productivity.15-time-management-with-ai",
+      "items": [
+        {
+          "id": "ap-071",
+          "prompt": "How can AI help with CALENDAR management?",
+          "options": [
+            "Hide events from your calendar",
+            "Cancel all your meetings without asking",
+            "Suggest optimal meeting times, draft scheduling messages, summarize your upcoming week",
+            "Move events randomly"
+          ],
+          "answer_commit": "hmac-sha256:fbe10c4ccc8f7a871da8663d1233e4f5",
+          "explanation_enc": "aes-256-gcm.v1:lW9MW596vhU0FqBd:w9ZsOU3Isj7juQqNEs-DEs100-f_IMJBlSBrohOsWXqQYBlpzIy0OybQrtk9stLmpMhu8XFF4NTOfRZLUmE2E2s6Un-Tn72DG8NJcrQO1KvYe18gMMgl8p32rtIDqyJDJCzVRhsRwS6wFPlJMtzzHQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.205,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-072",
+          "prompt": "What's a SMART AI prompt for daily planning?",
+          "options": [
+            "'plan my day'",
+            "'be productive'",
+            "'help'",
+            "'Here's my task list and meeting schedule. Help me prioritize using the Eisenhower matrix and identify what to drop.'"
+          ],
+          "answer_commit": "hmac-sha256:8a4795fa810bc298d0c31b550eae09bf",
+          "explanation_enc": "aes-256-gcm.v1:G85xj6J4mHnj03MD:GCDSXaXfyQQxDoVkaiItgd4kRy58DzvJ5MIglXHtbyAcLkoU8lJPD6kRnItapYqbuOL-Zgp5wAkKBGuIw-bcr1b1Va5doN45nINO3jV_3xpRoZ1eqJ1Ewbx7Ot-hYqN3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.8,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-073",
+          "prompt": "How can AI help you OVERCOME procrastination?",
+          "options": [
+            "Do the task entirely for you",
+            "Hide the task from your view",
+            "Break a vague intimidating task into a small concrete next step you can do in 5 minutes",
+            "Tell you to stop being lazy"
+          ],
+          "answer_commit": "hmac-sha256:1010396cebe1bbe9ba7a34acf831a24c",
+          "explanation_enc": "aes-256-gcm.v1:3c7o6oetD5AFxdaa:LTk0PDAXhUDoygQPwK_Zo4CrYzn2TMCRbW0dLxHb8QTolvwbZsDjax2cwqCjVfG-G5S14xiXKno-nAww2l9dOUISChO5bywETeWHZDlaeDeW6u_maWOYH6J5G2j4o7fGONc1cRwGpdCJx5cQsgLT4E7U20pF6LCRPjspoG21AfR_ndUqeZoywpe9OhpV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.107,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-074",
+          "prompt": "What's a PITFALL of using AI for time management?",
+          "options": [
+            "Being too productive",
+            "Spending more time configuring the AI than the AI saves you",
+            "Working too efficiently",
+            "Saving too much time"
+          ],
+          "answer_commit": "hmac-sha256:4cb4cc1648c3c5d44195a77c13e902a9",
+          "explanation_enc": "aes-256-gcm.v1:xNjcCn5X3KHeycH8:RpNy5iYqHzXlB4tQB8TmL1DxTHWGzCM2V_dHNsikwauTEbYbE30Iv2bg83QcONxTKcv_oV_H5j6924PJjJb8T2xJWFTs3e_p-VgefnoahJonriKXqaHYoHb13-Q2HcY-nHIbuR32_nVuyAeIGIvnlruRFOohhw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.565,
+          "findings": []
+        },
+        {
+          "id": "ap-075",
+          "prompt": "Which AI productivity habit COMPOUNDS the most over time?",
+          "options": [
+            "Ignoring AI entirely",
+            "Capturing prompts that worked well and reusing/improving them across similar tasks",
+            "Trying every new AI tool weekly",
+            "Switching tools constantly"
+          ],
+          "answer_commit": "hmac-sha256:9b0e94db6853ac39ca8207f6ed6b8d53",
+          "explanation_enc": "aes-256-gcm.v1:3-UZng93SqvMVo_a:NCxP9DcqnkKOHlqCl6eU84mn89BXSxKuyGlI5gLZnGPxhkFPM_r9JuB2m915J1UdQ2lm9DroB2c4PjYMDha-uMmIr4x0aCrp_wtVRnj5Jaw_FkAbx9g6SMD_Kgv9p_T8xzHTp4peYd7R2VfsxvM9bdd8llyPDJsiFNRoGvs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.645,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Avoiding AI pitfalls",
+      "skill_id": "rfv.skill.ai-productivity.16-avoiding-ai-pitfalls",
+      "items": [
+        {
+          "id": "ap-076",
+          "prompt": "What is 'AI slop'?",
+          "options": [
+            "A type of AI model",
+            "Spilled AI training data",
+            "AI that runs slowly",
+            "Low-quality, generic, mass-produced AI-generated content lacking originality or human insight"
+          ],
+          "answer_commit": "hmac-sha256:9b595c5815b0156ed1d6340fd95e5148",
+          "explanation_enc": "aes-256-gcm.v1:RaHLJZMj-BAji88P:KJkqEnJEGoBiPcrPKi7fsw-lBBO-2LOMbNG_3Mf2niIP7tyb1iX-UyRgcp2g-reQJRAcXunVG977O2NHgp6v4dURoElqHfmaeh1tQWUU53voGiG_2IFBY94ARn56UJ8MO1P1SARtFFY1mKvQ6OdkReA8eIJDM_r9cok_CjXav7UwE5QXoHZp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-077",
+          "prompt": "How can you AVOID producing AI slop?",
+          "options": [
+            "Use only AI and no human input",
+            "Generate as much content as possible",
+            "Bring real perspective, specific stories, and ruthless editing — never publish AI's first draft raw",
+            "Skip editing"
+          ],
+          "answer_commit": "hmac-sha256:cba13b7b0b22805e52a388a25d85120b",
+          "explanation_enc": "aes-256-gcm.v1:ztbjIZbGfjj9745i:0dHK_nVhNQUJIgSvnfRa-ctXVYMFXIr4sCDPLOAkYZoK2gRIOKCepVHqSHcLbWdWv0Vbtwfk5XoZflzCUCt2f6r6VHZnbJyFJYB8hXMIDz_3KXBMcNgmmfZZTApccDUxqFQQVWCLCqnCYjOMiNx7hWwzeBgAkt3M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-078",
+          "prompt": "What's the RISK of letting AI 'think' for you too much?",
+          "options": [
+            "You sleep better",
+            "Skill atrophy — your own analytical and creative abilities can weaken from disuse",
+            "You become smarter",
+            "You earn more money"
+          ],
+          "answer_commit": "hmac-sha256:be873a197dcd8691fc6cee449c4d0bb8",
+          "explanation_enc": "aes-256-gcm.v1:ncS3KNjT34JIraYw:SK3DkOcD3iFEbVjW_BHj_qwlvFK4OdrJfALbv8fQElZM1UuHfRHi0975C91qlitBW2bXdA1-8Udc3he5eMV8Kjvh7ravoT-v-f2h7XhLq_82l8A8DvUqrdLJ1C5DHJY3XoLKTZaH-Uj8s8HeXx4rMqC561L6mV0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.263,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-079",
+          "prompt": "Which AI behavior should you watch out for?",
+          "options": [
+            "Capital letters",
+            "Slow response times",
+            "Polite tone",
+            "Confident-sounding hallucinations — convincingly wrong answers presented as facts"
+          ],
+          "answer_commit": "hmac-sha256:d26301e01616669adf1f8182d583a3fb",
+          "explanation_enc": "aes-256-gcm.v1:EU63vcHqFna_MiB2:IJTP4N135bDeKb8-836v1N5-lZkTB6FLhl6-fh8qVx_WDU3YdtR4WmH9kwvGMXcWdcgVLyD8PhA-Gkd-vQn5W3LA_xiB5flyXqCoS5Y0H3fBfkqmH_-OdtbneGelVZ7BgoMgp_sNPvS7u12mK75qG4D5a07MlZispzIBNAM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.263,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-080",
+          "prompt": "What's a healthy weekly AI habit?",
+          "options": [
+            "Use AI more without reflection",
+            "Add 10 new tools each week",
+            "Review your AI use — what tasks worked well, what didn't, what to automate next, what to take back manually",
+            "Avoid all reflection"
+          ],
+          "answer_commit": "hmac-sha256:b79b8ae6c5776c763daec9ea02c5ecb9",
+          "explanation_enc": "aes-256-gcm.v1:n6pVfuYU4aQTriji:yMS261JaZdwxw_kXT_HyuYhYQBZTL1cOtoZmp-fM_9Wn_RAvnOMeHuTk_Hw3kS5VhQrtUtBZkv8_SK_xYuOVem952mhrKORDlGktk-SIqlSRi0TfaBDKEOLdk4hji9bgYoxwKu8tmtmAKJaerphfeK9kTQDh9xF1isCQtysfOCugRXx-IUvyZmQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.567,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "AI for team collaboration",
+      "skill_id": "rfv.skill.ai-productivity.17-ai-for-team-collaboration",
+      "items": [
+        {
+          "id": "ap-081",
+          "prompt": "How can teams share AI productivity gains?",
+          "options": [
+            "Keep all AI knowledge secret",
+            "Ban AI for the whole team",
+            "Force everyone to use the same prompts",
+            "Build shared prompt libraries, document AI-assisted workflows, train team on best practices"
+          ],
+          "answer_commit": "hmac-sha256:1926ff6c1e2ff68d260b7f4529c7179d",
+          "explanation_enc": "aes-256-gcm.v1:TUl_-095EUhrcgmB:L51CUSzlZa3zuQhVoj_SC5-Mrx_uytQBjc-_DiYD3FuYQQT7UnPtbGJy3v5yGLomK66xrnKcc3ul8KCwus6KKS2YqVBgiUmh3SuU4u7yIyqFbHnh8YjXrHO5DrmmriYPCzmYSSK0YZTH4sJstVasGNjGSt0KzIjFkDtsVw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.395,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-082",
+          "prompt": "What is an 'AI usage policy' for teams?",
+          "options": [
+            "A ban on all AI tools",
+            "A list of AI tools to install",
+            "A marketing document",
+            "A written agreement on what data can be shared with AI, how to disclose AI use, and approved tools"
+          ],
+          "answer_commit": "hmac-sha256:42c5f1ea42b213f0803213742ef8b236",
+          "explanation_enc": "aes-256-gcm.v1:EohoJzCvhpb8BwVI:XLoFchaFKWqfP7OtQg4S_sgRhkqo-OLgPqxgd5lyA6Sh5EUb0rwni7n8mx2rBkjYSsNGlNkoK191O1PUeUvn4qTMGoj-f35aHhP7UlTNrCTNrpJ3XT3MPVqCv4SSt5tZJ4cUSm3rLlKpN2626TVLot6Jc6E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.379,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-083",
+          "prompt": "How should teams handle DISCLOSURE of AI assistance?",
+          "options": [
+            "Brag about AI use even when minor",
+            "Disclosure isn't needed",
+            "Be transparent — note when AI was used heavily in deliverables, especially client-facing work",
+            "Hide AI use always"
+          ],
+          "answer_commit": "hmac-sha256:ab9295ce5d3f126120810ac4ad5298d6",
+          "explanation_enc": "aes-256-gcm.v1:dx3lsikSdb543AgD:KxkKfTHiDhWaL2MjOUuTqy7XFSPBzO5G3nrNZBBaYDBSyyNF6KOIuQjNYzp3UGiK5yW06MWwd-hCaYSZGWU5CiBMhQ38kHw1u-GfTVbjm5FuJhdY6IwPJYtgrIWZt6RUNRvet4E0VPm4uX59oGPra84D1tRt14eRsn0693R_EC0UxEeAvw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-084",
+          "prompt": "What's a TEAM ANTI-PATTERN with AI?",
+          "options": [
+            "Discussing AI tradeoffs in retros",
+            "Sharing prompts openly",
+            "Everyone learning AI together",
+            "Some team members use AI heavily while pretending not to, creating uneven quality and trust issues"
+          ],
+          "answer_commit": "hmac-sha256:5eb69140839dcf8d03f9c56952642dc2",
+          "explanation_enc": "aes-256-gcm.v1:H24hX1o8FVhtEzAx:GGE9ySqY8fw0KMoi0wBbcn6i0bEJ-dbF808ziZ9xdHXNLAiEgfxiIB1D_d_qpIBiysuUgjVDhcUjpgG3M0KNfEHNPGasR8tpj7ZizO54hv7cuDksh7aMqFoDCav4RTl23WlHI0ezB7Lhwbn5BOwnQ1rgJlpNqsQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.97,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-085",
+          "prompt": "Which AI feature helps REMOTE teams?",
+          "options": [
+            "Disabling chat tools",
+            "Mandatory video calls only",
+            "Async meeting summaries, translation, async voice-to-text — bridging timezone gaps",
+            "Forcing everyone into the same timezone"
+          ],
+          "answer_commit": "hmac-sha256:1c700c1b6420d5fe81e433b71eddd7a1",
+          "explanation_enc": "aes-256-gcm.v1:SI6R7hU950U6LSsU:jGqZNI21bd0xC8mn8r3Nrh_hLKvzZagJxXXt0pV6_AhQC2cXwyJ4S_zzp4UoeCcoju0ShfKyI-v50FRgX_4rAytC7mnT9u1pQmXi_S6K88qkJmST2ulYSZhTW_rvhrk1FUdeiVkJnm-yz3OJt3ZvN7t8lKSm5P3iUQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.103,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "AI security and data hygiene",
+      "skill_id": "rfv.skill.ai-productivity.18-ai-security-and-data-hygiene",
+      "items": [
+        {
+          "id": "ap-086",
+          "prompt": "What should you NEVER paste into a public AI chatbot?",
+          "options": [
+            "Passwords, API keys, customer PII, confidential business data, unreleased code with IP value",
+            "Polite words",
+            "Punctuation marks",
+            "Emoji"
+          ],
+          "answer_commit": "hmac-sha256:977bc16c247e78598fbfa5180dbefb29",
+          "explanation_enc": "aes-256-gcm.v1:OYabCd-PZ6iAp_hL:d2Pa2_6uMmq3DVcsI61wkVvfxZa45OIPraGwRn9X0KZNk7G4u6JcwwmHWnRopwmEmrwikL_hrbOJGDdtG5XOmxQPy7dMRIwE1mW0rlwEs8J31iShaTI2_z0K7jb9lTSiWGUIMob7OdA1amQXJi2y49a3lByHoMPYBOw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.412,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-087",
+          "prompt": "Which is a SAFER AI option for confidential work?",
+          "options": [
+            "Cracked AI software",
+            "Free public chatbots",
+            "Enterprise plans with no-training clauses, or self-hosted open-source models",
+            "Pirated API keys"
+          ],
+          "answer_commit": "hmac-sha256:e5ce2088de2a1ae68b71833f24e1de6e",
+          "explanation_enc": "aes-256-gcm.v1:lvuzPbhg8r8oAaw1:gxR5zA98REFR9KvmS_K3bNNvr602XWLRxole9772T50G0JCJXRm1of7D6DO-ibOt9mvDWy7IXNSBO-zFm_GwpO8rSlwRLREZ2gq4gr2SrwMXSpSsWKpZo13IL-H0bW3tFG70y1U6do-438nkNMGoVkpKqwQU-CeZ09d3b-9gjEOscLMKYcJTxf-cj4oO-50AqDI",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-088",
+          "prompt": "What is 'prompt injection' and why should productivity users care?",
+          "options": [
+            "Malicious input crafted to make AI ignore instructions — risky when AI processes user emails, web pages, or documents",
+            "A type of SQL injection",
+            "A backup feature",
+            "A vitamin for AI"
+          ],
+          "answer_commit": "hmac-sha256:3a556effc560ee384c13d5bc68babc29",
+          "explanation_enc": "aes-256-gcm.v1:0TTvQAfKQ60heSgV:Oqgn_OmoB5aJ9WWhPHpCTnvBqzc7bxSRINS_FUfslCdLubDWWcDKDsc3TtJZOqn9gkAuxpOMB-HQPCGOgrXCDbsYp_D3CRQjrRuOEyzfLmPBdkwp2Aq8yBTingD1Tnc_49qipnZn92FyvqkPJKBTMZYvoymlTWZECQU17MyQJ-UdbAm5u7cQc06Y-6sZG7InSFq_XZVkeqvHvDrTcMGE2tY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.087,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-089",
+          "prompt": "What's a SAFE practice for AI browser extensions?",
+          "options": [
+            "Grant all permissions blindly",
+            "Install every AI extension you see",
+            "Ignore privacy policies",
+            "Audit permissions, prefer extensions with clear privacy policies, disable when not actively in use"
+          ],
+          "answer_commit": "hmac-sha256:808d7fc974ed159e0dc29411e01c3e60",
+          "explanation_enc": "aes-256-gcm.v1:jUmpdb-9aj0Y6vzG:tpYyc8r7lrMWg2_MOdek_SmZQzLYsFFiKLh0VzR6ZB3Yy8ljhxYr27PwC36UWelsEENG2m9Do-VQRqPs_7Mgd-Z6FMTIoAOs8xWbG0rSj72mwE_kFn7RQRh0UxX612G_fNqVQYDjxlSnyAAb0F5QW2cwuhilZ2hS",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.882,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-090",
+          "prompt": "What's a GOOD habit for managing AI subscriptions?",
+          "options": [
+            "Never cancel anything",
+            "Subscribe to every AI tool",
+            "Periodically audit which AI tools you actually use and cancel the rest — they add up fast",
+            "Forget about subscriptions"
+          ],
+          "answer_commit": "hmac-sha256:aef81aff1eab67890b208e5035507d95",
+          "explanation_enc": "aes-256-gcm.v1:P3pB93HMZzvSez4h:XxJiZbHQx0eA6yuyJVCnND6p1oAQxdhY4QHRbEUb3u5ONNpDBb889pPM-xT1_Ic1NaYoSDj_20pwIpZDRqD9id2ngAGVYtdeUsOa4h8zsT8TuN64XNT1lTZVphgzNF4yh1V9g88Mq0KO_lM6XzsR0jEA-5tO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.423,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Long-term AI productivity",
+      "skill_id": "rfv.skill.ai-productivity.19-long-term-ai-productivity",
+      "items": [
+        {
+          "id": "ap-091",
+          "prompt": "What META-SKILL matters most for long-term AI productivity?",
+          "options": [
+            "Avoiding all new tools",
+            "Mastering one tool forever",
+            "Continuous learning — the field changes fast, the tools that win in 2026 won't dominate in 2028",
+            "Memorizing AI history"
+          ],
+          "answer_commit": "hmac-sha256:2a1b2151404e82d9aae40249e46b6fc3",
+          "explanation_enc": "aes-256-gcm.v1:sL5BydeG-YRpxgW3:Jr8skYf2E0_jmUz58P6JjTPR558Df6fWn82ckZRYFKNup_rCHdU-SOkGwE1LWt9SAEo2pt4SQh2u0x_aqNA08Dz1NiSLMjHHmC3XI1970Ga25I4kM8irW5dics9LKA4fwYGVfeut6b_Ls9pJmnT_0kiHWoZE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.654,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-092",
+          "prompt": "Which AI skill TRANSFERS across tools and models?",
+          "options": [
+            "Memorizing all the model names",
+            "Clear thinking, structured prompts, evaluation skills, knowing your own workflow well",
+            "Speed-typing prompts",
+            "Knowing one specific UI by muscle memory"
+          ],
+          "answer_commit": "hmac-sha256:74c86d42c8a93c08733bb9cf22f6e0c9",
+          "explanation_enc": "aes-256-gcm.v1:KbBZg1-izrgOd_ke:iWeGo6-PChL5zVS8t5QVrwzyzB4t1AKCQZ7p9cwB_xmihZnGNM9ZNExXpcL9VpOq6FA2gdIZjdNY19BzsbIRjqqelkzTpN_HAbwdAbzNMDPO7DGIXFCAlnXbNyCE-PyokvcrziNtAgpE5R58X1vAXOfW",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.125,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-093",
+          "prompt": "What's the RIGHT mindset toward AI replacing tasks?",
+          "options": [
+            "Compete with AI on its strengths",
+            "Avoid all changing tasks",
+            "Pretend it's not happening",
+            "Move up the value chain — let AI handle the tasks; you focus on judgment, strategy, and human connection"
+          ],
+          "answer_commit": "hmac-sha256:eb2a45352894e7c1ac5a11fe0979a7dd",
+          "explanation_enc": "aes-256-gcm.v1:eWgl5r_qAGOhr1ae:xuNLVvZU5gNjP8mQxuObMUC0KIcOjSsTa7Pyo9r8szsuJCcGh4bSLxd3S55xlAbaXBNPsoIyfxq1GpyWMhXa_rMx9YdhYcpEYNqUd_6QbXS3duBcjhno3I_NHgIq14E9YwL0VyPRFODpjqbMPxu_9eCxCqFrTbSJaf_scT4J5WeYCITEeA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-094",
+          "prompt": "How should you evaluate a NEW AI tool to adopt?",
+          "options": [
+            "Adopt instantly based on Twitter hype",
+            "Adopt only after 5 years",
+            "Test on your real tasks for a week, measure time saved, evaluate quality, then decide",
+            "Refuse to try new tools"
+          ],
+          "answer_commit": "hmac-sha256:1731783ccd1af6081a7401ed5e15c0b5",
+          "explanation_enc": "aes-256-gcm.v1:tUDZOtaYlPBIXSBi:eEU6KzcbfY-c8i9zwIJjM94fBXAM1Bzb5DEu303pGSSG9DSCu_r5j1VUpbkp-W78_KQVGFKhj9XqJ32nFBUrcRD44mtq6fiHfnh45JPH-wfkqXzONiyw75qJm8qUnYtb0rsglKsQxQ9y3279IgsECBhXl4dN6MN6sBZITNA0njoULcaVU0hR5gPk86hpVg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.297,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-095",
+          "prompt": "What's an UNDERRATED AI productivity skill?",
+          "options": [
+            "Using AI for literally everything",
+            "Always using the cheapest model",
+            "Refusing all AI",
+            "Knowing when NOT to use AI — for tasks where human attention, presence, or originality matters most"
+          ],
+          "answer_commit": "hmac-sha256:7960109ffd083813067ed566b5e4a87b",
+          "explanation_enc": "aes-256-gcm.v1:854okFoThIVzYxkh:hLKrfibjo4PqM-vFaMCm-195BX0Z95GEnY03XlzLSDh0zOb6lMi0y8R16fo5S5uxqdvqVnc_M0Kmepq5vtAw2c2IVlCIAHGaukv_M33ozxQThJUmcGVwNM9hWUMvz9aPHkLYjCq7LNbY2nz9ULbugsmU4EooiZUArD2wOBaRX5Pj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Building your AI workflow",
+      "skill_id": "rfv.skill.ai-productivity.20-building-your-ai-workflow",
+      "items": [
+        {
+          "id": "ap-096",
+          "prompt": "What's a GOOD first step to build your AI workflow?",
+          "options": [
+            "Buy every AI tool on the market",
+            "Wait until AI is perfect",
+            "Identify the 3 most repetitive tasks in your week — those are your highest-leverage AI targets",
+            "Replace your job with AI immediately"
+          ],
+          "answer_commit": "hmac-sha256:d5ddf8a3a90ff3f131fac43e382270b5",
+          "explanation_enc": "aes-256-gcm.v1:7fSJAEf48a5dyxtn:oAQsyb4gywX0Z6GiAs-NVVvz8c9Iy2m1c21i0HUmniQTJNHBnn-umms10nMpEqDnjMCIEbT86RzIeIbq4LZUpT4BkOF_NYO0ApBbUHE2Z9oBjdvHjggQso2fIDNdd52d8XofbiYODLW51OsG8BEV_mGf",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.611,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-097",
+          "prompt": "How do you MEASURE if AI is actually helping you?",
+          "options": [
+            "Trust the hype",
+            "Don't measure anything",
+            "Track time spent on key tasks before and after; note quality changes and energy/stress levels",
+            "Compare yourself to social media posts"
+          ],
+          "answer_commit": "hmac-sha256:6041b681fd1764cabc88c1c8e85423b5",
+          "explanation_enc": "aes-256-gcm.v1:AKCK_Nb_0MI2ORcu:qjS0elgSKLz_97JJZdvA7NaFXq48eIgaU6-L4mrFTDjzue7RdrV-yrUlhW8YyitqmbgDNSjBy2Lb2Pj7-mxd3wAazvWPNJaFtSrEr-WDd2VJnzLYXsNOtKl-MIa_3_A4rhXaCefNuYQdJisa36ulZcE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.447,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-098",
+          "prompt": "What's a SUSTAINABLE AI adoption pace?",
+          "options": [
+            "Add one new tool/workflow at a time, master it, then add the next — avoid context-switching overload",
+            "Random unstructured exploration",
+            "Adopt nothing ever",
+            "Try 20 new tools per week"
+          ],
+          "answer_commit": "hmac-sha256:5fb3b9777bb907928b2851d6a306e57b",
+          "explanation_enc": "aes-256-gcm.v1:gkIi1cNyEIYe6OIm:CmYkq5XxThKxgPaZvVgOpRYdyaKc49t-yHTPXjQ9Q2LIJNAvlIQ91QrlMTuM6UKemhWbR-Q4N960HLmsRjycm6m0rUEe9qSaPNYRqhcbVGvnZmOW3gXC9kqmKreccjR0A3elrQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.226,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-099",
+          "prompt": "How should you SHARE your AI workflow with others?",
+          "options": [
+            "Demand others use your exact setup",
+            "Give vague high-level advice only",
+            "Hide your workflows",
+            "Document with examples and screenshots, teach in small sessions, encourage adaptation not copying"
+          ],
+          "answer_commit": "hmac-sha256:1a95afd4cea503e65d986c458050495b",
+          "explanation_enc": "aes-256-gcm.v1:MlfNVaBkATfe9vKn:POwurg6MARqMJ59MOUtEIj9-blow1R6oOfyB0pkJOreHnf3OJ5ksvWPJ7p6UuWEUXzmVQeShg-vENYl4A7dWrF6MMJorgWPJiYgsm7oRBHtYS9odPiVFgRBj67UJtIUJggl10tJ08GFoYlpwrQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.853,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ap-100",
+          "prompt": "What's the END GOAL of AI productivity?",
+          "options": [
+            "More time and energy for the work and relationships that actually matter to you",
+            "Maximum tools adopted",
+            "Replacing all human connection",
+            "Working 24/7"
+          ],
+          "answer_commit": "hmac-sha256:156eea9f0910fb10f346209521a5ccfc",
+          "explanation_enc": "aes-256-gcm.v1:jBmX_08QPnLd0ncc:jB-K3oVcMAlhuAmwoQCijpKAGLp1wSM3yZy7PKI9D650YmLhFVjkuz3FXD8tCBUlSg-Tq4KXN7ZX0Ag3FP7VCny-Z-XGL80whAIquT80ez2tqfT57NTp8-BqhTbqJhxC6joglSc9sBAdhoaZzCYJAhceCxa0YPdSehiDVjyx2oZy7Ua5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.633,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:7a1af96937cc2e07512c4218795f51b7584e39a5bbc14525186c335f2d581327"
+}

@@ -5,11 +5,14 @@ import { Input } from '../atoms/Input';
 import { Checkbox } from '../atoms/Checkbox';
 import { Button } from '../atoms/Button';
 import { SectionLabel } from '../landing/SectionPrimitives';
-import { getUser, setUser } from '../../lib/storage';
-import type { QuizMeta } from '../../types';
+import { getUser, setUser } from '../../lib/attemptSession';
+import type { LevelId, QuizMeta } from '../../types';
 
 interface RecipientFormProps {
   quiz: QuizMeta;
+  /** Level the learner picked above; carried into the attempt route. */
+  level: LevelId;
+  levelLabel: string;
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,7 +22,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
  * Persists profile to localStorage so user doesn't re-type next time.
  * Submit button enables only when all fields valid + checkbox ticked.
  */
-export function RecipientForm({ quiz }: RecipientFormProps) {
+export function RecipientForm({ quiz, level, levelLabel }: RecipientFormProps) {
   const navigate = useNavigate();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -48,9 +51,9 @@ export function RecipientForm({ quiz }: RecipientFormProps) {
     if (!validate()) return;
     // Save for next time
     setUser({ name: name.trim(), email: email.trim().toLowerCase() });
-    // Navigate to the actual quiz player
-    // (NOTE: /quiz/[id]/take route will be built in next round)
-    navigate(`/quiz/${quiz.id}/take`);
+    // The player requests a signed attempt from the server; the level choice
+    // travels in the query string and is validated server-side.
+    navigate(`/quiz/${quiz.id}/take?level=${level}`);
   }
 
   const canSubmit =
@@ -68,15 +71,16 @@ export function RecipientForm({ quiz }: RecipientFormProps) {
             text-[1.75rem] leading-[1.1] tracking-[-0.03em]
             sm:text-[2.25rem] sm:leading-[1.05]
           ">
-            Who's earning this cert?
+            Who's earning this credential?
           </h2>
           <p className="
             mt-3 font-mono text-sm sm:text-base text-fg-3 leading-relaxed
             max-w-[40rem]
           ">
             <span className="text-fg-5">// </span>
-            Both fields appear on the certificate. Your email is hashed for the
-            public registry — never stored or shared in plaintext.
+            The name appears on the credential. Your email is used to bind the attempt to you and is stored only as a
+            salted, pseudonymous reference — it is never written to the public registry, and it is never shown on the
+            verification page.
           </p>
 
           {/* Input grid — single col mobile, 2 col desktop */}
@@ -111,16 +115,17 @@ export function RecipientForm({ quiz }: RecipientFormProps) {
               onChange={(e) => setAgreed(e.target.checked)}
               label={
                 <>
-                  I agree to the integrity rules above and understand that{' '}
-                  <span className="text-fg-0 font-medium">
-                    3 violations will auto-submit my attempt.
-                  </span>
+                  I understand the assessment is{' '}
+                  <span className="text-fg-0 font-medium">unproctored</span> and that Secure Mode signals
+                  (tab switches, fullscreen exits) are self-reported by my browser and{' '}
+                  <span className="text-fg-0 font-medium">auto-submit the attempt after 3 of them</span>.
                 </>
               }
               description={
                 <>
-                  My integrity record is baked into the cert hash and visible on the
-                  public verification page.
+                  The credential is graded on the server. Attempts are also written to a pseudonymous history record so
+                  retake rules and the integrity signal (self-reported violations) can be checked — no name or email is
+                  stored there.
                 </>
               }
             />
@@ -133,7 +138,7 @@ export function RecipientForm({ quiz }: RecipientFormProps) {
                 cmd
                 disabled={!canSubmit}
               >
-                enter-secure-mode →
+                start-{levelLabel.toLowerCase()}-attempt →
               </Button>
               <p className="font-mono text-xs text-fg-4 leading-relaxed">
                 <span className="text-fg-5">$ </span>

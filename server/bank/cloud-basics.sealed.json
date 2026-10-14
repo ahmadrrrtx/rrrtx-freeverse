@@ -1,0 +1,3499 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "cloud-basics",
+    "title": "Cloud Computing Basics",
+    "description": "AWS, Azure, GCP fundamentals. Compute, storage, networking, serverless, containers, deployment.",
+    "category": "Career",
+    "icon": "☁️",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What cloud computing is",
+      "skill_id": "rfv.skill.cloud-basics.01-what-cloud-computing-is",
+      "items": [
+        {
+          "id": "cl-001",
+          "prompt": "What is CLOUD COMPUTING?",
+          "options": [
+            "On-demand delivery of computing resources (servers, storage, databases, networking, AI) over the internet — pay only for what you use",
+            "A type of weather data",
+            "Software you install offline",
+            "Storing files on your laptop"
+          ],
+          "answer_commit": "hmac-sha256:7c6c95aa598a6bcc3784901d8f0ae921",
+          "explanation_enc": "aes-256-gcm.v1:qqyvNmpSrG4G4SUR:0oOHGvTQLS59Z8gYsq_KR-Jfc8t2usy_m5J0zsLGK7hez4aVf8oUR-aw2uAWWNaVFPz5iyxr_8okQ8lITg71-jEr44jHCJ1ZuIu6uZVs35-v0WEuKoaWGZTYPX3pIAE5yBiA3duGQG__jXkFjp1nAnKO1q2SNOb3srMk59jQ7MXqYaR6vaIuWt8-ORJ9VggHtpcSUeua4piNv_Wbw9779RofRKT6nrU4C8RAAGFaBIN3CKkcsM8mhxA5Wne1hVudBF4hO-KfEseJyu7dGJvn5i2selb1rpSLVR_BGvnNMRNIaZvh5G35MdFP6vB1CjxLbc0at_gU44LzXkifdh0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-002",
+          "prompt": "What are the MAJOR cloud providers?",
+          "options": [
+            "Only government clouds",
+            "Only AWS exists",
+            "AWS (Amazon), Azure (Microsoft), Google Cloud (GCP) — plus regional players like Alibaba Cloud, Oracle Cloud, IBM Cloud",
+            "Only one provider per country"
+          ],
+          "answer_commit": "hmac-sha256:50cadd62c34575e3467743c84fd9b2b9",
+          "explanation_enc": "aes-256-gcm.v1:bmO6z_eVwmHlwc_O:nViBvey4QmZssfP5XYE2OqzdknF6wBJk222M6nq1ZoZ_qWWZPV2YUpgnTsOEkL6FFOZNPd_R1cmSFhaHT6yv3QxrmCi17X0lBgQ5b_eE62VemzqrN1RawtNOzA5myL1ezUyiGkEGxUrgV1v400qsdFd8sfLILhSjOxhiUwR9_Bq2gTDdyfL8cALGNIjRiW1yJRyKmokYVrCMLB17_TflYatyZLHcFfmd4knGkJ3-v4sXkgsDzNWdwaz5l32ftLMQf28_zp7TyjI_71j-hPrR7hyjRIN1CBYEj3rR3Zusep1IjZcvRBEColRdDv0dbQuJlQ97QQrtTexPWNeV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.103,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-003",
+          "prompt": "What's the DIFFERENCE between cloud and traditional on-premise?",
+          "options": [
+            "On-prem is always cheaper",
+            "They are identical",
+            "On-prem: you buy/maintain physical hardware. Cloud: rent virtual resources, scale on demand, no capital expense",
+            "Cloud is just remote on-prem"
+          ],
+          "answer_commit": "hmac-sha256:2818f7cef6b352080189e1e2b3cbbda7",
+          "explanation_enc": "aes-256-gcm.v1:VBFpAN7MovxK7Oa-:UerEX4uyo3NlYJkT01T35wNUE3nQP_bEKNLMwy9YosovAXOEIEBtyhfFtQdRKmbC7XxU7axpZY33LeizfTM16U-8lnK26gZqgrPg58vGS0j9-b-iVHKXxDS-p4plK-IvF5I5JH0lfcjortwOcSyUS9Vj81kzzdgkrI22HY9nltpg5DyzQAuHqW-1uLpLP-sIsIUZyz84R7g5q0zB0P2JyK4ig7qZNOdwbEuXsz7arapTNV2aIZesH_75SpBr82I_bCGjHetrJuFJlxPiSzM3pEC4q6I2K0C84UlnPfCZvTk7Pe1CR7cZnwV4KCfom2ZbrGakz84kxUFwxGiAGmlcHqplnv1iopWfs2BBZSYBqQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.964,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-004",
+          "prompt": "What is ELASTICITY in cloud computing?",
+          "options": [
+            "Stretchy cables",
+            "Backup speed",
+            "The ability to automatically scale resources up during traffic spikes and back down when demand drops — paying only for what's used",
+            "A type of password"
+          ],
+          "answer_commit": "hmac-sha256:d373ab533c0ca905c19d998e284d7b89",
+          "explanation_enc": "aes-256-gcm.v1:DKF-HRa5cvQieq-2:IdXomynbh68_gy-Xk5CdxNpt3D8-dXZGKcLP4L6EQ5_1vGik4DKYKcoSFUIolVqNsnSj_fGcWId-Wd0Qm1fGiAWOe7bHJyZkKaXGOwVKlbc9PsZ80ZXK5miRG0hJUGQe2kOCWlr5gesfj6WiXHiLQyOOQgnCR_XgG0daC12zTUxIU-hYy1tueLhPZSc8XSD148sQzjyk6YWieBE9ZZFIlLQd6sJe6W-S1Oz6JLjKb-PXjmmM3H26nStaO-26qRoA8Qhugle_HfZ9nh_-FnHabQfJpywNk-1EL2Nt5T1J641j8wMI6LNgS49rjGILOfmRHX-pFKQ9NGfUKXS2jY_4JhWsI5VMTCC22I72m1m1OQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.278,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-005",
+          "prompt": "Why do MOST modern apps run in the cloud?",
+          "options": [
+            "It's required by law",
+            "Speed to deploy, automatic scaling, global reach, managed services, lower upfront cost, no hardware management",
+            "On-prem doesn't work anymore",
+            "Cloud is always free"
+          ],
+          "answer_commit": "hmac-sha256:9b4509598ad27d6c4feeb01b5bdb49c6",
+          "explanation_enc": "aes-256-gcm.v1:v6IsqUrohOCwOP3D:guh4ugfeGchZHBDKJW_JBzRmteBG-rUP6OS7z1hHlf3w-5opMPfNZ9YZ9PM439IE-CJwhsATbOWdnsYJ54BXKRcOmhrqWoeW1bA6lluOTtCpZV0onTWhvcgOkPS5iUYDLslAHmZOc_LCfOAVet_zt-a29g0NeGlTkBBmhR2FmIzRzs8TnPi7Z6ATamEsinQ7EgzprKIn-v7NHUv_rNEKPmd7FIhBzrTFyPXhhhmuRwNeoIaGI6-iicAJAy0E1LVL8n2-9Y8oMFKPnfyLgqCfJcw86fyKkhPi1y0191y02rinQByd1ZbSAeEXfy2x0edxS4C7EYEnaQQ4879FAg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.929,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Cloud service models",
+      "skill_id": "rfv.skill.cloud-basics.02-cloud-service-models",
+      "items": [
+        {
+          "id": "cl-006",
+          "prompt": "What does IAAS stand for?",
+          "options": [
+            "Infrastructure as a Service — you rent virtual servers, networks, storage; manage the OS and everything above (e.g., AWS EC2)",
+            "Identity as a Service",
+            "Internet as a Service",
+            "Insurance as a Service"
+          ],
+          "answer_commit": "hmac-sha256:9c1a3c945329d9fecf7712bb5921e604",
+          "explanation_enc": "aes-256-gcm.v1:MuREwOFZIUnh7xMq:09yZvN8stWJbU1Ey5WKnnRYybfWIBndcC96Gvq0IIeur42yUbr8GTko5cLYCjQjOK86pR0_IWFsZYDg3cYvGSc--YxDMlVQ41cd0UOCiCv1Qu9MVAf4LKa5f3F6xe-QC9UUhxsVxEVShYqq2o_wd1MIVKUL1QQrNdKfjy5JwMFcUIyb5rsfFtPjL-q56K6Ci5FD7qZqPM6Ld3inOf_kW2ipLYGrKDcafzT5gqTBdV-xSG9Q0diqbW_PpSx0u9gZBed6a8GDqsgm75gQhbZg24zKzot7_J4jE0kcLtAgDlkZFns2D3zpK8BrEJDb0Qr4sPw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.682,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-007",
+          "prompt": "What does PAAS stand for?",
+          "options": [
+            "Platform as a Service — you deploy code; provider manages servers, OS, runtime (e.g., Heroku, Vercel, App Engine)",
+            "Privacy as a Service",
+            "Programming as a Service",
+            "Phone as a Service"
+          ],
+          "answer_commit": "hmac-sha256:f0757c97192801d52e95cacdadcecdcb",
+          "explanation_enc": "aes-256-gcm.v1:hZJFqKaR6qLaM4bu:8FeJk0YCD9s4wHzqN-PbuiQWjYjVTr63xng_2m-AXxj6JdeeB8Maam3Q6DdDtxo5KQt4GUYAhfGfxmdOKnpYMS5fv2zFeRLV6xUCUptoZvnsZiuV76GKVTvAIIdquHA0s7Mi31s2WpQTdqoNlWNuPpJPDhF5eAfY6cXaIblxcGciU9pK2q7XVKJxNNO6Mkfr_Y7RgyYB4gRxIvwrB-JhZuYRVO2tQawNSopfekqT1E7tWjudrGwNgUjpFAPpb1PvwvFU0fYDpdWfPTY-dqA7Uv0cR5fpuyT3UdaEcqS2XWa7PAOzO2SlUmwAv3tq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.708,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-008",
+          "prompt": "What does SAAS stand for?",
+          "options": [
+            "Software as a Service — fully managed apps you use via the browser (e.g., Gmail, Slack, Notion, Figma)",
+            "Sales as a Service",
+            "Security as a Service",
+            "Storage as a Service"
+          ],
+          "answer_commit": "hmac-sha256:7619453a68cbdef8c1f137ab0d53bc68",
+          "explanation_enc": "aes-256-gcm.v1:mcXnNPNb_6EJJRfX:i53y7nzq7F4PZsTcaygCrU4G6yHOV7Ryahy5FOHn-10GNaY2rNfOpoWpbE4nlBx6LYqPZm2V-XSz82VHw-L8AalPCqWAbxxgaUYncYqWiLFhNW9LfovBOoIt9IdAKM-S4hnOnWkkhp_sxytJ2hSiD87OGmAi8IxtEHgBaLy3tzTCe9R_oMVqbFlG3-Yt4LMPUM3wrxXbJV7GeYK5sQl3qhY6CQPUVBg0bZPBR2bs8yYrMba7grxF_nUQMX3EJ_t3V7Fww_A9peZviy7Lnormv6KsZhsL-hWQpbk_M4yn",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-009",
+          "prompt": "What is FAAS (Functions as a Service)?",
+          "options": [
+            "Run small pieces of code in response to events without managing servers (e.g., AWS Lambda, Cloudflare Workers, Vercel Functions)",
+            "Functions for SaaS",
+            "Free PaaS",
+            "Faster IaaS"
+          ],
+          "answer_commit": "hmac-sha256:6961952199ad18a078c7895a7202c4cc",
+          "explanation_enc": "aes-256-gcm.v1:OwKlpAbhyixIt94r:Kg4iqSYYTixSNRbPWzc8wtiuzsaE7ZfIMdvXGUfYrlUDGDbgpApA-N6dcGAvZfQLT-R4fpOlMSVd3mf1zIb3fS_U10RdJZV57rC5MCqry6NPypiQCYXp7FMvzTjM0DsB22V5-po-xEvdOxvE5kPBffIl6z_rqoIQNDWgDFr5DKsa6vm5Z43qyWCHXlig8E52kYyLG3dX-mANmBM5ZeiwlL9w4iyWWRWDDwwZ9pjQoXsPGApAdki1BKsovM8TyO_6EpHIzpigFoqc-xI30UVcfpwlZ_rjfjP281p0_Gijqz4iNFkKamzb1Zx2TmEL8_LzDue6azRyuVN3og",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-010",
+          "prompt": "How do you CHOOSE between IaaS, PaaS, and FaaS?",
+          "options": [
+            "Always pick IaaS",
+            "Choose randomly",
+            "PaaS is always best",
+            "Match to control needs and complexity: more control = IaaS; faster delivery = PaaS; event-driven small workloads = FaaS"
+          ],
+          "answer_commit": "hmac-sha256:08f4f2c2f82d8da6bc61a38713ff8923",
+          "explanation_enc": "aes-256-gcm.v1:2SKqcHXbUyzwYlW9:SVwO-1iHQ-Z5bTCV-wXmwmf7E-mI9VGSZX58i7d49t223CZkM1JM4i5hH_37HwTw0MADjjdJpCTDNtRFm_cvYDMyzWWfH73_Os-yKkAgEQzB4A2RUWVTiXoAPgMwnzGitQVq9vAYL_LIxlk3RclAd5dH9fbCrNb5nt8NEutX6WlvHO30jqW-szjJ-OXSH-zre7gh3e7RkU_dJC_aPX1EfpryWG0Zvu1dUbNYDZ2kyjUAmL2Zm57T13d7DtKf1d5DE2oJWSYzYtOisPCwZMvJiSjs2G4ARy50P5GBcLi-C-Bo9NxsrFc23tg7s-BHlvCuwm9TEyJNObZJuCpxuH_WuGJ72TU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.263,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Cloud deployment models",
+      "skill_id": "rfv.skill.cloud-basics.03-cloud-deployment-models",
+      "items": [
+        {
+          "id": "cl-011",
+          "prompt": "What is the PUBLIC CLOUD?",
+          "options": [
+            "Government cloud",
+            "Free cloud for everyone",
+            "Cloud open to public viewing",
+            "Resources shared on a provider's infrastructure (AWS, Azure, GCP) — accessible to anyone who signs up"
+          ],
+          "answer_commit": "hmac-sha256:40f7dac2590f68026d20afcb8274d09e",
+          "explanation_enc": "aes-256-gcm.v1:mM4aPoqTETScHHa-:8gaQtt00Fq-6CgGbhA9d6CwTYDVkUhIwFFI8mhGPW24T-Acm_JQVwmwIfbp5B142y41bxFX9Pt3uk4qN2w6g984AOJbFhGpI3iLhuRMoo5caS8mFUAzUXQPmUtoLxMYchKPpCQkL91YFINJwnTargLQIbNI9imf0aunKhtKlErfJtZd_Kg49THqrPL_Ibsvll9Z0SP4RLxNBR_NKRjH7tBV9nz3XCoMrWOJoMoOBe6yM-ulY98otnaKHlSs1CokgxZpiQAwg58Izfk6dpnG3_3a7WE7avdaIMKedEbFv--JmCgiIFP2y7slSsR519Ynsv3Vh10exatlQT9nTZps",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.607,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-012",
+          "prompt": "What is a PRIVATE CLOUD?",
+          "options": [
+            "Encrypted cloud",
+            "Cloud infrastructure dedicated to one organization — either self-hosted or hosted by a provider for that org alone",
+            "Cloud only one person can see",
+            "Government-only cloud"
+          ],
+          "answer_commit": "hmac-sha256:4fe77a0d4edf45950d796f16c39435e4",
+          "explanation_enc": "aes-256-gcm.v1:54vnqOEiqdodBiZI:tiOZ6SFlfyKduwhNs4MA2NBZV6_j9QgmJafjBy6yEn9vQ8l5HiiNvsQJHIH7yAp048GD35Gu5ql6AI70DMWwOK1A_dI9F5py0IXxA8NAwnFpT6kI1g9NXhqRn_IvVcGtMTicLALQRugJ-2oE_5sFfx178L_y2VDE23QkOalSSZBQZjcM_DU6a-eQu6wiqSchxs6VC-FcYz5Axxvt9h1GEAtDHzsMAqdcCB20rFgxLZ5rWu0tkRYtkwGj-RubjbExJ99z2SE0xCyv_D8iqsOtNbiNJLepVUxx5d68XfzDd4ZOGvUj_PWq9LYOty2sbs6TvMGuPknc6NyUs1vK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.931,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-013",
+          "prompt": "What is HYBRID CLOUD?",
+          "options": [
+            "Half-encrypted cloud",
+            "Cloud with hybrid cars",
+            "Combining public cloud with on-premise or private cloud — bridging both for specific workloads",
+            "Two public clouds"
+          ],
+          "answer_commit": "hmac-sha256:bc6924b25a2053bf1a6d866cfd6f5bb8",
+          "explanation_enc": "aes-256-gcm.v1:CdV646WCg_uinP-w:di4V9Zh0geFnDhIqXX73KB1f7NQpGuGsVsGPCsZfxPuKDLPxAWAaOZImfagfWzlvK9fufRM5GRBblwQEgAo71oQv-wPMXrG6WdZb4NqjmJuNMtEG-sQSJd1iLwkHj9fdybKKXWCWoneXIaGYKn3EyIF7ahnFOyjIowGy8fIkzRdu5BDwLl_OUklE6R9Re-EviQMK2TYs4FheAIv6SSfDqGUgo6mMNSPyH6WSipTKRnbqavt_80FMdlwOkTcyAc4s2kDukDYdoF891lcP-iiRXR025dAmKTqyfMIsr3TRqd9WJvlcySAdlthlY40glwpn_j-fe6M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.273,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-014",
+          "prompt": "What is MULTI-CLOUD?",
+          "options": [
+            "Using multiple cloud providers for different workloads — to avoid lock-in, optimize cost, or leverage specific strengths",
+            "Many clouds in the sky",
+            "Multiple weather systems",
+            "Multiple usernames"
+          ],
+          "answer_commit": "hmac-sha256:d1e18f7e5bcde06abf998ac658115bf8",
+          "explanation_enc": "aes-256-gcm.v1:qFmPIw7E6fiezbeJ:fjFtoeFGYzNEuZFlmJl5sjpvT2a3k4oDQbw0bEO46-xfYn_4WRY9q4efdzEw4G_Pyte5fo5iFDPGWT5thbq1BoVF8R83vo9_Rzeee6TcjOvsdjsMN9AP0P76gxIeFG4-_-Ldp1b08Sts0FxCxaAVLPjTJCCOqpqrAeByPUx4hEzswqPKUnxXZTAgA0t6Q5wGm2rMA01xXKDFpQ5NHVfNegZHW_flEiXWshXajVuNnNMyRRsvw3CkiAh96vnrdxqifefTCoes1i9B-I9Y6fjJwEfwePa_E4R2YnWOSxKBFx7nmSo2W0MevA6kbxWIWRm2n8pdN2zg5dE9ffyYLGPb-AlznuNiO76g3Y2Nik4BAPkR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-015",
+          "prompt": "Which DEPLOYMENT MODEL is most common for startups?",
+          "options": [
+            "Always hybrid",
+            "Public cloud — fastest to start, lowest upfront cost, scales with growth",
+            "Always private",
+            "Always on-premise"
+          ],
+          "answer_commit": "hmac-sha256:a09f721b273b4ae36715dd992397459d",
+          "explanation_enc": "aes-256-gcm.v1:FmictvexRgdjrY7A:-CJC658xqmfZVmz7ShPNBuFRgoS9OtvhlVvCYcWcL4_fvkzRSFBkTgC1UhP9Crf27CKznB2K0bS-c97bl7oVkIOrcjIQFSdNFbBVN669z9KJzZWUsgurt_154PpDkjmXti2FY8ZXflZ6kBW1ckVLtrODsaAxUmpVv7vbiyG8uo5ducMqHTpsm4yINKpQfRRGNw1cAAev3XheMvZsxf_lZmC2aEzmzJmgVWglhFr87WRK6f-U-xBrxEbGKvVu3uIs2obWdqtF3NxoZ4wT9TZI3jsKr3e8lLCfp15rNeBTGeOAu9C6MAF4A_cImWIIvcGWaSk2XQvtoSsQI56qiA4GgRTm1wOrlYYr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.235,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Compute services",
+      "skill_id": "rfv.skill.cloud-basics.04-compute-services",
+      "items": [
+        {
+          "id": "cl-016",
+          "prompt": "What is a VIRTUAL MACHINE in the cloud?",
+          "options": [
+            "A type of database",
+            "An emulated computer running on shared physical hardware — your own OS, your own software, isolated from other VMs",
+            "A backup file",
+            "A physical server"
+          ],
+          "answer_commit": "hmac-sha256:558eb7e670beae24120ce279833cdec3",
+          "explanation_enc": "aes-256-gcm.v1:LCHiHjcI-fxm7wX2:1hauPqshL4GaktVEr66SCesMmu3URKqF7isd8JMo_JyQIqzeNTN4VxsgP6F2nYht2DZbq3XZuu7PsAPRLswlFvTCWBsjcplxfmr1AR2MXujYFafWkw6M0rqgkDrqYrLDCP7kusY1yiiNSOTcvHn6VX2Bnlbp1U1EfxPTM0QFq1_7cLX0WdMtVJs9nKAzcOeROX0LGJw3FBeVp7DY_kPbxaVmPN0kgNAPEmHsaq2Nm2OEqq2n4DkfLNBwRR7LoZO_YwPsDzSVMM2Td08e7m7mARtw-urOpjW6qRj6AclqSa4kLGkZ_0h-e0HMm3wxzos",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-017",
+          "prompt": "What is a CONTAINER?",
+          "options": [
+            "A shipping container",
+            "A type of database",
+            "A backup format",
+            "A lightweight package containing an application and its dependencies — runs consistently across any environment"
+          ],
+          "answer_commit": "hmac-sha256:81d05b59a95f45c10825c2ae3188d26e",
+          "explanation_enc": "aes-256-gcm.v1:PG4_YA_2cxhqNM4K:iOUcH6Y_mYdioaAvBVN4kBriyo_hctG68GHh_iXSCgGRtqmGgFXFC4ms2sJYymp6odGg2QqUMOTu3dassm_ujay6TgGUxtW-lj-LV-1Ye2tFdElA7gJ0Dpwyvda_RhIYQ-bfB9rZyEiN3IO-XywAXxhXO90UWgGni6M1pcnL_NfrtR1Ln0tU9uSqOnnJjFDRTZDYKPjEWvUzlldmpjaqoNgXHhzt6ztoQj1kUwlB6GOJ9O2VZBXTJZFBuTXAaGqEVCom0M7Ddu9oMEkt2pza-R42JAx5YIbXtypsbheuHP2MX50rTguc7B6tpRe4LLmnXhE8CDwEW61oTg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.55,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-018",
+          "prompt": "What is KUBERNETES?",
+          "options": [
+            "An open-source platform for orchestrating containers at scale — automating deployment, scaling, and management",
+            "A type of container",
+            "A programming language",
+            "An IDE"
+          ],
+          "answer_commit": "hmac-sha256:9aeee4f390b71293de1728b6f7ea7955",
+          "explanation_enc": "aes-256-gcm.v1:lIxRnLnhKCykxLmc:Wu61HT42iozU7gOhdLJrNTo_E4tlUDjtCL8iPYe0SbKZAxF-L--F7GFwUTp9Ns5sK3pqeuK0kW4ETGBxRmlO6DMv7ozGSenRsfK6hUCPSTHjf431tcQpkfqS7toqSeywcXw6KIQl67irzTjzJ7Eg5ESamz2v7b2JTCx196A8oA9u9RqBl7yoNZarzHo5E_7_WPE2beC76A7GIxwx8Bu4U-sgcDBlQceQ1W-T_ZKMLj3OE7l9B2RCT9Unxfrot8mYAfEB44lLHiX1vNcAHeqmFIKJLFu2diihjC9oJadSy3rM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-019",
+          "prompt": "What is SERVERLESS?",
+          "options": [
+            "A type of database",
+            "A model where you write code and the platform handles all server provisioning, scaling, and maintenance — you pay only for execution time",
+            "Computers without physical servers",
+            "Free compute"
+          ],
+          "answer_commit": "hmac-sha256:f000ec3b681604c8495e9be75488ca39",
+          "explanation_enc": "aes-256-gcm.v1:pLDBuMNDBfYUF9-V:sefaUXJo6qS-YNKnWXE8tMoxnFVepprQjTjz_iV6FQeskCpGefdN1GCxVLT6AJ4ezNbqa5QrcKd1RbyEdlWgkEw_RsOg594KigEKy-IsXY6LFHf9tM2tc8ANUhP_7vc3A7vgU7hFJwNBpUSOXlRovrthE5MqSBAoZQfZQw858HrBxCEogJjYjWlZQg6ns8rcUfHnBWBMk8NP-GkjsjmRJOU7Fj_NY-vYcxHJ85jKD2qbLuTi3YawNbe2InuzXfNLaBjcCDyn8FmhrG3srKs9DQIZoyDJsYCOsc5a1AdRkg5r871SecUCeg8ZeTMQW8o_cHzn3_3-i7u-Kw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.029,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-020",
+          "prompt": "When should you CHOOSE serverless over a traditional server?",
+          "options": [
+            "All workloads",
+            "Never — servers are always better",
+            "Variable/bursty traffic, event-driven workloads, low-traffic APIs, when you don't want to manage servers — and pay only for actual usage",
+            "Only for big enterprises"
+          ],
+          "answer_commit": "hmac-sha256:3eb8f80251d2dbca1a22105a379548a7",
+          "explanation_enc": "aes-256-gcm.v1:M5rbszpashR2SLFJ:uWAxaoWHcHflvmG12WU8TQ6pUgacikpB69eHCls7L3_3qWVqEOUIU6AYT9fTXfE19ag3Fn9bls61ZYYTsK2rNIq8PAacpc6ans4dYQj3z5VM_orec-LFO8ht2337o261Ep4h_XKjxTW9X4HJK3GSE8juX-N-ie2l-wlXWjDlQrdzfjYAudPb8oJhnol3dtY6jM3BhJO61_XMYMyublZQxEq2fX61ijB3D3spmFd73ON3wxYNcMjQBVwunXfkkIv6ff7uOFsZCydI-Ufvqi4K6cpm2tMRZzOzUWTW2gxrJTAHiGY5m7fA91VhwW3ifBWqCr5dgwKuzTfa5h7pXoktvw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.121,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Storage services",
+      "skill_id": "rfv.skill.cloud-basics.05-storage-services",
+      "items": [
+        {
+          "id": "cl-021",
+          "prompt": "What is OBJECT STORAGE?",
+          "options": [
+            "Database storage only",
+            "Storing physical objects",
+            "Storing files (images, videos, backups) as objects in flat namespaces — virtually infinite scale, low cost per GB",
+            "Storage for code only"
+          ],
+          "answer_commit": "hmac-sha256:c2968ebeafa89d4eaa26ab86866ef8fa",
+          "explanation_enc": "aes-256-gcm.v1:lBCfTw42YyZ--RO9:L5QGASAxLn-7FD7SzbvKQCNrwKnjs3Lakr7hBJu5QyOBc1Z-ZkSolWozJ4Zgq5dgbV0QxAM6GCi96_R39hZXb5I0MHR-cF2tfjZpU4UAvKcOAhzzXhiC1DdxEVg-7SbVBnL-DUuJv9-dxYUF-rCeKHNnk8RRv3Y0QOQTFKzWcztDx814NGIFLy_gm3tm4BIoqWTUoto02z2NYqKB6sy34WlOegiz4_sI2FqsTiQEAjRW7dihy6RTGhgoJv4SWKHXuuECvKSTMT-g3Vo5irkZ9V4tOiZJFV0R6YKdQHWc2LCBuc8UELwYNVBURbvOamUacYsFEnkanmtnkKCYbulyNeKQBIJJNYTL174l",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.708,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-022",
+          "prompt": "What is AWS S3?",
+          "options": [
+            "Single Server Storage",
+            "Simple Storage Service — Amazon's object storage; the de facto industry standard since 2006",
+            "Simple SQL Service",
+            "Secure System Storage"
+          ],
+          "answer_commit": "hmac-sha256:40ef58644a9cce6008a1b72a3cb8579e",
+          "explanation_enc": "aes-256-gcm.v1:uYIewGFi-6UhSF57:mtCpQKTwDOCxY1ZnwtzOuZerHfQOUUhOoDewwhMsC6bK-rW3tMPpfQEfMdpBHHqMfkvBQEFZfuI1PVKc8SJNlQbU3mldHGaMGQFSg1doLjQZQSxlai97JQGyuK4JZP2Ap1xpjgaF1uggWD0jioSkyXr72kV6vSRtmPC8pwGlRaxEKnv21ZzpdkmKo3sgt4PaVI6oFSKhAbdH5FmnNHRG9k3TFis_j90u7JyLI870V0_7Pn_UhinUJJdGf2-mbKbiu4N9nzTC4aFEfGsFYVyiA3a8ZtA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-023",
+          "prompt": "What is a BUCKET in S3 / object storage?",
+          "options": [
+            "A backup container",
+            "A type of database",
+            "A physical container",
+            "A logical container holding objects — analogous to a top-level folder, globally unique name"
+          ],
+          "answer_commit": "hmac-sha256:bfc080658643d964493d7fc42e8a16df",
+          "explanation_enc": "aes-256-gcm.v1:gQrr7UBGhtCrY6F4:oBKH72vleGNpKHsoaUbT97nhvFM5rGSOJL8XbyvS5K2Xc55mfNUrDiIBXvYrUye_TIuvXoACLzJOmvOqDj_d1xjU3RHjHp9R-uzshwhvd_69XYHA11BNg404UWzZGMOdW9OAwxGpooUqzTvaYmCVmL4YA1QMNvXnYAGq_HPAWjvjm5ezd1XKOx4qFlvlYSxAQ4_aRpjISN69Nu22kMyqJZcSc5rAHPysOtkpsktKaDtBjeFNvg4RhELuiN-k4HVPRwRDcDcfOEaULEJoz1c2CjTDh5eVwh4iQ9F8iTq-IGr7zqJI_JDXa1inySbnPTdDXO0lxUycHLRa-ibJDCRzBuMnkAro0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.55,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-024",
+          "prompt": "What is BLOCK STORAGE?",
+          "options": [
+            "Storage with limits",
+            "Storage for blocks of text",
+            "Persistent disk-like storage attached to VMs — operates as a hard drive (e.g., AWS EBS, Azure Managed Disks)",
+            "Storage that's blocked"
+          ],
+          "answer_commit": "hmac-sha256:5a14105c2453df992a5b4e954b6c86f7",
+          "explanation_enc": "aes-256-gcm.v1:R4jqoR9e1RpYmG6P:B3rhmwEXgHqw4GLOcnqOQxSPvR3x-iJNmMzWTwhVa77edEmATwN0FDiHVYtu9SVJRi_n4xRi4IYjSluhS-sIEeUcIKZZAxRbWgkPdfCCFlfCP8iBMz-VlpK0JmZMgRfJ-5bxWSA37mEJDYKq9jUIQN-IsF9Hh1L2Xkg81iJSc0w9KMwlCpU9voF3YyZ2M5RnGkI48zHtAV_lp3pLGRBM4QYz96O9DEvhO4o3v6N8Fkwzx59563MFwaWpBkJIi8NPSebbEJEdL8tslNELXD74QkKO0IJ36PCsxDhq_v8Q7641gE2dgupfZNY7_v86Urx9v9FxHb2Z1w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-025",
+          "prompt": "What is CDN (Content Delivery Network)?",
+          "options": [
+            "A type of cable",
+            "A globally distributed network of servers caching content close to users — dramatically faster delivery worldwide",
+            "A database backup",
+            "A content moderation service"
+          ],
+          "answer_commit": "hmac-sha256:6ac9022b9a7b95fc3aeeb1fe063e320a",
+          "explanation_enc": "aes-256-gcm.v1:rvTNsijffL5pJOPc:fFHoZCIqeA_FizJW3Kh7dg53v0LV2aMzIeOzj7knjMeVrEwHt2lctHw6Mev0YD4MeVzBknNS0HqFr9epnudUYnAkqUsJxU3S0_wy_kBdNs-TPsNXrjMDO3GkDZnMi_RHOlKg-PasmvUN2b3jd-yZXrxE1oW_xJSyA3amCmyoIqcIWTbIhPMzFROHaIlF6IqcS5IYGZSf54FlQ1K7vJaOUK1o2C2vHniZh6cLqhJ8O9lJ02wiDL_prySeZpisof5bXE7mKGDMYwaaaN6XTsbvGhFEfSA3-fZQv0g6MdiPV0OAS_xAI0A4zx0-fOp0ehwt-_tC94FBqq5xFdXe6TM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.036,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Database services",
+      "skill_id": "rfv.skill.cloud-basics.06-database-services",
+      "items": [
+        {
+          "id": "cl-026",
+          "prompt": "What is MANAGED DATABASE service?",
+          "options": [
+            "A database you self-manage",
+            "A backup tool",
+            "A free database",
+            "A database where the cloud provider handles backups, patching, scaling, replication — you focus on data, not operations"
+          ],
+          "answer_commit": "hmac-sha256:c6e56c2ddb637052c2e80ee9560f56ce",
+          "explanation_enc": "aes-256-gcm.v1:9YIZVOlH1o8XmSZs:7I5Eo57xX4NrBqD-WzVTNy78uACfV3u9f6JyoCQMsQmVetDCfHj4x_IA6bPfukrTriwH4K3XACebVgA1bJ147E-nBFoL2MSafieTSmeWbiSLZCg5fs0wZcf1NwQHWcL-zWhhSkSvjCIu_R0Rbrj5Wh1a1V09eTx5ZAUYPfVy-_w0oIIkcn7t0ZSRvc3sEqACaC-V3ifAB6JYAdBIcQJ1UIZAmdSbU3BsDlQnm1tKsgRuGAtNN0VGE5U5GoXIZVJUmKJTNhZpsP74s44HTWdaBrVDUO3wjGX_C608CmdbeF0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.577,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-027",
+          "prompt": "What is a RELATIONAL database service in the cloud?",
+          "options": [
+            "Family-tree storage",
+            "A new type of database",
+            "Managed versions of traditional databases like PostgreSQL, MySQL, SQL Server — same query language, no maintenance",
+            "Database for relationships only"
+          ],
+          "answer_commit": "hmac-sha256:ed002e19c61b1d2a0474234f9afa37cc",
+          "explanation_enc": "aes-256-gcm.v1:b0fQ3VwvwKNfdrjn:4Pfh-y-Hx5T7HHsx3hI6XmX3_ibjChEEM6ehskSnoNlMaIPVkTRUx9Z_EIzSUkrAB7btiI8LBSt28m76_bJNGLyvSwfEXSYzxu3eTGnHi5cCGpU1XnzXLikgNpwCyfLitNqq1k8XHNNpZ8dLH-5TkgALaf5szv1sVBhe7IdJyi6Ix1m-0gSY-xwABWUV8sUv41F8LejIY9XEtfNIHIA0P8RdE6VEQ0Tp1n-76gC5meEHA0oe3exOwDFVRenzOZLA2pgmIUsoFZHedUktqIiU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.677,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-028",
+          "prompt": "What is NOSQL in the cloud?",
+          "options": [
+            "Sequel-less databases",
+            "Managed non-relational databases — document (MongoDB, DynamoDB), key-value (Redis), graph, time-series — each for specific patterns",
+            "Free databases",
+            "Database without SQL software"
+          ],
+          "answer_commit": "hmac-sha256:19e35824f5dbe4a7dae1d91614e34e11",
+          "explanation_enc": "aes-256-gcm.v1:uHe9AECaCAk3yLvj:okXhP2f85622HFYBYiCKdthODeV3b98IhgrHGrHuUzI4wg4MN9vvtDuZk8i0ycZeC2wzzGWCdqs4EbO50Jyr3S6xlW1SC582jRCa5fOMi6SLL0QAR_qKUuMTUdgb4WZrBgI9al6krOQiWuqmlsCxqkjNezyJdrjjXOxu3GxhyujBxUgwBQ3qEtCeMkuxiKWcuuGAetCl_OqpCJiSbpKChno0BrVbBKoF9hPhH2PgpCKWCst6mKR9DMuUAUBUqcuKlF8CV8Wsc__WLSM4OK8IIJ_mxmt2AwvWy_53Tac8nHGHVYlg4eUcHAWft8JA0mBEa6YE3vcxuqhQ-TILaF6SasjyGcEdqLTPBs5c_WRGSykAuM75fA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.517,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-029",
+          "prompt": "What is a SERVERLESS DATABASE?",
+          "options": [
+            "A database that automatically scales (including to zero) and bills by usage — examples: Neon, PlanetScale, Aurora Serverless, Supabase",
+            "A database without servers",
+            "A free database",
+            "A backup-only database"
+          ],
+          "answer_commit": "hmac-sha256:60e11eaf4d0dc96d7bed34e014534906",
+          "explanation_enc": "aes-256-gcm.v1:_GiiGIebjort10pj:J_U__wOm861GPpNYeD26hWCPudkiCHhjjfPtOle4glh8U6l32nT9hH9zDiYgjjT1Ip_YVrnhu7lBXcLUKzo_e9vtWNxkbDOhGKIWoXd5fnhOseB4t5ho72stWB9nVhWeqkAVCeM-0nt0P6XBTFKIYilzZR-b9PK6Drj1Xg6aRu2Iej069N73GZM537KViHbIGjb5BfHeTfsorkyoGLAMDYKZOTj6ec_3Bcs-zyme4MjzoGPZTs5zYOUFhmNMc5FxlBBaXPIkkLrLVm21w51murKvTMh6fjjkmFN8A2T20yM2dLkRH77-BCUpHckJHAI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-030",
+          "prompt": "What is a DATA WAREHOUSE in the cloud?",
+          "options": [
+            "Storage for warehouses",
+            "A type of CDN",
+            "Specialized databases optimized for analytics on huge datasets — BigQuery, Snowflake, Redshift, Databricks",
+            "Backup repository"
+          ],
+          "answer_commit": "hmac-sha256:321fdcd25ce76c0064590d3f78b89784",
+          "explanation_enc": "aes-256-gcm.v1:P1caf47ajItPM37p:1lAYlHrc0ZET3B50E5kfIvtuiXbnmAaVjOfyfBmnQNxCWhWQdc0sPKit1rbq6uYHrKZ8UEyxVg0PzFj1K_V2rQnKOHZJRhKIhSBIiG0X14TwmIRONkWqZs2RPEL73-EyddxcJ_gyOHedM4DUM5rrrcLTfHLsoUDg4s00fotGeWVb7qrLo1QF_5SEdqsf2PTl6IOAjwpp7Qw4hlYmXlXF1_hFXYOJvlHeu-StMARxYcqSQj29tH5vahBR1Y9oV9C8PjkN05zIkBUU64c7MwbhA0xI2JZjShh-m8yo6PL6Ow",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Networking",
+      "skill_id": "rfv.skill.cloud-basics.07-networking",
+      "items": [
+        {
+          "id": "cl-031",
+          "prompt": "What is a VPC (Virtual Private Cloud)?",
+          "options": [
+            "Voice Private Channel",
+            "Virtual Private Computer",
+            "A logically isolated network within a cloud provider — your own slice of the cloud with control over IPs, subnets, routing",
+            "A type of VPN"
+          ],
+          "answer_commit": "hmac-sha256:d0431e52b3f0f66016f74024bf45ecd9",
+          "explanation_enc": "aes-256-gcm.v1:S68QrZfP7woxmIhi:Ud3e1eECENzAm6qt7dyGhc7TzKKQcZyfbsK3HYxs4pQ-ZxA_RbxYvZZ-5HTcyGf9eo-YMTYRDnXYoV_ZAGY6ogjapiB1rmy9mCiNiMcy_bzK8Ac4iyHg24dgeGEh4yBa1zvQXbJ4dUgvSGICyA4NyL3At55OCSZQ2rQTo22NPV-cn_w52oYEZAYnJzV0QgZlIqM8QABCs8afyvgaQrLWRKn6nf5xNdxApg8jlxmY3VP28JO9Bxs1JUm0POwKDV32thn_K1Q9nl7XYy0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.083,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-032",
+          "prompt": "What is a LOAD BALANCER?",
+          "options": [
+            "Distributes incoming traffic across multiple servers — provides scalability and high availability",
+            "A weight measurement tool",
+            "A backup system",
+            "A type of database"
+          ],
+          "answer_commit": "hmac-sha256:51352a2ad8f0628160238209187088cb",
+          "explanation_enc": "aes-256-gcm.v1:BRfHCAx65bkuq5i9:l_0_XfPyGvUYwTg9pjHtyMciPcEBdHlmJ3Z8RzsIIhBLx2SNgWuRqD4vuJTlv1_uMNnzOtD4bIabmwNhClRVKSEaIAIXj1Yly9oNCGdrS-8sZoPCjEHYvQoQ9lyxKOJ3SIXjNmvIVD97F9YEhkKW5hrCgeo0z2gIVcY_POppcyvbSxI7VJ-4lcq6wA1UjqkDxQIU2QLsdGOqEG1OsE8tvA_fvwkFox8x7S0z7D4AIHpy3FPXxYVRk73O3MJia7sZutpbv_lyGIbaoBRGh4uxngRhHIP6VS-7pS3htpYjLiH6jJJecBSneFs0Or9qh11eVn8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-033",
+          "prompt": "What is DNS in the cloud?",
+          "options": [
+            "Digital Number Service",
+            "Direct Network Server",
+            "Domain Name System — translates domain names (example.com) to IP addresses. Cloud DNS (Route 53, Azure DNS, Cloud DNS) handles this at scale",
+            "Data Network Service"
+          ],
+          "answer_commit": "hmac-sha256:7da03adee079898348d3cbf832430b8e",
+          "explanation_enc": "aes-256-gcm.v1:p_iP3pniuFt_WntY:e7sjeeCImQyq6v3AGksPRRfYjtmcLkB25BUL3E7gq418IjKg1a9HTbnij_9yEuK1Q2xqyZ32qkrD5YpniynlHXCDxBKZjpJ3o77JpA7NDUQo3hGlmYitkME8uC28ZbeqqvCX18fK8NDGNu0YrF6_7vC-ldSn_EMGmP1G6icX3VX8SCKxzd4BLOa6RriFW0v58gvH6-yW9xbtg35lO1GE1qEebNyG3mghdsv4YW-QGWBcqp0oquJ24bIf88_v4MAJfqTuAMeZHQFa",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.364,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-034",
+          "prompt": "What is API GATEWAY?",
+          "options": [
+            "A managed service that handles API requests — authentication, rate limiting, routing, monitoring",
+            "A type of firewall",
+            "An API for opening doors",
+            "Backup APIs"
+          ],
+          "answer_commit": "hmac-sha256:9fc26389b305475e6b3efb3557407b5f",
+          "explanation_enc": "aes-256-gcm.v1:VU8_PnExa5tQIjrU:5qPtEKhONSlW30hJYVrIJ-ZjSHX7J58EVZ-5zK9p7BBaIqJ4asRkpEWvkHc_LP3BR6j4YlCr1vBO8jP9B90YIkt4fZFOAnzYyzbOhgt2whHR37cH7f_FDNEjpl6pXfQR2rYuaKmvpwfbJuxJwDLAvmuOebNdDyYSQCWSQfNuxST9zM0E6h0wJDnONxBnn95MDVuYlGAQJSdP3OQBzVLi-_kzOeVSW4dfk6wpWlzAq_32MCARSPxqUQg37dF0rmgknwxXhE5PR5zrAgP9poGvcblKu9g9rdOkGBxPX2jliYW2ILOpQhj7-GOAq2A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-035",
+          "prompt": "What is a PRIVATE ENDPOINT?",
+          "options": [
+            "An encrypted password",
+            "A backup connection",
+            "An endpoint nobody can see",
+            "Accessing cloud services through your private network instead of public internet — better security and performance"
+          ],
+          "answer_commit": "hmac-sha256:fa6a45ce633291700c153c8a2ce6fd0b",
+          "explanation_enc": "aes-256-gcm.v1:_KTV-cWh878OrenW:7Fkq4tPyK9nWC7cnG8Ue4hSxy3vxacbB0sIMi6phw2t0o6_TjkXTIHaQwjaVA_PLDoTk1CGI-oGSNMDSHeqOfMAKkn0o8UgTfAR-Ii9y2Rq0eGCzmuKKLq83-D1b85SmIuljAGuLEXdklQETvXfOEg36y4SayDWhymYJbJps1_o_UpNyssTOj3_rX88F2n3d-I232rY5yWbgXWx0ewFgr3tpWsyUvt7hUQMZXKPQQYNbCHUNK1gJyMf8jfmwO-AQoXChV6VIxuYBIaRnsOaYMQnYM1E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.385,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Identity and access management",
+      "skill_id": "rfv.skill.cloud-basics.08-identity-and-access-management",
+      "items": [
+        {
+          "id": "cl-036",
+          "prompt": "What is IAM (Identity and Access Management)?",
+          "options": [
+            "Information Access Module",
+            "Internal Audit Management",
+            "The system controlling WHO (users, services) can do WHAT (actions) on WHICH resources in your cloud",
+            "Internet Account Management"
+          ],
+          "answer_commit": "hmac-sha256:477cf7c5f7d3c0d78cbe995692ebcbfc",
+          "explanation_enc": "aes-256-gcm.v1:1NDfZElIhtY-fhjW:Ft5ymjDhbXrkGsOAF9F8nhBK-10PSY_YFRVm9D-WkdN84TDdqPA_xtbPMVsoTHbDMQToMqABRF17yZGoOQRzPcqhq6Qf27dgrFjQibMgdLWiLpkjcU-J1sBwKGGxSpmNwB9CAChyih7QHixmlvv6yff10uFQdaR2dBRsPortwOjTVRkHSJ-HwpMOh0Y1mImF6ULU1Yfhzz7xCwdXnGhyc59xgsRV9Cwk4YOHSZ9RmuXp7jQFeFvue8qqBrz2R_tl37LPTVZSsmfHFBUrDLByXyTBkNVUyKebjx7p8xlaobcKmM6jQSlroauFYYmFNSk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-037",
+          "prompt": "What is the PRINCIPLE OF LEAST PRIVILEGE in the cloud?",
+          "options": [
+            "All access for trusted users",
+            "Permissions don't matter",
+            "Grant users/services only the minimum permissions needed for their tasks — never more",
+            "Give everyone admin access for convenience"
+          ],
+          "answer_commit": "hmac-sha256:bc99560ef624f4bed40dba3ae328a0ae",
+          "explanation_enc": "aes-256-gcm.v1:UYXkdeUDgbiVYq1U:8guATDbHS4Ga79kDZs7xw46nVlTbkfFsLyH19wJkSgZyAjUNC_lkqxLqKq_53OdEVGNnD9EsY8hoNy2Nd-_91M1bwI94utT6IUVRMIOpe01DvWQVnD-Xk5wv67j9YgHC2LWhUZych7qHu6SjyqO2W0m1yqSQG8jAk7YDY9341eaCRkfVql9uT_fBxbLZBPzuLYUEfDwpMaCsJO1cScX8EG8IErGpMxdrhJCwtHbgLUq4vtES0MbhCEVZPFykURs6eWqv4wbgN0dSbz3wOSP7BWYtAaWJFH4dIb3hldO2shcTqArfyaluq6w29ajbK7yetoe_e8P9tFGmcZVyK5VBs-6G45bARHtfOK1Kmxw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.024,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-038",
+          "prompt": "What is a SERVICE ACCOUNT?",
+          "options": [
+            "A free trial account",
+            "A backup account",
+            "An account for service workers",
+            "An identity used by code/services to authenticate to cloud APIs — separate from human user accounts"
+          ],
+          "answer_commit": "hmac-sha256:a373d4e183c1cd8b0a3b904e845a17c3",
+          "explanation_enc": "aes-256-gcm.v1:U1pIfbEBVdfkvISX:4MBCzvtnSuKRsaSIIe2XQa2NZ2XNay_XvQcYJFLIpCu6MX3FyI9HVemSd6qjtkM6DMKe7KYNpXpH0JjBGbCDoFjp3rk_bt1HwPQrTYUvPKW8p_Fj7F38sRT5E6KrSzX_aD5YvtS7F5EkuS76liVB69P9HJOjPvwkWfLZL9LKROHRYqTsTVHQZhI5jb0csJV8Rrjr7r3q6errwEGxbfjEeGlbnpMiYpENiMKPqXhgkx8QfJq2JlpLiEe3-WRUoIj74evbbsr5Y1vtDCAVBPicYLrQISCgMHA-pdjOCYQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-039",
+          "prompt": "What is MFA (Multi-Factor Authentication) for cloud accounts?",
+          "options": [
+            "Multi-File Authentication",
+            "Mainframe File Access",
+            "Manual File Access",
+            "Required additional verification beyond password — essential for ALL human accounts accessing cloud resources"
+          ],
+          "answer_commit": "hmac-sha256:71337cbca530019c19bf8a121cb92d18",
+          "explanation_enc": "aes-256-gcm.v1:zS4YDBFMkMCpNU6E:cZatyyWDiNHg-fBCvtaVF6NNwlS8fiyj5auNNoswbaMlhWjryt_cVf5-JVEo2gbeYTZoIQOnopZ3J8j5Jf__gyACyoqcq_VhfoexAQnLcfNntHFzbYlFsO9Nz2_5bpQ7_ghDrdbCi3u3LaF5IqQiMtd9owlcrwsK64ZRUo2wZXSnNJ1ysLIlf4WUyI2wPgilkd_Pg6z2iit0R2vWxmaWGnXvFvXP7nfbjy_W5rTUYq_kL2tg2s9-ugY2UbX75dBNMGDnJpUQZFun0NQoLwRjYbcWT5urOGkhj24iGlfbpBqNcJo4skdXmgwCyRujj5yxImuPkApgDha-oXi9wn2EOsLvBYK2h_7dnGQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.36,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-040",
+          "prompt": "What is FEDERATED IDENTITY in the cloud?",
+          "options": [
+            "Cloud accounts for federal use",
+            "Multiple country logins",
+            "Letting users authenticate via an external identity provider (Google, Okta, your own SSO) instead of separate cloud accounts",
+            "International cloud accounts"
+          ],
+          "answer_commit": "hmac-sha256:d90f350a15ad1c5da214833d50ad35e3",
+          "explanation_enc": "aes-256-gcm.v1:e_9xgywAiYDwFMlu:cSEt-sdExMe0kpHzJm3K1Ws6OXmM5JvRuJNdZC0CyoS03kJA3Q5nqye0lYvlydjE0PrBikwtgki3OVwBLi2jrGxc65dxRP9JzY1OQWZ4YJNiOs-rqZXaGZ96sMMp_ZBtRi_OWcrbu891gSGz6gacD0YGE19RPhXh36KmAXSJV_6ko-XfeP2Tl3l7Yqa6NC0AOuVNEEJTZpPGTTLpc-Pzz0vL7E4IVtdrwJZnch146fn4DFyb092G4K9Jc9hzy8IpJd_beITXXJLwWUJhcgZvMWtg5ZNy7qMHGY3EAiCpXXtR6JSwNfVJjuPf3FD3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.133,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Containers and orchestration",
+      "skill_id": "rfv.skill.cloud-basics.09-containers-and-orchestration",
+      "items": [
+        {
+          "id": "cl-041",
+          "prompt": "What is DOCKER?",
+          "options": [
+            "The platform that popularized containers — package applications with their dependencies for consistent execution anywhere",
+            "A database",
+            "A backup tool",
+            "A shipping company"
+          ],
+          "answer_commit": "hmac-sha256:077be2fbf9d895794bacc80f1d5bfcce",
+          "explanation_enc": "aes-256-gcm.v1:OknpiH-_jklOj1jt:m3dX0Q6R-KSPmHYCTeGneZVjQVtDwtxl1FH60tI9hgxm2uKpaxAUBYrckghabc_q8sWW6V82HSJAJmfcr6p0NI9TXWkIKfv_4zpf3ixqAf_-gbnXENQbdq0j0O_rsWwCatKG4324bTZBWjIWqHLoNVAFALhaeDdL3A2py8W64UDy9mzBpU1ltKhbnFCwbrw6iMAk7OpjZTcdubact5IL3oNySVpGtvWn-_bWQisRJOYQKOnsN_6mDYbPmvxI234jNpegg6bvdiLEXFgNIi-thZ40Ysiz2M08JcC-_qTlp1Ihz7BkvEcSzQYG_K4_siA63ksz5AQ7Q68HGFA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.722,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-042",
+          "prompt": "What is a DOCKERFILE?",
+          "options": [
+            "A text file with instructions to build a Docker image — like a recipe for the container's contents",
+            "A backup file format",
+            "A database file",
+            "A document about Docker"
+          ],
+          "answer_commit": "hmac-sha256:bb70dd93a17efeab12bab36596d59063",
+          "explanation_enc": "aes-256-gcm.v1:NZll6leqgyR-5pg1:513UX7UuTH4KlSgoaxES065phDHxlButZ5KDhG7CzQ6YzJWrTUauLVuhO1zwPbRUZFjppOt2cQj2OmrbDqEJ1L8MO0rXPCGaZy8lmHLdsInL8D_sADirfN4BlHbI37NFZabBOqjgSFZGo2F0xT7pK1nihQszPl3BnHxibBX44HUa6r4XynRmeXN4D7Vmi6UWJdaNhe4O04M3t6XYksuM6xUjRXQ7QDRPP7dr8tBqaJVtVDKjbi5jqchEvrLKr2-snVgnZzhZRYtJeljyfg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.261,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-043",
+          "prompt": "Why is KUBERNETES so popular for production containers?",
+          "options": [
+            "It's the simplest tool",
+            "It's free for enterprises",
+            "Automates deployment, scaling, self-healing, rolling updates, networking — at any scale across many containers",
+            "It's the only option"
+          ],
+          "answer_commit": "hmac-sha256:f7bf8ae4d98573603c4586ef8e42940f",
+          "explanation_enc": "aes-256-gcm.v1:EsHaLXaMsOkIqZEe:3hXEduQa2nz_62YZ84XkBZvFvGQTHluDc1jP95WA474wws5HXNmisv1FlwE8plagObMH52qJSRSmdXyTL1xRfe6jc3jeRdCrkbiEyGnIlW_J6MLEuB1bFQI7JCDbEWrDOMxuajcQv-eI8fYjNnQh0UMhRUKAx0iZoZVPyoHzUk8QbRqAbiVrZ3pU1ho7AOWx41N_9ZqklTFoS2PT8fYI1W1lpK1sJ-Oa4wipfeWJj1KN9Kj91LQjcJvk06nohut8psAE62JyLKMgQrUJeRrOhJtSQslSg6o9GExO0Q",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-044",
+          "prompt": "When is Kubernetes OVERKILL?",
+          "options": [
+            "It's never overkill",
+            "Only for tiny projects",
+            "For small/simple apps where a managed PaaS or simple container service would work — K8s complexity isn't always justified",
+            "Always — never use it"
+          ],
+          "answer_commit": "hmac-sha256:0279755ed6c60802883931e6837d87c9",
+          "explanation_enc": "aes-256-gcm.v1:rjS0FyZtgneyTF9_:pC3VSvksEQjhMDsr6TwRZLS-0kWlHNAWL87xC62wBz38oCCKvwTZQdNfqFLjCSw6WRvjv7x44Tv7LYjV36ya89C462TuBPMwxyVydKSVCfN_7hg0Pgx0pxWjt1aqzkaJQJrk2K5HW2CHdV6XNM6ZkTcImpUiOJ5Lvg-jZIQhCykcpG5cYWUUl-v9qyAr4nAmLz1LAG_RpSFp6dnXANdpU_Sit8rpFGCKMgxj6E3cE6XTnUZEQSyvs4tueYcpIT7dXqkrdFEXsVcXk-xmLlaaU0LGU98ZcQCmk8xy0BekCzzSV3f7",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-045",
+          "prompt": "What's a SIMPLER alternative to Kubernetes for running containers?",
+          "options": [
+            "Always self-host",
+            "AWS App Runner, GCP Cloud Run, Azure Container Apps, Fly.io, Render, Railway — managed simplicity over orchestration power",
+            "There are no alternatives",
+            "Only K8s exists"
+          ],
+          "answer_commit": "hmac-sha256:c5bad556dd8a7669caa95d1113331528",
+          "explanation_enc": "aes-256-gcm.v1:vBdvka--ny3R-A-A:A5nbP-ZL8e6A_BmFhrEuVbFSCKW-lrZRN0dZ0Tw-7gmHZnKztnlz1sAxbNY4FNMsHD2ZJHEmDgZLq5-HFM30mQJXNK6ENfDwzDcgjUGqjq_tEC7cTfrdJv3Jk5vA9SuOMTaEsQD23iI2pinTENww_KFv9hCqQItJINr5r2gBJPn-D1D4wEaXXuz-WsaIp752ieoWijHh6cbvGIKlDqAHaHpstRSaIORta8lgtGFF2NaFlN7UGyZ4eFnDgJymQQc41omd5tbBWnUy0o_M-J4OslUuMVoSBB9-7fVeSzgbvGPKaz-hAnJOxWttB41r6i8z",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "DevOps and deployment",
+      "skill_id": "rfv.skill.cloud-basics.10-devops-and-deployment",
+      "items": [
+        {
+          "id": "cl-046",
+          "prompt": "What is CI/CD?",
+          "options": [
+            "Computer Integration / Computer Deployment",
+            "Continuous Integration / Continuous Deployment — automated testing and deployment of code changes",
+            "Container Integration / Container Deployment",
+            "Cloud Integration / Cloud Deployment"
+          ],
+          "answer_commit": "hmac-sha256:4c3259bb5b29dc59c47bdff18596d8e1",
+          "explanation_enc": "aes-256-gcm.v1:iVrL3mnYv-1oqPsP:L9PFwlZl2FHY7PJb6967GDDlPAEvxdI0Pp7XKNrzrDnAyL7f8t4eln-XI4_-pdVxif-VniDSjnuzN7aZVyigWXAU9FQo-poKTw69mDPT05WTEPhVjMrxRxI4E49fKuLlQXPxk5Ap_AqgXKBaXYCgQNbCisCRTW9qmrherKCGw4z0tUlDe723VPROcDjd3d782DVNts7nVPcaBlNbVDAQC6C91mG32VVBal-QL60JYsl2_msBz6bGlpYPv07mHKLHT37vm72uCTNsCBkscszJI6jj8zvShqKPWtS8Yvjvxh6JUWjHMFLhjZ-zcspts9Johs1TyO8vO8b07_ITDZkOw1hoxhLu9FCX0ZH2UXpzS0qTU7-CdDasXy8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.205,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-047",
+          "prompt": "What is INFRASTRUCTURE AS CODE (IaC)?",
+          "options": [
+            "Programming with hardware",
+            "A type of malware",
+            "Hardware in software form",
+            "Defining infrastructure (VMs, networks, databases) in code files instead of clicking through cloud consoles — versionable, reproducible"
+          ],
+          "answer_commit": "hmac-sha256:e4763be331e50f1a98fd91aa51298065",
+          "explanation_enc": "aes-256-gcm.v1:5fm-1jrWV_DfTKGC:kxzmTrRQsFrolT7cqZ53hYsRcRDleLaRuRiGQTfdtAKGU-LiceuPNhsfCqFu1T1J3SnKLWVO6mS6n2XTm0pv-C4eEnBBHgH3zh8xhjM_JpSbfpx61sThMGcU2-hYO5jLWfHYuTg1xNeaqgmorTTuKsxBuOhdy7te6C_ULVLppF6nPIHiyfK-FQuqxZGoAbt15WkEDnYxkLg44vWVI32TvTeFdvhNPQbsUq-Xje0H7sOJCfOb7aafrwjATGNTr99Z8gwaFbu9gw3i3QaPLlto5e9c0HykSwVCFcHrmIGIe3iEGqn0aW6pZwawDV5ickHLHkcqiz2pPvFMJlWKsdg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-048",
+          "prompt": "What is TERRAFORM?",
+          "options": [
+            "A popular open-source IaC tool — declarative configuration for cloud resources across many providers",
+            "A graphics editor",
+            "A 3D printing tool",
+            "A type of database"
+          ],
+          "answer_commit": "hmac-sha256:541f47ac3293485f8478c9d63e7ad2ea",
+          "explanation_enc": "aes-256-gcm.v1:TdRoTkdskAXdOmUl:SLRrNZZt8msvMfydeRggl9sWcfBNT3Fxw52moKsG2UqK-825PxROnFAtmdo3vDCVf9WjHdhZuLUolKsphZuIZKMQorR0AKXIXQJsB2MDCYmW4HtoA4TRFiCv1FQOj7JpXTQwMRjWqZMNCfv8A5qAs8JIpfVKR7zO_-K9RXsL89Y4Qvpwiv0ty3uj-nEa4Yyosty1rAefZDa5WUf0JPL4CnPwi3AvLzmXnhyXV9qJ63GKWT1ebbfpiwtdtbw9ek4bsjnIAWV9yXLG845hLPxBdWjvPP9u1p0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.556,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-049",
+          "prompt": "What is GITOPS?",
+          "options": [
+            "Operations through GitHub",
+            "A backup strategy",
+            "Git for operations only",
+            "Managing infrastructure and deployments through git — git becomes the source of truth, changes flow through PRs"
+          ],
+          "answer_commit": "hmac-sha256:94221056cec81b24a2606d277785dd1a",
+          "explanation_enc": "aes-256-gcm.v1:mzaIwNnTpwEGsuVk:FAn0pLx97grz3ckvvDqLjVymeTpowDOADPcFk4-3Fwa0tZJtShp8Q_TiFWprQKA3ev4vIiWeas6glxWhgoAOCf-fB6T2e7vYQ2sxgrZTYcNNGQseaQWL_F53lnbf3T9DRCLMg3n9zZBQZyoGmwSq-n0pNvBfL5qby2dxDdFOz_BJLkyZs0ABySJgAWnlvhwnz8R4NbWvYSx1DDCybqx_m_LI6VzP2DDdTHuAaulVDPKx1JSP80xKMYqrvskRrFhFWEInhWPJnf246JyIvWvX_g372qOudhNVPQvx3hKgylsznJF9Ph-oTVODj33yXRqI4Nlq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-050",
+          "prompt": "What is BLUE-GREEN DEPLOYMENT?",
+          "options": [
+            "Maintain two identical environments (blue and green); deploy new version to inactive one, then switch traffic — instant rollback if needed",
+            "A type of testing",
+            "Environmental deployment",
+            "Color-coded deployments"
+          ],
+          "answer_commit": "hmac-sha256:66c76948caafd5d7c848e2cc0f5253ae",
+          "explanation_enc": "aes-256-gcm.v1:EHMP5Yjp1HsjkDK8:U_5R7XahWrhod01_LRyjflcjCowf3-Otr9HHatU9JPNF8KYkfApyml6yLznVlFSvSwuSmQdRLWD-K0Ts-2NA9P6clJac16FQSDbt27jJ1Y40tlO3fjD8G67pizv4onm_CFj1pQI4PWUYSkFXO5MPywfBANF2QgSL-vOUeleIAOMaq51Fq7JY_t5PGozbaLVWZY_TvQ3xZK-engdOigtYiU8SnqjKmE7t0TOj8ZjLDJVvee5XcqTJR16uMe-W1a8ztVS0tWLC1kNFotS4U8EV0YdotKQbf_oOp4dqJaTfb36FQbx2RBh8y1g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Monitoring and observability",
+      "skill_id": "rfv.skill.cloud-basics.11-monitoring-and-observability",
+      "items": [
+        {
+          "id": "cl-051",
+          "prompt": "What is MONITORING in cloud?",
+          "options": [
+            "A type of camera",
+            "Watching employees",
+            "Watching key metrics, logs, and events to know if systems are healthy and performing well",
+            "Backup checking"
+          ],
+          "answer_commit": "hmac-sha256:e1488dcf339a0020f59953235e310689",
+          "explanation_enc": "aes-256-gcm.v1:P7cWt0Y3aJrpkncS:AxYYerTM9utluoLk2ZMm1j5K5mMVuiF94fREmAPYOZ_HHAs_gMoE9DnaD6bd4Q9DyDjWO4NxpNNQZ97onhzALhxcxw5eyVUYHB9mJJ-GIlPg6YrkaAuRh4lGTy_oQcBQAF6TnBIbZn0SwYJweLLhErFdI-SfDUsybtZBQyW0MuLENv5fDdl2uIxo8rHthH_rQOaMZ8M1CFJHYTmr-0RdpL8ysKYd6tMhypKbFMbWj4NB4qx0A8LnMHDq4SFwsxa3mT7aHs-O4gK1e76sLa1UboWFbQ8p2RzwCsHKhnlG3PK6UzLdRfSfe3h86MUhOEk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.944,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-052",
+          "prompt": "What's the DIFFERENCE between monitoring and OBSERVABILITY?",
+          "options": [
+            "Monitoring requires AI",
+            "Monitoring tells you what's broken; observability lets you understand WHY through deep system insight (logs, traces, metrics)",
+            "They are identical",
+            "Observability is older"
+          ],
+          "answer_commit": "hmac-sha256:261d5a9b2921ea970e139ce20572adbf",
+          "explanation_enc": "aes-256-gcm.v1:GyFQkXiqsz8j0fw8:0DFQBs0JHlV3XOsQ1mlarXNuPOImuwSc30BlD0Sh85pWVRBab8jZMOdxNKuLAKIR797MqRI3FxNhXcaexkx_gtc6C6rwNMHvVqGcFgW7FAskoXZQKUEBRW1axK7X5yRZgjMupHiE38TSaJiN66_zzbmPlAZumTgDLtCnM4prbCHHoKBtg-fj7bogPD_3WcFE_ynxMsGdYgF4uNMqR63Tek94VpH65FjMq8gHuurvCL-K6zrSIXpSuO3vhupZojQ-vqIB8TMaZexKTIURSw7RuAxW1FWc1_0bnUc5NNdmYZ-4ZcpptZpJoQ93LTxnqFRBDHm8xiaRXGN7RRbz_mnv06GtiI-tV8Z1mbyTaFjIK2gKig",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.682,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-053",
+          "prompt": "What are the THREE PILLARS of observability?",
+          "options": [
+            "Cloud, Server, Database",
+            "User, Admin, System",
+            "Read, Write, Delete",
+            "Metrics (numbers over time), Logs (events with context), Traces (request paths through systems)"
+          ],
+          "answer_commit": "hmac-sha256:8710d0a746bba1346b3d94fc1817db6f",
+          "explanation_enc": "aes-256-gcm.v1:ie4AGDbsU097hwFI:bIXC4Og1eO4I6gJeLKCY9VO18OS_NHR5jlxGpvIqDhRYNrIoOhgGeFJlaUPjm_rxGDMYKUmS5brrer_ajAh4Wu2VRhqxtx9IAogqWCWYHC7GWJ5jRS8D4Msr8j8xTv588fGTxYUg5y377Mg8I6EwooFckf7PUOQr0zUZwhmxivDrZXIwh-DBA8klldbnoFKxlxsz4KNRDaU83WqqoDMsENVmR5-vISUHdpB7uYyYv5sEldFz5iK2tS_243A52PwuXHIfcyrTV7_w_D_jKS0JI-FQ4higrL6NinqgImKMG7FWr_AJtIFnls5KXjsS6YW55nLmYROWM0UUoU2Of_jesA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.13,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-054",
+          "prompt": "What is ALERTING?",
+          "options": [
+            "A backup notification",
+            "Automatically notifying humans when metrics cross thresholds — phone calls, Slack messages, emails for production issues",
+            "User onboarding",
+            "Sending sales emails"
+          ],
+          "answer_commit": "hmac-sha256:fedc78e60a303aa160faa2352411ce51",
+          "explanation_enc": "aes-256-gcm.v1:E5yR-ARp8KmSpbku:1wS--175ZRW9PHjIobfSds9ePVd2ZvYJHHeyfnLg_xPVYLluHFvtmO22y_uNJo4ntPwOMOI-ohFZPziQ_vZN9ZKsjAVaXqz3g5eA08fvIoKg7n3Uy7CCXcgD6BkF4Mr6Kk0pr4Lq8ZN4-WpgELbOT0SzeOQJNC1-OIzjrg-n6CMYm0ASvycrDCjB0BGrMR5W5jM2y6pFA0CIFn55Lxzlzb7G40m4vXa59ZSUGLdBBqal2zHkbq0F2xHUp4FAQWjYJgTotIOcAUNWwHjQqohRP8HS3Ix2WxHdYHzA-8MbF-MFO8P6o-7IQSY-DpkL1BymJDUbkg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-055",
+          "prompt": "What is a SERVICE LEVEL OBJECTIVE (SLO)?",
+          "options": [
+            "An accounting term",
+            "A measurable goal for service performance (e.g., '99.9% of requests under 200ms') — gives the team a clear target",
+            "A marketing goal",
+            "A type of contract"
+          ],
+          "answer_commit": "hmac-sha256:6adb5988071c3167ca4337613fdd4e4e",
+          "explanation_enc": "aes-256-gcm.v1:RV6YPGWU7N4l_Q0u:RjEpIzWSSEoaNotxaqgqPyBf9NsWuon8yjmcoKXVZPUdO9BOFP2ZunPK2z3pipIc8g5WYGWxkTWG_IjE7G7BCag5cTLBVbYVkIsqPZyx6esbkbhgsNr77PFJcmxswS6VvlxTk8HNO3k3k3ShkODAJDHHrnClso91UxQrUIvi-6-G9t1g7nIE38M_cdFAJ6BQSsGbE10lsAGGhckhv9axmFpfMBtcIGLgc2qkZHtclCqhhzRQFSIPDl9XbJJ2-i6KqPNG_o6rH9Ih7JaeCXXI_jjOLW1Y1x6DmJ7UrYYsYGPgjAsXBSuvWNYrdbW5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.278,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Security in the cloud",
+      "skill_id": "rfv.skill.cloud-basics.12-security-in-the-cloud",
+      "items": [
+        {
+          "id": "cl-056",
+          "prompt": "What is the SHARED RESPONSIBILITY MODEL?",
+          "options": [
+            "Cloud providers secure the infrastructure; customers secure their configurations, access, and what they deploy",
+            "Provider handles everything",
+            "Customer handles everything",
+            "Both sides handle everything"
+          ],
+          "answer_commit": "hmac-sha256:0a766c7a2fd797b514449e142a129942",
+          "explanation_enc": "aes-256-gcm.v1:6mqz1L1LJRz38QoE:i-t04G3AFXSsG-LWGrlT3RpEuHvjjDaKOKnDDwGmxpwUzzCo6IORWuvvtUY85TkXmzckRCIlcJoa8_5xpZQEYNk-lZvq5U9EBRh2zBwBLqLuVRBs2z121KBm0fc3ufQw6r9aQbrElvkBSkNr0XmosSlGHkN_4DCeBP-lVU8T1rCBBm1OyNOL3YoiykvkcAI6fIK4sO_1UZ4kGUQIGHmTKUiNkiaeyxThlL3X5KosfEZcs6Ji3AQU1LI3SoLbxpI6rZzOK5djqxcQpyu2NCLCRuZk0ixm18ZlkAaXmxYBDT5GCf9sxdRpqPY6dLrJCpwFAJhlXbgTcVkRhG54LAFT",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.929,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-057",
+          "prompt": "What's the BIGGEST source of cloud breaches?",
+          "options": [
+            "Cosmic radiation",
+            "Hardware failures",
+            "Misconfiguration — public buckets, weak IAM, exposed credentials, open security groups",
+            "Provider hacks"
+          ],
+          "answer_commit": "hmac-sha256:565a4f3ded0a6ea17189dbacfd46da06",
+          "explanation_enc": "aes-256-gcm.v1:8th9FdOYfRAG1-Xa:jfMUKR7xcURr140pdDOk-k0MpAd-SgR215TpOJpsrPJ07Gazj0EvzUw-5eRjmDfiHDWk26Ls2M7bkDnjhjrd6SHxghGFOdh4Eu1Aksa6GPXmFxqn5V8_iRoMRAh74WMbEwX-U001yhq8AuedfckDT6ETJ6vvwZUAiRahgAyj7OIl9wOjNXkbsMJ7zfYQOgqLjJDiY-eEgxS48skZgQqhBnuRXIAnSXtrAcf-iO9fn5_OcS6gGmEsXvs7-dDjxw7A4kCwQLtOdScswc4UP94wQrfLDC2Z7mPZ_KTlZ1WgMKfnxbMN2L3Ys9E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.059,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-058",
+          "prompt": "What is ENCRYPTION at REST in the cloud?",
+          "options": [
+            "An old encryption standard",
+            "A type of backup",
+            "Stored data is encrypted on disk — even if storage hardware is compromised, data is unreadable without keys",
+            "Encryption while you rest"
+          ],
+          "answer_commit": "hmac-sha256:d0914fc28640deb4b614f02de4a6f9a9",
+          "explanation_enc": "aes-256-gcm.v1:9ung_pjvH11hG0gT:E4_a4nv5UabBSlIVlcWg_ERYEMWzZh-wVh00W4kOLPdGvXOkWG5oqJGoWfWLBuNAi-0V8tV3K6dWSrB9Pljbf4iFayfNVSAcvwEaWihVBvmc9Ipa1fTlugEG-8FQE0g56LKUtDVR74KGk7NXOcg2-dsCxs2k7FqYtmjr7oQ5aHlWwZ3-E01ewQTqsknSP8cNtptEIHKx3TurbWTxtnzKx2dpLh7-sfmu5fnGi5aoeEnUtK-NPpAHApZrHAgUAyE94mY0TZt7bc6MVTCcE9yG_AzWf37lLjxt",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.115,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-059",
+          "prompt": "What is a SECRET in cloud context?",
+          "options": [
+            "Hidden code",
+            "Sensitive values like API keys, passwords, tokens — should never be in code, environment variables in plain text, or logs",
+            "An encrypted file",
+            "A type of password"
+          ],
+          "answer_commit": "hmac-sha256:5b1a1944cd6e6f9ef8e179d540783bab",
+          "explanation_enc": "aes-256-gcm.v1:rqbxTpG0SNZJkytq:-s2XoYwAPQ7BWwdp3x_QLwy3PZ6myZcAxcQ3_bO5pQ7SwdlTIdrWI3W4oyGa_VDmtXjaqIuwm--aD_s4JWTecxJq-xax_4Ko-5Z1Dd7WjB2PqL9jIMzZ5hV2PV5mRm_gVuee72DNFxdGdXgtYiNzXZSOxnVanJzsrXZAJmOreem3zKP7IKAGK0hWmNImIcQG9WBppy_VeQ-8NU_5VsT3x2HXk8ZQUJX0CDwqmVsZxuFF1DqsA_hSngzSdJwe6ijSYFVYUdFeTPYGrSEkpeghouBJ17oVqOrgUbQlim5M3T5Qw4hFgFa6m1nkeo3QPhZUfiKTMMbZjyWSXTSJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.722,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-060",
+          "prompt": "What is a CLOUD SECURITY POSTURE MANAGEMENT (CSPM) tool?",
+          "options": [
+            "A monitoring agent",
+            "Continuously scans cloud configurations for security misconfigurations, compliance violations, and risks",
+            "A backup tool",
+            "A type of antivirus"
+          ],
+          "answer_commit": "hmac-sha256:ef4314002a300e96e20aa0e54cef4d7f",
+          "explanation_enc": "aes-256-gcm.v1:32nogVKFOXT2U6y0:QmHVMzpRoo5WDev3BM-VAC476j1tpGwORhWuJHXeuqon28FiQZEDnudmQ1qZQHBqpR9rH6v1dR2NNFx8XrRJhpOCgDvcTAHtZXxuSqvCEppYvlS6IUNIm8rDnSxYPLDpWh3je93_zM8YSKfFfF3IukQF-4tNr4lAS8JLd0X4tRQnkBWPfVPYZBu3Mwy09sq4COrGb_OUMYbjPIHiqdNrBIG0T8RdOphzHvYjAkLjJwN0T4bhhM_TlhZrqFJuskKOt-LLJT9xx8TBfsDAKuyiVX7jKxWaSqYQsQMmCJlg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.474,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Cost management",
+      "skill_id": "rfv.skill.cloud-basics.13-cost-management",
+      "items": [
+        {
+          "id": "cl-061",
+          "prompt": "Why is CLOUD COST MANAGEMENT important?",
+          "options": [
+            "Cost doesn't matter",
+            "Cloud is always cheap",
+            "Providers handle costs",
+            "Cloud bills can grow surprisingly fast without governance — unused resources, oversized instances, data transfer all add up"
+          ],
+          "answer_commit": "hmac-sha256:feaa04cc9f5228e9477ccf828f2479ec",
+          "explanation_enc": "aes-256-gcm.v1:lf8X9ppSPWDNrJD9:gN1atCngnsbJu0G3T1bSxAiG7iaePtYsM4TTKYVSY41ZBQOq55ElqTa7d885UAVCfBRP0-WCANsOsED7pFN2AC4WIUNt002DNOLGyQKw4MIY95riD6VAivNDhDZmHYMXfS0K36QklhR2nO-YUSj4Cf0TDcreifo5f_oXJ-z6ZyK4Nqboi9HnTuPw08NsfxhgIwPKQWvSaKTxBk38xu9zVuJwIqVw8DzQ7JGdfbANzaUQX2658wkECFHFvqQrisJCYQ_MuNwN-1PYmTWC6Wf7VXf-xCKcYosN3gQJzjXvsgRBCfWo4XquPy0ZdBYvKKhspwn5Dg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.591,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-062",
+          "prompt": "What's a HIGH-LEVERAGE cloud cost optimization?",
+          "options": [
+            "Always use largest instances",
+            "Right-sizing instances (most workloads use less than they're provisioned for), shutting off unused resources, reserved/savings plans for predictable workloads",
+            "Never delete anything",
+            "Use most expensive tier"
+          ],
+          "answer_commit": "hmac-sha256:f0a9f507fd0e730b23763291bba1835f",
+          "explanation_enc": "aes-256-gcm.v1:IMIx50aWfIQSYmnO:0HaKrpIHb4PF4yur0ow8St0SCXZDWEHZWlS0Z3sjfkLeVOoxaSNa5GopgQDyTHu-SDeZq6JKG8xljpV5HIIg5fP6LLlzpCt4fsZ0-OrtUb9CfKKlZ6SKz4ps57SeUxadmmoOMPtXbEJIWFmud30IkLBXjesfADLhXm5LtSUlQDtNiIWJSzoyDOIeZLguBQdg1apgJ_5ZOb0_RFiUiRt2JWp1vrwf6CK9RI4zAwZfqXlWRMPIZ5cw9tyupTsAUSrPuiVzOF4qZiQ-p3dyPzL-iqqEVohTMFKlpBMrxkfaloayRQfGOAXVetYa8WMi3_zzv9NlqYff0xQTSbQ8d_Mbbw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-063",
+          "prompt": "What's a RESERVED INSTANCE or SAVINGS PLAN?",
+          "options": [
+            "Backup instances",
+            "Free instances",
+            "Committing to use a certain amount of compute for 1-3 years in exchange for 30-70% discount vs on-demand pricing",
+            "Special instance types"
+          ],
+          "answer_commit": "hmac-sha256:789f082d106caf783c4ff343cc79e564",
+          "explanation_enc": "aes-256-gcm.v1:qTbXfAmacZBIOQOz:yIFxJ6l8gI84ZzQ8xAOJVwGAUhL-He8Ogpi_2coSm_7JLdUpZSUfhvHmNYcFSeRMUw3e2rqDoUNhWXT3vWf8O4v_37g_EQ5azeCDnYnlLDNWUO2bvdwvXIgGWpxveTwiKTVdImkzCN4nEw8NaINT4mpDjYS7-AF4cVk5bAlsuKLbT2IagG8_u812nmcT_Cm3YJplxN25QQdINXPTjOsIrD7IW6qjXOE6tLyjd07XHCghINq-valoFRhI6f_-dAbebAPPNgI4BPzLcw78DAztrm31XD-tQYK_y71lh3XY9qc4jelfZ4f2w_PX0mHPtWY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.091,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-064",
+          "prompt": "What is FINOPS?",
+          "options": [
+            "Financial Operations system",
+            "Cloud Financial Operations — discipline combining finance, engineering, and ops to manage cloud spending strategically",
+            "FIN's Operations",
+            "A type of compliance"
+          ],
+          "answer_commit": "hmac-sha256:d946e66ecb8a0ee89f8318ac7724977b",
+          "explanation_enc": "aes-256-gcm.v1:Xjk6l72K5bjveZkv:YLYqTeONdAVogJunCbZvI3levpVp_7LY6T3rcUDHs-7wDrB8LdW7dC3wGH6M8404YSCG2zWKj7YoOu3-NrWZx9jJjaB3ih5pvC8vcZ5Tp768WGnC0breixuVSr-VMsDSDHZdrA9CRZ4YUnj5-YOxweVlcMQ6V3OcL2X0Ihh5Gxya0JotnsyMEXPWdz_aH39yiZ7qCCMOgHS3b2tWgKBgUmgo01jZ5DcVa3JYtZHY6uf-c7r58MofPUaYX_T2EuvD8K92fzx0hHuhzs5G25V1dGQZB3M4zQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.37,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-065",
+          "prompt": "What's a SURPRISING source of cloud cost?",
+          "options": [
+            "Domain name costs",
+            "Compute costs",
+            "Data egress (data leaving the cloud) — often expensive while ingress is free; cross-region transfers add up too",
+            "Storage costs"
+          ],
+          "answer_commit": "hmac-sha256:cfc7313b0babafd404f6d8b961f919c0",
+          "explanation_enc": "aes-256-gcm.v1:soGXIYFQl-a3cm06:UWkzNgWCGy66CKtNo0uWagFtIldMXqcvAH_pc3N8frG6npaujw2Zg8m9Uc1KRlpu6TK4VQvCaVhHK5bMlxZvze4aTEgBtXroYTk0hS6cYvlBU66Udk_uhBVnsvOGzmpQ2UvSBPdYkzswBHY2z_-PBiwfhHtHvBOpx4GA57aqyFjOJujY1KrKCCr3rocDhDbicQ9QcD8ZiJriSm1syH27-pabWKzdfQpHydzD_3DPNVIxEr6tg3aDwQQiSocFlTyjjafTN61tvmxOaBEB6kxrSx3jI_U_iFYl_T-PhLDVQjQeZvb8CQLitFPqtY9GCU_hXDjIRzFaxX2qV63PSos",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.529,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Modern cloud-native patterns",
+      "skill_id": "rfv.skill.cloud-basics.14-modern-cloud-native-patterns",
+      "items": [
+        {
+          "id": "cl-066",
+          "prompt": "What is CLOUD-NATIVE design?",
+          "options": [
+            "Cloud-only apps",
+            "Apps built in the cloud",
+            "Native mobile apps",
+            "Designing applications specifically for cloud capabilities — distributed, scalable, resilient, often using containers and managed services"
+          ],
+          "answer_commit": "hmac-sha256:40c06b028f0cae1f9df2836e859b7ae3",
+          "explanation_enc": "aes-256-gcm.v1:YASx7_IYKL4VK9dc:cQ1wmMiRXIhhV8zHP-O50nD2Kl2vkNHd9r8MJHARnFmJaiIjBEufYj4xgqI-CkfS7DR7wunwinHTLIvP3RDHQc13KH2J3yltNkWO3RiSVCIzr0cI_Ywi_5AmEwXveSbgyNxfn8g233OYqivu7GZanIVTaASDtm5gYIFSGOblcTMc-om9YAAtVWhx7WMxW7ehLHx98e-3EWSFfLtCvJayXQ5umR-Hy6jA7EwVt-WMn_RSqOWWbCk-YWHUoGAbbUC798Wdx-4oY0qXiPuxhrvY1UNml9w2tHSNro6yewbpw1W-RYrI3TY05pFki4q_mBKxiXN1B_-AtmCqoMdw9Wd9Gt5c",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-067",
+          "prompt": "What is MICROSERVICES architecture?",
+          "options": [
+            "Hidden services",
+            "Free services",
+            "Very small services",
+            "Building applications as small independent services that communicate over networks — vs one large 'monolith'"
+          ],
+          "answer_commit": "hmac-sha256:da49974ab2bc2b81a62e321b39b0fa7c",
+          "explanation_enc": "aes-256-gcm.v1:h973QFjusBrxZd0O:Pc9adMZ4eTdJj4wFtUZS0wLOyV3INFUT0Nb-tcz0oXUq2ZzbU9MDTTtoP50UMK-oPdJ0xir9h8Rm_yC8WS6D4JXNlziG_O1LHd5db9rQKMgDoP_D7M5ePp1PGSMszhWwVLHBbA8U-uyap9weIQ4Fiwc5XSa0p6S44zV8BKg0clczP2pBM5nIqYB4rPWqcAoT_BR6T8ZFhafM8SJWeGBFuWlibDra6JZLbflCVknsAA44XNCJacm7Y3UYsXJ6QM2k5MdLWXLVuo2nSQFdpmdvMoqE8J7XNsMUT4cYQs89C7b9zhiKSehYR_mEBlfrBtxeh2s2hGtd5sOrym6BT69f3I1et4PYmyfHjpmcGfJpWP92uXbnvs7cKbYlgpUd72QRg1Y1HgaX2g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.684,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-068",
+          "prompt": "What is an EVENT-DRIVEN architecture?",
+          "options": [
+            "A backup pattern",
+            "Components communicate through events — looser coupling than direct API calls; ideal for async, distributed workflows",
+            "Driven by company events",
+            "A type of calendar"
+          ],
+          "answer_commit": "hmac-sha256:3cb0ff68021e740a2d42c9de7c86767c",
+          "explanation_enc": "aes-256-gcm.v1:VRLfu60UTS-x8d3A:eW5jFjYUVkB3HFtDx-yV0ucLbyP6n_-_-6H37ksQkdiR_vazd2TvmTi8xbY_4DhiwX1A0A3RBN9i5mRXfrmjjqDXU_72Q_PPM_x-W1GCOacBiXayh_yuyFHbv4noghHuH2uoKk_fxwbM4nr1ZYnLv9dwRpiqIoFlnHdajrKGlDxT2tjxHgvHrVqI5eTkNrpp6tX1rDCijKHhISyjvJsrn011qcKqSFSxpFSsuR6VhA3Vb73QSRaW4Q_yQ071D8B8HJNFa361sWAfJeFXDp6n4dou4lPvwc-Z-5jeP2o9Y7u__UlqZw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-069",
+          "prompt": "What is EDGE COMPUTING?",
+          "options": [
+            "Always-on computing",
+            "A risky type of computing",
+            "Running compute close to users at edge locations worldwide — minimizing latency for geographically distributed users",
+            "Computing on the edge"
+          ],
+          "answer_commit": "hmac-sha256:84ab9e96efe3deeea4be42cda1aa0d30",
+          "explanation_enc": "aes-256-gcm.v1:se3tkgnQhMs5ZzAy:90_9LIR20VnlwVQSxglBwExdjNeHYGUnADyZPU3T8CBzRcK1N0lDlqiJLVBKbqwfLjqOQnTSyJfeGuoZE4ziVPvU7pxca1yHUFRmNY_T_tLIpKE4hcuWEXx1Mnu5R3hp5eF1V0emPZS56iTlIFP6w_e4ODvl96XTutGIbGfStcCESdDEvGDdbUP3O6q0prXpFmWlZo21UCE8wwIJXlp1nJuFgoLes7Koz-axLYYQfjbhV840SmeEELi1TaKzcXhneNXMZXcoibL-o6VJJVJpskVGz8IqiTDpT2eABRLBb9ToBx8nYHoXYA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.64,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-070",
+          "prompt": "What is JAMSTACK / modern web architecture?",
+          "options": [
+            "An obscure tech",
+            "A type of jam",
+            "A coding language",
+            "JavaScript, APIs, Markup — pre-rendered sites served from CDNs, dynamic features via APIs (often serverless)"
+          ],
+          "answer_commit": "hmac-sha256:526c40848f5c0acd405663d003ae2bc4",
+          "explanation_enc": "aes-256-gcm.v1:vkWDkJ79r9YPiO2_:YNIt-8Z1_ykb6ABvIVPPDvRFnz3DQn_DCC3skwZSdUnhuHjn4AA3xAFcyvOBjaxWfOnDQNaVkOGrhYsj_pmVn70W02EqQMpgo4fXIUkggn9KzjMaT3r-7C_-wGEvVXKJkcVycZF8LPK2BQWHbAsdR99KP7reoIN_4mJt-P64zJ2xwsTtcuAoWzEWA7uMMyxeX-SyF8RMCK4E9e01a8a4QgbZxuV_N4kNmm18hfD-kJ8s6kRv9yFKf7UCftNfOhLmeB7Y21iulPOl4UYFJUANz_3QohfeKA0dQNAlX6YA6oBrkTRxO6wMojDi7FQlug",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.353,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "AI and cloud",
+      "skill_id": "rfv.skill.cloud-basics.15-ai-and-cloud",
+      "items": [
+        {
+          "id": "cl-071",
+          "prompt": "How is AI changing cloud computing in 2026?",
+          "options": [
+            "AI hasn't affected cloud",
+            "Cloud is replaced by AI",
+            "AI workloads drive massive GPU demand, every cloud offers AI/ML services, AI assists developers throughout deployment lifecycle",
+            "AI is too expensive for cloud"
+          ],
+          "answer_commit": "hmac-sha256:0b7f3307570cb52527ae8356546150cb",
+          "explanation_enc": "aes-256-gcm.v1:1DAGUrjRAP95IfaL:q1iNfntuQ_hNnB_vNlMLhf80xFW0eRiOqa9KN1XE0gdZJ-5M699Lrn8ezOsHtwFaavWvJXqEh6ijYDC73OLHnT-IaOVnJ3nluKSjfM-1pJlI3OHLyd7YiNE-2PYwgMiZeCgkf1JgNLEnvnx_lH9OI1tBJCideO2C0lgixpjgENaXnwmIXiKZ-0gWLB58XpEMlJF_BUlsV6gwH1uqFVFIVTrMSbwTYMRIhG2XHJW1E6FlVUK60O2h4j-GpR7X2XZ5ifbGXF2jHgooQlcAvBtkX4Yio4extUhcwvvPybgb4uMpkM47HNqR0tDR2vLoJ8zYok8PW9pm66anc2eVG1CoSYyYCW0y",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.379,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-072",
+          "prompt": "What's MANAGED AI SERVICE in the cloud?",
+          "options": [
+            "AI that manages servers",
+            "AI for management only",
+            "Pre-built ML capabilities (vision, speech, language) accessible via API — no need to train your own models",
+            "Free AI services"
+          ],
+          "answer_commit": "hmac-sha256:74061857c354611b61e80fdfb9397e96",
+          "explanation_enc": "aes-256-gcm.v1:erYegFr2P7gC6oUi:BwNNezpOkahbLOIDk3PWDFxNzVlS6VfzfTOxduKK7f-h1naLhGtKQmVmsQzhTAUcZ7ViRUM82FQi4Kc7scqbP4GN19cSyz-64IFgBR1iSIUv_8C6kQM2NzEhLv2eAb6iSMkpo9YJGsQzmdTplpAHY599dp49YD-n5t5gsyQs-kV5qW0_sV0uzcweiY_cI56-osHfHeBeQuSsklxnquoptoCuJeJ2hyfUGbgKZp9fXywIyejJG3YIO8jWHNspSdVJVOmLsNKXI1H1AdPVIOGgC9XlvnaS1Fc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.609,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-073",
+          "prompt": "What is a GPU instance in the cloud?",
+          "options": [
+            "Free upgraded VM",
+            "A backup instance",
+            "VM with attached GPUs — required for training ML models, running large AI workloads, GPU-accelerated computing",
+            "Graphics-only computer"
+          ],
+          "answer_commit": "hmac-sha256:d30fda8b36f577b2365a3f82a0dbfad5",
+          "explanation_enc": "aes-256-gcm.v1:7SqGs_Jcruh01_Ip:jyC2Yb-_AqgtashDLUjYsBmiR44oJ-q02Ab7YIlkASWpmEvMumpm4VDKQshLHnmofFKngIHh8LZBsmHTcg064D2opUtphn6JPwOfb6TO9uLWZmHolXgCMde-4GSjFJUMkfdzpky6H-PS0vM08h2Pm7Sbov0gfvvETWao24AfxzA90MrQw_KhTynhRiwUCYg2FkcimH0tSxowDXS3DVUhuoJmxaRKjX-xVGVMlJzhRNJFMpTWQAwvPBlCz8NBTgeLEzhpqtqJwwAYg6RWfJ5xekgqvmizYFU0tF1hNrUzkYqAG6A3Mh1ip5RGYsUedWk1Ut_q-eJHBQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-074",
+          "prompt": "What's the role of VECTOR DATABASES in cloud AI?",
+          "options": [
+            "Storing embeddings for AI similarity search — foundational for RAG (Retrieval-Augmented Generation), recommendations, semantic search",
+            "Mathematical vectors only",
+            "Graphics database",
+            "A type of file system"
+          ],
+          "answer_commit": "hmac-sha256:abe0bef2c792b713f63cd650a45f6c08",
+          "explanation_enc": "aes-256-gcm.v1:7rf0AHO9EDiftsl9:fhADOA0sf68n5P46x1dwp9mC4U1isXc50U66-5a6ZmOIPMSgZx3QJuW81a_VV0ZtvroMeApMt2cgWNpgNcoJFvlsVXHXNY14xxwwPwbZPmJgtiMbxiVVSrzismn-HYAsvP0VXyPQ6ahMOm7Y86gg3T-k9NjnBPwT89Sn98e7lL1NsBcHXX7XASzt0dGCxyB3zEUQGHnwKfBav7OCZcK4DSbODHExP9aNqP-eglVMeMhB9HzKSL4PnpFJAiJYScxOKK_c-FLFU5Pu-xYQUcogpUK-dDg6qdVaphqjHg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.32,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-075",
+          "prompt": "What is INFERENCE in cloud AI?",
+          "options": [
+            "A type of training",
+            "AI inference engine",
+            "An inference about cloud",
+            "Running a trained model to generate predictions — distinct from training; usually the larger ongoing cost"
+          ],
+          "answer_commit": "hmac-sha256:6a92086388da6b4de3b19eb7ffa01869",
+          "explanation_enc": "aes-256-gcm.v1:wtexHce0ubz-kvVa:DWISUBrE62MgJZYFfHM4JlZ9lkeupNJOc5MNAjHauryikTS303RQTkKkq-_ldhfOgY64ICCnZFO3FbR5mvzJUaEK1Cv7VJDZZxxWZvn-nADbB1Ij20DXg_rclFsxeYRadNp03YBQEJnl5lSiOfNUOpQ1ypTrPZv9SNqPzj2ySYzRYwVLrIQmJ56FI4tqSzvTNkyUl9_bd4RTSlhJIxKutN91_HzpGWs_8D0NnPepWbd38wiRrkTL2Z_ryBs_sUJJH7BI9UNuRBEOwKP9clVBC2qcPJQc4Tux4BySu-2IDZ48xXnsoBOAqsJQU9M",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Disaster recovery and high availability",
+      "skill_id": "rfv.skill.cloud-basics.16-disaster-recovery-and-high-availability",
+      "items": [
+        {
+          "id": "cl-076",
+          "prompt": "What is HIGH AVAILABILITY (HA)?",
+          "options": [
+            "Free services",
+            "Always available services",
+            "Designing systems to remain operational despite failures — through redundancy, failover, and fault-tolerant architecture",
+            "Cheap services"
+          ],
+          "answer_commit": "hmac-sha256:ba7b20e8781fbf6626b643e6d1b6a592",
+          "explanation_enc": "aes-256-gcm.v1:tRnJluSueK2NgrXo:4JSm7NLeQWm88Sxi8f_oIRDZD_gPPKQeInWTQBs1uOWn9gQdpuG5xj9HY4ILmM4bPEpb6-rJ3lmMlYjtUJThQM7FEBSLmOr4pg-2vL6Z8Km_fHbSxpjjiXaz01KBdF2kFZ8ydsERMozQbEnap-O0B5H4sObmp5khRjk806ivV9P-i2I4c3xE_3AZB3gXgxSXiWqA0C9p2G92Rthpc-vIKvQhRlS5ZGwkrOSks7MEW1ui46KylmXbhiyNFCWvXnUacqamYIPsFASZk-ZQW7H2jbVA1-p7YCGmS-dPzLPrFMJWUV5ot7nJRV_uPt7yg9e-LzkgcDwS",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-077",
+          "prompt": "What is a REGION vs AVAILABILITY ZONE?",
+          "options": [
+            "Random terms",
+            "Regions are smaller than AZs",
+            "Region: geographic area (US-East). AZ: physically isolated data center within a region. Deploying across AZs improves availability",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:9049bb3ba73c7210d5b40270cbe6a4f2",
+          "explanation_enc": "aes-256-gcm.v1:4RLcjYgEoMZy0Qhz:bQMgDnQEkGrEWfA0dkabPYNVRaqkhwZ4DmKgFhlO2UD4uFVU1z8nHiqoe0aUiyasA7HQygsQY7QEnaPL4Al_VBx2alVi9OTvmkVntDc9gCWh2LUpFs3HR0XkUB0bzdTLNr6ie8FObwY2VXNXMVMC5kaDo2lbjYbJByvC5QATNMM_6swoJDnzElEMGstGvg9j8mVcCQyai398ip67rtJB5Z4N4LFoUkyWofw-Y9OvocpyLPUznPXFUcyVntyw5ih9p0jnaXejG01f6FMH7jAIzZ4mFZyqllgu-EOc2vrA3nKxJdK40t8EQWRYOAVi-KcGgH3vSBvuGd9YCwd9ev4b6w4q5XHsHg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-078",
+          "prompt": "What is a BACKUP STRATEGY?",
+          "options": [
+            "Optional convenience",
+            "Only for big enterprises",
+            "Manual file copies",
+            "Regular automated copies of critical data, stored separately, tested for restorability — the 3-2-1 rule applies in cloud too"
+          ],
+          "answer_commit": "hmac-sha256:0477f75eb4b06a916bbbba267ee2fe7d",
+          "explanation_enc": "aes-256-gcm.v1:N9qDP8FInv-XADN6:oj_GQjIujVX2YOOM7C5dWrIHN7gDK7hSnuxhb-ZsVGT2qSCnNJi56mWQqKzNN04FyW9v0_Ou3J11vGW5QmeeDKqiMf-hWAt5nBErA974pD-qL1zOEPDhrA_WAbLX6jbhTInqvh_-WhjvaqmuHN9xANvwABh4INM_2NLqaNkDnQRj5Nignt5vEoB2avXyjVAy_ro2k4VU3eSrvEu6YJPvW_W77psjNHb0hQhlSpPrlVjJUc_WkEZwCCVb8_heFaBKfHCWKm-oGbQwhl-iXE5bMPz8gHUUh3UvG8FViUpYbQyH8Pop7OadMOwi151Iz-1FnctNCisB6cymKt4t",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-079",
+          "prompt": "What is DISASTER RECOVERY (DR)?",
+          "options": [
+            "Backup software",
+            "Recovery from employees leaving",
+            "Plans and procedures for restoring operations after major incidents (region outage, data loss, breach)",
+            "A type of natural disaster"
+          ],
+          "answer_commit": "hmac-sha256:1bd80cbac7dbfe1e19991cdf98fca73b",
+          "explanation_enc": "aes-256-gcm.v1:lx8EKtP9rq4ikRTw:NvZ26X1aIA2U-6_5XR7OI_2o36RzCj80t73i0yC2uHnZMaP6N2ZB5F4YHcwdBqnu38nlHuZZzHcaTlnJjMe1aEVI7WPE2adYu36PavEujpI0jYS2PtkfqwtJ1Cl6WMx6SL0Ggf75kBfnHg_wwi8uwqyZdNZ144gcTl19yYCs5GpDpSQpmbM4qxfzwn8-fEwuf4Fg0g0lpnSvKxmXRzGeDVcFB7eyugqVc6fdW3qXURmrOJirQZ28mZfNzUQlxptMUNr1gGtcCmebSaKgxjPaSF5lKaN7xb7i_khFEM0UBokE3LP_TzZR3_jYNf5ahoSmMKRyyYg5sRhggc5o2l0SUjM6DviOrpVc33xNOwQ7Eiasbbs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.29,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-080",
+          "prompt": "What's a COMMON DR mistake?",
+          "options": [
+            "Testing too often",
+            "Never testing the disaster recovery plan — untested DR plans usually fail when actually needed",
+            "Documenting too well",
+            "Including too many people"
+          ],
+          "answer_commit": "hmac-sha256:50a01ebc5eaaf564de6a45b8dea6f179",
+          "explanation_enc": "aes-256-gcm.v1:eb44r9EvnWXRqbXE:N1w8WRh-6D_VKThFdWlpXcobadqTq9ZRuSRVRlRPWpX9cIhE_mLwTmIkC83LcuaMsFU_zPMlZ00_tpQnBMqP09VMhBo_Hg46BsK9rFaklHrIeX4vHmQlm9Z-_JD4lhwd16BIsrIrSRbET1fHMriqa503bUlgdFCug_iC5koo0Pbn68bCab5aWNc4OFW6XlQf4ngmCeVNBeMi4XjwnbAcc0mgwE02p-izZpJYBIQqpYpR4LTUNwpfc4c_6yfpDQyk3q2YhWiVRBJJpV9I9fFD4Njdw4e7gRD9rlhjZJfYBD8gpkkV2fccaE0xbpP3se3MXXkab8BlqGP5PWIq9XcpfyBfJNbDnHhjepuHVwUoF3aR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.76,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Getting started and careers",
+      "skill_id": "rfv.skill.cloud-basics.17-getting-started-and-careers",
+      "items": [
+        {
+          "id": "cl-081",
+          "prompt": "What's the BEST way to LEARN cloud computing?",
+          "options": [
+            "Memorize service names",
+            "Read books only",
+            "Wait for university courses",
+            "Sign up for a free tier, deploy real projects, follow tutorials, take certification courses for structured learning"
+          ],
+          "answer_commit": "hmac-sha256:7453ac1dd72a4c163f91a186f968705d",
+          "explanation_enc": "aes-256-gcm.v1:pR_AzChYBuoV-7lw:kIipTmZfEUKI2CEcpErmgXEUteSpLxixgVAj69GLrPWO_BEzNfUNaCHttc4t-WyugTVDe4hdJcqxq-YsMB2KkhKHuXp3fkymQKR1gPS4tKI9VuXBTRmhqSgNgqmemijR-KO68Yj73mX6V3j3CEl78OPXXZg5LMxhAa_c_CISvbmd7WmqYOeSJO0IlvHPgEU7o07U4lpDYB-d6la0NnvgMOQAodUHgd8PYyhjfgj2guqZlQq-84OELlTThbWncf_V_5OlHW-Vmb2FlI9jgwgcVo6lLoMp5_QbnIaLVGTp4BZuENcOCIweXWKsPxf7Pck8qHXT1g3q3bVtWnvD2mUWOl5N8Bti",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.259,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-082",
+          "prompt": "What CERTIFICATIONS help start a cloud career?",
+          "options": [
+            "AWS Cloud Practitioner, Azure Fundamentals (AZ-900), GCP Cloud Digital Leader — entry-level certs validating foundational knowledge",
+            "Only $5000+ certifications",
+            "Certifications don't matter",
+            "Only vendor-specific certifications"
+          ],
+          "answer_commit": "hmac-sha256:a3f369060289acc924ab2dbef514c143",
+          "explanation_enc": "aes-256-gcm.v1:YW44QdXw1CeNSttq:RnhCg-d0OPDuDzy3kTzrC9xnhCTohygL87SFLHYZlVYy2ECygl5T-evzaFBACVuYtfn14rOmwqdSzI8xm8Uhg_jUfOWRSlP7fwnrGWBSjwN9tUh7Bhb6m1gTkWosg7XV4uF83Tsvp2HlvMdd0qpcGfpj0wTuS1g2dlrq3GyL0RMHbbOmvn3OVTf-CPfjsnse2Wgd-aGv0v4zYCxb9ayqhhaxkp-DohQ98WZo7MPBbh2SpVqrKN40PME3tT8N_9QGteG1B4156ZlXAahKTJyjHXDK8-JU_GkGNjoKyAZgwfkeadxwfz4c8R0p9fSfb63k9EHYdJe60UF9",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.743,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-083",
+          "prompt": "Which CLOUD provider should you LEARN FIRST?",
+          "options": [
+            "Always AWS",
+            "The one used most where you want to work; AWS has biggest market share globally, Azure leads in enterprise, GCP strong in data/AI",
+            "Doesn't matter",
+            "Always free options only"
+          ],
+          "answer_commit": "hmac-sha256:f271789138e423875fdf7d3478af4881",
+          "explanation_enc": "aes-256-gcm.v1:BANXK0laoRtD_mmI:c-qoPZ94_PFfckXmwmRQzCXLnSLdqV2iMhDOMMlTjGy_t-LSgIy5Lo0wG4HCvGsiSbg-TSYnc43I9AF6Iejz8oz2n-yA5qTgZlBpVxy4_AqIsMCLHokotb5TvmhU1VfI9fNVV5fH-MnUWupMW_SESsNxX5Ls3W4Itrxr43Qiwtw_5z0P1QpkbbmoFLOkTm0PKymSADKCFFPms_ZOr7yRmwiAer78lEHNzwCmZ8hJ7pSpDb__mIu32fVd-rYn4zmO1vz5wOENOzFPUJTPv7xYcToDVN9IzKTy7DNveEWGN0Sxmc_uP6PvgnQOSlW6gfcLnoYqdaa6M37H",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-084",
+          "prompt": "What ROLES exist in cloud careers?",
+          "options": [
+            "Only consultant roles",
+            "Cloud Engineer, DevOps, SRE, Cloud Architect, Cloud Security, FinOps, Data Engineer, ML Engineer, Solutions Architect",
+            "Only sysadmin roles",
+            "Just 'Cloud Person'"
+          ],
+          "answer_commit": "hmac-sha256:eeaada775e244521fbe8cf4734aa8a24",
+          "explanation_enc": "aes-256-gcm.v1:RhBuYgRnd1Hoa7m_:XH3OYkEu2MVEBS9UkEga6Lsyr7FrmgwW8rEv68MTh08lmEJugHUCFPV2eZtuSAoXmjGPufVg8Iet-huflbtJHesbvx5OnrnkYvYqW6f_KX7vEMGkIFgK_QQWGsOle1-vTqcCvCPxuorOtDsBwjqAouI0ir5XEnlCpEttl_Sk8yD-9OWAP03ENwlwZ11tNP924P4dwUV3p6uvQ19aTwsJp4_Qh5wiT5sXSHvaTYL7eKzOwSjLxPiFdBEj-6tJ7ccP3bvuE_ErzLmiE1OiKA7UOvu0NvRARFjBDh5pvcOi8FEDGEYxqr1lZDXvnu1Lq5bIufEiUND_dfRZCIgndA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.571,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-085",
+          "prompt": "What's the META-SKILL for long-term cloud careers?",
+          "options": [
+            "Memorizing one service forever",
+            "Avoiding new services",
+            "Continuous learning — cloud services evolve constantly with new offerings, deprecated features, and shifting best practices",
+            "Working only on legacy"
+          ],
+          "answer_commit": "hmac-sha256:fb35d486c8380302af00ab1373ac7da6",
+          "explanation_enc": "aes-256-gcm.v1:rT72gLy3hCTG3INx:cZSfAJ_7QvYWEVbgt_7ryI2qtc7Ejf_QBjoH0U7-ZbZBID99-m8emn3JtSuWwqkaltM1hy75lPnil_Axrm1aV3hSx9_IlKsWBL3XGjGT3cOKRTAo7EkM0wUc8PSw-QdVqm3-yWtl_m2VxRxCEsKGv_nK7npqIG4aHLF_kCII_q23XOAEZQ_UJv1G8SluDQzqRLaohxZA80jcG1ZsS7lova9J0wKSZ4Tc23PcOztcYnfzFwoOL3WpeLWSq7dtKSlYcEBefvpe9AZHXMOpLVAy5fvUnfwRO-me-y5loBFRbG7LHTQuhQ-vQQOR8XroY54nxeUj8JesYNnaxsFbjZIZaJT6P____Scza0O15XEs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.1,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Common pitfalls and trade-offs",
+      "skill_id": "rfv.skill.cloud-basics.18-common-pitfalls-and-trade-offs",
+      "items": [
+        {
+          "id": "cl-086",
+          "prompt": "What's a COMMON cloud mistake?",
+          "options": [
+            "Building simple things",
+            "Over-engineering before product-market fit — adopting microservices, Kubernetes, multi-region too early before they're needed",
+            "Using cloud at all",
+            "Following documentation"
+          ],
+          "answer_commit": "hmac-sha256:148ded486d77c14b9f542e22b8884dd1",
+          "explanation_enc": "aes-256-gcm.v1:jEB9jamDRppBz9WF:rDWJer26Aovg0jfdkbKErlC-NH2vg7Bel4a0-DONmzCV5x3qIYiqjeTLSAjpIb-3bQ71bQbhQMRzc1BQ95FitVF7qrT6jSOTrCR8STOia0hxmcXLMxoxMd6NTWiUgiKPjsZHF9_NqytDrsxeHInMwe-XMO6CC3hxnS_fLTVYPz_XJDiryWXnXFBFtARw3euYkK8g8RFabDvjk0AsBnH5KPhTcBUW0NLMKOeRe-1tz2kwEpzgI9JltAWB7OIg_DJkkW0Opn23MoqFNqD4lxc2pRcrTB_dYImAjNe4WMBbnKnACV-0VKcIuUwwq3hla0MBSQmEhGgvVsE0_57AIUzIVSkdLUwFNfosDSJmK-84",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.435,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-087",
+          "prompt": "What's VENDOR LOCK-IN in cloud?",
+          "options": [
+            "Building dependencies on cloud-specific services that make switching providers difficult or expensive",
+            "Vendors locked in offices",
+            "Vendor contracts",
+            "A type of security"
+          ],
+          "answer_commit": "hmac-sha256:513536044cb99b553545e6e8823e19c1",
+          "explanation_enc": "aes-256-gcm.v1:KitCKYXTY3DM5XcQ:izzcxaU2NdjtkbynptZbfJYSnyyIyiqunoFVzRA_SNOEHL5GG3KcIBzmasJKZn01T0RDc0vchK5Qrf9BYDpPO-NfFQvuPNYJ_0JG1Kfp29f_qLrsoqFnlxnc6y-2B32844hd9huI1Yr9zagfB2uyR375H9qSqL2FukWDbSFteJqmt75HuEFDRR3UwCW60PvgoAI3T4MbDsFnQbNN0tX4Ce1nP3nYLQ8d8pdPM93OpNRbVPenJwaPcJmajerWFbB5lhDymB9UZ9PrVs_N5eKg31zqIXpF56J5ZGPfkgrYB831HKldT-d6HIiRhZUmCZxw7r0gGv-HytWc1A4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.04,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-088",
+          "prompt": "What's the COST trade-off of managed services?",
+          "options": [
+            "Always cheaper than DIY",
+            "Always more expensive than DIY",
+            "More expensive per-unit than DIY, but cheaper than the operations cost of doing it yourself — usually worth it",
+            "Same cost as DIY"
+          ],
+          "answer_commit": "hmac-sha256:f119b401802afa0157a783add2788065",
+          "explanation_enc": "aes-256-gcm.v1:qr0eJpj15mSKt9mP:LvlwnqWwNqZZHejGdnuKO7u2hfuz6VjkkLD5mZIiYFkyvPXDj5gJ7nk1tXcP0KIWM1xxdi8tENahlGeWGz61aarAOTtdi7WLqEfBQy3cR_8n3V1n89g1GlqQttEoggWrTU8ujwj_0Zkp0k_yTlcxXuu6pGvnxLsCaYBN8Pr9sTAp3WEFsC8a9lImrx0VlGb5Dkmn1WoxTYWrbTQ6FPUr-ixSlrVTuEQxwcTVukEBSgeie87hKawE_X_noaeS56eg8hhv152RrOsNWECcjloHN6KNFAc2cbOQvA7bfJMuMIFuFO2Zt7NJx4BkSAPfinEFsmmUjvyyf9eH9FJPMZOUNvE",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-089",
+          "prompt": "What's a HIDDEN cloud cost?",
+          "options": [
+            "Decoration costs",
+            "Marketing costs",
+            "Operational overhead — engineer time spent managing cloud, learning services, troubleshooting issues — not just the bill",
+            "Free tier costs"
+          ],
+          "answer_commit": "hmac-sha256:a0a5b2a7b1161fab01c08ca3a203fe20",
+          "explanation_enc": "aes-256-gcm.v1:qTupBUcRkhRBOrFr:ZKSBRdEIRMNxb2koGa31x3etaxKH86FutkpYy4xp8Xp71f8SHO9avjHSmO9HQnZlXZkM-kC1_DF1Z2pVTIZ98Kbt_q6VkGqrVPZ68twhG-53Re9zVLIzQqlzSOBmSA3wZ5SJFhKhJPCnHKW1sXZJZ3Vsnk4tlQnPzXAmwLeXuzqTRbs3G7Z8c0saOdg6Cl-aJhkqlX1j5HXKIEampf6S3hq3JF7tdof8wlGz0Gl3HP19ea7-SNlzxg3SgJIq5EJjWUGqUt3Fh8wBrPz1DgeydMp8tnolWqwehvp_4OilVHcy5Pmss9M2NcLwusdNKdSs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-090",
+          "prompt": "What's the RIGHT MINDSET about cloud complexity?",
+          "options": [
+            "Always use newest services",
+            "Always pick complex options",
+            "Avoid all cloud services",
+            "Adopt complexity only when its value clearly exceeds the cost — boring solutions often win for years before they need replacement"
+          ],
+          "answer_commit": "hmac-sha256:a30610c807b875c1d1f80b672584fe36",
+          "explanation_enc": "aes-256-gcm.v1:F0lPoq0Oo4eGoX10:wgBl-HmZT8o8uHxKNgxAwFc43cJSigH1JC_mCCx5CsdRIbMUqLqMkCnYFEICyXC86Qbj5yZXJen7qEHEz458JFDCEb4Wdq_jWlq9ntTgGW9Ykur_40bxVNjLCi9drWpqvcPjR7aF2HiVCbtaRBk5TRD_ps3IM0yY5sXmF0CjePEX774pa9rjkYnYzfSb5w8r_YIz3Yr1OiEcNrTJZPYZkE-kpWkskIq41F5DpuXGmttFVQRgbUj7v0k95rhrH-lO2gjp76r71WAb98Crxd5gfZCHyyzvqS6ngfHTJU41Ct-L",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.778,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Future of cloud computing",
+      "skill_id": "rfv.skill.cloud-basics.19-future-of-cloud-computing",
+      "items": [
+        {
+          "id": "cl-091",
+          "prompt": "What's the SERVERLESS trend going forward?",
+          "options": [
+            "Expanding beyond functions: serverless databases, containers (Cloud Run, App Runner), and full applications — pay-per-use becoming default",
+            "Replaced by traditional servers",
+            "Only for hobbyists",
+            "Serverless is dying"
+          ],
+          "answer_commit": "hmac-sha256:b4611997d025134e42d54985ae9719c4",
+          "explanation_enc": "aes-256-gcm.v1:XJb78nJrXTG4eX6o:M29xXtc5PQlJMaS5s_FCnu1c-OIPoIB-Jhg10A4up2PK9u3pTIUWaZFaLPzYAVv2vamxoF3B6KxVCN5HA0UiFEbrLIL7VIFjDGsyc5nM4UZ8KU5r9dCt0jXUif46duUoram6ez7hkiFsEeWdByLfB_WBrIMQfrko0sPbrNCc0iOSwff2yHJx3sOPVBcNJ6Y-ZVG5QB1AQgINx7FZjfCZhbiKspFnnncnxjRVjTPJSO80B5c2feN7MnDNbDNVPkBimpkILdSG0T-_KPYtQDXlqykDgRI23SN8uxVL1F1c-YkOCirPGw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.452,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-092",
+          "prompt": "How will AI change cloud OPERATIONS?",
+          "options": [
+            "Replacing all cloud engineers",
+            "No effect",
+            "AI assistants helping with infrastructure design, debugging, cost optimization, security review — AIOps becoming standard",
+            "Making cloud manual"
+          ],
+          "answer_commit": "hmac-sha256:51ee0d3ba7c78ac7ff930fcb6545e992",
+          "explanation_enc": "aes-256-gcm.v1:yol2sCChDxbaTcLO:5IXpS28n0VerRh9KPaBWIkimbyGb8VYM5s2WFGwpyv5u4FgL9VaarR8oKx5grLhkO7ilCSZecxmuV_wMiuk8b5G5jP6CLYedyTELqul-9UKOZrqVLLodMBInJ0mbRIgc4vBdTZOa9Xbz8t7tcs6KnqL387dOKVk03dLXXHOXmzSI9arPQCn1R5YHYOI1kqBEte8oHAvX5yIAsUAto0259kORjMnYkxWEsNKq0-qsJuSMyNS1FO2_YiRUoTl8YHhx5A4TEgaNJwr3ozBcnt2Ta6PtQB6H2U3JkAvqZSliSOLytJvBKHrRU6FPIl0NVjjzeI1rYZzW_-uKbDC5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.172,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-093",
+          "prompt": "What is EDGE-FIRST architecture?",
+          "options": [
+            "Limited architecture",
+            "Mobile-only architecture",
+            "Risky architecture",
+            "Designing apps where compute runs as close to users as possible — at edge locations, not centralized regions"
+          ],
+          "answer_commit": "hmac-sha256:481e5b9a2ed0163073b46451f7fbe9ce",
+          "explanation_enc": "aes-256-gcm.v1:s4xtxzgEqyEdcMbr:pnVsZAefGY5Yxbe2TW6cvsdKUdjWx6CwdgLAbOXbpdGB66QaXib1K3boLNTsTphiE7wOP3h9Vha8mTKD-cULS9sBuHyduynpWW08bfReTF3rzx_vcbKi-XPcOE_5jnsXuJtcYtGCse4BAoW1BTfSWY-EUqkw4qU2zNB7kqxzO1W3XPYWj50HsISr7mGlKKoSv_vj1MUe94iqY9EnaYO-M1WuQb6CScetMZbJlSN9c6sxLlpa-AC_YrvUl0WPObo6b0oxiSUrj-RcPMMGxiatJK71z1W2yYoO_EzK7ENPk6X_k4UHvgTobUI2_6nsmb9pxNFfnEDH0zRyIEJTfwA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-094",
+          "prompt": "What about SUSTAINABILITY in cloud?",
+          "options": [
+            "Cloud has no environmental impact",
+            "All providers are equal",
+            "Major providers committing to renewable energy; sustainable architecture (efficient resource use) increasingly valued",
+            "Sustainability doesn't matter"
+          ],
+          "answer_commit": "hmac-sha256:186ffd12693c842639a9e45a4baaaa04",
+          "explanation_enc": "aes-256-gcm.v1:3XIB3Lic_ylkmylv:ZxSywY3NKb6tHZXaCUQcctTI-Bwtv9a6rHurSrezg5JLMclEFbC9mSGMQkwNgwMCAfxUOsVX0acWR2Sp-RPn3CLFiI5cnvGeOKfBeuWFJLBy5bUGi6WfpFt3EeurF_jmRPRTWOX4SOA6biMb49aGNehLirqmd-tLSwyFYtBFU35FcHXIs7aJoj2JJ00RP9IHXPXL9fh60yDB0UD3Yf2sx0zbVC_qQgtXPHtOedMrwoEsqOE34uVoZfyetKGxk_rTRSuqeV6xAudFgw8AomcN_b4-whWAhkU-3iM4b5pFwe1uB6pvwY582Rs0uxBf3wxuBTMq4_FkADwwUdvUaapr5ySJAFMKzDW2cWv2Fl5bW9zJbHsZNPMPpD8Y2kF4ispyExbGHzr6eYIqZQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.545,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-095",
+          "prompt": "What's the LONG-TERM trend for cloud computing?",
+          "options": [
+            "Stagnation",
+            "Return to on-premise",
+            "More abstraction, more managed services, more AI integration, more global distribution — barrier to building software keeps falling",
+            "Decline"
+          ],
+          "answer_commit": "hmac-sha256:f95774df0a3dcdda4ac54946f2b81a54",
+          "explanation_enc": "aes-256-gcm.v1:eZFiLOlc-Soru8RJ:8PdkqSVx9C0HcTCaHaQuqXfsGgcAWhHOcqcySMpwT-K9989Xi68m3ycVWEQbZguY6w_30c5LdWBQKQa8XzkizugCr8qnVb87cqFuBn3kbv9deaAHVoNaaNQXTjCHvlgqb_FgM5aih16yyCFGARCluoIHUrw-Uzw8VK-NfLb646wLGkGL1G9mtOmQBrmWZTnyy-9cC7nTPMiGy1Vtx0gyXDKhV1I5QpsfCeiW33CgpAV0_2iUYj1Mb38A5U7LG-0V9edbHHwAlsjh4LFMREw_gHsCyJI3wHxzEoWDuZfHjHiGd7o7cVv3mD2SG5LQUc7CG21ddhE3e1LBa32slXUL4PXdjOG_wZIHrmHRY_ZHKIs-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.55,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Putting it all together",
+      "skill_id": "rfv.skill.cloud-basics.20-putting-it-all-together",
+      "items": [
+        {
+          "id": "cl-096",
+          "prompt": "What's a HEALTHY workflow for cloud adoption?",
+          "options": [
+            "Start simple (PaaS/managed services), measure actual needs, complicate only when forced by real requirements",
+            "Adopt everything at once",
+            "Build custom for everything",
+            "Avoid all cloud services"
+          ],
+          "answer_commit": "hmac-sha256:f49a81409a78466380f5216fbecd2cd4",
+          "explanation_enc": "aes-256-gcm.v1:0VWqF94V7ZSte1c7:5RfLlHap1svewszwAWC1CVzfN50A9EJsDny7csVhWGYgrZINDoS3cgiMMwL0eUTnSnJne7zYIgBhoUijKtiQ6M7wLDqlkaiYKyf8N3ta5kECTwgd3wqVrOqMtr1ka7IBB_LdHOp2U2Gyma7I0JQgpm2R0mTF6IIdnvaYQWCyzdQPX-_psr-uwT4q1LulQVR58ZUAI5DiTWmxdKEcohq3E1lgR-LabdL_c7Ilm3b0xvB8CWliT5yFRjUzAFv2FDlXEwm2GV7RyXOHAUpnktV925K7qCoiSQjXZugfXMX49VsCHEQ-yabDGc2qJC7nm9mmm4Jh8Mh1oNQS5g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-097",
+          "prompt": "What's a STRONG learning project for cloud?",
+          "options": [
+            "Memorize service catalogs",
+            "Random tutorials",
+            "Deploy a real project end-to-end: domain, HTTPS, database, auto-deploy from git, monitoring, basic observability",
+            "Theory only"
+          ],
+          "answer_commit": "hmac-sha256:1b851fca8fa99d0186b7efd4e215995c",
+          "explanation_enc": "aes-256-gcm.v1:tbTCTt6eaNWQ0xxH:Mqyj6VG752AhvZKlT8ETmSMGekXZZvoq14i8vYtkJ3KuoVmsSbMBMmPZWaE3uDhoUdYXbY_cSykSbfpMy1CXSBeyaARBrzcStVKsJH3T5WdAwzKBPWernENbifTdrK6XjsmkrxLM8Th6QEnHHkZK_NW9OLBOHqcD_6CURmKuBrI0cI7Mmh2KRcCw_jpsfRQpMxnwWv03Uq4kEI6OvEQQxPkNLG9X-cLl_K7sCVmC1cOIYqRR86OEjT0I_jbxPYp_Kl7lZzKf4soreu2eocUXwFsQr__MlnFG0ILwYNGA7IuEC_1qtWsEI80qJ8q8sVBp6sKaYMtHth5qiT0k3A10s52RGyxv",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.48,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-098",
+          "prompt": "What's a SMART way to manage CLOUD COSTS as a beginner?",
+          "options": [
+            "Spend without limits",
+            "Ignore billing entirely",
+            "Avoid all paid services",
+            "Set billing alerts immediately, stay within free tiers initially, tear down resources when done experimenting"
+          ],
+          "answer_commit": "hmac-sha256:d2c39168988d9ed9fae2140ed2d3631f",
+          "explanation_enc": "aes-256-gcm.v1:SJtkRDT2tEQDdQir:WSBrx7nUxp2Hbc_zRlpwPGe_YmPh3LfKYERGzLg3INmHOWfWxf5_ty47r-nfeAREGm0e9fz3aBL-1_zwh9ox_Z1QJbBPgnlL83-KTcEQYzFbb7voxyVyVhkwJirDjd8CcGD73VHvwk55hLhGZLXf7IeAViQKYMjOPvV76pdV5hMg1S_k-GbRLPxPBlm3Rl1WgaeRhGRg6b1Hxmq8D-w4gSvtbrU_BIYCc1-FaDwSxunijmxWZD27weUGi4kEvtPe3d0Afx-aiPESNheVqlxD2P1lRQUFEm6g1LorRP26t_ULe2aN7PCzIC16rYokSXWMfQxX6IZ6ZqIiPTAj9q27Og2gG0rHsg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.739,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-099",
+          "prompt": "What CLOUD SKILL transfers between providers?",
+          "options": [
+            "Everything is identical",
+            "Core concepts (networking, IAM, compute, storage, databases) transfer easily; specific services and tools differ",
+            "Nothing transfers",
+            "Only programming languages transfer"
+          ],
+          "answer_commit": "hmac-sha256:9319009d9281736d858b4b1689abb82b",
+          "explanation_enc": "aes-256-gcm.v1:Paf006xSuUd1vEk9:UYAghJO4cW0Y3aN5zo2H0cvWLSwtnKF78LxiRmFd1jll9We4CDaEMlmGNK8O_7ru-ucGMt2kfOP_6g4Vu46WQ5zTELZMWTsDooFzEnmFE49o6AEudFtZCIF0bW4rfFRVrr4LB3-J4nk5dk9hjUPfvyvjhQI2JjM3HWclpGl8OaV2HRmGnBicGdTYsnjRvsieHchomeDc83JJkz-4dlOYu1F8B9PMBo_noSpxzEhTwjUFlNW7YgMHFFW_olAEHHBdCwYkxLFNm99e1vK0mGf7viqM4UvIy1HubXW-7c3S7z2HfyZlJMgd",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cl-100",
+          "prompt": "What's the MOST important meta-truth about cloud computing?",
+          "options": [
+            "Cloud is too complex to learn",
+            "Cloud removed hardware barriers — now the only limits are imagination, skill, and willingness to learn continuously",
+            "Cloud is just marketing",
+            "Cloud requires expensive hardware"
+          ],
+          "answer_commit": "hmac-sha256:fb9601e5ef95a046e495317d29ead1b6",
+          "explanation_enc": "aes-256-gcm.v1:Db84sEXMrPW9ndoJ:aHGVePsFchEhSH6ejC5mD-Qi8w-J5qwIsuLtdjcGCFV3jPJ2km8zHMqsqy9rXCiYci7t6L8KjX9T6mZg-VQuSP6CmvzJUo7rONto9KYkaH_QkT81DXYeNjeeQRC8NjD2d5_3FiiNJXQLwpa_b_ShEpcpXP18JT5VpEyH5_2_7blrgfJZCcnDSt_OAOQjdCw2Y5iuuiobvNJrM1ncQMxqjPBXgYpJqlJLfUcEyYMX-0E9kBc0aTryy1XRneyZAbbiigmkgGxnTgbskP0Lq_Fh75VCliqCHCSylcb_g6VXxUjn-jARK6OUi6AW50IZf6RjpiNQuPKq8aks-vN1cCbRoGHgjTSo-Y5ShJ35k1-vA3pQU_Cbhns",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.485,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:3adb09846b1828af4e4d98578e9feaff3ed3b2cf6168c2b5b4ee45c591744ce2"
+}

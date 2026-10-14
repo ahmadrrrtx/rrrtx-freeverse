@@ -60,9 +60,11 @@ export function Hero() {
               text-fg-3 leading-relaxed
             "
           >
-            15 certifications. <span className="text-fg-1 font-medium">1,500 hand-written questions.</span>{' '}
-            Cryptographically verifiable. Stored on GitHub forever.{' '}
-            <span className="text-fg-1 font-medium">Zero paywall.</span> Zero upsell. Zero "premium tier."
+            <span className="text-fg-1 font-medium">15 skill assessments</span> across{' '}
+            <span className="text-fg-1 font-medium">1,500 questions</span>, drawn and graded on the server, then
+            recorded in a public registry with an Ed25519 signature.{' '}
+            <span className="text-fg-1 font-medium">Zero paywall.</span> Zero upsell, no "premium tier" — and no
+            accredited qualification either: every credential page states what it does and does not prove.
           </p>
 
           <div className="

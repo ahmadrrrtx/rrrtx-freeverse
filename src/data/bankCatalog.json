@@ -1,0 +1,2839 @@
+{
+  "schema": "rfv.catalog/2",
+  "bankVersion": "2.0.0",
+  "generatedAt": "2026-10-14T19:59:23.424Z",
+  "topics": [
+    {
+      "id": "ai-productivity",
+      "title": "AI for Productivity",
+      "description": "Use AI tools to automate workflows, write faster, and ship more.",
+      "category": "AI",
+      "icon": "⚡",
+      "skillId": "rfv.skill.ai-productivity",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 5 reviewed item(s) available, 20 required; only 5/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 5,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.ai-productivity.01-ai-productivity-mindset",
+          "name": "AI productivity mindset",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.02-writing-and-content-creation",
+          "name": "Writing and content creation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.03-email-and-communication",
+          "name": "Email and communication",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.04-ai-for-coding-and-development",
+          "name": "AI for coding and development",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.05-ai-for-research-and-learning",
+          "name": "AI for research and learning",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.06-ai-for-meetings-and-notes",
+          "name": "AI for meetings and notes",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.07-ai-for-data-and-spreadsheets",
+          "name": "AI for data and spreadsheets",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.08-ai-for-slides-and-presentations",
+          "name": "AI for slides and presentations",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.09-automation-with-no-code-ai",
+          "name": "Automation with no-code AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.10-ai-for-design-and-visuals",
+          "name": "AI for design and visuals",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.11-ai-for-project-management",
+          "name": "AI for project management",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.12-ai-prompt-libraries-and-templates",
+          "name": "AI prompt libraries and templates",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.13-choosing-the-right-ai-model",
+          "name": "Choosing the right AI model",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.14-ai-integrations-with-existing-tools",
+          "name": "AI integrations with existing tools",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.15-time-management-with-ai",
+          "name": "Time management with AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.16-avoiding-ai-pitfalls",
+          "name": "Avoiding AI pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.17-ai-for-team-collaboration",
+          "name": "AI for team collaboration",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.18-ai-security-and-data-hygiene",
+          "name": "AI security and data hygiene",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.19-long-term-ai-productivity",
+          "name": "Long-term AI productivity",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.ai-productivity.20-building-your-ai-workflow",
+          "name": "Building your AI workflow",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 5,
+        "provisional": 95,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "cloud-basics",
+      "title": "Cloud Computing Basics",
+      "description": "AWS, Azure, GCP fundamentals. Compute, storage, networking, serverless, containers, deployment.",
+      "category": "Career",
+      "icon": "☁️",
+      "skillId": "rfv.skill.cloud-basics",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.cloud-basics.01-what-cloud-computing-is",
+          "name": "What cloud computing is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.02-cloud-service-models",
+          "name": "Cloud service models",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.03-cloud-deployment-models",
+          "name": "Cloud deployment models",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.04-compute-services",
+          "name": "Compute services",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.05-storage-services",
+          "name": "Storage services",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.06-database-services",
+          "name": "Database services",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.07-networking",
+          "name": "Networking",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.08-identity-and-access-management",
+          "name": "Identity and access management",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.09-containers-and-orchestration",
+          "name": "Containers and orchestration",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.10-devops-and-deployment",
+          "name": "DevOps and deployment",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.11-monitoring-and-observability",
+          "name": "Monitoring and observability",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.12-security-in-the-cloud",
+          "name": "Security in the cloud",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.13-cost-management",
+          "name": "Cost management",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.14-modern-cloud-native-patterns",
+          "name": "Modern cloud-native patterns",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.15-ai-and-cloud",
+          "name": "AI and cloud",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.16-disaster-recovery-and-high-availability",
+          "name": "Disaster recovery and high availability",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.17-getting-started-and-careers",
+          "name": "Getting started and careers",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.18-common-pitfalls-and-trade-offs",
+          "name": "Common pitfalls and trade-offs",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.19-future-of-cloud-computing",
+          "name": "Future of cloud computing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cloud-basics.20-putting-it-all-together",
+          "name": "Putting it all together",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity Essentials",
+      "description": "Threats, defenses, password hygiene, phishing. Protect yourself and your users.",
+      "category": "Security",
+      "icon": "🛡️",
+      "skillId": "rfv.skill.cybersecurity",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 1 reviewed item(s) available, 20 required; only 1/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 1,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.cybersecurity.01-what-cybersecurity-is",
+          "name": "What cybersecurity is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.02-common-threats",
+          "name": "Common threats",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.03-password-security",
+          "name": "Password security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.04-phishing-and-social-engineering",
+          "name": "Phishing and social engineering",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.05-network-security",
+          "name": "Network security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.06-data-protection",
+          "name": "Data protection",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.07-access-control",
+          "name": "Access control",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.08-web-application-security",
+          "name": "Web application security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.09-software-supply-chain",
+          "name": "Software supply chain",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.10-cloud-security",
+          "name": "Cloud security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.11-privacy-and-compliance",
+          "name": "Privacy and compliance",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.12-incident-response",
+          "name": "Incident response",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.13-endpoint-and-device-security",
+          "name": "Endpoint and device security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.14-ai-and-security",
+          "name": "AI and security",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.15-personal-security-hygiene",
+          "name": "Personal security hygiene",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.16-security-culture-and-people",
+          "name": "Security culture and people",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.17-security-frameworks-and-standards",
+          "name": "Security frameworks and standards",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.18-career-in-cybersecurity",
+          "name": "Career in cybersecurity",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.19-cybersecurity-in-business",
+          "name": "Cybersecurity in business",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.cybersecurity.20-future-and-emerging-threats",
+          "name": "Future and emerging threats",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "data-analysis",
+      "title": "Data Analysis Basics",
+      "description": "Mean, median, distributions, visualizations. Turn raw data into insights.",
+      "category": "Data",
+      "icon": "📊",
+      "skillId": "rfv.skill.data-analysis",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 7 reviewed item(s) available, 20 required; only 5/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 5,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.data-analysis.01-what-data-analysis-is",
+          "name": "What data analysis is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.02-types-of-data",
+          "name": "Types of data",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.03-data-sources-and-collection",
+          "name": "Data sources and collection",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.04-data-cleaning",
+          "name": "Data cleaning",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.05-descriptive-statistics",
+          "name": "Descriptive statistics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.06-distributions",
+          "name": "Distributions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.07-correlation-and-causation",
+          "name": "Correlation and causation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.08-comparing-groups",
+          "name": "Comparing groups",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.09-excel-and-spreadsheets",
+          "name": "Excel and spreadsheets",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.10-pandas-python",
+          "name": "Pandas (Python)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.11-visualization-fundamentals",
+          "name": "Visualization fundamentals",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.12-charting-best-practices",
+          "name": "Charting best practices",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.13-visualization-tools",
+          "name": "Visualization tools",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.14-analytical-thinking",
+          "name": "Analytical thinking",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.15-storytelling-with-data",
+          "name": "Storytelling with data",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.16-common-pitfalls",
+          "name": "Common pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.17-tools-and-ecosystem",
+          "name": "Tools and ecosystem",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.18-reproducibility-and-rigor",
+          "name": "Reproducibility and rigor",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.19-career-and-growth",
+          "name": "Career and growth",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.data-analysis.20-putting-it-all-together",
+          "name": "Putting it all together",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 7,
+        "provisional": 93,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing Fundamentals",
+      "description": "SEO, social, email, ads. The skills every freelancer and founder needs.",
+      "category": "Career",
+      "icon": "📣",
+      "skillId": "rfv.skill.digital-marketing",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.digital-marketing.01-what-digital-marketing-is",
+          "name": "What digital marketing is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.02-marketing-funnel",
+          "name": "Marketing funnel",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.03-search-engine-optimization-seo",
+          "name": "Search Engine Optimization (SEO)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.04-content-marketing",
+          "name": "Content marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.05-social-media-marketing",
+          "name": "Social media marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.06-email-marketing",
+          "name": "Email marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.07-paid-advertising",
+          "name": "Paid advertising",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.08-conversion-optimization",
+          "name": "Conversion optimization",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.09-analytics-and-measurement",
+          "name": "Analytics and measurement",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.10-branding",
+          "name": "Branding",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.11-copywriting-basics",
+          "name": "Copywriting basics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.12-influencer-and-creator-marketing",
+          "name": "Influencer and creator marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.13-affiliate-and-partnerships",
+          "name": "Affiliate and partnerships",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.14-marketing-in-pakistan-and-emerging-marke",
+          "name": "Marketing in Pakistan and emerging markets",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.15-ai-in-marketing",
+          "name": "AI in marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.16-ethics-and-privacy",
+          "name": "Ethics and privacy",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.17-strategy-and-planning",
+          "name": "Strategy and planning",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.18-career-in-marketing",
+          "name": "Career in marketing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.19-putting-it-all-together",
+          "name": "Putting it all together",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.digital-marketing.20-sustainable-growth",
+          "name": "Sustainable growth",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "generative-ai-basics",
+      "title": "Generative AI Basics",
+      "description": "Understand how LLMs work, what they can do, and where they fall short.",
+      "category": "AI",
+      "icon": "✨",
+      "skillId": "rfv.skill.generative-ai-basics",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 13/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 13,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.generative-ai-basics.01-what-is-generative-ai",
+          "name": "What is Generative AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.02-large-language-models-llms",
+          "name": "Large Language Models (LLMs)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.03-tokens-and-tokenization",
+          "name": "Tokens and tokenization",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.04-how-llms-are-trained",
+          "name": "How LLMs are trained",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.05-the-transformer-architecture",
+          "name": "The transformer architecture",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.06-capabilities-of-generative-ai",
+          "name": "Capabilities of generative AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.07-limitations-of-generative-ai",
+          "name": "Limitations of generative AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.08-prompts-and-instructions",
+          "name": "Prompts and instructions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.09-generative-ai-tools-landscape",
+          "name": "Generative AI tools landscape",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.10-multimodal-ai",
+          "name": "Multimodal AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.11-ai-agents-and-automation",
+          "name": "AI agents and automation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.12-retrieval-augmented-generation-rag",
+          "name": "Retrieval-Augmented Generation (RAG)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.13-safety-and-ethics",
+          "name": "Safety and ethics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.14-privacy-and-data",
+          "name": "Privacy and data",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.15-ai-for-productivity",
+          "name": "AI for productivity",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.16-cost-and-access",
+          "name": "Cost and access",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.17-working-alongside-ai",
+          "name": "Working alongside AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.18-ai-in-business-and-creative-work",
+          "name": "AI in business and creative work",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.19-the-future-of-generative-ai",
+          "name": "The future of generative AI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.generative-ai-basics.20-getting-started-with-ai",
+          "name": "Getting started with AI",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 20,
+        "provisional": 80,
+        "rejected": 0,
+        "longestOptionBaseline": 0.96,
+        "servableBaseline": 0.96,
+        "approvedBaseline": 0.85,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "git-github",
+      "title": "Git & GitHub Workflow",
+      "description": "Version control basics every developer must master. Branches, PRs, conflicts.",
+      "category": "Web Dev",
+      "icon": "🐙",
+      "skillId": "rfv.skill.git-github",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.git-github.01-what-git-is",
+          "name": "What Git is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.02-repositories-and-initialization",
+          "name": "Repositories and initialization",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.03-staging-and-committing",
+          "name": "Staging and committing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.04-viewing-changes-and-history",
+          "name": "Viewing changes and history",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.05-branches",
+          "name": "Branches",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.06-merging",
+          "name": "Merging",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.07-rebasing",
+          "name": "Rebasing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.08-remotes",
+          "name": "Remotes",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.09-undoing-changes",
+          "name": "Undoing changes",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.10-stashing",
+          "name": "Stashing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.11-github-basics",
+          "name": "GitHub basics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.12-pull-request-workflow",
+          "name": "Pull request workflow",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.13-gitignore-and-configuration",
+          "name": ".gitignore and configuration",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.14-authentication-and-ssh",
+          "name": "Authentication and SSH",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.15-tags-and-releases",
+          "name": "Tags and releases",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.16-collaboration-workflows",
+          "name": "Collaboration workflows",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.17-github-actions-and-ci",
+          "name": "GitHub Actions and CI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.18-open-source-contribution",
+          "name": "Open source contribution",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.19-best-practices-and-pitfalls",
+          "name": "Best practices and pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.git-github.20-going-further-with-git",
+          "name": "Going further with Git",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 31,
+        "provisional": 69,
+        "rejected": 0,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.88,
+        "approvedBaseline": 0.7419,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "html-css",
+      "title": "HTML & CSS Fundamentals",
+      "description": "The building blocks of every website. Layouts, semantics, responsiveness.",
+      "category": "Web Dev",
+      "icon": "🎨",
+      "skillId": "rfv.skill.html-css",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 14/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 14,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.html-css.01-what-html-and-css-do",
+          "name": "What HTML and CSS do",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.02-html-document-structure",
+          "name": "HTML document structure",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.03-semantic-html",
+          "name": "Semantic HTML",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.04-links-and-navigation",
+          "name": "Links and navigation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.05-images-and-media",
+          "name": "Images and media",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.06-forms-and-inputs",
+          "name": "Forms and inputs",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.07-css-selectors",
+          "name": "CSS selectors",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.08-the-box-model",
+          "name": "The box model",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.09-colors-units-and-typography",
+          "name": "Colors, units, and typography",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.10-display-and-positioning",
+          "name": "Display and positioning",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.11-flexbox",
+          "name": "Flexbox",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.12-css-grid",
+          "name": "CSS Grid",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.13-responsive-design",
+          "name": "Responsive design",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.14-css-variables-and-theming",
+          "name": "CSS variables and theming",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.15-pseudo-classes-and-pseudo-elements",
+          "name": "Pseudo-classes and pseudo-elements",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.16-animations-and-transitions",
+          "name": "Animations and transitions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.17-accessibility-basics",
+          "name": "Accessibility basics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.18-modern-css-features",
+          "name": "Modern CSS features",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.19-modern-css-workflows",
+          "name": "Modern CSS workflows",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.html-css.20-best-practices-and-pitfalls",
+          "name": "Best practices and pitfalls",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 24,
+        "provisional": 71,
+        "rejected": 5,
+        "longestOptionBaseline": 0.92,
+        "servableBaseline": 0.9263,
+        "approvedBaseline": 0.8333,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "javascript-essentials",
+      "title": "JavaScript Essentials",
+      "description": "The language of the web. Variables, functions, async, DOM — the must-knows.",
+      "category": "Web Dev",
+      "icon": "📜",
+      "skillId": "rfv.skill.javascript-essentials",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 15/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 15,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.javascript-essentials.01-variables-and-declarations",
+          "name": "Variables and declarations",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.02-data-types",
+          "name": "Data types",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.03-operators",
+          "name": "Operators",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.04-functions",
+          "name": "Functions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.05-scope-and-closures",
+          "name": "Scope and closures",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.06-arrays-and-array-methods",
+          "name": "Arrays and array methods",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.07-objects",
+          "name": "Objects",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.08-async-fundamentals-promises",
+          "name": "Async fundamentals: Promises",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.09-async-await",
+          "name": "Async/await",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.10-the-dom-document-object-model",
+          "name": "The DOM (Document Object Model)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.11-fetch-and-http",
+          "name": "Fetch and HTTP",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.12-es6-modern-features",
+          "name": "ES6+ modern features",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.13-error-handling",
+          "name": "Error handling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.14-truthy-falsy-and-coercion",
+          "name": "Truthy, falsy, and coercion",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.15-browser-apis",
+          "name": "Browser APIs",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.16-json-and-data",
+          "name": "JSON and data",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.17-iteration",
+          "name": "Iteration",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.18-best-practices-and-pitfalls",
+          "name": "Best practices and pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.19-tooling-and-environment",
+          "name": "Tooling and environment",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.javascript-essentials.20-working-in-real-projects",
+          "name": "Working in real projects",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 37,
+        "provisional": 55,
+        "rejected": 8,
+        "longestOptionBaseline": 0.81,
+        "servableBaseline": 0.837,
+        "approvedBaseline": 0.8919,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "no-code-automation",
+      "title": "No-Code & Automation",
+      "description": "Make.com, Zapier, n8n. Build powerful workflows without writing code.",
+      "category": "Career",
+      "icon": "🔧",
+      "skillId": "rfv.skill.no-code-automation",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 0 reviewed item(s) available, 20 required; only 0/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 0,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.no-code-automation.01-what-no-code-is",
+          "name": "What no-code is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.02-automation-fundamentals",
+          "name": "Automation fundamentals",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.03-popular-automation-platforms",
+          "name": "Popular automation platforms",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.04-no-code-app-builders",
+          "name": "No-code app builders",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.05-no-code-databases-and-data-tools",
+          "name": "No-code databases and data tools",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.06-ai-in-no-code-workflows",
+          "name": "AI in no-code workflows",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.07-workflow-design-patterns",
+          "name": "Workflow design patterns",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.08-forms-surveys-and-data-collection",
+          "name": "Forms, surveys, and data collection",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.09-email-and-communication-automation",
+          "name": "Email and communication automation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.10-crm-and-sales-automation",
+          "name": "CRM and sales automation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.11-internal-tools-and-ops-automation",
+          "name": "Internal tools and ops automation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.12-api-basics-for-no-code",
+          "name": "API basics for no-code",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.13-cost-and-scaling",
+          "name": "Cost and scaling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.14-reliability-and-monitoring",
+          "name": "Reliability and monitoring",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.15-security-and-access-control",
+          "name": "Security and access control",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.16-building-businesses-with-no-code",
+          "name": "Building businesses with no-code",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.17-career-paths-in-no-code",
+          "name": "Career paths in no-code",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.18-common-pitfalls",
+          "name": "Common pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.19-the-future-of-no-code",
+          "name": "The future of no-code",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.no-code-automation.20-putting-it-all-together",
+          "name": "Putting it all together",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 0,
+        "provisional": 100,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 0,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "prompt-engineering",
+      "title": "Prompt Engineering Fundamentals",
+      "description": "Master the art of communicating with AI models like ChatGPT, Claude, and Gemini.",
+      "category": "AI",
+      "icon": "🧠",
+      "skillId": "rfv.skill.prompt-engineering",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.prompt-engineering.01-what-is-a-prompt",
+          "name": "What is a prompt",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.02-zero-shot-vs-few-shot-prompting",
+          "name": "Zero-shot vs few-shot prompting",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.03-chain-of-thought-reasoning",
+          "name": "Chain-of-thought reasoning",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.04-role-and-system-prompts",
+          "name": "Role and system prompts",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.05-output-format-control",
+          "name": "Output format control",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.06-iterative-prompt-refinement",
+          "name": "Iterative prompt refinement",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.07-hallucinations-and-accuracy",
+          "name": "Hallucinations and accuracy",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.08-context-window-management",
+          "name": "Context window management",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.09-temperature-and-sampling",
+          "name": "Temperature and sampling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.10-prompt-templates-and-variables",
+          "name": "Prompt templates and variables",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.11-multi-turn-conversations",
+          "name": "Multi-turn conversations",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.12-tool-use-and-function-calling",
+          "name": "Tool use and function calling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.13-image-and-vision-prompting",
+          "name": "Image and vision prompting",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.14-prompt-safety-and-guardrails",
+          "name": "Prompt safety and guardrails",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.15-model-selection",
+          "name": "Model selection",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.16-cost-and-token-optimization",
+          "name": "Cost and token optimization",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.17-prompt-evaluation-and-testing",
+          "name": "Prompt evaluation and testing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.18-prompt-patterns-and-frameworks",
+          "name": "Prompt patterns and frameworks",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.19-production-prompt-engineering",
+          "name": "Production prompt engineering",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.prompt-engineering.20-emerging-patterns-and-future-trends",
+          "name": "Emerging patterns and future trends",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 35,
+        "provisional": 65,
+        "rejected": 0,
+        "longestOptionBaseline": 0.95,
+        "servableBaseline": 0.95,
+        "approvedBaseline": 0.8571,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "python-fundamentals",
+      "title": "Python Fundamentals",
+      "description": "The world's most popular language. Syntax, data types, control flow, functions.",
+      "category": "Programming",
+      "icon": "🐍",
+      "skillId": "rfv.skill.python-fundamentals",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 15/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 15,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.python-fundamentals.01-what-python-is",
+          "name": "What Python is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.02-syntax-and-indentation",
+          "name": "Syntax and indentation",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.03-variables-and-basic-types",
+          "name": "Variables and basic types",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.04-strings",
+          "name": "Strings",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.05-lists",
+          "name": "Lists",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.06-dictionaries",
+          "name": "Dictionaries",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.07-tuples-and-sets",
+          "name": "Tuples and sets",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.08-control-flow",
+          "name": "Control flow",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.09-functions",
+          "name": "Functions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.10-modules-and-imports",
+          "name": "Modules and imports",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.11-file-i-o",
+          "name": "File I/O",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.12-error-handling",
+          "name": "Error handling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.13-object-oriented-python",
+          "name": "Object-oriented Python",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.14-iterators-and-generators",
+          "name": "Iterators and generators",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.15-working-with-the-standard-library",
+          "name": "Working with the standard library",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.16-virtual-environments-and-pip",
+          "name": "Virtual environments and pip",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.17-common-python-libraries",
+          "name": "Common Python libraries",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.18-modern-python-features",
+          "name": "Modern Python features",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.19-best-practices-and-pitfalls",
+          "name": "Best practices and pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.python-fundamentals.20-getting-better-at-python",
+          "name": "Getting better at Python",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 35,
+        "provisional": 58,
+        "rejected": 7,
+        "longestOptionBaseline": 0.88,
+        "servableBaseline": 0.9032,
+        "approvedBaseline": 0.8571,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "react-basics",
+      "title": "React Basics",
+      "description": "Components, props, state, hooks. Build modern UIs with the most popular library.",
+      "category": "Web Dev",
+      "icon": "⚛️",
+      "skillId": "rfv.skill.react-basics",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 16,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.react-basics.01-what-react-is",
+          "name": "What React is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.02-jsx",
+          "name": "JSX",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.03-components",
+          "name": "Components",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.04-props",
+          "name": "Props",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.05-state-and-usestate",
+          "name": "State and useState",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.06-conditional-rendering",
+          "name": "Conditional rendering",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.07-lists-and-keys",
+          "name": "Lists and keys",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.08-event-handling",
+          "name": "Event handling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.09-useeffect",
+          "name": "useEffect",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.10-hooks-overview",
+          "name": "Hooks overview",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.11-useref",
+          "name": "useRef",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.12-context-api",
+          "name": "Context API",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.13-forms-and-controlled-inputs",
+          "name": "Forms and controlled inputs",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.14-fetching-data",
+          "name": "Fetching data",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.15-performance-and-rendering",
+          "name": "Performance and rendering",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.16-routing",
+          "name": "Routing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.17-state-management-at-scale",
+          "name": "State management at scale",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.18-common-pitfalls",
+          "name": "Common pitfalls",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.19-react-ecosystem-and-tooling",
+          "name": "React ecosystem and tooling",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.react-basics.20-modern-react-server-components-rsc",
+          "name": "Modern React (Server Components, RSC)",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 27,
+        "provisional": 70,
+        "rejected": 3,
+        "longestOptionBaseline": 0.97,
+        "servableBaseline": 0.9897,
+        "approvedBaseline": 0.963,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "sql-databases",
+      "title": "SQL & Databases",
+      "description": "Query, join, filter, aggregate. The universal language of data.",
+      "category": "Data",
+      "icon": "🗄️",
+      "skillId": "rfv.skill.sql-databases",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 13/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 13,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.sql-databases.01-what-sql-is",
+          "name": "What SQL is",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.02-tables-rows-columns",
+          "name": "Tables, rows, columns",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.03-basic-select",
+          "name": "Basic SELECT",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.04-where-clause",
+          "name": "WHERE clause",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.05-sorting-and-ordering",
+          "name": "Sorting and ordering",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.06-aggregation-functions",
+          "name": "Aggregation functions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.07-joins",
+          "name": "Joins",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.08-insert-update-delete",
+          "name": "INSERT, UPDATE, DELETE",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.09-primary-keys-and-indexes",
+          "name": "Primary keys and indexes",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.10-data-types-and-constraints",
+          "name": "Data types and constraints",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.11-subqueries-and-ctes",
+          "name": "Subqueries and CTEs",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.12-window-functions",
+          "name": "Window functions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.13-transactions",
+          "name": "Transactions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.14-database-design-basics",
+          "name": "Database design basics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.15-performance-and-query-optimization",
+          "name": "Performance and query optimization",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.16-nosql-and-alternatives",
+          "name": "NoSQL and alternatives",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.17-security-basics",
+          "name": "Security basics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.18-modern-database-trends",
+          "name": "Modern database trends",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.19-best-practices",
+          "name": "Best practices",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.sql-databases.20-getting-better-at-sql",
+          "name": "Getting better at SQL",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 28,
+        "provisional": 71,
+        "rejected": 1,
+        "longestOptionBaseline": 0.94,
+        "servableBaseline": 0.9495,
+        "approvedBaseline": 0.8214,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    },
+    {
+      "id": "uiux-design",
+      "title": "UI/UX Design Principles",
+      "description": "Heuristics, typography, color, hierarchy. Design that users actually love.",
+      "category": "Design",
+      "icon": "🖌️",
+      "skillId": "rfv.skill.uiux-design",
+      "estimatedMinutes": 20,
+      "questionCount": 100,
+      "levels": [
+        {
+          "id": "foundation",
+          "label": "Foundation",
+          "short": "foundation",
+          "tagline": "Core concepts, terminology and everyday use cases.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1200,
+          "requiresLevel": null,
+          "demonstrates": [
+            "Correct use of core terminology",
+            "Recognition of standard use cases",
+            "Straightforward applied examples"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate",
+          "short": "intermediate",
+          "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+          "available": true,
+          "questionCount": 20,
+          "passingScore": 80,
+          "durationSec": 1500,
+          "requiresLevel": "foundation",
+          "demonstrates": [
+            "Debugging and troubleshooting reasoning",
+            "Applying knowledge to unfamiliar scenarios",
+            "Choosing an appropriate implementation"
+          ],
+          "skillCoverage": {
+            "assessed": 20,
+            "total": 20,
+            "minRequired": 20
+          }
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced",
+          "short": "advanced",
+          "tagline": "Multi-step problem solving and trade-off analysis.",
+          "available": false,
+          "unavailableReason": "only 1 reviewed item(s) available, 20 required; only 1/16 required skill areas have a reviewed item. Item review is in progress — see ASSESSMENT_QUALITY.md.",
+          "questionCount": 20,
+          "passingScore": 85,
+          "durationSec": 1800,
+          "requiresLevel": "intermediate",
+          "demonstrates": [
+            "Multi-step problem solving",
+            "Implementation trade-off analysis",
+            "Reviewing and debugging existing work",
+            "Security and reliability considerations"
+          ],
+          "skillCoverage": {
+            "assessed": 1,
+            "total": 20,
+            "minRequired": 16
+          }
+        }
+      ],
+      "skills": [
+        {
+          "skillId": "rfv.skill.uiux-design.01-what-ui-and-ux-are",
+          "name": "What UI and UX are",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.02-design-thinking-process",
+          "name": "Design thinking process",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.03-visual-hierarchy",
+          "name": "Visual hierarchy",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.04-color-theory",
+          "name": "Color theory",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.05-typography",
+          "name": "Typography",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.06-layout-and-spacing",
+          "name": "Layout and spacing",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.07-modern-ui-styles",
+          "name": "Modern UI styles",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.08-component-design",
+          "name": "Component design",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.09-interaction-and-microinteractions",
+          "name": "Interaction and microinteractions",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.10-accessibility-a11y",
+          "name": "Accessibility (a11y)",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.11-ux-heuristics",
+          "name": "UX heuristics",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.12-mobile-design",
+          "name": "Mobile design",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.13-information-architecture",
+          "name": "Information architecture",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.14-data-visualization-in-ui",
+          "name": "Data visualization in UI",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.15-landing-page-patterns",
+          "name": "Landing page patterns",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.16-design-tools-and-workflow",
+          "name": "Design tools and workflow",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.17-dark-mode-and-theming",
+          "name": "Dark mode and theming",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.18-working-with-developers-and-stakeholders",
+          "name": "Working with developers and stakeholders",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.19-career-in-ui-ux",
+          "name": "Career in UI/UX",
+          "items": 5
+        },
+        {
+          "skillId": "rfv.skill.uiux-design.20-putting-it-all-together",
+          "name": "Putting it all together",
+          "items": 5
+        }
+      ],
+      "quality": {
+        "approved": 1,
+        "provisional": 99,
+        "rejected": 0,
+        "longestOptionBaseline": 1,
+        "servableBaseline": 1,
+        "approvedBaseline": 1,
+        "lengthHeuristicRisk": true,
+        "assessmentIntegrity": "under-review"
+      }
+    }
+  ]
+}

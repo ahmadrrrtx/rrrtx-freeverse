@@ -1,0 +1,3474 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "uiux-design",
+    "title": "UI/UX Design Principles",
+    "description": "Heuristics, typography, color, hierarchy. Design that users actually love.",
+    "category": "Design",
+    "icon": "🖌️",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What UI and UX are",
+      "skill_id": "rfv.skill.uiux-design.01-what-ui-and-ux-are",
+      "items": [
+        {
+          "id": "ux-001",
+          "prompt": "What's the DIFFERENCE between UI and UX?",
+          "options": [
+            "They are identical",
+            "UI is for mobile, UX for desktop",
+            "UI is the visual interface (buttons, layout, colors); UX is the entire experience including flows, emotions, and outcomes",
+            "UX is just animations"
+          ],
+          "answer_commit": "hmac-sha256:2917adcb9d46d37b0ff8f5943358c87e",
+          "explanation_enc": "aes-256-gcm.v1:yFss3OZ6TMCsBc2-:FadfZu6G30pVGiq134TK4D_NfEDOug6IFyeiZ9Pyn6USWHA7jms-Q2cIksmfvJf59zSKZa2njXdizQ0U6lLkYq3iL0YHF4ypAt-RSBS-j_yU4S55iYnv4e4Iin4H9Zwu_b--TbpqIplWm8lNO3IbC5zxxzmRd_P7TT0fJyWS8IKK7_OH5MUsVyjhmpd1CNcGQoyTS4YZfrLiA-ej6tFyrkH9WBlPhkry4c2QKR3dsONFdG6Wc1DJ3Uz5BeoHCmEFdaKhKwvCxVBy8VetZYN0DlXRyQfZI_47qz2QGIrSiObE8mSN9Ful5Wu8nuTXjQKdKQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.781,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-002",
+          "prompt": "What is the PRIMARY goal of UX design?",
+          "options": [
+            "Add as many features as possible",
+            "Use the trendiest design style",
+            "Help users accomplish their goals efficiently, enjoyably, and reliably — making the right thing easy to do",
+            "Make the most beautiful interface"
+          ],
+          "answer_commit": "hmac-sha256:7e6385a1b83554edc9d512f4fd98c5ce",
+          "explanation_enc": "aes-256-gcm.v1:vkD-fNMz8gtdrhLm:QqdaSCsy2qsobhx1kwZIW9MwVC6LMPxLt8yOslwOk6s-SPBPaNf5SXKNCuh6SRJTI0T639JTaFbKnygTgEHaDjDZ0GEUQWycjLF5LQOuvUhVreZrxoteMuY6op5Ew8w9Gl4EvItfcR0a3QnJL0WaMDMaKzhcPuvjvQuEMyCP3TToDeLq0oGple7a6Gd19DjaHxih_oAX8zvzJTjD2jqKMm4OTN7dF-OogXYItglulV5tagNIxVaXlckEhTu0R976r7mt-MFapsimmeiTj21h-lVZ4da6LkE2ESky8_nbE_W5BHpnfznBKvs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.212,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-003",
+          "prompt": "Who is the customer of UX design?",
+          "options": [
+            "The actual end-users — NOT the executive, designer, or stakeholder making approval decisions",
+            "The marketing team",
+            "The CEO who approves the design",
+            "Other designers"
+          ],
+          "answer_commit": "hmac-sha256:37dc28eefd684b2faea9bb3862218294",
+          "explanation_enc": "aes-256-gcm.v1:SJwgzSzYDTRVIzgC:1yJSveGwkwa_E62enTo4jexSo7chNIHWrN-9XYBnamw_GToNhlB8M7LXdTbvwMQctxwpCIr4E1vaYZHe05APbd8ba6n_yT9vpogi0kvg2506yA_ccsEze2NnzQhiyDsj-631yYV9uc4tjCbpDr2HpQXn3mUX0_XvDFjOnV8JqBO3Hd3h0VUKXzWS7jh72SfmHgZBJbbCRCh5Qs7a3d4Miob-Hgzd_bNuFZW2kaXQ_YrlO5DkRZB7DxAXG8UxZ3Ap1RiYDggqWvjHqfu5AB3iX3eumjiIPRInDbFWFPRku9dEVBHD6NbHYmQvqZlQRU8NFN_IzE55r-eMxH4HvkHFKuZepuMngpBoadT2WLw30TXGXoNsLUE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.968,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-004",
+          "prompt": "What does 'USER-CENTERED DESIGN' mean?",
+          "options": [
+            "Hiring users as designers",
+            "Letting users design their own software",
+            "Designing for any user generically",
+            "A process that involves users at every stage — researching their needs, testing prototypes with them, iterating based on real feedback"
+          ],
+          "answer_commit": "hmac-sha256:cbbbee926011192aa77a5ce4d55242e2",
+          "explanation_enc": "aes-256-gcm.v1:8CHkM3DZBkNdRFZg:G5HOh58_uW8h4wFa9DmdVWSDm2I56WLMKuneO3t4VoE3J_c0s4KqpHQdDDvouK5dJ-rvAxhYXtVg4QxTkJLf1GO37XioE4_ShwoHGjLHiYPHm3DVZZQQPf3uQkTdZqUzD4dVy7H2j5qIGJcunxu4JmPKkUdNX24kaAQtxxrQjzQSlOXb-05rEy4EL9TDFPYDwj4IOkoqk-1b--Kmo24iLPxVQ5odbdDxXekob_IenUGiluLC8Z1U-KEmcoSpzAvVx1MA8pp3HmOKPklMYM7m64mWcv_KkMGykIX6NiIwfciEsa3yZQdf-BYCr6Edn4rk5Bs6Yg14DN48",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.436,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-005",
+          "prompt": "What's a TRUE statement about great design?",
+          "options": [
+            "It uses every visual trend",
+            "It impresses other designers most",
+            "It feels invisible — users accomplish goals without thinking about the interface",
+            "It demands attention"
+          ],
+          "answer_commit": "hmac-sha256:34880cc413af5ca76da9be229e433a9c",
+          "explanation_enc": "aes-256-gcm.v1:_qTzami30qyXq_qf:uGgWcumTy95YzFou3ZIOEoqVuduEHTN2njDS8AbLcFq-gpzIS7HPimgAoeZI5rBdrNjgFnkCbLIsP-nUrp5pBYvWIbPNgC2KJ7feySE6FihsCw95RBxEqkMg1NYOiBOAXcLBlHJoOq9yfg2LqaIXlEyv3IppdxZl_pWqIP72hT5gror4fj-yDgMn1kc3DxWncmWAYtwvrOrI9D0SAPmrmYX9M1m84kDLsDGEl4CUcjbiqRp0mQ6YCKEjSlmfrjKd7KXciNBfnoFYGIc7zG0wvRz7SVcDuzmSNEBFDw5N2h8aOxJUKJbY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.424,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Design thinking process",
+      "skill_id": "rfv.skill.uiux-design.02-design-thinking-process",
+      "items": [
+        {
+          "id": "ux-006",
+          "prompt": "What are the PHASES of design thinking?",
+          "options": [
+            "Design → Build → Ship → Forget",
+            "Empathize → Define → Ideate → Prototype → Test (then iterate)",
+            "Research only",
+            "Plan → Code → Launch"
+          ],
+          "answer_commit": "hmac-sha256:7e906443648a0c40f11bc6d6eb53b7d6",
+          "explanation_enc": "aes-256-gcm.v1:PzAHkZtJE7CU1rpy:Qtojt2pHgKv1nM8bMAwFLsmJ7getr59y_bZ42cvbbzHDRRDP9QkRPQDA0cS22dbr21Qkq1eOA8SBVxmqFVqnSih-DQDlsER0PwRDIS0zIRX3Nfys8BXmlRfQMbEGPbvhECFyM1T7YGNf5E-_tOxaru0TVbuy490rjQ9wT8rXurDZW7Iq6LHngpfetKyKmujjL_nhGvRIJl4nFtfRlVBMdu3cZuTnyhpdVxZDUa3pOVoxo-aNlZV1zkmL1Y-p6wCLauWkDAIR0mxC2fA16pYtroZwXfcX6SCOc628wYSKHDum",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.033,
+          "findings": []
+        },
+        {
+          "id": "ux-007",
+          "prompt": "What does EMPATHIZE mean in design thinking?",
+          "options": [
+            "Deeply understanding users — their needs, contexts, frustrations, and goals — through research and observation",
+            "Reading user manuals",
+            "Feeling sorry for users",
+            "Surveying internal stakeholders"
+          ],
+          "answer_commit": "hmac-sha256:f6fa5f86e9013c43e10b3c7af665c0c3",
+          "explanation_enc": "aes-256-gcm.v1:PTidf9-0T1NTVw1V:2cGlSQw1s_FInPXo87Mx7jjiHctHt1pUKUsQfi3cozs1zkFMs05ROW35uwzBmJS5YSpBnZElx1_2yo1PTIDqjpGBe5YOX6rOChO5hhE5cbtnkByLYha6iE-37qLMIm2TnlF-kK_QLIsd96T-lxos94IRX1coI_WvaOJ0fCMu-9syFb-ShXlibzU3m4lUZGz5sGz4zUDIj9RycjKKuijZ648ICP0bhqEYJaiVWE61TkkH9Wke1z4mxtzq9NF0dN9Xs-1zesFM8i4-mTDRyxTdsdei5h--3pG0VWYjQDLgfBsVGY1p9QINHTtM2NRkUctDL80zX5eM2a3SMZA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.548,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-008",
+          "prompt": "What does the DEFINE phase do?",
+          "options": [
+            "Synthesize research into a clear problem statement that guides solution design",
+            "Define every feature",
+            "Define all the buttons in the design",
+            "Define the colors to use"
+          ],
+          "answer_commit": "hmac-sha256:033e8dac6033430f2dd26dbcd5b7600a",
+          "explanation_enc": "aes-256-gcm.v1:0EGbi1Lnp3E7LFEA:OuKxMppvmy1BIeo73FMaZ-f4d5lY80weUsiCuD9fzdE2aHGdGD9MTFMWn2DMFfOTGWX1ZjO2YzmmSHO_wOvT9mCDleq1WPSKXwN7SM2JTXdtWENdfIkqdJ50K6IYV2AhuIFyYpBfTTABzqhjxrifKweFji_Po67jnQ1xiFfxPqt3-yESau7wD4DfwW09PWY2pdifxMFLkh4Cs7sZ8r32SSI7pAByoQAKinp6UB79COurCSHaga63xh0ikptcQYpAaQzY1ujy6uDHr0jeKuanvBRCBCunZiecEyAp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-009",
+          "prompt": "What is a PROTOTYPE in design?",
+          "options": [
+            "A marketing video",
+            "A design document",
+            "A scaled-down representation (sketch, wireframe, clickable mockup) used to test ideas cheaply before building the real thing",
+            "A finished product"
+          ],
+          "answer_commit": "hmac-sha256:a78f8a776618cc92366aaa8ddeeb1a54",
+          "explanation_enc": "aes-256-gcm.v1:fUXqg_97RSu7Jg_K:TJCC419wBb-SRRgF6vYXC91C_cM44BRWQGFCrI25c3taicPnuA9SjfUmvCPsogiDsZ6oTfM-Zcl1wJd8JfG3SEjIL4SiDiFQEknu8maA74gH_b1fFq4MZG5LUJRFTek2NzlUwUCQXxwyVoVNDq-xMhD1ddOIi7bMPYezyj571us2BnW9VaXo2AQRUkJ_W3PEKCMH0Jm_OcVKH1L6-j7OO0DUKOF1SlNoGe0Rgkm7hvnja-gc-6gD65iOg8hDXyMM9znD_Zytj-2MsMHYQYNEy2Men2k2VzBzNTQ6gjnJU7N1OZflklnmTgBDkqkDs2A29hk5vkxBK1kruacXt_EVGNe_wnXTT1mcPkGqsmCpzJsvmQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.889,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-010",
+          "prompt": "What is USABILITY TESTING?",
+          "options": [
+            "QA testing for bugs",
+            "Asking users if they like the design",
+            "Performance benchmarking",
+            "Watching real users attempt tasks with your product to find friction points — typically 5-7 users reveals most issues"
+          ],
+          "answer_commit": "hmac-sha256:541d0434cb70f89a8a7c9a22e5153e87",
+          "explanation_enc": "aes-256-gcm.v1:yQbf2AalcgMOq-VL:It5LJcBM3J_TplBEgl5oSMb7sEAqdH33swTnVryb6kAQcbxmSHjDOi3MYK0WWpynHDqgcLFMNcpFx9iHpMAyE9zlWgHEwitbJAcOri1J_vDChwslCH5rtxY_109rYcyHDKnuYcrVH3g-6EPzy9W3uLztnoP8ITy5y3pPHu_wfVymfIM0XwK0exNZ-SUCFkCMQYarOyMfsi4HixWDeYuNowLsWPAnAl3bXPNS1e0hn69wW1ecIVK7owoXP4tjFlVJTYoXOZjit6lDKo6g6b1eCbRtZLYsXdqKLVsSJ81ifVFCgIt2lTFp585q_MlEfIbB",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Visual hierarchy",
+      "skill_id": "rfv.skill.uiux-design.03-visual-hierarchy",
+      "items": [
+        {
+          "id": "ux-011",
+          "prompt": "What is VISUAL HIERARCHY?",
+          "options": [
+            "Font size order",
+            "Vertical order on page",
+            "Arranging visual elements so importance is immediately clear — what users see first, second, third",
+            "Color hierarchy only"
+          ],
+          "answer_commit": "hmac-sha256:5999e0f64ac5325e465efac8fbd5301d",
+          "explanation_enc": "aes-256-gcm.v1:XySJBipjl7xO49dB:AzQ75Nt-xxcTcFl4MxEJNWEEJoTjwMSNFE3vgCxTUi00b13HojhU5GzTqqDjv8EsCy7PhHou7pjo3idPYRikX4qCwQ3z7T-8uaoabVNjz2-B34NU2ukv9ht3NvEkrmmqGyRmCwj4lABjQgfN-Sh3oVBpRZOR1WXcFaupbY82g_u98UI5sUaCGKmUZhv0p_HE-aqV7Fs4XQr_V3KZim7gq9OniuB04zbcraph-Xb8j_ZgxSYkRXBqN2ZI0HVTYkZKoW6HY7V-nb9aMMA82YSqE00BheELIWVNWmRzcBX3_DMl_d9ta01adfQxUQTN9hEgTbxB",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.455,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-012",
+          "prompt": "Which tools CREATE visual hierarchy?",
+          "options": [
+            "Only font size",
+            "Only color",
+            "Size, weight, color contrast, spacing, position, and motion — used together to direct attention",
+            "Only placement"
+          ],
+          "answer_commit": "hmac-sha256:78e965e26b0bca25da69e8b816f172a5",
+          "explanation_enc": "aes-256-gcm.v1:nwxZ7pbk6ZRlVbZt:oNvSUyhcUZQBTJ7VErv6yi481zd2ihqmOcmjM3z-gnVd4LL4-Ym_lI4CTsYv8yty4UwHYdi744_UID_Icev2yw6Xe946L8M1pJ3pgQ9InL3Rn5dS9Uhqr_js89apdXZZmnrCRwoXSZIioj7_FcZ6TUZTjyKCnHInXpGQiHx3YMLugtgm5q5rgBGNtV6r7mCMeJjqzyNCNWfJmaSqBKM0LVpQSNl8AR0ZzvPWBPIlT9q0A4vvJ4URIBOKIPIx8ZBNdhuiKWEBI_-DmHk3OY9XHyTYF0EAQxXItSz_EVHePf9B4W41ePQBvA8BCCAp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.786,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-013",
+          "prompt": "What is the F-PATTERN and Z-PATTERN in reading layouts?",
+          "options": [
+            "Programming patterns",
+            "Common eye-tracking patterns: F-pattern for text-heavy pages, Z-pattern for image/headline layouts — guide where to place key info",
+            "Types of fonts",
+            "Color schemes"
+          ],
+          "answer_commit": "hmac-sha256:e798ab537b4633f3252fee948dc7819a",
+          "explanation_enc": "aes-256-gcm.v1:5ZBaxMukYyHk_rvK:498JDldXx92YBWleUfvRgsBJ2juY5uS1sjGHgx5UsqdP1OGr9dw_pu4taIpJpfHQdHK4P2ploFa0d1aNwexcVfSHZwsJfsPtQP5geNHJpw_0nzRsI2H2QwlleK-_jfiNaJOIW7reHhYc6s7MHii2S6ONKDPZnqCI4yIDmJp4ZAycDX1RjV287IBFJ7tJ5aoOpqFEyCoh3e0mP4ugXrAb9gI0ae4wOQg-mu-aiWU2cVH_GBmLHzIbbaIKgigYGb8v9VljaNnfIHgLExHmnech_bmrUWrhekPyv2MybTiPNdHKqFiH4O9kXMaWstOmlWrSGtdU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-014",
+          "prompt": "Why is WHITESPACE important?",
+          "options": [
+            "Looks unfinished",
+            "Is only for print",
+            "Gives elements room to breathe, improves scannability, reduces cognitive load, and creates focus",
+            "Wastes screen space"
+          ],
+          "answer_commit": "hmac-sha256:ee5658693f83275bd7c2eef175795f59",
+          "explanation_enc": "aes-256-gcm.v1:mx96bA2Qn66xKIJI:aZzGMEntiCQBRgPvKa36BQL2nVknGisTMLCVLzVaRuDCnreXtsmTQ16vIidmG2DHJ5elJ6xzcTfnXrGEbgYCONBv3m4ad15uWAM07pPeBcUNQZ29lYCasweW1MocY4nhljqNEeSRjrgW0_reQF8-XABKkokIAAB-6XPYf2gENsenMWcAhNZbiHTU4F0ho0Pjszd9GKqGprvv-Mf2IVtAYDK9boe1PA_zrm3V3XKBKT7F-pLh1G-TiyFmHpWNmk5R39dgvhwPYjLpUrVMDW-HxaxM7A1rqRCVBAjFe4X3O_aIeBZAbzXwk224t1DbRd5FeubIGWHOnXZel68lf_rPxy_L",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.053,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-015",
+          "prompt": "What does it mean for a design to have a 'CLEAR PRIMARY ACTION'?",
+          "options": [
+            "Hidden CTAs",
+            "Multiple equally-styled buttons",
+            "Many CTAs of different sizes",
+            "One button or action is visually dominant — the most likely thing the user wants to do is obviously the most prominent"
+          ],
+          "answer_commit": "hmac-sha256:ed10f324280ea085733849f3fc9a0f20",
+          "explanation_enc": "aes-256-gcm.v1:hy8cL-M9QVs6PHS6:q6GtGu1k2z30UPIg87HutAA39rZwMF3P2mW07ZQwBSmzrz-4c7A5j8QVf2DNyLsDS1LLB1noIMKJynUzwxgTbA7OeRhvTQfZQed9wBB3tLg9KWdAVspmRSC0egO0dhcDVpkU2nHgIde99sAG4rK-1unOhMHDjhIm87jdW88zfWSlfmtUuf5qkkYagz01j-4ry-e1sVvvWY4jy6sF-0ZSoORvocV3Uhq8VspRb8r7F-RvmATRfu3C60cJYlbfeLp9zQAkUlGeWUxi8WLfa0TowzT-lp2sx4-15X0yYjq9vuvNSShb5rQ2",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.806,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Color theory",
+      "skill_id": "rfv.skill.uiux-design.04-color-theory",
+      "items": [
+        {
+          "id": "ux-016",
+          "prompt": "What are the KEY roles in a UI color palette?",
+          "options": [
+            "Primary (brand), Secondary (accent), CTA (action), Background, Text, Border — plus semantic colors (success, warning, error)",
+            "Whatever looks pretty",
+            "Just primary and secondary",
+            "Only red and blue"
+          ],
+          "answer_commit": "hmac-sha256:603e9540bd9ad60edc0e33dbcb70f5bf",
+          "explanation_enc": "aes-256-gcm.v1:fniO8kuTZg7n8ILs:E4VFVyLImogjVAEulPsLYhU-tgN4X1wZMOLqil2M_fF7Y2j50mbep-Z5IbZCi-bmScEo0tSUz9KLoLKXkDUETdnCwV9NvEeXogjic8DZbFNRqJh4hz04WsbAKx8yM_sek5euRWcQqI_-1VQ0a68rXNVCMWpaZjMBZYjpDGXQmxvA_AYzboT6MoZFtcrBI0Y264dhHkuWfrp4GEZDeePEW0TclRyO4-6-SvsrbjuCVUNPh1efcBHF0d0dlaw7PKGNuyjfPi6B5TdK7VS70hO1ICHkc4Rwbs6cfjPjNLuGuL1dLXO7WWmQJklAZ9zZ6RuI31NzJc0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.769,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-017",
+          "prompt": "What is COLOR CONTRAST in design?",
+          "options": [
+            "The brightness setting",
+            "How many colors are used",
+            "The difference in luminance between foreground (text) and background — affects readability and accessibility",
+            "Color temperature"
+          ],
+          "answer_commit": "hmac-sha256:9a6598d71fba3a15f74d987173463ab1",
+          "explanation_enc": "aes-256-gcm.v1:-HE_N_6iTc8qoFDb:71YVsez0dqg_PmevPsHaUMNmpubwpNJlykXn8DdtmqLYyMdlHkjpC6RjD20e1qA_YaLizh4eJWXXRPn1CUvXMYDDCjdjkfA5ZF39EjlI6tStPI-Tm8LMOUAT8B_siqXsHwDIN-nepFmhew26DloUEfmq_SQZm4bVzwqQ7Qd064E00vA4gWDt3F1vcwjcARjGEBaSNHsAPJfZJRskqRPh-MbmwDmZTkYAyTBMXYlB2cOf_sz765nos0nVCid_DJ9JI3Af-bccxw6e6FI_t5eS5FQavU6yH4dUQi568CtPzuX_gGNO_qM9rhUA-0KfBntTJo58qQj0Bp41Kpv2p59nEIy8aU7kp2R1zvtNhTLL6odxdPm-dK2WxovKeA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-018",
+          "prompt": "How does COLOR carry MEANING in interfaces?",
+          "options": [
+            "Colors are purely decorative",
+            "Conventions: green = success/go, red = error/danger, yellow = warning, blue = info/trust, with cultural variations",
+            "Colors have no meaning",
+            "Each user assigns their own meaning"
+          ],
+          "answer_commit": "hmac-sha256:fcac9d5ab0a662232f583f545deaab86",
+          "explanation_enc": "aes-256-gcm.v1:xm-uM5GFL6DkB6Fs:n-EXKoHwByW5duy4Q_imc3lg9rYP76l5Xnyy0e09CcKxggpt0Ri_rp9xFClDx9Gvs75fDdfGdYkD13heZErUBtzOkVdSD6bmu_UzyCR6LftUx8rWDvS3izVH_2CTaXOq_m42ql9PCjfOE4EIfewv-O6bbV2CFLLkwQQMy1XF_MJZQ7aKffppt8XRI5pzKEaYhzH_6qGEbS4nNEZ7V5vZaO2t2tjwwpgl6XL2zfrepmzs2qUwG4LwI9zhQk12Xp3-yHFaWxgV2rLkMM6zV4ANNmxbAtkoy99YFU5pBB6yA-2rPFNej7IJIbrIW-6L689RA_gl9OeK06Tfdqa_bW1WrMR-k59TF5WlK5xZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.257,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-019",
+          "prompt": "What's a SMART approach to building a color palette?",
+          "options": [
+            "Use rainbow palettes",
+            "Copy a competitor exactly",
+            "Pick 20 random colors",
+            "Start with a core brand color, generate tints/shades for variation, add semantic colors, test in light + dark modes"
+          ],
+          "answer_commit": "hmac-sha256:4e19c38175a5e2db85ddb539ff2264b7",
+          "explanation_enc": "aes-256-gcm.v1:RjlcLujxzWhJXKar:2ujCy3RQgJ_KLbaYwJ9DTNyBQxrBJp6xynKvQSiNMQAE1LsbaNMe8dADANwBH0PqGvAdVUniB5Crbw3wF_c5YhPxITw_QUBDx7Sw237hscvLZEoLOEtip6COxHJJMqryOu3G988wHhvYZBKZrs93jkt_fx-j61_FkdqBnAB2p3FV4GVtg6RSlmspHXlHIrkBhpTtriz_fgLRXBEFIIHOB-LDVsdQmw2z2oEwnanjq2Ham4a-0z2cAnZ6W4WZDk3pqVnsFi8k8cc0DwmvReLtI8HNY2ZQ0LA5_oPGyAHoAh3MKATvWUgI1dP6kMvfjiI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-020",
+          "prompt": "Why design for COLORBLIND users?",
+          "options": [
+            "Users will tell you if they can't see",
+            "Colorblindness doesn't exist",
+            "It's only for medical apps",
+            "~8% of men and 0.5% of women have color vision deficiency — never rely on color alone to convey information"
+          ],
+          "answer_commit": "hmac-sha256:87b04bdaae3324e1358ceda91b00e1dc",
+          "explanation_enc": "aes-256-gcm.v1:mX0sEee_HocDdfVl:H8MFbOqg842DG5HptbbjHCag1gRFW3RGi3r84av6OUdDIBrFo7a3Q9ZmjRR6wMFDGw-FM4o30fu4zS7yHKw0s4aiNdLwXzZQyakfBw2Tg3HL54Pe6Fo7G5LG1L2qGHqRRHlcp13rt_1xpiB03jxW5xI3gT_D3xaIFIm5JURkCyf8AgbAbmBYEGompbo1ZEIBbLV0Oogoj44eiPwhK-9mh239Be-7t5ISwVnKU0ISutwdFtU7XkDOh1auPU3DdOF_zzFJO5TB2f9du8c95Z97vCOGpQf64Jp5NKDbEj7kDqx7MBpVo3vkAVYQ_A5FnE2oNPNbJrgCyM2O",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.892,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Typography",
+      "skill_id": "rfv.skill.uiux-design.05-typography",
+      "items": [
+        {
+          "id": "ux-021",
+          "prompt": "Why does TYPOGRAPHY matter so much in UI?",
+          "options": [
+            "Text is 90%+ of most interfaces — typography directly affects readability, hierarchy, mood, and trust",
+            "All fonts look similar",
+            "Fonts don't matter on screens",
+            "Typography is only for print"
+          ],
+          "answer_commit": "hmac-sha256:63017faf1a19e8ace0ed633a49461dbe",
+          "explanation_enc": "aes-256-gcm.v1:3bjP5lbN7QeljOCv:N-WKI0vWZYz548SFQtRhNTY3YXKOpYvhvFTWRf4wEY9A9g6lUWQOYR5H6Q4xcRblDVr9TqZQ6GuNo_8uqv2NQ0qLdFAvC5H7fqJ-7JngeN8URuelZYfk6e410jqCoXy9sxD2i_YqlH8EZl_Tg3xfrNk2cGHCl_AWRJRJkfbpTUl_teokzS5DNy99jHNyOVE0Oz5z2WQCQbm2SbDebzHJ-GvgE_XGbDEOi5aq2lxC4O0TkOq691W_re0bH8dJCSfSRZNTlbHFrJ-oJtCaI-4fmX604d-5--5hSrsB9MoMVERQEE0tlu2iuGZUkCuShOjBkN0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.483,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-022",
+          "prompt": "What's a TYPE SCALE?",
+          "options": [
+            "Font weight options",
+            "A musical scale",
+            "Color sizes",
+            "A predefined set of font sizes (eg 12, 14, 16, 20, 24, 32, 48) used consistently across a product"
+          ],
+          "answer_commit": "hmac-sha256:4e055517aabe281895d1c868761a35d7",
+          "explanation_enc": "aes-256-gcm.v1:3KiQ8Yx9AgZ45ibB:2StyPYgxka-q9s93Pbkbgcjf4FJgLGmqqgyS9iN_Ah4hiaD02eai_1xRYvzt-x8jx4Qxl2tPBECSO8c5_Lc5YLEfo61_fYZFyiRrqZrnJh7mOr2I_BIPvNugdljWbdSdAT5qoXi8vLoH2XiRtFFTf1lzHZZ7OXFCdgkx2gHZa_Ac5qveuCMYF7k11_7Dd46RtDCw6e8rsxS33l30k-FkN9YsD9ZSDx8okXnumcjreYrk6YQocGAaF-F4FgBqeHEHhKyF6b94NLCVxAtXKu0Q8cHAQkV5a7PCMy-UCSfWEbdwtV86ytZLUfUjn8tcMkARNvyNRhy3AjKpbMtG4vWhy5pSF6rHuuuC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.105,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-023",
+          "prompt": "What is a FONT PAIRING?",
+          "options": [
+            "Two different colors",
+            "Two different sizes",
+            "Two identical fonts",
+            "Choosing two (or more) fonts that work harmoniously — often a display font for headings and a body font for content"
+          ],
+          "answer_commit": "hmac-sha256:28b8b3122dccf6f647687383a05ba269",
+          "explanation_enc": "aes-256-gcm.v1:zAG_O1BYxK-3SuzR:qI3f9lUapkcnuTSJ7aAiPP42Fu3ov98ZgOVvHMkNk2rOhc0dzAwL15C2-wpY6AIeSKprdp1Kc1t53-iafu9X7uJo6vBtzSL7v3ZdUrquXHgxDUL4HHo_ZIk68lDOiR9kQvuqjYaaOaQSCFkReG02OXUHhKvp6Ltt3Oo2egoTWiBoYkhMJCshmRsQSEbqZ0ybHUs1rUjeALBveyCt8G_SYFsD289tHQNT7wKj4PlHxySrYBrVWBere3Wzg9nITXjL46yypKsez2eTn97m9ZutRfmBBygfzLgNvfEnluBOf1OWitvsRelrJaGUMaM3fN7tyLu0EoJFqA3oanau4HZ8qRrAJV1sYKoojXqeOHAkU4g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-024",
+          "prompt": "What's a SAFE default font choice for modern UI?",
+          "options": [
+            "Comic Sans",
+            "A clean sans-serif like Inter, Geist, Space Grotesk, or system fonts — high readability across screen sizes",
+            "Decorative scripts",
+            "Pixel fonts"
+          ],
+          "answer_commit": "hmac-sha256:9f705b4320ba49cf477ded87f2eccf4e",
+          "explanation_enc": "aes-256-gcm.v1:k5bh6BjUXj7wosv8:hcnsFiHubBuTqJcmeu96yosJ5V8_6DG5KfzduL6CK_gHr6UdcxJNHyN8QSNe9Ai0X_r2Pe8QutXJIRr8daiazusA08D88HA_2yQ-a5ar1P7SIYYudQN7Vcj6I-p51-kbZntRT9veGKu-nZfNoz2bHGgT6bWzg6vxuY8itIwkrv7zQrTiUYtFCNB0sWi64dVGOYDcSu-N1PlpC4MEyj3TjIP6BPgqapggTBg5mHA6e4oqVB-0AX1iI7vpGz24V2MXdhSvX8FguIoEUOvu0ri3lJRlJKzHvH8Dsz54c4qggvmBIgwPGGHguPe30TrkD6s",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.944,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-025",
+          "prompt": "What is LINE HEIGHT (leading) and why does it matter?",
+          "options": [
+            "The vertical space between lines of text — affects readability dramatically; usually 1.4-1.7× the font size for body text",
+            "Word spacing",
+            "Font weight",
+            "Letter spacing"
+          ],
+          "answer_commit": "hmac-sha256:a4c89c1d0a888f6f02b5b59c0b5e0752",
+          "explanation_enc": "aes-256-gcm.v1:w730PNN8b7YqqcvO:3xAlNpxzYyA72b6OU6hXCAZx7xLM4y_LDggQl9RcYeiOTRV1ZkrpSQqdwtAm7G_iEmGLAomgyELcMhsvlTgVGzhI3vpl0eMXCGz7GceK07YazeuH07WQgPYQPciz7gsbWfCTk9nN_OF079tG8MvnLDNXhDiwM49zrLCyp0lAPeFPzw0rFGnX_xPUsHD5G2MjUtjrdJxQYKM70rME3_E5h8NSy_51Y0nJxaHh0CTrRgKXstMAlRC6BlC_a2z2G3KybkJAVoS5u_vNQtK2mB2_x4Y4oh4VyyURSMCnFAsiabeS",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Layout and spacing",
+      "skill_id": "rfv.skill.uiux-design.06-layout-and-spacing",
+      "items": [
+        {
+          "id": "ux-026",
+          "prompt": "What is a SPACING SCALE?",
+          "options": [
+            "Color spacing",
+            "A consistent set of spacing values (eg 4, 8, 12, 16, 24, 32, 48) used throughout the design — usually based on a base unit",
+            "Distances between letters",
+            "Page dimensions"
+          ],
+          "answer_commit": "hmac-sha256:6665f1cb55072631c5bf81ecdae7261c",
+          "explanation_enc": "aes-256-gcm.v1:c5IHq6C82A1m4dUX:gW0UKw0prb_pisoYKnDumBc2wjOuCtVfRszOH0jS8aDPQkxWQUJPDvTojwPO8W1FylKSMey1_kZUfeEB2N5eVnoY_veSuqSicN6uZcIHt30rixEg7_Ho148R8y6RFl_Ka6XhbV6RzE_wq_jyvJ1eUWVU5j1sjxbZP9FEUJSCONWnmgmMtaW62xDf8gAH2X-w9-KdvyNm76iKdplTdZ5vFieY7sDB0-BTkrp8xRs6bgDQrzJBbGzQKSr51sBJmKlGPSyWymz0jjedPqbs3xeaKRtH14OzRwkjHPRRPHNoMOaK4RmhxE7GkC-KQVA5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-027",
+          "prompt": "What is a GRID SYSTEM?",
+          "options": [
+            "A type of background",
+            "A table grid",
+            "A chessboard pattern",
+            "A visual structure (typically 12-column) for aligning elements across a layout, ensuring consistency and balance"
+          ],
+          "answer_commit": "hmac-sha256:208445a892b30e5d0420452a53309e20",
+          "explanation_enc": "aes-256-gcm.v1:ocmN9VfNAU9gpPyC:KH6gaI716BKy0k_uWcjSMNXNTC-qats1mrcnfya9T_5fEOMtas8wM834VlzhWS05VHNBHlRk8NQ83hsXgeyrqbvLFlWIiP-LgxjbyeXdOD_1DgD3YmZqO6tJhDzxlRzxqOQYzNRGmMWz2D9SVJd3uRN8xBY2JRRKZ_5hqWGuXT61jTYJBxY78eYZgGi-wTIwjexbymXBhcwpXJo7dwneCpnHtJs23fpPdpJPCqu-jqSnEGzij3EV1BbJKGAiFd5Qcbpz8l-V9bNRo8hneSuY_fT0CRKZ1hReVByfcvPrCmAqBPEe2uNvDjMc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-028",
+          "prompt": "What is the LAW OF PROXIMITY in design?",
+          "options": [
+            "Elements placed close together are perceived as related; spacing communicates grouping more than borders or backgrounds",
+            "Closer is always faster",
+            "Distance equals importance",
+            "Proximity is irrelevant"
+          ],
+          "answer_commit": "hmac-sha256:40acbf038d81c95e632e457005445016",
+          "explanation_enc": "aes-256-gcm.v1:CmmTQJJ-7_JT5_jK:w1TvD69KnRinM86tbIHKMhFAYtYRwNUjmbkC-sGTO7qOHBrX-k7JlJ7LD7O3WS9UOAr6piDgTDpcftAFs927kwPIbBmqulb5IoClHhxP_nCJC_RwW8fL_NrnrMmmAMy9W0R05D6x6qAsI3uJj7hOuAoyh5Tq9iYITWfOpnl-wrLifN0CFUhpH89FwmxyWPajCH8wkSlS5c802SVKlMwhuYuKfIicy7za0FF8fPRRor4EXRecoMjzZCifOVPPzyFwVmubCRRikttWURyVxdOZVLgWWUWvm1XJIVvfIWhiGQpKOKFDOUil_KgzmnNDyhEHyQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.577,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-029",
+          "prompt": "What's the difference between PADDING and MARGIN in design?",
+          "options": [
+            "Both are external",
+            "Padding is internal (space inside an element); margin is external (space between elements)",
+            "Padding is for text, margin for images",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:a884717662a525576d5f2f8caa0a6708",
+          "explanation_enc": "aes-256-gcm.v1:tcPWLQizjg27ku6L:THG7bogSSxWCEfl6CGoBPftlgJ7shEY8Ev2dTh0jrUNHQFac8ehBBhOkmn3Tj0u3P5IOdJm6jnmH37zIFSRyrFZYCLoDm3H4VPF13w_b-KA0KqG_PDeYT-sCtfsil50z0ertVsVRYWMwPwBAiaNygRIVchCxGCE31LZHz1WNDBqNoF-0WIKfLCUv-ryC3ZvsznSWH0PWnbmbbBoyKcSNvoGxBuuUVMyaYqDNkTFKGLSiZNKIPrqGWfTW0nhsjjZpjOogi0Dj5cwZVPr1rUUq3mCh-IPmqhvA1D8MU7DvaXvfCMtXSzyrshjyKjM8ECg-aR_e",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.368,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-030",
+          "prompt": "What's a SAFE rule for content max-width?",
+          "options": [
+            "Width doesn't matter",
+            "Limit body text to ~50-75 characters per line for optimal readability — full-width text is hard to read",
+            "Always 200 pixels",
+            "Always full screen width"
+          ],
+          "answer_commit": "hmac-sha256:2537bf930a149733f95c80a7d0f4107f",
+          "explanation_enc": "aes-256-gcm.v1:tfUziGmvyMULHeYc:Lt0NLQFUpCEuKSroHbHhLf7QmU-2wuy7aJk9-4o0lZ6FAKXKLiS26nnxRhWK8Yu8k71vMsKh0lrCc6jotLCbHVaKxRf_W6uPa8Uqf6B3KMOMMb3sF4frnacl5jt8vVUWiA_bOTV5eoPVaDfcYcAWXyzQQbItcjcHjFu3WLF8UulKNcdQxYTPPjR_WIXUBt30o9sf9vFYg8AVC1by9ytTgIANisaUsnaXDPOyYT1JTRh58kbvQhmrAC42c6IQzwnD2r8ONjTdyTD9YcZ4h8U-kx9ppJClt4aJu2op5z_Vh84PNeqEcaZs3hAiM_9I8Q7qPgRsRpX0KTmFuioIQg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.292,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Modern UI styles",
+      "skill_id": "rfv.skill.uiux-design.07-modern-ui-styles",
+      "items": [
+        {
+          "id": "ux-031",
+          "prompt": "What is GLASSMORPHISM?",
+          "options": [
+            "A style featuring frosted-glass effects: translucent backgrounds, blur filters, soft borders — used by Apple, Microsoft Fluent, and many SaaS apps",
+            "A type of grid",
+            "Black and white only",
+            "Drinking glass shapes"
+          ],
+          "answer_commit": "hmac-sha256:cac69b192dd4bbfe53c84bf7c0d8fb61",
+          "explanation_enc": "aes-256-gcm.v1:jtLhxGN-4zqAKnz_:cc2Wh79xzvqmiKm7NJ3YorMib0wgmU1rcKXfK3BtqhQPHSWG3P2s-FqTqKMRLCdj6iu7MPbBl0-BlmIRlPdWHiCKGJm4WhqkiPiuijflAvtNjZL73BApfoE76NMlLCfp3ZhYXNlPCT_CaltBwL2WKdV-iKUDvybf71J5mMsaiBvpyKzSDvGd9LqtewuubDirGVeyGwOHiKMFTKBlPRJDo-NWoyIhr9CR70NqJzXbSON6B4uF4DBYHddRlLpblWZ44jxOWItFGhuSiH0Dl_DURcjDouFB0MXRtsRXxJPZLx-pspCD7SJfYvmtjLm4eqDpjtUFuK5myTqlpU0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.952,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-032",
+          "prompt": "What is NEUMORPHISM?",
+          "options": [
+            "Pixel art",
+            "Brutalist design",
+            "A style using subtle inner/outer shadows on flat surfaces to create soft, extruded 'pillow-like' UI elements",
+            "A new type of morphology"
+          ],
+          "answer_commit": "hmac-sha256:d90fab1bc7705f0f30322987d339a527",
+          "explanation_enc": "aes-256-gcm.v1:2AbcHrDMwgu5p9xB:yK4jDhCnBkWLyM4i2MTkqyVEg3w6e07lV_lmEVHqYAGlSPxvjed718YTX2ZXbL1tesPV5rPUg8IVkLHA55nqqwBI3tzmMccZgS9n8CNVur6HF-AhSR4grF2TRfK2Rz7kYmVmt7jwQ-Z2Le1ol7tpCH--IwEhX6OkGDA_hinKTvOVsc2BfgG63dZNJ9EY8P4Irb3n8szfxIG4LdCSrOMG5peMzDl2k4zH6vvRSTdAFWW0pf54TTgxN9PuU39NcqFKDbzu0GVUkX5479G3Lg-WGHIPz5bLfB5B7o0_YF6d2hh1-3mwW6-wHJncli9a28w6rzNKTza1mC-u6AVaYbVF2ri3",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-033",
+          "prompt": "What is CLAYMORPHISM?",
+          "options": [
+            "A type of pottery",
+            "Glass effects",
+            "A playful style featuring soft 3D 'clay-like' shapes with vibrant colors and gentle shadows — feels approachable and friendly",
+            "Brutalist design"
+          ],
+          "answer_commit": "hmac-sha256:a9c403b738cca39d2fea3f50ead4e383",
+          "explanation_enc": "aes-256-gcm.v1:QzRbPIBi1T5Jx0Cx:2bJaUJ2tEtYSrw-KSVDobg-xeo8S4uVKZeiaFtSVcNzDfVt6PNqw9-A0lAhdTD5wbjgGstDraiPehN3a7aFIyh9nLkfauzPylmaJv9rsRQ_MQOFwPIWOExliEQ8ZcVQdy3QCmsgeo8fGlMIAtwSfML_2BPqa_BF6IAusdYmlWpSeDJDjsvPUeiR_2c1irprMivOFqCClA7aEZKNQY28Fg8NrZLvIjt8f9-RuOXQOGPwyQf3hWFebOrUZEGarmFk8hmURQVUE8gEWQCBAMOvV5HIgIb_I2JaDx6Zn2Kj6v2K3CoOQbsX9Wg9B30khhh5UVyr4mW_fK9ejV8y0iLkm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.353,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-034",
+          "prompt": "What is BRUTALISM in web design?",
+          "options": [
+            "A type of error",
+            "Violent UI",
+            "Concrete textures",
+            "Raw, unpolished aesthetics using stark typography, jarring layouts, bold colors — pushing back against polished trends"
+          ],
+          "answer_commit": "hmac-sha256:23a2e4c9db6d934180272d3e6497d59f",
+          "explanation_enc": "aes-256-gcm.v1:RpI-L8xtjKQrJX4j:EZDIwlaemTQEcR9YUY7fYvhSupveIYqXo44vWwvSmindwZnANMfdGnyALxlSnEVZUAs66EIRg30sGm0BlSJWb24_tLUDYgfcTzm6ZBDUq-xgsIlypNQK9pdTbSeZL65HW5TsqGeq6c3K7-zaKj4GvqxE6eW6twiKY2BFhg9fxEOxFLNZo2HGRy4hkijkFu-Zcw0HfYThxOkOLtRt39vKBRq1pZuxo61GQ4Tm6X0jhp4xOCzcIrhMoZ6HAEzuKjfDsIfmrZbBfZwKt4IOrhe3Wns7d0FfffBckp7GMRoLJ_BuiGPKwBGfK3g3KB_e",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.941,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-035",
+          "prompt": "What is AURORA UI?",
+          "options": [
+            "An AI design tool",
+            "A type of font",
+            "A style featuring soft, flowing gradients reminiscent of northern lights — often paired with dark backgrounds and glow effects",
+            "A weather-themed design"
+          ],
+          "answer_commit": "hmac-sha256:065ecc4a41a8355223c136c5cb78d69a",
+          "explanation_enc": "aes-256-gcm.v1:_1QnyHD6RapGU_rJ:bSPd9XuDSUxPZu_s-BJv5UOqhe7ruHEwgY3u8S9qQzNvuyY60WNW0yndzQfVbVmW5F1E8qTesFCODETc1Bslftk3HUWsSgUah1rD2hB0oFqBSZFdMNFeHh8iciIt-zaj1GfgZAf-svSP2st8bhIzXuVg3DYcck6nQ6W2XhQJoaDaxD3qX3U27lzmM4_IDPUUbFgsV9PC_jT9COomv2yqjCnfFynJW2TZoLZgr-DWAUd_VgMLqOVfgbOvww0XKJKwvkOqQ0kSCWSMYbUx9x1UqkFzVZnfKg8Tf8qM-FnmOQhf1OQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.478,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Component design",
+      "skill_id": "rfv.skill.uiux-design.08-component-design",
+      "items": [
+        {
+          "id": "ux-036",
+          "prompt": "What is a DESIGN SYSTEM?",
+          "options": [
+            "A type of CRM",
+            "A library of reusable components, patterns, and guidelines ensuring consistency across an entire product or company",
+            "A single design file",
+            "An IDE"
+          ],
+          "answer_commit": "hmac-sha256:d6afd4df64583cd74ca6eca614edec71",
+          "explanation_enc": "aes-256-gcm.v1:WaxBZjtrLBrr9PM5:wd8gxvJoUn-YqXVJJhMAAPP0yW5Orb7p02GdHjeGpwsEs-QuTwVxM9RRUvk8Jxybh6WgbuoJB7WwdvsI8EzenDhccyis0ibNQvI8ifCJvWcm0QdU2v1UqxO1Fj6BSydP76Occ2SFCtIzlpWv6A2AEkDEiZFwmCdDdKGquIESsI3RtXr0aKIySmyG689A5NDm6oKKg5L0fjwJhjChXPar59UeC-z3FNRfFXR8rMWwTp5O3L0ziJoanEXizbMJUqFMVCN-re8oETkeeQ6muQOyDpp_149ytTCKzgrKBmpQY7uJ3xY9OEtrr9Z89NheUO4PX6FGr1tleaOE3OHsQw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-037",
+          "prompt": "Why are BUTTONS so important in UI?",
+          "options": [
+            "Only mobile uses buttons",
+            "All buttons look the same",
+            "Buttons are obsolete",
+            "They're the primary call-to-action surface — clear, consistent, accessible buttons are foundational to usability"
+          ],
+          "answer_commit": "hmac-sha256:9d517ea1cdd8ead6e38f4446780c1147",
+          "explanation_enc": "aes-256-gcm.v1:st_dvuwDDYJCBDDd:ZAYfZxM3wWZ4MRri3Teg-jOVOjY_CguN5wNvNmHcmlIIFLGfhpjXouEFpSlnFBINyIdhPMqtMpNwvC7nbS5aZBDaA-oL3qqyDiqr87iFAd36IqCLblrWI4mWWyVlNU2f44GgqT4oB34TkkOUwSxBegBguoEYJOfSx4IrA3R3Ky_QtBA9pddD85M5iKtXf-Q3UKEnqIcdLUcVzip8V-LPmlg157Iqh6sbDCI_AeIS2To4hwHsH5lu37W9LimoRS3eOKe211GAY8EchyFjxw2XqXcrUo1ZdmFp4lXzWMQtAkeLDFEm7wylX-pvo7c0GI6poR8cFrROymcxnKo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.48,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-038",
+          "prompt": "What's a SMART pattern for FORMS?",
+          "options": [
+            "Tiny labels",
+            "Multi-column dense forms",
+            "Validation only on submit",
+            "One column, labels above inputs, inline validation, clear errors, progressive disclosure for optional fields"
+          ],
+          "answer_commit": "hmac-sha256:a2c3a12905eca723af49a81db8d2b0e0",
+          "explanation_enc": "aes-256-gcm.v1:H2NVZbhlCzKbNyHt:1T07IyZcZj-5rPgMGtsIsumQaT40Lwx-CotNKWiYphvFKdWrUeqZThG9MhasTlTq8CHmgy5Xdaj6I2HGw-cPmKUnudc70k84fWYgS5vkSyT6WnJ6GR6gy5DTogfSrtb99Mx3Y11STUJS1D3bv3Vg5ckic0iGTHNOlEd0vPjL_docNYMPZ9woXIcuL_vthIGlvge2aYrzzuFJy7zAc3wDOgiYXw8icnLOSpzMDp33E-bM-Pv62zaWtX1-Qh7xbDi9bwhxNvS4nUL-xP1xP36q2zXfLc7UC4lU9-r0zivghwXNr8w0Uadjdai1299Ol70K9TXEJ16COMMJrsSu3mtsUrHlhcbdnlF7",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.32,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-039",
+          "prompt": "What is a MODAL (dialog) and when to use it?",
+          "options": [
+            "An overlay focusing the user on a single decision/action — use sparingly; modals interrupt flow",
+            "Always for any popup",
+            "Required for forms",
+            "Only for errors"
+          ],
+          "answer_commit": "hmac-sha256:ea8c9a0185395721b7a76a175f3a9c0a",
+          "explanation_enc": "aes-256-gcm.v1:TLlKtW5F_sI50-8Z:O_Tqt6tr_VZ6vLNAsSqIf2fL7XjU5tZPK7NfpIdMUfQJs93LO8BZWHGJQ2ElKFPa9djOWnOHOqyoWk-b2mS6fDp8EWl6Pzl_VL3q2kq27-GucBysj0CK2-eqyEVbtu0c4KFzxo3c3vWZ8GPhR_nZGo47sFqghLKTaSmqxtHqOd40zt9k4Qrif7A7WazvniMr7sZlaTmtiYv0FJOTBMOEYdV8qgNRPhb6lHbWm22WKqFC7yAKUmhqDImP4W4bVPKP1PvkPZ2s7sJC515rAM5ptudTpD0-8PBh3d3P6-0-j82NUOUnlKxnSBRQJRyRRTFBiZzFDyaKu4nQfpSHwDGU4Nrw579Hr6ISCTu7cPfqOe06yvYCRT9LhSXeBw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-040",
+          "prompt": "What is an EMPTY STATE in design?",
+          "options": [
+            "A 404 page",
+            "A loading screen",
+            "An error screen",
+            "The first-impression screen when there's no data yet — opportunity to guide, educate, or delight (not just blank space)"
+          ],
+          "answer_commit": "hmac-sha256:e7304c4ab6924573eb7ffcd60a398a8d",
+          "explanation_enc": "aes-256-gcm.v1:wu4VH659gS7JgU4w:9Ni1FUs77X94Gb5xN1xp6pInvC5AB-JyrioJH_UZrAZoqBwLCAcCYvsYACRA87UC8HlanK2iaofeeia5aTSAZUc5t4Nux6hNKkEMXz85mQhvjO07mrFfkSv-pYo9Z2Pn5YYSPvqjvWKz70Vg05i9B2Do_MHS4MeBVtDv-sX9sO2zU-Oj53hJUEaXQoQXkaaY-BdP5OUfJiXj2phes2j2yNykB5JuPNROVhrWLNsbtGW5bkGRkQDYAfxUlEGQ4eFL9I7J8vriqWdrOzPooa4b1Yi4sZs6eQhq7tZ3uy5A-LF_ayFvkElJemz9h6OUfJ7VwXPbOA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.438,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Interaction and microinteractions",
+      "skill_id": "rfv.skill.uiux-design.09-interaction-and-microinteractions",
+      "items": [
+        {
+          "id": "ux-041",
+          "prompt": "What is a MICROINTERACTION?",
+          "options": [
+            "Mobile-only feature",
+            "Small functional animations responding to user actions — hover effects, button presses, toggle states, loading indicators",
+            "A small product",
+            "Tiny text"
+          ],
+          "answer_commit": "hmac-sha256:10977750b1dbb54c4ca74f540a5d7338",
+          "explanation_enc": "aes-256-gcm.v1:kJvPKCIhquHNhYbQ:SGfYzdrezzmytBR9Gl97rBgsIwem251UF61HtJTHEDOYXndXSYwRPrhxdj8kHTBRsBY7ZO0rg8fFf4BKVXgmZRTsU150uJc74XlQsyjpizhaiP8FCtcXfcmzDciWm0aLR94EKDGLrDuOfxNLC0MXWkzSBBkHGJ8BWuW4GexHWFJGKkilaoLAVR5u2BsLOwZ-FWbN0K8tVknbtPX-l8ZWSFa5SeC4drb8fljK-WNWPk_ucKn5aDbf707sEIn6H51r1ckYvUSKRbEEPBUH8cQLgoschEfNyumqE1dg9JhVRjEjtjQcmJHdrDjEL7GZe47g21QUaKKzz-RH7fTXx8WU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.368,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-042",
+          "prompt": "What is FEEDBACK in interaction design?",
+          "options": [
+            "Sales numbers",
+            "User reviews",
+            "Survey responses",
+            "Visual/auditory/haptic response confirming a user action was registered — critical for confidence"
+          ],
+          "answer_commit": "hmac-sha256:152d0d263562c93ee875141688875778",
+          "explanation_enc": "aes-256-gcm.v1:Hi8N2rB_JAmiUYIN:os6ja2njfUwTjmJjsYhgfOdtn8Ys_gyITBRCYw6ZpDHhloPNhKG5Y7IkOR12hkA1LmvWYYKJ2CNkhBLEVm-1_ttq422c-bKnlFAOrOexWeIW5n11vB97vBnFx5Gku51xS9LoIARGnxPz7a-WakjM17BfJ1qonyg_mg4eCFQyjH9v-Lg88KjjiywGjppZwZrZ0VMp1PqdW_58W2Xw8kARa1HphsX8sj9qa511eOZnLggV5Ie9yihMff93QZedOSNnrDwVdOJsQ8DfrdG8DysJgxkZPcu05x2myfFlPm8FUSKvDN4s8_obb_6NTgNtr9F9H9kSSug4t06j3C4PTnhc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.063,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-043",
+          "prompt": "What's a GOOD use of animation in UI?",
+          "options": [
+            "Animate everything constantly",
+            "Bouncing decorative effects",
+            "To smooth state transitions, draw attention to changes, communicate hierarchy or causation — purposefully, not decoratively",
+            "Long entrance animations"
+          ],
+          "answer_commit": "hmac-sha256:23f876b143c4fb6c29c82664004d7c87",
+          "explanation_enc": "aes-256-gcm.v1:lZE40SgBGAJwcifQ:4qLBKbfL4xTa8AdrNaKAQ4TKx1Mo0CdpHNV3YyARtGeH9OR2UKNpBK9BZ_KHrwKtIKBDbkRRzGaRAOkOOjd3EoyMMmQXjjKXwMiqN-3P9ygNNvFwAzNlH5t4PKkK-i09rM0Vkms_LCRUN3rjAMZR0VlBLtTopdqEKN0QI2BVtyMMmT3Y64rw-YkmykvvWhlctOYhxDBYiC5rZEMVqIK1oimTqXVLibp_48pGiFOpgSPvKRvyl4FZ06i29lt2MyZ5hDWbU0qcU4s8Te0Ru4AT8OQOjnrzrBuOiGWfcOhNAZ56AxvzkNK0VC9CVWGjF6OdrUfzfudc0sXBuO8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.241,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-044",
+          "prompt": "What is the prefers-reduced-motion media query?",
+          "options": [
+            "Slow internet detection",
+            "An iPhone setting",
+            "A CSS media query letting users with motion sensitivity disable or reduce UI animations",
+            "A type of accessibility option"
+          ],
+          "answer_commit": "hmac-sha256:34a3228e423d49b1a888a9737733cf8d",
+          "explanation_enc": "aes-256-gcm.v1:5nLD0PSaQaZg6pIW:nJdM4cFY2eSzAXLUWZsfoBk2LlmP0GnBF4obUYInhb68VasO9h4bIwwDpyMDeGIIOdB51XPEP-zE-PMNKMN1WI2MDTZd4SAZBnrR1qyOIDHnX7woqP5_E8rVkp1POutdVO8UK3qRRyzP2lgjbhI_g4PK222kGX9Rmt-YlzpWZSEBSx1BwIwjkqXJn47cmYX1od9OJ2r33vykXHzLNQ5gcHbkFN5Fp9zu6Zyus2Z3gdNu7cvYqcDIDk_oD8xX_jGdzkpweDoe0F9WH6hP1fJJvcmpXWibDRGXKPpUj-3f2bk0cg-wGFkTFNk9q8HPlAPfoiadbSVyp38ZLQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-045",
+          "prompt": "What's the rule of thumb for ANIMATION DURATION?",
+          "options": [
+            "UI transitions: 150-300ms feels responsive; longer feels sluggish; complex spatial animations may need 400-600ms",
+            "Always 1+ seconds",
+            "Always instant",
+            "5+ seconds"
+          ],
+          "answer_commit": "hmac-sha256:ccceceb8a1274bb5c3bad4474543579a",
+          "explanation_enc": "aes-256-gcm.v1:4swaH-Xt4t6a3t1z:xcMvTmdJy8rF0rsPfjgsifMQcu7J-catM-c8fb_SH4naedLEoxrR3S_K0fkCmHegNHPR-3guJyDg83ebOtbABzajRNguAdf3-6qygmxJtAMJH39VsPdTzDPAU3dOJOhLyeHdInstgoprpH52K1rm-5BfpyUicmhihPbjyNu086pMMVO7s8uScBL2d7VmVLTqMaQczPjsKaUeNGd-K2C7I-npcMdB55zN-kUIulBuO3FEz-aSvRHYBea3zaVy4wJZB-KYuepUz8GXEijOYdWwF_xYP_-ZZRNkMbekoFzjbF7R9yPD985bJ421bg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.588,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Accessibility (a11y)",
+      "skill_id": "rfv.skill.uiux-design.10-accessibility-a11y",
+      "items": [
+        {
+          "id": "ux-046",
+          "prompt": "Why does ACCESSIBILITY matter in design?",
+          "options": [
+            "Optional feature",
+            "Only for legal compliance",
+            "Only for healthcare apps",
+            "~15% of the world's population lives with some disability — accessible design serves them AND benefits everyone"
+          ],
+          "answer_commit": "hmac-sha256:c0a8cbb3e29bd338d7e410fa0f3607fe",
+          "explanation_enc": "aes-256-gcm.v1:XLEvxr5HBqJ-dX9u:zxqvOo4eqC2diKQSYAQlydGUMW0oRmva_6NI_nDqQRpJSw4_ikZuihRlNEf_HbqbbaOeyrih1SkDquwv6LenSPODrLhbCT2M-FXjdVAh76KzGcMbtVGYQhTIDuu9AnODx1fga0TtMd7yafDGaI-cX68wi7qsyiDWTH-9WudnhKCuwEykfgYzV_EMf7T_Jsi3ZDPihkeqWUutAb0oXf2Yv1GRVygSva14XOEhiBQUExIZTPTINHNodBBpsE0SKyn-7ltW_er2YfxqK6VTdslTG8Ygg4II9myC0opLQN2hk7a7HpOPmNwZBD6vjw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-047",
+          "prompt": "What is WCAG?",
+          "options": [
+            "World Computing And Graphics",
+            "Web Content Accessibility Guidelines — the international standard with A, AA, AAA conformance levels",
+            "Web Coding And Graphics",
+            "Web Construction Agency Group"
+          ],
+          "answer_commit": "hmac-sha256:14e6f7122cad29c1187da3f44c49d540",
+          "explanation_enc": "aes-256-gcm.v1:AEmyGsAXLpSUUWRX:qoWf8xVK1JJeFfQrSEzZPgBB4zkH0-oWmMsOKcaT2By04_l3OlC0EFiopd3kXPF56nUZ_gGnwyXIIxurkit78evvhJtBL0j3B0Ob7z7QrIkIxvGFXOIZznkGpoU0ajhVNurOkPTwWbQFnwIKkEBQa8JB2jqm3QUdwe9br_T3dLXHfB7tL3cMS98eY-9rXhVmvZHdjbTGzPm6zTp-boEXDPiWDw40QBjWTDiM8ErDwrolqbq-kGw5cYHch3GQgJ5-Q5CfFpi7A1HwLv8UAT2dGFZq5lwEOeXfsZEFzUvLbJuNbOSd5bXy7NDPTPOK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.448,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-048",
+          "prompt": "How do KEYBOARD-ONLY users navigate interfaces?",
+          "options": [
+            "Voice commands only",
+            "Cannot navigate",
+            "Tab to move forward, Shift+Tab back, Enter/Space to activate, arrows for menus/sliders — all interactive elements must be keyboard-reachable",
+            "Mouse only"
+          ],
+          "answer_commit": "hmac-sha256:736c8b98435bd20d5cbcb2af8c76ec1f",
+          "explanation_enc": "aes-256-gcm.v1:h73mX1Gf9jV-Xo9F:aSV-ySt_IMSQ32O504a_zsq_5iEvxxtjayRcRUFVIQEmZV0NJJXoANSxXpPx7AK7ainySEQhERf9bMloubb0hajbJVYpW9HEtpnQLSGtbdNSCoM2FjBRk7boOBnAoMEMgjpw9uSZ25k-bz44DQ3wcHUoqV-FeuSWTafYQOME__M7AxD2_ZA0TCcRV8wTCSZpVbNPAqVM-ANN_i8pkUXVVsXlQhVOh071ESUbUksEop5WfFM-VdmB_2pmIuv7G4kHLi-KqKh5yZnAwf1sfDrTyEKlL5IhWPs0xMc3062CWAMo7FTggoNs8fnV0A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.368,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-049",
+          "prompt": "What is ALT TEXT?",
+          "options": [
+            "Alternative font sizes",
+            "A copyright notice",
+            "Backup text",
+            "Descriptive text for images, read by screen readers — essential for visually impaired users and shown when images fail to load"
+          ],
+          "answer_commit": "hmac-sha256:b9f706e74393c009e3532884cec20930",
+          "explanation_enc": "aes-256-gcm.v1:Vnxu8eZMVaV6d0Tx:IR-n9VOCn1T3sqb_Dbx11V0uHISem7rYt2XwLV_X5I2QqJe-kaooMgBblyD5S3I71raW-ayLbPhBo5W61N9K57QgO8tLfMWoWAv59fm7Hyw7ioALG4nZFGq5SxXmkt09OheB8ElNtlJ_wIM_SCCSMEabxoy0NhTt64sjcictOKaaEAgNFGiwIMiVzlF8ZlqnGNRhuY5QeLHftcfxz_ufntgEI238dtIRTtVt-FTKMnSOyZUfa2kCp3dta0BejQpkpAYn1EuKD0kcjMypBRh3Mi86wkpPe9K971zwobSdoAVWL74f2yvq1a0G5O7yq2JhdQE0RBhxjZK9WXRBQv9c7QO7wvzXA6yaag",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-050",
+          "prompt": "What is FOCUS MANAGEMENT?",
+          "options": [
+            "Image cropping",
+            "Camera focus",
+            "Controlling which interactive element receives focus — especially important in modals, dynamic content, and SPAs",
+            "Concentrating during design"
+          ],
+          "answer_commit": "hmac-sha256:e98d23638385087197186a90346607c4",
+          "explanation_enc": "aes-256-gcm.v1:lwMAHd3bZIpbMrXu:FsJM6eUDbPZnYZ6bJs_JpZkbEqOGYZGLIYFO3X1aZf12-gmJRonJmLykGtmsR2RDhx2BszQahVQiPxjdrD9zeQskP2oS8TquIjZI5N0ZL4al1jXqcmCtv143V4kD_1dnMT6PPmiUo5d0NCoWXQ07Sxknf9IYfZTaKvBWA_zhKfadcuQ05gXJeg4BPfjzLro10kLW6aZbU0MaGKU0TjNHTPr1u2qQ_INtSSS_fBrZpvW9__DEZqSL7NWSUvdoLDAajcAJHSvQggGNY-oPGLbOBu6OroBRS2din_qhDkjOu4TyJVjK0WBu4KJXcycRe1W7aewtapmu7NIyLoTOe3yUBGhlCgIooUE-0Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.148,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "UX heuristics",
+      "skill_id": "rfv.skill.uiux-design.11-ux-heuristics",
+      "items": [
+        {
+          "id": "ux-051",
+          "prompt": "What are NIELSEN'S USABILITY HEURISTICS?",
+          "options": [
+            "10 principles for usable interfaces (visibility of status, match real world, user control, consistency, error prevention, etc.) — foundational checklist",
+            "10 types of design",
+            "AI design rules",
+            "Nielsen's company products"
+          ],
+          "answer_commit": "hmac-sha256:8abfee2aae2a1b99592cdeb628eba0a3",
+          "explanation_enc": "aes-256-gcm.v1:bvx0tUDpwNEqizsL:TOvt9RAlSAqUP8-KHHKk-c10v-5Qv26IdgfMBlfc9PM5JGfkuzmRSe15lDovn44Aj2btRfbv6Tp0bz6S___gdJxSNCpHBbUDn9ejLPQVyrcH2PEAIP5BUEHgkN0-U44OnPvBUFH_nRaKXw0XKr5LWnn8gX3WN3VavxaCJq4eyyRM1h-NrP49HGwt9pZPuw8zSnWs4V6UVk40ViXJFW7vRj5d8bv_dl4rpSA-FtD3MCVua4pkM0H2v3wJKkzBtFuneedsSGp8llgNPgdhLyM7o1eYm3qxfMXeK2LN1Pn5Cv9R8GJ4Ptbb2vRoBEwl5teF",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.846,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-052",
+          "prompt": "What is VISIBILITY OF SYSTEM STATUS?",
+          "options": [
+            "Hide all errors",
+            "Display server uptime",
+            "The system should keep users informed about what's happening through appropriate feedback within reasonable time",
+            "Show all internal logs"
+          ],
+          "answer_commit": "hmac-sha256:9c54f55dc5bcb9d5a8b910fd3122df4f",
+          "explanation_enc": "aes-256-gcm.v1:WPXzJsuBbXsL_1MZ:7fOafwn_9-pxzOEoNNbG6nKt4SOdtQyl9LVbP8p2Js8BJxMj-84X1gPF3Xk-KhJsYtskBaHH3RXdNPWCBNGsubijocu9yjOLPMO9pFIOSXfJpK_k1mDWqkLZUxNKThuGWjcqJF2b72mAeEkUBhgR0DN6_LJba3Qqe7ZKMmvODNffHVFsSr6p9Ak2uLMY1RRcA3bNIPTfTbR9_w1FrOQElcNSgsCTG6C4xgXXiv9EoRpPiceVx8MDPgSmTuPhDoTI85xnPFRaNa6WsX3kbo3kRuIyCsTiZy5_uk3O5n-iM3FSbco7C4l1I5jnbGZjlZhsSodnpVc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.091,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-053",
+          "prompt": "What is the MATCH BETWEEN SYSTEM AND REAL WORLD?",
+          "options": [
+            "Always use English regardless of audience",
+            "Use language and concepts familiar to users — not internal jargon, codes, or developer terminology",
+            "Match competitors exactly",
+            "Use technical accuracy over clarity"
+          ],
+          "answer_commit": "hmac-sha256:efd27a12a9b4ded8b0e8d2cd9f318743",
+          "explanation_enc": "aes-256-gcm.v1:tCZQEmLMyQM1r_mi:w9-9DdRX2qIvWrj_WTrdIjOCbLqPy4etb_j-Rh1eWM_ympsuJgsyH-FAV1xqWsOqMS91mG5NuUozZ0nxK41JPOeHSwT4sIa2c5DoBiK6UrLoqU2Mcs202ia-f8CtUTQM_AOmDssvN6_TrfII2BsMlOdyFESRvBNrlhO2PkPWutwLVO2eNqldPeXKIXkWXndEuCptKimsNEGtmlscTZbLnAA6hyaxk8WwBPVbT5fzcGYqQy4vtu9ahc8MOgLuug92TZNxiKmmFkY0-0bI0q_iKkvSvEJQJuJU2Xvf_PY5N9V_PT5kmA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.39,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-054",
+          "prompt": "What is CONSISTENCY in interface design?",
+          "options": [
+            "Same elements behave the same way throughout the product — and follow platform conventions where possible",
+            "All buttons identical",
+            "Use only one color",
+            "Use only one font"
+          ],
+          "answer_commit": "hmac-sha256:d8807a4ba51b34a4ec771a44a1ecb4b4",
+          "explanation_enc": "aes-256-gcm.v1:WXCzVja0TrkoHuuc:JiUpLiYl0cLDXBGF0NgUc4LI8Qhf54dntMg7wfmQPdZ3dQ7xvYii-o6A6HcekxLvEBshFC2Vz8CrH1IGzx8paqod5Dr191zxbZDLPv9TjqsXDVc65FgJoOuemmN-cmr10Kcro6l8qydGdUS53XCJuH2C4PXE4jbwWBE0DHs3rVpKOC7_4a-4aafXEjh03soLUWyy12w2RggqCkOdv1u7whopSiWcOgowLB3Pdzf-vfHL8cqRrJ1q1qkWImvpbX6yqvycZ6e6BF9HORQ6gkrWAaNIlUE5c96V9YdTf7I7x-CxuPKRUitIXNVQMN0P7_OQANGpS7qgyzCk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-055",
+          "prompt": "What is ERROR PREVENTION?",
+          "options": [
+            "Disabling all features",
+            "Designing so errors are hard or impossible to make in the first place — better than excellent error messages",
+            "Adding many warning popups",
+            "Hiding errors from users"
+          ],
+          "answer_commit": "hmac-sha256:e62ae8639ae62326f7a51536d98893e1",
+          "explanation_enc": "aes-256-gcm.v1:6-MaMuP7KRWrpgw3:FUBgmiQpCl4zj0hOSkuMYDp6jvPdWjJyTW15JdXkyEFxE5HO2cLxbGcGZRw-c2V-gMObh_LLk6kGEatIxUi1xt7yxK-t4Rj5uKWIP0DXtQCQyMZI8INfIiNNIQSZDcRdf4FGNjRtb3MFceO8CAGqcPoUwO3oSQXda6npPckpftTKNgps82tH-HW30fCFLyWfkPzChVZt7wvCS7djjpYIquNk_U8_HYLlBaUPY-DskJ65CGGFoLAqH9MMYepU97huQlgDAhDF-O-JjoVoNEAWHMiZsM_I4eV1h5P0CyU2gkFvMquCAORh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "debugging_framing",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Mobile design",
+      "skill_id": "rfv.skill.uiux-design.12-mobile-design",
+      "items": [
+        {
+          "id": "ux-056",
+          "prompt": "What is MOBILE-FIRST design?",
+          "options": [
+            "Mobile after desktop",
+            "Designing for small screens first, then progressively enhancing for larger — forces prioritization",
+            "Mobile-only apps",
+            "Phones over tablets"
+          ],
+          "answer_commit": "hmac-sha256:55f49d6a5106a57e9b7cb66a06d4e14a",
+          "explanation_enc": "aes-256-gcm.v1:pGS_uxK-_LHDA1zo:aodGsbavTnMnXSvco6_g9XnO1nHgMDNzNivV93isDUne6VouO1CGazGeOo0qJ8oZTA-pFAhlpqo1It1UQeWwMeyU59cP-SrabAB7t_vegcIQD_MHjwzl9nmdcJl-7YgPSrKizqEhk3j29cwZKLSQnVAgHnjzag1Xmbwl0XsOMAl7Pyri6CHl9p7SXTeE1QdUJLMVMH0L2xQtf-in1RRNI0Hl0l_23HhrbY9YYrrKoGIPa6bJiruolwobACLlESJ-tnOO8mW5UY5i35oZgt4AjHp6bFdxxFLix4Lzk8xqY_ZAfTjAVjvj7gy3ND2_G_CZxps5gaHv5W9Jw5EmMaJ9qd2IwIu-8ew8IZHFD4CgOREvEYGOJpfW0cN8o1Y",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-057",
+          "prompt": "What's the MINIMUM touch target size for mobile?",
+          "options": [
+            "At least 44×44pt (Apple) or 48×48dp (Material) for comfortable tap accuracy",
+            "100×100 pixels minimum",
+            "Any size works",
+            "10×10 pixels"
+          ],
+          "answer_commit": "hmac-sha256:6555dd5e1ad62d2268deb7bd661859a5",
+          "explanation_enc": "aes-256-gcm.v1:uNxffj2Qe7uFMhsX:SMU3vUboz76ygBrbfCybBs1wM6dFxQiHJsoRvemc7bK95JHWCuwK6yRtKy3JiROQRXmt1lsd0_Tis4XUe26rvU2IQwXhP0LF6QDjFeoi0TnKZZYu9Olm5F48DOy0QpSz41WuPx4bqYy9N_I-SNkaI7EFqAK3dpdNqLeEgKF9YmK6F360zYfxrYlCHcbmaIQfatiwvGB5FD4efV5o1kw7gTi3RiYiYkJeKBNDfzaRu64FDhXIKgFIWYtAGvKFbbwIAXQHpqApWJFR7ot7FwfeIzS6sJngly7mV_MEQLjjc_r6fPeW8K8Nz-52ngvPGOl4XATUfAEH7zJzNkhmeg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.409,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-058",
+          "prompt": "Why are THUMB ZONES important on mobile?",
+          "options": [
+            "Most users hold phones one-handed; bottom and middle of the screen are easiest to reach, top corners are hardest",
+            "Top is always best",
+            "All screen areas are equal",
+            "Designs ignore thumbs"
+          ],
+          "answer_commit": "hmac-sha256:b9cd667dd0347326da15d63dd6e9d44e",
+          "explanation_enc": "aes-256-gcm.v1:M2vLgJGfZZb4AxGJ:Mmu3LV7qShudDw78tbVbsc_K6b5QMREYPyOR83Tteh9zCZi-_R44GyjuYR5D_NBJdWmdNihiOqLYtOfdJatOGx6elhlrzpRrmDGAKSEjD5mM1wMDlKz0CEwrDMj8NnzhPIWoL53zevtaj5uCBdOeZOF4Ze4Z7xpTVLg3gn2LU5IeDg6S83RhJMMdcXQ53kJMdRqNZF5qdxcoBL93pGOp6jrwdCuksF5Ps7nxQRtXze2a062i2W4ELIHQJhXQ8yid41lkYrFotzRPJsG4U-ApOuJVJBDX3XscIOa7NZ0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.308,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-059",
+          "prompt": "What's the difference between RESPONSIVE and ADAPTIVE design?",
+          "options": [
+            "Adaptive is faster always",
+            "Same thing",
+            "Responsive: one fluid layout adjusts to any size. Adaptive: distinct layouts for specific breakpoints, sometimes different markup",
+            "Responsive is only for mobile"
+          ],
+          "answer_commit": "hmac-sha256:d61e455aa0698d6415204216a48f7ac9",
+          "explanation_enc": "aes-256-gcm.v1:wsiJfipmJIHVnoer:D1MkN1YBsWk0N6RSSJ0TUSjVXReOXT4vPCH7NYkQBxJRHEM7a4TqkTip9GNPCYdKrZwkiVJY77sqOBddb_smMGxc3uGeITG1k4q658l70eEQ2yJ5dtws5CtZpWG3oiDnBDO0jJExhU7GimsZrepORjyrhbApOcGJl3JLNR9XAK5Zm4ehc6Qf5qM3xhRY_eE_4hncmNMbYRbkkNhZOEDGh-GsGd3RR1eVEShgZPSynDwJxNslYYV92JvDYqd4Fwq47svwz3cZcmkw743so2C2Az1nRWo4dHUQG7buLP_t1LHxfoKz0jebBBY8Ycj6GG0dzHU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.448,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-060",
+          "prompt": "How should MOBILE NAVIGATION typically work?",
+          "options": [
+            "Top navigation only",
+            "Hidden navigation",
+            "Hover menus on mobile",
+            "Bottom tab bars for 3-5 primary destinations; hamburger menu for secondary — with consistent placement across screens"
+          ],
+          "answer_commit": "hmac-sha256:b0370f4c66180f2de0a393061ace44d7",
+          "explanation_enc": "aes-256-gcm.v1:MG3VC-pP4hdcXj8c:Ca2M1gPr4rzKB1PYn4_68nMpqvKozwSWrDj9ryMfugJ-r88yTTzWv7g-HXSV2GLHWzNXqHsN8PvIsOpgOWAZxDG_yFMgdkjfBlV5RYD2xO4jhES8y-D-XrrCXoXZ4LzLrpgcsvptejRRHBU2xtu608cBOqx_ZoAcnrh2G-khcEcS_NYXvE15pmV3VEAE19Tb1SFuxpUSPnkarcf604e5Hx2x8sKoDxb8yKXzYsS5mBtErEUbcsavIJJEijY006Wu4iqyy0mkKDWI3I_cFsDLbyq4cGLxJM_ASDgzeWgc5Q0Ta4Rw_GU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.571,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Information architecture",
+      "skill_id": "rfv.skill.uiux-design.13-information-architecture",
+      "items": [
+        {
+          "id": "ux-061",
+          "prompt": "What is INFORMATION ARCHITECTURE (IA)?",
+          "options": [
+            "Building architecture for servers",
+            "Database schema",
+            "The structural organization of content and navigation — how items are grouped, labeled, and connected for findability",
+            "File system structure"
+          ],
+          "answer_commit": "hmac-sha256:e658fa4fb0d6ca80d3b8beba06522095",
+          "explanation_enc": "aes-256-gcm.v1:0phguQcYO6E0mIWg:HFSQonSRnjN5c0CgFO3SCDXI9vLjk-aqS75gza1C4fz3UqmaKTSej8fAYFzbC5fiYX9kkOe0KZqfNdY9a2Y2eP6VK5ILoROiSLgYJ2BcpQBmsNo_vc-aecmT3mpIx4_3Iuy8qUk-iAIfoXVUIPZKvU83W5HegERVZQVJUTK3_Wx9SRgettr7nfjMPgoIHoZeuhXHyGvI7l3uaaZDwhZrSBevLmuPlDcOLkllqE-XrnNGvZChA27Aq2T76H4IM_Bt5Juc-WymyJwVEb1GF2kub6ywq-NZVUkRNzf5jGx4H4PqhgLmeG1SNKvu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.545,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-062",
+          "prompt": "What is a SITEMAP in UX?",
+          "options": [
+            "A travel guide",
+            "An XML file for search engines",
+            "A visual diagram showing all pages/screens and their hierarchical relationships",
+            "A type of contract"
+          ],
+          "answer_commit": "hmac-sha256:fcf00e75b7d0e8ca20123aea9701bf99",
+          "explanation_enc": "aes-256-gcm.v1:O6oPz3Gp9Gcy79OT:5K2AGM8c6zPFexAdQzOCvtudB9eO4ddsabRrARAKm7iiISSpEP7R6X_PtqO3f7G109SIdMDMylgmd9l6FVHpASCx_Bs0Qs24UbWnefotPQ2HLugQephYzkMDSZ9GNXUrIUHbikQy186F0iv05J0EHYLlBR05H_NEgOKcqm9iqqcsYKkspMhFEGHgv9nhyVu3qN-KHc2AB_3Xsmdk64LD_Gt2RIijRCGjVaqLVW9ElQrhstYKQU4IfhMuh9lTeJ1OgIgjZa3XOtsTuCRidY-lGal-x-xE1doV59dbSykzqtpYRtxGmA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.633,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-063",
+          "prompt": "What is CARD SORTING?",
+          "options": [
+            "A research method where users group content items into categories that make sense to them — informs information architecture",
+            "Filing physical paperwork",
+            "Database indexing",
+            "Sorting card games"
+          ],
+          "answer_commit": "hmac-sha256:1598afb96c65bebe2ffc156acbc284d1",
+          "explanation_enc": "aes-256-gcm.v1:BBy3J7RuLZPPFZQ7:cnkmsc9bxBCocHgOjVb200LFxMBuHYqsQf8XoZkX6-_6lqqvvMRAfTfDB9LYuQgZgF8Pzbt2BZSSqLFo520YUGEhED3zGK6OT9TkCwvnR5tVPHznEAEtDwOOa-CAjp9T6yXjx2jl_0VBA2zryJYu0BiFTapKfgmVkJD93ruOEMyv3HbII6MXcsCykDv0eYx48VKS13U_U8NJzTv_0ZypD5dyMaiT1zKqAW5eust4EGNMSxKK5ha8Cjtb-osvDogjcG2puLJ6YJLJjwQK_Ghdj24WYNWsMKGsD4-p9M5MGbjdU9uOnJdFHptxI_q2cCmyJOYIRsbXGS5WddFe07ThIubO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.96,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-064",
+          "prompt": "What is a TASK FLOW?",
+          "options": [
+            "A list of features",
+            "A bug report",
+            "A diagram showing the exact steps a user takes to complete a specific goal — reveals friction and complexity",
+            "A backup schedule"
+          ],
+          "answer_commit": "hmac-sha256:14560be557134971dc93c07737bd0165",
+          "explanation_enc": "aes-256-gcm.v1:B1JG5Dw1lyIAL3dw:Oaz4ZIBEz2itc1-ng-tympKTm4FBj7LXvHa7VF6F_zCc7EAy9ClltKSeMbwGooOWf8eXLLXQOF6eSMFiqcuX_xhwP_kvR8-AOCl58ArfhwFRM5U9mmm3NIDJe7qOxF_-3OfaUoowRHDcDkm9uMX-9j7xBm3jwQFG6RPCkDZ3cXgLkNpsWC7YC05zjgWc3YZo-bAVsZtiZ6FwwHW03Syvz09q_ayoyGPKWE4fRPL8HK28-kefojRaUO7E3QXvwA4Bfb-Lto3KY7FF5_dI3VI_0No7IVxjMJWINFq83iEzNg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-065",
+          "prompt": "What's NAVIGATION DESIGN?",
+          "options": [
+            "Maps and directions",
+            "The system of menus, links, and pathways helping users move through and discover content",
+            "Naval navigation",
+            "Highway systems"
+          ],
+          "answer_commit": "hmac-sha256:682256f310a47a6f9b72837da7a88c50",
+          "explanation_enc": "aes-256-gcm.v1:6ZAKQbsGec1Abtra:keypD67DWMfQUgIKMzh9wuStmDO6Zr-7iVJRhVqsT4Vcvf9l6jcI0hDAwoPRoUhCIM8vFevQUXxTyykdfgdWhknpb2H2yDnJ85UMVH1WiaoLYJr75sYoRlMl_MmjfYQDgbGtqY4nIFg2_yRAILYgdQClaD_UAPtFcslvDAk0IfQbd2UEWG0p3ibqB3CUo9mArVTLqflkQoO0p7aAqso7Ptufgzb94UmRMCLWlePBAYsrHOFuNXE5E7wzF5emTwXQI6998jATsmROAFPVIxlwkRf9D8I4fQpXVGLqrYinLCNjhEPm2gLmsqs867fA8YkAqkXWt0c",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.632,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Data visualization in UI",
+      "skill_id": "rfv.skill.uiux-design.14-data-visualization-in-ui",
+      "items": [
+        {
+          "id": "ux-066",
+          "prompt": "What's a CORE rule for choosing a chart type?",
+          "options": [
+            "Use the latest chart trend",
+            "Always use bar charts",
+            "Match the chart to the question: comparison (bar), composition (stacked), trend (line), distribution (histogram), relationship (scatter)",
+            "Use the most colorful chart"
+          ],
+          "answer_commit": "hmac-sha256:c6cbabc12a24e13fc8e44af7cb436b67",
+          "explanation_enc": "aes-256-gcm.v1:2ApG_lYdF4h8QTXl:mQyrAMsZIt1Gw4byOdyelsUmcVh6jQ_YzNw9WQK9rNd7bjjv3DNP-i4vwcZfRwvVsjJrVv3wHNUoGg_rKUNCZqnDcW_ilsZN0c-yHrW0H00IGiJkYi0j3pp2GiY2cxyLh91_AfmdjpFhBpn28feqjreSlMjBLRWjRaAXmd3LQ0bPlm6w1kUcklCk-k6VJKgcRvjsQ6DYyGVs9G5YWZAd_G2DeTlWXkN2izjD087eZA7S6YOoC4Z0j2qwQy51hqh6-r6IKKG9uKLh0mTO4EySVXzwAuEFp2hSGAU3tDgqF30My30kJnQV7VT9oqJEHsJC_I4ronc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.037,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-067",
+          "prompt": "Why are PIE CHARTS often a poor choice?",
+          "options": [
+            "They're too colorful",
+            "Humans compare angles poorly; bar charts use length which we read accurately; pies break down with >3-4 slices",
+            "Hard to render",
+            "Modern design prefers bars"
+          ],
+          "answer_commit": "hmac-sha256:f8e8b60bf6ce8d0d2ea4243ae13d858b",
+          "explanation_enc": "aes-256-gcm.v1:sGU-dAO5f-ICyUV3:x_yBnucnJzIYOX6t8FKu4iHQi4SomBcM9-SglNpv2pvR8NgsaaBtRjGvW8zqJP3NC7HIIT_gZuGChCFkWlYV0FHfoJG3VYS5Do52ciOYGUgc9ZDHRflk_AO_Xz9hLNNoZHtswFj-J30aJHg-J0sxM682WGrE93mI8QxeKcaYItWhN8qoKdtGWgGBn7aGfNPUL7LpEVJsZbqnYEM_rm6_ZTGXddS02pYZCBkiGF6nrfxshd6KLL5klj_HtCIm1duyOQeeQnmUJUNKU2KcWlIj7aHZY0SDtjqM5JkufMSilP9eA6Pj60jKuAI7GmvjCF9m9fE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.231,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-068",
+          "prompt": "What is a HEATMAP?",
+          "options": [
+            "Weather visualization only",
+            "A thermometer app",
+            "Map showing temperature",
+            "A 2D matrix where color intensity represents values — great for showing patterns across two dimensions (day × hour, region × product)"
+          ],
+          "answer_commit": "hmac-sha256:f5985cf865fecd7e1b39711d3813698c",
+          "explanation_enc": "aes-256-gcm.v1:5vQXwLZK9Eo1Tski:KrWrykjcQxZQcFcSPnQ671vx4n8nMGWeWrXt7nirCZ3SNXQXCekgXDcPKiV4g2cZljFJIro2KDcmD4qXqA00BqHCWcPrey1BcsDN-xjl9ZfbwSWcPytqumJe7wQs_MOoEU7jPlGgI_thdFmk2tBVCo8eRHBnX33fQ4_iqP2YzPJCGOcp6sSqC2Uw-PMhLjLTI9lEx-NFzhV05gID02-UMcBG70grKAALMSCFDFWKnVZTfYmp_YGVjvE2VEYyKcVSeR9P6XDsM12s6f7Pa796g_LyyWC6xPaStYLmuJNdMm1xg2-zxzsZb2hE55sn8q7lgXc6d4Ws-EtiPzo_RLnJyKOSz_6V8rRYuyvYruj2IcrSaIg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.115,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-069",
+          "prompt": "Why do CHART AXES matter?",
+          "options": [
+            "Charts work without axes",
+            "Axes just decorate",
+            "Truncated or non-zero axes can mislead viewers — bars need to start at zero; line charts have more flexibility",
+            "Axes are optional"
+          ],
+          "answer_commit": "hmac-sha256:a209f765a2fd9ae784b8331dbaa18187",
+          "explanation_enc": "aes-256-gcm.v1:UK6ow5T3u364lFle:qjX1uc2GAeMNsm2en-Fstvtm_3iVjd3SX_7n9sZqsIz5cmNAK7f1yWG51MvDlyDwrO0QlwCB_FtR5q4LyPOSfaNzZ720gQsEcKF27mIj-nncu-jGBWL4SqYnMglqLzsVOAn2cOUh4SxBrLHU69VwXX2EP_7Ic_uTnv1CEqBzWEwgnOKuql-zM7H3VTrokAvNHT0B1KgwuwF8bnjiuccb8u882nITWAyv3wDCdSca86WOPiYzNJBO1YXd0HszO6z2hfsRGVHO4JpjLqy7WhAUT-dIyQktz2UemAVEdKl6g-5-nx8RUWakQ4MmFd0vSJYawSBnmVnMvijb",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.583,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-070",
+          "prompt": "What's a SMART approach to chart color?",
+          "options": [
+            "Color every data point uniquely",
+            "Use rainbows always",
+            "Single neutral color only",
+            "Use color to highlight key data, gray for context, avoid rainbow palettes, consider colorblind users, use semantic colors purposefully"
+          ],
+          "answer_commit": "hmac-sha256:dbea7caf39ea615cc3d05a6974ef1dbc",
+          "explanation_enc": "aes-256-gcm.v1:_rKT1aJxHOdvqU8N:JHPQl4QsVvAZH0EQSYp6VXWKMJOcq1KB-jH9vqXz914AxZEgWi_w-PiuY3Brd62t5KzoHKC9LSYPensVSmOC5JL9j0OEa542i4J-y44LJjTBIQMS2xxZ6sDemD4nKXJ6wWXqhBWTUPhdGQNBTKCVzx5yKrUJljBWFuLGH31rHlPs91efpJkKu8UBvzfXfQpm9F28VrPlgM467d7RRbwin6B8iYfBpIALmw0HIwS2xNfFstQYzeSWPGowKHBpXGGntEQ9Nk57QtzQC2vp7Bwo7cc1pvS2oATl3KORFuDAjb6ZFBlhEM6tDCLrJys",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.323,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Landing page patterns",
+      "skill_id": "rfv.skill.uiux-design.15-landing-page-patterns",
+      "items": [
+        {
+          "id": "ux-071",
+          "prompt": "What's the STANDARD structure of a SaaS landing page?",
+          "options": [
+            "Random sections",
+            "Just a contact form",
+            "Hero (headline + value prop + CTA) → Social proof → Features/benefits → Use cases → Testimonials → FAQ → Final CTA",
+            "Just a hero image"
+          ],
+          "answer_commit": "hmac-sha256:5e5f4cfa66748e1cf355d3c085b54751",
+          "explanation_enc": "aes-256-gcm.v1:bahGIpNgSYtNbJVZ:CFAPnmCFBjFTBCynwwh35s94LyKrB7b2L1fflJBpbpdn46uSub8ZU2bWdNr1NYjVZ0qjQ3p4NyOV_SFVia3qXblr1uH6DY2g2hBgs7_53HVj29DxJNwJmtp_GKdNCvLC20Uskf-_CTWUpuRXnvDLnUb7t1jaksq48LWQl3ucIaOQPWRcqNX33v3oK2EqZW2mSx22S3Uzb9NQR19-PXFHY7Ntpjex8he-OzHFkrjm_FKUBS9V5AdfFFsmB7aEUMZvTuVkJcac4qFGuUsxbibVg16fauABmvmDej5vPt5qXaJuHg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-072",
+          "prompt": "What makes a GREAT hero section?",
+          "options": [
+            "As much text as possible",
+            "Clear headline stating what you do for whom + supporting subtext + one strong CTA + relevant visual",
+            "Cool animations without info",
+            "Multiple equal CTAs"
+          ],
+          "answer_commit": "hmac-sha256:d72a3089bbc77bec6466508230a44756",
+          "explanation_enc": "aes-256-gcm.v1:M2HcXo9hTloHAciy:_zUw6RtdS3z6KsRcV5b9oMzj5bxTL0CzD573T2BMj13vPzOsoT8xejdTT853_u807alidq8n2iZ-1_hjXXjx46mxGBrc-n5CaHIX46x-dSf9dJE9TOiN2fug_COFmOxtqQzf5F_WVJqAEgfEupCRBXkYy4XbI2-a87Fhitf9OFxqJ_-7FYirGBHbP9FlaLcbkmN0urvQM24Wdv2yqs8c18UeoRR-qTVmBWPOhPH7AoxTROnfuF9EQKOh93Mq4up2q44axIe7vnpYW-3-RciwTxYJBd4dL1z-TeNLwRq-bcpazklc-kwyDFdavQ_0Z_2hR16jl7-7nsSky43I",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.536,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-073",
+          "prompt": "Why include SOCIAL PROOF on landing pages?",
+          "options": [
+            "Required by SEO",
+            "Legal requirement",
+            "Demonstrates that real customers trust you — logos, testimonials, user counts, reviews, case studies",
+            "Decoration"
+          ],
+          "answer_commit": "hmac-sha256:1ce7464a923c8d42be7af120a71720c4",
+          "explanation_enc": "aes-256-gcm.v1:j5ON4DZ4B-jEhZth:D0v2FuI8xzb-OkytHkEDZNkoI7_69NQV4l5GQ-6GVrcy85BDOHBAEo2UNtO_deQx9bUqj0ONvbjt95D2mF8UoXUYGs5TAy1Z-A5SeWDaWznuMWxL5Mo1-093V9N2bwcqCqPn6sPEeAGmPRJC4D4JBshjjUOd6Q37OV4ipxJXVPM4nZ9KAW66bwcs7Ss-RGV_4eNUeTjXl86C6ZdFk4ZztrKYkkAJ1LxwNgF6b7_aeAvUJyCsp5AnKPGerOuBmqLxyGIGSfzV60WF72TiUrCBIyUc4vmTx8ePRSDqIr4in_truVrw-8LB9gNXAI3G",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.882,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-074",
+          "prompt": "What's the role of FAQ sections on landing pages?",
+          "options": [
+            "SEO only",
+            "Decoration",
+            "Generic Q&A",
+            "Address common objections that block conversion — pricing concerns, security questions, integration worries"
+          ],
+          "answer_commit": "hmac-sha256:fc86163026bbf65ccdfaa53311596977",
+          "explanation_enc": "aes-256-gcm.v1:xTA1WkF0EhNsEXji:OGX1Vjlnf4aV_t8fbRWLmAOrptqQuZg_8BB9NQ_VJCvwbu3nIOqRW40MdlK0n6ogwPlDP4sIkAWGPITsnKrpZ6T8vNSMOdKiPDf9PdKBlhqJEVWKboxuZyBzeNdCFrrxrhkTFuKjBMpgueAXZSkW1RJzMFn82vXWI2RSpJNn2pHPYKMKQZvnrwR2aWztgZ1xU2aj_btQhcSc6xo9J6RthHRuFlSezLV0ebLVFz2vDWR8IBEekuTbBtoL4AeTMly7R91UoCLSeSItBJlOV6pA1gAe5tWgL69Y7gs2SbMV5SWCOv2kxSFrW-owmzyRxD4VW092",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-075",
+          "prompt": "What's a COMMON landing page mistake?",
+          "options": [
+            "Too short copy",
+            "Too many CTAs competing for attention — clear hierarchy with ONE primary action converts much better",
+            "Too few testimonials",
+            "Too few features listed"
+          ],
+          "answer_commit": "hmac-sha256:3ad354fb4d42b9445931c21e3e0f8941",
+          "explanation_enc": "aes-256-gcm.v1:r9IvF13FFLN_OG8w:XmhaoE1dEZla9ZAa4Rca0eDwh2v9KHSZzKDlLumpRZRkzNZdbHyR84R2rYMGACIDeUv3IkOE0j1v-WCObS871Leq7zDRLYcWLJnadww3Y38mNprzKHCtgwgMo2mOZoj6GXhoPmv3IMi8bhOjgWGfEjLIMY4RUTXSjVu-rWh0HyE8kLI006KrDBTCAslvZI-DXqdPMuTyTRotciQORK1ksEuIMV0xqr1gm0QcwPF1sRwziGs_gWggzr2yDbUw1I4Ucsmq0LqaTuRBUTHg5ZV3uM7hv1hSQwNWN_XrZHw_zH5ALvcgVufOj6JM9AIVJRZZYQyTsG-voXNh6fs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.348,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Design tools and workflow",
+      "skill_id": "rfv.skill.uiux-design.16-design-tools-and-workflow",
+      "items": [
+        {
+          "id": "ux-076",
+          "prompt": "What is FIGMA?",
+          "options": [
+            "A type of figure",
+            "A coding language",
+            "A browser-based collaborative design tool that became the industry standard for UI/UX design",
+            "A backup tool"
+          ],
+          "answer_commit": "hmac-sha256:e72cf656ad1e828b9edf87014a7c4fff",
+          "explanation_enc": "aes-256-gcm.v1:bEy33qNN3xzH4kKD:pj9rCG4Gy0lL5MWwUkqjvHdvEcb0xssRU9ZdMfE6lIYMx93rj7jyYo9xq1osZfe-pvbhOvqT1hWsFkIbiSvoIl7P628H4KSjpNvfLwYNefGmXFWUE359k8OkKncSG8tfP_T3zpr33HZgb5Zc_Gn3ccW_zB0OplYj8hCwtlnX2PZuSF27B1ferz_zdCCotLh27Ke0M3RgeR5_ihYFFHUHUlaXyZQm1GvZfiPcw4POulXZMFlopBSfaC309aDE_Q4pePgP4GB0J-aAiSJ5LmkKzklQtG4ptl35DhbPfh2aqzGDiIX5T_Nk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.412,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-077",
+          "prompt": "What are DESIGN TOKENS?",
+          "options": [
+            "Login tokens",
+            "API credentials",
+            "Authentication keys",
+            "Stored design decisions (colors, spacing, fonts) as named values — shared between design tools and code for consistency"
+          ],
+          "answer_commit": "hmac-sha256:a26b89e5656a90b6d9626d7f80c44662",
+          "explanation_enc": "aes-256-gcm.v1:L0u_KoJg_KcPOJh0:ovc_ug6EBwLIPRrEH2nbss6MEpeE19OJVMZkiZuRAy7IFlvLmEg-ip1_wICGSic6XgL7-Hh9W2MxWUNIMtlhsmOnBmp3eiZbzLwhQQvBmDRjripwfAaBZrw6UPI2NG8QhGqJ90xwWUGxr-MxWhPcLdqTc6ESYacjruekw62Nl7QEeFUV_cF7syItbeFCaeDpus8SnWkEe4zjBcOlpEOZ1UzH8BwbjVoeIP6r01xrcOzTjAkq20wWXkjr8NRY5THifolTLylMsRvc6aQ9huHKNXuqmksvKuTbRntg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.263,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-078",
+          "prompt": "What is shadcn/ui?",
+          "options": [
+            "A collection of beautifully-designed accessible React components you copy into your project — built on Radix UI + Tailwind",
+            "An icon set",
+            "A backend library",
+            "A new framework"
+          ],
+          "answer_commit": "hmac-sha256:ccedf8f43fb3f6f20c695e92dbd6df3e",
+          "explanation_enc": "aes-256-gcm.v1:rAvKp_Kj_Kqnn-nl:8_oxKFN-NZDQXYfW63HuKPplXinHBNGl3Kp8E-fr36mbJm1SE-W6In0aMv9-mhaK1m-8uUQeHJpU_YxG3SCo4-FC0HJH0OWTZB4FHTVm3A5MR1NyjfyV-kXWUWarlArE2GUs21EBbJDqHSMn5K-7FWbee8GGtsdkxWlbqo-j86B-CWqdqsFdy90H6h0m1agj_MeusdvnD7dDVU-vVzGlUv4tOasY1C4bKmyF2LkrS5Zlr8kyCgtxl0Avp6DQUgg2yGBamDtEXMEZyYPoP473PX7qUJKoqWSQKEsEt9dfhZ1mACVjlnq1T2fp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.176,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-079",
+          "prompt": "What's PROTOTYPING in modern design workflows?",
+          "options": [
+            "Writing requirements docs",
+            "Building physical models",
+            "Drawing static screens only",
+            "Creating clickable interactive versions of designs in Figma, Framer, or code — to test interactions before development"
+          ],
+          "answer_commit": "hmac-sha256:8759eeb7d748bc1bb3b2b832a5a6bc4e",
+          "explanation_enc": "aes-256-gcm.v1:5o39xLDTTedm34FV:ugPtnFRHnC1lbhJqdWEKH4boIbsFjXphiHvOcWnZhUSpdqrL82z5qimWS9G5UxZFnOgkbVHFFlGmrMuDWmKm1BktglNEPjMkxwyCOS3kVRWqjSrhctDskOTBsnNuP1s1clIs773u9Vc9AJx7tI-veZN6kEWlkeYTX3bpJyIdU_ErI8jm43nczHzqfYtU6h-fTwJCcWVc7s3jPquOAFfZdGpp8Wk4q6---z1MNAKdtOdyLMIzQqg1g8WGq8QnSIu9RPvs9RUxuKKA2lnWDTfilzaTqcITK3zFBjZE2Kire6AvI9kby6ADaB4SLJhcZX9CNM3Syv0z",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.37,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-080",
+          "prompt": "What's the DESIGN-TO-DEVELOPMENT handoff?",
+          "options": [
+            "Throwing files over a wall",
+            "Developers designing everything",
+            "The process of translating designs into working code — modern tools (Figma Dev Mode, code export) reduce friction but human collaboration still matters",
+            "Designers writing code"
+          ],
+          "answer_commit": "hmac-sha256:49c73a0d9424de4dde274dc8200cf58b",
+          "explanation_enc": "aes-256-gcm.v1:qLglaN9XxDOHqDw9:WGGq7yk4_MQ_5Xm_fRbeHHD43Vssn-QOXdH8L7oGFVOjXaLk7hfz_mK4VutINGa_c7afsmP77DTa3CewKG93xcYZNogRh7VJuP5_xseJL38_IZxxx4SJ4Qc3phhGyt6n2TDb34A9Euv2ZBScrpLGxHwqY8HHGm9oqq-iI0IA1H9iCUgmDP-plHw9Sgcm2pYRhxlgOHGTRauyDGTi-YwDsL-BB68cdhPTU1yCh-14K0YRGkBBoOtHtLK1xKDykDWMLlCPFWjIWfZF4rnso9G7aJy6ZjRjA7yP8n1dJPWJzr5hBD7rct7zXpQsyKRhkLYolhJuUf745GmA2nM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.871,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Dark mode and theming",
+      "skill_id": "rfv.skill.uiux-design.17-dark-mode-and-theming",
+      "items": [
+        {
+          "id": "ux-081",
+          "prompt": "Why offer DARK MODE?",
+          "options": [
+            "Just a trend",
+            "User preference, reduced eye strain in low light, OLED battery savings, modern expectation in most apps",
+            "Required by law",
+            "All users prefer it"
+          ],
+          "answer_commit": "hmac-sha256:ed7f2af842094e9abfb832fa6d2a767d",
+          "explanation_enc": "aes-256-gcm.v1:zj0KGdUWXkDx8PNT:aIx-_TlSPuo6rV3jgjesmtoiRojVEx6kw41xYFL3YguYLtTuFb0gdgPN1BxoKnP5fXwR3IaTKvgVd8khnuVFKfa0Y9fb0XuRO1HaRdFN_S1kUN9Pe6sCBSwR40UHemU1T9JwXa-vW4zXkXWo5tmfVCrxD5JFitOWv59wL89UquUDcNVyzcUh2Z0h4VhzsWYCr3z2v1LSTMQYvkP2I5Maiv7CC_zA4gnL5An2hUGENW23tH9ScarKS2caXRwMc1uaIPs5xKK_ndRdIehIPLiEYvB6aQzSAxwtZnLj6lcBV7e7Gw4V3TE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.421,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-082",
+          "prompt": "What's the BIGGEST mistake when implementing dark mode?",
+          "options": [
+            "Lower brightness",
+            "Including dark mode at all",
+            "Using black for backgrounds",
+            "Simply inverting colors — proper dark mode requires rethinking contrast, shadows, brand colors, and component aesthetics"
+          ],
+          "answer_commit": "hmac-sha256:0cefe6161efbd238201fab3503ed4f71",
+          "explanation_enc": "aes-256-gcm.v1:Zy6_ClhDx-_z7Moy:MiYLOzQZVRK52SLQhY5Lw7hGnvNbuJcNDWO1iPSnsZkMieXPDu2tPC_HNVTBpz7Ozz0FOAgubDYV8_7d-xFd6rsir_5eSK-X2RJ6fqErPuF41MHCoNdlPEmds6t5wq4s8bdonA_DD3JcJyAQ9oWgePcrBa2RzYOGKqfPy7kFWITK0x1H6aR2C8Z63KHe2IudLgil1lzDFZ0k8DlROAOJ0hl353iAnb8wlv9-L41Re0YyVyGISarErnjIUvc2RTmDMOQthsJceg5HS45--Gf-D-GOzVgTwEt-4lyXCJPs9E-A7snoVpalig449gajx-MsTSXD9ql66Js7AM0GMITnow",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.444,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-083",
+          "prompt": "How do CSS VARIABLES enable easy theming?",
+          "options": [
+            "Required for any styling",
+            "Only for animations",
+            "Define colors as variables (--color-bg, --color-text); switch values for dark mode by changing a parent class or attribute",
+            "Variables prevent theming"
+          ],
+          "answer_commit": "hmac-sha256:1db7f40d942e2da40f0d83e200333059",
+          "explanation_enc": "aes-256-gcm.v1:dKcM2yRAdMdg-rjN:caAwTPJ7Y7z_h9XvoSed7nbf9q3b-xh370TGk1HgTem6uNaM5-_oqDVnfk-d5Bw4MpAvULIV3iCpcKXh-ugtfnQ6VVwkA0XOHod3t9czRdKQ3Mr9CXMDLP7zDLakr_6arO7H3iZQOYJ935h9LRszBj-9BBoFqTa5YjMdHfTTnoj4DgqC-DtiIHwb9kwqy36P7TcjFH_SzOwdO1qj4bTBbcF4kUZS1Y3_je-pVXS1IIw-W2u5gwehvox4gG8cex45ZZZxz6ug5SQqr_0SLIiffP4FTPw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-084",
+          "prompt": "Why test designs in BOTH light and dark mode?",
+          "options": [
+            "Issues invisible in one mode often appear in the other — contrast, shadows, brand color visibility all behave differently",
+            "Designs auto-adapt perfectly",
+            "Dark mode is identical",
+            "Only test light mode"
+          ],
+          "answer_commit": "hmac-sha256:7f57c0457f8232e2229ead0921d430d5",
+          "explanation_enc": "aes-256-gcm.v1:N32uNnb9_Qdm0ota:V-_CUrhucvQWW0p4-8YxmyD0B5hip9blBWTVkq_MwwCP5W8qM2SjgTSqtPd1cbIReT7y_U4IfN7Gl3YqgN5b370RC2msv5gd8foBH30IEtqhEluXLS1SDnMh208nKjv5niseyPOWXqwhdzEILIT4AcLyxTQrlH1uJ6o0pCIfRiNxSVvHOQOhuB7lchGD3FkFjNITXHNklNMLZRdubsraffdrwcpXjRhQoZFWN6Xf7BF0f7kJV0HGQAYZaeuzRVEr9AwVNBGgWzP_0iVAbpOS1xgz4okTwjpdMv7-F9Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.321,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-085",
+          "prompt": "What's a GOOD strategy for high-contrast modes?",
+          "options": [
+            "Ignore them entirely",
+            "Support Windows High Contrast Mode and macOS Increase Contrast preferences — important for low-vision users",
+            "Build only one theme",
+            "Use lightning bright colors"
+          ],
+          "answer_commit": "hmac-sha256:117afc507ddaafd06f8b85a725b699fc",
+          "explanation_enc": "aes-256-gcm.v1:_2wOokxmM59omD_R:bGpzNfH1QCk0c6AA3Wz6hINqcTR79B8k8-JXlJi5Mat1URPs8DcO-h6a_35dhAgKtsQqcIj7mudkeuv79E9RLDCcnrP1Z24WxiCWWtiVmcaKEAAWWCinh7RZ2HUAyhIYGBAKuzKvwIiGun1-EMKiFh4-Tvj-JhqYHeYFvHMXE6CN85iRl-dvEBgACGNfxovmGJc-FDxKAkukXEMpAFBc7yeTrkkVd3WRGrE43xLolyX1seQPBdq9z2xBXHEWAuALN_2EcIt83NaRLXEWSKPCs-vQ8S0s0QcEtxKgPmUWrn_aDw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.963,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Working with developers and stakeholders",
+      "skill_id": "rfv.skill.uiux-design.18-working-with-developers-and-stakeholders",
+      "items": [
+        {
+          "id": "ux-086",
+          "prompt": "How should designers and developers COLLABORATE effectively?",
+          "options": [
+            "No collaboration needed",
+            "Developers redesign everything",
+            "Continuous communication, shared design system, designers understand code constraints, developers understand design intent",
+            "Designers throw files to developers"
+          ],
+          "answer_commit": "hmac-sha256:8d4d35ca6f43a9e7bcf49bfa8f434d7e",
+          "explanation_enc": "aes-256-gcm.v1:9hXw22tszkTE-8WQ:AclSFVSn-ggFOAElNoN3dUVOVXD-fTnwIvne29qBLWhVPgqtnJK0zh2H3KJhkGYMSyEI3PX_PtQ6AwEh9vBb3VlxYEpC6kHkP7c47a4zuiffv4TbRYpZFAgN4QEvWAYqz9f0cNRmMPlEqywt5hEuXJBMm4ESrlJ3rZZgILc7jzJYz7uNYfqbEaF-eYh_r3jUAdaeuaF1pK5aobDajrjRWr917GFWCTDAjHk8DBqlEmuUlY5TdnZEC9eJy7uCvzOjVF9KBSAPxNgnkpKIUWWdXxh7Nsu_dNjjMFtKOO-Js2bfev8y4icj1STenulOEPXqxZf5Kvg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.486,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-087",
+          "prompt": "What's the value of a SHARED DESIGN SYSTEM for designers AND devs?",
+          "options": [
+            "Just for developers",
+            "Components in Figma match components in code — designs that use the system are buildable; code respects designed values",
+            "Slows down both teams",
+            "Just for designers"
+          ],
+          "answer_commit": "hmac-sha256:1b31223c5a6236885dc340ec5545d73c",
+          "explanation_enc": "aes-256-gcm.v1:9oxoxHBDGFu6A2lp:mOljMS7cnwMte6wygC_ht3WY678ttD3onCu3dutfYw2v3fH2MAYXVCvpDe-yjuzGFCfSqbFQt-53OZK0kPcSiqTBz-7eClKmhO4SOounxb_SuYVOYVtXpNgr7DYKT3flGA4TKM5ne14yEqq0G-I42I9-uSjclxfDCYyzhD6xIN2bTQuZbjdfzNEuMIcnPwM-58qwou_1fxaJdBWER2UKCpG_1i8a3YS4qqEO9t0eQsN7MgJ-5R1-4KdqMjvBNmS1P9AQ7WAYLsxCTNQSLgB9Rk6xb1bxjCZx0ECosYKlQmBvaWo7gTsO-cCbzNVkrTsik1TjT8X9I4M7vPhi7zefDwOK18ds",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-088",
+          "prompt": "How should designers present work to STAKEHOLDERS?",
+          "options": [
+            "Avoid stakeholder feedback",
+            "Show beautiful renders only",
+            "Frame in business outcomes, walk through user scenarios, explain trade-offs, invite questions — not just show pretty screens",
+            "Use design jargon"
+          ],
+          "answer_commit": "hmac-sha256:f3c756ee19b46d7eae838ecf83fb4f4f",
+          "explanation_enc": "aes-256-gcm.v1:f9EwRpVXsU5EfmuH:GqQ1dCKOFvXMLI1K549jwhZIKr_xzJKpFtfRSq9wnm-TwLitxdq56ruhQLLfiS42c2kVl9AuBtFjvjqPU62lGOJ2EmCISZHQDM-UD3TmomXoX9sP4-aFJBohsr2LfEW4djhAezlfVsndf6O7NJseKL-SrZAlzOO0YdTxEZXYHs5Kv2d8FI4Cc0p_OvpxX8qaqsX-panMxGEFMoOH01AGnxnF1dr6wJeakp_Z7qFRBbmakuSUF1ojyrLMqN7V8l3NZsFTm1To4miJXd1djt5XYHFEtE1d46Ko2NK4DqiozOxvi1oh4BlHJ9DOJA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.593,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-089",
+          "prompt": "What's the value of DESIGN CRITIQUE?",
+          "options": [
+            "Tearing down designers",
+            "Praising everything",
+            "Structured peer feedback that improves designs through fresh perspectives — focused on the work, not the person",
+            "Avoiding feedback"
+          ],
+          "answer_commit": "hmac-sha256:82d949c6872e9f6b41d6f521e7c2ec53",
+          "explanation_enc": "aes-256-gcm.v1:McYzBdQpm2DUHQJq:JiMlIGPZ73JL4_1l6hU466iHn49wKkqCcWaJtGfqbKDqnOFX3GnFYZuKZ8yJN4ZIl3oA200q2Z3VPFLUbZAPwSeJVf2EpYnJJAl9JsL1Zs8sYH2GyIBIccXciQ7g5HFfBiDH804WDftf4trTdaGkhkpO_WwPj-J7WUt5tZ0Nks4GK1jVSrpvqWpUH0d8TKm8MsEHZeGLOi9fYvKsEoOMa41xBgCxMKU5VpzhgFQpA0B3bJySBE6JqXI2pHPMbJgjQ2RK3Cg037ftHu4CJt1Zp_HNOiP2puvwuwriGe0zKkr3qudYrw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.045,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-090",
+          "prompt": "How can designers HANDLE difficult stakeholder feedback?",
+          "options": [
+            "Make every change requested",
+            "Ignore feedback entirely",
+            "Argue defensively",
+            "Listen for the underlying concern, restate it, propose alternative solutions, ground in user research data"
+          ],
+          "answer_commit": "hmac-sha256:1ca573734a5f5a70d97f179d936cc5be",
+          "explanation_enc": "aes-256-gcm.v1:1XyqmtcUYmmSsHYO:BYI6-VjiK5-XktCcYbCltSU8jJ0T8B18K5eJ8OndSFUsdmcN97DrAaTGy6NUJSe9BXD-TkSrW36zPRo5c6tqgBWrvG_698nkTRXrPWyhqjBrzOPgVVodUp9KRETYDsibnbNgApcIuDL7m4iuMKcJT60H3SRhE4Fi43168hN4MHL1B5PRdcb6kga0TjFpSQ9T2ZXhSpI4Jn7VIxd59JDQouYFMlzxAiQbQam_x7mGg54tADvNWTk0N6NY8ab9EOqrq5rTuKItPwCJtjvpqAd3bOykMNf4gX26RoW1Eo2ByvQ6dPf_7PAfXeq3RZsnzb_Ul9F3xC1MszRc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.926,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Career in UI/UX",
+      "skill_id": "rfv.skill.uiux-design.19-career-in-ui-ux",
+      "items": [
+        {
+          "id": "ux-091",
+          "prompt": "What ROLES exist in modern UI/UX?",
+          "options": [
+            "Only graphic design",
+            "UX/Product Designer, UI Designer, UX Researcher, Design Engineer, Design System Designer, Content Designer",
+            "Only Figma operator",
+            "Just one 'designer' role"
+          ],
+          "answer_commit": "hmac-sha256:a4ca64a9136b35646d8d44c4bb03f003",
+          "explanation_enc": "aes-256-gcm.v1:PP0UC8lsICVutKn0:jMNxOV_TCgzffGBQyAicGZkBDRwTdQKayDI6GuoiEuIofhCn3fIvSRFI1rTAB3QFDXYYIdHcatsRmEC2eNFzPv04KpA76xTIrFFFinl6KxspbqJv2O0NmnBmfMRjWLL8y13E1v6NdaTmrl-lPvKdaUzv3Y3Y_dNfJfsuzLtq7VJHBRiDVwVUwTx5-wcXH9ch4FRndKWpTz7m5cpmt-Hwko0ob5YW2j2_THmEbAoRDjPrt9zbN3tCvy1MHSMtpL4HQRZ_QCK_yiFMNo1eZ0mQDeP2KRvLRKYddJdM5HjBchFAKg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.417,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-092",
+          "prompt": "What SKILLS make a designer hireable in 2026?",
+          "options": [
+            "Only graphic design",
+            "Only Figma skills",
+            "Only theory",
+            "Visual design + interaction design + understanding of code + research literacy + communication + AI fluency"
+          ],
+          "answer_commit": "hmac-sha256:371ef36f8090847f018a15de18c286c9",
+          "explanation_enc": "aes-256-gcm.v1:r8XIv5zFiWG0hptY:pBPLQh6CJrYW29eJ_Kir3vA77-RwJZ-DkOg_FMVlPxkh9r-GNNg2K_-E4-n16bSAuI22EwpoPNVnuIcYKKoY1LGtz6r8LXbYiewiU3cFm6klC8olqHXblk0-g_MAFMn20JKxO3xWY9xbtNCrGgwR7qet_RiX662vIrCntYcTTuFmyKZC3XFzGLnsFF_-lYnFMuG6oWcCpqRsLeeRqSbT2OkftgvkNlV2pePeKae9IirjmOJNTs0c3BHP8GX6o3zsRaysrqFzhfEi7CT_kEDFZGnj-JfpP6AyMg6VX_60VQ5T0dNG43uJJU1dXA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.632,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-093",
+          "prompt": "What makes a STRONG design portfolio?",
+          "options": [
+            "Case studies showing problem → process → solution → impact — not just pretty screens",
+            "Showing every project ever",
+            "Only finished work",
+            "100+ visual screenshots"
+          ],
+          "answer_commit": "hmac-sha256:9a49ac0884ffacf5fd68bbfc222cb0ab",
+          "explanation_enc": "aes-256-gcm.v1:mgakoqRppPFiJrMp:TNSDuTezJ8sopb9JnDM3rr2O591d9I7fW74ZL3yfhsr04ipzJftUEJxlOfjq4zd85GvvV3enq3PTZmkjWx18e1iPsaUAE8oWBGEVSiWZLQzVNLmggxymL77m4WkVVcCdlvnU1RR0l-MpBwUvVlHU16ugddj4yUrpZ_HK4KZkI9yPKG6jmXqnxlpyGQsIQ4BrmxbS4HNmTs7iC_8AHsWbDetvT4UECfSDYNjbjfcQWMo4N1tspqQReNE_E4HfbwXTp16LQYOIFBzcps1K84lyWi30efIVdXvbjjDcJNLJ0ff4BHHs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.231,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-094",
+          "prompt": "How can designers GET STARTED in the field?",
+          "options": [
+            "Avoid practice work",
+            "Only formal degrees",
+            "Self-study (free + paid courses), redesign existing products as exercises, contribute to open source, take on small client work",
+            "Wait for the perfect opportunity"
+          ],
+          "answer_commit": "hmac-sha256:942df4206ff1066f09bc805195d17720",
+          "explanation_enc": "aes-256-gcm.v1:eL11h5MLxns_UKKF:wDP6QdnribDDCoTKH0jSF-eT9hfUDHq8bKX0PZ9apUPLtWGPNjT6kBnOgAUSf0Rtt1_POXIZCUijYvRr3t8Spck64bo4guloAg4IdYVtKlE8IrKDEH77naLUMGIerlKhdzGWUnDxiXeWupHmzCcCL-3cLyVW2RUnpncI8tu5ByApOFq9wGFe_A4F4p52YZGD9v0MRmBuF9Qlj7T8lc8rSLuWUdEwOX8Jr_M5aX2r3h-in4qihkRG53k6Gb3WhQ3Xaw6IJWm2RQVeWBfW3pEAdfoJfR76_7RkOG1_xw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.969,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-095",
+          "prompt": "What's the IMPACT of AI on design careers?",
+          "options": [
+            "AI is useless for design",
+            "AI replaces designers",
+            "AI accelerates execution (variations, copy, basic layouts) but doesn't replace strategy, taste, research, or systems thinking — designers who use AI well are more productive",
+            "AI is only for engineers"
+          ],
+          "answer_commit": "hmac-sha256:98115b9dc886ad462e6398fc40a35952",
+          "explanation_enc": "aes-256-gcm.v1:K8DFISqn71nCEhZy:Ynip_wcJbc8fAzqOG55qCmO1d2GBYjtTPHUomMDnnuxuhbDHHyIvw7tEsxWD2VkS-xoFo0UeLDgoXuL6GwmTDVeyo5zfUuPfncg5GaQYzALJLG2EMW8Ic2ukbQ1d1zYxGptXKk3XJ8ee40nK4D4sU1LvJYItPEtMrV03MXceYeKjjxEEZfxPRKVgzZmpVxtQVdcUvU8OSGflC_ZaaIdfjlgno-pTBjVWAnAURNxMQ6xaiwuyVdKJ2uvqeCR9oKuOnAIOCtVlQcvD-887AhzEArktj6dSWAW9bhLPohcRF0E_m6nuDx9W8g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.208,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Putting it all together",
+      "skill_id": "rfv.skill.uiux-design.20-putting-it-all-together",
+      "items": [
+        {
+          "id": "ux-096",
+          "prompt": "What's the OVERALL workflow of a UX project?",
+          "options": [
+            "Build and forget",
+            "Discover (research) → Define (problem) → Ideate (solutions) → Prototype → Test → Refine → Ship → Measure → Iterate",
+            "Research only",
+            "Just design and ship"
+          ],
+          "answer_commit": "hmac-sha256:7ec97a6e4a9b21b58a508c87d1466971",
+          "explanation_enc": "aes-256-gcm.v1:kctUu_gnY2yAbvm9:-eGGwAj9XfdZ5oLPFJ9CS20dh8iGvy78ItUB_Pt68X4L5che0dmDEQdEsubD13B-ffE1Gbo0t2EyQmx6qwSSbITxRwx5KQGex_-RYxu1ILTIJ5UBq-MVX0kK1Ltk_g1yJfu7ZgE9Pxm0649yascYFeLnHxuB0jPXpDHQ7MZSBgQwiPIZ227d7XeZQnYoDfg6sr2YwGwya7Qp8usyhEZuPty1Rc-e0Zwb_eomNZxVg3miQB2ygdM09qa54K8k6YqFCBQxd_bfjvOgkkcsuObzoKdDo89png-NWrbsETXcmnrYwCuNzWK-Bxq68KvW2_gesDflcmD6w7eXIiN9ROG64cW5dEGUv46SJkY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.7,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-097",
+          "prompt": "What's the BEST way to KEEP IMPROVING as a designer?",
+          "options": [
+            "Ship real work, get real user feedback, study great products, contribute to design communities, keep learning new tools and methods",
+            "Avoid criticism",
+            "Memorize design rules",
+            "Stick to one tool forever"
+          ],
+          "answer_commit": "hmac-sha256:5e8f0172ccfed0899d7b393781b6d70f",
+          "explanation_enc": "aes-256-gcm.v1:L41CeSxFM_w65nHL:0z7PD4qAbGrZ3EsH0SePB014qKccyla2iXgeFyVMLg1DmJLRur0v7Q7z1HaUJ4g2gQgf2-GX7xX11OFz22LWTnCb7eUm3mK795-AxY8QhFYg3BuyGhyXo4EcKE1FLZNn-Xzpo2SjH5G_WOTSl03tzfjdda57IF12LeDfDZpPEBn-FGdmuIYJSzBfvlLVrBN4mCor5JSnsGpvaoTaTDoF0wSZla5xz1Jnlv5RLcYnPgXQD7WuPhBSQ9B6sKYwzRkeLm9Hzu0OKGOE9gRENGEDpZonq1Yu8agrs0SLZDCcNc2XWUTCBrNieoUoa2uJ_YZWJlEJ6Pyl4W0",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.24,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-098",
+          "prompt": "What's a SIGN your design is succeeding?",
+          "options": [
+            "Visual design awards",
+            "Users accomplish their goals without confusion, friction, or asking for help — measured by usability tests AND product analytics",
+            "Stakeholders approving",
+            "Designer compliments"
+          ],
+          "answer_commit": "hmac-sha256:871b7792ee589d6c1420855bf6e6d927",
+          "explanation_enc": "aes-256-gcm.v1:0MF9Aj6PWe-OLndn:I4Ve9TGOlkDFOp1NsISiAOyR-Ex1BDcHqbRUFlfseoQ1p2gS90iSMbwct6MZXXcDHHGKkrjMJsAS6hP0oRbwSCDKLSSsNC3E68nMe8WLFB0jOJi-vUEHtCbOYiDHGgNU36_JwilLC2agr0WT_ts_hROK6RV8IEL5rv2XYmJysWlewX6JovxkEzic3kprvY4MILV8I-ns71cKB2kPL2VOmmQh5MvPCaByTVlZQMjUw9SRi0IIYGPeOUBh487nn3gALRhlA6IDj5ZKGF1ZC29f9FPliEByr99db9c_QwoVugyZYFhkodC-vewTvC8V2zE2tcfTsQs_BPKUPY-uAZFYOeqLd2M33h8lME6A28E",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-099",
+          "prompt": "What's the BIGGEST trap for designers in 2026?",
+          "options": [
+            "Chasing visual trends without understanding their purpose — design follows function, not the other way around",
+            "Learning new methods",
+            "Using AI tools",
+            "Following trends thoughtfully"
+          ],
+          "answer_commit": "hmac-sha256:8cf84c1f7af560f2e32d2f8c2d47072d",
+          "explanation_enc": "aes-256-gcm.v1:GEFSk-f00EINHlL_:CMGZJAeuYXu9Gmt0GlvPIZ60x5GSOE68F8xTNbuO9bX6e2gkNMt59bLDRo8Ecvqes8MBLD85OaSsiULL7euF0GHLAcdCqLqPH-rbMj6n169bhtN3FVqWKHM29ekbJsYCNOGPG9AAMJIQSo8XwWG3RDrpgRJzSnESk2eCPXu02083AU6adfqXQCLliDOvc5pbZl-h9NkWh9FqmM16ZYH9BzEulKnTbxjjsGISNP0tLjrZC1rPc1n-W36riq_L29j6F2KMSUz8Rg_ly0NuFsmEayyrMNXX4M5f5ufvOg0geA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.759,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "ux-100",
+          "prompt": "What's the MOST important meta-skill for long-term design careers?",
+          "options": [
+            "Memorizing tools",
+            "Just visual taste",
+            "Just technical skills",
+            "Empathy combined with rigor — understanding humans deeply AND building craft, taste, and systematic thinking"
+          ],
+          "answer_commit": "hmac-sha256:a38246d30b9e43b646a5b3639bf9db55",
+          "explanation_enc": "aes-256-gcm.v1:DhVCe50Cj1uYBY8j:7Pi996jhJYT_oA-1n2IoJc1U0RupCt6sJPvGlG2ry22w_sAXXVJb7ZLivCAkX9UqIbYTMLvr_FdkG9rfDrJEjvnGx_6Q_LNPkXhRBoYreRbIe7iGCeVFTz0zVs-hEqaRsMnrPJsNq6TAgu-VRJWDdKtihtunGTDCkRkErjcXujH27ytl_m2L-wDCmjsWAAKTQseWXvU7OReKVDOUSUOLNcyXeMavisL88OEkps7USWWK_h6JwbK1jX4ktxTjxOYb6xTcecCCPttU23Cz3jKFafpnlmpV98qe06arAomop7TqDRmeSvbcFVlGA-x6r_dWAYDK1Xd496Ql",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:82d906b620e7be57343e631e985589b0eaa4f8b1fec574bbc0ea6925b64acf83"
+}

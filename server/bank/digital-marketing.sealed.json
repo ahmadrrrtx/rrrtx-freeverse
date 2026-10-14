@@ -1,0 +1,3422 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "digital-marketing",
+    "title": "Digital Marketing Fundamentals",
+    "description": "SEO, social, email, ads. The skills every freelancer and founder needs.",
+    "category": "Career",
+    "icon": "📣",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What digital marketing is",
+      "skill_id": "rfv.skill.digital-marketing.01-what-digital-marketing-is",
+      "items": [
+        {
+          "id": "dm-001",
+          "prompt": "What is digital marketing?",
+          "options": [
+            "Marketing only paid ads",
+            "Marketing without computers",
+            "Marketing only on social media",
+            "Promoting products or services through digital channels — search, social, email, content, ads, influencer, affiliate"
+          ],
+          "answer_commit": "hmac-sha256:a620cfb48214795189156de23e92a667",
+          "explanation_enc": "aes-256-gcm.v1:iwTJwVrPbHgqdQBT:uLbnNFjWqDTsKjBYZMiwNuQQwZR9DXo5j7l7R62sNSAkkUc43EriPO1V7proftqVmlfuGCBea2xaKJ1Sma5L0fCNiyHbpYjn8c95DtZ_52qUioiiXo71N7b0WpdengUdeGAK1mADTmvHQpUg0JQ_MYukkibup5LvHOCqxw2ZpYaGO_2HcDYGP7yk14G8j_STWj2L934EAgPE6tXBx2ogCdBZgBNHih6awjRgG7JlxJ7HkQx4TnMj52xRL8YJefNO6Qha0nrCGcmldISRAIud1tJVGzsp1oVBhALR4KXWIg2-pc-8t2-Ga8KbGANu9BzpsND_U5o",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.867,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-002",
+          "prompt": "What's the FUNDAMENTAL difference between digital and traditional marketing?",
+          "options": [
+            "Digital is for younger audiences",
+            "Digital reaches more people",
+            "Digital is measurable, targetable, two-way, and iterable — traditional is mostly broadcast and harder to attribute",
+            "Digital is always cheaper"
+          ],
+          "answer_commit": "hmac-sha256:d46a1a9d91d3eb45008ad51fd8d8689d",
+          "explanation_enc": "aes-256-gcm.v1:cINEL0NCh0vrM1YQ:CverV6rrPijwq1X0XknX2hDcf_RwniGT49tO3_ykqPAgwFq8JKB31H-H3y10IranvTcpkL61D02CFNgZ2T9JaUOE3QbvHwuVcVehexpjX2GHb6KAXkCv-miUYsB7tj3QOUEou5gyQwp3Iq_jXV4hz0TIeIgkUaccDO0vSbxsNk-HwxHSYXZvaNp3tynL4PQBmwc0MgMomPFK65a5TrR1lI-FP-H2MzprQTc7HBfUDUc9W0Ybu_AWIJ4GY8MVKi7qm5-l3fk5a2sTwCqew6cR_fOaDwVkBGf8K2tuf6-VqnYIX7CsRXQWdj-2nN23KX-1ia8eAIG2ZpXdAHY9C2HrQfTmqBk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.563,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-003",
+          "prompt": "What's the SINGLE most important question before any marketing activity?",
+          "options": [
+            "'Who is the customer, what do they want, and where do they already spend attention?'",
+            "'What's the newest tool?'",
+            "'What's the cheapest channel?'",
+            "'What did competitors do last year?'"
+          ],
+          "answer_commit": "hmac-sha256:bfa6e1379c64252d1ad287cfba306b9c",
+          "explanation_enc": "aes-256-gcm.v1:DOnFj8YgvPFAJFnk:hcffNYEC5m3shhHyI0cmiDWrihp5VOolByBiu1mptGnIrlQ3c7b_3hQJeVGZefufPDGGC233UkEs6C7_UlylUpweMResbLoxdKGufBldQDflF4ztw0u3P93GDyGHzf43T0C7Kkn_P-u1bX11T3VcAUy_A6e-HK1GcanVKMZyS5r8yJwSOG1nw5yIyR_9PQI2gbtjVRzOaB7mpOlACBWX6oXTO9ZkAmj-KJcPrCJmxBsehLEAb17j4H_cH0FZZOb066u1tltjykqMKz2LohrO2ljBH6qBHEXNK23dkcKTuQtdN65FjbnnxeUynw3J",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-004",
+          "prompt": "What is a 'BUYER PERSONA'?",
+          "options": [
+            "A semi-fictional profile of your ideal customer — demographics, goals, pain points, behaviors, decision triggers",
+            "A celebrity endorsement",
+            "A real customer's personal data",
+            "A marketing intern"
+          ],
+          "answer_commit": "hmac-sha256:f78a28f7deba8362c55477a8e5b694b9",
+          "explanation_enc": "aes-256-gcm.v1:eWCvoBiqCnKe5y97:09ceZpPEIzisOVRKJvc-2a-KzS804S11gIo19KrVUv_9RLcKCkW40odhZh4NyawsX2GYsbqf0sSb3E2sZ6x4KAs6OHwobktacRYBBtIKkPJgFSKVZu6djEBL6zuq9oILc4uU6gLOldZmG7TZJU-jSa1tWVVnTIFBAsmOwSmUSAxoN2xdAjnH7xUiraVjTIm7kG98N0JD0S5OgpMovquEQCxLiB9j6Pm1_tCV-XkW0lXIc0VfL70L1jXMwpS1XEdlyHbmvTI-M-gup-8dOz_GFOJbdWQn5FgBSWyaaQ0YOxcTa1TxycBxhsOoTfNl6av3QIOeg57a",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.613,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-005",
+          "prompt": "What does ROI stand for in marketing?",
+          "options": [
+            "Range Of Influence",
+            "Reach Online Index",
+            "Return On Investment — how much revenue/value each marketing dollar produced",
+            "Rate Of Interest"
+          ],
+          "answer_commit": "hmac-sha256:370b9da377106f3b5a522975371f66f9",
+          "explanation_enc": "aes-256-gcm.v1:gI4iM57FZQ-O8i0d:AP3UxV_O3flLLGCAC7lgUQWhMf3kksz_IL_WTv8zlAKRB0jZxr52mTKVuLNAINxbHo9gJL3BzrL2Gr_qh_dcr8SEap0d6L8lhba_Eit_4cUNeXNWUIi_8d3P9NVRowBrP2NCf9u9WSiX5e1EL_X4I4jf_hlV3uj4hUKOHNIOPkop0Bq4sNk3FNKBzRZwp3tPqFzSJSb-23xJ_WpFd80dejE1ITSkfvxvxWVULPEHv54jOzZwSaKaOav0s6Ii0VKDHaxgaokaLBQePIWXLmadTi5FFQZ4Sphova1914BRjKhA6hNtj4gpEeIYzajm7cawyOEne0I3UzSBCGQ6xK1jErf_bryczqmcZ1c_pA0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.222,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Marketing funnel",
+      "skill_id": "rfv.skill.digital-marketing.02-marketing-funnel",
+      "items": [
+        {
+          "id": "dm-006",
+          "prompt": "What is the 'MARKETING FUNNEL'?",
+          "options": [
+            "A funnel-shaped chart",
+            "A model of the customer journey: Awareness → Interest → Consideration → Purchase → Retention/Advocacy",
+            "A type of ad format",
+            "A spam filter"
+          ],
+          "answer_commit": "hmac-sha256:3182a2c73385b090a53ef952852e8c09",
+          "explanation_enc": "aes-256-gcm.v1:bw49QNBxnYI4W_SW:uuXGrboeUmaGtsyEyanBlS8i5hOsO2VhHGRKzT-FYVi_3QTZW8w7N39fVSTmS50CfB_Hg8eytmvF5tdZJjgf-n0UzhGHYOxJf4IGAXv2yyXfazzGyQl-rFy6mZw3qGLoUZMwTiYI1L3YX5xH7y21vi_zfZfwVa1vf_BGCkQOZBWiJIv4tvlS9hj83eE48Ljit7w-JrHFxo6t00uYtTB89bVvbomYkiigvlLBRNqnNY8kaWaLGJdZNBUwDPRAlWrKx-hUAXW6pD_gcFFCAJueZ0xapRsVq9iH8fMgsjuUeBtGGK3rSeLcGD3EM2UlgMTh7cC0dfq8WQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.81,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-007",
+          "prompt": "What are TOP-OF-FUNNEL (TOFU) marketing activities?",
+          "options": [
+            "Building awareness with people who don't know your brand yet — SEO content, social, PR, brand ads",
+            "Customer support",
+            "Closing deals",
+            "Onboarding new customers"
+          ],
+          "answer_commit": "hmac-sha256:0b2098b85ebf25116df0fd6d2adf05c1",
+          "explanation_enc": "aes-256-gcm.v1:bhKJHcnOXzfgamXz:Q7j-I71BGSpRRQPPh2luEm9vLLwEcSpgogPm4xqR5xZxLGbSbyGI5jYWirwGdhMWotuNlQCfSGfx0-9MslaS3qiPJV5q-7XSPZMWKPc5ChCPD30QTw20N3ShpJefsvfP8OIxIB7CQTVJmYn_sOk0gzZEtyR1G6uMhESNvwGk4a2Z6Zs1RURs17Sa3saTH1HUTaN9I1dhZAd4yTChGV2aGhOH8xKijU8lvNHTsXnHYXpqUvUfvedkafn8cBg_wtfPgQVt1ML28fdOq1avJmtwuCrHPIKci-XAHeyoI7G-vDVQe4d9uAAn7T94Wq94N_9gvFCzTA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.042,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-008",
+          "prompt": "What are BOTTOM-OF-FUNNEL (BOFU) marketing activities?",
+          "options": [
+            "Cold outreach",
+            "Public relations",
+            "Brand campaigns",
+            "Convincing ready-to-buy prospects to choose you — comparison pages, demos, free trials, retargeting, reviews"
+          ],
+          "answer_commit": "hmac-sha256:1dfc303f438bb2a24757377f158ec212",
+          "explanation_enc": "aes-256-gcm.v1:TZglr2fLX47hKdzX:9oRSYDEz3STPmod667htw4_vOfnBNrKs1kZ3hxBnXzRTd790nL8oH3V6RO_s4yHuSw5Op0u0CvDxZsSHIWQad6jsKpl2tFPBbRUqz7OTShS9vGkrLr425niEpd0FhU6oPZTcCGBCcdxjYUswWJmVfKXgOzKuVY1VDFnhd0wQOXEkwLsJ8WRhupjQ3S8nJGsz7arJ7sSGaXILQwEdZetdkgW7e9QBq_7PH-PAJOOiPQmV2JDa8jfdxTAfG6MejX6F98IrPQQsFYnvmcKDw6OhSYeQ_LKO1PKpdGVkL-T9MuwlkkZ3q5T9OLmP2bkdOzrbn6ju86YzMsIU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-009",
+          "prompt": "What's a COMMON funnel mistake?",
+          "options": [
+            "Measuring at every stage",
+            "Using multiple channels",
+            "Investing only at the top",
+            "Investing only at the bottom (chasing immediate conversions) and starving the top — eventually the pipeline dries up"
+          ],
+          "answer_commit": "hmac-sha256:05a912a35544dffe9a2ebe6c1fa899eb",
+          "explanation_enc": "aes-256-gcm.v1:D8tzCAYurL9LyArx:5Gv40wUwj7KsNQIXazMpSoEGPY9EGws7a36Ru2e65hH-p-2heqLenYyhuvJrPCAo9bkgT-TQgmMZs70ig3dEdifvN2jXRteb0bNnDhDVhednnnxbtv5xuMCy2UL8iRKMVlbzCJIg3BOLcAI28eOqj6FE60JHAvCDdnhmg0e-KkZ3t7W-uyYPFZJkc5xe95kIAaADTZc5yPqpfZejk9qYU4UQ9Eof5nOXmRe3naqnHTZCl0-mms1frjG-DAOyZphgzmm6HTekwzkJieKKIe_sqZq8FK69sVoRhY09",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.64,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-010",
+          "prompt": "What is 'CUSTOMER LIFETIME VALUE' (CLV or LTV)?",
+          "options": [
+            "Cost of customer service",
+            "First purchase only",
+            "The total revenue (or profit) a customer generates over their entire relationship with you — the cap on what you can spend to acquire them",
+            "Annual revenue"
+          ],
+          "answer_commit": "hmac-sha256:5f97f9b204a51cac77e4a9eb8393ba1d",
+          "explanation_enc": "aes-256-gcm.v1:6Fl7Ev9WbAexZ4el:4uGb0bOWCTiMbbQZsaRayyWCaap-5VygwviGU8y2TMZGLAPixAyNfwTBZ3_SHkKPt-G8MWZp_cPWbmKOkH18LwlXEfbkqpDF3KwtbSEjXwcLVZe-KWkKwMUKy7ZPrb7Grdo3EXpiqVaSQ1PBse5JiaG2TMH0JH265yIbliZsgrh7q_KtMEU4vHjOQ9_tQYW5m2k0mhTPMTwqiwTnsr3yXkaz2CeMkbT-_mSkeqaTxPOqebqf_EQJSE_fFEM_C0Vfz0BOU9N0unaaXMyiZiVsy4KCCYJ9mUFK1BAn6oRq6D9ldzCr",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Search Engine Optimization (SEO)",
+      "skill_id": "rfv.skill.digital-marketing.03-search-engine-optimization-seo",
+      "items": [
+        {
+          "id": "dm-011",
+          "prompt": "What is SEO?",
+          "options": [
+            "Hiding from search engines",
+            "A specific tool name",
+            "Optimizing your website and content so search engines (Google, Bing) rank it higher for relevant queries",
+            "Paying search engines for placement"
+          ],
+          "answer_commit": "hmac-sha256:1203679851936add2e5e9ef829e3a41b",
+          "explanation_enc": "aes-256-gcm.v1:sb8Jg7f47TM4UV4L:whoK44FcpeqAgDnGpvTKmiVSHEurGNnw8AX2Xt2J2LOFfqrQuBWXO6ynGm7HcSzC6nI85_lc1YZCYQUy7VFYi6Ocn9JQCesrIqB8cLQJv0XqXveWw74RuwDIo2N9vHhAQCibXYGBKbatBoM822oSn4xlWJFO64ZLwsdOOIVlbBwoGcFhg-szkxhQpepFmJXsARfIW8lg7ZF8QxdkkEWFFQnCV4g-8Udjw_epDdV68RnJu6uUcWr_Cx6_V7tCBJD_Gle2Mx4u3xaSfPTJfvosrQMtac2r2wAj2X6lKcCE2RkJX_vO",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.971,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-012",
+          "prompt": "What's the DIFFERENCE between SEO and SEM/PPC?",
+          "options": [
+            "They're identical",
+            "SEM is illegal",
+            "SEO is for mobile, SEM for desktop",
+            "SEO is organic (unpaid) listings; SEM/PPC (pay-per-click) is paid ad placements like Google Ads"
+          ],
+          "answer_commit": "hmac-sha256:af4d657c5ecce7382f54f2dcde23d21c",
+          "explanation_enc": "aes-256-gcm.v1:npUfk5AbuEzz9N8N:vbNGzYJe494F-H7nlUVPNSZ9bEAk0_hBLXBGs2nvzRcsSE4_-lsnIoYyTS1WvklOiyoPiH4JkBX-l7flssOBx97XmKeDWNVGTPek-mnVSlWyoFRD_LgLf_s75KuF2iwuFReKalHPs90sIFYQNa5EMZQ0HOmRrY-sUQ0bcaWZv7avPXvosrlF43kw_JjozCrCGuH9CotPPiO3w2ltKK9yGRcPfJ4d9KHo2vfEaPGal4jA5wahxC1c34Yh0OLSDPGMNr2BI8xDUxEElC33heWuBmEn7yR-uifKY9Wkb5jC8s6nQTv2xuGOGrS9nQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.794,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-013",
+          "prompt": "What are KEYWORDS in SEO?",
+          "options": [
+            "The actual terms people type into search engines that you want to rank for",
+            "Passwords for search engines",
+            "Code variable names",
+            "Hidden code keywords"
+          ],
+          "answer_commit": "hmac-sha256:e69300c0286cb3448b3f7c36867486fa",
+          "explanation_enc": "aes-256-gcm.v1:9kruMHA-PTndv5hl:Y6ywZjkcqtlJn-MWf4y6xcti1MTS91zI6bnAPmRxwoG_BDc4HBTNTJewMWc7MYPW7u4cF8wyRcUwYM4vsElAKJDkPlpTOI6a6gpEYU3l_D5081Z1wz1VTTlcxo4Yo0ka7XYkpsTmrrFwytdKupFNFpT4Ne_FdE6FERxMgJy5-zMg1esUyWaB4S3NtNu24p3hdJm0R0rJ2jgC0eOeUnskWmkesI7ysDLUm2Q70nR2x7FI4blTmA55xgPN-vYDV1XC9zzvTy8JN2cqbsrsxULiOQnN431hgOyfz-OyGrKYramEBUZHEVWo10XChhjrg08",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.643,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-014",
+          "prompt": "What is SEARCH INTENT and why does it matter?",
+          "options": [
+            "The reason behind a search — informational, navigational, commercial, transactional — matching intent is more important than matching keywords",
+            "What time of day they search",
+            "How long they search",
+            "How fast someone types"
+          ],
+          "answer_commit": "hmac-sha256:639c7df4d651f5dc3430594273ec854e",
+          "explanation_enc": "aes-256-gcm.v1:sd0jZF_-FOJyClG4:m6slOmzBF7gwHSZ6-lu1Dw-DeOpDyNiEJdzVtCVuJCDErZgCKxZCGZh_jx0rjFAaCDYRGx1X2Cg9f0evswnZbXimWAmZdXqiWXrSTsYElZ6iq-qC9gD8hOLXd-EvlDnwJJ5SbkBH6wrT1y-m4K8AWLwD_vWXV54ja-V9SFnrzR4XcSTplNXmaRfH0hlzhdwHCKh-F-Xj5LrN9bGgBjXentxKMZHp9mczY3jfgbbbrKiIIrwAIQJO1zPcm3DsGaovpTfVAzicSv9gIgP8Uc0YsJjF2g7ItYmy1xHcbAvWBqUndVhFE06S5JLD2IqKWxOJnydqCxcV-UTDdS4gi42lF2kxgUyk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.071,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-015",
+          "prompt": "What's 'ON-PAGE' vs 'OFF-PAGE' SEO?",
+          "options": [
+            "On-page is for blogs, off-page for ecommerce",
+            "Off-page is illegal",
+            "They are identical",
+            "On-page: things on your site (content, title, structure, speed). Off-page: signals from elsewhere (backlinks, mentions, brand searches)"
+          ],
+          "answer_commit": "hmac-sha256:ef036ecdeaaadaae44e3735feb39a1d3",
+          "explanation_enc": "aes-256-gcm.v1:JVv7zhIPAiby5wpB:ixWR2yIrXM_fdAf4Ooqqvwcg7a2VXBGoLn8B_ShHxcxnewq02j3FEmUWPm56Kvatc_DhEFS7YvDK5FGP-4noNThr55qhnPXmne-0Wgx3Y5ayvdbSsqg8CLaD0ruLBbsr1icwmADF8dqf0n2prc82_FdADO4ODwrLfpKgWOft-ec82Ug8A_LPQwYdfP4yJRNnl0zQPr0RhO6zZfgrTwEno8gCvduTZ8hRyB7yIa1UyOC9tAtPlNLVBcCRupVXbXPHnqVnCYAKta0bV0Oa6MHqcJXYleioLWen1cjQnH5e-RYw7f0IRQySVS5GI1V9ii2hLCs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.068,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Content marketing",
+      "skill_id": "rfv.skill.digital-marketing.04-content-marketing",
+      "items": [
+        {
+          "id": "dm-016",
+          "prompt": "What is CONTENT MARKETING?",
+          "options": [
+            "Attracting and retaining customers by consistently creating valuable, relevant content rather than directly pitching products",
+            "Email spam",
+            "Stock content for social media",
+            "Posting ads in different formats"
+          ],
+          "answer_commit": "hmac-sha256:07270b32f3f509b67dacab8fa7afbf79",
+          "explanation_enc": "aes-256-gcm.v1:B58XVggk0nXeFYC9:Qpk7askmgx1yzBQF1FCf6h30YaIrLHQnOv5VUs1Tu7sCw6XKaiL93Ut2PvB80seiCqoZh9l0LXTsDW7E7HuQ3c-A9YbUAqxxGYnTTcOeDD0Urz0mfhep5IqTvb-MoShxDbQ_IbgzCnjJwESxupQEn3PR81SsjES4eo0GIYgUMO6IXAJ9UCwCcBBmnSknTKkAYj2jxGY-55MHyKbyUUkdSSB2zP3kcL0D2RyxHBhgMXGQNgJmsan8bkuRhVDXUgQUG-dBEKnRMqUXV9BAJSqpiIVEufbh_74uBBgLXE9eEWPUt6s5Pf40sTWkMXl1bdAoGwiLta_4I9snH7daPyPFNyhjprXtpSTPbvGHxt6VCePSzedkDsy5Fw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.906,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-017",
+          "prompt": "What makes content GREAT for marketing?",
+          "options": [
+            "Genuinely useful to a specific audience, actionable, well-written, and aligned with a business question they actually have",
+            "Written by an AI quickly",
+            "As long and as detailed as possible",
+            "Filled with keywords"
+          ],
+          "answer_commit": "hmac-sha256:83a1123de2230d565fce5ea40b53d767",
+          "explanation_enc": "aes-256-gcm.v1:i9LBh9eNQpOM7TfX:QSBIWvYGpbjm49qFwf6DVY4HgYidQAFrNoW08tJvMCHyboJn8yh0yBYADEcecglv2ZZ2WzvmiV8HJlmSMBLDkc86B3oDkWIk3YelptqkP4AR9JB4FtxhPNcU3yPFjeK52twhgTye5sEzAlYi-drstoViU4YoM4svF1HZWJxpD0Av8cQ7Pei3mYnK18depWXarBQguSK9xk2LgSDFkNyTLHqh6Omg_VzofS0-NJ8yiDComMYwziPWJsMblMe6BB-oqnJqOVbApVcffAnnZA8_AZTn3ySdrZKXpWedgv2UtBbWguPRHEjbktUavdyq6j_NG4066CV1FQnWosQwkV5omohWbdTO2w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.486,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-018",
+          "prompt": "What's the DIFFERENCE between content marketing and brand journalism?",
+          "options": [
+            "They are identical",
+            "Content marketing only uses video",
+            "Content marketing tries to attract leads to YOUR product; brand journalism builds audience trust without direct product pitches",
+            "Brand journalism is for newspapers only"
+          ],
+          "answer_commit": "hmac-sha256:6bcb583e3d7ac3235bd5bd58739385ee",
+          "explanation_enc": "aes-256-gcm.v1:Viah3vLGv_zHGas-:z2NvfF6VqD2LvSPTFyY1CNundaRqB8OtHXI8fNr2hsJqWlHzylZueZ7epesH6Pw1xGkoB8RgYF_1yOGHjko1FrisURi_IIKBTSe2VBYM99JFp2sqyRQutLlDN98JsCdDgEGajpLVHbglHC6tSOGwpCQQXAYYfbS4m1f7OQ-WE-GOIpvw4dIs_kmxqtsMT74Lox2N1xC36WDQY1qQX5ZxvO1tblPAjtCfdec2DKOLBROi9_65eV2Ol5b12uy9fr8BUzFNBlI4e3y9wscnl5eiL4nkGxdCJo3AtRdikucLeNR-pA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.256,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-019",
+          "prompt": "Why is CONSISTENCY more important than perfection in content?",
+          "options": [
+            "Algorithms ignore consistency",
+            "Consistency hurts quality",
+            "Algorithms reward regular publishing, audiences develop expectations, and compounding only works with continuity",
+            "It actually isn't important"
+          ],
+          "answer_commit": "hmac-sha256:98fa3c6da18a1487b158a73c4cc8ee07",
+          "explanation_enc": "aes-256-gcm.v1:V9l8_oVNlYbzfM4f:3Z5vDiUDHIiwKHouw1zwIP2DGrTp0bNTm0AIcC3B4K_ODSppP1oTx-DZle2Xyb0OFWuchgtqJod7iOSb49vWjPpO54CGMUdMOuQWE1_SJqH1UZG6Xm1b6QbrvGZeXwdEWuVyAIjQlJJlSsz1hQxuIndydQ_VceACqpuu1a09GSP-XsqZv2wF3wIKNZnWWH7OuQYTT0CDGOCFzKkBacWFumLXni7AiLHXw40jBXUHVR194VVOJa4qDFmjtVWicjitXhKNSe9n3lKVwJmKOIiWRTe6MckHWiY0ZuXbVjnn9fmCnxidRYtPiQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.862,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-020",
+          "prompt": "What's a SMART way to repurpose content?",
+          "options": [
+            "Always start from scratch",
+            "Never reuse content",
+            "Post the exact same text on every platform",
+            "Turn one long-form piece into multiple formats: blog → newsletter → tweet thread → LinkedIn post → video → podcast"
+          ],
+          "answer_commit": "hmac-sha256:c2de83b92b2dc267e53c895c8d1d44bd",
+          "explanation_enc": "aes-256-gcm.v1:4T33IcHCkZM2Aeva:pG6--2tdqJNBa3wHonxrCCeDX2k6v42m-OiL7MSIBGLBCnhIKlG7a2q28XJUtCyY2sZCMixgOleriF-SGp-ClXs3eV9a5P1YCjRRzG_f4JJhaRlN6Q6owO35J_OawE2rU4NhRX5iscQZdokRY2JEoDAthiuSNHpiljbrhm4mFHRMm27RdKq_kUQ-TCwWCsPmzFb4r01MIxyzK29q0xvbQSXKETIx4be-fpbcN6d8Ujb37U-92h1D0Y9ClGoGVY4sPjReQFDOKBTVX_xkNHeJiHodcKPd67wdmzVXJyXA9g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Social media marketing",
+      "skill_id": "rfv.skill.digital-marketing.05-social-media-marketing",
+      "items": [
+        {
+          "id": "dm-021",
+          "prompt": "How should you CHOOSE which social platforms to use?",
+          "options": [
+            "Always pick the newest platform",
+            "Go where your audience already spends time; don't try to be everywhere — depth beats spread",
+            "Be present on every platform",
+            "Pick whatever your competitors use"
+          ],
+          "answer_commit": "hmac-sha256:30d35196da6d0276830474ed55d8b6c3",
+          "explanation_enc": "aes-256-gcm.v1:J6LMU9iuKwGHHYRG:_uSrKEkUMEob8nue0AnEaBBK6tQGQPl90C_Fo7yvyjqb_0v0DjRTC-f5MVDkJtSCYPuz1cVDX4zcDIEW7sETxWUbDt1D9C4pUpwCEObmEkx7RqkpB6rmSBsmg_T65JuRH_OPSWHrTOm2VJk2dx3agDBGZMoRlfK33XK2rv0D-xrkaSyO2VoohWI-xku7yGSH8or0BN4lFBlqv3RO8KJaT65JRfUsSjQjRyHDEOw1GNfEztfuwz6D1cHH4R0PZD9koPEWpgKK9wiPkk_ED2N37_fwDxFTGJwEsP3UYh6LVXbCxjC3a2rADA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.676,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-022",
+          "prompt": "What works on LINKEDIN?",
+          "options": [
+            "Quick one-liners",
+            "Vacation photos",
+            "Memes",
+            "Professional insights, personal stories with business lessons, industry analysis — long-form posts perform well"
+          ],
+          "answer_commit": "hmac-sha256:dacbfa88666a03665ede66269069ca2b",
+          "explanation_enc": "aes-256-gcm.v1:2K7Ccp7YmQEH7JEf:94WGesU0ZWFJCmlJ-GdaON3vLIp6n7N9NtvVTitM_i1ONkYKHTzvvtQAAIgM03GoYg9lJgtudeJdTfexh87ilql_LhkKiMCE4Ze4gDMg0dvxzrVa889E8w8ASnHsecVMwhriWc5pupjlgiUU-OAWw_jndjJsoDxIhoBwllU0bDl4NHS7mLV6A1qWixvX9v2dqOToF9dkOUf_JdReVp6SFPuK6dUl9D6sfrL4NOQDMdn3t23dsfgpblvPKXaQux5dHPPAGPT2y4QbdJhoKvgXdyFfwgsXF2r-y82CDGGji00N3g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.938,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-023",
+          "prompt": "What works on TWITTER/X?",
+          "options": [
+            "Quick takes, conversations, threads on focused topics, fast iteration — and replying to others matters as much as posting",
+            "Daily product ads",
+            "Stock images",
+            "Long essays"
+          ],
+          "answer_commit": "hmac-sha256:40b0ee17a0807ba3309fe7493c593354",
+          "explanation_enc": "aes-256-gcm.v1:sHRfJsJcHOoIjp_1:uh3xJcYSFY50ltbOQw0o0JmXYMYhk9eG_YuMaXIzeg67P327HSKRB-AA8XtfBrHH9ym0YgjledINJk2M4Q4eU0NpEwjCHne_-QMbb6oJtg1Tm3O-OsVvEdCsMhphrhJgAfpNhMwOmYHxaKoqGfdhTHvPsKuHMXq1rOAb3s6yKftSMj0bnvtBw-YN2gm_X7vBkvSx-JhZ1CGYvZZmtAvjVjRh0i3CjilECpAm9va1K0JZ1XdJRy4g6PbwiYP4ewkggc_19E7OPhk3hWGb7zPOXsL4h0a6Nm9c1GaYkP-2U3Nv-WhZadawrVxF-_U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.118,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-024",
+          "prompt": "What's the SECRET to TikTok / short-form video?",
+          "options": [
+            "High production budget",
+            "Long intros",
+            "Strong hook in first 2 seconds, fast pacing, vertical format, native style (not repurposed ads), watch-completion drives reach",
+            "Horizontal videos"
+          ],
+          "answer_commit": "hmac-sha256:35e08cbf5dfbd99f94ded37e73497b56",
+          "explanation_enc": "aes-256-gcm.v1:pkxMLGaYLlbGTMk5:iNDCRJKUnCk1vkf_IPOg7Oxk5CRni6vWhzfZNtz0xHC4gUtT69JXg2hKMA4iSixBgWIux704whcI7YXcqusoSlBrGSuXINsmt0i7MIXKN_WaPZ5_8DJn8PPBkFDkm9EBihS7Sbkra2I9s13gFJm3XJwweWbGNEX2uPLDH9O2Me6jIwpUqsE9DS5a-ycTwUiTm9-tLo60iZgL7T5_2DROXTcWvOya84Xsc7NMk8L70SiSl9-FKwIrVOmC1nywT_oWq2vWE_qk0pQrwICdxhPrC-ESkKC8KSqaY5PkUKQ7_VNl4S9eMWx_SzEy7krKFCSo24kvYRcqmtRz7r0d",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-025",
+          "prompt": "What's the MOST UNDERVALUED metric on social media?",
+          "options": [
+            "Vanity metrics like total followers",
+            "Saves, shares, and direct messages — these signal value to the algorithm AND to potential customers",
+            "Comments only",
+            "Likes"
+          ],
+          "answer_commit": "hmac-sha256:de8a4baa12de7bb14da6635c46ab82e8",
+          "explanation_enc": "aes-256-gcm.v1:hGLxm7JfaBDPhoGC:a4UvrZfie_46MQ2WuZ_CdumgL9k9qfCBey8UgdwsSjAmeCBOijfu-qOLpC_U833R8QTj0D-WDZ-HS4jpco7vDJim4eEgH3nnoKZ1luVRZREXL63ya6QwPPBgj_ziLlX4Fu6eymV1Y5XYwz1JDVUN1orbbBcUT6dRzRQ5ELzyFL9ccRdN3tB35sV5HCKEJc-LviQxSCUvO91kFs4TCCOx_hGaqvKIJA5IaE1n23w84g1feBzjOfiy4yBtpVKICO1iYIT5ibjOTnfvfYZ4JOz_jc6h-Ls",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.829,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Email marketing",
+      "skill_id": "rfv.skill.digital-marketing.06-email-marketing",
+      "items": [
+        {
+          "id": "dm-026",
+          "prompt": "Why is EMAIL still a top marketing channel in 2026?",
+          "options": [
+            "It's free",
+            "Everyone reads every email",
+            "It's the oldest channel",
+            "You OWN your email list — no algorithm changes can take it away. ROI is consistently among the highest of all channels"
+          ],
+          "answer_commit": "hmac-sha256:3a3a0351c2ad0e002eead717cc7a6878",
+          "explanation_enc": "aes-256-gcm.v1:4E3CMTxP3lT3-NO5:NfrWcJEduIb8n0OzE-8n34__f0e9vvygai3zGvyoONK71Oqo4i0vBn7tlZ91K6ANM38NZmJTzkCz-BtNI36xLR_-9l47FMlg1avTdkHPO-yk3RBdigA4h1iiDucIaBaqg-J7CFvi9wgKpkvaCDwjYzN0Of_8GCCAgIsSsN7djtBCe2bxWGI0qRdku1CRXBzKSgT3nrpt0irikFQdJ86PkmP6vJSgBddfdGwgyDRVOIys609Tkz1KribmPEFV-X_pbF7jpFLj6Ab7RfL6MABc9n0hpCaLsADWDjS0dEiGCMxaT194R1DLvnqEf-NEL1mgkIatiqUWT9ILYfTK",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.538,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-027",
+          "prompt": "What's the DIFFERENCE between email MARKETING and email SPAM?",
+          "options": [
+            "Marketing is from companies, spam is from individuals",
+            "Marketing emails are shorter",
+            "Marketing emails are sent to people who explicitly opted in and contain content they expect and value",
+            "There is no difference"
+          ],
+          "answer_commit": "hmac-sha256:bebf9f4d445569c7da3f6ad3fe2c8256",
+          "explanation_enc": "aes-256-gcm.v1:aGXLZ7ZJyOyG5bZg:fmLxBq8XUFZZAJ-j0jzqXlb5xeH2KmLmBGuhFe7Gx4CMmqHM0T3nIyPHzS_cSXJvrVaG94DmDpIMpfj9JcH2QqYXpLVtwF51FDN0l72A0LdRwTNFDPgy2Bb3OK8r7DyBsZbz3CytIP5S-dOn3uKYo45sPhuRDEEKTaILdWnr6PFD3Kqf1RI1KoQDoGzpRbcFjshGVKI9r60AhjVzb6D_uacwi5-E0KRaL0T7zA8rvSAmciJp2gjh6ZRwnyuSZE-EYfTu5pz4_wfuBmMxw_qxiqU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.906,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-028",
+          "prompt": "What's the MOST IMPORTANT email metric?",
+          "options": [
+            "Click rate",
+            "Total sends",
+            "Conversion to the action you actually wanted (purchase, signup, reply) — opens and clicks are leading indicators only",
+            "Open rate"
+          ],
+          "answer_commit": "hmac-sha256:11a785ad84083f3e676bb1e331f2d360",
+          "explanation_enc": "aes-256-gcm.v1:npLTmRwDt9BxQDpq:Jj_KuAn9q4kDRGklOUVjlyzcm42gQppYzpy3jSfkdOasL96iOv5G5wIalw503RDS9mjSSp872pIY7K6ZI_dUl-l5dJ63DVcXaPMYlGQbapMZjcgAh366nPXr__wQjT6IK-ePAlTZqBnPqEfe_9wc8kkkvqR6clUaasSk5M77JfM6RnJ_N0N0W_diKEF4NM6ZPuKA4ETJ8EFqmjaXRgYgpUnBVHQFchZZgjQRKimY2FBJCd_xwLX8tVu6Uag2gs1N8rGhNxTL",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 10.636,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-029",
+          "prompt": "What's an EMAIL AUTOMATION (drip campaign)?",
+          "options": [
+            "A pre-built sequence triggered by user actions — welcome series, abandoned cart, re-engagement, onboarding",
+            "A type of newsletter",
+            "Random emails",
+            "Sending email manually each day"
+          ],
+          "answer_commit": "hmac-sha256:077bcb6114470610d85dd505e8239df2",
+          "explanation_enc": "aes-256-gcm.v1:t_lTiSXUrCoV9y7G:RCtp3g1SUeFbSsugEF62GHP8Xmo-59lIuFfAp8UNAYq7rNYqlSt1la8TeiNQ8oIdfAoDCyBZlcN0Ll2Vh0UQM6meqXRXC-sJTzEllMGtKQuaGJve23_j8lOEX778aMjL61Vwt5HcWBz7RrBmlgqRaf0O6Z9DK5LXXImitnL-x7Lz-O1Mleie1q1LRcGkkbGvbLsk6gvCRCsvDHy3G1jwU0CoDIk9Jxzajd7jSAuPoM0eAOVAURDphLLRvIm3JijDEW0WcRPtaE7c7sb6LnJxaqma0g72_v63",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.419,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-030",
+          "prompt": "What's the SECRET to high-performing subject lines?",
+          "options": [
+            "Always identical",
+            "Specific, curiosity-inducing, relevant — and tested on each list (one list's winner is another's flop)",
+            "Always short",
+            "All caps and exclamation marks"
+          ],
+          "answer_commit": "hmac-sha256:c8b40e0f5b9e5dc86136bca503e5dffe",
+          "explanation_enc": "aes-256-gcm.v1:Myme95StUC7YB_9e:WUK4GpJwhpVo8MJ7bTV7qAXOlCJ0ntw8QUwFgc3C5lCtk2-e-0cC8QXNe2S9YbN4PCP8riHrdIEzGYSkdxX0hy4HkpukyaP7rQnnQibpc5Sgrw3flYMz3PGy0tlWUbSJOD7Z4UXqhmb8BRXgzffQahJ5DgZLxnzQGTCAxfw46TvQg1rUmNVTYfB36VhdNZMgRtF2csGgFOR2LGWh72u-tNrMR2ojVfPX11fufUfCARwdS4-Iam38tMDKCXVM0D5JLdRSg7udOT8CIlnMK04F3BfCiw5Gg9oj76ZdTJY4sNr7Rhqpd2rxK1O1sfOng6mFvFQGb9ofpbg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Paid advertising",
+      "skill_id": "rfv.skill.digital-marketing.07-paid-advertising",
+      "items": [
+        {
+          "id": "dm-031",
+          "prompt": "What is PPC?",
+          "options": [
+            "Pay-Per-Conversion",
+            "Pay-Per-Customer",
+            "Pay-Per-Cent",
+            "Pay-Per-Click — you pay only when someone clicks your ad (Google Ads is the most common example)"
+          ],
+          "answer_commit": "hmac-sha256:08e691e44e07fbcca7eaa968b7d777f4",
+          "explanation_enc": "aes-256-gcm.v1:cmDV7Pt30Esp8bq0:OL2Dc63e5kt1msgRkoOpWldeK6xbXH4YUUY8gmP0OOvNSfxvonKdTPG4tQ7w7jI80Q6t1889z1hCXuf15kiqdbFtu1RBNDtPQXT5AEw8arAr1uNAhBDlNk1sRzTvRKUBFJBZO9hKKI9S7ZxbLBvm0F8oGMuxefzlrb7ruVieT2XhWnarHtWd4CaiO422AHdSG16IWKgWpfag7QKJGwc363qojDGtj2OEDuk3UvFL-eMpxQML7Dq8_BKEaioDzNuy2Hp8hDD2q3sqjjXAwTj_xqQbLM3Rfvv3_pM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-032",
+          "prompt": "What is CAC?",
+          "options": [
+            "Customer Annual Cost",
+            "Customer Acquisition Cost — total marketing spend divided by new customers acquired",
+            "Cost After Conversion",
+            "Conversion And Click"
+          ],
+          "answer_commit": "hmac-sha256:2bdad298c8b5b161525d16fc0aa311fe",
+          "explanation_enc": "aes-256-gcm.v1:yjYWd2-AhxbdcDbw:JL4LKAOSAPXLYjcsn2_K3u43HoC08XdHaCzQOW4qqh59-K830DbQAiB8Dv4nYe9BVRwjz_Spe_OlitBa6ViZq-u0AX8MydSBQ8RRBa_G0Msrf6tQ0X7HNpk1k4kmrCJTWdvJ_ot7k_c4uM3cRI-HBnAtwwqur0SPoUcjJ4BsJK7Ro3GFNWpf7GxaLNQdB_HVZbawm8YvjvIDY_FFUJp66eSly9sTWv4ZniG-VNd0ATi89K2Ky8DKTPddH81n_q2bWIJpjqY9DJXSmkCqHMFoMcyz1TR6Zb9RaHl4TNFKW0jxrBAFG_43Rr60jkB6m1p1CnxW23N_962OvA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.952,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-033",
+          "prompt": "What's the DIFFERENCE between Google Search Ads and Display Ads?",
+          "options": [
+            "Search ads only on Google.com",
+            "They're identical",
+            "Search ads appear when people actively search for terms (high intent); Display ads appear on partner websites (lower intent, broader reach)",
+            "Display is more expensive"
+          ],
+          "answer_commit": "hmac-sha256:51da8e45d03b9c9553c1da03d0da67bc",
+          "explanation_enc": "aes-256-gcm.v1:rSWHwGVvdLzj923E:NPEQPMZE1H3-oJFmkHWQHcPn80bEMVNdXaYDaHCl4Jm6L8k1cIy6LcZ9wbs_GUeVrlgsXuMAOhn9LGV1OFDYRrWGKEQOoAvudIW8ebiFk686MPZ0mmX7pSMobkRO-3e684uZ1hjQI3WfRRllrOPMDpMigPGNO5K5L7JA63Kek9t0dHnNR_w0SaBWNOcaRzGYApj-W2dLHionl5a4STi35VOBLZDabkaTQOJAZwofWan78Gyf4TrZ7dfaq0Mj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.793,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-034",
+          "prompt": "Why are RETARGETING ads so effective?",
+          "options": [
+            "They're cheaper",
+            "They use better creative",
+            "They reach more people",
+            "They target people who already visited your site — much higher intent than cold audiences"
+          ],
+          "answer_commit": "hmac-sha256:6ea30017500930e0586d0dbd083792d9",
+          "explanation_enc": "aes-256-gcm.v1:tT84ZSzSAijbGvDc:NtNEfxJov7wAsu7o74fMHUwYVLzV70-gOnnP4-NvDjNe_Uurdi9uwoCan5VlJB1sZw7KpVhNXT-_TBf30Y_afdL0ZDKqCqG1i0v8jhVKNcYrUDgdhp5ht3Q9YPGBe_xT_AvOcYOHZW9wYzj8iVVeEJgnX2Ef_qeD2DULe5vrv5xYhyJQaUyUZYpZuOStQnckexZLhJeQiYtbpbdXaP9I3XpPh83x-6XOTx4MkKxLzWcba2gy1pjpbre71bKgDXy6rbh1pgM21-qdAuDhqzHYAiyMKhjuIL77-pko9SAAhdGThS4aBY9_YBA-6A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.708,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-035",
+          "prompt": "What's the BIGGEST mistake new advertisers make?",
+          "options": [
+            "Sending paid traffic to a generic homepage instead of a focused landing page matching the ad's promise",
+            "Using too few keywords",
+            "Spending too little",
+            "Targeting too narrowly"
+          ],
+          "answer_commit": "hmac-sha256:2bb0f3980196f57a9e4a2523181e9081",
+          "explanation_enc": "aes-256-gcm.v1:iYGuxI7H6lFV3pqB:wa8tvlRl_6pTGfNHowZNdaz-ia-WgH3JI-m91QJwL2xUBQkbI_AZsPx_JroNKsriJx0pBAJeOzCzgdF2p7wycjBrgFc19wSysFixQZOX1xkvf2oX6K-rWqH24CkzF1Q8o_vxxuidgloMAvxJ1mQyoo4jSZgg3Vs5Nry6xsyvzjsaeOxIp-eIeTVcVddKN-0QKgRlItEAQWJUw_eMdmMEUOXiTrSzNksk0ihKizmPnxRQwXuW0DAZ56kgD_Ib_4aJR1MVcychQEmsh8VLmoWLn8Ui",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.636,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Conversion optimization",
+      "skill_id": "rfv.skill.digital-marketing.08-conversion-optimization",
+      "items": [
+        {
+          "id": "dm-036",
+          "prompt": "What is CRO?",
+          "options": [
+            "Cost Reduction Operations",
+            "Customer Relations Office",
+            "Conversion Rate Optimization — improving the percentage of visitors who take a desired action",
+            "Click Rate Optimization"
+          ],
+          "answer_commit": "hmac-sha256:ad05984f713863cd3765ba34641d9dd8",
+          "explanation_enc": "aes-256-gcm.v1:wrWWbLuuDdVlRq_P:CdG7LjrdGkI5QLpr43c7OotnvrS1w5pXv7lZIwvGkREKfcaenc88OoAqPUXvCTJSWCqOv4Di0HOBXQ_gkdA42HpPvKedUobY1jVMA-8svAmbTZuv7La9BYS05GMDBdYtT0yeag8I2HFERxhGc3YFTzycapsWPfj_-41vUAdQ8ZzAczZwMNL2wgQKWsM_NbrseSZs1Ohqh1Fqkl4ogXtyyRWdNTprEO5GEDf5KiP8i02jtEnQHTYWbHl9AP85CtcqeomfMVJf94ZvNid__KYH9CNK860FjkE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.72,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-037",
+          "prompt": "What's an A/B TEST in marketing?",
+          "options": [
+            "Two different prices",
+            "Two different ad campaigns",
+            "Two different products",
+            "Showing two variants (A and B) to different visitor segments to measure which performs better"
+          ],
+          "answer_commit": "hmac-sha256:71619c83a2e2f986eeb2a5712c54d5a1",
+          "explanation_enc": "aes-256-gcm.v1:6WaJK5AiKpnHwGTA:iDdDgKV8S3dkRe67AxeGWrRWIRSVkgy8V4r4nbL6CIN5jLjR9mN5vPWVJr9N2eTgHAeH34guK5ll0LHo_82Rf-Kb_v6epb2SHuL3oRgLRBZKa13ITJ7quqfGN3i5PtaxkGkUM2wURL6YRWiiXvryY8cJvQwLV9XarkB9MfNFY-TzjAHyRwq0PEj6B5MA4jKar0iuXByj3UjMMm8ItElV-9wI68TeMgltA_6EeWqcABglKuqZ4ZJ37yBM-uZ9PVQV3BqjYC4iiMLPGNabzsD_vbQaNWaBsrkxcTkjOL22YwRxdICqiJ3PImK7mQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.577,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-038",
+          "prompt": "What's a 'CALL TO ACTION' (CTA)?",
+          "options": [
+            "A clear, specific instruction telling visitors exactly what to do next ('Start Free Trial', not 'Click Here')",
+            "An emergency phone number",
+            "A type of ad",
+            "A meeting invitation"
+          ],
+          "answer_commit": "hmac-sha256:10fac29b7a199d74abd5a4e1806febbb",
+          "explanation_enc": "aes-256-gcm.v1:rchvV72wsRUk-eR8:a97fWjeIsNsl3_YCCKi1-hRTmHgJE5MxkYL8_hWdu3JEAadei5D2dwYOHSoFNiAEqpca3CX0aQn5XRCDhps-jfUQEaZaCOcGf2fHuFpDg64kW0CH7qkwklIxd3Ya7jkg7Pc1VOV3b4LUQVzsC427jMrtRKN3rVG6ZVpvk74rgm8PgZOSz_dc-ullyVRXL6mSRzM0mIfYi2onBNpO4zfiyWiMq-f7KlodfaEgw7dApKQ3dAjZi6Yt6J6POxyTq3Fe_HwiaZPr6iBTQ_4eQ_C0gII",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.36,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-039",
+          "prompt": "What does 'FRICTION' mean in conversion design?",
+          "options": [
+            "Heat from servers",
+            "Marketing spend",
+            "Anything that makes the desired action harder — too many form fields, slow load, confusing copy, surprise costs",
+            "Customer service issues"
+          ],
+          "answer_commit": "hmac-sha256:3d030f0afed736e16ac53548ed112f6b",
+          "explanation_enc": "aes-256-gcm.v1:Zagjb3t1K09ga_xU:mVmQrGKmas-UItK-ag3FDE8BKU9vbwBOpV9Nd7GR3sbOaDuicvmvS7WKPWh9v0tEgyr7nuaWh3oPOdd_L26a6A8TsYjr7szsGNyiiNRtgZ6ub2KCi4XlnQ6eDp0LWUXjbckxDOb2nPat_LN4cmGj0YaBqsPTH3dh3SHILCS7qeu7IJbZeQ4bReHA1XOKUlcidpTPPJrpJH2g-enhcr9xb11gwnEIqruCwpobeRcjzl2oCPffNolpLTkpBqJxIjnpKIgWhaszz0G7hL5qzs4J9IW8YXssO8VrgFPN--uI1L8UfhnX3WrpxEHt5bSIMRe5ek55TuSBPA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.826,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-040",
+          "prompt": "What's 'SOCIAL PROOF'?",
+          "options": [
+            "Friend recommendations only",
+            "Evidence that others use and value your product — testimonials, reviews, customer logos, usage numbers, case studies",
+            "Celebrity endorsements only",
+            "Likes on social media"
+          ],
+          "answer_commit": "hmac-sha256:082b35442d2d9f12daeff58cafbcc78f",
+          "explanation_enc": "aes-256-gcm.v1:kEkQOGnAYTawsDyP:CHnnhONzUQbPUwFd_xlav9NRmWLURga4VXZvPOrF6U-LA8NtilMPM4QxVQaSoabKod5r0pKQI3W-Prc9N_gdH2jrqH50WVMESQ8ntL1yF2EJ3qUFWgdjorQ4B5VykhmFC86ONkCPP4uExyUGGw3NyWqdQ6xQL4-NGppfZBbbsJjFl_l1SDlKvf0961s0yN7-SHDOnpp9tXcQbbWFL6s-m4bICqDUmAWHSKHdC7FcaZhIP4AnBEpcOEJlLsqIVRMW9pnTmhxRYo6fWODO0FEWDqsCEcox46_vHnyGq_9mDdQQRxCN-N7vso0ZyQHwJ93WWLBn9kzLQkk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.296,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Analytics and measurement",
+      "skill_id": "rfv.skill.digital-marketing.09-analytics-and-measurement",
+      "items": [
+        {
+          "id": "dm-041",
+          "prompt": "What is Google Analytics 4 (GA4)?",
+          "options": [
+            "An ad platform",
+            "A search engine",
+            "An email tool",
+            "Google's free web analytics platform — tracks visitors, behavior, conversions on your website and app"
+          ],
+          "answer_commit": "hmac-sha256:36926d2b5e6c569998e1cfa179970f0f",
+          "explanation_enc": "aes-256-gcm.v1:ZMH3VfditjEB62s0:t4chIL4hya84nMx3ZGlDD3lQcHKFlPXDtvBbpaozI6FHtBYJtNB6XCjKKH9iZTmYxVvdo5wPLxZEP1YttO53ko0MD_-2aLk1LGd_4ykFneO6JGvT3eiaP4QgKvuYrd8LE3IRsS_Dy2Y4ump7dY_XXnKa0cABs7RPqtbXS431PX4YURo8EgnmE7SBRXv2cuGm09f3-9WPqvwAJPO05F6P9YoGtuijKTpjdRhjl9tg_QiCq1pwqpPAUxAadF8e3nfsi2qnVCvfiwch16bP0gA20JFdoMxaEwFTW5ms0WDw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.733,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-042",
+          "prompt": "What's a CONVERSION (in marketing analytics)?",
+          "options": [
+            "Just a sale",
+            "An email open",
+            "A measurable desired action — signup, purchase, download, demo booking — defined by you for each campaign",
+            "Any website visit"
+          ],
+          "answer_commit": "hmac-sha256:5495fc29b6cd5195495166fa1688245f",
+          "explanation_enc": "aes-256-gcm.v1:gezzZEHv0zgaKFzw:HmPBE_NFfWjfrrPf4oAhCUOhbmRaJFZyj7FZhqiK_vjPerPGpAL8iC8WZDKGqFkozl9QW_Iga5dorKjA9Hor_nEEQGSLcFG9eiZjSKipx9kBuWpkX4qdqM4gykdn5NyS8qZgCg_7VqJZ5Olr9IMwPU3Dxt-gyqALjh8E9MYT28l9EraqbHrbkWRczn-UJOhsQx8GmMApTllHjUZZgcB6IytpHVFfXhxkfb0eF5Jy-9QieJILtDi_KBvOD_qipxvN0GRedjjeHZ2SAMh99ZNxk15xf7RkMohSVOz9SlpVd_Yrf_nmcAuKI7c",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.176,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-043",
+          "prompt": "What's an ATTRIBUTION MODEL?",
+          "options": [
+            "A type of report",
+            "A backup system",
+            "A marketing budget",
+            "A method for assigning credit for conversions across multiple touchpoints in the customer journey"
+          ],
+          "answer_commit": "hmac-sha256:bf1c8296f088ec1777a2839b343b7b1f",
+          "explanation_enc": "aes-256-gcm.v1:5Urn6CLjr561IzgH:3gH7YGyUFreU0H8g_l5mJB55VTRC7Ma-tQCilWuNBA59WKbWoll-ALV6drKxo_UcHkakt3DEMa6COFVmZk4MkBduiMUpIaOV3cO0Faj7YA6GORpb2YURsBCG2Qz3iRgMuTGoGQuw_wkvZGax0JReApj4kfvPWsafJ8kf7EXeD5dDnM4e9JIkigkPGW3dggiXyqGQsxf3IfgVjSOffg2XRZxhlCLH0xepBqe01ZKo88AHaUx9O1LEih8P1hjkT7FyzPu5tcM07X2vEMoV8jKB6YS30IW8f5d4GvtbWNEE8PUBLw3oo331wlNkcqqX80b2jlERC_wtW_wDQIy7gws-pShOf4H_Hj-Y2KO094UG9Pd_CYaRF0A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.389,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-044",
+          "prompt": "Why is 'LAST-CLICK ATTRIBUTION' often misleading?",
+          "options": [
+            "It's only for ecommerce",
+            "It gives all credit to the final touchpoint, undervaluing upper-funnel channels that started the customer journey",
+            "Last-click is illegal",
+            "It's always wrong"
+          ],
+          "answer_commit": "hmac-sha256:bffb064217dbc45b71b53fdcee581e8e",
+          "explanation_enc": "aes-256-gcm.v1:nQVnfevhMLxkRq7j:rp_mrvKr1uMfglgci6cFj6MHRsyJS8L8qM4nvHDsXzGPhcO8p99009joxM2XPPyEI32rfPX-zADt6ZKygwzPkMGabO4oU3nRWJDmYGc3v03LU68-xW_fX2njDMM-5Nj7fG9Ut2LZLIq3bIncDSAgOZCBLFLTWiUbqs-P_8FIc-JtWqfiIE9FfMGz0hG3eOfS-2E9OhE0eKY4QOztfvZqr30fEzVQFpSp0sHdVYhG4NPl7dlxRC_eBjy_MiP0vLZpcDsku1VVbWK6jWUbCJR9RN2-5FpBQijLuV3Cp-NHpLzYE6azjsD3c6EBzjlstiaT0yFGdwpY7Ow",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.913,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-045",
+          "prompt": "What is INCREMENTALITY testing?",
+          "options": [
+            "Adding more keywords",
+            "Increasing budgets monthly",
+            "Measuring whether marketing actually CAUSES additional sales, vs just taking credit for sales that would have happened anyway",
+            "Adding more campaigns gradually"
+          ],
+          "answer_commit": "hmac-sha256:3cbf3aff4a40922146f9f21df4b02a8e",
+          "explanation_enc": "aes-256-gcm.v1:cy-BeE3_4jI4ClCw:XQ9ASOIIZIRA-bejbx9eEXHHogbkUSXBZlSPUptgMWgeUfsorQCG_9DcC80TbppCNHbnFKe9_kZpIkKnUbQOd33vYrDniVmA2Px5syrJyIA05JB9xLTZTKAP622MZoG4LVxpmw-2vr42Kc5h4wSYkWuTr4vA50qsY0im5VvS8io3sO5l0hqY7eIermkS-3gl4ZsMGJFkhVNh0GW8LM1yOfOoSUXcwLu4Yg0TTNiJQJQXMA1wFORYgE2NUjoAelZIBVJYOITJ2aEJvBccvRqNcjy9IQ1_oRFotaRye88FHiYFDIhV-K9FcP-weyEy8Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.032,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Branding",
+      "skill_id": "rfv.skill.digital-marketing.10-branding",
+      "items": [
+        {
+          "id": "dm-046",
+          "prompt": "What is a BRAND?",
+          "options": [
+            "Just a logo and colors",
+            "A company name",
+            "The collective perception, associations, and emotional response people have when they encounter your business",
+            "A trademark"
+          ],
+          "answer_commit": "hmac-sha256:dbb10f555b37f90ce117190354a272e6",
+          "explanation_enc": "aes-256-gcm.v1:tR5h9yIb-o81V6av:Xh5GC8YPAPkazc9VRWcBTAoad9v1LKcqUOIrPTf_rfPZ6SdlV4b-JIcV5jArbk8K2zkqDCwdUFVE2qzlgHOa2CHUc2d3iegILWpOtDEn_tejU2spxKs0VW_YT5yBDLcmDofSdg52MyPmnCKVUEyd-dhJ2ZXk3-mpVdC5fAeXCYH5N3Y8S5KSSYQDTkLfBRTvOfMqjMvLib_Ke1vGlNS5cKfQNXY2OsrXoIcDhki35S6vBisQwnLeEFbwBVXenvc4YLhN0Au9Z--gRn8p1NKXN1NyMulywCFe1OSlYenTbjA99MvubsfsRY0gFV_OZQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.955,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-047",
+          "prompt": "What's the VALUE of strong branding?",
+          "options": [
+            "Just looking nicer",
+            "More likes on social",
+            "Higher pricing power, faster trust, lower CAC over time, premium talent attraction, defensibility",
+            "Higher legal protection"
+          ],
+          "answer_commit": "hmac-sha256:1095cf1483907ad20a58826e726d6268",
+          "explanation_enc": "aes-256-gcm.v1:PKDmtsbYvVLO4rDM:ECW5NpJ_4lLix39FolW5XjSWWjzjgyyq2OtYk-fItUX9DyacU67y_QdErXcll_EsfgEGz1VQEEtsaw4U2pQSFF60BL0cDyfMn8REs-D_w_ETa5ZSq4bN9Zun1gvMrM8coVbi-E0_SYYbyLz49v1c9CHWhVOXReblodany8rdhGIj6Jh9DBIyW3f_tQCbmfzWHB5RV6Q-G6E0rP-VxqxRRjuxwRShEA7tKygQ9Ns6WikrMRpTIJ95pJG1TPPltZQHBNx-zbPtmwrAmFRYUnByOw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.217,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-048",
+          "prompt": "What's BRAND POSITIONING?",
+          "options": [
+            "Where ads are placed",
+            "The price tier",
+            "Geographic targeting",
+            "The specific space your brand occupies in customers' minds relative to competitors — what you stand for and against"
+          ],
+          "answer_commit": "hmac-sha256:f4d9ae40e49cadb01ca409b4886c70aa",
+          "explanation_enc": "aes-256-gcm.v1:aHx_uYs3skq0Lt0R:v-QaF1DfDxuWPCVAJflyZt3FFpGWOHsoPS6uNVqGWq2VpVfrpS_PQZL-3ur_Ji0vUEkR2sZNHAyWMb3I7Ji8WzXq1ZnW-K0PzYdZqfpDosOjyf9wBx8tEj5st6N9MYQcB3GHeVh_cP1MGqDcfBtPC3u8GTsfijldROTjwR-SI0KBsO6unF9XldpkoZad07ELZnfgxcTdkUU2g8JVg7ZsjlYnZz2vNYyzgBvYQCqU0_KeSDlk8VoZufPSpnkv4zYv6B-po-oT3gOuWkVXqVPo_v7BkTCflDYyAIstiwBT1MpwmSJHpg-5yg8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-049",
+          "prompt": "What's BRAND VOICE?",
+          "options": [
+            "The consistent personality, tone, and style of how a brand communicates across all touchpoints",
+            "Audio recordings",
+            "Customer service scripts",
+            "The CEO speaking publicly"
+          ],
+          "answer_commit": "hmac-sha256:52312a9202954389ed645649cb20fad4",
+          "explanation_enc": "aes-256-gcm.v1:8HqGLZa9Mjq51b4Y:_TNkbMT7BIi6MZx2Uk2J8_7ROKbafXUqSqSUavfUcom7Y9nEaP4Sxx85MFbT2-FlHAXPNR3LYGinH5HQ9-buiaxV72OgkkRIVsdzIuchKvQ7Nmnz-ffIO5h-jLHZfh-KJSCWFJp4Nr3yqKnk2VsijOr8O1mf9AqFxH_yGFMf6OLgVY4s6sve9CEuoOeMMXVq2rwhk2gAuZuVZqH6luiqUX8w00qP8pwrmrWkoKaElqOKlzDugk1QhsFCOiGu3RuDOuSRlGqNuMkwnxpfAB2mt6glA4g-4uL1UV0tk416iG1AsVrLrVv0xQEVlBgKESK6NsNssQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.76,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-050",
+          "prompt": "Why does brand matter MORE in the AI era?",
+          "options": [
+            "AI replaces brand",
+            "When AI can mass-produce content, the differentiator is genuine human perspective, taste, and trust — exactly what brand provides",
+            "AI hates brands",
+            "Brand matters less now"
+          ],
+          "answer_commit": "hmac-sha256:64ebe3ff0360ed14e27749033da03715",
+          "explanation_enc": "aes-256-gcm.v1:ebWikSHAyvGjtUYu:d3sGPML-RzV97VrEN_i9hZciz3i6a-KxzH0zB1rwo-qIi5JSXyamOh04DH9MxnWnZLm6sM5Tc_AFszhNhFuT95h8i1aSl1x4y9cbDklJu-V6Af1d-jX79alTNE1-4acPmX7FJsrhY2XmlBztm5o1wQO5A7n8KZuZLd9soi05LOGSDqAmPu2RUJx3xsCAv2kR1lnbne0oo15t2PTZSKZp2Z2Cgn6pAFLEFIKaGFE1nJvTZI0DGS_ECy2_zSZR_oDwN4-aSzdoEbAu3AgbE0VLqA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.864,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Copywriting basics",
+      "skill_id": "rfv.skill.digital-marketing.11-copywriting-basics",
+      "items": [
+        {
+          "id": "dm-051",
+          "prompt": "What's the JOB of marketing copywriting?",
+          "options": [
+            "Use as many words as possible",
+            "Win poetry awards",
+            "Make the reader take an action (read more, click, sign up, buy) — clarity beats cleverness",
+            "Show off vocabulary"
+          ],
+          "answer_commit": "hmac-sha256:343fc5ecd55b69d2a399be2db90cbce2",
+          "explanation_enc": "aes-256-gcm.v1:vm6C4SXCG7wcJEX8:_68acI5RMJUwr3d8Oppw2Hyb0W-AkAiuCXfoLHkJRsk4kIeu_-pL1_856Xb4ja7qCLTtKdQwrKxSVqRpn2Y0hJGAOJ9iBd9vuKZhVJZSmC00wdJGKw-dXfxfKNSbjHUjiGNYJ7WEpdfzWL7vKf30qnC1e2BgxhXi066s6NMjTDPSrh4V_tpff7QMb8CDU9OGTas9qcVpkXRkcmK_yvMM-H3mDKANjOp1x7jALJQsJr5bDIChTyXQcEGFRXkuvPsvcrAdztvNg_lAa64K8KZRsvhfhuxOJApdkXnq7RTTibCfWXzbyL4eoLOEo--23zFAyqYX-Mo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.103,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-052",
+          "prompt": "What's the difference between FEATURES and BENEFITS?",
+          "options": [
+            "They're the same",
+            "Features are visual, benefits are written",
+            "Features describe what a product does; benefits describe what the customer GAINS from those features",
+            "Benefits are for B2B only"
+          ],
+          "answer_commit": "hmac-sha256:de109fac7007748217198c39f7fc0857",
+          "explanation_enc": "aes-256-gcm.v1:JPI6OKHIBUAkIu2l:rxZ-EpEYn_x5kZFxeNGowVdvvtOoQQpdVHjJhthhqwO05FhpgM3HX9vtRLcaLr_anm7JyocKRYy2mYLXugr69tI1TIQOtEw9KqRggflLnfcefqSLdx4AajhfJ4Aw6lNQnPoPZDFqKlmH-CbKb2hPbXayIt9UFKs74MYrsOg35dxI7q1TbExQi0fSq1KgELZ-8DMWkVAYFt6XFOKGs_qG0G3cKGdlYvQXwJlyDud2t6W27OrWGlDet0JLeDOuukFTWntsur5sY56HlJOy2dibhWC_fo5oHhyNsgdTYocb",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.439,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-053",
+          "prompt": "What's the AIDA framework?",
+          "options": [
+            "An advertising agency",
+            "A pricing strategy",
+            "An AI assistant",
+            "Attention → Interest → Desire → Action — a classic copywriting structure"
+          ],
+          "answer_commit": "hmac-sha256:127aad6705df7a2315d588186a573fb0",
+          "explanation_enc": "aes-256-gcm.v1:1C1JNJSHdYIOiO0O:pYWUAiMJLctmE2stQJ0c5RzL3iuhtEKlUIDj0qsxXdpKkdP6Slm8WPRdNF1pGoZ6mKaiWjH8fMJph0PTEBr0SIQR5ysPrV6ZB5wfh0DTu_y89FGWcgeC74WoaDrg0n7wV6rRCKCYcKK4ZmZ3XoFCnmB7uZjJV5ptmH3n3YEDGMQwHdqPcwWncm32hIzCL83k8J_EvXlQLP1niFqzHbUN4hGGJkk-MFbVLDj1x2vhfm2bWU5c_443sZzPyV6NDff63rCuu4AtDU6g1Px0E7Y3XaaNwknbc5XW1LVz7BH8OQk8CeA2H6q2AmJ4zGo5_f3Ecjo5oWMTWhoLhg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.429,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-054",
+          "prompt": "Why is SPECIFICITY persuasive?",
+          "options": [
+            "Specific claims feel credible; vague claims feel like marketing fluff anyone could write",
+            "Vague copy hides flaws",
+            "Specific copy uses more words",
+            "Generic copy is more flexible"
+          ],
+          "answer_commit": "hmac-sha256:fc5630b42573469a25cb51b683b8e79b",
+          "explanation_enc": "aes-256-gcm.v1:LRYLn8a52M1U9djx:PYvcyWRixXH_WdZ6h-qQfyyqsWqwaQ5wXSte7pxuBxmdCdzpg977dtOLak1mimkYT4N-Amlm5sO51qVDretG8rv4sq5nTyp930yHAXm9OnOu5Bit385G5hcXrLRM0xw6PW9TNorBMIv78RMaDZ20RdgCHChH2-DPDZDEWrPqJ5qO3esYH9OupUb_y_IPzekmApMcOiR5vC0m0qaM13bO5leGrPJZ0iCM2-BGQCegyRs_J_b6halTVcmFT9c_DGJgLOpdpjZqsC6o8W6AHa3nrHVPwXi1xA0xn1o",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.034,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-055",
+          "prompt": "What's the BIGGEST copywriting mistake?",
+          "options": [
+            "Adding social proof",
+            "Including a CTA",
+            "Writing about YOURSELF and your features instead of the READER's problems and outcomes",
+            "Using short sentences"
+          ],
+          "answer_commit": "hmac-sha256:d670c3e13a6c08f4e542d0cdaa8e0c51",
+          "explanation_enc": "aes-256-gcm.v1:yaKSjNgUMReyWJ4h:GIGapz_JlqDNgpezGeOpABu8U5D5C1EE7MUi353HNXbpw8DDV2fIQ9etldqxXHMQQnVTg7sB_vohVZAMrUQ8DGbvPqx0nNI3J8nt4f9qFUYGKFtvHPF3ZVHc8lX1H6u03V3zD0NpeVibHF5W3ZR2PRYcpbbr6pRTRrHGjZNrS8IvC8CneHB9N1bPExKRCqtz42S74A9idKbOIOM5Z2xdnSBJhCwv22f3-xGUPkTJKwyvY48w_RX4XAorolqu7kuBhLaGMGNIg5JwBQJinAJj7I5lVlDuggriT9x5U0gaNHJ22s4hB8kUqOs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.095,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Influencer and creator marketing",
+      "skill_id": "rfv.skill.digital-marketing.12-influencer-and-creator-marketing",
+      "items": [
+        {
+          "id": "dm-056",
+          "prompt": "What is INFLUENCER MARKETING?",
+          "options": [
+            "Buying followers",
+            "Partnering with creators who have engaged audiences to promote products in their authentic voice",
+            "Bots posting reviews",
+            "Hiring celebrities for TV ads"
+          ],
+          "answer_commit": "hmac-sha256:f3f873492cdcc0ae6118fd33866a3973",
+          "explanation_enc": "aes-256-gcm.v1:uzhtR1et5ilopMFH:IVZk_9lIkrjW57IM_l0a5Jw1_aPqMQQBSUUfqBbwXl_t2FtZyxfGMyIdhm5MJfltrDHl7evH-S82akk_opOgiXHUnFJdppEfKnRnD25QhoEwL_kieciqHectyvsAO4JanLlzSpG7MWC2GWbQ_YbXRKB6xCcX0oi6qQjPBVTWwe5siwAnoTjLmldVXzih4-LmJ51xjydECKKiB7cXmEVFvb67RrIZTnJ8K9Fs9ng6BjSFgouyMeMAoypMo2__F_Yv4F4k80FXsH-jNbYqqpoiRE-12jtNXT1LZ8w0SrAciSMJR3-DdTi9FThwfdWOsdGqDSL8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.31,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-057",
+          "prompt": "What's the difference between MEGA, MACRO, MID, MICRO and NANO influencers?",
+          "options": [
+            "By country",
+            "By age",
+            "Roughly by audience size: mega (1M+), macro (100K-1M), mid (50K-100K), micro (10K-50K), nano (<10K)",
+            "By topic"
+          ],
+          "answer_commit": "hmac-sha256:84e6beada21d9539d966fb70dd02916c",
+          "explanation_enc": "aes-256-gcm.v1:f-TUFMeuQKKA3gtq:boqMFjAn-eVb9ZduGike4hI5f8RoJ44ZhtMXO4VcHn_xK75zkhPmaa1Xh_ryHwJKvFuQ0LnVEn3f5LECHBORIT9fjT8YfkBYsF9iNtd88c6aHsAiEe-P4L233CeyTpT1ByXmysekuqZOGzk3_NzbICMvSCSj_uTAI-S3GU79aJhpIEFthAl9ES88IXaoQG-HUnpZxsy1v0Q8jRMcTXAjIwTy11xB1zdOEoIm_84FslKnkn-tbu_EG9L2nwEzdwzoLbyXP3oG_atsrs9qMmqpH3de3l6PZeOpv_D0qAhN0UBRmQL6fgs0CINSStcTwg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 9.9,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-058",
+          "prompt": "What makes an INFLUENCER PARTNERSHIP successful?",
+          "options": [
+            "Most posts",
+            "Lowest fee",
+            "Highest follower count",
+            "Genuine alignment between creator + product + audience — forced fit fails publicly"
+          ],
+          "answer_commit": "hmac-sha256:cd1155d5b4472f400db510fb9bf9e493",
+          "explanation_enc": "aes-256-gcm.v1:xk3p16MI5rBGJtX-:PWwEra-xnzXkDlIloL77eSurdzfglJmewDxUlaZwk9f0vz5PCT1pFBjhVWLJWf8y09aTnf7WGWRXFZXgiG1qa_NnzmOTJaGMyjsCdRwykfWoqNDPZgJTrQFp4keV4prhEUJwrQQslWeqrprI62ulkYrQusJhLAl9RffyHCdr26GjUa82LNLaa6GTmCnO9RKp2ojbZPJSG-gIraX38OgKpIzqRf68RspD3GYmPGvSh9JJU1AuyJYDd7xwXZ7uKaxG3-vmYD8bg8vmuDhsO3u12kzfS1pjr5hoSKsIfXrQIBB5a3qDCeA6XR3O",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-059",
+          "prompt": "What's the LEGAL requirement for sponsored content (in most countries)?",
+          "options": [
+            "Only on YouTube",
+            "Clear disclosure that the content is paid — #ad, 'Paid partnership', or platform-native disclosure tools",
+            "Only for celebrities",
+            "No disclosure needed"
+          ],
+          "answer_commit": "hmac-sha256:da9169e024e851a0a69ed88b5f871807",
+          "explanation_enc": "aes-256-gcm.v1:QHwzApJrwF26QXu3:LV--8VvBq2BHJdHk1qDUBYsZisipiGODgLGoOuwO347g6jA8yOVbq_TlavxA9kW7eMVKRAGbdY_zTfImKnaLIKzyU6QZd0RF9jO_Q0aw3biM9XkOdeSy-kMBJXP5KUEKsin0gCRPLGUo6jBP5Pd-6vxR04H8xN38l5w7cr7nLRn10VvVsmZjadAwxlY-VytPP0wEV2KhUCDhWJdsiJkDmAAnBAtIcinbKuX_AxRd9whvtvq5xtdutFAGroPKB_otepvIOfwjFaFUSDnbZ8n__DSRz3zh5vkDyZe3QeUr-ejVjanZm99pEyVsK5R0SQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-060",
+          "prompt": "What is the CREATOR ECONOMY?",
+          "options": [
+            "Big tech companies",
+            "Hollywood",
+            "The growing ecosystem of individual creators (YouTubers, podcasters, newsletter writers, course creators) making a living through their audience",
+            "Stock trading"
+          ],
+          "answer_commit": "hmac-sha256:bfd0201895be9aeb900f513ea42d0582",
+          "explanation_enc": "aes-256-gcm.v1:6_hLhoPxZjYyf4aG:4NsUzZ1GAOO0nJW4FjL_cvdaDWF_nhpz0sSdnixtvZFo6flQikuOU0HMDGenTe6gP1S3Q3mH2A6VL5UQyCZfEg6QfAWrDCA5XW7uzR0HEhCpZPaLxfEQoIvqvGijsqcZ13Ddk5Y3zc-UT6sbYLe4dEaaxdFawERSH95VvuRHYsAz940JcRclRD9UqZnetiMUKbKPln-g0uwLEDcN68TseLVsz1rvqsaXBQB_f9qkdgVmPO55mltnZ7yzIXjOxjNNNy2bLEG1mSHDZrC9nM7W4_uIsmpgoEUuBuI5EbGnLMMACtIR3OtPjy0ftQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Affiliate and partnerships",
+      "skill_id": "rfv.skill.digital-marketing.13-affiliate-and-partnerships",
+      "items": [
+        {
+          "id": "dm-061",
+          "prompt": "What is AFFILIATE MARKETING?",
+          "options": [
+            "A type of franchise",
+            "A model where partners earn commission on sales they refer — performance-based, low risk for the brand",
+            "A retail strategy",
+            "A type of MLM scheme"
+          ],
+          "answer_commit": "hmac-sha256:f6f442c8c81f1557d2ca575758db09f2",
+          "explanation_enc": "aes-256-gcm.v1:qz7ImKc7iMXh4WiN:weNzrPHHthlvpE2lgMbB2VOMReG77WFRH89r3ybR1VIWQlBOUf7HmhUitqcraKic8GH9t5lLOn34epxna4qkXZ2QRqJs4pHN0Krwp9hJ40Pwuo2wpf1Z3HvSm19KswPHuDlrrHdyFph_WKowLCYiu-NGg3yA4fQx7Y8CkWkbJi6QpkjISwQlEats28s4wE7aHf5mcufsx3MFORznyx1kpQo7W9kIEKkf4ngibij1Ni8Uq7haQB3fKAHNaBiNegJkSgwUkWM94xbhFTbiQJSjJeNoUwG1UkD1ckAcYX-oIPASB041QyU5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.1,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-062",
+          "prompt": "What's a SMART affiliate commission structure?",
+          "options": [
+            "High enough to motivate effort but sustainable on your margins — often 10-30% for digital products, 3-10% for physical",
+            "Same for all affiliates",
+            "Always 1%",
+            "Always 50% or higher"
+          ],
+          "answer_commit": "hmac-sha256:3b7abc61b5dca2686a74d5ae3db2be9d",
+          "explanation_enc": "aes-256-gcm.v1:8KYPdJGJeaUS-pD4:wH42LXdNGh322JvbOo2UuAEAIlB0VvkYnLiVt2SzoJvt0I-_MPL_FroJHxAfN7JVYncL_TcY0iPwkjHVORkdbY0jrh9xqV92fvjv-3dkii6jCyo7yBZFY89TKaE_ViyiJTE2XcWagKc630Pd4DlKCRLmEsS_w3YweQnb-7wks5r4KXgdHkuMwM4xvI46M90MdfBfN9ZXLK_MYQE_kESXez-hEBvMaJAuhIdEcswi1hAwy95nYAhf4y7eoWOw2dMp0abekjNF6LsPpTWY_YzT_pLYHWyzyOffsvcn9vw9gOHPhHmyWmTQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.13,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-063",
+          "prompt": "What's a 'STRATEGIC PARTNERSHIP' in marketing?",
+          "options": [
+            "Two non-competing businesses sharing audiences for mutual benefit — bundles, co-marketing, integrations",
+            "Joint legal entity",
+            "Hiring competitors",
+            "Buying another company"
+          ],
+          "answer_commit": "hmac-sha256:1cf2a5906efb9917b08f0450a986d873",
+          "explanation_enc": "aes-256-gcm.v1:0-2WohZa7PsEZKcV:aQ6nPk9hChkQ0hWtrzoYg5HlXb1zeQxJlyK4vuj8HbJe___KmuhOhJ4MWAJcbBMRwpG7jg7-7NYXI0yvMHI_fitK1dxz1PLYM9uGwH3bocHkfq1zWgtTGAIbVbEMuVJwf0tWFxyGtnK8voJPiRcbTFTFWIGT3Dk6PGhabM_FJwZSmbKNRBzCpZimSIJgvMVLFrxDpM1zyFVozha6ewQdifEK4R4uByO9eYa8KgwRabYiYeWa-1DkZ69vVtn82BeLsTwz4ZAsIZ2fzXmBjdfLzxZR71k28WgwrDoQJ3YnIfoRicOLx-NN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.682,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-064",
+          "prompt": "What's the BIG advantage of partnership-driven growth?",
+          "options": [
+            "It's instant",
+            "It's free",
+            "It's easier",
+            "Borrowed trust — your partner's audience already trusts them, accelerating the trust-building you'd otherwise have to do alone"
+          ],
+          "answer_commit": "hmac-sha256:bf3d36acbb4243e3719262912af72820",
+          "explanation_enc": "aes-256-gcm.v1:zX1vGzxs9H4NS_cC:QteJIzGQ-eeBLWb9anRjTIhKEDjp2BGd-R3ZYfzHJyohszKGCZkvhNguHGR_wAjqGS8F9dXxq8jCMmhlq8rpN_BMaA8VvDd6mWYRjH0ZSuGjca3L1dfV71DX06jNDH8SMAw85_rdezLH_6F36kOFZgOTkr6zM-Y1lFxP051cQ-PLyHoyDNoeQ_AzY6a0Z4QZBbK33V2dj8Cw_u0P8A-i3958Z2tS4E8ZT-wufVvlUqK_8iDZKGm5n32tIQky0gaCzlRmNHGuqgGswS_aw0wWHvMaAxVm3Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 10.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-065",
+          "prompt": "What's a PITFALL of affiliate-heavy strategies?",
+          "options": [
+            "Affiliates always cheat",
+            "Affiliates are too expensive",
+            "Over-reliance on partners makes you vulnerable to their decisions; build direct channels alongside",
+            "Affiliates take too much time"
+          ],
+          "answer_commit": "hmac-sha256:3ad9662fdf426d357af0c2bc8cfd8107",
+          "explanation_enc": "aes-256-gcm.v1:Suudvy_CmbROun1T:rAjp6DHiWfN11sV5rXpFIexVaJalK0YP0yTpk4n3tVOHEFidqrbzZAZwxhf2iTqMzgLYqL6FBSyXRp42VpBzEISsCh1A2VT4ooTPdfKCnlNAYFFwVPJtTLyR7uoeXoLUxrNsXPXf3tl6H9lG3prGntkGgo4KOpXXWyXlalwx05Y7ysnQK4IvaT5QiNJ9J5YAL-sGidToQ1l8VYtr440au-tQqAnR5VMb070swe0CecjR2yKdzRh3nwa4tEBlKlUZKvNmKA074AA2YPL4qPIyzNeoVf4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.379,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Marketing in Pakistan and emerging markets",
+      "skill_id": "rfv.skill.digital-marketing.14-marketing-in-pakistan-and-emerging-marke",
+      "items": [
+        {
+          "id": "dm-066",
+          "prompt": "Which channel matters EXTRA in Pakistan and many emerging markets?",
+          "options": [
+            "Pinterest",
+            "WhatsApp — used for business communication, customer service, and even payments",
+            "Reddit",
+            "Snapchat"
+          ],
+          "answer_commit": "hmac-sha256:99bc07c5bd9248f7ce079ded7eb040f8",
+          "explanation_enc": "aes-256-gcm.v1:AeYC5csLpwnKRerk:5JP-58OA6-FhFvU-CPI5cEUcxs_7e12uBcOW-eXHU_dgnKA3mU5eWEi_LUOmq-C5gyGQRk9fNZUsjPxshVhac0t6P7bqIkB3D3izdYe7TTkb43p-lN_D2hi-54efiG66nN2BSxoMAD_HNEqeeVfLkc1jQlWM4sFA2tOW-2A1zYhCwTYAl8w4hZEuuBKXn4vrLK-L31HyWubfA5m5z8fmLB-CZDC9F23aZhIYkuTq9ugSSJC5ibvCG92O9l4fauq9PorVtZr0tp4Wb2PtJqFF1Ia3Ls-3hQqUEX8mHTqEuTaDHNUSpbOfAA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 8.778,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-067",
+          "prompt": "Why does VIDEO CONTENT often work especially well in Pakistan/India?",
+          "options": [
+            "Slower internet helps",
+            "Mobile-first audiences, strong visual storytelling traditions, multilingual reach via voice/captions",
+            "Video is cheaper to make",
+            "Text doesn't work"
+          ],
+          "answer_commit": "hmac-sha256:b3a66f18d479c3a4b517200d50fa590c",
+          "explanation_enc": "aes-256-gcm.v1:jGHGvjBshtDqcT5t:guq9phDWSirmkB5r0dTLX6VaJl-xDHooLFaPD4T6CCSTEDCn-Xd838aM5MAUMo3uefqYHgM0gAtychE74Hxce-_Mzcs-AnQZViwdUTPn88gNJndcB8-CjyRkO19jMt62ue36DTGkRmXUKNaidVZ1Y7Nipfc0AV33tgnjKdzjDa34SvivlNLLPZkXt-V77eKxMeoXp5W9yCEbIdWbGTUCPuWyo6CR2KTGEOoOfUGvgobrqQpFKY-cWaS0L7QFnkGoiYqUIBzBQu-1b6KQyN6bHjE0HpqN7NyLf2Q6pkcCRBD1zGi06Tpv-lJxrTYxbRCHgw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-068",
+          "prompt": "What's a SMART approach to LOCAL MARKETING in Pakistan?",
+          "options": [
+            "Just translate English content",
+            "Ignore local context",
+            "Local language content, locally relevant examples, awareness of cultural calendar (Ramadan, Eid, cricket events)",
+            "Use only Karachi/Lahore references"
+          ],
+          "answer_commit": "hmac-sha256:2ce8ce9a1b93ab79ba5743939db48538",
+          "explanation_enc": "aes-256-gcm.v1:CQZ1CAO1qWVDkwL5:A2J1wjEVN5_-DQfhXzuW3cUpPumBoR1GlakJVeiXieGNgkEha42EPKIM0CQ_J_wbNR2DMYADaNWomwG_oPB5RkevrG0m0qUUdJQgLDWD7G7MaRmM-WeWkI4vrQMSMvQawCvseenxWJ9kzzBMwdR7LIYbCXPh0FChFMJHt-A3kFQ5Ckug64U4v6U6qNUOdUzpypMkC_-XBpaaTFs-OhQkJxjzKZ4a4w-J3ijzlbLTfMALhky_q_mT7vJd_hb9hnohxrUC8hNaEzeKuLGE7lMwNtgWKej6JYk3wM8VxwbSGB3MWGTUsQ88xn5NStYjPwU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.294,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-069",
+          "prompt": "What PAYMENT consideration matters in Pakistani digital marketing?",
+          "options": [
+            "Many users prefer bank transfer, EasyPaisa, JazzCash, or Cash-on-Delivery over international credit cards",
+            "Cash is impossible online",
+            "Only Stripe matters",
+            "Everyone uses credit cards"
+          ],
+          "answer_commit": "hmac-sha256:719203c1200b235cc3659e65507ab136",
+          "explanation_enc": "aes-256-gcm.v1:M26cu5Qep0bb3ltA:_tEVf24twAluJVDkvpnwr2nBjEtm5mjY1fFv-sIkRLCG8gQ7jtbrw3cgUyA64RZjOBPzQuXSaPe9hb_HvS9fC5tkfDU_CiN4KHmPWNmw4iVqptS8WjhzZ-rbypeVJ_VxHfm74nXvMJQaIXfnQhqM2ncNTZkyMNNoO1uSVMQaeGJlFb6ImpndDGRWyp75d_ECOSoisQR0M8Iqntlury4lwjrz2CrfvcHuOANjlwLl42ZuveCFUaN93PwzYAjtp5X9_P7_TMDPXOaY8JxBKJWN24K6WjWCpaacWoncau-mPD68",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.038,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-070",
+          "prompt": "What's a UNIQUE opportunity for Pakistani digital marketers in 2026?",
+          "options": [
+            "Serving international clients via freelance platforms and offering local-market expertise to global brands entering South Asia",
+            "Marketing is dying",
+            "There's no opportunity",
+            "Only domestic markets"
+          ],
+          "answer_commit": "hmac-sha256:7751e23afa12ba0e92f62ad1e54d3470",
+          "explanation_enc": "aes-256-gcm.v1:LeLWABBFWy0nnqZN:DRaro5_qj_3x7OOTe3TgJyTAUURaCqpqE71U0aWw4XYS3cQXJDfa84BY9iweJLaianjq3t4JYYh4kvXMHYFxefw_qDAP8r0WZQqmkZTDmbjoqkN06vql9qRb9mxLlkQj9UJkkap5DGBvTGCw1pMwVscnBWRjrLf-i6PLfD7u2z0fnyc0JVstFIC4gVigj4FOB7ZVz8i0u6xW2Z_dDDNrwNkpTzCPVTSUAFKr5DWJtPAxyoH-cMaGFCGw3P8ri8ZdIjQPPJCrzWbny5wq7SSFpt1wmzzW1fevcRQtBPpmx4U_WF4KDxEBZ-4fute0TJ4BhZTKfDzYqIc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "AI in marketing",
+      "skill_id": "rfv.skill.digital-marketing.15-ai-in-marketing",
+      "items": [
+        {
+          "id": "dm-071",
+          "prompt": "How is AI changing marketing in 2026?",
+          "options": [
+            "AI is replacing marketers entirely",
+            "AI is too expensive for marketers",
+            "AI hasn't affected marketing",
+            "AI accelerates content production, personalization, ad creative variations, and analytics — but doesn't replace strategy or judgment"
+          ],
+          "answer_commit": "hmac-sha256:bd6eaef20f5f15243caa8a774d419536",
+          "explanation_enc": "aes-256-gcm.v1:QJQ3T7sBNJDmt9G-:8YIchqtTK5b8re4LiU7cGr_qRxA89n81mQFbK_Gr4ftOgfS3HVN_4JfgnuOF9252YEPaoLp0Dz8o7Td4q_kE--tSzeJr7z0R4jKWncdXPOtCyJLgRgPKb-7wHs7ay4XJY10mTvAMJY9o2xAagcvOVDvCjlSc8jU0mX9A43VodOKCNbYYUT56oPzNwFeJsDBQebFBB__su2-70jndY2_twQ1SMBOGTxUwzQU-dvcMAlDZRg3XiY9ZcUkILMgeZSR439mvTAkrprTyyohBAdYvF9D1CYX9K_c19uWb0fZs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.882,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-072",
+          "prompt": "What's a HIGH-LEVERAGE AI use in marketing?",
+          "options": [
+            "Auto-running ad campaigns blindly",
+            "Replacing all human writers",
+            "Generating variations: ad copy, subject lines, landing page hooks — for A/B testing at scale",
+            "Creating fake reviews"
+          ],
+          "answer_commit": "hmac-sha256:704362bd625bf134734258157acb90ab",
+          "explanation_enc": "aes-256-gcm.v1:aouPjowkUK3qrStf:yWk2tVH3BDQv5rGnFoNIC9B388e5cNdMQvGZSX8xUx-VhklvBNVzlljQ21VMYh4XIw9Z_9nd0f6WhAHFZZcVBRM4jueuDQn9Skan556qvovhD9rzwDoQZgm1NFA2ghTRo-vxNlBXhnG7AbSvgCJxA5JI_4dxTBljYy4or4iA0aSibr25HJtAI7EPtqKZxkdQ6wCyDZlEMuzcHsumgoOQd2t6eZ7WzBCHoNCPlCE2Mlg2qLVJ71-jpjSCavtv4KRhYtNURF5YVw8rbne6wxFpC0aL8hcQB6SpQaGa5SU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.788,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-073",
+          "prompt": "What's a DANGER of over-relying on AI content?",
+          "options": [
+            "AI cannot write at all",
+            "AI-generated content tends toward generic — flooding the internet with similar-sounding material erodes brand differentiation",
+            "AI is too expensive",
+            "AI is too slow"
+          ],
+          "answer_commit": "hmac-sha256:2e40f1cfbf4af8f4d164e17069c9685e",
+          "explanation_enc": "aes-256-gcm.v1:RLG4wbeVWXka0egJ:GdDvaTaBfgk7q1Y8kc5aEM4DCzMx5XAXXeijPMxTnMlxubdV-5FgXwM4JMD-zsBJEJMzUuwDIq5nuS4FYa0VQklJlaNYs1PthTf1emEunb7HlHGIRW_GxNDplkWsKrh8L5gg8s8H3pNzoukdYnlu9M_XId-IPlA53ndKD7N9fn36uYKEMBo1FmBcYAIaB3lcw06iw2KQRHCw7RdcHFC_hYcYitOr6fJenNRmbO8i8uLIE29swTuZukBpQDyAWjOnaOFja_ILmNOHMpahEnVGvdJ_jBcInHflRxfu8FjTraWZ3Gvrj6N9y8MlZNp9sa4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.682,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-074",
+          "prompt": "What's the FUTURE of search and AI?",
+          "options": [
+            "Search is unchanged",
+            "AI Overviews, ChatGPT search, and Perplexity-style answer engines are reshaping how people find information — affecting traditional SEO",
+            "Google will disappear",
+            "Only voice search matters"
+          ],
+          "answer_commit": "hmac-sha256:43ace0c719b5138da516904758d2f1af",
+          "explanation_enc": "aes-256-gcm.v1:kxolM7OQCUOOw1fG:WB58yWSb3TAG87qT4jf9W2YnwBEC-TQgpm1Cse4VNuNTiDCuYSH4lrAQo4Ajw6QHZee2GxImU34Y5rKlbpVhC5Mo8MCsYaL7tfNu3jBuNvRquDWNa3Qbst_0PFr74wT1LgsTVNm4MOyw6LetlwXIFDcIJopSjTsyfYbRibKDv02e-5XodR0dJEXBYFAl5MlBezZfnIv-QxEodellHjOMwWgsi03PkIlVi5KbWeb_y6mpflk9zTtx_IyxfJhITf5H8EhGI29IoMirmrjGAQivqY_pwmr_OHWgvTyWrLc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-075",
+          "prompt": "Which marketing SKILL becomes more valuable in the AI era?",
+          "options": [
+            "Faster typing",
+            "Bigger ad budgets",
+            "Strategic thinking, brand-building, customer empathy, and creative judgment — uniquely human capabilities",
+            "Memorizing tool features"
+          ],
+          "answer_commit": "hmac-sha256:7a0bdd65b3f92f1a6765fd3bca0f5f59",
+          "explanation_enc": "aes-256-gcm.v1:HplI4bIf7oERu5xE:KpcEXlf5S8Qtql2z0r73K0raksECxdLDSSmX_M67msB1Se2skJXpieapDBgfDWXzeLaN46QNyiTNBfe_xNcV5zZ6eOdoWSopoy3OVXcPhMs2vMADIKjzbKPPJQAKQkXJUofYxfeG6h7KsthScfCGWb8eHeVcU6_kXF1rT68omwCsWS5IwpoWGsjuTE7-1Lov2SbYkmTnQx1M8X8_6ZdFum7ZVkEv7u8Dwff1Ci23zwYCe9C_mhxr-PGcuGHJlPR0S2od",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.375,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Ethics and privacy",
+      "skill_id": "rfv.skill.digital-marketing.16-ethics-and-privacy",
+      "items": [
+        {
+          "id": "dm-076",
+          "prompt": "What is GDPR and why does it matter for marketers?",
+          "options": [
+            "A marketing certification",
+            "An ad platform",
+            "EU privacy regulation requiring explicit consent for tracking and data collection — fines up to 4% of global revenue",
+            "A type of analytics tool"
+          ],
+          "answer_commit": "hmac-sha256:783c3c8178d461f4d472a31f8588f56a",
+          "explanation_enc": "aes-256-gcm.v1:uPvuphiZs3gR7giR:aJO6c6YrXkklxREwM8osvseW4YyWbihysXUJ6sZM77xBZOkf9Pobz_AE81lcI4CR5ov7ZEhRqT6ldvylq2POn26VucOTP_b9JYEYnKAzNKCYa0tGIEmSpSw6oWvncsW7WpnnmFFgOR6bt0b_vn_ua8o4T9lfM0wOB1FV9kW9p4snCDjJcpsoH9_H9T2WtTwMToo_YagN0m99iGnHZa4JHTiOJxgf23PYxITslXSAtiXy3WSIqB02LU37TkRGKyICsCDNPBLfiE1gtcnpSUAWamJ0Ll7mr-hhqcwVyklB6yc6hMJ2ws-2LRZAz_IOWFlEUfRA64T2UFgA5umqOao",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.64,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-077",
+          "prompt": "What's the END of the THIRD-PARTY COOKIE era?",
+          "options": [
+            "Cookies are deprecated everywhere",
+            "Browsers (Safari, Firefox, eventually Chrome) are phasing out cross-site tracking — forcing marketing to adapt to first-party data and contextual targeting",
+            "Cookies are getting bigger",
+            "Cookies remain unchanged"
+          ],
+          "answer_commit": "hmac-sha256:be45fcf646812b375126c6d6b5245939",
+          "explanation_enc": "aes-256-gcm.v1:U18sdvyeU3F-3tqC:l_l2mlVZguRIePz1K2E5ZjUbNdIy8aymz5zvITOHa5A8K0k-4EoHiqCOr5PM8-jV7_k3wT4bN1pDyymypKLNpVMaSdLu8L34uMOdiYkTuHbfM-zkfGk-Aei7uWSo5_iTiJTQHQ5wF32ZYDQPDIyxDCE5im1G7PgBa1Mt4ZUgLb8VD7izF8aightCTdBGSx-CANzzFuzgqxioxGhCc6fUtH_8yEd4YpUWwh1fVr6EBD5Zb0YJ_CQZgsr0JkRuNaztMcxxoRxihGCKuzWMlCVylVLnhwIDS9CrfKO6gSYyfydyr92n5V4Xfhc0mD9FaqM8OBekMhgIhhcKUm8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.697,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-078",
+          "prompt": "What's the ETHICAL line in persuasion?",
+          "options": [
+            "Persuasion is always unethical",
+            "Persuading people toward something genuinely in their interest is ethical; manipulating against their interest (dark patterns, false claims) is not",
+            "Anything legal is ethical",
+            "There is no line"
+          ],
+          "answer_commit": "hmac-sha256:fba32daab11f030cfc92a1d69ed2d59d",
+          "explanation_enc": "aes-256-gcm.v1:LaUc66OluUdj0qIo:nzPvkEPWToeWPfA4Mfoz36q4bfV6xXep2FwFwzuDGjLe_kisRDhaYmvBSwxuZ0JCSjHi_ujVrgAysqVugoX_-I2-Eq3nmNltbDBAB7GXSQFvq4sTSkk4gn29h3BucbJwNjEcAr8AErhjLYjHozM7e1-hcacKfCdkrhX9aZVfvc3pE3TpiJWjMnKtbEJ8wyjrXk5wAwV5pSJRgtCFUGMGtxKDghjyYVX_ls19MxQ7oygQvDd_J2nf3MSqZ1cVQjUPGPWQ6J2Eyyo1cx9pjY03gVaRpxVJNi1rnXWu6vWY3HbPsmxoqjsaWGRwsX-gAJXz",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-079",
+          "prompt": "What's the marketer's RESPONSIBILITY around customer data?",
+          "options": [
+            "Collect as much as possible",
+            "Sell it to brokers",
+            "Collect only what's needed, secure it carefully, use it as customers reasonably expect, delete when no longer needed",
+            "Share it freely"
+          ],
+          "answer_commit": "hmac-sha256:e37cd95636d5b73f9d390331fb453b9b",
+          "explanation_enc": "aes-256-gcm.v1:BNlBht3SmkbfZC1g:kDAph1ZZ5bQV-V4z7suJCENioWOCGsZAfEy_F54hJYSPTM1DRR8_Txi8eIkwdA-Kx39NqAbLbgMEo3lF5qvTSFeqVZlwQTkAMANxiRWuvv_JZdNAIzF1sSnLF2Ws8-1_Kak-xjIQu4QpJYJk71zdWbuNrp72Iw7kQGBoomvuB2hJXhfI8BaNFBDSCRPC_ebNfgy3lGup-q5I44Y0PGGmc8gi9ZAaRe1CazdjEQGMu9nWu4U-KdhfOAOKgz0duLECO8kXq5pCZn3cNJcpTMU3rTVbyd7ulqUCcm-F",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.296,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-080",
+          "prompt": "What's a HEALTHY long-term marketing philosophy?",
+          "options": [
+            "Build genuine value, communicate it clearly, respect your audience, and play the long game — short-term tricks erode the long term",
+            "Maximize short-term metrics regardless",
+            "Avoid measuring at all",
+            "Use any tactic that works today"
+          ],
+          "answer_commit": "hmac-sha256:de84a6945cb30e8f9d047f6bd476119d",
+          "explanation_enc": "aes-256-gcm.v1:0wCM7Rr6UU4dxCVF:ktrWFSAC1mne_dJdqqOKA7wEqi6eYnrXorig1eJ5vq15eNxFF5FJu3g1E1vReJctJL5UPGwEtBzySgijFdlf2m02-hNSyg2myXawuvkM_1vsbYG0313oOjDXEde5cSmillPd_lnQ54oz_lj9oC3eHE6SSk35z7lamyvLRRBoRVbjWyPnim7-tpL61B5tk_v6j8nN7QxyVEcqqV72S7oALI88_kFCCtlaWOlemrLSbqc1k7ElB7A9SgFIBvA2FuE5oKg0XuPwAvkeqRNxHyDqqQBGvKnGrtRXahZFZwhrsyFTFrLm8fNiXTvOSsFj9UBiFQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.421,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Strategy and planning",
+      "skill_id": "rfv.skill.digital-marketing.17-strategy-and-planning",
+      "items": [
+        {
+          "id": "dm-081",
+          "prompt": "What's a MARKETING STRATEGY (vs marketing tactics)?",
+          "options": [
+            "They are identical",
+            "Strategy is for big companies only",
+            "Tactics come first",
+            "Strategy: who you serve, what value you provide, how you're different. Tactics: specific channels and campaigns executing the strategy"
+          ],
+          "answer_commit": "hmac-sha256:8ee8e982d9badfdf6ff4c3319d2f07ec",
+          "explanation_enc": "aes-256-gcm.v1:8BmsiSDQUWrf8hI0:VEdlVh_KTjanw9X-vBeNd_EGnGpRLCDAp0gCov-Ip9s57rSk_LQrgNzZ6C9PTR7zxdBu2oBk0dP03ODld-IgiFlvmHxh4TMvbHmKDRxjsSi4TrDZGQaCOFD5gQT-TYQM3Pjo81SLsCE7787DiBrrBFNq_aH_pBmKT3kagmrYUYbwZYwBfseS6lymdPB5NUUFU57X0X_HIXKgBwrGw3JTCadG0KwTUsi4JMjevHc3CsqjyaWetVbEg_U-uUgn178BOP10zKYHithSN-vOejy8bntV03cDTsvb2-TJ1pqBYLqn8ZQvsqJ8zcwRcA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.941,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-082",
+          "prompt": "What's a MARKETING PLAN?",
+          "options": [
+            "A creative brief",
+            "A list of tactics",
+            "A document defining objectives, target audience, positioning, channels, budget, timelines, and success metrics — usually annual",
+            "A budget spreadsheet"
+          ],
+          "answer_commit": "hmac-sha256:2998f021790e26f41a39ef061d3dc99e",
+          "explanation_enc": "aes-256-gcm.v1:MIevLB_2oWICcHHB:GWWsuktC9mQFhtU19iQLsMLD0o4GxzKN5DE-bzywawie73sCOel_qSQk9ZP8tKNhqcoobrpipKwGn7U5NsdJWsuUr5LLB4tO4A2h2Y-F7DUTwcauiCk-tTecU108e9Uy5iEEuvInyBQPg6y98hWPtTnJvK1xv5qVaBUPLMhMjERk80js5n6qMJFXPexXRmoE82j1a1ag8PmlVdMf9zNqFmXSU3PqZrE0f-N5_ojnpkNYp7jIQAUWnLkZjzB_iDlBHsaRReZlRHcPVrqulKWlkCb04UaX16qAQHm09F2XrzxC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.35,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-083",
+          "prompt": "What's SMART goal setting in marketing?",
+          "options": [
+            "An ad platform feature",
+            "A type of AI tool",
+            "Specific, Measurable, Achievable, Relevant, Time-bound — turning vague wishes into trackable outcomes",
+            "Stupidly Marketing Adverts Really Tactically"
+          ],
+          "answer_commit": "hmac-sha256:a872a2870353243753ff3aa1996cc1e7",
+          "explanation_enc": "aes-256-gcm.v1:cxbpruZ_jgysy2m3:OqQjS5Xkb42da-h0E-wlNeRAP0NwtZvuu3_0rfLG0ZghyhskxmijR9Uca8h5LFRLyKa59et5hGi7tfIklzwztOEAr_8bx_cJlSjVFgoYf8YhJtttKfZBLglxNve0rkukQEKtIeRiyIISbMzIgRBM4LCOBZ6LPfwinUOeufD6Mqw83XoodwLKoE2MZcrqYl8h_r4ft-6MctkcnSokhvtAm_alJInOpTQ5PU1bCpJr-xrFBMIWXPI8OKr-TLio4gxy63kwQdjyG8Nmy2fHonwqkbLLp349Cz24ykVTH407",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.295,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-084",
+          "prompt": "How should marketing budget be ALLOCATED?",
+          "options": [
+            "Based on the stage of business, customer journey balance, channel ROI, and strategic priorities — not just on what worked last year",
+            "Whatever's left over from other budgets",
+            "All on the cheapest channel",
+            "Equally across all channels"
+          ],
+          "answer_commit": "hmac-sha256:0e62a36e28596f2e206f959b4b670503",
+          "explanation_enc": "aes-256-gcm.v1:pNIs6N7LTA8qfd28:poYmhPrz-4P5qaOmimCUNMNKDFmUrPOGVN3UpPzkub4akcCODRDxQIu2HO4xdUqkFI-kbPSppClcdyOsGL1zPvuO8xeKCQ2Ox8UK7Mc84-CecQR1PdsvBCE5Zd05ticK7YNdWBIFyl6-MzFnlhj72DGEQhJl7q6oi4_042JlhghaVnZXw3WkBeSTNyIu7qAgljyU2ETstXtPsKnWwM8iAODdAaToCdQZdzuAA4YQOT-Ix3BSuVlJPtc0_NeeGd0nFmHy6-w0mGaeG0-bDGEepLH3NbY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.359,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-085",
+          "prompt": "What's the BIGGEST predictor of marketing success?",
+          "options": [
+            "Product-market fit — great marketing of a weak product still fails, weak marketing of a great product can still succeed",
+            "Marketing budget size",
+            "Tool sophistication",
+            "Creative awards"
+          ],
+          "answer_commit": "hmac-sha256:9edbb22ba62eb5721661190a92b61621",
+          "explanation_enc": "aes-256-gcm.v1:I17HSnQbLOVPNXLF:sASHB_Xj7apDYt895rnhb_SILCWwEv5P-TrMiJFsIIbvYkaMwofp9EJK2inY7u9yzyvoA5rbf0bHMZolnnyNnB0Gq0k7qw-uvAl1DAhBOTX6MFtAAspAaYVDgNufhO4MYpIK6r5WiNh3dPnM4r4TW-djvyo_Oy1SQPtEvSPz6XP_dha_nQq6DeKDVgT5x7hMv1kuhebiPpMGm-62tBQEul_bvjUV4_PA-oxXnYPC7kgnfjVrjBAkgDobFJ4M-DlRmPTMa4dNUMceUzq2-nQcXACWBgUPhyOkEiR-cNI-DSnTy4dNYOr8Dno",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Career in marketing",
+      "skill_id": "rfv.skill.digital-marketing.18-career-in-marketing",
+      "items": [
+        {
+          "id": "dm-086",
+          "prompt": "What ROLES exist in modern marketing teams?",
+          "options": [
+            "Just one 'marketer' role",
+            "Content, SEO, paid acquisition, lifecycle/email, brand, product marketing, marketing ops, analytics — often blended in small teams",
+            "Only ad buyers",
+            "Only sales and PR"
+          ],
+          "answer_commit": "hmac-sha256:da3027b78cee08978bed6bb0669f7e73",
+          "explanation_enc": "aes-256-gcm.v1:bd0vD8njnJ3Q7UYc:e0bt7GBq5lluD5ulUMhSJxBtgjlQGtukxEjzq_tFt14cub0XgzinBJqOeIkW5QiXeAOIY59iu_YpTk6Uf3_2yhUlMXfKoDevibM0d3WSQUI8SdswBZeJa0VllkUWBprX3BW4InR0CvzP4w5z4OJw9KVhJ8SN9Bj1AeWAudNJSs9QKt4D7o4w_4Yp67fxbIvp_VZIpkmhCw3WhOqk1BZ6hv1t7_UkaInB8_Xsdz5VABIY5ZYuTBG38QG_Kx3BkUCkkRUe3c82I59KOWXVzVEJwBxcwbjWVEi9g4uhQ6RcrV8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.417,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-087",
+          "prompt": "What SKILLS make a marketer hireable in 2026?",
+          "options": [
+            "Generic marketing degrees",
+            "Memorizing tool features",
+            "Strategic thinking + at least one strong technical skill (analytics, SEO, paid, content) + strong communication + AI fluency",
+            "Being on every social platform"
+          ],
+          "answer_commit": "hmac-sha256:24b51d9e5fd5c1c6b1b5c6c044bfac76",
+          "explanation_enc": "aes-256-gcm.v1:xWjoOA9nkqiHbuBt:k4_hjMlSWGKYJaitXVsrRGQBF2oHsjm6qmVZjqRbZ1vzHMoxfFZAYjwRL1LtYN2oFChx7vynEr6IWx-r3Sz_2BhbG-eIesEjf3uMtX72RBLvo_HyPiImVmFao2IDg-FA5fk4ad_upMEbbXg6GKvMORN-pElt7LdGGqh2lEORB_wEYN_c6X2aos3SjjAAQQXJsp2xPC-_uWxKSSpO3fhCEZVOgBlU8hEJwG1Jzqf5b-HXBPNI0CdSqRdCQfPKh7qYUTy_lsi728hsBfI6beJUY-R_gtXWlDj5W9NL2A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.133,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-088",
+          "prompt": "What's a GREAT marketing PORTFOLIO project?",
+          "options": [
+            "Generic course completion certificates",
+            "Memorized marketing concepts",
+            "Long resumes",
+            "Real campaigns you ran (even for free for friends/small businesses or your own project) with documented results"
+          ],
+          "answer_commit": "hmac-sha256:4d97b009e8a839c9165327ae74cb56b1",
+          "explanation_enc": "aes-256-gcm.v1:XhEmQC8pioCTrWPI:s-0ZbXg6q1bI8HVzAVbmlaLMTRYRa0LK9WavyqDpwpz7VyLAvKftArgYhQzP_j12q8OWaksX8F4R0O4zBDH0KXpdHlWmeqoO1CuNNwAJEcqHq3PPIj8AOsnc38GlkpYR1I4NneP9GT8479KbFRQlAaR-qkx9yZOALB5OODYcNmjtxODdyvtqh3Iv5Ez-DqljpWRFDS5gzzYMIdpngfPkSUQn3fQAW3jEzivxcWWjBSXC4YxdS2O3ovo5Wn0IjdhCit9XqZhSJffnX_AV3bvPkpOgLISdV-oxrsv-SQ-m93L-Nx2LBGheE4Hccm8Aj4rx36Si1HyewA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.921,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-089",
+          "prompt": "How can freelance marketers find clients?",
+          "options": [
+            "Build in public, share work openly, contribute to communities, leverage existing networks, niche down on a specific service",
+            "Cold email randomly",
+            "Wait for clients to find you",
+            "Compete only on price"
+          ],
+          "answer_commit": "hmac-sha256:93adad918ca69155da495b3d3da41858",
+          "explanation_enc": "aes-256-gcm.v1:Od5J-vg-_qELWYFZ:5-_SP2zyriQbpxE3Ovk0V9h-4DTx3q-yAb4zshD2LmNEPTn0NkhICcUibzEK6_8y_7c2WtIA5S9nB9YAUnkZ6QmjITwfu2DGpw8z4ZYTa7x6m7n7ADbx7DxbiYS-xeHHPGFHgfc26Ux7l9YYLNsYOiJZZyPy4S6TaZbvCRKMGx6HqBF8KhYCa03lqbXR897Q3WMZkbcA6HxiVSZcOCHfDlgNLRJ_TGLS2A2GEm8xpa0--_qs2j_y0oT4gtFw7-K1KjQOudU_8CYiNkfTuEwoOstN9jCiUSV_4UQ07QOBwaH7AKZJ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.393,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-090",
+          "prompt": "What's a COMMON career mistake for marketers?",
+          "options": [
+            "Learning fundamentals deeply",
+            "Building a portfolio",
+            "Optimizing for short-term metrics over long-term skill compounding — chasing tools, hot tactics, and vanity titles",
+            "Working with mentors"
+          ],
+          "answer_commit": "hmac-sha256:cecf141539504db9633cc89e328295bd",
+          "explanation_enc": "aes-256-gcm.v1:uPZYuHWUbIIl1AZj:PztS1k8RSToIs1xUep_7YFDWxsVZuDhDHo_aUhu18NAr699HpHi_Y4mJBE9C37_K04WK_aFYofp1n7yTMZcAgv8v-tbHyfmYF4IsIVh94BwE5UuCLYdB3xM5XaeKwyZXZiMQjLqRw3c2MHsuCbO5Qrlg3BVCvvoJcr3otXBs2J50hkH8MzZq92M0gvNzvJxKb6nOuAe_aN4dlE3XF4hXaHZw_9OWMIrQBW5OtaMisTL23-rQ_NPzJ_L2Ttjo-T2dw620Mkn3YvV7qu9gWtyPZFTlTG2iisVO2x6F2H68uCoXAoryrw9lFoqfoQrBSlOim52Fq1sOR7L2lfYF5maLSw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.071,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Putting it all together",
+      "skill_id": "rfv.skill.digital-marketing.19-putting-it-all-together",
+      "items": [
+        {
+          "id": "dm-091",
+          "prompt": "What's an INTEGRATED marketing approach?",
+          "options": [
+            "Coordinating multiple channels to reinforce each other — same message, adapted for each channel's format",
+            "Using only one channel deeply",
+            "Random uncoordinated campaigns",
+            "Doing everything at once"
+          ],
+          "answer_commit": "hmac-sha256:82825c11b77b64b1ceeb292d7461a78a",
+          "explanation_enc": "aes-256-gcm.v1:zt8HT94NGlUzNoz2:HWOwAiCXyQ5XbsegLeM79t-IVMQ4NCoJROC7m6uRAb025jxe8NsqrZjM1BSl74cistiIdsU03P4KEoiXH0G83eVWLRFL0JygpGbxN1zuwlj2wnN5IJHt8YXnQaVkSLF8J99e4MzUUMrvqMSXnGDex1jbskyFe2bGykWW_s2RyJkTKBOONMUHn4xWxFkwvyGv2Tr-JWzLXovAT3c54IxYDD0cglxBU1ztb6KGCBh-FSMNvANV7f7eB9kH85jZhmIGkbVsXQVd4XKpcuF8N6y9k5HzjRgnvQmwIg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.467,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-092",
+          "prompt": "What's the BIGGEST FACTOR in marketing success?",
+          "options": [
+            "Budget size",
+            "Cleverness",
+            "Clarity: who you serve, what you offer, why it matters, and how to take action — clarity beats cleverness every time",
+            "Tool sophistication"
+          ],
+          "answer_commit": "hmac-sha256:8d59f4be74ac08083eb9038e5e1430a0",
+          "explanation_enc": "aes-256-gcm.v1:4j3nu-2OR7tZnvAu:nPxrLbViCUAHPpOmhc7oFdBBxWJOKRSat3v4v1fK60m2uOA4qUl_f42SkktM-Kma_Q27wYzVHMAgE5HIcag9jnKrDeqebjUtIDGftIyp7Xzv5QyOezF9E2C6r_bFU6dpfdP6Img0__K-HkycyOIKeo1AWF7CsQkXTBRbj63ais5FDVSxEDDBrJkaDtT2vC3qeZBTOdbvXsQ6Izmgp4zCpFoA5lQZjsqfoIW7bOHtMYQ7v-CdTcW89RmBqMt8tcP6SPvDVjX97y1-bqPKNUsdvic",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.105,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-093",
+          "prompt": "What's the RIGHT MINDSET about marketing failures?",
+          "options": [
+            "Quit if anything fails",
+            "Avoid all failures",
+            "Hide failures",
+            "Most campaigns will underperform — celebrate the learnings, kill the losers fast, double down on winners"
+          ],
+          "answer_commit": "hmac-sha256:5e7c724e3b29315183e43ee5f8d1c988",
+          "explanation_enc": "aes-256-gcm.v1:K7DNI96dmFLlzno_:rjYaM1eu7-uAAlMmEeNgNk4YELQkaj4sl50zIfIVjR8lGLk0vJZibiXs-odvyGxqPJ_lyaf-MoLxI79qkOpjwb3XvWSYe91OgHtF6u3gEzkDVBYEHtJmAuqy7dG5DD4F51f4fwE_HJUpifb14OKAG6ibqqHfIKad6wSGDoMTJvFL-c2KF1Jw83r8hzY-KZFJYbmmXTVjQM__tBsUpj9o3CVvGA-0bTCpSqqTS2ABxZtDxZhdXWNmWKys1yr3E9zGaKUrz6sKKSV4vEgizXQ6BnCr4yZJBjYVk3j26q93G4mmh-84SVcVtz-diCMwxixaTbVTM11n6ebdz0U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.727,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-094",
+          "prompt": "What's the META-SKILL for long-term marketing growth?",
+          "options": [
+            "Memorizing one playbook",
+            "Working alone",
+            "Avoiding all change",
+            "Reading customer psychology, internet culture, and platform shifts faster than competitors — and adapting strategy accordingly"
+          ],
+          "answer_commit": "hmac-sha256:ea6c733d6cf78a87423bd01f856e1c01",
+          "explanation_enc": "aes-256-gcm.v1:2CT45SjaqLNdxaGI:LeCgrXV8e14NaEAALrZedd_qXZKi4EtR_hKRbAu8Nsm33p982wTpbjrZRdK98X6yRTjxRBJ6eXVK7ULkjez5z3tpXLlOxUmSWfNBemLYaphyCZ7JfuFPB2Wu4hf1WwjLC4PcugpsLS4jo-guzwMWfua70mGgiHtOnTbKYHH0ebNWsGaPUk3NnUBBW1VJy9W3EoB8UKMLpWtIQpnHXp0vMkE27Bdk48dnAJ4ZZUmtiqu2eje3KYj9TwOXLLL_CC6FzrHRO5R67Dcjxps5OlcT2_HwOB_kHEvj340Pl1hfZ_Poz5iA69MPu_aTfq7u_500",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.478,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-095",
+          "prompt": "What's the SIMPLEST way to keep improving as a marketer?",
+          "options": [
+            "Run real campaigns, measure honestly, study why things worked or failed, and apply lessons to the next attempt",
+            "Avoid execution",
+            "Memorize frameworks",
+            "Read books only"
+          ],
+          "answer_commit": "hmac-sha256:2e0b8bc7db7d9acaf2777d0955f4fc53",
+          "explanation_enc": "aes-256-gcm.v1:yS1oV1BP27B_OVkj:Z4VQKPxfyXetH8SUOeQlyNQ19Ltd7jf37DMfq40whh5lg1QP-qbv47I67J87WgCLNh58_Itkf_IWNOCrFZFZlEjmJCCkAWC1eTcrbgOAOzIn5CUUL9sgTF1UY2BLNxe-nLzLctsy2yc1v9apMHI-eOwoe6lCqFq4k3jAkFMqxx2ZGJ2dXPrsmMsYvOmpRhNS8FEcSmfO4a4JW_UeCP_CSfNgmmL7x9PA9DZqna-E2RLjABe8N0mZINdpSjxNNcbnD8wXtVnSp03SfbNKSXEf5qzJoQ1-2uU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.789,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Sustainable growth",
+      "skill_id": "rfv.skill.digital-marketing.20-sustainable-growth",
+      "items": [
+        {
+          "id": "dm-096",
+          "prompt": "What's the difference between GROWTH HACKING and sustainable marketing?",
+          "options": [
+            "Sustainable marketing is for non-profits only",
+            "Growth hacks are short-term experiments to find leverage; sustainable marketing builds compounding assets (brand, audience, content) over time",
+            "Growth hacking is illegal",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:d82a9a8c6e809c87552ab6718d034e4f",
+          "explanation_enc": "aes-256-gcm.v1:32GsFlq0RDradwmC:MycSTLSCOavjApbE9rehj-PR1Dltcirm5UL8HetBxlhtxeaWkWJ-IiJ2As0fonRDiTWoItX14DR1XSoOeAIeHNjb0M6rV9i6cemSUV3sTly73WMgHLpFLR1BOQ8lXdItLOYi_jy54eYAKOq28xxiaq0ZxqDYgoBg9PqV6XP2uKApc_49w6rS9qVFUI7s3q_ZYED1NK3RrDnbh-bUBArBZJhhr0q_NTA7LsiVvVDsp6gEq3n8Udm-QYuPHXfiUofd5MnPeE0PYc5RYxD96CIkHAL0hjYfsQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.156,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-097",
+          "prompt": "Why is RETENTION often more important than acquisition?",
+          "options": [
+            "Retention is free",
+            "Acquisition is impossible",
+            "Existing customers cost less to keep, often spend more, and refer others — retention compounds, churn breaks the compound",
+            "All customers stay anyway"
+          ],
+          "answer_commit": "hmac-sha256:4bb12034bf62a441630c4a21be7cfdc4",
+          "explanation_enc": "aes-256-gcm.v1:_1hPSAYWu_sSrDEV:x_SFndyvPf9kHN3TLIAd95OseSN9Rj3C-JyqlMGxPluias5l_biGv1jbKhdHlYOs2sO077-DiRqZTdf4cyMmEdArb4wgmgCA3nlsPi-fXfFViOyEoMzIbEJ59l4XBinSNc5T28xWGL4jDCKV_S2Ey2gs1DAAA8g_ZDNx8hMLOIvDHjpGDmMyTSNwDjn7MAERwnnSBQsTpoU4Ygl3CngsIGpI1h4KXg0SReQfqqyd_6hRf0FZoDmH44pqivuvS1mukhGVd2E53Djz4LzzhZMVPHOPWoKfb8nCdqb2d5qI49DB",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.84,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-098",
+          "prompt": "What's WORD-OF-MOUTH marketing?",
+          "options": [
+            "Verbal contracts",
+            "Talking out loud",
+            "Phone marketing",
+            "Customers recommending you to others — the most trusted and highest-converting marketing channel of all"
+          ],
+          "answer_commit": "hmac-sha256:5b0c01ed41c3635bfcc9338c2a3fae8d",
+          "explanation_enc": "aes-256-gcm.v1:hFXJBwR9xMqS4sif:uhFKgrucuX19Rg88ATHfZxqm54p1bEjdfCrnjCVpB3oBJ8aHWdH1cvOGPdK6MkJl22p1Umv7NyhOPGsLUT8DKXjH1aHVsKLUaaHvoUGWjmAvr5ZeWeJcxCbkEUcbrM1a5x9f0IKyfSNZNxcvk-nEOpglLlldOKldKviZWCQpXvr-shTy-GSOcISI47LFoAARixOsuAt4MDdhOdqyb3UVlOxtJYm6Tszn5zU-aaJEhOaePiuYGEODcTjeg5St9L75mFyPzcI6RxUnpIO7I0cpsIyooEl9mFtsnReS2rj0-xNY4YAP8DjlXv2WWF7kFMF_1ctR_UrxjnBAOJs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.438,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-099",
+          "prompt": "What's a HEALTHY metric to track LONG-TERM marketing health?",
+          "options": [
+            "Hours worked",
+            "Number of tools used",
+            "Daily ad spend",
+            "Branded search volume (people searching for YOUR brand) — reflects brand awareness and demand strength"
+          ],
+          "answer_commit": "hmac-sha256:3d96e417417322579036148e4dc2b7f9",
+          "explanation_enc": "aes-256-gcm.v1:FFm4NDKPsHrB6-KJ:cDq1zMDM17w8lhn02v19Z2uEMsiBtlLaw5w34sicutL6z4e03ti08mVQgce7PCvKJPMcSC6oTC_0qI3x73J1Ae2YQ991SyLp7dWIY-hjB-vCdAuBozP8dXeG-qvHONUQH9pGZje4b2zzf_n_ndUNP1vyJI9-DhoB2nRDZoA6JLNJG2N3IatdI3N_mmKRn1NG3DnPdZ9XiHHLeVHytese6utX3xDPFim8K-WhyggsXDr4XDi322FqLut7qlnlD-x9l3eZvVPJFpFBtpZtecebvW-mf0uXi1tScJHRTwKwomq5vVuCpC5wwSVc4RYPcAYy3XWGBt4HCK1hbkgNV5MOIunNeQla",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.1,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "dm-100",
+          "prompt": "What's the MOST important truth about marketing?",
+          "options": [
+            "Marketing is more important than product",
+            "Marketing creates value from nothing",
+            "Marketing amplifies what already exists — great products spread, weak products don't matter how clever the marketing",
+            "Marketing is unimportant"
+          ],
+          "answer_commit": "hmac-sha256:aef63dcc297a6157cd9be0d0b063205c",
+          "explanation_enc": "aes-256-gcm.v1:qOxS5SG_Qlun7jG8:DJ-pY8r2gwRtjroJbXVIwAfGoP-utezW002owGBp7nZKRvTB3LcjM3bI3WcZIN_Rgz5_8IkywgwUytgbi3gIMEEFIIs63lPCO2W5ZpKrW7Gu8vmWAeJqASDVFHpttCl0CQJks0MvQJPbQsLgSvRBlpoujuODk9AQ3ZXzglysPJKEsH11qINEteMqCkfwsyeZrDrWYddFEh-sITis7vXcYyPlYkD3PFFy2Ki9vhnDCk8di34Yy1Qxt3G2LIQ-TXce3umSw2xYJ8lkwq43_vIjqFUQQrL4aoz2uKn3xZ6k9fEs4fo1WjAf38zg3UN7msjS2aO1CqtNXqTVXuMhpnaUQA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.9,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:40226c4097e0ab6364d84e12e12b56d98c719b54b5765c1cd3064ea93ed6f4fb"
+}

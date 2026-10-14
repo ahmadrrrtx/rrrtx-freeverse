@@ -1,0 +1,76 @@
+{
+  "_comment": "RRRTX FreeVerse assessment level policy. Single source of truth: consumed by shared/levels.ts (server + client) and by scripts/build-bank.mjs. Automated heuristic item classification - see ASSESSMENT_QUALITY.md.",
+  "foundation": {
+    "id": "foundation",
+    "label": "Foundation",
+    "short": "foundation",
+    "tagline": "Core concepts, terminology and everyday use cases.",
+    "demonstrates": [
+      "Correct use of core terminology",
+      "Recognition of standard use cases",
+      "Straightforward applied examples"
+    ],
+    "selection": {
+      "questionCount": 20,
+      "perSubPool": 1,
+      "pool": "approved_or_provisional",
+      "coverage": "all",
+      "preferredTiers": [1, 2, 3]
+    },
+    "passingScore": 80,
+    "durationSec": 1200,
+    "requiresLevel": null,
+    "retakeAfterPassHours": 720,
+    "retakeAfterFailHours": 24,
+    "order": 1
+  },
+  "intermediate": {
+    "id": "intermediate",
+    "label": "Intermediate",
+    "short": "intermediate",
+    "tagline": "Troubleshooting, real-world scenarios and unfamiliar problems.",
+    "demonstrates": [
+      "Debugging and troubleshooting reasoning",
+      "Applying knowledge to unfamiliar scenarios",
+      "Choosing an appropriate implementation"
+    ],
+    "selection": {
+      "questionCount": 20,
+      "perSubPool": 1,
+      "pool": "approved_or_provisional",
+      "coverage": "all",
+      "preferredTiers": [2, 3, 1]
+    },
+    "passingScore": 80,
+    "durationSec": 1500,
+    "requiresLevel": "foundation",
+    "retakeAfterPassHours": 720,
+    "retakeAfterFailHours": 24,
+    "order": 2
+  },
+  "advanced": {
+    "id": "advanced",
+    "label": "Advanced",
+    "short": "advanced",
+    "tagline": "Multi-step problem solving and trade-off analysis.",
+    "demonstrates": [
+      "Multi-step problem solving",
+      "Implementation trade-off analysis",
+      "Reviewing and debugging existing work",
+      "Security and reliability considerations"
+    ],
+    "selection": {
+      "questionCount": 20,
+      "perSubPool": 1,
+      "pool": "approved",
+      "coverage": "all",
+      "preferredTiers": [3, 2, 1]
+    },
+    "passingScore": 85,
+    "durationSec": 1800,
+    "requiresLevel": "intermediate",
+    "retakeAfterPassHours": 720,
+    "retakeAfterFailHours": 24,
+    "order": 3
+  }
+}

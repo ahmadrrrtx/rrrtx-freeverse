@@ -1,0 +1,3428 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "html-css",
+    "title": "HTML & CSS Fundamentals",
+    "description": "The building blocks of every website. Layouts, semantics, responsiveness.",
+    "category": "Web Dev",
+    "icon": "🎨",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What HTML and CSS do",
+      "skill_id": "rfv.skill.html-css.01-what-html-and-css-do",
+      "items": [
+        {
+          "id": "hc-001",
+          "prompt": "What is the role of HTML in a web page?",
+          "options": [
+            "It provides the structure and meaning of content (headings, paragraphs, links, images)",
+            "It controls how the page looks visually",
+            "It runs interactive behavior in the browser",
+            "It hosts the page on a server"
+          ],
+          "answer_commit": "hmac-sha256:8702572ccbb5949db85e6f9198633596",
+          "explanation_enc": "aes-256-gcm.v1:4w0DvFnTafkvgbwm:FPYAtFjxvYh1--1VWGOPV_JBAbDkCmvi89AHMCs4oGuaqjtdz53zi2TuKOFX4ZjiA5qZWcZuuJ19FSya523L8hzMH--ykeAgZJpeDYYUlOEje62yWAkYbu2dIsRfubPzjDQ_rD3I3euwvE2VaZP1RVlu",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-002",
+          "prompt": "What does CSS stand for?",
+          "options": [
+            "Content Structuring Standard",
+            "Cascading Style Sheets",
+            "Creative Styling System",
+            "Computer Style Syntax"
+          ],
+          "answer_commit": "hmac-sha256:a7d3fdcb7c53ecffdf39e2ca2ce379e8",
+          "explanation_enc": "aes-256-gcm.v1:V1OPiFahqMtJkQ1_:R4P1Tp0B8Iv2bfAE-P7wa1WzgnXSCdMN4rgEMtCqH5bJFSG-BHQ3NYUwcwEODZwCIT5c_MdhCfh9141JJFvZ4JFRwG-5Pa0nCzwfnPAiXpZbJGCkXUR4IDBSjDsozHpV78G3yFxjjwuIYQZV2wwgoaa67pjkj5aBVPgNO14nf9k61PEXfMqQsPCtU-wZ460",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.786,
+          "findings": []
+        },
+        {
+          "id": "hc-003",
+          "prompt": "Which is TRUE about HTML and CSS?",
+          "options": [
+            "They are imperative languages with step-by-step logic",
+            "They are compiled to machine code",
+            "They run on the server only",
+            "They are declarative languages — you describe what you want, the browser figures out how to render it"
+          ],
+          "answer_commit": "hmac-sha256:cf2a8c3ae8de581475cd35addb65abdf",
+          "explanation_enc": "aes-256-gcm.v1:6VC_ziP7i0VkVRzN:J_KBcB05XRPwt74RUQdz-4qeweBDyQdCjYRcE5xIv6UKGEj8J4Ku0kWtu2zkvXoKIPl4A_xGnCuFkzPickjLfQNUb2dyKZeWs7ehWF2iZWF2lzQ1JwzH-k0MQ_uXkR-uiDfBenLVkaC4MYy-OAZZuMeHJzO6mxa_5h1s3A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.906,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-004",
+          "prompt": "What does the browser do with HTML and CSS?",
+          "options": [
+            "Translates them to a different language",
+            "Compiles them to a binary executable",
+            "Parses HTML into the DOM, applies CSS to build the render tree, then paints pixels to the screen",
+            "Stores them in a database"
+          ],
+          "answer_commit": "hmac-sha256:9e0be409105d468c753e9ced78133c6f",
+          "explanation_enc": "aes-256-gcm.v1:tx3nW8pkG3YZ2F3D:zTBFxm4TOLq_xFsfIGGkyAbEfoIKv9P2sLOSaE8UxcMmHfPC1ZRPM8vZX5tqgka4X1EENR56iJ8BLo9VjObEXjdZxM9LVOyj6k-jOiiXQnNfwLFGhoHDUyDoYhcPn1yJXdZ1WKwXqBwNXW24jc8sg1KcbaelePlmcFSam_7vMITD80MGqeZdXpGoydllLtxN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.462,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-005",
+          "prompt": "Which file extension is correct for an HTML file?",
+          "options": [
+            ".hyper",
+            ".htm5",
+            ".webpage",
+            ".html"
+          ],
+          "answer_commit": "hmac-sha256:51eaab04bf4aa7416df3d96232339d53",
+          "explanation_enc": "aes-256-gcm.v1:L7iT0QdYi-fWFVVO:1ycVHvHf3kw5y4rwRztncGfC3EsRSxIAd4kMTvP6xYdiD_3139JwitWM9b8Qfn3JwjLD_eIdszebKbzRcujoNfNW4cxW27oVVH1caG4_OhgMUWpuLcKH2IuDUnZ0KeoBXeeYP-3vBxrWPERCzEDlbusBKD4UW36l0fz1",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.625,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "HTML document structure",
+      "skill_id": "rfv.skill.html-css.02-html-document-structure",
+      "items": [
+        {
+          "id": "hc-006",
+          "prompt": "What does `<!DOCTYPE html>` do at the top of a file?",
+          "options": [
+            "Defines a JavaScript variable",
+            "Imports the HTML library",
+            "Specifies the document's color",
+            "Tells the browser to render the page in modern (standards) mode using HTML5 rules"
+          ],
+          "answer_commit": "hmac-sha256:6df56e0597b4854adbd32ec3e80fffd8",
+          "explanation_enc": "aes-256-gcm.v1:1akS-pNmvxFPhZcI:F9w1vv0igcUNeq7M0Y-ZwXAdYLyWJNVQaxDAJ9cwmmtT5OPezZIIjvYSw8MfdaDUykbiVE2GewQ5WJQTjLUfHQ3is4Zy-X6RkOlcktltkQaRBGU7T31-Vq2khp0thBWfT4aQS9eFfcsLOW_vehjjL4oRVBAgO4dJSHY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.7,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-007",
+          "prompt": "Which tag wraps the visible content of an HTML page?",
+          "options": [
+            "<main>",
+            "<body>",
+            "<html>",
+            "<head>"
+          ],
+          "answer_commit": "hmac-sha256:d8274d2a6a599da5be5d3fea43d33312",
+          "explanation_enc": "aes-256-gcm.v1:MVDVsqHreaAMRzLd:6tVSJjtarw82Yb68vKsHt1nZ7YjUMZRvtfTmKwkyGaD18O8GoqR9gxnatFvcHxFyt91QUHKVJaXBnqw5xypW-x5B7hBcCwinhdDZY6VDMcuNV8wqVD0C61ecOX1dR3s5YolBNaNPizuRfrEJ7BoNjQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-008",
+          "prompt": "What goes inside the `<head>` tag?",
+          "options": [
+            "Title, meta tags, links to stylesheets, scripts, and other metadata",
+            "Footer information",
+            "Headings like <h1>",
+            "The user-visible content"
+          ],
+          "answer_commit": "hmac-sha256:0c8129bc85f0a4d7c801ababcb40c662",
+          "explanation_enc": "aes-256-gcm.v1:t8HSXENFcUQOaeo9:XCPXl1d6JzYabwROgx0zjsyTFM2oNvBbboKM5VYZ5v3mjanRavD-748_OGOVi8QpwIVkH23ZlEqxytzIhFAyDrJ1VkM84r8bAQ_cMyZaWT7AqMtMDp1RP_DUjWdPYnm4GO-KUJtmcXeKnhtOacM8F5jYQA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.792,
+          "findings": []
+        },
+        {
+          "id": "hc-009",
+          "prompt": "Which is the CORRECT way to set the page title shown in the browser tab?",
+          "options": [
+            "<page-title>My Page</page-title>",
+            "<title>My Page</title>  inside <head>",
+            "<h1>My Page</h1>",
+            "<meta name='title' content='My Page'>"
+          ],
+          "answer_commit": "hmac-sha256:c82f956b75bbb7bd69ffb902f9de7205",
+          "explanation_enc": "aes-256-gcm.v1:6_eYlYphP9JQL19W:HCqp1BilFcWmcdPgwotP5q5IJuulMMhkIuarT_BNPUkq23UlX-ueV9zq1gHqabAVH9XZjVPaVQa9t-UBw4QJHn_r8m2gQEZeMXDzLrFXtJ5pnFCvG77K9c3ErYShirTtpoYdqEo9JURFSTnaDfgawxg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": []
+        },
+        {
+          "id": "hc-010",
+          "prompt": "What does `<meta charset='utf-8'>` do?",
+          "options": [
+            "Sets the page's metadata color",
+            "Tells the browser the file uses UTF-8 character encoding (essential for non-ASCII text)",
+            "Adds a meta description for SEO",
+            "Encrypts the page"
+          ],
+          "answer_commit": "hmac-sha256:8f9e442945f4571602effdfa46e48e0f",
+          "explanation_enc": "aes-256-gcm.v1:czD78BqNnX-f3iN4:wfg0c3WZvYNSQD7ErwemzV-QPqJOa5VJlQma2hLbMUNej_vqFy2B6kCGPiE7c6THn8RB9FU4s5XResV10f39pmOhD1bfxqSvk3L-JYSbIAKp7rJEMQ9Oev2PfCQsRD7ORefE8zxCamcnnM_kiQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.806,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Semantic HTML",
+      "skill_id": "rfv.skill.html-css.03-semantic-html",
+      "items": [
+        {
+          "id": "hc-011",
+          "prompt": "What is 'semantic HTML'?",
+          "options": [
+            "Using HTML tags that describe the MEANING of content, not just its appearance",
+            "Using shorter HTML tag names",
+            "Using only one tag type",
+            "Writing HTML in lowercase"
+          ],
+          "answer_commit": "hmac-sha256:eb034a738c65c0bf81258aef3bc2846e",
+          "explanation_enc": "aes-256-gcm.v1:yqgejuEazq_qPj1P:0tvUHz4CKaVspg52MENmypCRObzK_C0Gqr0mebhlhdcw9DtSQrBez8etqQBljaQxASxVfIfATSMdcltCvfEsGUvsFywWGyQ_XowyhG-KU29bPse8DRuQKno9QRGLpPpPZGMqhigyKkQpY1oM4S6vwyY1rxPRf3lyxT-t8Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-012",
+          "prompt": "Which is a SEMANTIC HTML5 element?",
+          "options": [
+            "<div>",
+            "<article>",
+            "<center>",
+            "<span>"
+          ],
+          "answer_commit": "hmac-sha256:f50a6f4b00b682670ff29ec1369390c6",
+          "explanation_enc": "aes-256-gcm.v1:t2Hyl-J6Ob4FQlp5:bRG-spvqs0V3OxRcs9hDMWfmBg2pPPHRpisUkq0tRd-0GYhk-KMvGdEEQ9EPqJ_p1Sth_xNuf1Z97f_HmTNOt8CG9uge3nOB2jvRjpx__gQRVGd0kgSzSAlWc6_VfMtO2ixhnvD54bdR-SI7MR1pRIxjahZf0xGwUf_0cw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.125,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-013",
+          "prompt": "When should you use `<div>` vs `<section>`?",
+          "options": [
+            "Always use <div>",
+            "Always use <section>",
+            "<section> for meaningful content groupings; <div> only when you need a generic container with no semantic meaning",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:6b05251d95a548bd657fcf05d3883e41",
+          "explanation_enc": "aes-256-gcm.v1:aWf_-j2ZVR7VXerh:a0whOtBy4o2RHwetJzPbKRQQo5bHBpFiU2vTZaNPAmN5_eapn4aHQWfWZ79LT5qn_xUV8A_-NUvilJ5rwH4cVUWL5ZHSzMBiQHtA5_J78Q00pKDo7akiAOI",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.65,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-014",
+          "prompt": "Which is the CORRECT heading hierarchy on a page?",
+          "options": [
+            "Exactly one <h1>, then <h2> for major sections, <h3> for sub-sections — no skipping levels",
+            "Use only <h1> for everything",
+            "Many <h1>s scattered everywhere",
+            "Skip from <h1> to <h5> freely"
+          ],
+          "answer_commit": "hmac-sha256:57d4d8d3785def85b72d1a82cd2a21c0",
+          "explanation_enc": "aes-256-gcm.v1:3VpAbwLZI4NLR5Bv:22uBqiGxGCpS4rS1hdKlgqhHaszicQw0a9ed8SNYXjx4DFmcTSeK24ASt7xa4QXBdRd6BzJ5p6wkL4dKg-ARvHSTE-ZC1VWEInttDlu5PB9LL6zJ7sSeB0kZBkvLD2_uXVIFYI9TfYk__rf-VEgp_2RMZA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.903,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-015",
+          "prompt": "Why is semantic HTML important for accessibility?",
+          "options": [
+            "It runs faster in the browser",
+            "Screen readers use semantic tags to navigate and convey structure to users with visual impairments",
+            "It makes the file size smaller",
+            "It looks nicer in code editors"
+          ],
+          "answer_commit": "hmac-sha256:806ef06d0697c2d5b3834e90f4f204d0",
+          "explanation_enc": "aes-256-gcm.v1:h0ymDmze5rQIqkXk:3AeQJihmPVlRa7KNsquv7-_PfqgLk4bhWJ8eOuZ393VZSox1DaBToy4x5J_Mm8lYfTn_jEj90HTQFfWVEdMNY9dasdIOLDNHcLIAk0IikxSVrG3sBY9fkFTR1MsEQUAo1y3IaaEIVoYtZM3zFzMUsts5jJXRsEoTxgbuPTPHk4x5",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.267,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Links and navigation",
+      "skill_id": "rfv.skill.html-css.04-links-and-navigation",
+      "items": [
+        {
+          "id": "hc-016",
+          "prompt": "Which tag creates a hyperlink?",
+          "options": [
+            "<go to='url'>text</go>",
+            "<link href='url'>text</link>",
+            "<url='url'>text</url>",
+            "<a href='url'>text</a>"
+          ],
+          "answer_commit": "hmac-sha256:dc43473f44ddad251c89e440ea304f8d",
+          "explanation_enc": "aes-256-gcm.v1:k5TcplmGzbWaSREG:9HxripUFdYTZuNJNVSBFChF4MxR0KsdA3M6ROV0OJKTYUx7Q4oCt4wcK80MqHMj0-3pa_T-4buYLzfH6BsHYJoxZTMqI-m2niPol3t764cbRMPzznMzuj1ClxktLxqWr5V99FVk2mR89Wy_gZvTYtpp0TIVKcvU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.786,
+          "findings": []
+        },
+        {
+          "id": "hc-017",
+          "prompt": "How do you open a link in a NEW tab?",
+          "options": [
+            "Add new-tab='true'",
+            "It always opens in a new tab",
+            "Add target='_blank' to the <a> tag (and add rel='noopener' for security)",
+            "Press Ctrl while clicking"
+          ],
+          "answer_commit": "hmac-sha256:7fff5fd95d8a60331cd187a5ad1f4f69",
+          "explanation_enc": "aes-256-gcm.v1:OnYPcnI-Jn3zrSBq:Xah0XY2-rzgxhM20fneGIYe2OnDHUh3v-ovhImbAcGsAv9gGV0l9WZYns8ie9AUCSLfcfERikYVSvmNuuInAuJGwQvrNGLtuw90fkXVyvq2WuyEx0kNsl-gJQPthO4CO1rhce0ViGeQd3doA94nhf98EruM3UJ-IAWLtOisItgJAz-A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.571,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-018",
+          "prompt": "What is the difference between a RELATIVE and ABSOLUTE URL?",
+          "options": [
+            "Absolute is paid; relative is free",
+            "Absolute starts with https://; relative is interpreted relative to the current page's location",
+            "Absolute is longer; relative is shorter",
+            "There is no difference"
+          ],
+          "answer_commit": "hmac-sha256:28443e31c3234cfd07c3d9c7f42ac71e",
+          "explanation_enc": "aes-256-gcm.v1:ErSjRgHyNncn-127:TKkMWeJXdqAJ_FnPZVmGtIPHkvziXnx-8VyM0N--DX2x-xHItMuKsU_v9va3MszpK9O8muB_Sr5yDrV9f_s7e4hNwy8yFxof8_Y2h8btO8aRG_634ARYujJYoIBR8PJxVoYzsuS6YIkhWNf4GZqIJHCtebTA1Uxzw93ILVz4QkENPhqsvayN1bkvuHP2RuEuOjTW0A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.41,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-019",
+          "prompt": "Which is the CORRECT way to link to an email address?",
+          "options": [
+            "<a href='mailto:user@example.com'>Email</a>",
+            "<a email='user@example.com'>Email</a>",
+            "<a href='user@example.com'>Email</a>",
+            "<email>user@example.com</email>"
+          ],
+          "answer_commit": "hmac-sha256:3dcd5eef9a8756b52209cc642294f012",
+          "explanation_enc": "aes-256-gcm.v1:n5dqUsi8u7afmZ0A:YxvY82pywpEqN9FWDLdIqgk5zLIc8FHNLXDle8xhV8wUp-1xX5dfyt32qv1oJ-VmPsjPsjLVXYzSikFXz8brXgYgFxmxAleYOKXVNOAapSLalHXBAeJVX8-_pOPhGgTFZx2VMkBfKd18R0XPPFQ-ImMWlUOwQDB3qQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.162,
+          "findings": []
+        },
+        {
+          "id": "hc-020",
+          "prompt": "What does <a href='#contact'>Contact</a> do?",
+          "options": [
+            "Downloads a file",
+            "Opens a new tab",
+            "Scrolls to the element with id='contact' on the same page",
+            "Reloads the page"
+          ],
+          "answer_commit": "hmac-sha256:bc1560523fbb1c569ce9cb97717ad506",
+          "explanation_enc": "aes-256-gcm.v1:arpTcGeQV5_cJqC1:37TZzrjh2Oj6C2nJxPGrHMnt44xRHLF5mxQQKKdgczJJCbZi344h0iu-rq9FRCKdSFCYso1OTmdczJC_aDW_hPn0aCS5jN2WmEgdNROF5iz1oa-wtjqb7_MFnLcvAOqJDqeiKgxAFZgJpg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.563,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Images and media",
+      "skill_id": "rfv.skill.html-css.05-images-and-media",
+      "items": [
+        {
+          "id": "hc-021",
+          "prompt": "Which tag embeds an image?",
+          "options": [
+            "<image href='photo.jpg'>",
+            "<src image='photo.jpg'>",
+            "<img src='photo.jpg' alt='description'>",
+            "<picture file='photo.jpg'>"
+          ],
+          "answer_commit": "hmac-sha256:78e35c90638d1ad8cd477242e80ca677",
+          "explanation_enc": "aes-256-gcm.v1:ijtHt2hg55FsX7g8:xmTrLDoIL8b_krj3hyvGjRRvq3f1RAhXLmk1Z9egw-apfDu-bX7q0qOfavkROdVzSpfNUADrkcoBohc2rdwyDlBfVsEUm5bI87VD1UZKpdK1dOkprTRg4torNI1yCbg8PJSBcUB5vYIQPnCbEIZLaIDOHfLMVuN3fw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.5,
+          "findings": []
+        },
+        {
+          "id": "hc-022",
+          "prompt": "Why is the `alt` attribute on <img> important?",
+          "options": [
+            "It's only for SEO",
+            "It's only required by law in some countries",
+            "It speeds up the page",
+            "Screen readers read it aloud, and it's shown if the image fails to load (accessibility + fallback)"
+          ],
+          "answer_commit": "hmac-sha256:b56cec1629f0f744fa3e1317743217da",
+          "explanation_enc": "aes-256-gcm.v1:urR68oBgW-nH8bWz:coexfWmas5A0JZKbNdJX2LrBiRyqaAajTaHhPycjt_wnJFeZ0zWOGzv6UXd9Cpje2iWfde2g-idiemxuiwehwVkKX_P0XYXCsMvG1LE1j5McX4BuLSE0zyf3Eo1iehjev9DeaPvLW5treA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.279,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-023",
+          "prompt": "Which image format is BEST for photographs?",
+          "options": [
+            "PNG only",
+            "SVG only",
+            "BMP",
+            "JPEG or WebP (lossy compression, good for complex color)"
+          ],
+          "answer_commit": "hmac-sha256:1b6cd59e62a9cb32a76e42b6cc3836ed",
+          "explanation_enc": "aes-256-gcm.v1:ydZaQ7WXXXOu_vhO:JcJhHFzi2VUgmOqIlP9s7sjxeqnxTm9XA-OxjKqOQgtdneZZNt-KwFhHVHhzsRzlip5BXKsg_Jg-p8hAqeqo9Bniyg-Ae4dghxZyc599HBt12SgQSFhLqZzoxD-j_KsKOcLrG4Y24vhEkjcnXvvEvW8qfGcWSquDZAF2CiTUNr-U3Rr1mBiMs1g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-024",
+          "prompt": "How do you make an image RESPONSIVE in CSS?",
+          "options": [
+            "img { responsive: true; }",
+            "img { stretch: yes; }",
+            "img { max-width: 100%; height: auto; }",
+            "img { width: 50px; }"
+          ],
+          "answer_commit": "hmac-sha256:a6f07f46acc8ddb5c55e51c7a44ca393",
+          "explanation_enc": "aes-256-gcm.v1:NAuz4mmofsja9cMr:q7xkzM8iNj7T1dFkE50QhazRrBdMF5zDE_clmqVLrrclarPHBQRH0PT2XzuAiXvSwHS4dASxHaPfobJT0eGnq1KXl1S-Nbu5MXJOlhyThlAcQ_isE7p6nlhLFQZzhaFqDrKlbciOPVjBiDGPTlgu9LacQqzEKis",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.52,
+          "findings": []
+        },
+        {
+          "id": "hc-025",
+          "prompt": "Which HTML element embeds a video file?",
+          "options": [
+            "<src='movie.mp4'>",
+            "<video src='movie.mp4' controls></video>",
+            "<embed video='movie.mp4'>",
+            "<media type='video' src='movie.mp4'>"
+          ],
+          "answer_commit": "hmac-sha256:a7ab55bd85cfbcd6022b70d4c852344b",
+          "explanation_enc": "aes-256-gcm.v1:Z1JX8IEf3kVKZmai:mT2xeNHYhNc0ALq1wiee9B3RLT2OsShSbShm7QZqYA2TNzbxpoLymUi86xss1RuUDvfpe9cJ-8Eb7nN84bRtLGxP-ThrLUwfKMtiWoMevTt59hwievgZpIR5fQptqTQuVOA0YikC5iyOkEKBT6O33FT8no6BRL4UGxF0MxqR4plS1ZE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.111,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Forms and inputs",
+      "skill_id": "rfv.skill.html-css.06-forms-and-inputs",
+      "items": [
+        {
+          "id": "hc-026",
+          "prompt": "Which tag wraps a form?",
+          "options": [
+            "<input>",
+            "<entry>",
+            "<submit>",
+            "<form>"
+          ],
+          "answer_commit": "hmac-sha256:81bef0cc92b43712c9887966d1e4ee8f",
+          "explanation_enc": "aes-256-gcm.v1:4QXbgEaHZBDZ4oNr:33hbiaCz1wlbG0-UuNHXEzBL3k3ySWPYfAjyv4hpQywFVWJ9wJ6iTuiGmkPI8o9K6RSxGv-0D3NtcT55XsOnqzh0sZ5WKnxbPsQ_EjGqkeB--VefnxyNwZLZDJ647vmPXOZrAsCM_oOr30BeacTK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.75,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-027",
+          "prompt": "Which input type shows a date picker?",
+          "options": [
+            "<input type='datetime'>",
+            "<input type='date'>",
+            "<input type='day'>",
+            "<input type='calendar'>"
+          ],
+          "answer_commit": "hmac-sha256:0fde10ee668ea35968e6db65484a1d80",
+          "explanation_enc": "aes-256-gcm.v1:5G4oa2G2jsfB85vz:bq4oboIQaPWNsips-tSSSQ5wz_UKDyJbk6uJqgVSuQgzF4eVRcaQV9YubQyFVQhAQkjx8dGegNajqqb6Eryci0FxyglsjSCvbixyrCxzhPTV71LHWFrCJNMlR9TsiQMhrnKp3jP5CNij2FVBLwU9WfB6apfbZyl3M0x7DQ9uCg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.826,
+          "findings": []
+        },
+        {
+          "id": "hc-028",
+          "prompt": "What does the LABEL element do in forms?",
+          "options": [
+            "Adds a price label to a product",
+            "Associates a text label with an input field, improving accessibility and click target size",
+            "Creates a tooltip",
+            "Labels a file with metadata"
+          ],
+          "answer_commit": "hmac-sha256:5f5caf6e1ba97bf0a04c340e3c80eed7",
+          "explanation_enc": "aes-256-gcm.v1:jdmFUCG1ncIeHHSZ:b_GVo2Qj_hyHLfC0_iroKRGjO5VBEWseLHUrtoObgFPrh9ZlUGdiGbV4O_vfo8m81B-tJvKWEugHVDZAaNhMBmaVY6HeURR3Hgr91NzO_K82tBvEFms4OPdUbkeLJOxfAy7QCkRz-BVcGfR0iDEqXdvvu-KSEjTPj9wkaurZcYL-meYVDyzhIkrAuA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.903,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-029",
+          "prompt": "Which attribute marks an input field as REQUIRED?",
+          "options": [
+            "mandatory='true'",
+            "required",
+            "needed",
+            "must-fill"
+          ],
+          "answer_commit": "hmac-sha256:e90b089ba20fcd6bbf48ba999d4b2c3e",
+          "explanation_enc": "aes-256-gcm.v1:nYL8ohxwEIZLX39u:L7H5PKELa54uN9Tg--VmL9LJy6XycN6M1MOvcb3DujlG_71o3cfZjJ6_GKHBYOjZbpB1XtcyP1WSLRlDfg5UJYj-A2jl42X7Z7eW4MMwiVXtrwDTsCvffn04XnO4A9oPzZyOTuCp2WFkMDcQ6-fc6sCRXqFX7Ug",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.5,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-030",
+          "prompt": "What does <input type='email'> give you that <input type='text'> doesn't?",
+          "options": [
+            "An email server connection",
+            "Free email sending",
+            "Spell checking",
+            "Built-in email format validation and mobile keyboards optimized for email input"
+          ],
+          "answer_commit": "hmac-sha256:4771b2b98a24926bd8a4568a5aee8e3a",
+          "explanation_enc": "aes-256-gcm.v1:FK6mbzl8WJIqIB0S:k6ifOTk8eysMTJLqQYxtZ-wqt-Wjf3yLup7AFbV762dc0vCxiI2oSIw44G3qhvqHtSoabUn7hunE1kZ52T0hLw4NJwIb7RlF-TWea2jEJerCxXA_JWDLCFh8dqxzEpfrWHeN5_3TMLOL1CU8Igqt9Ygq4zl-A4UYQgLswWE8UuiTKm01C5DMqw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.038,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "CSS selectors",
+      "skill_id": "rfv.skill.html-css.07-css-selectors",
+      "items": [
+        {
+          "id": "hc-031",
+          "prompt": "Which CSS selector targets all <p> elements?",
+          "options": [
+            ".p",
+            "p",
+            "#p",
+            "*p"
+          ],
+          "answer_commit": "hmac-sha256:a1d4a473b1b5e6766f0b803a27fc009d",
+          "explanation_enc": "aes-256-gcm.v1:-IXXx2y5Um34EH4D:bI1e2t9j52aU4lDVmR1eBQRJmgYq-BT5wodH959RWzpXh9ZHmHt-GgdJS2iool-K8UgT6FjRQhvnabmCeMN-MPnJL6ZnvCKWbaElVMSo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.5,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-032",
+          "prompt": "Which CSS selector targets elements with class='btn'?",
+          "options": [
+            ".btn",
+            "#btn",
+            "*btn",
+            "btn"
+          ],
+          "answer_commit": "hmac-sha256:8878add406101a34ae6a75e3131df3bb",
+          "explanation_enc": "aes-256-gcm.v1:YDnc-Zv0fOdVvmy6:eOonnEL5_0VgP-Rdq_lOACgqlQmqHuFt3Y2MczEMywheMLaf-UCbuNbzu72HERbbVlgznUT7dPHA6PZWRq0ZCPTBOyYZeg7WpJz2xMeJVg1Gj44REywbm05YgPqxhyp6D31k0QB2LWgjBpIh4f9XKmVL-D23NujXBfoRzYSH37lxC6DmqVj4b-hsV0jR9gvqKE1ggru4xwe2Zws",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-033",
+          "prompt": "Which CSS selector targets the element with id='header'?",
+          "options": [
+            ".header",
+            "*header",
+            "#header",
+            "header"
+          ],
+          "answer_commit": "hmac-sha256:ec5721d5e3c463fec22143fb465e9250",
+          "explanation_enc": "aes-256-gcm.v1:Eel9uJJc_s7P8RQ6:EYiOV0hReEBAIkUKAEpKw9rvGBHoms8Rn6JOlPEXdh7egrrkjMWsIrQ2RKSb2P99nXmqpdS-UyKPoPBJGt0BxbCqxz8jf4JMd86WK-YYg5d9GmkSnCrmsC_iVojv",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            },
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-034",
+          "prompt": "What does the selector `nav > a` target?",
+          "options": [
+            "All <a> elements anywhere in the page",
+            "<a> elements that are DIRECT children of <nav>",
+            "<nav> elements that contain <a>",
+            "Only the first <a> in <nav>"
+          ],
+          "answer_commit": "hmac-sha256:0d003f7cebc51d03e9ed8cec3a885b02",
+          "explanation_enc": "aes-256-gcm.v1:q3dBaIBi3CRYcEtD:jmZDNHStJ28XjhaaRm6NM3qzhbRXZ3vfl7f--itiuIMuK0yjJzhfcBmfeoftK1KilrxdCOOVbtedC1Qn41TNO29pqDlTRr4h-0HeYY0Qfjhn-KhiQEdAr9czNNLiEBptNk3Owv8ORCw2sHhV",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.243,
+          "findings": []
+        },
+        {
+          "id": "hc-035",
+          "prompt": "What is CSS specificity?",
+          "options": [
+            "The number of CSS files",
+            "How fast CSS loads",
+            "How specific your CSS comments are",
+            "A scoring system that determines which CSS rule wins when multiple rules target the same element"
+          ],
+          "answer_commit": "hmac-sha256:9030b28fdf381ce8edec6dc6fc9ae86c",
+          "explanation_enc": "aes-256-gcm.v1:RXzWFaQxP9WYzzgz:DkKC4HSclUs886MGOGqE-Zlwwf-pavtTSxXAe9zQ_H2Q8_GlAr0feSCeW03Pte7gtbVdX10CHkI9d4gJ7QV0TdGrLGnT14TnlXHR-Ci3TUMbpef9QCxEQNzhZlhjicuVd9EVRJ28wFxijJpL6RLD5QinOxEaRVylBEdW-mLUqUz0CIdZHQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.824,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "The box model",
+      "skill_id": "rfv.skill.html-css.08-the-box-model",
+      "items": [
+        {
+          "id": "hc-036",
+          "prompt": "What are the FOUR layers of the CSS box model?",
+          "options": [
+            "Top, right, bottom, left",
+            "Width, height, depth, time",
+            "Color, font, size, weight",
+            "Content, padding, border, margin"
+          ],
+          "answer_commit": "hmac-sha256:ad3c97545e36b566a2ce0425f60583e1",
+          "explanation_enc": "aes-256-gcm.v1:jpk8xgUfFe71RnQd:QvI7PDu5wxleWoQxBPP5QitA1SJA6mDL5L8yRBTJSidvDL1Tkq_De2tV2ZJymCVLhf0-YS_3Y-jMXg9VcvlQhFohvT7cgWu7xPxqLwgfEPAzbdccUor8GR9aNdZe5IJQEsTftUHFaNvGTg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.231,
+          "findings": []
+        },
+        {
+          "id": "hc-037",
+          "prompt": "What does `box-sizing: border-box` do?",
+          "options": [
+            "Hides the box border",
+            "Makes width/height include padding and border, instead of just content",
+            "Adds a colored border to every element",
+            "Doubles the box size"
+          ],
+          "answer_commit": "hmac-sha256:f96dfb09965570be60c7349f41905216",
+          "explanation_enc": "aes-256-gcm.v1:snYmHN-ILDbBJk1S:xZ9xjUWMqzA0rbous4lhP98fHcltmaGXLAF17Yf0YhTP-WBdx1FOZz5ZBbBk92M5ps9vWhOu4N-8_2wcyR_cWBQyIiw9duPbJgUOps3mgjtD6IGzKiNG0c4ZMJanZgmG2GiDDna7RI-X9KD-WAe02votn70A4CCxEIdbceuXV6jMBsJz9EWECAanhQxrCy3EZkaBvPA0xreSjgvEoog",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.842,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-038",
+          "prompt": "What's the DIFFERENCE between margin and padding?",
+          "options": [
+            "Padding is always larger",
+            "Margin is for text, padding is for boxes",
+            "They're the same thing",
+            "Padding is INSIDE the border (around content); margin is OUTSIDE the border (between elements)"
+          ],
+          "answer_commit": "hmac-sha256:c51515bd4f73d4535d4257ae94cc7b70",
+          "explanation_enc": "aes-256-gcm.v1:s7NjiS8WvtETBTSR:jLxUrZbztOMRG54C-GKhS3cCGE6dU_S41Mn-p-TJTFpQ8A6V1f1iXw--uTuHJqwp6_RMrSLCe4fZFm4TMalctId478DXbbz3KWP5ZtJ6OZuohAx44cLRAEte237d7wmb3ug_Ys128ZhTOvPjV8QwHdMOoeLgi-_QiL33oGILoLQUJag0oViiMAA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.35,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-039",
+          "prompt": "What does `margin: 0 auto;` do on a block element?",
+          "options": [
+            "Removes all margin",
+            "Makes it full width",
+            "Adds top margin only",
+            "Centers it horizontally within its parent container"
+          ],
+          "answer_commit": "hmac-sha256:34ebbd48eaf77393b8d0e660bd7a7f10",
+          "explanation_enc": "aes-256-gcm.v1:OTB3o1V4GzU17fnn:izdNXHEKEfAzZyfQpKluQBNb7FPix9tRK-o4KJye4mV1jaoNdHoEM8XJVt1SyW8Q1DA1IJnzECzu3fo-K__FCCe8qXd_DxkUc0vCSlPSx5ILAycDb4DE6L0-4XUifisJnKex2S9P_Htr9kGHQqBmVQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.55,
+          "findings": []
+        },
+        {
+          "id": "hc-040",
+          "prompt": "What is 'margin collapse'?",
+          "options": [
+            "Margins become negative",
+            "Margins double in size",
+            "Vertical margins between adjacent block elements combine into a single margin (the larger of the two)",
+            "Margins disappear randomly"
+          ],
+          "answer_commit": "hmac-sha256:2778922d1ed99c22ecd3e6a6255e22aa",
+          "explanation_enc": "aes-256-gcm.v1:cl9nwCcdxU2mH6n3:8l53LT6ReW4TeDGUAMfWesTPL6k6NpwvyRnvGHnzgh2mloh0Um1-GjQ5-lq8h8bgEAGwPLeifhRtWGA1lhHnmzVmZnbCoS2qR8sQoXxl4RX2mZRsPnMmNrZjDfyS0qgQz0OZ3JCf9RgNx8619AjW8b_y0q8-CgzrRtDoIH-RfAwz4jH-T1R3XqO1tm43",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.885,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Colors, units, and typography",
+      "skill_id": "rfv.skill.html-css.09-colors-units-and-typography",
+      "items": [
+        {
+          "id": "hc-041",
+          "prompt": "Which is a VALID way to specify a color in CSS?",
+          "options": [
+            "Only RGB values",
+            "Only hex codes",
+            "All of: #ff0000, rgb(255,0,0), hsl(0,100%,50%), red",
+            "Only named colors"
+          ],
+          "answer_commit": "hmac-sha256:ee2c485c96c52a788bff2896b02f189f",
+          "explanation_enc": "aes-256-gcm.v1:-d6QW8ieS9O82OJs:0sH31pyWYPG58Rl64mko5dcBENZaFqy-qly-Pm4u6RK63hogLM_zPXcciPn0pxioA3xxqbPLA-ocD9zJFO4Z5sycyTdm3apNcrhsEe_XDcTa76wtgfhv9qwMJs9ajifK8S3acE48DFKOPzS3k5mDtCVdyE0MU5wmBSJl4f8EIjFnCQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": []
+        },
+        {
+          "id": "hc-042",
+          "prompt": "What's the DIFFERENCE between px, em, and rem?",
+          "options": [
+            "px = fixed pixels; em = relative to parent's font-size; rem = relative to root font-size",
+            "Only rem works in modern browsers",
+            "px is for fonts, em for sizes",
+            "They are identical"
+          ],
+          "answer_commit": "hmac-sha256:8ea9544ebcd85d8880a7ffc07b35b292",
+          "explanation_enc": "aes-256-gcm.v1:R6mZLBlWyIS_Z1Mw:iKc_soDH4L0ICNXjev9a3-8H5i0OKbNiLVD91i9m-6y8IcSd7L8l9ed9BBjwxI0KAskARAoHbQFGJVxdxGY_1YWMm50cBiytcoLghYdKXOhaDrN-zin5ySTwuLW5rCDBAgBxgVP6ZYC6OqGezXJdBlRRRFjXoTWtVaXh8yJX1h8d",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-043",
+          "prompt": "Which unit is BEST for responsive layouts?",
+          "options": [
+            "Always pixels",
+            "Always inches",
+            "Relative units like %, rem, vw, vh — they scale with viewport and user preferences",
+            "Always points"
+          ],
+          "answer_commit": "hmac-sha256:ed9423f753099cf3d7b80008c2f4fb4b",
+          "explanation_enc": "aes-256-gcm.v1:3ztvem3AJp88yIu7:oABcPhSCpu179azkYksPHaMvBbwElIWvt1lhBlILQMAo6IWcb7sWvnStsPZT1XHO3uNCZFgGKiijAYeXv5eSzde6ujp_liu2JkhIE5oXXd9Ijie1--mfXihKxNyLTaZA8WEUPmLxDOcAXDZgFA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.308,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-044",
+          "prompt": "What does `font-family: 'Inter', sans-serif;` do?",
+          "options": [
+            "Combines Inter and sans-serif into one font",
+            "Always uses Inter no matter what",
+            "Uses two fonts simultaneously",
+            "Tries to use Inter first; falls back to any sans-serif font if Inter isn't available"
+          ],
+          "answer_commit": "hmac-sha256:6bfbedf8da2334a4d72b767b15e7ffc6",
+          "explanation_enc": "aes-256-gcm.v1:XsxKIUW-YUTgtnMd:NOdfFy0hcKQmbo-j5nQvtk30PQJqYrzQqOIiS1r-ogM-xvFJmvMPrWsE7UbYZUc98CnrquQuYaxJtpLNaUvZVj7lZoIah9ZpQsJVuUNDxZnT8z9LFyJ0rI4Yqk3rtfm85SxDvG-9pgmJ7x0ScH5I15dO9kNx217NBZap-mabMgEFPuPrXPQRbUtN",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.953,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-045",
+          "prompt": "What is the difference between `font-weight: bold` and `font-weight: 700`?",
+          "options": [
+            "700 only works in modern CSS",
+            "Bold is for older browsers only",
+            "They produce different weights",
+            "Functionally identical — 700 is the numeric value for bold"
+          ],
+          "answer_commit": "hmac-sha256:9718fa8b28abf53a0a8e026238809731",
+          "explanation_enc": "aes-256-gcm.v1:CD2FRcWEIcH-5PlI:nuidlXb9MI_1PDq451VRc_KE19BdeYg-nx6Nhz3pncxbDR3t9cYG6jLUmo00uTzimTDpnpTlqe9I4zMiZS_b51tJxtKWpD5KeLrQeUHT0wKnfIpFkUfhsh2odiKXZVITQ1H72075gAnq4_8Gpjo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.871,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Display and positioning",
+      "skill_id": "rfv.skill.html-css.10-display-and-positioning",
+      "items": [
+        {
+          "id": "hc-046",
+          "prompt": "What's the difference between `display: block` and `display: inline`?",
+          "options": [
+            "Block is for buttons, inline for links",
+            "They are interchangeable",
+            "Block elements take full width and stack vertically; inline elements flow horizontally like text",
+            "Inline elements are always wider"
+          ],
+          "answer_commit": "hmac-sha256:92a3d8a63bab79e0b53e277c9d2902b4",
+          "explanation_enc": "aes-256-gcm.v1:GkD7W0q8lw0OTk7I:gF5YQZ3Vf8WK9KyBFwJ6k5N00vlVEfvQRpVUfoJPzIXN0i353clig5dVmwpeUszbVYhn1_W4sE2TGrNeZZQE7Z_yoLhk0wbvt_ptPAJfQ0l0VzEW1_CeJZWGGFqC3VU5lfPQE-QvYt533ZJ42LhmUu8Faw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.526,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-047",
+          "prompt": "What does `display: inline-block` do?",
+          "options": [
+            "Same as inline",
+            "Same as block",
+            "Elements flow inline (side by side) but accept width, height, padding, and margin like blocks",
+            "Hides the element"
+          ],
+          "answer_commit": "hmac-sha256:791955c4d11685b958ff987547b1bdc8",
+          "explanation_enc": "aes-256-gcm.v1:Bxn7klCGZ-dECLPX:GISn4hCnO9feavoMa1tYun8VR9IRaM5rZIn8QfDIK26jFoumzoexhHmoLDtV5MSC-6vRS8W2ldR58ao_P4_yz0Vtp4ZmGEwXXqUGDIIRltT8QeJlaXmNBq9XTJH8nwRbxY8ZEqRgNnXtdZBUr0UA2ItaXbLubmxDP-RNsvHdc1ZC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-048",
+          "prompt": "What does `position: absolute` do?",
+          "options": [
+            "Removes the element from normal flow and positions it relative to the nearest positioned ancestor",
+            "Locks it to the viewport",
+            "Centers it on the page",
+            "Hides it completely"
+          ],
+          "answer_commit": "hmac-sha256:a868799db3354635bc677536841f3400",
+          "explanation_enc": "aes-256-gcm.v1:l9WWY_ZQq_hRh2Cz:SU1E09NQn7hXUYGSb3KVfqP-V280MZtghTIEUL-JfQYnTF-dO05ZfjMU-yu4Thl7ODRIDDyUbHO9IqjZJ-0C8PhHGlAtSZ2N3B3Q_ucYSx_SrmLrO0suvJY-EYWB_KvaB7im2usVxkv5IEiPnHMyLQ22ncXeD9Z2gw83-QtVUyGh_tPn8UxTFZurNyHp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.042,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-049",
+          "prompt": "What does `position: sticky` do?",
+          "options": [
+            "Makes the element clickable",
+            "Adds a sticky note appearance",
+            "Glues the element with permanent adhesive",
+            "Element scrolls with the page normally until it hits a threshold, then sticks in place"
+          ],
+          "answer_commit": "hmac-sha256:c8010488a353e12bcd3ebd9dd602b776",
+          "explanation_enc": "aes-256-gcm.v1:poXx9o9seVQH-SiK:KRPfvg2dO8jc0A5CCfMJXnjl7ejga4eVnAkCDN7waEXr2EOc4NpNhYW8u1bCvu8EOMQKomfpOacf8LmUqAP7B1JYoQ_OCVUuxbEZcrAnMz3Dyg2N1-qB6EmVvzXVwnmd3IeaTRuAfGiAwvdRaa8LWgz5PQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.098,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-050",
+          "prompt": "What is the z-index?",
+          "options": [
+            "A CSS property that controls vertical stacking order of overlapping positioned elements",
+            "The page's loading speed",
+            "The depth of the website",
+            "A type of CSS variable"
+          ],
+          "answer_commit": "hmac-sha256:a990e3464b6e35063054af0f0c30d67a",
+          "explanation_enc": "aes-256-gcm.v1:G8ir261A3t69BGWx:RFHZnnIkz6x1vo0a_wRiJPXifffAgn867A3wZSycnjD1Kntr0alV-fGeWHWW2uSzPdkRb7q8eU3bfPH5gbL1MJJEm7ERCzrhCHqOyPc3fryTOgBQazXc5D27VxagoiDFQPiDJyNfLnj5IQlPHKrTUzo0-JrmcLB_jkB-N-cHdPsGmR3XXQHujSeBQTtS4ch6Gxgxqw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.625,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Flexbox",
+      "skill_id": "rfv.skill.html-css.11-flexbox",
+      "items": [
+        {
+          "id": "hc-051",
+          "prompt": "What does `display: flex` do to a container?",
+          "options": [
+            "Makes the container itself flexible in size",
+            "Centers everything inside automatically",
+            "Makes its DIRECT children flex items, arranged in a row by default with powerful alignment options",
+            "Hides the container"
+          ],
+          "answer_commit": "hmac-sha256:7e3202cf96a2e869b6b9b581d8062384",
+          "explanation_enc": "aes-256-gcm.v1:VYmYx3LO1GeOgBfA:xl7xJilfSIXDmeZJz143WImHADx1_TdL9C_tqHkRarhWf2U8i4wNi4RKhVlPI1T9cB6FBxLlhnnOxSuNSWBZtbXNKsuN8wo6rclhjLlS35P2MhhcwHF_d4tpPPCB9ol6drZ8RHWCoR_2cvBFzsENe9Ngt1U4SPNnn3tdRwM4Mw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.279,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-052",
+          "prompt": "How do you HORIZONTALLY center items in a flex container?",
+          "options": [
+            "margin: auto;",
+            "text-align: center;",
+            "align-items: center;",
+            "justify-content: center;"
+          ],
+          "answer_commit": "hmac-sha256:9e8dbe7c1c603be819d5717a3c07c153",
+          "explanation_enc": "aes-256-gcm.v1:HOePPIkfizSeWnKz:NOb_kCdbExLWUlWGX0eGYmJ3Nd9X6NRzGADjFyOe2QOItHTWgr7_M5xuTgv9WgwIpDIwCBNwQRhyAqVTKmjsVu79VeVZJ0YkFqTssk0D8bx_WuhOsq55u5CX0eWMkDusQqdU7EYUsjk61dXWJsSWHaWr0s28",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.2,
+          "findings": []
+        },
+        {
+          "id": "hc-053",
+          "prompt": "How do you VERTICALLY center items in a flex container?",
+          "options": [
+            "vertical-align: middle;",
+            "align-items: center;",
+            "margin-top: auto;",
+            "justify-content: center;"
+          ],
+          "answer_commit": "hmac-sha256:a176a0098cc3e317f48fd9cca56fc703",
+          "explanation_enc": "aes-256-gcm.v1:1YUz3mEyhoMGCVID:gLXEbwBmH9gNJcpM_YurdDxM5YrzsUnrqlVVtYQ1feoAFi7VWz7AKJZ9uXitX1Z6J-z19XUpThNAE0vwwSUXQca_ZpEXNvKTukjzPJPulILz3r36EE4B4s-QwUGmID5PHjaDZbLBMtxlhw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 0.833,
+          "findings": []
+        },
+        {
+          "id": "hc-054",
+          "prompt": "How do you center BOTH horizontally AND vertically?",
+          "options": [
+            "margin: 0 auto;",
+            "display: flex; justify-content: center; align-items: center;",
+            "text-align: center;",
+            "position: absolute"
+          ],
+          "answer_commit": "hmac-sha256:994ef156796fdd9602d5b4bdca600aea",
+          "explanation_enc": "aes-256-gcm.v1:ur4hHl_D_keaezzb:ZMwhehMuFyTgnbE0jukPUPn-dRuweB1MknrJ7-e8yr8OG2bqb1OXPrlub_NeA6OTAkKmmiCgv9NzOYx_1qK4s6WNCj5lXL61cCNkl6yRqbElGXMOUCHPYmUkPuhRDFsUjE39LaKyP6PKfQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.158,
+          "findings": []
+        },
+        {
+          "id": "hc-055",
+          "prompt": "What does `flex-wrap: wrap` do?",
+          "options": [
+            "Wraps each item in a span",
+            "Allows flex items to wrap to multiple lines when they don't fit on one line",
+            "Adds a wrapping border",
+            "Disables flexbox"
+          ],
+          "answer_commit": "hmac-sha256:b7279a3488b6cdca5be458340d6cda7f",
+          "explanation_enc": "aes-256-gcm.v1:kImNhhHfW41G53VY:lRW8_VoE-CnG4i6KU8lQzC3kkkMEX_4Rz5nima29KK6gFJnsdvkpZJ6jgBscsYS8zyzOTPe43Y4PlcuXn6YeBWrH4bFQMUliCN0_Xu_9CV07sXnB6QxRAKBRvvrumS569aQXFhLusabYXwwv39Aa71S6jwwTtngJRxtu4t5l65lXAbM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "CSS Grid",
+      "skill_id": "rfv.skill.html-css.12-css-grid",
+      "items": [
+        {
+          "id": "hc-056",
+          "prompt": "What's CSS Grid BEST suited for?",
+          "options": [
+            "Two-dimensional layouts where you control both rows AND columns precisely",
+            "Centering a single item",
+            "Replacing all flexbox use",
+            "Animating elements"
+          ],
+          "answer_commit": "hmac-sha256:597c9e10f1fa6b247e3b2b58b358fe95",
+          "explanation_enc": "aes-256-gcm.v1:STT-5PSTrZZfmqcA:S53RKqFWjX6GyKVIuwZE94_Ic68zH0pClKsa81MRoOdPyd7VwQOwk31fLkpHkqy4lKpSCincjqJQ_xaL4tMIzHuwVRjUMgTKJuVOWhLXln7XKNwrXNdOyRyMEqJLgiQrUzepRQMf7yulcEs4nf-rp9jlqg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.92,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-057",
+          "prompt": "How do you create a 3-column grid?",
+          "options": [
+            "display: grid; columns: 3;",
+            "display: flex; columns: 3;",
+            "grid-cols: 3;",
+            "display: grid; grid-template-columns: repeat(3, 1fr);"
+          ],
+          "answer_commit": "hmac-sha256:72ab31c55ebafa16fd429cb79d43d859",
+          "explanation_enc": "aes-256-gcm.v1:59qzx_FgLhJ5DNSx:1uh7e7jTqL1pQoTxZRwPKyyurotKiMjMsUzg5oyKMwRdro65YTGpvm9Y5UdNho7QbjMlXHklHRSMzKT7orojX1KWHSfzHxYVgLiQxQ7ajihKfJEOMfOzVXuo4-RlkXVIl7cESwc_TfEJm85qSFOHr0NdN53wR2nA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.038,
+          "findings": []
+        },
+        {
+          "id": "hc-058",
+          "prompt": "What does the `gap` property do in Grid (and Flexbox)?",
+          "options": [
+            "Creates a gap in the layout",
+            "Forces items to be different sizes",
+            "Removes all spacing",
+            "Adds consistent spacing between grid/flex items without affecting outer edges"
+          ],
+          "answer_commit": "hmac-sha256:5543dbd0ec484100e8540745315afcfc",
+          "explanation_enc": "aes-256-gcm.v1:moTwfINhOUsJsWWP:9t_4jjEvg0Q_X_8h81iN15WP5BG0BmBe5nRFOCoBB4jdQZWcoZKeRYI889zJ2sMFPMaPAmJgvtAgNyLbgscpgtiVJ2Ei377idtVUflW668n_FxquYBoyjNskP5ApHYhq-8N2tgqySMnLUXc2VHTn",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.265,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-059",
+          "prompt": "What is a `minmax(200px, 1fr)` value in Grid?",
+          "options": [
+            "Column is at least 200px wide, but grows up to 1fr (filling available space)",
+            "Always 200px wide",
+            "Hides the column",
+            "Always 1fr wide"
+          ],
+          "answer_commit": "hmac-sha256:27ff26dc93546f7d9b90a04d70396f81",
+          "explanation_enc": "aes-256-gcm.v1:zua_LleOX-iuhyoI:n5Y8gsb9TEJ8IOm2wtftG5cHGNpZo-wqaqWFCMyLDArojZk7PJWrISDOh4JyK7kartRTuFMj3e1_bQD4-3JouAnFn2Jjt0vnpiamwVIrAe_-Kvj8QAFKhcwIOg2X-DHzUAOeY1x4-44S3DPkM87xp_1RsLOY3w8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.471,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-060",
+          "prompt": "What does `repeat(auto-fit, minmax(250px, 1fr))` do?",
+          "options": [
+            "Centers a single column",
+            "Creates exactly one column",
+            "Creates as many 250px-min columns as fit the container, expanding them to fill space — fully responsive without media queries",
+            "Creates 250 columns"
+          ],
+          "answer_commit": "hmac-sha256:8bd442cdbfafd33f8a838ea3d3d9ee9b",
+          "explanation_enc": "aes-256-gcm.v1:1yYciV5pVpKOGOqc:LX-ri2deMlXI3N33jtYYP7DDU8sG9GyUTUm64_6kfnUiib-UeeWyPz71sk6C7YQ4jAa4McfHgc6891e-pSufpFg12CpGzT04Nq1FVim9sus_jnCsMY1s2HUpVQSU8UzDEoh1jT88anVRl6pPGzW9lsJnve_Fxa-NkqFW6oagOHzAquVnhkVZez0SnvQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.808,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Responsive design",
+      "skill_id": "rfv.skill.html-css.13-responsive-design",
+      "items": [
+        {
+          "id": "hc-061",
+          "prompt": "What is 'responsive design'?",
+          "options": [
+            "A site that loads fast",
+            "A site that responds to clicks",
+            "A site with animations",
+            "A design approach where the layout adapts to different screen sizes from mobile to desktop"
+          ],
+          "answer_commit": "hmac-sha256:2bfa8df9d237aa855193bf94e5a81eac",
+          "explanation_enc": "aes-256-gcm.v1:ymcvjsIOj6g9Qu8T:rDBLNU8Xxz-KYVjrDnwbzpHyWworbtLbHX1tTQQZHyb8O5y1d0tUlYY2m__167sMczGwu6iAop9C6HsmgRnwetdu_tavzJFgzhbu4Omx1Q9OL1eo1I2NzeVMZJxPIYByliza8uyJTjpe4fPaib0VsZ-abiy8LdS3iOVh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-062",
+          "prompt": "What is a `@media` query?",
+          "options": [
+            "An HTML media tag",
+            "A CSS rule that applies styles only when the screen matches conditions (e.g., min-width: 768px)",
+            "A type of file upload",
+            "A way to play music in CSS"
+          ],
+          "answer_commit": "hmac-sha256:4379109e004e68c911c6590bee7ae821",
+          "explanation_enc": "aes-256-gcm.v1:qTRDHLgLK956gJOX:F1FCf5eOoFSR3pmb7qHGgIKnnTgHQICZH3W-3_65OsoG-i3gGEjiiCDR9ocu-_1UN7GvKlDUs7W41GvaXGbPYkBqEOVwLbNB0LENBKkRPJY87Ejo-3XxKHpiSJc2_1xgEh7-rmrfB6iqLOqKIqC9zg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.654,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-063",
+          "prompt": "What's the 'mobile-first' approach?",
+          "options": [
+            "Only design for phones",
+            "Test mobile last",
+            "Build mobile and desktop separately",
+            "Write base styles for mobile, then progressively enhance for larger screens via min-width media queries"
+          ],
+          "answer_commit": "hmac-sha256:403d4c09b83f2d84ee44b6634a0feadc",
+          "explanation_enc": "aes-256-gcm.v1:m3aefS_3auHNpzA3:jxbmZfTefBmRvngUXf4CJ3DRtstVxAqyaxYbDiJ-NtmVzV-IURRUCU9f3W86vP3VKcL4CS9GErdTlYMdBKviP12R8JY5yDBEB6jk_QSKqgIOTJeuNw-7Nq_rbyDNzCK8aP6i9U88X5Ooaw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.943,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-064",
+          "prompt": "Why include `<meta name='viewport' content='width=device-width, initial-scale=1'>`?",
+          "options": [
+            "Tells mobile browsers to use the device width instead of an arbitrary virtual width that breaks responsive design",
+            "Hides the URL bar",
+            "Enables PWA mode",
+            "Sets the viewport color"
+          ],
+          "answer_commit": "hmac-sha256:2620cb15e438f2304c4320c9e82055f6",
+          "explanation_enc": "aes-256-gcm.v1:oHLo_gRXNpZdqYAu:10d3bhUJvqDzH9BlTw0vJxIdzm-H1E0sj4NaKe3QGIIDQJYWNelLo8vhCjEf5qUvTbo7lmxraDx_8BNNBx2ul3Eb_6JL6IONTEMO6ncKX_80Kd2et-7E5iigWCcGy7pYqAtUiHR5QI7VNv889GVIIqQViKJPKDWxlgJaXAB7JkGjITphG8SAYFcDdw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.913,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-065",
+          "prompt": "What's a COMMON responsive breakpoint range?",
+          "options": [
+            "~640px (sm), ~768px (md), ~1024px (lg), ~1280px (xl) — used by Tailwind and many others",
+            "Exactly 800px is the only breakpoint",
+            "100px and 500px only",
+            "Always 1920px"
+          ],
+          "answer_commit": "hmac-sha256:efbab4d699559940db0d9d8f4879ff79",
+          "explanation_enc": "aes-256-gcm.v1:_BUm9eyHkfPq380X:BET_FK5P8OH9ohGkZs0uS8LSS9MobEJZ9hYjzFH64iQ4lHH-QgpskaVjD5wOXYoMM0L5MucMIC3TurdfHYWTQklE3fsdsnx_37JtPJ06l1m0_DXjVGR6bS1uck5HeZYyBet6qFSHdl_arxhDxy5RyglQ99CJ6SaAyUa0Gmp0JcapA6Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.417,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "CSS variables and theming",
+      "skill_id": "rfv.skill.html-css.14-css-variables-and-theming",
+      "items": [
+        {
+          "id": "hc-066",
+          "prompt": "What is a CSS variable (custom property)?",
+          "options": [
+            "A reusable value defined with --name and accessed with var(--name)",
+            "A JavaScript variable",
+            "A SASS feature only",
+            "A type of selector"
+          ],
+          "answer_commit": "hmac-sha256:ef9c5c39eac3ed58ceb787381e771116",
+          "explanation_enc": "aes-256-gcm.v1:Fr7Xt9wcCl1mTC1Y:4abXZxXEwcAC3LTaIwI0YiACN4ZRU-yXjaTa1HxDFYuHW3rcZPQT7c28H11EK3PzIOaIMCvAF7GQKvSx9RMoLdWgLT-oH8o3JnmwagtSAOatdcLoRutbGMyNHT6QvpivCIrDekwZfpfa6JyQ_ht0Iw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.143,
+          "findings": []
+        },
+        {
+          "id": "hc-067",
+          "prompt": "How do you DEFINE a CSS variable globally?",
+          "options": [
+            "@var primary #3b82f6;",
+            ":root { --primary: #3b82f6; }",
+            "var primary = #3b82f6;",
+            "$primary: #3b82f6;"
+          ],
+          "answer_commit": "hmac-sha256:05db06f403b056c171bdbafe573c009d",
+          "explanation_enc": "aes-256-gcm.v1:bwObP-jEcKbck1Ug:kKXOfYZHmVK_7hp26Uc650ni2Sk_RowQZVPayUSExyBKRJzFW9Vo13IKTwB2xZzICmgn-OIcltdbNKj1DNrNW5sJBvQ_mOx21_JzdbTNoRlFRxVAQqwKfC9Mklv07CgwaGNU2JbcYGfT9ySeEkrRR7Pe1fghM794dAs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.318,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "hc-068",
+          "prompt": "How do you USE a CSS variable?",
+          "options": [
+            "color: $primary;",
+            "color: get(primary);",
+            "color: --primary;",
+            "color: var(--primary);"
+          ],
+          "answer_commit": "hmac-sha256:3a825811c956f3947db9d7049e2ad990",
+          "explanation_enc": "aes-256-gcm.v1:DLHZ_MpVJeAzZIjv:QuliApec-m0Cir-fTuRh5iMdwxN3JQfDBqRdWdWSUT4ub8uGz4qVS2dpfsqbZ_fguf_aUNdvX0ayeAotiBfAZtq9WRt7GsgFu4C_BrIR0Ue8PtzVmC6vD-OKsFau3Dqyag",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "rejected",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.1,
+          "findings": [
+            {
+              "code": "duplicate_options",
+              "severity": "high"
+            }
+          ]
+        },
+        {
+          "id": "hc-069",
+          "prompt": "What's a STRONG use case for CSS variables?",
+          "options": [
+            "Animations only",
+            "Theming — switch themes by changing a few variables on a parent, the whole UI updates",
+            "Layout only",
+            "Replacing all CSS"
+          ],
+          "answer_commit": "hmac-sha256:73632112b509ee1ccab2633b37ddfc6e",
+          "explanation_enc": "aes-256-gcm.v1:pArtjC4vXugNh8Gz:E-uIfyofRwItFaEOEGiLcK3PrgsXrVePgueb26mxyCYd4RdO18KHiFQ82yLI5VUlqjYjuP3JZ264ZfgRbe1dq5Z82nUxm5h2VFwPECGyXZDfpjc6sKboJsjIKuiqunZE5cDuB5nmDYQxXm7n91oT5QXxEYzE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-070",
+          "prompt": "Can CSS variables be modified by JavaScript?",
+          "options": [
+            "Yes — element.style.setProperty('--primary', '#ff0000') updates the variable live",
+            "Only in dark mode",
+            "Only on page load",
+            "No, they're immutable"
+          ],
+          "answer_commit": "hmac-sha256:5568776c0b8425af5589738230540c35",
+          "explanation_enc": "aes-256-gcm.v1:qx0eZ2mBvCZ_Vokv:iCJlCnNFiu_EanarLGPks1qyMNs9vBot0PTatYl4CWlZiGdEg1PWfEeU3T0kdtk0PizJL9m_h47NkxFhKcU0j-WLZKU84_egxYJCSsRkmfxHwxctWdrP749Wm4u5ZRRkkzP9xTw13gJjFnpr5DcDp8-lxeTXYwIrBC8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.857,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Pseudo-classes and pseudo-elements",
+      "skill_id": "rfv.skill.html-css.15-pseudo-classes-and-pseudo-elements",
+      "items": [
+        {
+          "id": "hc-071",
+          "prompt": "What does `:hover` do?",
+          "options": [
+            "Centers the element",
+            "Applies styles when the user's mouse is over the element",
+            "Adds a floating animation",
+            "Hovers the element above others"
+          ],
+          "answer_commit": "hmac-sha256:92f7b4aead146be769267828aff9f5c0",
+          "explanation_enc": "aes-256-gcm.v1:MIGEWFJpGQ9Q0W6d:GsM8hq_KiKFXRzEG418ELbuuFZkVlLXxciUDeGeVQB-kQK0NuuoGrpd5bf_rKo_xmclDcPeTyJOA_SXsG9-WpZ8mRwB0ClyS9T9WE7u2Huu5OuLJvDjbDHh08ULpNf6gVrkuBb4ViQYhHwM-glh7R4ZnhKI4440wMbwjs8EC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.806,
+          "findings": []
+        },
+        {
+          "id": "hc-072",
+          "prompt": "What's the difference between `:hover` and `:focus`?",
+          "options": [
+            "They are identical",
+            ":hover is for mouse pointer; :focus is for keyboard/programmatic focus (also triggered by tab/click on inputs)",
+            ":hover is for mobile only",
+            ":focus is deprecated"
+          ],
+          "answer_commit": "hmac-sha256:29d2de7db50fe5da47ce8bc046295781",
+          "explanation_enc": "aes-256-gcm.v1:2xgxwoGiwH-NhkLS:B4RCXHEIgC7ChIwFxeDsTHa1VO-ttwEH1htHI_KF0MlL1TwVyc_BkJwOde26NmZB_CZz5NH7yKOsQT9fON_ZA6NA4Te3Z403GT6P_JntARg37VaryQVyi8fkDg3Qwo_w1Fi2pJTgL1OfFFXDTexv3i25PTab9OOLVVvSZF61Z33M2ljozFT43kSPSmA",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-073",
+          "prompt": "What does `::before` do?",
+          "options": [
+            "Hides the element until later",
+            "Runs CSS before the page loads",
+            "Adds a comment",
+            "Inserts a pseudo-element BEFORE the element's content (requires content property)"
+          ],
+          "answer_commit": "hmac-sha256:66f5f922d3154c856bbadce874e25cbc",
+          "explanation_enc": "aes-256-gcm.v1:OmxosStspLpYM4DD:-ckdSMZXqPwPdRiovH5ka5hCg-c7ikelqcyoS1VavOdgBk58sj2CtnSgaBIGq31-GUSqslRkjc-kbIDawtVHR5-3TQJjqfCvG5G9wEM-BURX3vjiVexO9UkvM47esZr7gveTRlbFdAy9MdHwjsZ4vVHq3jP6JbXE1Ug81O3tROQaqPnRCCt9xEX2fg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.7,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-074",
+          "prompt": "What does `:nth-child(2n)` target?",
+          "options": [
+            "Every even-numbered child element",
+            "Every other element on the page",
+            "The 2nd-from-last child",
+            "Only the second child"
+          ],
+          "answer_commit": "hmac-sha256:483a52a2f9e311dccc6b61c9368dc4fb",
+          "explanation_enc": "aes-256-gcm.v1:T8KZvAeDYwW11Chm:YNPK5bu4jFKxI3qEDBLYTIltZqBPJqnUTohIoQ8SHFbBzW4YvjHDQC4KFst5w2lRCjzZI3R5Hy8PkhprYTmxEw3PqBxY9yfFlTO6d0k1er8mirMtErgZ1v_EGGlHmTrECR-jPoCkRVCHJawRItc",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.065,
+          "findings": []
+        },
+        {
+          "id": "hc-075",
+          "prompt": "What does `:not(.active)` target?",
+          "options": [
+            "Every element that does NOT have the class 'active'",
+            "Disabled elements",
+            "Elements with the active class",
+            "Hidden elements"
+          ],
+          "answer_commit": "hmac-sha256:13446d136a373f57279646a025f70c00",
+          "explanation_enc": "aes-256-gcm.v1:Ir_715CVWFiw4Pa0:-8f_jO-SNl9YXBpgxrTeb3yTxqOj5nuT0q3xFxscHjFYnCCGYwwlGajJA3I3SiQh0YFCIY07zjGEXABVKdQ4oGkEsGXA_odvvwC7u_QugJIFBOhDFtMkKFL3GIXAkihwS9fEZNWCME8pGApl8PDv2kMxRIq6NLBAhg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.7,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Animations and transitions",
+      "skill_id": "rfv.skill.html-css.16-animations-and-transitions",
+      "items": [
+        {
+          "id": "hc-076",
+          "prompt": "What's the DIFFERENCE between a CSS transition and animation?",
+          "options": [
+            "They are identical",
+            "Transitions are deprecated",
+            "Transition animates from one state to another on a trigger (like :hover); animation runs through keyframes independently",
+            "Animation is for SVG only"
+          ],
+          "answer_commit": "hmac-sha256:c183c5634c521328cfe5de845de6adee",
+          "explanation_enc": "aes-256-gcm.v1:c4JdpJR3cu6tBo8Q:RKgkNuxsC7NOSSXSFj8ecoLYYuv5c7ONQbkc0V8eojtB41Y65ucZT--TjVdTBh4mHZ_XUNIeSqk0fpPTj-usOPKbX4equObCPOYjJslh5V4y1eMf6Axpgs8shY3oirroHI3qmr_dFlC3DsRxO_RW9Y8M6TqeLIB0gH6ukVP5",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.615,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-077",
+          "prompt": "What does `transition: all 0.3s ease;` do?",
+          "options": [
+            "Removes all animations",
+            "Animates the page transition",
+            "Animates ALL changing properties over 0.3 seconds with an ease timing function",
+            "Adds 0.3s delay to clicks"
+          ],
+          "answer_commit": "hmac-sha256:c1812d53f9b378190aca130a09e9927f",
+          "explanation_enc": "aes-256-gcm.v1:YNlL2FIzPzvETt_Z:8Vzi3lByxKTKcgdcHHlOgXKyn83KvqY0N5jba-569f5328gSJmQuDBYJ85DgzVCSc6KzeXSujMuQuoxRfMQltWpr_GnePUkUpzippmEhBlpFZb5h34kFypd5T4knZBv4cQs9u3nTA9Y1x0HRw7HFEEcGsdP4S-QMkwac-NITy6eH_jQmdvYXV7VOtRhLL_d6kIv7nBQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.786,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-078",
+          "prompt": "Which CSS properties are MOST performant to animate?",
+          "options": [
+            "margin",
+            "top and left",
+            "transform and opacity (GPU-accelerated, don't trigger layout)",
+            "width and height"
+          ],
+          "answer_commit": "hmac-sha256:fa418e7f69b47a9ca966f0568d6c224d",
+          "explanation_enc": "aes-256-gcm.v1:Tj-M1wmGFpwap8dc:7kJPTybQK2C4AmNdkBQal9MEM-KA-xHp-pgEwOgY8lu3p3uANYMQZHGVDhXS2FAtkAh1oCbG3QjNKjfF2A-Kd6brBZlbPXjhfDG-u_EUPFLGbobauEysxTqlMZY4ZpS0a5uQsQ_Lt_pH6pcLYFqNsoWspGTDrdtiZu1BHXfOP4Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.813,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-079",
+          "prompt": "What does `@keyframes` define?",
+          "options": [
+            "Keyboard shortcuts in CSS",
+            "A reusable named animation sequence with multiple states (0%, 50%, 100%)",
+            "A frame around an element",
+            "A media query"
+          ],
+          "answer_commit": "hmac-sha256:086be541bcecdf01422fc5e782f9115a",
+          "explanation_enc": "aes-256-gcm.v1:jEo6T3Me0Beox0KP:YPpmHcQoHeBieJ6AwvlbKWzcoL5qlTO4nBtKVFIi9dZPbYwuoC5G_o-9_-t1fXhHCFYIqOaaipW9EFVkyVENXJ_QW-lCiD7k-mN513GOdOjpYIrgbi4Htr_jnBx5K3sODjQhR3NytzgyV0dzr6OrAMNC-k4QfLvNHEtJfLtj",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.88,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-080",
+          "prompt": "Why should you respect `prefers-reduced-motion`?",
+          "options": [
+            "It speeds up the page",
+            "Some users have vestibular disorders triggered by animation — respecting the OS setting is an accessibility win",
+            "It's required by all browsers",
+            "It makes animations look better"
+          ],
+          "answer_commit": "hmac-sha256:bd90b0029c13e0073580c74b4ca40d12",
+          "explanation_enc": "aes-256-gcm.v1:vjbU88Csej1lDsyT:OXx--VAc1EDnz5vfNM7AVlpmOCne9oTJA8tAMW3z1DECAGAU0zEQcs9QaO5_gm0kxnUN1VUMrWyurWOITh2GUTL6zAAZxBf6r7k1rpKL56s2C3-7Hajgr1XhrPRNOrZqMAfehbXy-MREZCS9zfr2Gce53ibTUvSfhn4",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.581,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Accessibility basics",
+      "skill_id": "rfv.skill.html-css.17-accessibility-basics",
+      "items": [
+        {
+          "id": "hc-081",
+          "prompt": "What is the WCAG?",
+          "options": [
+            "World Coding Action Group",
+            "Wireless Content Access Gateway",
+            "Web Compression and Graphics",
+            "Web Content Accessibility Guidelines — the international standard for web accessibility"
+          ],
+          "answer_commit": "hmac-sha256:717d6fd2e9a3e05e8cf0630407d78269",
+          "explanation_enc": "aes-256-gcm.v1:p3d_d0zQSR6jlsBw:CYyqJHpe_gOjixeIXUCuBEOyUI1sEtxNLhTaGw-ZNlFm35c5pn2etGEXOBzQER8411OBG0mWDnpYe3zQQvCMN_FbE3K30s9JMh8DKBpWNWFl-Cyhmpp_lLTsfD8nuuebiY0vVDhut6Krwa8B3UK-mJZBiqFlsw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.806,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-082",
+          "prompt": "Why is COLOR CONTRAST important?",
+          "options": [
+            "It's required by all browsers",
+            "It makes the design look fancy",
+            "Low contrast makes text unreadable for users with low vision, dyslexia, or in bright light",
+            "It speeds up loading"
+          ],
+          "answer_commit": "hmac-sha256:a11c4dd86e81fec8c94b80e7c9d936b0",
+          "explanation_enc": "aes-256-gcm.v1:006mn2VeE8CwXOe8:wN8NZkVm3Cw94yeVEf2eZl9ElH-GMkXTfR6krsPT2WmEtKrf8uKzWDxwvC9PShPc99JceoC9BO_nOW3RSfk3WcGfkuqOBtm8KwDfrItzZ3mSRtekKsf-Q8_iu1m6IW2PfUjA0ET3AbzPS6mMts7buUt7LtOdKOCw6G1VVmMmvQJzkibE8Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-083",
+          "prompt": "What's a TRUE statement about screen readers?",
+          "options": [
+            "They aren't used by anyone today",
+            "They auto-fix any HTML",
+            "They rely on semantic HTML, alt text, labels, and ARIA — bad HTML makes them useless",
+            "They only read text inside <p> tags"
+          ],
+          "answer_commit": "hmac-sha256:c54ca03ebbcdcaf7c0fb396ca21f9e7c",
+          "explanation_enc": "aes-256-gcm.v1:20gUp_dzz1cGxQQL:9ytRmJU9mF-o_Xj2bfrNSLJCMx3dM666TV2vnNgPNr9DJsTuH64j_DHWPEkgxhYmjs3r_4Jo6tjaGbSA8zPVvof3RxISGK02GFAfG9c38ByYMDp5nhOWDg9ib5aFCU0H6WIE0DzF5r2C4l-OEhEn9rt5jUnPD_yPhTO12ysCIK-6O4kiVVCC",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-084",
+          "prompt": "When should you use ARIA attributes?",
+          "options": [
+            "Never",
+            "Only in old browsers",
+            "On every element to be safe",
+            "When semantic HTML isn't enough — but FIRST rule of ARIA is don't use ARIA if a native element will do"
+          ],
+          "answer_commit": "hmac-sha256:85822676121393b84d375a369a3808d7",
+          "explanation_enc": "aes-256-gcm.v1:OJQmZbFgWtQA3g0V:Uv0IzBP7rKq-nIz802NOWoc7qqq_IlSgEu1dFHHjP3HarSNk1DEj9vWGwTmwlg9GSGjc_UC5crXwKNpdPueATiIZCLsTPK0z7DZ-6fXJZkFOf4IHHoNWre5trS35daqLeplwurtzOLftQfGlV3veonuzedhGWkCKu88YygMDtsUX1x35VunG_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.778,
+          "findings": [
+            {
+              "code": "trivially_short_option",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-085",
+          "prompt": "What is keyboard accessibility?",
+          "options": [
+            "Every interactive element must be reachable and operable using only the keyboard (Tab, Enter, Space, Arrow keys)",
+            "Disabling the mouse",
+            "Optimizing for laptops only",
+            "Adding a keyboard shortcut to every button"
+          ],
+          "answer_commit": "hmac-sha256:583974c730c541cab2f49b2219933d3c",
+          "explanation_enc": "aes-256-gcm.v1:yk79nyK-n95j2giF:9Yx_RDM6SBUppcIOLdchMjfYIKIcsRuqPyiwTb5smsfLIsN-CE-9No6lfws5Yn-tzN7rTWHz_dBuEXzFpL9akZzY-aCQIUpPwGrFfuQ9ysIqeiu805lytlkMzsw8s9eHOxxbGszfrry9ABVNlSIr2DpWrxceVdVSmwhMCnH_r0siUAY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Modern CSS features",
+      "skill_id": "rfv.skill.html-css.18-modern-css-features",
+      "items": [
+        {
+          "id": "hc-086",
+          "prompt": "What is a `:has()` selector?",
+          "options": [
+            "A type of class selector",
+            "A JavaScript function",
+            "A parent selector that targets elements containing matching descendants (e.g., div:has(img))",
+            "An animation timing function"
+          ],
+          "answer_commit": "hmac-sha256:236e93c52f6f8b8b94d9c6b293dc443f",
+          "explanation_enc": "aes-256-gcm.v1:GwS7J7OPCksTX8Jw:zU3GAC1qwRmI6lxv_q_P8aJGFr1oKuXvq6tq1t1WIp6LcCe_yka_OU9SMSAQFi5wdFkRxx02wYbUzV6_hBipY730SrdrAumhA1ZMoNIymopgARBugXvxJZp7Jsfc-ItvH9XD09p9dXCgc7NrLtdXczWh",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.286,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-087",
+          "prompt": "What is `container queries`?",
+          "options": [
+            "A CSS bug",
+            "A type of SQL",
+            "A way to style elements based on the size of their CONTAINER (not just the viewport)",
+            "A media query for shipping containers"
+          ],
+          "answer_commit": "hmac-sha256:c5391603540762deedd8d347dcc7e557",
+          "explanation_enc": "aes-256-gcm.v1:heTqFVlOzzM55l2j:-yI5yh_dnW2OPEu1BMFtzvwWHCi18Zp-0kxNIZWNWuQyHMSN-rpRaYEJMGfjVDi2KWGF2vxKPZVFCLIpN_X0uEwnTGfBk3oWMltHR0aDeRAAb0y2CSo_jFEaLjEPeqaLShnzVH82VOaXsuEj64s2pmhfT5kuhSvq5yrpHpjPBtmUwA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.27,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-088",
+          "prompt": "What is the CSS `clamp()` function?",
+          "options": [
+            "Compresses CSS files",
+            "Restricts CSS to one rule",
+            "Locks elements in place",
+            "Clamps a value between a min and max with a preferred value: clamp(min, preferred, max)"
+          ],
+          "answer_commit": "hmac-sha256:36e07dc472c9940d7581429d45783873",
+          "explanation_enc": "aes-256-gcm.v1:ocZxzMHonmWwTRcQ:gUEDWmhtoQQidHUf7SrlSlPSIufnzhPaxcjodWJ8sWGn45rAh_t221MgK6Po_av5im9eqtJNKhK5FxhRy9HrOD-T6NjhQ6dvAJU4C_Oy0F8eX2O5kFYQzqjHqxGQIcPOc5x8XYO-PGQvy-M_HnMHRQItlSycZE1Ak8p-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.48,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-089",
+          "prompt": "What does `aspect-ratio: 16 / 9` do?",
+          "options": [
+            "Keeps the element at a 16:9 width/height ratio regardless of size",
+            "Sets the screen aspect ratio",
+            "Creates a 16x9 grid",
+            "Crops images to 16:9"
+          ],
+          "answer_commit": "hmac-sha256:8f93ba8c73a0cb21ab0f8d98a84d59a1",
+          "explanation_enc": "aes-256-gcm.v1:bqgr6UJO5ssdZLYK:BOPp0Z98FAP2wGyfoh4X8GNHfu4rosDaHHUJZWVrhrTRIpJGd3um8_cyDk6f7cwPwr7PWAXaOVE5vN0D3mIyJZkctOavt50gU-KryDy0qlGHK6Kq-4vyYztmBZU7VduiFJlrD1SKrK0qBnaVqAEXxpghS8S0rUiQZeVioQYOVltnY1PMVHnNEpzOIdXA1Rk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.321,
+          "findings": []
+        },
+        {
+          "id": "hc-090",
+          "prompt": "What is `gap` in CSS?",
+          "options": [
+            "Adds a colored gap line",
+            "Hides element gaps",
+            "Removes spacing",
+            "Adds space between flex/grid items without affecting outer edges (replaces margin hacks)"
+          ],
+          "answer_commit": "hmac-sha256:862a3833a5ae289068194a534459d621",
+          "explanation_enc": "aes-256-gcm.v1:FN2j-ohsyolZKfxn:cyOoQTBRMH4xM021pv87U6s4RGLynPoU-O-oLM-_rO57BpWQSXcwE1Aiy9jurCSGREDBrs5ouyIo4NwSeIjaYgALDsCM1GYnIkoAe6CDiQN1eROfPkiV-m7gKCqTScCBQP99CQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "code_snippet",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.826,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Modern CSS workflows",
+      "skill_id": "rfv.skill.html-css.19-modern-css-workflows",
+      "items": [
+        {
+          "id": "hc-091",
+          "prompt": "What is Tailwind CSS?",
+          "options": [
+            "A utility-first CSS framework where you compose styles via class names (bg-blue-500, p-4, etc.)",
+            "A new browser feature",
+            "An icon library",
+            "A type of CSS preprocessor like SASS"
+          ],
+          "answer_commit": "hmac-sha256:a6c9a4512bb77c813a9dad466a51891c",
+          "explanation_enc": "aes-256-gcm.v1:q1_cUMvhYSElYaEL:uoDZMO584fVvWAoc65eLjqZGrUu_4Z_fAUUBZisVi3vb4EeU9IuEJQBCObNRRl--Q9LpG-FiFGJHRZm1kOfXEcWyuOIgnW75PImX5xb1J_zVY1f3WyVzwbjFAIZqZgq83qZFpFfnQup1TKH3CDlWoOzajG9Oje-5f6FNH-Cd1axvTGkL77MnVQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.639,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-092",
+          "prompt": "What is a CSS preprocessor like SASS?",
+          "options": [
+            "A JavaScript framework",
+            "A type of bundler",
+            "A tool that adds variables, nesting, mixins, and functions to CSS, then compiles to standard CSS",
+            "A faster CSS parser"
+          ],
+          "answer_commit": "hmac-sha256:f37ebe77ffaf4ebb165303d2ec85b78d",
+          "explanation_enc": "aes-256-gcm.v1:CkDr-nGU509QUP3M:j47Ip3wy3LBmACXckCvaqORBZFolDyiI4pmSmV_wOHQxo4aHlwXO8rpwmo318CXP3ptJp1n1EaAtTnjjwpr_f8psKdSnqvIYBr6rVGKmrFGeRYB1xXyjZRv8LakgPWHFGcDhU7VSdkFg8ekSnE6WpzVydIpI2C20sifrE8cs_g",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.364,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-093",
+          "prompt": "What does PostCSS do?",
+          "options": [
+            "A toolchain that transforms CSS with plugins (autoprefixer, nesting, modern features for older browsers)",
+            "A CSS analytics tool",
+            "Posts CSS to social media",
+            "A static site generator"
+          ],
+          "answer_commit": "hmac-sha256:515e79d8ce1c9b5d13dcf9618e3d9e6a",
+          "explanation_enc": "aes-256-gcm.v1:ES6-uy6GHuy_aYnt:iaIk23gSYy7YGPZ8aCsFII9CqJYxKvwQZ5N73vjSm8w9qlwgsbtbvd2r1UqOhjqKJz3DVk5uOKQNnZsZtPXhgRrHyrqCkS4sFaeT2rd60ai3AdPjancg_AXf8ymH0xb9BqfjttI1CDwE8KtAz9m4n0k_UOCU_VuwS7FmliDYYXUsGQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.16,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-094",
+          "prompt": "What's the BENEFIT of CSS Modules?",
+          "options": [
+            "Speeds up the browser",
+            "Compresses CSS files smaller",
+            "Auto-generates styles",
+            "Class names are scoped to the file/component, preventing global style conflicts"
+          ],
+          "answer_commit": "hmac-sha256:dfcbd5524d5b551f464066b5153e97a5",
+          "explanation_enc": "aes-256-gcm.v1:ZXjjgduZjgIcC39k:rY2OQsJKCJppa7C-_xL9bETaBixBrlrdJUhdLECjDL3x7ny5ES62J1PJqy-KdFTm5LeYftHy8FnfDYOyNsEaFXFi5SUw3zZe1Ec-fs9Buv4YmF2g16xnKyT89esW3ekAsiV9fT5moz-usXxqtV8bUWkTtOsJc6Wd0iE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.821,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-095",
+          "prompt": "What's a SMART CSS organization strategy for a large project?",
+          "options": [
+            "Inline styles everywhere",
+            "Component-scoped styles (CSS Modules, Tailwind, CSS-in-JS) over global stylesheets",
+            "Random CSS files everywhere",
+            "One giant style.css with thousands of lines"
+          ],
+          "answer_commit": "hmac-sha256:038c938037a55541ece15983224819fd",
+          "explanation_enc": "aes-256-gcm.v1:FNCcYlhOdkl3phAU:BcbBlLJE_-A029m4-wiTDaqM-Ee1SxmjVnfaw9kSdxJxo4V-b6vgGZP9qgJeK-nD7wiVC8dhAJz7S9irZqqtT9TERJoURdu__tPzBekxJktNKoTsKRvr3ZzJXqRBUMkyroq_rVM1kMT-xPNH6MnNlXe0l6q2ROTipciC5jtznCsE6s9I",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.907,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Best practices and pitfalls",
+      "skill_id": "rfv.skill.html-css.20-best-practices-and-pitfalls",
+      "items": [
+        {
+          "id": "hc-096",
+          "prompt": "Why should you AVOID `!important` in CSS?",
+          "options": [
+            "It only works in old browsers",
+            "It bypasses normal specificity rules and creates maintenance nightmares — fix the underlying specificity instead",
+            "It slows down the browser",
+            "It's deprecated"
+          ],
+          "answer_commit": "hmac-sha256:9a923bf036217725107f68f46dd4c0f8",
+          "explanation_enc": "aes-256-gcm.v1:Q6jlRpP-x-PgJJVq:uycy7w4B-VSpqapwo5lgx4rsIQjvmjdCZei9ySPRlOrtGsdfyLhLL1iBDjU4ltSm5IF_tEsWJ1W77mTg_296DTqdwDzRRMTduvp_60x9MOY8lFfXfWBt1RQIiH8xL3FuBnqsW_yOEcS5GBZmeSPnXnbTvPAAjMX2_iY",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required",
+              "code_snippet",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.862,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-097",
+          "prompt": "What's an HTML accessibility anti-pattern?",
+          "options": [
+            "Using semantic landmarks",
+            "Using <button> elements",
+            "<div onclick='...'> as a button instead of <button>",
+            "Adding alt text to images"
+          ],
+          "answer_commit": "hmac-sha256:026682fd44435857697da16b7c7d5c7b",
+          "explanation_enc": "aes-256-gcm.v1:6NBP6159j8jN6J26:-mqtp6tfMyscUVudPcGuii1heQ4o8dU2gKysNspp704IoRY2QiI7YbXgAc3xLy44YHMJMB1jCYxj7CvQ7vbWR239OlwEa29rxUDdKKcdG6eCXQvwveNuWZR-6gSP6_HHK_JbgGaidPEa2UHmtivhNoRqV3Kn5BPjKCfUo3DA7n0X5C8u92ybiinUPQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.04,
+          "findings": []
+        },
+        {
+          "id": "hc-098",
+          "prompt": "What's a COMMON beginner CSS mistake?",
+          "options": [
+            "Fighting specificity by stacking more selectors instead of refactoring class structure",
+            "Adding comments to CSS",
+            "Using classes for styling",
+            "Using rem units"
+          ],
+          "answer_commit": "hmac-sha256:21c67cf7dfedf69b9fc6ac1dd2a6a28d",
+          "explanation_enc": "aes-256-gcm.v1:m0D6RHnhyHmtZHmO:QGKUrVvGYYRX7vA67DT1MGRgH7aRv17ev7-XLdMlI12zp-TfKO1jt_VH5tpO0Z-g2SqIzyKOD4_DfClFW72uWxtV5YKl35gYlSGD4zEEYxgRkVe01n64MYXcz-1oT_xXzbVSMlU83ItUrIQNVdDV0BBFky4x",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.44,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-099",
+          "prompt": "Why is INLINE STYLE generally discouraged?",
+          "options": [
+            "Hard to override, can't reuse, mixes structure with presentation, and clutters HTML",
+            "It's deprecated",
+            "Browsers can't render it",
+            "It causes errors"
+          ],
+          "answer_commit": "hmac-sha256:470df66832d48ec8faec84afe779e717",
+          "explanation_enc": "aes-256-gcm.v1:8jMRwoEhNKX1x_Nk:tlHJ-JD5HJRL880ibdeNTEhtPWmiMvnm9-4lP2ABkJH1gsbNo4JOWtN2MihqoMi0QOC2dwPB28OenDvXc5Yhr870JDAl0GL5MDszO9J9r44HfUN1yOkdqVJq5unyj-UYdhJlEg_AQzPSBWowjoUB-MddWjUXxp5TLoGl9a7zjfau6F0CR_oDfOQPdEIDAQQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.458,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "hc-100",
+          "prompt": "What's the BEST way to keep improving at HTML/CSS?",
+          "options": [
+            "Memorize all CSS property names",
+            "Avoid all new features for stability",
+            "Only watch tutorial videos",
+            "Build real projects, read MDN docs, study other sites' CSS, follow accessibility guidelines, practice rebuilding designs"
+          ],
+          "answer_commit": "hmac-sha256:7cfc5d926c2ae76004023871c3c2df82",
+          "explanation_enc": "aes-256-gcm.v1:eJT4Is9yKRX_EAYz:IRkMF4MoptxJSKKmMtrBdTg4_ufiFNT-pwcEAJ-KGosiswyJgeTW_LX4wPzmVXM6_eKagwAa2lA7WCRHcy3zpcj-k9TgFnU1sRCoJzU1x9f2kOh7Tou9E973gLjcdSoBkIziMq1J6oztEzUQeUrQsPl5n3aL0XQIbfria3g",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:cbe47baa739ba83f149b3e0a0bbb8dfbd2a977fe6dc09ccd98c1597693fbb634"
+}

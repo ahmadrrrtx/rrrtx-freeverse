@@ -1,5 +1,5 @@
-import { useEffect, useState, useRef, useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { PageShell } from '../components/layout/PageShell';
 import { Container } from '../components/atoms/Container';
 import { Button } from '../components/atoms/Button';
@@ -7,67 +7,62 @@ import { Certificate } from '../components/certificate/Certificate';
 import { CertActions } from '../components/certificate/CertActions';
 import { VerifiedBanner } from '../components/cert-page/VerifiedBanner';
 import { IntegrityPanel } from '../components/cert-page/IntegrityPanel';
-import { QUIZ_CATALOG } from '../data/quizMeta';
-import { getCertificates } from '../lib/storage';
-import { fetchFromRegistry } from '../lib/githubRegistry';
-import type { Certificate as CertificateRecord } from '../types';
+import { api, describeError } from '../lib/api';
+import { CREDENTIAL_DISCLOSURE } from '../../shared/levels';
+import type { PublicCredential } from '../types';
+
+const CERT_ID_RE = /^RFV-\d{4}-[A-F0-9]{8}$/;
+
+type Lookup =
+  | { kind: 'loading' }
+  | { kind: 'found'; credential: PublicCredential; notes: string[]; state: 'valid' | 'revoked' }
+  | { kind: 'not-found' }
+  | { kind: 'untrusted' }
+  | { kind: 'unavailable' }
+  | { kind: 'error'; message: string };
 
 /**
- * /cert/:certId — Public certificate page.
+ * /cert/:credentialId — public credential page.
  *
- * This is the URL people share with recruiters, on LinkedIn, etc.
- * Order of lookup:
- *   1. Local storage (instant — for the owner's own browser)
- *   2. GitHub registry (fetch raw JSON via fetchFromRegistry)
- *   3. If both fail → "could not verify" state
+ * The page always asks the server. A locally cached copy is never
+ * used to assert authenticity, because localStorage is editable by
+ * anyone with access to the browser.
  */
-type LookupState =
-  | { kind: 'loading' }
-  | { kind: 'found'; cert: CertificateRecord; source: 'local' | 'registry' }
-  | { kind: 'not-found' };
-
 export function CertPage() {
   const { certId } = useParams<{ certId: string }>();
-  const [lookup, setLookup] = useState<LookupState>({ kind: 'loading' });
+  const [lookup, setLookup] = useState<Lookup>({ kind: 'loading' });
   const paperRef = useRef<HTMLDivElement | null>(null);
 
-  // ── Lookup the certificate ──
   useEffect(() => {
-    if (!certId) {
+    const id = (certId ?? '').trim().toUpperCase();
+    if (!CERT_ID_RE.test(id)) {
       setLookup({ kind: 'not-found' });
       return;
     }
-
     let cancelled = false;
-
-    (async () => {
-      // 1. Check local storage first
-      const local = getCertificates().find((c) => c.id === certId);
-      if (local) {
-        if (!cancelled) setLookup({ kind: 'found', cert: local, source: 'local' });
-        return;
-      }
-
-      // 2. Try the public GitHub registry
+    void (async () => {
       try {
-        const remote = await fetchFromRegistry(certId);
+        const response = await api.verify(id);
         if (cancelled) return;
-        if (remote) {
-          setLookup({ kind: 'found', cert: remote, source: 'registry' });
+        if (response.state === 'valid' && response.credential) {
+          setLookup({ kind: 'found', credential: response.credential, notes: response.notes, state: 'valid' });
+        } else if (response.state === 'revoked' && response.credential) {
+          setLookup({ kind: 'found', credential: response.credential, notes: response.notes, state: 'revoked' });
+        } else if (response.state === 'registry-unavailable') {
+          setLookup({ kind: 'unavailable' });
+        } else if (response.state === 'unauthenticated-record') {
+          setLookup({ kind: 'untrusted' });
         } else {
           setLookup({ kind: 'not-found' });
         }
-      } catch {
-        if (!cancelled) setLookup({ kind: 'not-found' });
+      } catch (error) {
+        if (!cancelled) setLookup({ kind: 'error', message: describeError(error) });
       }
     })();
-
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [certId]);
-
-  // ─────────────────────────────────────────────────────────
-  // RENDER
-  // ─────────────────────────────────────────────────────────
 
   if (lookup.kind === 'loading') {
     return (
@@ -75,7 +70,7 @@ export function CertPage() {
         <Container size="app">
           <div className="py-32 text-center">
             <p className="font-mono text-xs uppercase tracking-widest text-fg-4">
-              <span className="text-fg-5">// </span>verifying certificate...
+              <span className="text-fg-5">// </span>checking the registry…
             </p>
           </div>
         </Container>
@@ -83,28 +78,36 @@ export function CertPage() {
     );
   }
 
-  if (lookup.kind === 'not-found') {
+  if (lookup.kind !== 'found') {
+    const message =
+      lookup.kind === 'not-found'
+        ? 'No credential with that id exists in the public registry.'
+        : lookup.kind === 'untrusted'
+          ? 'A registry record exists but its signature does not verify, so this page will not display it as a credential.'
+          : lookup.kind === 'unavailable'
+            ? 'The credential registry could not be reached. This credential is not confirmed right now — please retry.'
+            : lookup.message;
+
     return (
       <PageShell>
         <Container size="app">
           <div className="py-20 sm:py-24">
-            <VerifiedBanner state="unverified">
-              The certificate ID <code className="text-fg-0 font-medium">{certId}</code>{' '}
-              could not be found in the public registry. It may be invalid, mistyped, or revoked.
-            </VerifiedBanner>
-
+            <VerifiedBanner state="unverified">{message}</VerifiedBanner>
             <div className="mt-10 max-w-md">
               <p className="font-mono text-sm text-fg-3 leading-relaxed">
-                <span className="text-fg-5">// </span>cert ids look like{' '}
-                <code className="text-term-glow">RFV-YYYY-XXXXXXXX</code> where Y is the year and X is an 8-character hex code.
+                <span className="text-fg-5">// </span>credential ids look like{' '}
+                <code className="text-term-glow">RFV-YYYY-XXXXXXXX</code>.
               </p>
-
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link to="/verify">
-                  <Button variant="primary" size="lg" cmd>verify-different-id</Button>
+                  <Button variant="primary" size="lg" cmd>
+                    verify-an-id
+                  </Button>
                 </Link>
                 <Link to="/">
-                  <Button variant="ghost" size="lg" cmd>browse-quizzes</Button>
+                  <Button variant="ghost" size="lg" cmd>
+                    browse-assessments
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -114,169 +117,136 @@ export function CertPage() {
     );
   }
 
-  // ── FOUND ──
-  return <CertPageContent cert={lookup.cert} source={lookup.source} paperRef={paperRef} />;
-}
-
-// ─────────────────────────────────────────────────────────
-// FOUND content
-// ─────────────────────────────────────────────────────────
-function CertPageContent({
-  cert,
-  source,
-  paperRef,
-}: {
-  cert: CertificateRecord;
-  source: 'local' | 'registry';
-  paperRef: React.MutableRefObject<HTMLDivElement | null>;
-}) {
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
-
-  const certData = useMemo(() => {
-    const quiz = QUIZ_CATALOG.find((q) => q.id === cert.quiz.id);
-    return {
-      recipientName: cert.recipient.name,
-      quizTitle:     cert.quiz.title,
-      quizCategory:  quiz?.category ?? 'General',
-      score:         cert.score,
-      certId:        cert.id,
-      dateISO:       cert.issued_at,
-      verifyUrl:     cert.verify_url,
-    };
-  }, [cert]);
-
-  const issuedDate = new Date(cert.issued_at);
-  const formattedDate = issuedDate.toLocaleDateString('en-US', {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-  });
-
-  // Build GitHub registry source link
-  const year = issuedDate.getUTCFullYear();
-  const month = String(issuedDate.getUTCMonth() + 1).padStart(2, '0');
-  const registryUrl = `https://github.com/ahmadrrrtx/rrrtx-freeverse-certs/blob/main/certs/${year}/${month}/${cert.id}.json`;
+  const { credential, notes, state } = lookup;
+  const issued = new Date(credential.issuedAt);
+  const certificateData = {
+    recipientName: credential.subject.displayName,
+    title: credential.credential.title,
+    levelLabel: credential.credential.levelLabel,
+    skills: credential.credential.skills.map((s) => s.name),
+    score: credential.assessment.score,
+    passingScore: credential.assessment.passingScore,
+    credentialId: credential.id,
+    issuedAt: credential.issuedAt,
+    verifyUrl: credential.verifyUrl,
+    status: credential.status,
+    provenance: credential.provenance,
+  };
 
   return (
     <PageShell>
       <Container size="app">
         <div className="py-12 sm:py-16">
-
-          {/* TRUST BANNER */}
-          <VerifiedBanner state="authentic">
-            This certificate is authentic and was earned on RRRTX FreeVerse.{' '}
-            {source === 'registry' && (
-              <span>Verified against public GitHub registry.</span>
-            )}
-            {source === 'local' && (
-              <span>Verified from your local certs.</span>
+          <VerifiedBanner state={state === 'revoked' ? 'unverified' : 'authentic'}>
+            {state === 'revoked' ? (
+              <>
+                This credential has been <strong className="text-fg-0">revoked</strong>
+                {credential.revocation?.reason ? ` — ${credential.revocation.reason}` : ''}. It is shown for the record
+                only.
+              </>
+            ) : (
+              <>
+                Registry record present and signature verified against the issuer public key.
+                {credential.provenance === 'legacy-unsigned' && (
+                  <span className="block mt-2 text-warn-500">
+                    Legacy record: issued before server-side signing, so it cannot be cryptographically verified.
+                  </span>
+                )}
+              </>
             )}
           </VerifiedBanner>
 
-          {/* Meta line above cert */}
           <div className="mt-12 sm:mt-16">
             <div className="font-mono text-[11px] uppercase tracking-widest text-fg-4 mb-6">
-              <span className="text-fg-5">// </span>certificate · {cert.id}
+              <span className="text-fg-5">// </span>credential · {credential.id}
             </div>
-
-            {/* THE CERTIFICATE */}
-            <div ref={paperRef} id={`cert-export-${cert.id}`}>
-              <Certificate data={certData} animated={false} />
+            <div ref={paperRef} id={`cert-export-${credential.id}`}>
+              <Certificate data={certificateData} animated={false} />
             </div>
           </div>
 
-          {/* SHARE/DOWNLOAD ACTIONS */}
           <section className="mt-12 sm:mt-16">
-            <CertActions paperRef={paperRef} cert={cert} baseUrl={baseUrl} />
+            <CertActions paperRef={paperRef} credential={credential} />
           </section>
 
-          {/* INTEGRITY DETAILS */}
           <section className="mt-16 sm:mt-20">
             <IntegrityPanel
-              title="integrity_details"
+              title="credential_details"
               rows={[
-                { label: 'recipient',     value: cert.recipient.name },
-                { label: 'quiz',          value: cert.quiz.title },
-                { label: 'score',         value: <><span className="text-term-glow">{cert.score}</span> / 100</>, emphasized: true },
-                { label: 'issued on',     value: formattedDate },
-                { label: 'cert id',       value: <code className="text-term-glow">{cert.id}</code> },
-                { label: 'issuer',        value: cert.issuer },
+                { label: 'recipient', value: credential.subject.displayName },
+                { label: 'credential', value: `${credential.credential.title} · ${credential.credential.levelLabel}` },
                 {
-                  label: 'secure mode',
-                  value: cert.integrity.completed_in_secure_mode
-                    ? <span className="text-term-glow">✓ completed in secure mode</span>
-                    : <span className="text-warn-500">⚠ not in secure mode</span>,
+                  label: 'score',
+                  value: (
+                    <>
+                      <span className="text-term-glow">{credential.assessment.score}</span> / 100 (pass{' '}
+                      {credential.assessment.passingScore}%)
+                    </>
+                  ),
+                  emphasized: true,
+                },
+                { label: 'issued on', value: issued.toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' }) },
+                { label: 'issuer', value: credential.issuer.name },
+                { label: 'method', value: credential.assessment.method },
+                { label: 'question bank', value: <code className="text-fg-3">{credential.assessment.bankVersion}</code> },
+                { label: 'blueprint', value: <code className="text-fg-3 break-all">{credential.assessment.blueprintId}</code> },
+                {
+                  label: 'signature',
+                  value: credential.signature ? (
+                    <code className="text-fg-3 break-all">
+                      {credential.signature.alg} · {credential.signature.keyId}
+                    </code>
+                  ) : (
+                    <span className="text-warn-500">none (legacy record)</span>
+                  ),
                 },
                 {
-                  label: 'violations',
-                  value: cert.integrity.violations === 0
-                    ? <span className="text-term-glow">0 — clean attempt</span>
-                    : <span className="text-warn-500">{cert.integrity.violations} recorded</span>,
+                  label: 'learner reference',
+                  value: <code className="text-fg-3 break-all">{credential.subject.learnerRef || 'not recorded'}</code>,
                 },
-                { label: 'email hash',    value: <code className="text-fg-3 break-all">{cert.recipient.email_hash}</code> },
               ]}
               sourceLink={{
-                href: registryUrl,
-                label: 'view raw record in public registry',
+                href: `https://raw.githubusercontent.com/ahmadrrrtx/rrrtx-freeverse-certs/main/${credential.registryPath}`,
+                label: 'view raw registry record (JSON)',
               }}
             />
           </section>
 
-          {/* HOW VERIFICATION WORKS */}
-          <section className="mt-16 sm:mt-20 border-t border-bg-3 pt-12 sm:pt-16">
+          {notes.length > 0 && (
+            <ul className="mt-8 font-mono text-xs text-fg-4 leading-relaxed space-y-1 max-w-2xl">
+              {notes.map((note) => (
+                <li key={note}>· {note}</li>
+              ))}
+            </ul>
+          )}
+
+          <section className="mt-16 sm:mt-20 border-t border-bg-3 pt-12">
             <div className="font-mono text-[11px] uppercase tracking-widest text-fg-4 mb-4">
-              <span className="text-fg-5">// </span>how-verification-works
+              <span className="text-fg-5">// </span>what-this-credential-is
             </div>
-            <h2 className="font-display font-black text-fg-0 text-2xl sm:text-3xl tracking-[-0.025em] leading-tight max-w-xl">
-              How do we know this <span className="text-term-glow">is real?</span>
-            </h2>
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-px bg-bg-3 border border-bg-3">
-              <ExplainCell
-                num="01"
-                title="Cryptographic ID"
-                body="The cert ID is a SHA-256 hash of name + email + quiz + score + date + integrity + a secret salt. Tampering with any field breaks the hash."
-              />
-              <ExplainCell
-                num="02"
-                title="Public Registry"
-                body="Every issued cert is committed to a public GitHub repository as a JSON file. Anyone can audit the entire issuance history."
-              />
-              <ExplainCell
-                num="03"
-                title="Secure Mode"
-                body="Earned under browser-level anti-cheat (fullscreen lock, tab detection, copy/paste block). Integrity is baked into the cert hash."
-              />
-            </div>
+            <ul className="font-mono text-xs text-fg-3 leading-relaxed space-y-2 max-w-3xl">
+              <li>· {CREDENTIAL_DISCLOSURE.issuerLegalLine}</li>
+              <li>· {CREDENTIAL_DISCLOSURE.accreditation}</li>
+              <li>· {CREDENTIAL_DISCLOSURE.identity}</li>
+              <li>· {CREDENTIAL_DISCLOSURE.integrity}</li>
+              <li>· {CREDENTIAL_DISCLOSURE.scoreMeaning}</li>
+            </ul>
           </section>
 
-          {/* FOOTER ACTIONS */}
-          <div className="mt-16 sm:mt-20 pt-12 border-t border-bg-3 flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="mt-16 pt-12 border-t border-bg-3 flex flex-col sm:flex-row gap-3">
             <Link to="/verify">
-              <Button variant="ghost" size="lg" cmd>verify-different-id</Button>
+              <Button variant="ghost" size="lg" cmd>
+                verify-another-id
+              </Button>
             </Link>
             <Link to="/">
-              <Button variant="ghost" size="lg" cmd>browse-quizzes</Button>
+              <Button variant="ghost" size="lg" cmd>
+                browse-assessments
+              </Button>
             </Link>
           </div>
         </div>
       </Container>
     </PageShell>
-  );
-}
-
-// Small helper for the "how it works" grid
-function ExplainCell({ num, title, body }: { num: string; title: string; body: string }) {
-  return (
-    <div className="bg-bg-0 p-5 sm:p-6 flex flex-col gap-3">
-      <div className="font-display font-black text-term-glow text-2xl leading-none">
-        {num}
-      </div>
-      <h3 className="font-display font-bold text-fg-0 text-base leading-tight tracking-[-0.01em]">
-        {title}
-      </h3>
-      <p className="font-mono text-xs text-fg-3 leading-relaxed">
-        {body}
-      </p>
-    </div>
   );
 }

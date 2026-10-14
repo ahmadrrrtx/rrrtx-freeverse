@@ -6,7 +6,7 @@
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import QRCode from 'qrcode';
-import type { Certificate } from '../types';
+import type { PublicCredential } from '../types';
 
 /** Wait until web fonts are ready so the downloaded PDF/JPG matches the preview. */
 async function waitForFonts(): Promise<void> {
@@ -67,7 +67,7 @@ async function captureCertCanvas(certEl: HTMLElement): Promise<HTMLCanvasElement
  */
 export async function downloadCertificatePDF(
   certEl: HTMLElement,
-  cert: Certificate,
+  credential: PublicCredential,
 ): Promise<void> {
   const canvas = await captureCertCanvas(certEl);
   const imgData = canvas.toDataURL('image/png');
@@ -79,15 +79,15 @@ export async function downloadCertificatePDF(
   });
   pdf.addImage(imgData, 'PNG', 0, 0, 297, 210);
   pdf.setProperties({
-    title: `RRRTX FreeVerse — ${cert.quiz.title}`,
-    subject: cert.quiz.title,
+    title: `RRRTX FreeVerse — ${credential.credential.title} (${credential.credential.levelLabel})`,
+    subject: `${credential.credential.title} · ${credential.credential.levelLabel}`,
     author: 'RRRTX FreeVerse',
     creator: 'RRRTX FreeVerse',
-    keywords: `certification, ${cert.quiz.title}, ${cert.id}`,
+    keywords: `credential, ${credential.credential.title}, ${credential.id}`,
   });
 
-  const safeName = cert.recipient.name.replace(/[^a-z0-9]+/gi, '_');
-  pdf.save(`RFV_${cert.quiz.id}_${safeName}.pdf`);
+  const safeName = credential.subject.displayName.replace(/[^a-z0-9]+/gi, '_');
+  pdf.save(`RFV_${credential.credential.topicId}_${credential.credential.level}_${safeName}.pdf`);
 }
 
 /**
@@ -96,16 +96,16 @@ export async function downloadCertificatePDF(
  */
 export async function downloadCertificateJPG(
   certEl: HTMLElement,
-  cert: Certificate,
+  credential: PublicCredential,
   quality: number = 0.92,
 ): Promise<void> {
   const canvas = await captureCertCanvas(certEl);
   const imgData = canvas.toDataURL('image/jpeg', quality);
 
-  const safeName = cert.recipient.name.replace(/[^a-z0-9]+/gi, '_');
+  const safeName = credential.subject.displayName.replace(/[^a-z0-9]+/gi, '_');
   const a = document.createElement('a');
   a.href = imgData;
-  a.download = `RFV_${cert.quiz.id}_${safeName}.jpg`;
+  a.download = `RFV_${credential.credential.topicId}_${credential.credential.level}_${safeName}.jpg`;
   a.rel = 'noopener';
   document.body.appendChild(a);
   a.click();
@@ -115,8 +115,8 @@ export async function downloadCertificateJPG(
 /**
  * Generate a QR code data URL pointing to the verify page for this cert.
  */
-export async function buildVerifyQR(certId: string, baseUrl: string): Promise<string> {
-  const verifyUrl = `${baseUrl}/verify?id=${certId}`;
+export async function buildVerifyQR(credentialId: string, verifyUrl: string): Promise<string> {
+  void credentialId;
   return QRCode.toDataURL(verifyUrl, {
     margin: 1,
     width: 240,
@@ -129,16 +129,16 @@ export async function buildVerifyQR(certId: string, baseUrl: string): Promise<st
  * This is the OFFICIAL LinkedIn credential-add flow — free, no API key needed.
  * LinkedIn opens a pre-filled "Add license/certification" form in the user's profile.
  */
-export function buildLinkedInAddLink(cert: Certificate, baseUrl: string): string {
-  const issuedDate = new Date(cert.issued_at);
+export function buildLinkedInAddLink(credential: PublicCredential): string {
+  const issuedDate = new Date(credential.issuedAt);
   const params = new URLSearchParams({
     startTask: 'CERTIFICATION_NAME',
-    name: cert.quiz.title,
+    name: `${credential.credential.title} — ${credential.credential.levelLabel}`,
     organizationName: 'RRRTX FreeVerse',
     issueYear: String(issuedDate.getFullYear()),
     issueMonth: String(issuedDate.getMonth() + 1),
-    certUrl: `${baseUrl}/verify?id=${cert.id}`,
-    certId: cert.id,
+    certUrl: credential.verifyUrl,
+    certId: credential.id,
   });
   return `https://www.linkedin.com/profile/add?${params.toString()}`;
 }
@@ -146,9 +146,9 @@ export function buildLinkedInAddLink(cert: Certificate, baseUrl: string): string
 /**
  * Build a Twitter/X share URL with cert details pre-filled.
  */
-export function buildTwitterShareLink(cert: Certificate, baseUrl: string): string {
-  const text = `I just earned the ${cert.quiz.title} certificate from @rrrtx_freeverse — a 100% free, cryptographically verifiable cert. Score: ${cert.score}/100.`;
-  const url = `${baseUrl}/cert/${cert.id}`;
+export function buildTwitterShareLink(credential: PublicCredential): string {
+  const text = `I earned the ${credential.credential.title} (${credential.credential.levelLabel}) credential from RRRTX FreeVerse — free, server-graded and independently verifiable.`;
+  const url = credential.verifyUrl;
   const params = new URLSearchParams({ text, url });
   return `https://twitter.com/intent/tweet?${params.toString()}`;
 }
@@ -156,15 +156,14 @@ export function buildTwitterShareLink(cert: Certificate, baseUrl: string): strin
 /**
  * Build a WhatsApp share link.
  */
-export function buildWhatsAppShareLink(cert: Certificate, baseUrl: string): string {
-  const text = `I just earned my ${cert.quiz.title} certificate (score: ${cert.score}/100) from RRRTX FreeVerse. Verify it here: ${baseUrl}/cert/${cert.id}`;
+export function buildWhatsAppShareLink(credential: PublicCredential): string {
+  const text = `I earned the ${credential.credential.title} (${credential.credential.levelLabel}) credential from RRRTX FreeVerse. Verify it here: ${credential.verifyUrl}`;
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
 
 /**
  * Build a Facebook share link.
  */
-export function buildFacebookShareLink(cert: Certificate, baseUrl: string): string {
-  const url = `${baseUrl}/cert/${cert.id}`;
-  return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+export function buildFacebookShareLink(credential: PublicCredential): string {
+  return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(credential.verifyUrl)}`;
 }

@@ -1,0 +1,3485 @@
+{
+  "schema": "rfv.bank/2",
+  "sealed_with": "1626f569",
+  "topic": {
+    "id": "cybersecurity",
+    "title": "Cybersecurity Essentials",
+    "description": "Threats, defenses, password hygiene, phishing. Protect yourself and your users.",
+    "category": "Security",
+    "icon": "🛡️",
+    "estimated_minutes": 20,
+    "version": "1.0"
+  },
+  "sub_pools": [
+    {
+      "index": 0,
+      "name": "What cybersecurity is",
+      "skill_id": "rfv.skill.cybersecurity.01-what-cybersecurity-is",
+      "items": [
+        {
+          "id": "cs-001",
+          "prompt": "What is cybersecurity?",
+          "options": [
+            "The practice of protecting systems, networks, data, and users from digital attacks, unauthorized access, and harm",
+            "Only protecting passwords",
+            "Only protecting government systems",
+            "Building computers"
+          ],
+          "answer_commit": "hmac-sha256:73e76b60d8f84b77592aefe45fdbc3a8",
+          "explanation_enc": "aes-256-gcm.v1:4Oowt7ZVV-AmN8uM:2mpYpk5QCKt4BvEW5Ky4qW7bnUmwbTwfVV6i8_KahNc3NQQRkXfAC5qQj0HNwAtoJPUYYUfBt4BI8rNSxls-Tsaa3r3gW96vNWuO4Dh5NkpElMh3wi977dEyIvRpDSEnkjKRrMll9XjMS8h_zTAYBo6S3UUu2fptkwnruPsOGNKHPDPeHZCnmKjfyWXk65TANeaKYuBvbl0zQ4oP41MLGjMvgAYWNC6i-CH7DKwfAJWryWeqx47X5MNugV2X2AjIvLS7vuar8xsF9t8gfRvgEPgE2cuXTWOTd1pcKDWZ9uG9m_URVxrC8YDvjeZtRv-GaaoCCYWCsH-6kh97adNL0Gndfqiw0hMaZTwQ1IR7B1LdCL-ZHKfuR_XIVVS9Uw2FMMyVWitFLqEhWc4qDpDRfie79A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.324,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-002",
+          "prompt": "What is the CIA triad in cybersecurity?",
+          "options": [
+            "Central Intelligence Agency",
+            "Cyber Information Audit",
+            "Critical Internet Architecture",
+            "Confidentiality, Integrity, Availability — the three core goals every security control protects"
+          ],
+          "answer_commit": "hmac-sha256:e7cbb80732b3d24dbf7f0e64cce7edc6",
+          "explanation_enc": "aes-256-gcm.v1:7QEltR0tGzVTgLcP:wJpJRCfKtSEoppYWiHaI51xyISN98B-tbxgOtlW2DVqDUAjLV-M8u0bDbwPKmX6ubBYLmDFJHEczsU62cWvAmKeoFpvuJ-r0VdjtOQxVpwl1keIo1c1LsI4yWUylTeXEJdh4gUGtzZiCBso32q0Y_jLgUPf2-oVWLEDCp-1NA56tQqbiIct1kz2pc9gZRD5QbyTBE6pKi3mMPhzDarx2XfauGVH4_30cZma8XGIvwz2zviGkgdh-j20gByetPZuGGVmEa7uKV_JLNnpCMHZ-nsxQghzckZWTyAwoDRKxwP3Hz9owlWPt3JLUEj80R4z_oCdsh6cV567s_NzVvdd1xybwbl4lXq1MkCyoJ7rb5nZ7WTD3xFx-IfKj2KPLu4N3Fmvo10c2SLYg1A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.167,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-003",
+          "prompt": "Who needs to care about cybersecurity in 2026?",
+          "options": [
+            "Only large enterprises",
+            "Only governments",
+            "Only IT professionals",
+            "Everyone — individuals, freelancers, startups, enterprises, and governments are all targets"
+          ],
+          "answer_commit": "hmac-sha256:5106143907d998a4d1ec29282eb5a624",
+          "explanation_enc": "aes-256-gcm.v1:uOVawUSMl1aGg3Bn:cqRUx8VP3e4mfDnI_-Sy8DGur-k2yJc2P3RhbLhyb5cswKU_gN_1JOHrn4qmY56oVHRGrFcXO22nbQ276_7vb2r5M91RNq0lUhAqa9r4l_NYZSroQ7LsDBDQbqceX4nM6kNQbk46k1kDP-JLi5DEj3hGhdLgxlrrK6otuHzGjIPhhCETj1gsCXefETwW3sfbIb1W4ts3ow4BXMTQ12cJFVdneEURNjwHvXkKr36zv2d-L8q3MtIEMarWJByyeF-ZWeobqo-qrpfvMRPOP3IAazujtIwHwYOS6fLvCfNaJiYQeq9nvKXm5nGg8Rhgzl0ws1oPZZu3Pzr4CFDKNl3a7j5_PQ2G8AgLMjnww0AhiCbfLlybA-6XjP2JyQtajCvNyrMQ6919sEP0AZet",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.136,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-004",
+          "prompt": "What's the BIGGEST source of security breaches?",
+          "options": [
+            "Software bugs alone",
+            "Sophisticated state-sponsored hackers",
+            "Hardware failures",
+            "Human error and social engineering — people clicking links, sharing credentials, misconfiguring systems"
+          ],
+          "answer_commit": "hmac-sha256:369225ad079f81e42dc37b84bd71f0eb",
+          "explanation_enc": "aes-256-gcm.v1:j4O4uzTjdffzkFGc:aR_KtpgPG6QPylcuoaHgAkCPA9f2jAhVuO2n569Dh8SRxfOa1ge97yfADD64eJsqJsRrR-4_koTWYOrqMz-JplRtUhtdE63zQn0Sp_-x0h0tNHHbWZhlTrIT9Q3Io6lzggVy9rqTH6sp3sW6WCgQzLQlZBYoBQe6uxyjgVR83mxKBnSp5PtOWX4PuyVbKiYu0eiiyq_-dMgwYcaK_4VSdIhSHtxk7_oHIfLz0pYbYiWJS06ttM6UCsWnvqtue6Ye5slQNimNcrVZERKeUGsH1UrpAq25J9EJ1_vMTqchXnwXTEc5a5xQPGDn_7M1yKsqrH1HT_QJojCtyE8Eu_0WV4SjZudaZgvnXk12oQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.784,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-005",
+          "prompt": "What is the security mindset?",
+          "options": [
+            "Avoiding all technology",
+            "Assuming everyone is a hacker",
+            "Thinking about how systems could fail or be abused — defensive imagination, not paranoia",
+            "Trusting everything by default"
+          ],
+          "answer_commit": "hmac-sha256:be6249820d6742e00806ce672c79f132",
+          "explanation_enc": "aes-256-gcm.v1:a0WPSh6MbjpdF-jg:eo7N3Rn8gbng0ztf_IxdWoDk5XLrhQmiPqWtfsMC2vLmVovYzzv4TRVeIANZc0OyfDDOVwtNshREJiiYPjN8UPiYm1v-SDiod4lCptA2BRfCblyIZycxuLxC1yosPEgwMbeTEcLq2MqQZ-O2RKjqpxF2r_-6QWyDpACYbyt2zjMSLMrd5d3mdpiFA3xOku-1fUO6zTsPSp8D993T38UNqp4p3f-7YcaAQYTDaA7ld7xRhPt5zlAdaG2Dqmj2TYlpRqFFbFhTjde79S0hohk8vN6yd9Op3oAp7fAUtXz739LOPVALyXkIiahlvEEYb0db39GrVMTp8gICjlLbIgpca8fONlah_tHR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.933,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Common threats",
+      "skill_id": "rfv.skill.cybersecurity.02-common-threats",
+      "items": [
+        {
+          "id": "cs-006",
+          "prompt": "What is MALWARE?",
+          "options": [
+            "Outdated software",
+            "Software that crashes",
+            "Slow software",
+            "Malicious software designed to harm, exploit, or gain unauthorized access — includes viruses, worms, trojans, ransomware, spyware"
+          ],
+          "answer_commit": "hmac-sha256:2937b7742fad0a9e652d82905e3f31ce",
+          "explanation_enc": "aes-256-gcm.v1:9p89xV5VFxAiuj-r:eCnYoDSf0Kai6mDlyJHGGuON4-_AX3FUVas8TXRK4220zJDME76js4aQ2rDSg_999v4t-7fam98C4h4-VqUopqiGTaC9mTANfYOIx_qvaa10TrscWTes5_OW20l65RzRr1vQtAMGLx3M-G4Mh7n2UeJTP77-AgSwWmPLVomGAv9Vg5obMBmFcs1_I2_0pHW039zZ8Q3yROkpyMCCnyQ1Ya5ldJ851yZGsX3dpjCNnYMkQO5FafTQE4lrHMJZE-YMNTm5xx9Wcp_5ivZ9v5rKSFa4cuY95i8XW-RsDURm3AApAK136ZKoUHCz2VQjFdQdzK2GZ1aiUIqByVw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-007",
+          "prompt": "What is RANSOMWARE?",
+          "options": [
+            "Software that randomly deletes files",
+            "Malware that encrypts files and demands payment for the decryption key — often combined with data exfiltration threats",
+            "Email spam",
+            "A type of antivirus"
+          ],
+          "answer_commit": "hmac-sha256:57ca0e69e52d883c20b2bd1bf3777c4c",
+          "explanation_enc": "aes-256-gcm.v1:3KsGvpvsghCCkndD:vSmYRURzEhuB9EbB_5RMg_D2pS2IhFe8H1BrKcDuULGnP2yU_TD4rFtCmeObGlDsVB5n6mD7qWrBGXoCrrdjZa6NlhIS2F3LoRtLgVnt-tVai4mTYB18VsFAupxrxrdTXXcxjAMikH5bZPICJl9-RG58wI1OgaI-DAVeCqi4f-q-FuHwK-gMQi-qmtRhrq9I68CGNtwjqx3EZLyMDq6lWuYzJNdz52-S2LuaPmjJ6a4yXFnhxWhuyMegydSWHYNVBvnWSpyafIacP4aJLbsii6DRVUJIfA6cwylO7usZa02liX0GVnIeUWSUO8cF2-zlnt8-5ewQOgJKSFjN_l7SDFkFJ-eYvrQbWyqNDU48Kkp7dWNN-8hWEg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.278,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-008",
+          "prompt": "What is PHISHING?",
+          "options": [
+            "Catching real fish",
+            "Tricking users into revealing credentials or installing malware via fake emails, messages, or websites mimicking trusted sources",
+            "A backup technique",
+            "A type of password"
+          ],
+          "answer_commit": "hmac-sha256:447820d09a35fe9384094287b98e4f7e",
+          "explanation_enc": "aes-256-gcm.v1:1uEjwJaa9t0tG5zh:w3_mArStdU1-fg2uOw7kxkruIVohPedBctQXWbHzuUCu9BPwsfkGt7D6-KW_EQy5RgxdcDCCCMhGYNQDuqK-tYCny4cZ5YzGTDDbXn6zXbst21INALBhvYFTqcDHlJpoYxCttFW4d6y7OfGc1QrV2oVKgL37UC9Q72gAP0rnW3r-v1lmPsTKXswNNO89tT0qx8Yjq83uTwRT5q8tBw9a8Z87dNFodSq5WPGG6Jk051i2aA81sY01EYLzr4NXaeb8gknJQV9Mp67XY5T2oDZBC2_D-anSeVspChNf89cmj1jtX8e29xC6ojzM02lPUsg_Sw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-009",
+          "prompt": "What is a DDoS attack?",
+          "options": [
+            "A spam email",
+            "A type of password attack",
+            "Installing too many apps",
+            "Distributed Denial of Service — overwhelming a target with traffic from many sources to make it unavailable"
+          ],
+          "answer_commit": "hmac-sha256:3f18433a5c6cb24bc613d7c15c294ae8",
+          "explanation_enc": "aes-256-gcm.v1:dPVRdaqZkuyJO4kl:ClqmN9tQvZRsnxJE808EYwWxULzEG1-vYp7Eze13MaJ967encw9-1mOuxYLG5Szc7GHJu9vJLZAGgIv1qBtKgq3scbHfCtZ_jcetiuabbItWpQ1xczViNdXvl3xfvtFSZ_NeUjxYI1lC1mUTkfCCM8cUSduOmDeHr5r2GgDQVxiwrZ29VoxZ2cx8C0xVrIRRy6CHOW3NNhZVp6GXEI1zjU5tnfYo7J9BLLWr8rOn3uo245eXzvj2kN5-6N-j-xPLXTjnmqYt_VCGK-PLw7lGTVz9DwSGFsNisk1MOK-H50lH7_ByOdCGzqeEscDnJIX4K7dGYjHo2No",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.28,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-010",
+          "prompt": "What is a ZERO-DAY vulnerability?",
+          "options": [
+            "A vulnerability with zero impact",
+            "A bug discovered today",
+            "A flaw unknown to the vendor that attackers can exploit before a patch exists",
+            "A patched vulnerability"
+          ],
+          "answer_commit": "hmac-sha256:b045cbc7a2d0a8f9c85262ba09100bb7",
+          "explanation_enc": "aes-256-gcm.v1:g69nykB4Cnh3vSYF:xO1QlPM2shquSyO80-9TlkvDJpffFU_jZH2v_LLIrfbIaoqGETmrlEw4okgu5T2zPBS3W4j8Fr0VZ0qZ8J__icTgibjtlvDY1ReOGzRam1PSBKpz47rudKr4UrHMO8yeUORc0LwLkxykaizmU4V68vTZ8wfzPI1x895BeT0guP8i-yo3QpF0KbgxePL5TB-_8d2O5LARjlQwi1FIr_HJ8eRWqDyGoRgtXT74mrVf0quolDrYqnawY3ukBoCuYzGeGjzUc6Wmm_eBCeVyUyTdZqmGX5N7yt4mTL3SIVAsPSMK",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.406,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Password security",
+      "skill_id": "rfv.skill.cybersecurity.03-password-security",
+      "items": [
+        {
+          "id": "cs-011",
+          "prompt": "What makes a STRONG password?",
+          "options": [
+            "Your birthday",
+            "Short and memorable",
+            "Same across multiple sites",
+            "Long, unique per account, and random — length matters more than special characters"
+          ],
+          "answer_commit": "hmac-sha256:b4835d50b71dedfb06f41c88f10aaa80",
+          "explanation_enc": "aes-256-gcm.v1:xLdKZ13Eg67bfckM:nZ8lvdGSgn85YSpMizOuinrJOGiZY5XpjcPKvBMVLKtSd7pjirWqmEmfxuWzFe9mxvdXy5u1GyD5MxrFkc29mo-hR0CDmtQma4gnz8ME9hnISJd-3CnbvoKut0lfaJMVRXe0Y9ukicszKDTYe4zAZdsILHHTb7oq15rdvFR2X8ueOJapZMOswUxyM0VOo43_xaCfF-W-W7KwVhvLvPwydrNhXlWCowY1rHoNkNPBn92egtYh0NuwnTGXCXDZQ1K-5K1xozUxpbYjuAUeIBO4F7Kf-usWlHqz9Wlx9opxTXQUtypllHXIkDx1OlG0nYGvFZ0QVVfQpRlyKd9Pq_QrauWRbAPl20g3ErV-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-012",
+          "prompt": "Why is REUSING passwords across sites dangerous?",
+          "options": [
+            "Sites prohibit reuse",
+            "Reused passwords expire faster",
+            "When one site is breached, attackers try those credentials on other sites — called credential stuffing",
+            "Reusing wastes memory"
+          ],
+          "answer_commit": "hmac-sha256:4a63a547c15e23757cd805ad6acad14d",
+          "explanation_enc": "aes-256-gcm.v1:u876FAFrGibPnJyy:l1p0PvZo1-Trk5a_dXDmyAJdQamUqD7I5Wu0IL8irmbZ_qZKG4hnuA52nTo5nWIfLWrPYGLtb2pTI8buq33hcVJU6ju5t6KE3y4hAGkWc8mKq1zGUb5xQ8jNIXT_n1HGsMUpb2MpIAuz4zCMmRfW3rIb-9z7WPh0GJXa-IaH_DKQuAWNG8gaUGkzB0SGdycAXWAMw3gxktvIIWV9slvj0oGwUb3aLlKocZmkvvsagj0CQDwdPNkIfwjSoij3XBCpuVZzELh9kYpi5PsGJWK-4K1PV-BXzZ-hUHrMgmrH0F2srAL4g4BfIdyIRf1upLr3-A1b7bYSXiJYiX3WFYDN0kHPxcfNuQTbs9GcXPU89oGLA-3Nowk",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-013",
+          "prompt": "What is a PASSWORD MANAGER?",
+          "options": [
+            "A tool that generates and stores unique strong passwords for every account, unlocked by one master password or biometric",
+            "A note app for passwords",
+            "A type of antivirus",
+            "A government registry"
+          ],
+          "answer_commit": "hmac-sha256:4d18efc8d2ca6d0cdfabbee3d2157627",
+          "explanation_enc": "aes-256-gcm.v1:a8r6GSIiu66gE7hu:2CjNTQo93o5NxzeRJzyUG4zHrqNG24XQdawi4ikpjjYTtB9WPohSAwZtIR1AVvGE-NBEXYLfhxnFrPiQXfrvLAC4Hl5uA6d9ykfXz54Kpo6NBFEW2o_ZWDTw7dALUKPMcr-9cXVLf4_lxGnkgNDX6pcP0aZubX4vrQHfw0g0lABeoL3QpBwIUe4Spa1OmrgGHH-kG0LtT-yoJC4SkxCmq1bw-2XGIs1UpI05G3iDaT2VExld6luViYoKLJQobcOjQGWkOWhjvD1t1kytWelaRpzNe7z2IuOQbAldn5rpwLPZ1ob7docdqtEeG6KfBKmnLfNLP1MdRWiVusy1ja15cAoKUmJbc9Z5mklMhftXu-5rmV_f0PABtA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-014",
+          "prompt": "What is TWO-FACTOR AUTHENTICATION (2FA)?",
+          "options": [
+            "Two different accounts",
+            "Using two passwords",
+            "Logging in twice",
+            "Requires two forms of verification: something you know (password) + something you have (phone/key) or are (biometric)"
+          ],
+          "answer_commit": "hmac-sha256:824bbe7d6dfac676d0d605337ddd35da",
+          "explanation_enc": "aes-256-gcm.v1:xT6m115Glbi7fbQ4:RszPkK4jmxeHs1kubdYUBU_U5EybeNcjJspcxHnbB6Hm2xzxc7wPp37VrCuRC6aFGLExR5Vh0pJk-3gATBpvZ6Xx0JxjaoU5qJcJIuSRW20qwhSjOjr4EWOmfMTZzMDsiYKHCJdghhBcXKXzeBOY02JxEXkiSG70I5opE-IdTVFhy3qIMd4esUta8cQ_Afg2OkUuV8eEqAmw4Nwmlbg2CeWLol5IHswKbwNr3m_yYUP29vlyUad3BEkkZeETR6oF5XrlW0e6UEKrMKsA-9M0bfzD2m_Edh4VplmpmdLu4JhEjbPeYb_GXYBvytqwj7vkS5celuphAQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.318,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-015",
+          "prompt": "Which 2FA method is the WEAKEST?",
+          "options": [
+            "Hardware security keys",
+            "SMS codes — vulnerable to SIM swapping; authenticator apps and hardware keys (FIDO2/passkeys) are stronger",
+            "Passkeys",
+            "Authenticator apps"
+          ],
+          "answer_commit": "hmac-sha256:d9e526a0b1bf5d9379fddeef796507e0",
+          "explanation_enc": "aes-256-gcm.v1:tSze8dUyW4JD6UWz:HFxip7804VaAh0tupa751-jJnPdK7gEIL0eI3ODL-Lg9lC5Pgx8oap4wHL5x4T9j98ogyd4FWCSB1IaOf8WGAVNYDnzvQRRaYQ1cVzzvfcP6sa5Q8KteUCyoh81VuQ9t9H-klfyjyLd0RC2jAIwkMEgx1shUNI_QREaAqU7fflXlP1tsdmeBkth1b7yfpLB7iSwemSXCz6MFmfIzJx40k_ZTJm24oFxFlIV1i0C86mMefV5ISddwD8FA_xBOcXeqba7V6xgk2xJlC-hZCfmUCZN-3bz9twaWNI5bRp2BCtrPpGRVCTMTnFtd-a6gMxt5y-58U2nwGtQhzhvR-HORBjx1bQnW70bPGCxe",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.818,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            },
+            {
+              "code": "distractor_contained_in_answer",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Phishing and social engineering",
+      "skill_id": "rfv.skill.cybersecurity.04-phishing-and-social-engineering",
+      "items": [
+        {
+          "id": "cs-016",
+          "prompt": "What is SOCIAL ENGINEERING?",
+          "options": [
+            "A type of firewall",
+            "Manipulating people into bypassing security through psychological pressure, deception, or false trust",
+            "Engineering for social good",
+            "Building social networks"
+          ],
+          "answer_commit": "hmac-sha256:e48bc3053982bf3e101df2769c8c282c",
+          "explanation_enc": "aes-256-gcm.v1:m8nNDqr7cTUjtndF:fBhss2zD043HIiLCWoTaHmWMSnoDHjR4V61dwgqpOhY-qSFKLwJf5ZDVpbP-PmemVNrTvD3wKmvzYY3F4m1ua6nX8FfY3feFrW2RQxB2HVSUp0uFSxZ7479xV4zd1pJ5J_xDjkJeEuI4F7zHeFyfQZgP3r0g3y5CZXlp0Y8O2CEkNzQD8MPNrj87aygYOTfrznd6yMqsA6SgKdo5VxmqPp0cA6jzZYeil6dJZAYDbNCkaN9-gWVudegGsn1fxsy34qviamoqsrv8XUr1divVBzLqsyc7qj_5AEYgE3KbPghzQwblRg4myqgl51TFj68JjDoixi0jOeemcj7hitef1C-ospc0isf4Gky1xglAJYGaGDtBDGGx",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.741,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-017",
+          "prompt": "What's a RED FLAG of a phishing email?",
+          "options": [
+            "Properly addressed to you",
+            "From a known coworker",
+            "Plain formatting",
+            "Unexpected urgency, generic greetings, suspicious links/domains, requests for credentials or wire transfers"
+          ],
+          "answer_commit": "hmac-sha256:8835b2ab5abc709437c85dbc1e5291a7",
+          "explanation_enc": "aes-256-gcm.v1:lmatsmftB9eo8Uu9:RqlAPvMItnqVWKIiHXQ_bK9oW7cQ5fLSrRHKdFf9QPuwYquH7pevfF-W9sQcHr2OkgYKu8JC3CJiJtaNpUCcvMm8hNIGGUZ58aNLlsjRagqW2yrZ7ayT5yNnlLty6CGPKlP_3937E088rEMAzNrHyd7-O232Ypgd26r5od-b5oLBGmEOmussRVyC7qBRvc3QXsEU5Oln4Ri96rjFv5WYC8kqv3R_sE8lbd-MQlv-qsKsB65sahG3QM_uxD0BvtBYDdVuJVlU4Letyc1p3CzCoHyMpdwX40Z868Brmuo-m0b61nJsfVsiud4J7fEzWPu1bg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.28,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-018",
+          "prompt": "What is SPEAR PHISHING?",
+          "options": [
+            "Mass phishing",
+            "Targeted phishing customized for a specific person using personal/professional details for credibility",
+            "A type of password attack",
+            "Phishing with fish hooks"
+          ],
+          "answer_commit": "hmac-sha256:ed65bdba7d940e99f05272ab97611f61",
+          "explanation_enc": "aes-256-gcm.v1:7LXPbj6FIS0DXS--:x2RT-5wIxiSNsZg1OL6Sv-dQ1W0UsWJdaKTlOI16UOqSKNiQrJ7gy-DGqCBjXJkKOJwUens7_Tc-N4hgxe1RVhhX6cPdLjt6y9WZZptuLA-S-1Nbgu83m6EEeI2KswfcrLrwhIrdy8zLNmuoGx_IzYdmZcujD749bvZHHMg1f19A_XWSRpiW7_Ju5zZF9mrgXZuJ5x_5XEz8tQ5KybVzVZlKQd0o18tdjOeQTXKJZ0fG99E0C1VByJyOMN6sYFRpS7Ibtoq3e9Fruq7HQIfi8sSpuSW4B945NTQBElxfTvnj9ZU2HZQJNY4twvBm_r2Rk3x7RBzpTmhBj4HWEZ5mtse52FdVQKmupw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.08,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-019",
+          "prompt": "What's the BEST way to verify a suspicious request?",
+          "options": [
+            "Click the link to verify",
+            "Forward it to coworkers",
+            "Reply to the email asking",
+            "Use a SEPARATE channel — call the person on a known number, not by replying to the suspicious message"
+          ],
+          "answer_commit": "hmac-sha256:7c9ad54ac2043d197c598bd353190a10",
+          "explanation_enc": "aes-256-gcm.v1:U07yLsgJW2cTqQsh:Pc9tkBYLpjye_OLfV9a0_RqWU18_HBv1r7qG2or6NgUhHMdrMAFY2sgLn7AmqZh3OJ60qF3TaRoSra7lO9LIzbU_5_rJ2PqBXDR2UziG5wkUNq4NdbDYBk23ltkKYrvr7hHmEoLdemKDgFslE8UV3RkybiP4qu2M1FrlL0RfP6B18bcVR5T1vHg8Cn_-00bFISoecCRdRbfUlQvT052y0T4tEiUovskcvotSv2JlF8DmmhRAkqPIbyDqjUPJdhBFiWdZRDjF85uiLrXNsu1SqS-R6M6pRVLFp2Irl52jP2GcfF5khK-1PkCan20XZYzYOecSkx41CobEfS0SaTPhImcE6bz4vq2Eiw",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.04,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-020",
+          "prompt": "What is BUSINESS EMAIL COMPROMISE (BEC)?",
+          "options": [
+            "Spam email",
+            "A type of phishing toolkit",
+            "Attackers impersonate executives or vendors to redirect payments — one of the costliest cybercrimes globally",
+            "Email server failure"
+          ],
+          "answer_commit": "hmac-sha256:fe9b5812591c9650e04f9bfbe5560220",
+          "explanation_enc": "aes-256-gcm.v1:FD_ZAlz1PsSOKO-G:RWVQyEgsqhDKKdDX8dNkSakM5pEuIWvEgUYh_CaX00CxUk9SttvxMtPkiiuZBvVYGfQ6iO050qJxKVkX4UUPKnO_hLQ-ctT8s4A1EEtUmHdyUm3wqR7ml1UtXOO3lpC40cAQu6HgkZErPIdDhr0T3PEqvuqj0tcxsAfOFoULIwO5caRfexvdaT9rnA-y4bQA4I59wqliqOWW01dR-upiTfnCPi7B4tuvvl9WSSSMXfSCM1LlbzpnKghKawOE3GR322FmbHXfxrpTNblo1smXL3vLVAJQAb6TfYNYRfSZpRXewyfso4B4yy3Ir6ynjWe6zXggJifeLyU0me2L7_6xHiJu3NsM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Network security",
+      "skill_id": "rfv.skill.cybersecurity.05-network-security",
+      "items": [
+        {
+          "id": "cs-021",
+          "prompt": "What is a FIREWALL?",
+          "options": [
+            "A type of password",
+            "An antivirus program",
+            "A security control that monitors and filters network traffic based on rules, blocking unauthorized connections",
+            "A physical wall in a server room"
+          ],
+          "answer_commit": "hmac-sha256:629ec98b98c2a9a6e4039587bb1d9ddc",
+          "explanation_enc": "aes-256-gcm.v1:Q3v1Bk_jq21Ph0Y_:5b7n1wbAHE3Qchg7srcyAX7hb0QYkSr1k6q_1NPnieQPOIaXkOvaMapZGIE44SfgWdIlpuC7HByDslXbH25dZ15xP6Q4GkmaUeqJyHo900TVDaZhYivlunFfFUDb05duo5dxjmqpdfrxgLvE396QRhK99uL1n8ytEkVBMgI_Ve_edZnfPqBsR36hslxNzm6xeQLOFNFeX9iF0Ak0Wkv1yVQIFesbJM-kkThUmcn-65dlB4qcKEHJA8QXebka35a-BmG1VavQBqtYSqKAARrr8JVmEJD98OtbfaRN3GEP0byV3d6lde3mvqU476rbcHxnIyvDEgWy0Yzrsl93PQ9Gl9Tj1TQ0Vv6ozZ8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.438,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-022",
+          "prompt": "What does VPN stand for and what does it do?",
+          "options": [
+            "Verified Public Network",
+            "Virtual Private Network — encrypts your traffic and routes it through a remote server, masking your IP and protecting from network snooping",
+            "Visual Protection Network",
+            "Very Personal Network"
+          ],
+          "answer_commit": "hmac-sha256:f88a107a466ef38d1da089ff2efe4a09",
+          "explanation_enc": "aes-256-gcm.v1:UbAiVgXh7-qw_7sk:zvHJ5H5SXM7_h0HB24zhwnLqD9To-FupVJ6Rw_--kiWtvpaIjMo7EYQEq_0tGY8pnGCvb77KPZZz5Qw0_Wb2DWlssf_ExZrnbyK07eAt7Jfsgjz3UdcnagjkahHz5JcIABsdEdyqghMmMsQ7aEwM1BlkuNgGhRYDeYFYORUhfiv49OJNxrVRgEgVS-94ceCT5HH5UQpulMpPpgYCctVUfYPceYKbRbdunuYlFDVpX8wTFPpeJIR1kGmUrxZPWEMlysY5nM87yuAFkPMFgdPWtf2iPgbn414DFKpckeiDMkbdGkddAxixcVXEU8YfoRhskxUVI4BTqkvhFEQZjCWud2hlpepwhMNiPMJp",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.56,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-023",
+          "prompt": "Why is PUBLIC WI-FI risky?",
+          "options": [
+            "It uses more battery",
+            "It's illegal in some countries",
+            "Traffic may be readable by anyone on the network, and attackers can set up fake hotspots ('evil twin')",
+            "It's slower"
+          ],
+          "answer_commit": "hmac-sha256:037b2bcbfaaefd55117fd88bc9734cc1",
+          "explanation_enc": "aes-256-gcm.v1:ZAYt2Bz7Ko9U1nKB:R2ShdrmL_XVErkC8T6j9AFom7nGAqzkt7VZr8BzBWQZFoEX2o3j0o3M0GypXiNoxSHyRHLl5Ab4NVcNsNn9Sx2HTSYDrunoyep1JFI17P3kgVcVSjb_3HVByoE3nTCa9nKfk3yhXENKgyGuLd60WNroPSiMOmMe97WewP7MP2sZV-3200y3H0-2kde9K_yidbxWvOVq9Fcmpz3cK8jDVEYXytgrHgVwEW2taYhj6dkqbnshIPcCXc4UQCDLTnsXWwDIk3HOHeAyRQ4hXdgAnerAwksgx-KHstUHX2-GcQAlRreMGTUfAP29ZfpxRO5OHD_O0_J1jVK1DJ5LsGVck-n-oqGVg2v8G",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-024",
+          "prompt": "What is HTTPS and why does it matter?",
+          "options": [
+            "A type of URL",
+            "A backup protocol",
+            "The encrypted (TLS) version of HTTP — protects data in transit between browser and server from snooping and tampering",
+            "A faster HTTP"
+          ],
+          "answer_commit": "hmac-sha256:9759f0c7368fd3783c6f65ad1bd32705",
+          "explanation_enc": "aes-256-gcm.v1:K3m2kjg7yWTeHfAu:rTXHdbLYxwaQsapsaRWJ6wRPVZBsNSYOa4pUOMadFki2y-Wci1D3dxGoY2gcKbbHDm6QhCJleNVKjf5GMMa3bVfwd-Eme9KxRe37lCCuBjXXSQoxXnIdVJfZq51870fAe8RmMXRVAz9mfMUTZ_e8GXgY2fLkYDKfaXxU_d6yOhvL8K9NlbfNhdYRlhf0a7NGHkxFw71uDnqjwH1_fKXaUYIKKbV_hRHuFvCrw6FQB5b1WfwJNcqF3kqtrcx-EiOo9-rJ4d7NNCCV-r07RC07rOpAWXNCARhQuBHrKzKJ6mcoYjk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.882,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-025",
+          "prompt": "What is a MAN-IN-THE-MIDDLE attack?",
+          "options": [
+            "A backup strategy",
+            "Attacker intercepts and possibly modifies communication between two parties who think they're talking directly",
+            "A type of phishing",
+            "Standing in a crowd"
+          ],
+          "answer_commit": "hmac-sha256:1cee6606ce3c4c8d8acf41b93f7ba5d4",
+          "explanation_enc": "aes-256-gcm.v1:ZgN-iZKc4AliCLeO:dqWMvwssrFoeQGSiIPVbi7qF14YpHGIZWKkFfSFmiNnZSTE_lBjfoa8TtyWXv2bTttTrN2Y9vMuR_jRE7emIUgwUPZSHAazyFxdVG2m7zRQA1AazwMMk-cu1WxChDyyLMmpZ4XQTKrg_sVFZrH0Mx9eWjfb-cLih0MpyfULuPy77dC7nDhVVpcEFUn7zxfqfHRPCIxnTu59Vd6nz7IejqgPTgftwPLaywhAbIwdexGFPpXaMpEYQ72qrve0afWzWmcP11Mw5CqFPasFmVOHmE7EHvaVN_r37zNaxvFzlsYE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.789,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Data protection",
+      "skill_id": "rfv.skill.cybersecurity.06-data-protection",
+      "items": [
+        {
+          "id": "cs-026",
+          "prompt": "What is ENCRYPTION?",
+          "options": [
+            "Converting data into a form unreadable without a key — protects confidentiality of data at rest and in transit",
+            "Deleting data",
+            "Compressing data",
+            "Backing up data"
+          ],
+          "answer_commit": "hmac-sha256:323f842816f05d8d08b7077b8519dc66",
+          "explanation_enc": "aes-256-gcm.v1:BMQun9qE5QggPacF:W06L5gIQqL1twNUjvlKBeXgScVzCKVWza0EFa_mTKL66o9vGUbjyRXa57l6IG0BBX5Rebo3boaqPKmMPuEuqHB0b0ETTrLMKUYpBMI9V9GlaQK7TMaR2wOu7Y6JqMtVhAYn2QM4Yu8Ol2iY-40dbUIaGJTuQOLEZbJyrrTnVoJubq17y1hhZNfRvAMxbSjEeIeqDevFI8W5UKl0j3_UnyyYHVxmrz8zssf9dVK9q7eDGC7iF0eMpHRhMpkBfZ7vFWaTWlDzMVVC7Y3DRRaiupymddn1EC5La8vbeoLavn3m25aYolfpa7c6MQASzI7i5CoJYzFPQ4U8RCN2IdwJ88iY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.875,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-027",
+          "prompt": "What is data AT REST vs IN TRANSIT?",
+          "options": [
+            "At rest is for backups, in transit for emails",
+            "Same thing",
+            "Only at-rest matters",
+            "At rest: stored on disk/database. In transit: moving over network. Both need separate encryption strategies"
+          ],
+          "answer_commit": "hmac-sha256:8617e7eea3fb4e738ef0d0fc8e529d31",
+          "explanation_enc": "aes-256-gcm.v1:VQngDREUS61SOhn3:NOq4bKXbuvitOMHQXTW95iV69ALRf6EawYl9V4qey8kyop1BXaHNaJu2tqyYLQbiQ7VsayWoW5ijPoLksRKPZTb7NBqTCt0IBgRAZwpUF1YNzjXwcV-FUTHx4h_FiWileksIgrDAQZhMRvxfYjb2PuU62DOwVBL6JonTetoquO4sOgZcK13FJZN7N5nHW4Lrw16r7cE0h2J5z4bOKZVBQKD-7mm9LC0co7qBlSsKmJcY68RePsv3hyg_I61lWeXrOoWk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.378,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-028",
+          "prompt": "What is END-TO-END encryption?",
+          "options": [
+            "Only sender and receiver can decrypt; even the service provider cannot read the content",
+            "Encryption that lasts forever",
+            "Encryption with no key",
+            "Encryption from one end of the country to another"
+          ],
+          "answer_commit": "hmac-sha256:20c6ddcf8a6950fa693a1f78c61d97ac",
+          "explanation_enc": "aes-256-gcm.v1:mKLuvfUuvG9cPYqG:lKCD98Qc6ApC7Hj2dsW8H7ziymj0pbbI_PMP1SJvBb_2n5VRgUYjDwRQcVllAUqidR--LXIm-ugHJA24_ia3N35eLrOoRPFPIDQ4No4Xois7efbaE1YM1NtXDnBDBadVc5UAvk-T7W-Xp_gGj3RyhFKVoACZFUNceFhRgF3atdoszGajtnQS9QMHGtBSQhdTC7OnFsaktRQXuPEoeNpvPH8faUhpAhfhB2W2OaiJczCtzU-gvb_EZYafsOb3Sd2h6TQ3Xdtu_kqVNgmWZuyy4R0H_DQqb2qRcNwNzDaSgUaHtsZk9YHnRsIOTUWrsxWl-cjs6WgzFaxR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 1.776,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-029",
+          "prompt": "What is HASHING and how does it differ from encryption?",
+          "options": [
+            "Hashing is one-way (no decryption possible) — used for password storage and integrity checks",
+            "A backup format",
+            "A type of password",
+            "Faster encryption"
+          ],
+          "answer_commit": "hmac-sha256:b935ed59e2f9b16a0a8b394e89b559ab",
+          "explanation_enc": "aes-256-gcm.v1:Vjkplx09yufUEiyf:PHYSAzor9My8gDIPSfzcKYbRbCUkMeecum49oB-QIclJzyVs7XjfHr2xz1xjz5tk5WOr7SAtyyADQdeMXaGdWBMb5NwCe2Dmh4kIU-Jbu_uKfRZNxkr4JEY1gMIBrKUbjDzfQgQBZENWYf-zJ033JW3Abu402gDq6nevdlBaWxTF_3MTWkC2-JHxfWrHYIIFnpSPM8uv32JmVfZONoBJoo7f1hmbihaNwkUoeGpMmw-BPaocAU8pEXH0fsNUMPRjSjOIx2TXES-xNZuICZQH-CrwxNH-qOzFw6pXlguDnSvY7G6gnwYWSoObYEGWaAHm7KaGtb6rfzkOj3oSG1_bFBOgmJ2lNg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-030",
+          "prompt": "What is a DATA BREACH?",
+          "options": [
+            "Unauthorized access, disclosure, or theft of protected data — triggers legal disclosure requirements in many jurisdictions",
+            "Slow data transfer",
+            "Any system error",
+            "A backup failure"
+          ],
+          "answer_commit": "hmac-sha256:ad4c601fc0693793065746b1ca170243",
+          "explanation_enc": "aes-256-gcm.v1:eCu3xTNaDgIrQAzM:kOxAIInocfsztkqxZEmDzZx8eAtkPT6VJXYas7g3GuDhPj8se7UnvUZUSHt3Z-557yw1oXJO78YWDYqcQIGAh-O6oxkCYgxUQEvUYCA3Zm2hvCGGIaBTVDcWcBt5bdQ1bM4OOZ97YNb4mgvejgYzpiBisxWYWWsIDvfx536jvY2QfsnCSk50qqK5hGMu9ToTLTdlcU0tjmn7urHxTG59Il7IiWbgEpZfekEx2m97k1Z7ShRil99XKd9zoeWIXo2_yRqdwmLxHGQpEwyVvZGTzhArmivWJcAUbp4ZjNruDbfRP8rDliR7yAJEW1J0zD9HRZm4wlH41w",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.778,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Access control",
+      "skill_id": "rfv.skill.cybersecurity.07-access-control",
+      "items": [
+        {
+          "id": "cs-031",
+          "prompt": "What is the PRINCIPLE OF LEAST PRIVILEGE?",
+          "options": [
+            "Use one shared account",
+            "Avoid permissions entirely",
+            "Give everyone admin access for convenience",
+            "Give users and systems only the minimum permissions needed to do their job — limits blast radius of any breach"
+          ],
+          "answer_commit": "hmac-sha256:cfc6a2bc341cb97c2bf2970529b9f49b",
+          "explanation_enc": "aes-256-gcm.v1:NK-pxnayk83sZPHH:eK50m2WU6ClBybCeUftAKxdQhMBtX5oxD8JWrcQZEXXoYf5glXDEkGyc5v2Z37oJWOxGxWy3cqfJ5kBtYIWlm3ecPJv2Lrzw6jqTB7g53WhLG16055jDjOOfJ5YyawP85lmqIY9QIAJLcfFFs1WWIYedUuyEREfAyT2kYlZ0sqjP0ptrCykMutjy82odgVsMEXQUP6Ne-iSVGAbmyKwq1PHl_zMPFzrs0IGLePSJQ-soIBUi_rHGnUHbMZDSkm2qlThy1xBZl4VaAWnpdQqVfkstp6SBMqkR4KJyL3FFYBVWO9cPh60lufAvPH64w7yYI4lDQ6NcP9OQ--c6",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.619,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-032",
+          "prompt": "What is RBAC (Role-Based Access Control)?",
+          "options": [
+            "Assigning permissions to roles, then assigning users to roles — scales better than per-user permissions",
+            "Random Behavior Access Control",
+            "Reactive Backup Access Control",
+            "Real Basic Account Control"
+          ],
+          "answer_commit": "hmac-sha256:02596fcf33e7902f5a8dec823038ef55",
+          "explanation_enc": "aes-256-gcm.v1:fAgl4V7YFSOcXcUW:tiTbKiKCSnFa0Ev1ZcEpGa-xaFY7hWMtR7w0LmfNFWgmskt_8QOvKm8R3RRYMpNXAof6GJs-SvWPL3mubhOknhy8G1DWIN-74RET_bGqjg0sVdf8VNN11QZ38q1IRoGeJ-glPcozJcOxFEq5zYmV7wEnzyO_NBaoLK1oiDHR1QhE1ibWLEA80_HWZU6duPx8tY9a0d1WeiVuR_N1nOmJubvlXZB_DvoPGEwcL8hxaJTATC4mM50zAHTB0_G8MEt1l1MPDKXJP19yWc-STpuDQvB3Onwnt47lSDtlFBhAokD11i8K4-kRBbnttnMF0D53ihkQ6RxPJoYd1K77VA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.433,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-033",
+          "prompt": "What is MULTI-FACTOR AUTHENTICATION (MFA) versus 2FA?",
+          "options": [
+            "They are unrelated",
+            "MFA is the broader term — any combination of 2+ factors. 2FA is specifically two. Both improve security dramatically",
+            "MFA is illegal",
+            "MFA is weaker than 2FA"
+          ],
+          "answer_commit": "hmac-sha256:69f086686da745a69971fa601fb0878c",
+          "explanation_enc": "aes-256-gcm.v1:UtzolR4ZXsCN-ppB:AMzBF8Lip0c-GJeRKFLBiAj_4T3P2206oY_mDObkJ60rC9md4WGo1HHIZqPKLkqOd6OnJ_vl7SZkiaIgBI3LTkwc9b8XBV6Z4EXwgH4TnDMSZlvrr_0Zh5CPCkJTy4XOhPl02OaqqnKIeczroTL_0e80bPIl-T8OX3nH8jVsGYx-H3HyfQsaDtNG0-KNF39GTTN4ko3l_gnNUvSpvjpsoVtRvFuIl01jyX2-rk5DiR8PYcX8yqptOAYfb76hBYGCKHVeJcof7HJ2mWyeVnOiOjatnu4D2ebCjxYByPEI5Qxqm1S-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.273,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-034",
+          "prompt": "What is SINGLE SIGN-ON (SSO)?",
+          "options": [
+            "Sharing one account",
+            "Authenticate once with an identity provider (Google, Microsoft, Okta) and access many connected apps",
+            "Logging in only once a day",
+            "A type of password"
+          ],
+          "answer_commit": "hmac-sha256:f8bfa31893d89d9172c73a5d4e611eaf",
+          "explanation_enc": "aes-256-gcm.v1:HIFgvl9bGpH9yJXn:aKCAUTKEcKO0WQz2CY-Rer2amLBMFCZcHtx-PWU6g-zNoPyDP08VWdfJy8QIU79LNDwXHaUBNNHNfHX38UKbcacxqVuZupsawBSnItrxvAvfs8jmdxpPtWGFZwqeY_VpB7Udj6AVAqM90VY2Yb7qYhXOh0cvNa8PAkH25dETEiWmT8whzvG-jLFJVUGNA1lQKw4SWL7HcWNhlxpKAreKgrLq09ZTZKys8j2I7mVp3k1jubtHD452l3ReWQ_HZTLxjAvbyvYMMdieZCgOBmEknuBz8CRn2YblV6G9cX_ryTvksFkRmJU-",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.846,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-035",
+          "prompt": "What is ZERO TRUST architecture?",
+          "options": [
+            "A type of firewall",
+            "Assume no implicit trust based on network location — verify every request as if it came from an open network",
+            "Trust everyone equally",
+            "Trust nothing ever"
+          ],
+          "answer_commit": "hmac-sha256:a0630f1ccc29dee72b329453591c123b",
+          "explanation_enc": "aes-256-gcm.v1:NEp1GxWQrLTBRV4-:ELby3MQNo0wE6q0lxFVEP03z9Ajr2oipWEgSqu1a_2lUU1VnB3lhJm2DkpOP4QRC6rVDxwIAjycE1p77IJ4QUSBW78jcX_Nz8ZPgT45dBEWUeKJRoHeoMj58VwhA1i73be96-BQb8eV6aFzuQCtPqits5joqShQHTp2M0Kq_DoLRY6KedlNd22w0_VnaL411V7-PBeLOki2e9IWG_-8TgXmljNQz3_F3LetxJtz6hP5ni_5KKAOSnrn39QSelcouOh0dN-M5TEKcVpg7Oqr613uBo8Ngd0n5ITdy2v7jsmjLjXGbAQoy4bbBaP8OKxZbAsWHoQSQ9iA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.909,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Web application security",
+      "skill_id": "rfv.skill.cybersecurity.08-web-application-security",
+      "items": [
+        {
+          "id": "cs-036",
+          "prompt": "What is the OWASP Top 10?",
+          "options": [
+            "An award for top hackers",
+            "A regularly-updated list of the most critical web application security risks — essential reading for developers",
+            "A list of best security tools",
+            "Ten cybersecurity certifications"
+          ],
+          "answer_commit": "hmac-sha256:a5b6bf81f4f8a33c04aba2d3d3d8e4d4",
+          "explanation_enc": "aes-256-gcm.v1:8NiTiPSyuW1oL8WF:QNAg-qEoHIoOsMtioH7uFTNQ7nN4KYd3-czZlTWr0jtbXedFW7gei3JUnK1FFFYRjwBDHdi64oDbalE9PlkZA6XxuEtS-3JF9vR_J4lBhBbkWDLu-7qjzULY3GFrpElPMOFPd6cGFsTdviOBGbcJt-4S08XFVsiNFq89Jh2TsLVIM6SWQBj3FxBKbpMXfNyIu8rbm0x8Z0eu12DEJrcQB9yg_im3DfHG23Rox1Lk6BpGF6xzHyfk4XI5WCOZM5NhdA2Dv0O4cYLaH_Kh0qC3hERzVfGwclk-BUFNKr-tjPCWgK1Obrwr6OXPOlvePfFq4AljnT9XdjE6cyyLJ8SDE_UM",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.469,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-037",
+          "prompt": "What is SQL INJECTION?",
+          "options": [
+            "Attackers manipulate input to make the database execute unintended SQL queries — preventable with parameterized queries",
+            "An SQL command",
+            "A type of backup",
+            "Injecting data manually"
+          ],
+          "answer_commit": "hmac-sha256:a9ab1d46797e823f8fa33bbedf9573ef",
+          "explanation_enc": "aes-256-gcm.v1:khJGQ7Q61ok1jdO2:l_U5opkNykBkxnyDF0UMkA7BZF_A8OI7DITV-sA9CiZhwj3DlTbfPxkCmPGxzD24qNQVEy4cLsAttwErJPeEkQrOhyyNXy5FTqweFF3i9CPif8go50ZSUTXoKIJs-bAmjNY68be2WJdiN073Jt9j2yFo3Txwc0GGfIBqrIgpwzzxJ02giYotxsfLzF3h9ycCfyjXZFa5XsZ_7nDZxxgLDahsm7uzrl9SIfEBAIrCSIv7PrKaSZIU-ncmdUchQ7uvG2Rh5rOaA7VSKLBP6-3lLcIhgbCppLJIjnEfWhpNsKpUM0dTyJE3z4K_z_CnuwrqIIzO8_pVwxUJYHp7DoTmDjACDOeFtM-VRPbIquBGv8KIrA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.174,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-038",
+          "prompt": "What is CROSS-SITE SCRIPTING (XSS)?",
+          "options": [
+            "Visiting multiple sites",
+            "Attackers inject malicious scripts into pages viewed by other users — exploiting the browser's trust in the site",
+            "A type of cookie",
+            "A backup attack"
+          ],
+          "answer_commit": "hmac-sha256:54e1b0f936401ce2a0bc50d2ff4d5c06",
+          "explanation_enc": "aes-256-gcm.v1:9iQlHv73K7WJAnS_:DmQvNVkLxDmk8TWNcDFMkYAIp_v199ME3j8sa67FZ0fIB1qaHrKLHrlSCoQs1Z4wTaDzfm2Kj3lsmpSPNy9uI9DZTQctYevC861KQCwyI5ELqcHh3DiFjKk35tjEFhW8Urrr7eQwKQADz4Q7tJ65lQHFx_rJAbT06vgfpfpkz74OYBvH7Vttsgg6jpVsQu6-UyNeHEhu78UiRSLPeGxnEBggPbQe_ftR59-od_weCGaSvXP6qCvc2QJqR3z0ZfrGWf3xQXFSZp80Tipku3nFaDU2WPqggzmsfrY_jjj1m_EnM4TP5iKN_Xezk5U0cs5-En5XcEc615Ii0ZbA3WhxzSb3k8ZT1vll_TW70x40F5VJnghu8PzET0wALbUeUZSZAyAAZ0FF48nD",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.87,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-039",
+          "prompt": "What is CROSS-SITE REQUEST FORGERY (CSRF)?",
+          "options": [
+            "Cross-browser testing",
+            "Trick a logged-in user's browser into sending a forged request to a site they're authenticated to",
+            "A type of phishing",
+            "Sharing logins across sites"
+          ],
+          "answer_commit": "hmac-sha256:938056b145ace40d23eda54d9fd22d6b",
+          "explanation_enc": "aes-256-gcm.v1:X5TQEwZba-q95_R-:iFxUfdGv15bQNlkZEHOty1fCcc76MalIYtW3hW_ydRK06usdB047M_NqzMKmaSVXQ4fsfa5Cz-x1kC4CsYOkz5LehG3mdX_VVNONmBRC04IXB5rVw0u7XjeOKoVZ2_EoSarsAGB8IzgaT_IOJS5_MpCJM9AcPn-mN-hKpbSIudSHhh-vTdwGhDgqr0gBa2QQv5w6XBidnyM9EwOkT-um4iE6uVOzjvDiow8GE-oVDsX92n8AGGPVgv-2CKP2M9DGoKUsx1egPIq-MC8sg_c3eGNKvD8AWvX93BeN71rnmFkLOWaPBAIfx9e7wAUB3SxY3goR",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.593,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-040",
+          "prompt": "What is SECURE BY DEFAULT?",
+          "options": [
+            "Old software is always secure",
+            "All software is secure",
+            "Defaults don't matter",
+            "Designing systems where the default configuration is the safest — users have to actively opt OUT of security, not opt in"
+          ],
+          "answer_commit": "hmac-sha256:a6ceaa183c302729e4151afb9df22c4f",
+          "explanation_enc": "aes-256-gcm.v1:3-5QUDWP-MhIoSyh:icK-SWzXG0MNrzg3AnGHDZD9-52qnafsMtFzzE6UFGQT7fIf_U5TSxyVTl-kXYcxNvtP2Vt1PD4gt97aEeLSO1uBnjzXQjvWIzeSFmVB8jhshbT9QaV56jF9aedTjGLf7qRM3suwrEUm-k81yqtODaoW_fIxN_917qzKfOYR2OwjKA5_R0FwOENiMSRSU52NVAoCqPeOuzaziB6tooYotXK-QMoxUM45VTin7tFBYvbnwzxhWW5-aYQ-AqiPoLP8kY1l6yglL6EWNOkIlgaQiDSPJ6eomhJMrhS3nSHlRnx4_FNNjJ3HrSIFNazbbgzBnf3LFZj3FSWhV9AQHLk32xOU8av50Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.138,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Software supply chain",
+      "skill_id": "rfv.skill.cybersecurity.09-software-supply-chain",
+      "items": [
+        {
+          "id": "cs-041",
+          "prompt": "What is SUPPLY CHAIN security in software?",
+          "options": [
+            "Shipping software via FedEx",
+            "Hardware delivery security",
+            "Protecting against threats introduced via dependencies, build tools, vendors, and third-party services your software relies on",
+            "A type of firewall"
+          ],
+          "answer_commit": "hmac-sha256:405b9ad44cc0a645902ef6748416faa4",
+          "explanation_enc": "aes-256-gcm.v1:uVaJnwzq5kC_QQNI:pp3CfbKI3O9CmElfESpT4PmGJo1nUOHLb1AwxOT190VBa2mlSK6_SiuCmNcXQ_LvqeA5B_nf_4mZ59lfrFdUI0oj23-BhJCdlj9CsOs8RInB-3toYD1ya6C5j98qi1ntfB4J_wa7AG-RemLdqizbgnNA2i8qLqtG-iitf-mslAXcp0wYDc2gBsV00oSrwGbuHoJ0MiwQYuH9-BcGAHvmA438PCM7_KVUN7Ej-zRhiGnDsK4cef20z8R_NbTwbfn3V-hBuEa8EtkQt00sePPWZ45fs5EArj9kN7zCuuqKrzN69RaWzutUpp1yVD3RGoY-xTNxumuT0E6qeG0",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-042",
+          "prompt": "What was the LOG4SHELL vulnerability?",
+          "options": [
+            "A phishing campaign",
+            "A type of malware",
+            "A password tool",
+            "A 2021 critical flaw in the widely-used Log4j Java library that let attackers run arbitrary code remotely — affected huge swaths of the internet"
+          ],
+          "answer_commit": "hmac-sha256:31d57f67df3d65d0aa7ea7c4db70d864",
+          "explanation_enc": "aes-256-gcm.v1:shFaiSx0mgqtHoCJ:1-W3o7Z-hgmxLrV45vE-rYX7ZAoem66-dWItNdPWoigysl275ds8_EBCP6DCwTdlwXjAfgBp94jfy2IPdhD0VxQDrCkcPxwgJzFoBbIRh012zCsvYtvg0maAMS5CIkWzxhbFZvWhAzb2WMnIHipnX1MZ1YTOnYHFSTmapJsbaUsjq_6-g_zW4rTz4GmmXUIm-vh0VI2HYwpV1uvsnySpUfy1turF5j6QfXN4TKKatSjjgONV7SumhQBcKPzjCm0P2N3VZCr056kVFH4cKFlT5n5Rc4sDn2yQ7GXEyVzQtOg-245nkh9qozd7B5wScA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.579,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-043",
+          "prompt": "What's a SAFE practice when adding open-source dependencies?",
+          "options": [
+            "Use the newest version always",
+            "Vet maintainer reputation, check recent activity, pin versions, use dependency scanning tools",
+            "Install every popular package",
+            "Skip security audits"
+          ],
+          "answer_commit": "hmac-sha256:fdf6f7513737ee83de54e447df865cec",
+          "explanation_enc": "aes-256-gcm.v1:a5bhF1qoOk6_m1zq:P9AdzOc0tl8_RBblIHiCI0TXJXO0qqpNvfcm7PQBubEo536q7VCE9HEt3FSA6K1Vyo_799CW8Ncm4yyDSweUXjO3uras_u3pUZaqFbvGt3tsk_vHjV46dnIN0HZsQutlFmKSYaDKvIbZ00f-Mr8ddwBmOG9DwaSy7vmYiJ7bHTRZ4TWqt-_V9UBC3QTD_77TWazQDbdaALv7962Rm0mbR7L_a9InLfjzmeJn-ZTdCpLwkaf3F5JrOKulp11BoYDvFwYX3XjWYsRyfmtdGP-G5ahd9pG8lSrMGA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.207,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-044",
+          "prompt": "What is a SOFTWARE BILL OF MATERIALS (SBOM)?",
+          "options": [
+            "A formal inventory of all components and dependencies in a piece of software — enables tracking which vulnerabilities affect you",
+            "A license file",
+            "A user manual",
+            "A purchase receipt"
+          ],
+          "answer_commit": "hmac-sha256:faa5f551c85b51cf1823bceec8e93fb2",
+          "explanation_enc": "aes-256-gcm.v1:T80boNwHMrIf6x8f:cn-CRQ0MLq0LC2nIPOtH2ZfBCKD1j3QV1o6IhK96cYrNXMh95b0JbtQwtzeINw_nI-wW_kUyQj5mbp4QLFX7yiS4OKvJsdWFHf-SLdudpF42hDNLv-7nCfQjhsyRerI_ki3ZDYtILSNqW6tcS7I9QOrihHP6eBCKVmRojeLZYUpthAlQtiGqEjVvlk50IU1XwcyWzoKLJsKszne1r_uR3SyNPSXWNOrEdJpkyC8jCSAEfr-ipeNIyb0leTaQv2S39m4M3qOgx3b_Wv4Hy2Y",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 7.111,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-045",
+          "prompt": "What is TYPO-SQUATTING in package ecosystems?",
+          "options": [
+            "A backup technique",
+            "Encrypting typos",
+            "Sitting on typewriters",
+            "Attackers publish malicious packages with names similar to popular ones (eg 'requets' instead of 'requests') to catch typing mistakes"
+          ],
+          "answer_commit": "hmac-sha256:5e9b178f9c5a3c2d2ed4e26a64a5bc9e",
+          "explanation_enc": "aes-256-gcm.v1:kDcQTjNabJLA1-KN:athQWOebF3iaqnlbV5wsstPMu3C8tUMm8NjCI9CdqCza15TovDCFHLCfnne3foN7_OK_4mdQ84vVElEbxA5N3HWjKucoK66i470DgQL0Mcb2Ykm8Eq-QKnYx1PhW9Ld6WFloIGG5VILOy3FK7x4gZHt_3eOEON9HjGLtEa46Csc-959et5ofrq3G6gtVZm8l6POYbwrlE51AUpMItYAj5HeH1bMLDxtSq0BT3eLhhXUQ8b6K3GPU4niKphi3yi4TI7c_AkQwvVfnlfoKT4N4r0oUI2m4V1_qohgAJjumUK2lzyAdz0uwq8y9r14xIvc3xyldQxuAWONVAFAdyQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.045,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Cloud security",
+      "skill_id": "rfv.skill.cybersecurity.10-cloud-security",
+      "items": [
+        {
+          "id": "cs-046",
+          "prompt": "What is the SHARED RESPONSIBILITY MODEL in cloud?",
+          "options": [
+            "Customers handle everything",
+            "Cloud is fully secure automatically",
+            "Providers handle everything",
+            "Cloud providers secure the infrastructure; customers secure how they configure and use it — different boundaries per service type"
+          ],
+          "answer_commit": "hmac-sha256:4288fb88d5794a7fc83f0ae75ad1d519",
+          "explanation_enc": "aes-256-gcm.v1:Y-A-P-6zE9xzJqGP:v4rDwN_91-zZ_cjdN91my58LmYYTLFeo9XZCFdGGiCXkpx4VRiaZ5mVJb32WtxruunH6MVVubcC2q2k3V4Ciy2CFHvhqoQ1_165Vy0k5cJCklGm9nifY0-TAcTQo5pC7d8zkvpQ78pUrtZeo6NtYFSncBz3qlYKnXmQWMmOzWImfRtkvWHUVdrs8w-J2wAPCvTluKHyNTbyqJjnVxM1OqmQz7siAtgLvQmfnou5B6wplfZ9h-R3GF7tR2hMt72akiOpBI8ict3mFsT7-L6nlbVzABDCkS0MyP7lqXvwEG9GIeIkVwOR6EKVX8W4X3cE2aoHlnBrzZxrnKH3K-25R",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.686,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-047",
+          "prompt": "What's the MOST common cloud breach cause?",
+          "options": [
+            "Provider hacks",
+            "Cosmic radiation",
+            "Bad weather",
+            "Misconfigured cloud storage and access controls — public S3 buckets, exposed databases, leaked credentials"
+          ],
+          "answer_commit": "hmac-sha256:0f1793c2e910e87115eccf0af5235d0a",
+          "explanation_enc": "aes-256-gcm.v1:-3hbvomCfGYyLQT_:6PNWGvgLlJbCImpSRV1NVR2_KNMlNqpvpitKSYO82N6JMMoNMCtYnHeB05z0k9G8ul075Ks7D6Z767wT5o2YPzD5jH0_iF4T4pzWnxYEl5T9lsOdv-FPphWzDHeT9yN5sMbQuRcIXeA1Xfk2nD10NfBLcpbniIKPbR9IbyJJhRoB0KoKHtY5ntXEKQ70sBV7xOMdpuR187CKTXFW9pn6aHLILL8n5ZakCbjFopPbn4vyyTcgtUWhFQ78rgpI2nZfMi6mpZqnaHjkToMk2r4vlbl_0LqLMowVEGqlaz_oAyPI4s_AP1ULM7-i37duj40L2pmqeNZlRt9EIHOFMC86Mh3u6IA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.625,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-048",
+          "prompt": "What is INFRASTRUCTURE AS CODE (IaC) and why does it matter for security?",
+          "options": [
+            "Cloud storage",
+            "Hardware in software form",
+            "Defining cloud infrastructure via code (Terraform, CloudFormation) — enables review, versioning, and consistent secure baselines",
+            "A type of malware"
+          ],
+          "answer_commit": "hmac-sha256:e4d320a76c5b52dcc464eb98929b1dc2",
+          "explanation_enc": "aes-256-gcm.v1:9KBW8slZXQZhumE8:77AJYVHIa3kwpa0FE1NCGoebWWCnq8_KULjI9VsI95jl6LVMcYUkX8xc-sOeq1UVe8twl0CxzbIjZVPyNUesiF8AzuJmGmoSi1JvsvHG7y1o5Q9ozFu_b2AmzZ2KTQdDcf_MD2pL92y1Jf44oArEAzH2qje4NHnIAXJGffyz5Up5plhtgOEuaSTKl4r3DNbbU0WV1CCTxPKKFJK4VI3oDS5_jmjG7kRaHtG8a5FV0yVBVv1_NkUZcitenguZZhg-1shgQnw-6EeZe688oSysJqjgbGs340USbSpTi7RMdcswxB4uF_kGR7GyxjvgdBI79BTHmVY1xifi4Q",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.12,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-049",
+          "prompt": "What is a KEY MANAGEMENT SERVICE (KMS)?",
+          "options": [
+            "A backup service",
+            "A managed service for creating, storing, and using cryptographic keys — keys never leave the secure hardware",
+            "A virtual machine",
+            "A type of password manager"
+          ],
+          "answer_commit": "hmac-sha256:af0dadcafd5e9fd036605a6c7b68ff8e",
+          "explanation_enc": "aes-256-gcm.v1:UV4waxhgECNw-Cre:pNc0cYclnmznnpwAdu-XmfpaXcUA8BP6cHrGo-UtCfCAus-cOuLSB-IgSnYSYENV0nT-ceK6y-Fw4Xae7ue3agX2TKTTwQ3XtD8xfTYeXm7Ejb85uKCUtAX53wBzwqVDcFPlkBjjN2KPhESqyJAyZbdGmyiU_CEnDjv699Wf8q9PcHCw4ejUoWhgvcGcayqpIcfnYnG8UKVLIpfPT6s8XZ1kfGbVTQ0ZF7Z0dnKXezESgiVQRG046bQ8AbYR9px3SUhsNi1xirCDmZaJjkdvqCmMrZPlhc3RhXtujNobETa3ssQDAQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.154,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-050",
+          "prompt": "What is a SECRET SCANNING tool?",
+          "options": [
+            "Antivirus",
+            "Spy software",
+            "Backup scanners",
+            "Tools that find accidentally committed credentials (API keys, passwords) in code repositories"
+          ],
+          "answer_commit": "hmac-sha256:a62b6b7f0b9a22446f28dca7a15f7ca1",
+          "explanation_enc": "aes-256-gcm.v1:l6WWWPehttK6MWmM:l6SKkiRyQksB-k5YMiP6_Fug_3Q0XQH4BZEI7WZIOgZhdjvSs82Do3S_4pqpvro1lJra1Ic39iDPNEPVGdidgJ9pBNAdS0hgJo4dzsmA81tAM7jdXxtHkiCQ0cKmwyqvk-ISnzCe5yXfMT3Zg2FRO4fKuYtAmRUoLLWxPass9_b7-dmXdMnZJLZjKm85b_fgJDJv2Uk4uE7ZW9zFjPaUMW4xoFud8ETW4Cj6PKD973BeajE2cLo_RcsKDQ4XqOOcx0kpQo4O9i2zn7ZJA03PN8IcCNJ1FJf7Cmvxd_aR6uAMRJPyxNE_",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.2,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Privacy and compliance",
+      "skill_id": "rfv.skill.cybersecurity.11-privacy-and-compliance",
+      "items": [
+        {
+          "id": "cs-051",
+          "prompt": "What is GDPR?",
+          "options": [
+            "A backup standard",
+            "A type of encryption",
+            "EU's General Data Protection Regulation — sets rules for processing personal data of EU residents, with fines up to 4% of global revenue",
+            "An EU agency"
+          ],
+          "answer_commit": "hmac-sha256:02991e2dcda4333c00c8adb5ebf37f65",
+          "explanation_enc": "aes-256-gcm.v1:wDGUhLjdg7F4xI-b:ks_T7RF8H-m0--XFsOI0THlDagJsAiAC-fpdGJ2JkfR7IEtFQfOKOSh45N322VX6kdzAWJg9a2CL7f9GGql4AAEsGhyELO8-JLKwP4d9NZv0qBbqxSElY9bx_2h1FII_b3lTaVVqLe8o7gCXLPar2CpcCSCHGtgMOlYxw7jfU3QdVovckaY0kNEkNxPV42KOvcIU5-ReW1SY0_ZTopXrbweNY1QxWrHrFbfLb_w5GJyRuu33PX7r7iN4S_yG_2YB7Jz3l3vtJqqnaDlHwv9z_9_yS2vGhVE0hgRhZcEAJnpJiLwQOqPJZ-rF9sDwhLRwPlg2qxodxQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.8,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-052",
+          "prompt": "What is HIPAA?",
+          "options": [
+            "A health insurance company",
+            "A backup standard",
+            "A type of vaccine",
+            "US regulation protecting health information — requires safeguards on collection, storage, and sharing of patient data"
+          ],
+          "answer_commit": "hmac-sha256:5bb13da952f13f9fdbb711fa63d8f61d",
+          "explanation_enc": "aes-256-gcm.v1:QNnTtFsSMPD6VrdH:kXCKyFyZTRzuGH3VgYDE8UXr8e4bN58LtaCbz8gKmOYtL4fkOMOOlwNSM1bkksxMdoKRUImpR1KngkSI6SVyOd82G9lUoDPCvNhPpja0ysH_k3hnlPKlWwswNcL0MBa9Z3uQKQ3coKa35J4vp8t5mil0ZhFF5mxqd_DkLBx56muxvy0U2wFSaDYUQbk26WyQ4v2m2m-zs8XNTSY4StcUQJhU8P472g4NW3H7RiX8CvNUsfwvHQ1KqAHbJi5Iw3kdNBuBkvpWIfIkpFr8ge5bv0y08DpkE8JY8dOtWGFPyPyT1HMmqRUZA6Y0UfWNXKf03bojdBKXYVpq",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-053",
+          "prompt": "What is PII?",
+          "options": [
+            "Private Image Index",
+            "Personal Internet Identity",
+            "Protected Information Inventory",
+            "Personally Identifiable Information — any data that can identify an individual: name, email, address, ID numbers, biometrics"
+          ],
+          "answer_commit": "hmac-sha256:8d98b67e7954b1cac706dfa3eafb477a",
+          "explanation_enc": "aes-256-gcm.v1:Bt4YYZZYepGXlH8d:4Vxusp4r3fhJQ-N-akFlamPV4IGKG6HSFY5bn2pW9Ry0aD915vR0YGDo0lZGr8WdmAhsWotinbXYKeaNha2LtHlR-orrKfYmc8iReVgCFieFGO4VXZnXTKf1ND6J-Hw9plci37j1vijof0mdFhSBNQmHY5ud8o_9dIZbZe9O3rcIfE68H_jx__KPDGF_2wpft4J7cuNN8br-aj8IAvav0xTWUdqoetvtd76p550YRB4w50k2WNV7Igo47BHMMh6r25AKjCkb98ZG4sGR-J0L6lnIft8wIJ_HFqErX_pI1BEwOcjbylrojOaaSzCsOP2s-k4XOckRG9c_URmoUw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-054",
+          "prompt": "What is DATA MINIMIZATION?",
+          "options": [
+            "Collecting only the personal data you actually need for a specific purpose — reducing risk and compliance burden",
+            "Deleting all data",
+            "Storing less data overall",
+            "Compressing data"
+          ],
+          "answer_commit": "hmac-sha256:ed48e34da3b7ae06ed30ce8c7ddcb4cf",
+          "explanation_enc": "aes-256-gcm.v1:Mt32RUiVKuEthLTE:0plMP3sIL5MUXMymGL9N1KbUTPPObXTvS1F2IGcXGwXaI2JDHTV100FOtkoFVnDfOOuPGMVorT63cAX2-Lvw7taOrOKPlb0PHUwnKheIXEnb4yJs-W1kKXdBft9xNL12cR9uMDQcOwEL1iBChumPgZSjXAweSGhqP2dYGXNun93XYauyQpUM1gssbiuyupP6S22WCXcR5NAIjF-2UdDoV5Heo5oN3Ohd8y4Jrz_zmmLx32katSfFI13GOmOe8JPejsRa8RfiRdPamUuqH1BACJuSg3mPdflfoBQ2L9zHBmmPWYbm",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.48,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-055",
+          "prompt": "What is the RIGHT TO BE FORGOTTEN?",
+          "options": [
+            "An old technology",
+            "Under GDPR and similar laws, individuals can request deletion of their personal data in many circumstances",
+            "A medical condition",
+            "A backup feature"
+          ],
+          "answer_commit": "hmac-sha256:22582bad265b4a9ea7062063753d9f8a",
+          "explanation_enc": "aes-256-gcm.v1:6w9a--9v-xEOmxEJ:3ajlBz9slppaV5uj2VUXCv51G6PBAHdHj0SFffo-bFku4aKvKUtYHHqKC27UY1Q0EM0xg51C9PmCPTYRvlId60uyR6V92KNEf_OY7uvZowVacnG8BKm7v2-6v4phscK54maoeGKYAwOsg9BsKIro2fW8LrKcU1TOK2sHQ0KQed0QGA6LIfBD0LkBOrM2G1T2_k4agX_QybxdkE2ZAQYfU5wQFRd7ZJx_ntFJlntBcGjgBx0656iz7a954A12kJP-kKnHawXlOc8pMD4atGs-YzOZGv2YF5kHCu5zM5DvDIKE4n9IU7P2BcphUijQUKJf88AbaQNukA1W8IBCIFs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.579,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Incident response",
+      "skill_id": "rfv.skill.cybersecurity.12-incident-response",
+      "items": [
+        {
+          "id": "cs-056",
+          "prompt": "What is INCIDENT RESPONSE?",
+          "options": [
+            "The process of detecting, containing, eradicating, and recovering from security incidents — minimizing damage",
+            "A type of firewall",
+            "An emergency phone line",
+            "Calling the police"
+          ],
+          "answer_commit": "hmac-sha256:dd881708767649c1622817fb72fe1ce1",
+          "explanation_enc": "aes-256-gcm.v1:bWIBWJ3dI1uQyY2D:GYwEkvaYw5rAwlzWSHx3-_r7fZjfjpurSL3-U9x4D88A_t4o3w-49sP-zMbwsrpHhG7Yo0ATKxbjrH4ypyfbRmlM3G38f_8h-Xo1Y-APCbpQ8OMJ4jRUHGx6h8A5oiU9PPDVG5EGGmBij6bnqFZvFP5QQgmAdLBtYNtzqHypGeTMF3knEil-BvIIFjxWeoc35fJjVKwLILumtpNzwaYsGrE1E2ond4VILHf_Uaqt7roAhf9-HNo2tzzM24mio1pt3qlCu_HJl9tMq_9N3rz_usO6r_0MTxxwxBtYgAi07Ajk3yLlEGiXIBUZAjmdXCfETVFRDkvcOKXSEDk0B_-95Hv5smI6Mlqa2vExFdkVQm3D-9cH",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.739,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-057",
+          "prompt": "What's the FIRST step when you suspect a security incident?",
+          "options": [
+            "Don't panic. Contain (isolate affected systems), preserve evidence, notify your security/leadership team per your IR plan",
+            "Pay any ransom requests immediately",
+            "Delete everything immediately",
+            "Post about it publicly"
+          ],
+          "answer_commit": "hmac-sha256:3f84d0c8a5bff018a636a0f9e9c42f6d",
+          "explanation_enc": "aes-256-gcm.v1:WZzuOHwVR_8vGx5h:Ux00RE-aP06YzW_Q6fnQO2ZS9PT2q9cCyGOq_O4G_zxsxxlMjw7PsYwl2gr1ZmlrFbm5zrTwzHzDOCXzD_fDc6Y096DnBZRqBYMISS_49R-xPalqafBx2qMKfZthLowHYhmKALa0ssdOiJ0l3RnufcOb3LSuIwPxym_y_rxBr0AqHcBYrwXj44Z-pubpVtvY3NGKdC1wCik6M6dnAoiQjWn2qNlkD7pwVpwm0RPGdkiFeLxunYInkmeLkRwvochgw21W2kp1rCKN8RhOOz34HaQElAvXDXh0MAkCZ-ecNEE8PaVGeDDutsJy9GF8eoh2G0PQgq_NiBaCRbK-Hw_bsQppEuvV",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.457,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-058",
+          "prompt": "What is a POSTMORTEM (or post-incident review)?",
+          "options": [
+            "A backup procedure",
+            "Legal proceedings",
+            "A blameless analysis after an incident: what happened, why, what to change to prevent recurrence — focused on systems, not people",
+            "A medical examination"
+          ],
+          "answer_commit": "hmac-sha256:7ed276df9bdd1cf5e91c2706fdaf3c53",
+          "explanation_enc": "aes-256-gcm.v1:ITY2fJTQG-fSQp3q:Q5kDAIIwf07ohYq8bMeHYdc7_6V-S09pHXmGLzLp4UgcoGZLRsdkEy0vq8NhQOQLAsGMGU9XgKz5vvnTIijrQ-IFhskmgO2oGDuw6oeBKmUkwAShgyD6ixUTuDTw068ckm2cFgymD9Aab_ADAUVdeCHKtVITk1UgSfBslCvPj-AoS4hpsyz4xJScvY7tXowIZBsSympmHjMwaGC7W8ydwKVGRrHoPfIDsofKycftuTdRtLDsSDWSoUyYQ57_KpbcaYEYzX9g6U5EW1sHyVhMZFhjgX1tOtTocNtVkY6nerxoj8VWXCH26UPQuNGtYWaW0JBkglrJ1XP3zcSngy6Zjy8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-059",
+          "prompt": "What is THREAT INTELLIGENCE?",
+          "options": [
+            "Smart attackers",
+            "AI in security",
+            "Information about current and emerging threats — indicators of compromise, attacker tactics, vulnerable software",
+            "A type of malware"
+          ],
+          "answer_commit": "hmac-sha256:ec717700c2dd939b1617e53e2dece234",
+          "explanation_enc": "aes-256-gcm.v1:A1el6-KuRLthGahy:GMvcWevFLlYZfsWktVMZf2M-pqap9mjJe9soWeV0MF-r05lBgeKN5hV_6ZjBfmAx4cyN3YoyICgP7-XroZ3J0h-ENI1OKmQO29VxEG4a5-xFLbrAOGshtUpfZeUte-DY0-dP2dNNnZ9xK8Kp-wdUdCP0XWsrbIF5PhgNFCbFVpyANVtO_5HrOyWWmM8dD-2g8N35cua55OS65bRctUgzQgiIa3vVrmfNK7EuYvt7RraFkGbaWr2IALe_PfKnCLFUa7WDkLtQ73y5rUTzkF78PNnnrIGSmH_PsIP1GOeVK5__uMlfskHZpTevcbCE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.588,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-060",
+          "prompt": "What's the difference between an EVENT, ALERT, and INCIDENT?",
+          "options": [
+            "Only incidents matter",
+            "They are identical",
+            "Events are bigger than incidents",
+            "Event: any observable occurrence. Alert: an event flagged as needing review. Incident: a confirmed security violation requiring response"
+          ],
+          "answer_commit": "hmac-sha256:26e74146241f33ec5c05ce714b3a2f89",
+          "explanation_enc": "aes-256-gcm.v1:lYETQ_l-DnVB_4A4:YdfWdcqqe-F_XRKd5CuqbZTN__PBEGrsRykaVMrLOI6DiZwBhh6trkDuyDh2rrZX7M6wyI1FIMorjWbAZ1P55l8j8GbU9sk95_HeupajLGFEXsEHRz_YH3AHCYegx4caV32FzV13JWGWi0lwg0ERfw0VHnS2l3l1DMTzDKp8QAcgDgJcFPJqwe5XGDXqVxLKMUiThUdRiJK7XvOqBV6SVdeWWUGulhCpL8tKacYAYfN18uemQZTJJ3zXWlRgkfJ2kVAZ7amZPc9vxNjdZoKmnbjGgdVrzibFxIyPKEoaNSj8kR-oe-TquTEqo5-BImY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Endpoint and device security",
+      "skill_id": "rfv.skill.cybersecurity.13-endpoint-and-device-security",
+      "items": [
+        {
+          "id": "cs-061",
+          "prompt": "What is ENDPOINT PROTECTION?",
+          "options": [
+            "Security software on devices (laptops, phones, servers) — detects malware, blocks attacks, monitors behavior",
+            "Cloud security only",
+            "A type of network firewall",
+            "Security guards at building entrances"
+          ],
+          "answer_commit": "hmac-sha256:8e46212fe5de3e8ca74105d90738d6c0",
+          "explanation_enc": "aes-256-gcm.v1:XckPH19dIjUlVdEf:x3w3utWZtHMFQW2acC9Ge6_BLjwpjiw5pIPF9As_4mp3AjNZbyw22HufSU0eIq8XJ_xtHy37Of_pVvD4i96pFhSoFsXZ-qtP9pp8T8PMBq2CYu4Fcd3nBcB0IGrfioz6ChPUtNtFziNotZHm3fQLdJ5nq9kNu4jX0i_vWAy9SsmMaY6cwv47EkNTSKnAOirWUfptVgE6SN2XPcJMz4GDNIHC085o9ofTIb0kaTiEWtx21Dyso1M4GfJHE_wOwxIUK-sO-JMjuY-MZAkUiKk8WJBUrNgLDCRRyr8djUhEpQbEbqwRD582TUIXTTmAtnrFGv1V",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.919,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-062",
+          "prompt": "What is FULL DISK ENCRYPTION?",
+          "options": [
+            "Backing up the entire disk",
+            "Compressing the disk",
+            "Encrypting the entire storage of a device — if stolen, data is unreadable without the key (eg BitLocker, FileVault, LUKS)",
+            "Deleting the disk"
+          ],
+          "answer_commit": "hmac-sha256:c85496995f5f49fa80e8bf1d590b0677",
+          "explanation_enc": "aes-256-gcm.v1:1QsgcfduMc8NnAYh:2OEz3TQQB6J6edynbrH0izH9UVcNV_HaYEcJKJ_diCbgBP8QubTGEmBRGpMTZ2n0DyWKej1uYsgQtn78UTztoA_3Nz-t55t2ojXhmXNP2dg7xUfqo2AXhDq5GNUase9NkkdR5t6eJMnogzBJ4jm7Exe7jhLDQ3dHtMeZkdRrx7K2vfcVbhFFZQiDipiPLrT3HO5TMF0YxH0Gd9R_Ur9K0jpMrirr2x4ToO5hqnl8RrS3uQ5CUZktr-sHTjr0tUJG-4g6FnTCi0InroeqVxw-PVcanW3TMtfOSvZTintXpYh9yiem6K9TQW2Bbxk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.654,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-063",
+          "prompt": "What is MOBILE DEVICE MANAGEMENT (MDM)?",
+          "options": [
+            "An app store",
+            "Software for centrally managing security policies, app installations, and access on company-issued or BYOD mobile devices",
+            "A type of mobile carrier",
+            "A phone manufacturer"
+          ],
+          "answer_commit": "hmac-sha256:a860b1e11e054213c770d4ba143400e2",
+          "explanation_enc": "aes-256-gcm.v1:pmyO7hsSXc2Thd-q:l9d-k2yiXZLfEEL2EB3iNEVEldLYnoKdez_xqjbnrkfeDs6bKhjjX_Z_7LQrWJ5E53TY9sur4IF4LSd3dg5zZdWnfn_J3sjk7kDzKbuw-uKS8cutJdx2aXqa-4jXpCM07r4gkJiTZdB6MGFKUszWxKFHM7UjTBNrA6Y9RhdBRoZKPBb0o4_UceNGHY0P64yKmHAUPuzKrfnr32SY6rb4pMA1L95N0yM-ANeMYIxv6PiPkTVgaqBVuBgsHMuQSnBuKAsQtet18MoOXELerkhRdtNsmw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.042,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-064",
+          "prompt": "Why are SOFTWARE UPDATES (patches) so important?",
+          "options": [
+            "They aren't important",
+            "They add new features only",
+            "They fix vulnerabilities attackers actively exploit — unpatched systems are sitting targets",
+            "They slow down your computer"
+          ],
+          "answer_commit": "hmac-sha256:6db650fcfc56e6d8682f10d6b2015029",
+          "explanation_enc": "aes-256-gcm.v1:LqZBv2BALGsoyKTI:WKGCF5yu95MZT3vPWLeYC95FJkVCT6Uiei9uuBg5UJBPhQcIHHwxdWkWp0-87_cG5eXzR_u3F44V-juS4o9XlAqoHvkZHkvpfOWMHmbYVS_prnV5Nww_WjaLmdfBxoOxMxm7ki0ry-xH5FbyxwrfbgCzoG3XKHN7mxrxPm1eYslHbC8xUdvIL9iQ24f_eZQpGGddQ_DHrGVTPnz18X04XufijeCoAeDJyeFOM0x1niZcJ1V72gMmS2hunGUKT8BTfMytDZqCzeyYrPgOLv6HrPfaio1xuPDEt4xsi5WfOLTbljLASKezea1nTfLirIq7pWO_Awy1Cbc-",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.25,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-065",
+          "prompt": "What's a SAFE practice with USB drives and external devices?",
+          "options": [
+            "Don't plug in unknown USB drives — they can install malware automatically (BadUSB attacks)",
+            "Always plug in to identify",
+            "Only USB drives from strangers are dangerous",
+            "USB drives are always safe"
+          ],
+          "answer_commit": "hmac-sha256:b2e440eb4a4bbe7c068b2200ead07b5a",
+          "explanation_enc": "aes-256-gcm.v1:zOGk_tNylbNs1233:uSFq7ioRRt1qvRLydiBM1u2X6PtktusOHP-wJy5M8KdtSnAF97SJQeal1_-L20MeI4RDAxGscRzMbItIAfRVSNXtMZXKaOtf7XzfDa8v12ewP78OOzCcErJznGG35OO5C-YFYVNpAoaXxNEuIxOBx3QSf5tgdxofbd1JnlOffo_aacUbgrfoBYg0H5XZeIRXbg52QdyU5xs0qq-flHHi_MJNE2R1cbsoEmJAn6htX8_kaEdC6Gj-K7spoUEGbA2HNUnUs_yiuQD2dlj1VsUHcmVBe6kHw2lBo9lHHcZPvQ3KNUcATA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.045,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "AI and security",
+      "skill_id": "rfv.skill.cybersecurity.14-ai-and-security",
+      "items": [
+        {
+          "id": "cs-066",
+          "prompt": "How is AI being used by ATTACKERS in 2026?",
+          "options": [
+            "Only for legitimate purposes",
+            "Generating convincing phishing in any language, creating deepfakes for fraud, scaling reconnaissance, writing malware variants",
+            "Only for defense",
+            "AI cannot help attackers"
+          ],
+          "answer_commit": "hmac-sha256:2abdc65f00d90a442c53a756ebf7efed",
+          "explanation_enc": "aes-256-gcm.v1:k-OGNT9EWqz0zy5Z:wNgh9cKtd5mdwcCyGD3Ypw-1X25Vq2yT58viAz0eOENMXLO64S2w1SSwqVbHaz0Q1KmMmJh5AlFAiqUpKIkv1GoNivlyL9rkuATIWx7WSGw7Dd10QPu8maMrMIuGbnsQBKYLLvHiqXhmPfnA-nv5U_S2O1InL1pmM1fbzhnJ37Ubq1XgiZlNF63B_zSYKfza9AJTXv5_ns2UFjVZfdO_Ko2txZbwTpfYioPI5C9rdewy6LrHsFFsRET05dxzuKhf2Tne_m4RkohM3TdyA54aT1BspVZsdQCJAzZ-5jiexzcGY8Fsrw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-067",
+          "prompt": "How is AI being used by DEFENDERS?",
+          "options": [
+            "AI is too expensive for defense",
+            "Anomaly detection, automated triage, threat hunting, SOC assistants, faster incident response",
+            "AI can't defend",
+            "Only attackers benefit"
+          ],
+          "answer_commit": "hmac-sha256:c57bc0f24f7bad98da8bdcd1185c2e63",
+          "explanation_enc": "aes-256-gcm.v1:VOBPDHn4iHv628t0:WRo43ptfqUypMvRqdJIq0syXuoWEXDWdQU_hJ8adJ_4-KXCftSyEyhfbMG1i90J2dJM1ONfI-QvdcmuSlsE_d6f_MD9l25L9Swu_oJwPiR562cRBFkhvz4y5QDDxdqBgRFRvGGYMZMLpcvH5gBNOM7z1_oKmTOH4pzWp5MyMCLDTXlV7NYluaWe1yABqDugRKcSVuGpJHGwlJhYvAoFsarlNLhuBPI6oxYGAPhGSzMm3huophedFXcavXhLt86aNB0k9trxEFolg45R8YCBLoaP1oask4laapRHddu8x4bQ0-aVdSuK3oIsfJE87owTn4nnYC5hcC_m8EUACYZ82r7U",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-068",
+          "prompt": "What is PROMPT INJECTION as a security threat?",
+          "options": [
+            "A vitamin for AI",
+            "A backup feature",
+            "Malicious input crafted to make an LLM ignore its instructions or leak data — especially risky when AI processes external content",
+            "Injecting AI prompts everywhere"
+          ],
+          "answer_commit": "hmac-sha256:bdd04f69d0794164d674f3e6718f57e8",
+          "explanation_enc": "aes-256-gcm.v1:moYL8bm8elsiS7cz:Gyiws9sG3fS_vO1sgDwLCF5Df7x9lfWCeV4XMarESuGXMg2nsuuXHjWsLCnlNWYzjPlgaf281gJbO_jfStJ862BT0nVkmHBuBXM-SjxM3wKXFBOaYLrtLSyccDr2uE8OjYIwKykaGhI1oSpip-w9PCEGm2xUYID0IfCtHt15REdHoxxChhspBa0nPHPI_tvglCqsJe-Lv3i42nW8Zdic77w_pTsnf8Ta070vrFYNGm0ZJyN8ZEDfcoE9519w62-zdLSFWXAReoNriunuqLGyVfC75DbxDHIVACIGgnO0vOs1SZrixnRzLgNsTeoutba6V0oPeL-ubM0A5NymEnZHwFAsdZr_8U6eeHUK2iTF6lreQXAenHYXWJzkJuEYAs65agySRDasTQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.161,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-069",
+          "prompt": "What's a SAFE practice when using AI tools with company data?",
+          "options": [
+            "Use enterprise plans with no-training clauses or self-hosted models — never paste secrets or sensitive data into consumer AI products",
+            "Avoid AI entirely",
+            "AI providers handle privacy automatically",
+            "Paste everything for context"
+          ],
+          "answer_commit": "hmac-sha256:df7cf3977465a3080b41614206572d2c",
+          "explanation_enc": "aes-256-gcm.v1:Iq2pdiX5XAEL5PpC:Y6nyJu1KL59NICe8QpGuvh5clHVRntX2onk2facKRoHJbdm_ohBsPGQKSFBC4BofS-iwpkYyYTxVb9i22MFzUmWiFcQ6jqiY2g9nskGJsMn14W7GbgQjFBP0iG5DapLL2V2tWYzcY01VNVqxfTrON_X-ieo4PoohPEhsFnyXyRg7KsWe6mVtIdXzXLJTHhvdTysAm2WqCfBZ3gzIgGDWMhwMeDTQEYt0hEzmFfgxHCSg3GIN4cNCxX7P-szEuHmpmJHKWCQnTlPdIkO2P3XE0j0HYX7TPTevaXtO0cvN0hSqjYdz_HZS4VDfREizjeCvmUWlzhg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.244,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-070",
+          "prompt": "What is a DEEPFAKE and why does it matter for security?",
+          "options": [
+            "A backup file",
+            "A type of password",
+            "AI-generated fake audio, images, or video impersonating real people — used in fraud, blackmail, and disinformation",
+            "A real deep fake person"
+          ],
+          "answer_commit": "hmac-sha256:5a04d856df533b03a5b4f948d5ee6e47",
+          "explanation_enc": "aes-256-gcm.v1:IwYjt_iiaojIhwGj:MnJJrzP3bUsMhmkbUbzDw8P6ePW2w0jLWS8CpfJbNB2nnSPwPjYAtPePGoluAJ0WfLkTJHhatbNvg9hjk39MNP93unc_SVcXF41SRc0je3ThwpUpKlHLz6erlEzYB35Rf96fJ272XfsP6-HSLp8yYqRPqgDBfyxjilfcg3UcAILZFvumFO2-YvKD06Gtks9KpPIeK38SZLJfvlVQFTWYlDLmUGGEY2SKw-TSQztWp5tIjhApT8PghihKebOoJqzsXvnq77jRadOw1-XPUhgEh2BSxne7NdKrCoxcIIC9p7rhwBlHSMUHPFGgim0El929G0QMZDK8QhF-xZ6-iYc9L5Rs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.957,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Personal security hygiene",
+      "skill_id": "rfv.skill.cybersecurity.15-personal-security-hygiene",
+      "items": [
+        {
+          "id": "cs-071",
+          "prompt": "What are the TOP personal cybersecurity practices?",
+          "options": [
+            "Just an antivirus",
+            "Avoiding all technology",
+            "Never going online",
+            "Strong unique passwords + 2FA + password manager + patched devices + backup strategy + healthy skepticism of unsolicited contact"
+          ],
+          "answer_commit": "hmac-sha256:858ff9b6b3edc53fcffc7cac88eaa54e",
+          "explanation_enc": "aes-256-gcm.v1:1G-1yI8nwDLNtU9s:WNGxNJTzvJjOILOqQ-qeIdjM4YNS11ExIKnb56NNyrPU5PSbZQMYc7KBV1PryBwQLw2qnprWu3B_J8L9PfCEg7uyQhpy0nkx8mhIOxyjvAwP53toAxKYA-PcEuIFunGxIRPcqT0sM2sRe75DwG1y2VVghH-3d5xudWpR5WRJyryADQfnuEqwh7Rem-mDTb4DvMbY1byXHM-d-JQjBTki7SKF87thQcGj9O5PUXdkbIIvONZ2kbNnyeIa_0yKG9ZQX0E3d5dp2rVz5qiZ8nMLFgwumPbvuJPdXbqjBM-zZK3oGpnQoP_vRHeKPmRcUJ3r4J4s",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.565,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-072",
+          "prompt": "What's the BIGGEST personal security mistake?",
+          "options": [
+            "Using a password manager",
+            "Enabling 2FA",
+            "Updating devices",
+            "Reusing passwords across important accounts — one breach unlocks many"
+          ],
+          "answer_commit": "hmac-sha256:e53cd36ac6379d6f401e2010c58aa2b1",
+          "explanation_enc": "aes-256-gcm.v1:wCEer6TAysYG4enL:t77qnS8ITIyv9drsr1C9jCjfng3u3sAKSB9nMs1yugbxZQjoaNQyZ6Cl7qiOXfu5GsRNIzi0veuhyuGTvJQBA0b2a3RSW6EvFTDOpEfJzbCUcCa6A5VUWNXD_9Ypidon1Jnbro0FKMuhTGAhfgta4cJvJZVWQ23DGzH7JswrGAiAt-iOReaHeZgkqcaWpduruj725LH4gBIaw2Q41NJqTLHfWw46In9nObG3HbafL-OhXQN12qVmKPahbhqz2hwiY2VvCdHjoU7SuHU",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "approved",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.875,
+          "findings": []
+        },
+        {
+          "id": "cs-073",
+          "prompt": "How should you handle BACKUP for important personal data?",
+          "options": [
+            "Cloud-only is fine",
+            "One backup is enough",
+            "3-2-1 rule: 3 copies, 2 different media, 1 offsite (cloud) — protects against device loss, ransomware, accidents",
+            "Backups aren't needed"
+          ],
+          "answer_commit": "hmac-sha256:39879df750830685d15c2c5ea62d1794",
+          "explanation_enc": "aes-256-gcm.v1:UgcppUg9ktQ8j1Qf:Tw3A5WLXn5cjZDTshkJEj2_nuyc-UsyKUgfl9X9mYCsDz8JAeVe7PiKJZ8vKwYEhbrh_THOCarAKnBFb_Zq9vGC9KwyXBgZsVbwI9CGVEC2DRJY7uKDphVXRiR1gRinwVAwOjK7xh4pG3HQcnZsU3fx_9VfwpembbyGMPDuNll_L1CbQZEgO-6_VzDecdamUbu_IZZEaVcxfLNsgVs4I4jjeVb69yB_haCoKH2USYOGllpzavnjCRU42Q3K0fJw3D6vOaFa6zHNwTFYlSi8ad4eBCoy1FSSg4tKH8gKllYKhL0yAA9gU3YwUxQtq49c",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.333,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-074",
+          "prompt": "What's a SAFE practice for social media?",
+          "options": [
+            "Limit personal info shared publicly, review privacy settings periodically, be cautious about location and travel posts",
+            "Trust default settings",
+            "Share everything publicly",
+            "Never use social media"
+          ],
+          "answer_commit": "hmac-sha256:767c08e8490b72b88139414ffe348740",
+          "explanation_enc": "aes-256-gcm.v1:ld8UXL4fl7UhV_MC:LVTJjabAN2vTpUr4Ir9wWkI8dRXmkFDRBrB27su6xW-gZlxajoTsnqOjTieW9S_5XBY1Z_2ewYYltWNJs5GdvE78XAKehjFoAjjhUySr5jpqkiYcoPch6gfE-aJpr5sT1stR4uNm0pMR9dzR-fVltPOUtO7zBjcMHjY0CP5izGpl6UYHMfK7hRzqewZiJVsBxNBWpcxIskmllpoZT7YOyLt5fkbJ89YQWLXozT7pPi6igs8UPSJ4IxTT-s-bKHjF4YnykGUHPxUYqFajnqjCkO54cjYy9Gl40KTtbsWuCNSEchR6munTqzoe0hE0q6ai5DpNp9W_LJLtkd3KC0WV4nEZ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.72,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-075",
+          "prompt": "What's the SAFEST way to handle suspicious messages from 'friends' on social media?",
+          "options": [
+            "Click their links",
+            "Verify through a different channel — call them directly. Accounts get compromised regularly and used to phish contacts",
+            "Trust because it's a friend",
+            "Send them money"
+          ],
+          "answer_commit": "hmac-sha256:3c7fa02f88541a9120c05dc3b96a51c4",
+          "explanation_enc": "aes-256-gcm.v1:a-2tJ_KM4I6aDzJV:lhgv44T5UG5tUKX0DusiBuf2L139HFE5Dtha2rJwCBr3jsfbFuPpu2zRY3_sN0MRVRRjsvTYJ4oVle3qFSYK_MPsJssp7GuhyeXJChyE1Cx2lRE1gIRCVLH8wBH2CXgf1n6CMZDUpXwiltaWMxE9ILGhzu5fDUaRB8U_gdWNr9UtgcVkVLWSnBw1R9e74Q0CffoAc4BjZlStnfqkdZvwkKPK8HuRwuB130kOf6Vmi-l35YSvSlKRQTQPJAYoOc5NNqoTUOLdrondtN-6HEsI0-x7lZGdOp1AvM80OdLrxVzhvXP3NMUs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.37,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Security culture and people",
+      "skill_id": "rfv.skill.cybersecurity.16-security-culture-and-people",
+      "items": [
+        {
+          "id": "cs-076",
+          "prompt": "What is SECURITY CULTURE?",
+          "options": [
+            "Annual training only",
+            "Decorating offices with security posters",
+            "The shared values, beliefs, and behaviors about security across an organization — often the difference between resilient and vulnerable companies",
+            "Hiring security guards"
+          ],
+          "answer_commit": "hmac-sha256:96be90baba1951f60e838e0344f5b8c6",
+          "explanation_enc": "aes-256-gcm.v1:L0WK7SFwhOC434cd:qzLhw3XFr4B8Fy1fvdExCkY3Vyo00SC9D4tFTftA7F1k1Us5NsmPPYlnZhtTjhJh-Uz6ToBn3f4ag6VtmaY9SKn4hNNw6iGqtJRDyBLzYkf5hmAzchjDlmdKHgIDvfDKhnIUOBsxZmtDWp5ODXjHpdSKzqZZmjhtSmyDLnoSMzoeKkRzqbzvNgQk6DvritllIVhqcww6KbyDBLrMIupcTM6WsbBL5O0Beo6GUOwhPZnJHBa5pziC7Du3rOqWI-XNg6nANlkjEO5ONETJRvqo2CIIPeARfcR6oeWeuVoXtfvZAUC2pADZ8Q4ZTu_7XJk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.625,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-077",
+          "prompt": "Why should security training be ONGOING, not just annual?",
+          "options": [
+            "Annual is enough",
+            "Only new employees need training",
+            "Threats evolve constantly; one-time training fades; periodic phishing simulations and topical micro-trainings work better than annual marathons",
+            "Training doesn't help"
+          ],
+          "answer_commit": "hmac-sha256:725b629794696ee6e2cdd5a0f37e7da4",
+          "explanation_enc": "aes-256-gcm.v1:RUHkMQ33M5DWFoeS:8CeOo-PZrCQHcqXHDoppO2PhFa5rOM0OJCL0a_3qytlJx4o-VvjHyJ3p0te-UhTB-7zPhj5wJhZtBCFYjyqBwB84dIur4TtRLHP8EHzxmouzBquq3Hay2exhUJZ70bTlUGTcwHfI5udUcd-i8vZuUAEpZvg7FzWy3Iw0CfPsnvVIOsOO8TnwS1ek7iKoWmu2z0_4QKxY-vy5fku5opkSKxBGaBLipQ-6afrdHof_0pj6D7KuZDcxQon3cQPMb_3p_wJgWYCfkC6V4WXM9s-XE2OCZyUtnYzBdQ5t5CuOMyjj0a1Q12nIK-ak12sdqp8Mf2ZiCP-a8ik",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.469,
+          "findings": [
+            {
+              "code": "negative_phrasing_stem",
+              "severity": "medium"
+            },
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-078",
+          "prompt": "What's the danger of BLAME-CENTERED security culture?",
+          "options": [
+            "Blame culture is best",
+            "Blame is required",
+            "People hide mistakes, don't report incidents, and find workarounds — making the organization less safe, not more",
+            "Blame motivates safety"
+          ],
+          "answer_commit": "hmac-sha256:bdbea136177ca6e074fb690862d287c1",
+          "explanation_enc": "aes-256-gcm.v1:zND3Sc7E6RlZ4HpU:1s3o9qheW8EoFMdTZ19fJJlw90mhuykmBDSY_L0hk0REcWpuY6JpkiGVWSIgkXBuBXTmfhUYaKak7r1hchWSjHEOQaXo2TcOY0oI4aP2fnUTQhUmK0c1lUhBxewX-RmQj9JF7r4k9-wLVc7h1nSfSpuDYcN2iiGxUlOhZ2L-isTtOcN4hOSmaEHDxjbXVC_FI08dkLU8FWprmgmxHznBwAbWYhkRmicICviwqse7FqXvDvDiqDbL8BRAzGZOJeqtqgepSYIPHmFDPviR_OGjugExNuG8xE-maEOlYtyhh4eUAXKqXWIjPJLz7CkEAmTaRrZAbA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.091,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-079",
+          "prompt": "Who is responsible for security in an organization?",
+          "options": [
+            "Everyone — security teams set strategy and tools, but every employee makes daily decisions that affect security",
+            "Only contractors",
+            "Only the CEO",
+            "Only the IT department"
+          ],
+          "answer_commit": "hmac-sha256:86b7e69274a2a73570f35b4984b6c447",
+          "explanation_enc": "aes-256-gcm.v1:JgsGsln8mnhjS9ti:zvd0Xug22G4eDvrxtwPhilAoDRm9eAkAsmhcwMkxg5QkgqRbl351hnODm1z9M4J6xc1ItG9XcSiRc_Ji0shQbck61XFHm5uQwjTJ_Zd9JZe9Cg8QLGdtyi3LBl1zxHsCdi2lY71HBmDmWf9ti_op34r9kYRZglk_jEB5U2dMEDThURsIVpvJP4-y4tQmi-1B3GjVd_-TUFsba9Vp3nR3FprDezGhLwbO29XfTz9hBw7qeFPrVKbMiSyT09lGaXv72bARbI0h6JPJMKM3OAx3JZkzMjzHAQ65Ti189k7MVR_ihxeoMTuErwX-z7t42gy_Cu3qCUnVlwbE8NCusgXWPsIaNHUdL-5sZ7vbSw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.045,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-080",
+          "prompt": "What is a CISO?",
+          "options": [
+            "Cloud Infrastructure Standard Officer",
+            "Customer Information Sales Officer",
+            "Chief Information Security Officer — executive responsible for security strategy, risk, and program leadership",
+            "Cyber Investigation Senior Officer"
+          ],
+          "answer_commit": "hmac-sha256:09f02e26eb0398a1ce41263fb5c113f3",
+          "explanation_enc": "aes-256-gcm.v1:k75ReVq9SBFcjWsd:ppmGfZwfMHXJc-JVnIzIFnRpDTqZ9epestQUIZpqdq9PihhNgrV_i4fKPIRx70eoB0pprDpyZ8XzjJfjtWWheRE6TP7G_iWNljtB8kE3sL-FOqSonthCoviprZCgog3d5134bR-VCNYyAY70TFCPIsFm-UQDg5Ymh57tMvgGb0KqJuFlEaTroyC56tun89h94VSrYmeYZRwynuhzgYb5EIlGIJxTz4fkdElglP5OeQxEy7mM65CjcLXqdCF_QLe_gI1rRIBp2uD28FsRG7I8-1TuxsIv1rOUMpGSEwaEKZwtF579Ik6mNd7C_7q5DJB-CmPmKBQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.973,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Security frameworks and standards",
+      "skill_id": "rfv.skill.cybersecurity.17-security-frameworks-and-standards",
+      "items": [
+        {
+          "id": "cs-081",
+          "prompt": "What is ISO 27001?",
+          "options": [
+            "A network protocol",
+            "An ISO container size",
+            "An international standard for Information Security Management Systems — widely adopted for compliance and customer trust",
+            "A type of encryption"
+          ],
+          "answer_commit": "hmac-sha256:c2d92d979d1aa4102b6b36fbd2f275da",
+          "explanation_enc": "aes-256-gcm.v1:Ygn6XsOB7r-Gx-Pm:ECB9X2uGUuylp_DOuz6fxgsRmzgXCGQTRnuayTm_Thxm1lmuBHu98VJ7j--rXW83jKcQAXgHuTUMFOOih2jEiABFRp7vPvE0UIcq09GZjFjxUmcZgxhrGMJZJvrQC2Bd4ZHj737mO_nCNTSFwYruU8BnnqIxDTNyldPOFhbPQX5OeGkJIAYufC08j1Dlu4zotlrlaF7arwmp5ztLhsLa3ZgC8TXYC2_LukJC-BQZ6HE-pFXf8Gj_u7o_kDyTXo0wzO0qY4fuGxCZzH35YmUBgxBRpPoV1FGZ_t7woET2Yw0RJNAMkF36NPWh4M9SP6UOZJO_w29HlA",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.714,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-082",
+          "prompt": "What is SOC 2?",
+          "options": [
+            "A US audit framework for service organizations — reports on security, availability, processing integrity, confidentiality, privacy controls",
+            "A backup standard",
+            "A type of SOC certification",
+            "A military protocol"
+          ],
+          "answer_commit": "hmac-sha256:6c654c48692229dfe1a858a5448e4d97",
+          "explanation_enc": "aes-256-gcm.v1:WczCiuoxaxRbSZ4X:DMXnpCCSYw9O84J1miwtxosZGpY8Q30lQ9DsIOH176CLeBQLUzdjIdhjhLmo9Tyo2IrLFy5qH7BaWbsJe_170z5hbuCk4llh1OpozDVvntI8FuxtWhXXKnTnFRnzqZuoMIl9P13T6K9vwtaLm0Pn0nbYCEAIQ0_trNg9cVXn99RtYPE70GeHPvZEljZtl9QJtfryG32qFWVrtxMhEHYtFs-fEy7fX66rKpHEk9ZDSnigsNmnOHB8tsrT7mIWLRdMj7PmbvpgHjY4W3KYYvfjO_1A50_w112SAfm4m5B4M0v9O5ohFCvaGKnMzLny7lXxiFDT-A",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.148,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-083",
+          "prompt": "What is the NIST CYBERSECURITY FRAMEWORK?",
+          "options": [
+            "A widely-used framework structuring security activities into: Identify, Protect, Detect, Respond, Recover (CSF 2.0 added Govern)",
+            "A network architecture",
+            "A type of malware",
+            "A US government website"
+          ],
+          "answer_commit": "hmac-sha256:e8ef6036e62846ecfa8f8c0bb8f179ce",
+          "explanation_enc": "aes-256-gcm.v1:qCaeeA4kY3t_uAzI:TbLQPcx7iDnen5YOD_gQq_jzTDzhvvvn5uD9Y51Zfjk9OllMQFnMH56fp9zXCx7e6OExWqHaQqtohcNwaioBT11nLCTmk93UUqqfdylCe75hp7kMbs6CkRJGMQKm0rumPf9jxfPCtrCXzLVOCqGTXMcJpHJUWaB7maW5TXsYJnARmhB6HvtfQKVYSZfeVJrIn7kKXUNn9NNp34XsWC63CTFXSpGRACa9ubpARKWgDY1GPwP1CQXGOvHP7uV_EKkqJY_ckUac1F-R420hghZpEKLAVvkdvzI_K3AViWu0AjVca6igv9eOXsuC0WBReeVMHEe3Cw",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.565,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-084",
+          "prompt": "What is PCI DSS?",
+          "options": [
+            "A PCI computer slot",
+            "A type of password",
+            "Payment Card Industry Data Security Standard — required for any business handling credit card data",
+            "A digital certificate"
+          ],
+          "answer_commit": "hmac-sha256:e48511af921adc0b8fed310ae97f0685",
+          "explanation_enc": "aes-256-gcm.v1:oqlWzz_Cgt7zt_eG:VJGMYD2VLQCtsV1JtK4cyEeBkq9Yr4XO1vzRa2bJUOlqxntd9va0aSkMgEdPiKyKZDpn39j3Lm39hFyUThOuK42fpXerN1PkF3Sadrkh_n9NXZoJo8nVTsQE4jLRVE4pbqGpNVq-S6Oe5jBlTAxLG9zg7hv_CJ4WpxQ4BFsbQQtbusrLzED98VKdQdpeem-wXUEJqe-JDEJGu2lGnDuwPMhKeYlr-CN8lXD7uYBjjz8u0s4XlwUx6BSDDBkQj3DRDfobIEWh4zVqvPlBLqulQhonFeFO30b19Xq7q51MkZ_gg4awWiJcL35Hx9di0VdwexnCHOk__qlunBsjMeZhd76098kACARGNNZIoVKRhamYFjAjg0aa",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.667,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-085",
+          "prompt": "Why pursue security CERTIFICATIONS for an organization?",
+          "options": [
+            "Avoiding audits",
+            "Legal requirement everywhere",
+            "Decoration only",
+            "Customer trust (especially enterprise), regulatory requirements, structured improvement, competitive differentiation"
+          ],
+          "answer_commit": "hmac-sha256:3dd7e1b00fd597775e7e0c3c3112644b",
+          "explanation_enc": "aes-256-gcm.v1:QyDbKDrgQTUs-wb-:VHCixUAEKRmumKFP2t9Fcji4H3X97ps10AJ3qlkqZx4oZwgpqPXDVPuikYGGUZgduYtOSIJztDMZw1TxHBSvPlab-ViQhB-vNvbv689hfc99ZpO6SpxO4Ku5bzqR6CLXmsj0pYC2WivWGfj1p_tvGWoTcsgGDAuKnSNSj6Mz-Meh5mo6aRmcRGFNNAzY7Z5KWvf5TVD9k4ku1yPmgRrrx7RRfVjs7d0e3FF-3fEUTIUO3SC6hJAy5K4BtwoeLQHi2wFuGzKB-vhh2-PuKtpJkhoSCXUs-dZMqt6bx7ZsgrWRFXWVMg9EcdtH2yLFPfwCVHXN6NavvxODf6-jdHe5ePZnQ_o1XmM1KQi2q69wo58saWE0bPEQ0_HzVk_sqRuAzjZGcuuzxAAXQg",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.143,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Career in cybersecurity",
+      "skill_id": "rfv.skill.cybersecurity.18-career-in-cybersecurity",
+      "items": [
+        {
+          "id": "cs-086",
+          "prompt": "Why is cybersecurity a STRONG career field globally in 2026?",
+          "options": [
+            "It's an old field declining",
+            "Only available in a few countries",
+            "Persistent talent shortage worldwide, broad role variety, competitive compensation, work-from-anywhere viability for many specialties",
+            "All roles require advanced degrees"
+          ],
+          "answer_commit": "hmac-sha256:778168a5073d77f8e4263c172fa12b5c",
+          "explanation_enc": "aes-256-gcm.v1:zlRMMEOf07fuadDr:-SZbsU9G88gjHasHFFB6Vvl7pipf1KXEWc5nAvzYZjRrk5S2GFTznqiXM7rXnzja2E2IuzhQL_4q9mW0lTtYmI0eZUqkl81A-EMfQf6fzhTyJrEfZBA-X6MhVfevodijFR9FMh7bw5TxHAd2v84nwMg2GtugiqTBOl2Mj44LrYOZRtd2z_i0T36p3UhXDJpHpZAcu_QmFpvYWnqbOOgUaP-4jc3kKU7J_-2pKMx1nojw6N-8_iSzK7ZBVlcskhwpFp6WzyAezweOuwvPIxAtQscHgA13Y9xFwn72s7tBFpDtUanayNNi8sr5NFMYnZ0Pw2sPCSE8BATbbsZnmrLie18NK1NYQDgmvzg9U6e4qBu0Eun9nQ",
+          "difficulty": {
+            "tier": 2,
+            "signals": [
+              "judgement_required"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": 1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.912,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-087",
+          "prompt": "What are COMMON entry-level cybersecurity roles?",
+          "options": [
+            "SOC analyst, junior pentester, security operations, GRC analyst, vulnerability analyst, security awareness coordinator",
+            "Only CISO positions",
+            "Only consulting partners",
+            "Only senior architect roles"
+          ],
+          "answer_commit": "hmac-sha256:289bab9d03bd709901d372cd2f8c8518",
+          "explanation_enc": "aes-256-gcm.v1:FLrbYDuhzK7-vTFJ:aLqB1KreRxTRwRgefhAcguYG8jK6HMSxRcu-EibBc1t_JTJJuYEoDmfrCgvaYIq7_eL3Pbesv6KokbqDwzR2nB07ILFrkJvDU-_IFQV2z8ZrStEo-LeEbk3gcArT9C-rmaXFT75WVcs5H0f5ePIJHHEopJ-E6ZnOvFwXIaXfA_8GGvO2Jhbc2eJCPWXDuBFNYCHYpl_U6M6PdSakbrz3jjqpdvWSP9bamLZr3U9GOKkMQXfM505LOIOmVTzptriuG4-dprRD8tdyYvrOg7sHCbxqoxXVFXuoL9VibSG685Dx_IzETT-7Um5WbmN7V7XQ_696ApuWuyuRGmfcsyQrjPr-u76wkg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.37,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-088",
+          "prompt": "Which CERTIFICATIONS help start a cybersecurity career?",
+          "options": [
+            "Only vendor-specific",
+            "Only $5000+ certifications",
+            "Certifications don't help",
+            "CompTIA Security+, ISC2 Certified in Cybersecurity (CC), Google/Microsoft security certs — accessible entry-level options globally"
+          ],
+          "answer_commit": "hmac-sha256:7813125dfb3ad10b2f5dbdcd1ea9a6ce",
+          "explanation_enc": "aes-256-gcm.v1:I5e3VQiBlVSR-apj:BMtpYNBIvnNFIwj4t1B7eN9PmfDF7tvXrH9aLmC7aRJycEEwsRnswGQ8fGPUyzxWkSihuHnJ-lwPFbNizV_B6o_ftqY1EUixli-0udp43pRW7I5p_0YgMMn-q_UipzQh4OEOp98hKcZrqjUbG9ak9i8Bf0oQ7syW-5HMRQGHFrLbzZZmbYipILkVUyJ6rePCV4Lwu2LllVhREOOqn5jmp4zxm5FDo9rChi7BVN602OlcaPERFdp6AxgPZiwLzTHLOaAz0nFXrZ4gzb_FyTNrlh8QZqgh5nhUdoPFlBhK_70Imnx1xHCo0KVRwVO94nQw4ct8y7JKrN4uWdqk2tikAZ8dvMy7-cFsRqAY37Ca",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-089",
+          "prompt": "What HANDS-ON practice helps build cybersecurity skills?",
+          "options": [
+            "CTF competitions, online labs (TryHackMe, HackTheBox, PortSwigger Academy), home labs, bug bounty programs, open-source contributions",
+            "Only memorizing books",
+            "Only watching videos",
+            "Only formal classroom study"
+          ],
+          "answer_commit": "hmac-sha256:9241898bca28228125de12a291b5ea0b",
+          "explanation_enc": "aes-256-gcm.v1:_roxZD1_lYhzrnfo:hbHM4tfWBGC4ll5qKd_cX25SVIhkygxGQI_HY7cLx7IhI1JO8bKZON3mydz6htShDwaPERi5mqmcT7VyDsPvMV_LrYF320H28ke_RPuX_LA_ORCjdHRjRmACdByPj6CjSN6XS6wJkHM3P65G_Ydf-tQ3mwVi307lmofsLRpqPk7VHD_bKgK3qeM8LgmKZwiMatkVm1ZfMnnsRt8_Q3FSI99Q8GoQWjjRb2DjdFrwNEjA1CmKFvXKe93BZEx_slDnpOGtuSnm9LLrRnHz5bVfCiLplTYnFtou_5GaxKzTBdvF60YF0SCyOJXRp9pJjtOj-FOtjHmFlZoMM_sI927W3OSny31MRHT_11kIVeVKQS4yU0QTMQ",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.926,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-090",
+          "prompt": "What's the META-SKILL for long-term cybersecurity careers?",
+          "options": [
+            "Working in isolation",
+            "Continuous learning — the threat landscape, technologies, and best practices evolve constantly",
+            "Avoiding new technologies",
+            "Memorizing one toolset"
+          ],
+          "answer_commit": "hmac-sha256:90b043e10dd76d4d655f14c5533a857a",
+          "explanation_enc": "aes-256-gcm.v1:ggFokGQ95N-1Ej5X:KD0x0PgfHuCQV_FOYe51YKxmXTg2oYhjWxB5R_ZJkGyvBKlLvAkviW_5YT3PJSfE4uOiS65WyaSkcKl1LBYSQ15vFHUapOelifzeW61c8GwJz7Ziv4n8ox3m4VfbpGW2ayn2Zd5XSwm1szRPFQR8yHYperquqb4Txfd6fG66WZS7Qxm5rEuMnA1vqNRZsxDtrMjAUxOu35j3DLvWBMVM-jiUtdm-k18o077p7N-fo3CEXl-BKZw5yX3hU04BqRAL5qHJkgnnYvvB4oUjmUioU_CZwvPAghKY0mzF07hqkcAhfJFAergzt9meqFP6vn0IsDBXdBlB0xj93AQyMUb4JV-P3itFdPFFVlwJM1SRaiADvInYkDS3Lzo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.76,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Cybersecurity in business",
+      "skill_id": "rfv.skill.cybersecurity.19-cybersecurity-in-business",
+      "items": [
+        {
+          "id": "cs-091",
+          "prompt": "How should small businesses approach cybersecurity?",
+          "options": [
+            "Buy every expensive tool",
+            "Ignore until you're large",
+            "Only hire consultants",
+            "Start with fundamentals: MFA everywhere, password manager, backups, patched systems, basic email security, employee awareness"
+          ],
+          "answer_commit": "hmac-sha256:cfae66f7450ffb32e53d3639256e0f57",
+          "explanation_enc": "aes-256-gcm.v1:wadUTpgdcYvyuuQV:_iJMQjBB1YAWvmLyjTy6Lh2jlzkkHxab6r92_Gzh17Ux5tCbb9z84tvYFko1b15YAuXlZdmn4lkD6VFlugVr6z8oiAhog4cEgjGvgWAFcRv5DKkjRhlPzd1EBd5oEVTILoM_EeBgO5Y557qM4EuzbYcHCrxLd11kSE_7LZVm4ZIL8ic_xuHiSBVhhLqo2gOyEqKFFvbKkl3ob__zLZRIPk7IPqeD7HBTh3cT6XEED9Ji52LQVq2SXFW62MyTuh47B4SyuxkpWZeSMm-UqjNfYp9QM7ruMJjKcCAP8G1SlzmubqYVulOU2WmVoLyzddnvmp7S33XY2iHvYn4q3DDXILgRVSu5FyEd2wKIp7avTZJr1Uo",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-092",
+          "prompt": "What's the BUSINESS case for cybersecurity investment?",
+          "options": [
+            "Avoid breach costs (fines, lawsuits, downtime, reputation), enable sales (compliance), reduce insurance premiums, attract talent",
+            "Only for tech companies",
+            "Required by law for everyone",
+            "It's pure cost with no benefit"
+          ],
+          "answer_commit": "hmac-sha256:cf102f2890e04003ce59f32a4385baad",
+          "explanation_enc": "aes-256-gcm.v1:dergLDHjHoKBcnKE:6jzGWECfMtL4aYyWlfXqHU-WzsdBgnkPl7yt0dLqIeRYbwdGEDCoR6AihR-QTim_Z9FVkaMOhtduAtj_fClgc6hvZ0aNo0CPHpHTNRrjyQq6rHMTwamT4iQJunbU_KgMtu1PRa0t_or9IdrR5POC5ZFDThBssZaQn0deTG1FNsKF2G59tpl0pE54Vzd5DUE_ovqnlN3CL9YZkiexryCh7Hj51Kd-fyIMl1_zFBC9VcrvxNjKhuoH4URU7mrag-AbevSMInbtP3EQogMfO7y9EuMb6A1ISgkl7pUe_4vkl33cdHwIW2EigiPU2uXnNDzTGzrijAtwBrT-blaBxoV1Fl2QeExb4wu1u4mbpGL9DUAsqtlwN7nulJVUC4uVHH8",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.267,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-093",
+          "prompt": "What is CYBER INSURANCE?",
+          "options": [
+            "Health insurance for hackers",
+            "Insurance policies covering some financial impacts of cyber incidents — premiums and coverage are tightening as claims rise",
+            "Internet provider insurance",
+            "Backup software warranties"
+          ],
+          "answer_commit": "hmac-sha256:579195a0c34e0d41c2c9b1e10da2b72b",
+          "explanation_enc": "aes-256-gcm.v1:G4aCRAqlzWnB81U4:Y9-lDP8bB1mCCRT8NFl9dwcd1ILEnznnUYWHgLMLpS_YoGYFXVJlmZdkXT0IZ7binQT8h2CbvJPbofD7OgxDeYP6yAETocbyU6vkUErtazvMzJMYeH44KGuoKS5bMGUmbIX1l0SPGURbGK7fbqTwxqI9g91LynGY9bXLiwclrZZlN6yYuQRg2y-qm2wLSwHgjw2GnKR522sf7cGWzEJJzvN3tDRNT7g9QV2jk1MjXroK6Ge9XjWfB5oQAuj75fYcSJpH_NJ8Emy3UQTHVGRbFrKuqMYacV2-djSvqrGD6c5iusNBKj1acafc4BoXstoCTv75aLEttk7CXyBXCfyE6MyVd8GNS73bni_KJPJGQUwnoskf8ocXzbr1Sg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.393,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-094",
+          "prompt": "What is THIRD-PARTY RISK MANAGEMENT?",
+          "options": [
+            "Assessing and monitoring security of vendors, contractors, and partners who access your data or systems",
+            "Risk from third-party apps only",
+            "A type of insurance",
+            "Backup of vendor data"
+          ],
+          "answer_commit": "hmac-sha256:2a831e8c4bb58ea89823814d0eea5b73",
+          "explanation_enc": "aes-256-gcm.v1:Yg6df_Q1Sly4LxIV:--RT7kLh7lSuBujKiI4EwzPQhzbSjAJj3HVoaI-sD7MlvPJmG1emKT--wbnjEZcgdK6yLs8NzdeYe5LekiOlXuTx8bkqid5R791qDTK3r9NUKrxAGkaWci4ECy-aIyqNvRnxU7mKORz1LWALEZKz4bmEgxe5XaugwkYdrH8eBbY9W2asBJP2LRmb878kSdW0RnHbuLMDrnnAzPc5yaI9cyS5M0UZUTXAIJ_7M_7C75cgcmfzcLIki3L9Ie3DpkQSnq0IgPHo193MRXcUN20i_2dC-DeAFBtN_nyXXdH3xOiDDZQNSC0df3d2_DsjE0z9_zr74OPj2HtyXMFAfcWk",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.323,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-095",
+          "prompt": "How should LEADERSHIP think about cybersecurity?",
+          "options": [
+            "Always perfect security regardless of cost",
+            "As a business risk to manage like any other — informed decisions about acceptable risk, investment levels, and trade-offs",
+            "Ignore until forced",
+            "Pure technical IT issue"
+          ],
+          "answer_commit": "hmac-sha256:2d5b3f7df1893304b635e4ed69436ce7",
+          "explanation_enc": "aes-256-gcm.v1:Pplgp4EKxnfmUJpR:Xo0_1h7oqnrYWD_0j2C8izuDxROMeishGnD-U5yW190HqHhA_0F5FkTFPRpS15KHRmQqglnjiIkabFoa1DLBUyIAgIcpaYB-b9xGta0vkQ3HOyWw0HcxsodnX-BCUYWt2GUUmGLOlMXKpw4qtEZKmXY2H7o0y3UnRFqgsVyawSvBbnFDtaVOh_8LeNcCmOX5HQyEsc07dd4ZOvbPWCqV9E9ddZA4L_4DQF04AWa9B3AZUgOq5R-PglMqrWfXE51x5MMuY91kfTbwPImaVkassRBymtwjgO52__ZTrJuTeyCL7mNVX8W3ZfBmO6j0G2CDmmV78TgwxGK62VEThkv_6AtqSrXwVDwJLdOLu8y7TkGhExVabxIcLSs",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 2.881,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Future and emerging threats",
+      "skill_id": "rfv.skill.cybersecurity.20-future-and-emerging-threats",
+      "items": [
+        {
+          "id": "cs-096",
+          "prompt": "What is QUANTUM COMPUTING's potential impact on security?",
+          "options": [
+            "Quantum makes everything more secure",
+            "It only affects gaming",
+            "It has no security implications",
+            "Sufficiently powerful quantum computers could break current public-key cryptography — driving 'post-quantum cryptography' standards now"
+          ],
+          "answer_commit": "hmac-sha256:a6bb4e69ace2150f99fb2e285fb5ca41",
+          "explanation_enc": "aes-256-gcm.v1:ygpBaeJ6IEtqvyei:YGR27X2tKDNa5SjP6m6l2SGIesZRH7ag3DmAnPEV3pRZYcFme1_CmjFme4GiZbSVLNKN8fHwium5xfYHvx89XpLbwp36SrN0IvY_aDsgtYO79I9jf3Xg7i8LGaWgjnvdCHTynRgkcb6dsc960yXgdBIMXfAE0lGN50vN0OBK656jKdbS0B9b_OgD9yDVLZoCRUlM-OHtMedCXw-unSj9bTjd8WfLBGWAlnn2RXnpo3V1F_Bvi_2OXxmhRrxXWdvcw108HEDoAcwL7eXWvxkb1_SQP3YuII_LHZsj8648dt2rrbU2CaFBzy59ZLGy_qFCl6F75_Vtj7lDMAwyndP9B3mWPG2z9cpsLg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.75,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-097",
+          "prompt": "What is IOT SECURITY and why does it matter?",
+          "options": [
+            "A type of antivirus",
+            "Securing the billions of internet-connected devices (cameras, appliances, sensors) — often shipped with weak defaults and rarely updated",
+            "Cloud storage",
+            "Software for iOS only"
+          ],
+          "answer_commit": "hmac-sha256:361b6b29adcf3caae533f386ab7156d9",
+          "explanation_enc": "aes-256-gcm.v1:VY9aiyrfbhWJexuG:DUojOtwt7Mce01Rp5AHJjIU04SedTuEi5MGQvZozKW3u3azjFvbvmWZZzhc6TB-KdzhfwDO0zZax_ilAfjgqIBvf0u_6cFYbH50zzlSH8JnH9azKwPFf0vrSgH-Tfn4ZiCf3LBDadg_SVbM9kXAXkuf0t7LOKsf2HWeNKXxLySjET9mdipQ6IefUoHG0oRP2oYdKf9DPbwfGkiPYG_nVL0ksaRwvkvPcjdtMKOHcF1ftGXpO_CFPdvwpdIDmcV1DKUouqQWs3LQzUKWxClDh2TZWvwYdJNTHowzBGjREeuANMUQ_qSDMgROisLzX9NN2rP9zXP6jtjXHNbQNWTq07odpXPg",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "judgement_required",
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 6.476,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-098",
+          "prompt": "What is RANSOMWARE-AS-A-SERVICE (RaaS)?",
+          "options": [
+            "Cloud storage encryption",
+            "A type of backup",
+            "An antivirus subscription",
+            "Criminal business model where ransomware operators rent tools to affiliates, splitting profits — has industrialized cybercrime"
+          ],
+          "answer_commit": "hmac-sha256:26c780f3572014ec109d3aafeb6351ba",
+          "explanation_enc": "aes-256-gcm.v1:IqdPIUJ5OYikX-4Q:4wIVIY1Zg9W4bEcszv1TdC4fU3b_B28d_yBLIVvH1tNVBFbKeNwQ-RikiGq2X_b-uGCfzopvMVGO3vAZVku045RUyf8ZcsJvakPz1fDPUFg-6ID-qF0qdyEhq3SdIjXzcyqFqL-H0UFSYezs8Auvu_sIXAbFvKVzujIjSWdQ6ti4siG41s_a8jnFWX5BDRjuSWtr20DDr6isqhwGaMkoBbrcLKNe3Bdc2pAdNBRnIOnq5BkbWVoxhzy4Vw5SEw0gdQTu-Vd1zoi1EL_uMNVh58oF6gKpmnrORebGNK2_NRzcSkHUORtX8QtNNg7Ms-C3rbj-US1sZdarjpebsuQsKkE",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "definitional_stem",
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -2
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 5.04,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-099",
+          "prompt": "How is GEOPOLITICS shaping cybersecurity?",
+          "options": [
+            "Only US companies are affected",
+            "Only affects governments",
+            "Politics has no effect",
+            "State-sponsored hacking, sanctions on cybersecurity vendors, regulations diverging by region, and critical infrastructure as targets"
+          ],
+          "answer_commit": "hmac-sha256:eba6e7ac060c5cb59adf12fa83b34381",
+          "explanation_enc": "aes-256-gcm.v1:aJWA98QPVRZU-h9U:wIlYQInP4GPejW-RjihxWV-VNo9KeyEB22d2DjPGd0u0Nq2CnNzSOfQA_gjg5McKoenjaoN9Ib9zh1OfP85fM2_PNThXvoNgjWYeKrH-JX0_sntiA3MB3ByiEW44VAadT5AifrQLe1h-iuLQAecMCOE9HujOZbTehrhEVL4c5x781FLuq9SCR8Iiaehj6_ad8oHY1Y3yGLMly6tGpP1qFXshYVFiFAKcGkgZYvdorYHB6cT1scnv82m9YVd9kD7w0yU-vVIyPnPfoGBPuFIuk55hbK1FBiwlZc1IxDALEHoJorigkIfdDRmYs8vY82UsMw-r9yHr71CmJ0JiQEYlq3VpG8psAO_5O-WuBH4",
+          "difficulty": {
+            "tier": 1,
+            "signals": [
+              "short_stem"
+            ],
+            "method": "automated-heuristic-v1",
+            "raw_score": -1
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 4.4,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        },
+        {
+          "id": "cs-100",
+          "prompt": "What's the MOST IMPORTANT mindset for cybersecurity in the long term?",
+          "options": [
+            "Perfect prevention is achievable",
+            "Hope nothing happens",
+            "Manual processes are safer",
+            "Assume breach — design for resilience under attack, not just prevention; combine technical depth with continuous adaptation"
+          ],
+          "answer_commit": "hmac-sha256:b53aff4602a627fda54db264b51a59fc",
+          "explanation_enc": "aes-256-gcm.v1:xZRZpq1Lyq_Ejg2n:BKEdo5SIpl9iXunro-MT7jROt7gyA0o9Lv-m6QRsd7cDxE7jKUsjyRiCbW45yo5eECsD9NwhTYqLrUGj9JXk9kkZ1BEZEzpma2gfxLLtjzf0oS1cXOn3_4BETcWrO1NqqdTq3BIgvxAutx2EoDRR6pefGh-Gkb7fpjXtvklE8Se_wxWUiWoWJRTqdwBjnXJM9hLBrn9-T02IQmQN8tV7V9hYlbUudRPxKjXr3ZlDyYWGioCD9P8e419iKDOHUKUWrTD2KLvcipghYFd4AVejsXF2rR0Cp3g0AzwiDSwPH3-zNL_LHwt_UIxrhVamzI2B_-PCNx-F6w1Sc6gzGjzXe6oOacZ3f8_JBl_rHoSupcvMSJ24PFmZnrSw7hfVo9lmKwbt4Pj6wj0LCZY",
+          "difficulty": {
+            "tier": 1,
+            "signals": [],
+            "method": "automated-heuristic-v1",
+            "raw_score": 0
+          },
+          "review": {
+            "status": "provisional",
+            "method": "automated-validation-v1",
+            "human_reviewed": false,
+            "last_reviewed": "2026-10-14"
+          },
+          "length_ratio": 3.844,
+          "findings": [
+            {
+              "code": "correct_option_length_outlier",
+              "severity": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seal": "hmac-sha256:e0c3c0b2cda56a3ed7c3e0934d9911704e13545a31de71972c987f6e5d484fa6"
+}

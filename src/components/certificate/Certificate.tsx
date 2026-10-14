@@ -5,12 +5,19 @@ import { CertCorners } from './CertCorners';
 
 export interface CertificateData {
   recipientName: string;
-  quizTitle: string;
-  quizCategory: string;
+  /** Topic title, e.g. "Python Fundamentals". */
+  title: string;
+  /** Credential level label, e.g. "Foundation". */
+  levelLabel: string;
+  /** Skills assessed in this attempt (stable LearnPath skill names). */
+  skills: string[];
   score: number;
-  certId: string;
-  dateISO: string;
+  passingScore: number;
+  credentialId: string;
+  issuedAt: string;
   verifyUrl: string;
+  status: 'valid' | 'revoked';
+  provenance: 'signed' | 'legacy-unsigned';
 }
 
 interface CertificateProps {
@@ -71,7 +78,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
       .catch(() => setQrDataUrl(''));
   }, [data.verifyUrl]);
 
-  const date = new Date(data.dateISO);
+  const date = new Date(data.issuedAt);
   const formattedDate = date.toLocaleDateString('en-US', {
     day: '2-digit',
     month: 'short',
@@ -183,7 +190,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   marginBottom: 'clamp(8px, 1.4cqi, 18px)',
                 }}
               >
-                Certificate of Excellence
+                Certificate of Completion
               </div>
 
               {/* COURSE TITLE — Satoshi Black */}
@@ -196,8 +203,16 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   maxWidth: '16ch',
                 }}
               >
-                {data.quizTitle}.
+                {data.title}.
               </h1>
+
+              {/* LEVEL + SKILLS — states exactly what was assessed */}
+              <div
+                className={`font-mono uppercase tracking-[0.18em] text-[#8A6B22] ${animClass(400)}`}
+                style={{ fontSize: 'clamp(8px, 0.9cqi, 12px)', marginTop: 'clamp(8px, 1.4cqi, 16px)' }}
+              >
+                {data.levelLabel} level · {data.skills.length || 0} skills assessed
+              </div>
 
               {/* Gold rule */}
               <div
@@ -276,7 +291,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   className="font-mono text-[#5C5044]"
                   style={{ fontSize: 'clamp(9px, 1cqi, 13px)' }}
                 >
-                  · for passing the {data.quizCategory.toLowerCase()} certification.
+                  · pass mark {data.passingScore}% · unproctored, server-graded assessment.
                 </span>
               </div>
             </div>
@@ -353,7 +368,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                     letterSpacing: '-0.01em',
                   }}
                 >
-                  {data.certId}
+                  {data.credentialId}
                 </div>
                 <div
                   className="font-mono uppercase tracking-[0.18em] text-[#A89B85]"
@@ -368,7 +383,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   className="font-mono text-[#5C5044]"
                   style={{ fontSize: 'clamp(8px, 0.85cqi, 11px)' }}
                 >
-                  rrrtx-freeverse.app/verify
+                  {data.verifyUrl.replace(/^https?:\/\//, '')}
                 </div>
               </div>
             </div>
@@ -409,7 +424,7 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   marginTop: '3px',
                 }}
               >
-                founder · rrrtx freeverse
+                issued by rrrtx freeverse
               </div>
             </div>
 
@@ -438,7 +453,13 @@ export function Certificate({ data, forPdf = false, animated = true }: Certifica
                   marginTop: '4px',
                 }}
               >
-                valid forever
+                {data.status === 'revoked' ? 'revoked' : data.provenance === 'signed' ? 'status · valid' : 'status · legacy'}
+              </div>
+              <div
+                className="font-mono text-[#A89B85] text-right"
+                style={{ fontSize: 'clamp(6.5px, 0.65cqi, 9px)', maxWidth: '22ch', lineHeight: 1.4, marginTop: '4px' }}
+              >
+                not an accredited qualification
               </div>
             </div>
           </footer>

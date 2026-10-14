@@ -22,10 +22,9 @@ export function PreHero() {
 
     let i = 0;
     let j = 0;
-    let cmdTimer: ReturnType<typeof setInterval>;
     let outTimer: ReturnType<typeof setInterval>;
 
-    cmdTimer = setInterval(() => {
+    const cmdTimer = setInterval(() => {
       i++;
       setCmd(FULL_CMD.slice(0, i));
       if (i >= FULL_CMD.length) {
